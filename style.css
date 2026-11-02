@@ -1,0 +1,214 @@
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f6f8fb;
+  --ink: #1f2430;
+  --ink-soft: #5a6172;
+  --line: #e6e9f0;
+  --accent: #185fa5;
+  --accent-soft: #e6f1fb;
+  --accent-2: #0f6e56;
+  --radius: 14px;
+  --maxw: 880px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Songti SC", "Noto Serif SC", serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------- Nav ---------- */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand { font-weight: 600; color: var(--ink); font-size: 17px; }
+.brand-sub { color: var(--ink-soft); font-weight: 400; font-size: 13px; margin-left: 6px; }
+.nav-links a { color: var(--ink-soft); margin-left: 20px; font-size: 14px; }
+.nav-links a:hover { color: var(--accent); text-decoration: none; }
+.lang-btn {
+  margin-left: 16px;
+  padding: 5px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.lang-btn:hover { background: var(--accent); color: #fff; }
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 80px 24px 64px;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--accent-soft), #ffffff 70%);
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-image: radial-gradient(var(--line) 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: 0.6;
+}
+.hero-inner { position: relative; max-width: 640px; margin: 0 auto; }
+.avatar {
+  width: 92px; height: 92px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 40px;
+  font-family: Georgia, "Songti SC", serif;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 20px rgba(24, 95, 165, 0.25);
+}
+.hero h1 { font-size: 40px; margin: 0 0 6px; }
+.role { color: var(--accent); font-weight: 600; margin: 0 0 4px; font-size: 16px; }
+.tagline { color: var(--ink-soft); margin: 0 0 18px; font-size: 15px; }
+.hero-formula {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 18px;
+  margin-bottom: 22px;
+  font-size: 18px;
+}
+.hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn:hover { text-decoration: none; transform: translateY(-1px); }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { box-shadow: 0 6px 18px rgba(24, 95, 165, 0.3); }
+.btn-ghost { background: #fff; color: var(--accent); border: 1px solid var(--accent); }
+
+/* ---------- Sections ---------- */
+.section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+.section-title {
+  font-size: 26px;
+  margin: 0 0 24px;
+  position: relative;
+  padding-left: 14px;
+}
+.section-title::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 6px; bottom: 6px;
+  width: 4px; border-radius: 4px;
+  background: var(--accent);
+}
+.lede { color: var(--ink-soft); font-size: 16px; max-width: 680px; }
+.placeholder {
+  font-style: italic;
+  opacity: 0.7;
+  padding: 8px 0 4px;
+  border-left: 3px solid var(--line);
+  padding-left: 14px;
+}
+
+.facts { display: flex; gap: 28px; margin-top: 28px; flex-wrap: wrap; }
+.fact { text-align: center; }
+.fact-num { display: block; font-size: 32px; font-weight: 700; color: var(--accent); }
+.fact-label { color: var(--ink-soft); font-size: 13px; }
+
+/* ---------- Timeline ---------- */
+.timeline { list-style: none; padding: 0; margin: 0; position: relative; }
+.timeline::before {
+  content: ""; position: absolute; left: 7px; top: 6px; bottom: 6px;
+  width: 2px; background: var(--line);
+}
+.timeline li { position: relative; padding: 0 0 26px 34px; }
+.tl-dot {
+  position: absolute; left: 0; top: 6px;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: #fff; border: 3px solid var(--accent);
+}
+.tl-body h3 { margin: 0 0 2px; font-size: 17px; }
+.tl-time { color: var(--accent-2); font-size: 13px; font-weight: 600; }
+.tl-body p { margin: 6px 0 0; color: var(--ink-soft); }
+
+/* ---------- Cards ---------- */
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.card {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+}
+.card h3 { margin: 0 0 8px; font-size: 17px; color: var(--accent); }
+.card p { margin: 0; color: var(--ink-soft); font-size: 14px; }
+
+/* ---------- Achievements ---------- */
+.ach-list { padding-left: 20px; color: var(--ink-soft); font-size: 15px; }
+.ach-list li { margin-bottom: 10px; }
+
+/* ---------- Contact ---------- */
+.contact-list { list-style: none; padding: 0; margin: 18px 0 0; }
+.contact-list li {
+  display: flex; gap: 14px; align-items: center;
+  padding: 12px 0; border-bottom: 1px solid var(--line);
+}
+.contact-list span {
+  width: 64px; color: var(--ink-soft); font-size: 13px; flex-shrink: 0;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  padding: 32px 24px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+.footer-note { margin: 4px 0 0; opacity: 0.8; }
+
+@media (max-width: 600px) {
+  .nav-links a { margin-left: 14px; font-size: 13px; }
+  .lang-btn { margin-left: 12px; padding: 4px 10px; font-size: 12px; }
+  .hero h1 { font-size: 32px; }
+  .cards { grid-template-columns: 1fr; }
+  .facts { gap: 18px; }
+}

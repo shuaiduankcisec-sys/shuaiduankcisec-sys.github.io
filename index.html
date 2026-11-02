@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="pageTitle">Duan Shuai · Math Teacher | Personal Site</title>
+  <meta name="description" data-i18n-attr="content:pageDesc" content="Personal site of math teacher Duan Shuai: experience, expertise and achievements." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- KaTeX 数学公式渲染（可删，仅作装饰） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+</head>
+<body>
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="#top">段帅<span class="brand-sub" data-i18n="brandSub">· Math Teacher</span></a>
+      <nav class="nav-links">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#experience" data-i18n="navExp">Experience</a>
+        <a href="#skills" data-i18n="navSkills">Expertise</a>
+        <a href="#achievements" data-i18n="navAch">Achievements</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+        <button id="langBtn" class="lang-btn" type="button">中文</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="avatar" aria-hidden="true">段</div>
+      <h1>段帅</h1>
+      <p class="role" data-i18n="heroRole">High School Math Teacher · Teaching Researcher</p>
+      <p class="tagline" data-i18n="heroTag">Making complex math simple with clear logic.</p>
+      <div class="hero-formula" data-i18n-title="formulaTitle" title="Favorite formula: Euler's identity">
+        $$e^{i\pi} + 1 = 0$$
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact" data-i18n="btnContact">Contact</a>
+        <a class="btn btn-ghost" href="#about" data-i18n="btnLearn">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="section">
+      <h2 class="section-title" data-i18n="aboutTitle">About</h2>
+      <p class="lede placeholder" data-i18n="aboutPlaceholder">Content coming soon.</p>
+    </section>
+
+    <section id="experience" class="section">
+      <h2 class="section-title" data-i18n="expTitle">Experience</h2>
+      <ul class="timeline">
+        <li>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3 data-i18n="exp1Title">XX High School · Math Teacher / Lead</h3>
+            <span class="tl-time" data-i18n="exp1Time">2021 — Present</span>
+            <p data-i18n="exp1Desc">Taught math for Grades 10–11; led curriculum development and mentoring of young teachers.</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3 data-i18n="exp2Title">XX Education · Math Researcher</h3>
+            <span class="tl-time" data-i18n="exp2Time">2018 — 2021</span>
+            <p data-i18n="exp2Desc">Authored textbook exercises and exam analysis; built an online Q&amp;A system.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section-title" data-i18n="skillsTitle">Expertise</h2>
+      <div class="cards">
+        <div class="card">
+          <h3 data-i18n="sk1Title">Algebra &amp; Geometry</h3>
+          <p data-i18n="sk1Desc">Systematic teaching of functions, sequences and analytic geometry.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="sk2Title">Exam Preparation</h3>
+          <p data-i18n="sk2Desc">A Level / Gaokao past papers, topic breakdown and sprint strategies.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="sk3Title">Teaching Tools</h3>
+          <p data-i18n="sk3Desc">Visual courseware built with LaTeX, GeoGebra and web tools.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="sk4Title">Curriculum Design</h3>
+          <p data-i18n="sk4Desc">Tiered school-based courses and micro-lecture systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <h2 class="section-title" data-i18n="achTitle">Achievements</h2>
+      <ul class="ach-list">
+        <li data-i18n="ach1">Class average ranked top of grade for two consecutive years.</li>
+        <li data-i18n="ach2">Developed 30+ school-based micro-lectures covering core topics.</li>
+        <li data-i18n="ach3">Mentored students to multiple subject competition awards.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 class="section-title" data-i18n="contactTitle">Contact</h2>
+      <p class="lede" data-i18n="contactLede">Feel free to reach out for teaching, research, or course inquiries.</p>
+      <ul class="contact-list">
+        <li><span data-i18n="cEmail">Email</span><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><span data-i18n="cWechat">WeChat</span>your_wechat_id</li>
+        <li><span data-i18n="cGithub">GitHub</span><a href="https://github.com/yourname" target="_blank" rel="noopener">github.com/yourname</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> <span data-i18n="footerName">Duan Shuai</span> · <span data-i18n="footerSite">Personal Site</span></p>
+    <p class="footer-note" data-i18n="footerNote">Deployed on GitHub Pages · Static site</p>
+  </footer>
+
+  <script>
+    const i18n = {
+      en: {
+        pageTitle: "Duan Shuai · Math Teacher | Personal Site",
+        pageDesc: "Personal site of math teacher Duan Shuai: experience, expertise and achievements.",
+        brandSub: "· Math Teacher",
+        navAbout: "About", navExp: "Experience", navSkills: "Expertise",
+        navAch: "Achievements", navContact: "Contact",
+        heroRole: "High School Math Teacher · Teaching Researcher",
+        heroTag: "Making complex math simple with clear logic.",
+        formulaTitle: "Favorite formula: Euler's identity",
+        btnContact: "Contact", btnLearn: "Learn more",
+        aboutTitle: "About", aboutPlaceholder: "Content coming soon.",
+        expTitle: "Experience",
+        exp1Title: "XX High School · Math Teacher / Lead",
+        exp1Time: "2021 — Present",
+        exp1Desc: "Taught math for Grades 10–11; led curriculum development and mentoring of young teachers.",
+        exp2Title: "XX Education · Math Researcher",
+        exp2Time: "2018 — 2021",
+        exp2Desc: "Authored textbook exercises and exam analysis; built an online Q&A system.",
+        skillsTitle: "Expertise",
+        sk1Title: "Algebra & Geometry", sk1Desc: "Systematic teaching of functions, sequences and analytic geometry.",
+        sk2Title: "Exam Preparation", sk2Desc: "A Level / Gaokao past papers, topic breakdown and sprint strategies.",
+        sk3Title: "Teaching Tools", sk3Desc: "Visual courseware built with LaTeX, GeoGebra and web tools.",
+        sk4Title: "Curriculum Design", sk4Desc: "Tiered school-based courses and micro-lecture systems.",
+        achTitle: "Achievements",
+        ach1: "Class average ranked top of grade for two consecutive years.",
+        ach2: "Developed 30+ school-based micro-lectures covering core topics.",
+        ach3: "Mentored students to multiple subject competition awards.",
+        contactTitle: "Contact", contactLede: "Feel free to reach out for teaching, research, or course inquiries.",
+        cEmail: "Email", cWechat: "WeChat", cGithub: "GitHub",
+        footerName: "Duan Shuai", footerSite: "Personal Site",
+        footerNote: "Deployed on GitHub Pages · Static site"
+      },
+      zh: {
+        pageTitle: "段帅 · 数学教师 | 个人主页",
+        pageDesc: "数学教师段帅的个人主页，涵盖教学经历、专长与成果。",
+        brandSub: "· 数学教师",
+        navAbout: "关于", navExp: "经历", navSkills: "专长",
+        navAch: "成果", navContact: "联系",
+        heroRole: "高中数学教师 · 教研爱好者",
+        heroTag: "用清晰的逻辑，把复杂的数学讲简单。",
+        formulaTitle: "最喜欢的公式：欧拉恒等式",
+        btnContact: "联系我", btnLearn: "了解更多",
+        aboutTitle: "关于我", aboutPlaceholder: "内容整理中。",
+        expTitle: "教学经历",
+        exp1Title: "XX 中学 · 数学教师 / 备课组长",
+        exp1Time: "2021 — 至今",
+        exp1Desc: "负责高一、高二数学教学，牵头校本课程开发与青年教师带教。",
+        exp2Title: "XX 教育机构 · 数学教研员",
+        exp2Time: "2018 — 2021",
+        exp2Desc: "参与教材配套练习与真题解析编写，搭建在线答疑体系。",
+        skillsTitle: "专长领域",
+        sk1Title: "代数与几何教学", sk1Desc: "函数、数列、解析几何的系统化讲解与题型归纳。",
+        sk2Title: "真题与备考", sk2Desc: "A Level / 高考真题整理、考点拆解与冲刺策略。",
+        sk3Title: "教研工具", sk3Desc: "用 LaTeX、GeoGebra、网页工具制作可视化课件。",
+        sk4Title: "课程设计", sk4Desc: "面向不同层级的校本课程与微课体系搭建。",
+        achTitle: "教学成果",
+        ach1: "所带班级数学平均分连续两年位列年级前列。",
+        ach2: "开发校本微课 30+ 节，覆盖核心考点。",
+        ach3: "指导学生多人次在学科竞赛中获奖。",
+        contactTitle: "联系方式", contactLede: "欢迎就教学、教研合作或课程咨询与我联系。",
+        cEmail: "邮箱", cWechat: "微信", cGithub: "GitHub",
+        footerName: "段帅", footerSite: "个人主页",
+        footerNote: "基于 GitHub Pages 部署 · 纯静态站点"
+      }
+    };
+
+    const langBtn = document.getElementById('langBtn');
+    function setLang(lang) {
+      const dict = i18n[lang] || i18n.en;
+      document.documentElement.lang = (lang === 'zh') ? 'zh-CN' : 'en';
+      document.querySelectorAll('[data-i18n]').forEach(function (el) {
+        const k = el.getAttribute('data-i18n');
+        if (dict[k] != null) el.textContent = dict[k];
+      });
+      document.querySelectorAll('[data-i18n-title]').forEach(function (el) {
+        const k = el.getAttribute('data-i18n-title');
+        if (dict[k] != null) el.setAttribute('title', dict[k]);
+      });
+      document.querySelectorAll('[data-i18n-attr]').forEach(function (el) {
+        const spec = el.getAttribute('data-i18n-attr'); // format: attr:key
+        const parts = spec.split(':');
+        const dict2 = i18n[lang] || i18n.en;
+        if (dict2[parts[1]] != null) el.setAttribute(parts[0], dict2[parts[1]]);
+      });
+      langBtn.textContent = (lang === 'zh') ? 'EN' : '中文';
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+    }
+
+    let current = 'en';
+    try { current = localStorage.getItem('lang') || 'en'; } catch (e) {}
+    setLang(current);
+
+    langBtn.addEventListener('click', function () {
+      current = (current === 'zh') ? 'en' : 'zh';
+      setLang(current);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        const id = a.getAttribute('href');
+        if (id.length > 1) {
+          const el = document.querySelector(id);
+          if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
