@@ -180,6 +180,17 @@ a:hover { text-decoration: underline; }
 }
 .card h3 { margin: 0 0 8px; font-size: 17px; color: var(--accent); }
 .card p { margin: 0; color: var(--ink-soft); font-size: 14px; }
+a.card.link-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+a.card.link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(24, 95, 165, 0.12);
+  border-color: var(--accent);
+}
 
 /* ---------- Achievements ---------- */
 .ach-list { padding-left: 20px; color: var(--ink-soft); font-size: 15px; }
