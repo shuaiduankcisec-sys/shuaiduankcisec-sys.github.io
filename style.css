@@ -103,11 +103,6 @@ a:hover { text-decoration: underline; }
   background: var(--accent-soft);
   text-decoration: none;
 }
-.nav-home {
-  padding: 8px;
-  border-radius: 10px;
-}
-.home-icon { width: 19px; height: 19px; display: block; }
 .nav-home.active, .nav-right > a.active {
   color: var(--accent);
   background: var(--accent-soft);
