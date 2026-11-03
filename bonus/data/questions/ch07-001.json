@@ -1,0 +1,22 @@
+{
+  "id": "ch07-001",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions/94-s1-q4",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["integration", "inverse trigonometric functions", "partial fractions"],
+  "methods": ["completing the square", "inverse trigonometric integrals", "half-angle formula"],
+  "statement": "Show that\n\n(i) $\\dfrac{1-\\cos\\alpha}{\\sin\\alpha}=\\tan\\dfrac{\\alpha}{2}$;\n\n(ii) if $|k|<1$ then\n$$\\int\\frac{dx}{1-2kx+x^2}=\\frac{1}{\\sqrt{1-k^2}}\\tan^{-1}\\left(\\frac{x-k}{\\sqrt{1-k^2}}\\right)+C,$$\nwhere $C$ is a constant of integration.\n\nHence, or otherwise, show that if $0<\\alpha<\\pi$ then\n$$\\int_0^1\\frac{\\sin\\alpha}{1-2x\\cos\\alpha+x^2}\\,dx=\\frac{\\pi-\\alpha}{2}.$$",
+  "solution": "(i) Using the double-angle formulae, $1-\\cos\\alpha=2\\sin^2\\tfrac{\\alpha}{2}$ and $\\sin\\alpha=2\\sin\\tfrac{\\alpha}{2}\\cos\\tfrac{\\alpha}{2}$, so\n$$\\frac{1-\\cos\\alpha}{\\sin\\alpha}=\\frac{2\\sin^2\\tfrac{\\alpha}{2}}{2\\sin\\tfrac{\\alpha}{2}\\cos\\tfrac{\\alpha}{2}}=\\tan\\tfrac{\\alpha}{2}.$$\n\n(ii) Complete the square in the denominator:\n$$1-2kx+x^2=(x-k)^2+(1-k^2).$$\nLet $u=x-k$. Then $du=dx$ and\n$$\\int\\frac{dx}{1-2kx+x^2}=\\int\\frac{du}{u^2+(1-k^2)}.$$\nSince $|k|<1$, write $a=\\sqrt{1-k^2}>0$:\n$$\\int\\frac{du}{u^2+a^2}=\\frac{1}{a}\\tan^{-1}\\frac{u}{a}+C=\\frac{1}{\\sqrt{1-k^2}}\\tan^{-1}\\left(\\frac{x-k}{\\sqrt{1-k^2}}\\right)+C.$$\n\nNow for the final integral, set $k=\\cos\\alpha$ (so $|k|<1$ since $0<\\alpha<\\pi$). Then $1-2x\\cos\\alpha+x^2=1-2kx+x^2$ and $\\sqrt{1-k^2}=\\sqrt{1-\\cos^2\\alpha}=\\sin\\alpha$ (positive since $0<\\alpha<\\pi$). By (ii),\n$$\\int_0^1\\frac{1}{1-2x\\cos\\alpha+x^2}\\,dx=\\left[\\frac{1}{\\sin\\alpha}\\tan^{-1}\\left(\\frac{x-\\cos\\alpha}{\\sin\\alpha}\\right)\\right]_0^1.$$\n\nMultiplying by $\\sin\\alpha$:\n$$\\int_0^1\\frac{\\sin\\alpha}{1-2x\\cos\\alpha+x^2}\\,dx=\\tan^{-1}\\left(\\frac{1-\\cos\\alpha}{\\sin\\alpha}\\right)-\\tan^{-1}\\left(\\frac{-\\cos\\alpha}{\\sin\\alpha}\\right).$$\n\nBy (i), $\\dfrac{1-\\cos\\alpha}{\\sin\\alpha}=\\tan\\tfrac{\\alpha}{2}$, and $\\dfrac{-\\cos\\alpha}{\\sin\\alpha}=-\\cot\\alpha=\\tan\\left(\\alpha-\\tfrac{\\pi}{2}\\right)$. Hence\n$$\\int_0^1\\frac{\\sin\\alpha}{1-2x\\cos\\alpha+x^2}\\,dx=\\tan^{-1}\\left(\\tan\\tfrac{\\alpha}{2}\\right)-\\tan^{-1}\\left(\\tan\\left(\\alpha-\\tfrac{\\pi}{2}\\right)\\right).$$\n\nNow $\\tfrac{\\alpha}{2}\\in(0,\\tfrac{\\pi}{2})$ so $\\tan^{-1}(\\tan\\tfrac{\\alpha}{2})=\\tfrac{\\alpha}{2}$. And $\\alpha-\\tfrac{\\pi}{2}\\in(-\\tfrac{\\pi}{2},\\tfrac{\\pi}{2})$ so $\\tan^{-1}(\\tan(\\alpha-\\tfrac{\\pi}{2}))=\\alpha-\\tfrac{\\pi}{2}$. Therefore\n$$\\int_0^1\\frac{\\sin\\alpha}{1-2x\\cos\\alpha+x^2}\\,dx=\\frac{\\alpha}{2}-\\left(\\alpha-\\frac{\\pi}{2}\\right)=\\frac{\\pi-\\alpha}{2}.$$\n\nas required.",
+  "solutionStatus": "full",
+  "hints": [
+    "Complete the square in 1-2kx+x^2.",
+    "For the final integral, take k = cos(alpha) and use sqrt(1-k^2)=sin(alpha).",
+    "Use part (i) to simplify tan^{-1} of the endpoints."
+  ]
+}

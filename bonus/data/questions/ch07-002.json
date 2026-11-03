@@ -1,0 +1,22 @@
+{
+  "id": "ch07-002",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions/95-s1-q2",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["integration", "trigonometric integrals", "integration by substitution"],
+  "methods": ["adding and subtracting integrals", "integration by substitution"],
+  "statement": "(i) Suppose that\n$$S=\\int\\frac{\\cos x}{\\cos x+\\sin x}\\,dx\\quad\\text{and}\\quad T=\\int\\frac{\\sin x}{\\cos x+\\sin x}\\,dx.$$\nBy considering $S+T$ and $S-T$, determine $S$ and $T$.\n\n(ii) Evaluate\n$$\\int_{1/4}^{1/2}(1-4x)\\sqrt{\\frac{1}{x}-1}\\,dx$$\nby using the substitution $x=\\sin^2 t$.",
+  "solution": "(i) Adding,\n$$S+T=\\int\\frac{\\cos x+\\sin x}{\\cos x+\\sin x}\\,dx=\\int 1\\,dx=x+C_1.$$\n\nSubtracting,\n$$S-T=\\int\\frac{\\cos x-\\sin x}{\\cos x+\\sin x}\\,dx.$$\nThe numerator is the derivative of the denominator, so\n$$S-T=\\ln|\\cos x+\\sin x|+C_2.$$\n\nSolving the two equations:\n$$S=\\frac{(S+T)+(S-T)}{2}=\\frac{x+\\ln(\\cos x+\\sin x)}{2}+C,$$\n$$T=\\frac{(S+T)-(S-T)}{2}=\\frac{x-\\ln(\\cos x+\\sin x)}{2}+C'.$$\n\n(ii) Let $x=\\sin^2 t$, so $dx=2\\sin t\\cos t\\,dt$. When $x=1/4$, $\\sin t=1/2$ so $t=\\pi/6$; when $x=1/2$, $\\sin t=1/\\sqrt2$ so $t=\\pi/4$.\n\nAlso $1-4x=1-4\\sin^2 t$ and $\\sqrt{\\frac1x-1}=\\sqrt{\\frac{1-\\sin^2 t}{\\sin^2 t}}=\\frac{\\cos t}{\\sin t}$.\n\nTherefore the integral becomes\n$$\\int_{\\pi/6}^{\\pi/4}(1-4\\sin^2 t)\\cdot\\frac{\\cos t}{\\sin t}\\cdot 2\\sin t\\cos t\\,dt=2\\int_{\\pi/6}^{\\pi/4}(1-4\\sin^2 t)\\cos^2 t\\,dt.$$\n\nNow $1-4\\sin^2t=(1-2\\sin^2t)-2\\sin^2t=\\cos2t-2\\sin^2t$. A cleaner approach is to expand $(1-4\\sin^2t)\\cos^2t$:\n$$(1-4\\sin^2t)\\cos^2t=\\cos^2t-4\\sin^2t\\cos^2t=\\cos^2t-\\sin^22t.$$\n\nUsing $\\cos^2t=\\tfrac{1+\\cos2t}{2}$ and $\\sin^22t=\\tfrac{1-\\cos4t}{2}$:\n$$2\\int_{\\pi/6}^{\\pi/4}\\left(\\frac{1+\\cos2t}{2}-\\frac{1-\\cos4t}{2}\\right)dt=\\int_{\\pi/6}^{\\pi/4}(\\cos2t+\\cos4t)\\,dt.$$\n\nThis equals\n$$\\left[\\frac{\\sin2t}{2}+\\frac{\\sin4t}{4}\\right]_{\\pi/6}^{\\pi/4}=\\left(\\frac{\\sin\\tfrac{\\pi}{2}}{2}+\\frac{\\sin\\pi}{4}\\right)-\\left(\\frac{\\sin\\tfrac{\\pi}{3}}{2}+\\frac{\\sin\\tfrac{2\\pi}{3}}{4}\\right).$$\n\n$$=\\left(\\frac12+0\\right)-\\left(\\frac{\\sqrt3/2}{2}+\\frac{\\sqrt3/2}{4}\\right)=\\frac12-\\frac{\\sqrt3}{4}-\\frac{\\sqrt3}{8}=\\frac12-\\frac{3\\sqrt3}{8}.$$\n\nSo the integral equals $\\boxed{\\tfrac{1}{2}-\\tfrac{3\\sqrt3}{8}}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "For S+T and S-T, note that cos(x)-sin(x) is the derivative of cos(x)+sin(x).",
+    "Use the substitution x=sin^2(t) and simplify the square root.",
+    "Use double-angle identities to integrate the resulting trig expression."
+  ]
+}

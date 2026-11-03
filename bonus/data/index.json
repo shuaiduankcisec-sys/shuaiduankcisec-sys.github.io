@@ -66,5 +66,92 @@
     ],
     "solutionStatus": "full",
     "preview": "Given that $a$ is constant, differentiate the following expressions with respect to $x$: (i) $x^{a}$; (ii) $a^{x}$; (iii) $x^{x}$; (iv)…"
+  },
+  {
+    "id": "ch07-001",
+    "chapter": 7,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1994,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "integration",
+      "inverse trigonometric functions",
+      "partial fractions"
+    ],
+    "methods": [
+      "completing the square",
+      "inverse trigonometric integrals",
+      "half-angle formula"
+    ],
+    "solutionStatus": "full",
+    "preview": "Show that (i) $\\dfrac{1-\\cos\\alpha}{\\sin\\alpha}=\\tan\\dfrac{\\alpha}{2}$; (ii) if $|k|<1$ then …"
+  },
+  {
+    "id": "ch07-002",
+    "chapter": 7,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1995,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "integration",
+      "trigonometric integrals",
+      "integration by substitution"
+    ],
+    "methods": [
+      "adding and subtracting integrals",
+      "integration by substitution"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Suppose that $ S=\\int\\frac{\\cos x}{\\cos x+\\sin x}\\,dx\\quad\\text{and}\\quad T=\\int\\frac{\\sin x}{\\cos x+\\sin x}\\,dx.$  By considering…"
+  },
+  {
+    "id": "ch07-003",
+    "chapter": 7,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1996,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "integration",
+      "binomial theorem",
+      "definite integrals"
+    ],
+    "methods": [
+      "binomial expansion",
+      "integration of polynomials",
+      "pattern recognition"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Show that $ \\int_0^1\\bigl(1+(\\alpha-1)x\\bigr)^n\\,dx=\\frac{\\alpha^{n+1}-1}{(n+1)(\\alpha-1)}$  when $\\alpha\\neq 1$ and $n$ is a positive…"
+  },
+  {
+    "id": "ch07-004",
+    "chapter": 7,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1987,
+    "level": "A2-extension",
+    "difficulty": 4,
+    "topics": [
+      "integration",
+      "inverse functions",
+      "area under a curve"
+    ],
+    "methods": [
+      "geometric interpretation of integrals",
+      "integration of inverse functions",
+      "differentiation to verify"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $y=f(x)$, ($0\\le x\\le a$), be a continuous curve lying in the first quadrant and passing through the origin. Suppose that, for each…"
   }
 ]

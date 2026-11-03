@@ -1,0 +1,22 @@
+{
+  "id": "ch07-003",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions/96-s1-q2",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["integration", "binomial theorem", "definite integrals"],
+  "methods": ["binomial expansion", "integration of polynomials", "pattern recognition"],
+  "statement": "(i) Show that\n$$\\int_0^1\\bigl(1+(\\alpha-1)x\\bigr)^n\\,dx=\\frac{\\alpha^{n+1}-1}{(n+1)(\\alpha-1)}$$\nwhen $\\alpha\\neq 1$ and $n$ is a positive integer.\n\n(ii) Show that if $0\\le k\\le n$ then the coefficient of $\\alpha^k$ in the polynomial\n$$\\int_0^1\\bigl(\\alpha x+(1-x)\\bigr)^n\\,dx$$\nis\n$$\\binom{n}{k}\\int_0^1 x^k(1-x)^{n-k}\\,dx.$$\n\n(iii) Hence, or otherwise, show that\n$$\\int_0^1 x^k(1-x)^{n-k}\\,dx=\\frac{k!(n-k)!}{(n+1)!}.$$",
+  "solution": "(i) Substituting $u=1+(\\alpha-1)x$, so $du=(\\alpha-1)dx$:\n$$\\int_0^1\\bigl(1+(\\alpha-1)x\\bigr)^n dx=\\frac{1}{\\alpha-1}\\int_{1}^{\\alpha}u^n\\,du=\\frac{1}{\\alpha-1}\\left[\\frac{u^{n+1}}{n+1}\\right]_1^{\\alpha}=\\frac{\\alpha^{n+1}-1}{(n+1)(\\alpha-1)}.$$\n\n(ii) Write $\\alpha x+(1-x)=1+(\\alpha-1)x$. By the binomial theorem,\n$$\\bigl(1+(\\alpha-1)x\\bigr)^n=\\sum_{k=0}^n\\binom{n}{k}(\\alpha-1)^k x^k.$$\n\nNow $(\\alpha-1)^k=\\sum_{j=0}^k\\binom{k}{j}\\alpha^j(-1)^{k-j}$, so the coefficient of $\\alpha^k$ in the whole expression comes from collecting terms. Alternatively, rewrite directly:\n$$\\bigl(\\alpha x+(1-x)\\bigr)^n=\\sum_{k=0}^n\\binom{n}{k}(\\alpha x)^k(1-x)^{n-k}.$$\n\nThis is the cleaner form: here the coefficient of $\\alpha^k$ is $\\binom{n}{k}x^k(1-x)^{n-k}$. Integrating term by term, the coefficient of $\\alpha^k$ in the integral is\n$$\\binom{n}{k}\\int_0^1 x^k(1-x)^{n-k}\\,dx.$$\n\n(iii) By (i), for $\\alpha\\neq 1$,\n$$\\int_0^1\\bigl(1+(\\alpha-1)x\\bigr)^n dx=\\frac{\\alpha^{n+1}-1}{(n+1)(\\alpha-1)}=\\frac{1}{n+1}\\sum_{j=0}^{n}\\alpha^j.$$\n\n(using the geometric sum $\\alpha^{n+1}-1=(\\alpha-1)(1+\\alpha+\\cdots+\\alpha^n)$).\n\nThus the coefficient of $\\alpha^k$ (for $0\\le k\\le n$) is $\\dfrac{1}{n+1}$, uniformly for each $k$. But by (ii) this coefficient equals $\\binom{n}{k}\\int_0^1 x^k(1-x)^{n-k}dx$. Hence\n$$\\binom{n}{k}\\int_0^1 x^k(1-x)^{n-k}dx=\\frac{1}{n+1},$$\nso\n$$\\int_0^1 x^k(1-x)^{n-k}dx=\\frac{1}{(n+1)\\binom{n}{k}}=\\frac{k!(n-k)!}{(n+1)!}.$$\n\nas required.",
+  "solutionStatus": "full",
+  "hints": [
+    "For (i), substitute u=1+(alpha-1)x.",
+    "For (ii), expand (alpha x + (1-x))^n via the binomial theorem with terms (alpha x)^k (1-x)^{n-k}.",
+    "For (iii), rewrite the result of (i) using the geometric sum to read off the coefficient of alpha^k."
+  ]
+}
