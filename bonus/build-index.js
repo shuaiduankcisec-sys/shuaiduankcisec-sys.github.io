@@ -10,12 +10,18 @@ const INDEX_PATH = path.join(DATA_DIR, 'index.json');
 
 function makePreview(statement, maxLen) {
   if (!statement) return '';
-  // 去掉 LaTeX 换行空白，取前 maxLen 字符，截断到完整行
-  const flat = statement.replace(/\n+/g, ' ').trim();
+  // flatten display math ($$...$$) to inline ($...$) so the preview stays compact
+  let flat = statement.replace(/\$\$([^$]+)\$\$/g, '$ $1$ ');
+  flat = flat.replace(/\n+/g, ' ').trim();
   if (flat.length <= maxLen) return flat;
   let cut = flat.slice(0, maxLen);
   const lastSpace = cut.lastIndexOf(' ');
   if (lastSpace > maxLen * 0.6) cut = cut.slice(0, lastSpace);
+  // if there's an odd number of $ delimiters, the last one is unclosed — trim it
+  const dollars = (cut.match(/\$/g) || []).length;
+  if (dollars % 2 === 1) {
+    cut = cut.slice(0, cut.lastIndexOf('$'));
+  }
   return cut + '…';
 }
 
@@ -32,6 +38,7 @@ const entries = files.map(f => {
     level: q.level,
     difficulty: q.difficulty,
     topics: q.topics || [],
+    methods: q.methods || [],
     solutionStatus: q.solutionStatus || 'none',
     preview: makePreview(q.statement, 140)
   };

@@ -188,14 +188,12 @@
     if (q.source === 'Original') return 'Original';
     return q.source + (q.paper ? ' ' + q.paper : '');
   }
-  function appendMeta(container, q) {
-    var meta = el('div', 'bq-q-meta');
-    meta.appendChild(el('span', 'bq-badge src', sourceLabel(q)));
-    if (q.year) meta.appendChild(el('span', 'bq-badge', String(q.year)));
-    if (q.level === 'A2-extension') meta.appendChild(el('span', 'bq-badge a2', 'A2 stretch'));
-    meta.appendChild(el('span', 'bq-badge diff', 'Difficulty ' + q.difficulty + '/5'));
-    if (q.solutionStatus === 'full') meta.appendChild(el('span', 'bq-badge has-sol', '✓ Solution'));
-    container.appendChild(meta);
+  function starsHTML(n) {
+    var s = '';
+    for (var i = 1; i <= 5; i++) {
+      s += '<svg viewBox="0 0 24 24" width="14" height="14" fill="' + (i <= n ? 'currentColor' : 'none') + '" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17.8 5.9 20.4l1.5-6.8L2.2 9l6.9-.7L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>';
+    }
+    return s;
   }
 
   // ---------- list ----------
@@ -221,14 +219,38 @@
 
     qs.forEach(function (q) {
       var item = el('div', 'bq-q-item' + (state.activeId === q.id ? ' active' : ''));
-      item.appendChild(el('div', 'bq-q-title', q.title));
-      // show the question's opening lines directly in the list
+
+      var body = el('div', 'bq-q-body');
+      // show the question content directly (no descriptive title)
       if (q.preview) {
         var prev = el('div', 'bq-q-preview');
         prev.textContent = q.preview;
-        item.appendChild(prev);
+        body.appendChild(prev);
+        renderMath(prev);
       }
-      appendMeta(item, q);
+      // source line (small, subdued)
+      var srcLine = el('div', 'bq-q-src');
+      var srcText = sourceLabel(q) + (q.year ? ' ' + q.year : '');
+      if (q.level === 'A2-extension') srcText += ' · A2 stretch';
+      srcLine.textContent = srcText;
+      body.appendChild(srcLine);
+      // methods / mathematical ideas
+      if (q.methods && q.methods.length) {
+        var mWrap = el('div', 'bq-methods');
+        q.methods.forEach(function (m) {
+          mWrap.appendChild(el('span', 'bq-method', m));
+        });
+        body.appendChild(mWrap);
+      }
+      item.appendChild(body);
+
+      // difficulty stars on the right
+      var diff = el('div', 'bq-q-stars');
+      diff.title = 'Difficulty ' + q.difficulty + '/5';
+      diff.setAttribute('aria-label', 'Difficulty ' + q.difficulty + ' out of 5');
+      diff.innerHTML = starsHTML(q.difficulty);
+      item.appendChild(diff);
+
       item.addEventListener('click', function () { openDetail(q); });
       wrap.appendChild(item);
     });
@@ -255,20 +277,38 @@
 
     var back = el('button', 'bq-back');
     back.type = 'button';
-    back.textContent = '← Back to questions';
+    back.setAttribute('aria-label', 'Back to questions');
+    back.title = 'Back to questions';
+    back.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
     back.addEventListener('click', function () {
       state.activeId = null;
       renderList();
     });
     detail.appendChild(back);
 
-    detail.appendChild(el('h2', null, q.title));
-
-    appendMeta(detail, q);
+    // source + difficulty stars header (no descriptive title)
+    var head = el('div', 'bq-detail-head');
+    var srcText = sourceLabel(q) + (q.year ? ' ' + q.year : '');
+    if (q.level === 'A2-extension') srcText += ' · A2 stretch';
+    head.appendChild(el('span', 'bq-detail-src', srcText));
+    var stars = el('span', 'bq-detail-stars');
+    stars.title = 'Difficulty ' + q.difficulty + '/5';
+    stars.setAttribute('aria-label', 'Difficulty ' + q.difficulty + ' out of 5');
+    stars.innerHTML = starsHTML(q.difficulty);
+    head.appendChild(stars);
+    detail.appendChild(head);
 
     var stmt = el('div', 'bq-statement');
     renderContent(stmt, q.statement || '');
     detail.appendChild(stmt);
+
+    if (q.methods && q.methods.length) {
+      var mWrap = el('div', 'bq-methods');
+      q.methods.forEach(function (m) {
+        mWrap.appendChild(el('span', 'bq-method', m));
+      });
+      detail.appendChild(mWrap);
+    }
 
     if (q.solution) {
       detail.appendChild(el('div', 'bq-divider'));
@@ -298,7 +338,8 @@
     }
 
     if (q.sourceUrl) {
-      var link = el('a', 'bq-source-link', 'View original source →');
+      var link = el('a', 'bq-source-link');
+      link.innerHTML = 'Source<svg viewBox="0 0 24 24" width="13" height="13" fill="none" aria-hidden="true"><path d="M14 4h6v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 4l-9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
       link.href = q.sourceUrl;
       link.target = '_blank';
       link.rel = 'noopener';
