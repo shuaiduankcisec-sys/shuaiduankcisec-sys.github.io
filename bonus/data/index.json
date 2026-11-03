@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ch02-001",
+    "chapter": 2,
+    "title": "Sum and product of roots under a linear constraint",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1997,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": ["quadratics", "roots of equations"],
+    "solutionStatus": "full"
+  },
+  {
+    "id": "ch06-001",
+    "chapter": 6,
+    "title": "Stationary points of a cubic and touching the x-axis",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1996,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": ["differentiation", "stationary points"],
+    "solutionStatus": "full"
+  },
+  {
+    "id": "ch06-002",
+    "chapter": 6,
+    "title": "Composite function: derivatives and stationary points",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1988,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": ["differentiation", "chain rule", "stationary points"],
+    "solutionStatus": "full"
+  },
+  {
+    "id": "ch06-003",
+    "chapter": 6,
+    "title": "Melting snowman: related rates and optimisation",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1991,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": ["differentiation", "related rates", "optimisation"],
+    "solutionStatus": "full"
+  },
+  {
+    "id": "ch06-004",
+    "chapter": 6,
+    "title": "Logarithmic differentiation of x^x and beyond",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1994,
+    "level": "A2-extension",
+    "difficulty": 4,
+    "topics": ["differentiation", "logarithmic differentiation"],
+    "solutionStatus": "full"
+  }
+]

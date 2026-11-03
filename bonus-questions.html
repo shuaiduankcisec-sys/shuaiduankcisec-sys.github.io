@@ -6,6 +6,8 @@
   <title data-i18n="bonusPageTitle">Bonus Questions · A Level Tools</title>
   <meta name="description" data-i18n-attr="content:bonusDesc" content="A Level bonus questions and practice." />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="bonus/bonus-app.css" />
+  <link rel="stylesheet" href="bonus/assets/katex/katex.min.css" />
 </head>
 <body>
   <header class="nav" id="top">
@@ -43,22 +45,7 @@
 
   <main>
     <section class="section embed-section">
-      <!--
-        ===== 嵌入你的新系统 =====
-        方式 A（推荐，最简单）：把下面 <iframe> 的 src 改成你的系统地址，例如
-          <iframe src="https://your-app.example.com" ...></iframe>
-        方式 B（直接内联）：删除 <iframe> 和占位层，把你的 HTML/JS 放进下面的容器即可。
-        嵌入后如需隐藏占位层，把 #embed-placeholder 这段删掉或加 style="display:none"。
-      -->
-      <div class="embed-frame">
-        <iframe id="bonus-embed" src="" title="Bonus Questions System" loading="lazy"></iframe>
-        <div class="embed-placeholder" id="embed-placeholder">
-          <div class="embed-placeholder-icon">+</div>
-          <h3 data-i18n="embedTitle">Embed your system here</h3>
-          <p data-i18n="embedHint">Set the iframe src in bonus-questions.html to your app URL, or drop your system into this container.</p>
-          <span class="embed-hint-code">&lt;iframe src="https://your-app.example.com"&gt;&lt;/iframe&gt;</span>
-        </div>
-      </div>
+      <div id="bq-app" class="bq-app"></div>
     </section>
   </main>
 
@@ -67,6 +54,9 @@
     <p class="footer-note" data-i18n="footerNote">Deployed on GitHub Pages · Static site</p>
   </footer>
 
+  <script src="bonus/assets/katex/katex.min.js"></script>
+  <script src="bonus/assets/katex/auto-render.min.js"></script>
   <script src="i18n.js"></script>
+  <script src="bonus/bonus-app.js"></script>
 </body>
 </html>

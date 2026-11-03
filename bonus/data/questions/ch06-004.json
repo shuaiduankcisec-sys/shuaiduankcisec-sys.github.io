@@ -1,0 +1,21 @@
+{
+  "id": "ch06-004",
+  "chapter": 6,
+  "title": "Logarithmic differentiation of x^x and beyond",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions/94-s1-q2",
+  "solutionUrl": "",
+  "level": "A2-extension",
+  "difficulty": 4,
+  "topics": ["differentiation", "logarithmic differentiation", "implicit differentiation", "exponentials and logarithms"],
+  "statement": "Given that $a$ is constant, differentiate the following expressions with respect to $x$:\n\n(i) $x^{a}$;\n\n(ii) $a^{x}$;\n\n(iii) $x^{x}$;\n\n(iv) $x^{(x^{x})}$;\n\n(v) $(x^{x})^{x}$.",
+  "solution": "(i) **Power rule:**\n$$\\frac{d}{dx}x^{a}=ax^{a-1}.$$\n\n(ii) **Exponential rule:** using $a^{x}=e^{x\\ln a}$,\n$$\\frac{d}{dx}a^{x}=a^{x}\\ln a.$$\n\n(iii) **Logarithmic differentiation.** Write $x^{x}=e^{x\\ln x}$. Then\n$$\\frac{d}{dx}x^{x}=e^{x\\ln x}\\cdot\\frac{d}{dx}(x\\ln x)=x^{x}\\left(\\ln x+1\\right).$$\n\n(iv) Let $y=x^{(x^{x})}$. Taking logarithms,\n$$\\ln y=x^{x}\\ln x.$$\nDifferentiating both sides with respect to $x$ (using (iii) for $\\frac{d}{dx}x^{x}$):\n$$\\frac{1}{y}\\frac{dy}{dx}=x^{x}(\\ln x+1)\\ln x+x^{x}\\cdot\\frac{1}{x}=x^{x}\\left[(\\ln x+1)\\ln x+\\frac1x\\right].$$\nTherefore\n$$\\frac{dy}{dx}=x^{(x^{x})}\\cdot x^{x}\\left[(\\ln x+1)\\ln x+\\frac1x\\right].$$\n\n(v) Simplify first: $(x^{x})^{x}=x^{x\\cdot x}=x^{x^2}$. Using logarithmic differentiation on $x^{x^2}=e^{x^2\\ln x}$:\n$$\\frac{d}{dx}x^{x^2}=x^{x^2}\\cdot\\frac{d}{dx}(x^2\\ln x)=x^{x^2}\\left(2x\\ln x+x\\right).$$\n\nSo the answers are:\n$$\\text{(i) }ax^{a-1},\\quad\\text{(ii) }a^{x}\\ln a,\\quad\\text{(iii) }x^{x}(\\ln x+1),$$\n$$\\text{(iv) }x^{(x^{x})}x^{x}\\left[(\\ln x+1)\\ln x+\\tfrac1x\\right],\\quad\\text{(v) }x^{x^2}(2x\\ln x+x).$$",
+  "solutionStatus": "full",
+  "hints": [
+    "For x^x, write x^x = e^(x ln x) and use the chain rule.",
+    "For x^(x^x), take logs and use the result from (iii).",
+    "Simplify (x^x)^x to x^(x^2) first."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ch06-001",
+  "chapter": 6,
+  "title": "Stationary point and the value of a derivative at a limit",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions/96-s1-q4",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["differentiation", "stationary points", "increasing and decreasing functions"],
+  "statement": "The curve\n$$y = x^3 - 3x + k$$\nhas two distinct turning points.\n\nFind the values of $x$ at these turning points, and determine the values of $k$ for which the curve touches the $x$-axis.",
+  "solution": "Differentiate:\n$$\\frac{dy}{dx} = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1).$$\n\nSetting $\\frac{dy}{dx}=0$ gives turning points at $x = -1$ and $x = 1$.\n\nThe corresponding $y$-values are:\n$$y(-1) = (-1)^3 - 3(-1) + k = -1 + 3 + k = k + 2,$$\n$$y(1) = 1 - 3 + k = k - 2.$$\n\nThe curve touches the $x$-axis exactly when one of these turning points lies on the $x$-axis, i.e. when $y = 0$ at a turning point.\n\nTherefore either\n$$k + 2 = 0 \\quad\\Rightarrow\\quad k = -2,$$\nor\n$$k - 2 = 0 \\quad\\Rightarrow\\quad k = 2.$$\n\nHence the curve touches the $x$-axis when\n$$\\boxed{\\,k = \\pm 2\\,}.$$\n\n(At $k=2$ the turning point at $x=1$ touches the axis; at $k=-2$ the turning point at $x=-1$ touches the axis.)",
+  "solutionStatus": "full",
+  "hints": [
+    "Differentiate and solve f'(x)=0 for the turning points.",
+    "Substitute each turning point x-value back into y.",
+    "The curve touches the x-axis when a turning point has y = 0."
+  ]
+}

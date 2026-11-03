@@ -1,0 +1,21 @@
+{
+  "id": "ch06-003",
+  "chapter": 6,
+  "title": "Melting snowman: related rates and optimisation",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1991,
+  "sourceUrl": "https://step.maths.org/questions/91-s1-q2",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["differentiation", "related rates", "optimisation", "maxima and minima"],
+  "statement": "Frosty the snowman is made from two uniform spherical snowballs, of initial radii $2R$ and $3R$. The smaller (which is his head) stands on top of the larger. As each snowball melts, its volume decreases at a rate which is directly proportional to its surface area, the constant of proportionality being the same for both snowballs. During melting each snowball remains spherical and uniform.\n\nWhen Frosty is half his initial height, find the ratio of his volume to his initial volume.\n\nIf $V$ and $S$ denote his total volume and surface area respectively, find the maximum value of $\\frac{dV}{dS}$ up to the moment when his head disappears.",
+  "solution": "**Melting law.** For a sphere of radius $r$, volume $V=\\tfrac43\\pi r^3$ and surface area $S=4\\pi r^2$. The rate of volume loss is proportional to surface area:\n$$\\frac{dV}{dt}=-kS=-k\\cdot 4\\pi r^2,$$\nfor some constant $k>0$. But\n$$\\frac{dV}{dt}=\\frac{dV}{dr}\\frac{dr}{dt}=4\\pi r^2\\frac{dr}{dt}.$$\nHence $4\\pi r^2\\frac{dr}{dt}=-4k\\pi r^2$, so\n$$\\frac{dr}{dt}=-k.$$\n\nThus **each radius decreases at the same constant rate $k$** (until that ball disappears). Initially the radii are $2R$ and $3R$, so they become\n$$r_{\\text{head}}(t)=2R-kt,\\qquad r_{\\text{body}}(t)=3R-kt.$$\n\n**Height.** Frosty's height is $2r_{\\text{head}}+2r_{\\text{body}}=2(2R-kt)+2(3R-kt)=10R-4kt$. Initially this is $10R$; half his initial height is $5R$, which occurs when $10R-4kt=5R$, i.e. $kt=\\tfrac54R$. At that moment the radii are\n$$2R-\\tfrac54R=\\tfrac34R\\quad\\text{and}\\quad 3R-\\tfrac54R=\\tfrac74R.$$\n\n**Ratio of volumes.** The initial volume is $\\tfrac43\\pi[(2R)^3+(3R)^3]=\\tfrac43\\pi R^3(8+27)=\\tfrac{140}{3}\\pi R^3$. At half-height it is $\\tfrac43\\pi[(\\tfrac34R)^3+(\\tfrac74R)^3]=\\tfrac43\\pi R^3(\\tfrac{27}{64}+\\tfrac{343}{64})=\\tfrac43\\pi R^3\\cdot\\tfrac{370}{64}$. The ratio is\n$$\\frac{\\tfrac{370}{64}}{35}=\\frac{370}{64\\times 35}=\\frac{37}{224}.$$\n\nSo the volume ratio is $\\boxed{\\tfrac{37}{224}}$.\n\n**Maximum of $dV/dS$.** Write the two radii as $r_1=2R-kt$ and $r_2=3R-kt$ (valid until the head disappears at $kt=2R$, i.e. $r_1=0$). The total volume and surface area are\n$$V=\\tfrac43\\pi(r_1^3+r_2^3),\\qquad S=4\\pi(r_1^2+r_2^2).$$\n\nSince $\\frac{dr_1}{dt}=\\frac{dr_2}{dt}=-k$, we have\n$$\\frac{dV}{dt}=4\\pi(r_1^2+r_2^2)(-k)=-kS,\\qquad\\frac{dS}{dt}=8\\pi(r_1+r_2)(-k)=-8k\\pi(r_1+r_2).$$\n\nTherefore\n$$\\frac{dV}{dS}=\\frac{dV/dt}{dS/dt}=\\frac{-kS}{-8k\\pi(r_1+r_2)}=\\frac{4\\pi(r_1^2+r_2^2)}{8\\pi(r_1+r_2)}=\\frac{r_1^2+r_2^2}{2(r_1+r_2)}.$$\n\nNow $r_1+r_2=(2R-kt)+(3R-kt)=5R-2kt$ is decreasing, while $r_1^2+r_2^2$ is also decreasing. To maximise $\\frac{dV}{dS}$ as $kt$ increases from $0$ to $2R$, observe it is a decreasing function of $kt$ (both numerator decreases and denominator decreases, but the ratio decreases). Its maximum is therefore attained at the start, $kt=0$, where\n$$\\frac{dV}{dS}=\\frac{(2R)^2+(3R)^2}{2(2R+3R)}=\\frac{4R^2+9R^2}{10R}=\\frac{13R^2}{10R}=\\frac{13R}{10}.$$\n\nHence the maximum value is $\\boxed{\\tfrac{13R}{10}}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Show dr/dt is the same constant for both spheres by relating dV/dt to dr/dt.",
+    "Height = 2r_head + 2r_body; find the time when it halves.",
+    "Use dV/dS = (dV/dt)/(dS/dt) and note both radii shrink at rate k."
+  ]
+}
