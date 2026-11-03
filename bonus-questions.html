@@ -11,15 +11,21 @@
   <header class="nav" id="top">
     <div class="nav-inner">
       <div class="nav-left">
-        <a class="brand" href="index.html"><span data-i18n="brandName">Demo User</span><span class="brand-sub" data-i18n="brandSub">· Demo</span></a>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">DU</span>
+          <span><span data-i18n="brandName">Demo User</span><span class="brand-sub" data-i18n="brandSub">· Demo</span></span>
+        </a>
         <a class="nav-home" href="index.html" data-i18n="navHome">Home</a>
       </div>
       <nav class="nav-right">
         <a href="about.html" data-i18n="navAbout">About</a>
         <div class="dropdown">
-          <button class="drop-btn" type="button" data-i18n="navTools" aria-haspopup="true" aria-expanded="false">A Level Tools</button>
+          <button class="drop-btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <span data-i18n="navTools">A Level Tools</span>
+            <svg class="chev" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
           <div class="dropdown-content">
-            <a href="bonus-questions.html" data-i18n="navBonus">Bonus Questions</a>
+            <a href="bonus-questions.html" class="active"><span class="dot"></span><span data-i18n="navBonus">Bonus Questions</span></a>
           </div>
         </div>
         <button id="langBtn" class="lang-btn" type="button">中文</button>
@@ -27,10 +33,32 @@
     </div>
   </header>
 
+  <section class="page-head">
+    <div class="page-head-inner">
+      <span class="page-eyebrow" data-i18n="bonusEyebrow">A Level Tools</span>
+      <h1 class="page-title" data-i18n="bonusTitle">Bonus Questions</h1>
+      <p class="page-lede" data-i18n="bonusLede">Challenging extension questions and practice set for A Level Mathematics.</p>
+    </div>
+  </section>
+
   <main>
-    <section class="section">
-      <h2 class="section-title" data-i18n="bonusTitle">Bonus Questions</h2>
-      <p class="lede placeholder" data-i18n="bonusPlaceholder">Content coming soon.</p>
+    <section class="section embed-section">
+      <!--
+        ===== 嵌入你的新系统 =====
+        方式 A（推荐，最简单）：把下面 <iframe> 的 src 改成你的系统地址，例如
+          <iframe src="https://your-app.example.com" ...></iframe>
+        方式 B（直接内联）：删除 <iframe> 和占位层，把你的 HTML/JS 放进下面的容器即可。
+        嵌入后如需隐藏占位层，把 #embed-placeholder 这段删掉或加 style="display:none"。
+      -->
+      <div class="embed-frame">
+        <iframe id="bonus-embed" src="" title="Bonus Questions System" loading="lazy"></iframe>
+        <div class="embed-placeholder" id="embed-placeholder">
+          <div class="embed-placeholder-icon">+</div>
+          <h3 data-i18n="embedTitle">Embed your system here</h3>
+          <p data-i18n="embedHint">Set the iframe src in bonus-questions.html to your app URL, or drop your system into this container.</p>
+          <span class="embed-hint-code">&lt;iframe src="https://your-app.example.com"&gt;&lt;/iframe&gt;</span>
+        </div>
+      </div>
     </section>
   </main>
 

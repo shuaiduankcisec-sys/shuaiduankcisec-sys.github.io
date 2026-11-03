@@ -15,15 +15,21 @@
   <header class="nav" id="top">
     <div class="nav-inner">
       <div class="nav-left">
-        <a class="brand" href="index.html"><span data-i18n="brandName">Demo User</span><span class="brand-sub" data-i18n="brandSub">· Demo</span></a>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">DU</span>
+          <span><span data-i18n="brandName">Demo User</span><span class="brand-sub" data-i18n="brandSub">· Demo</span></span>
+        </a>
         <a class="nav-home" href="index.html" data-i18n="navHome">Home</a>
       </div>
       <nav class="nav-right">
         <a href="about.html" data-i18n="navAbout">About</a>
         <div class="dropdown">
-          <button class="drop-btn" type="button" data-i18n="navTools" aria-haspopup="true" aria-expanded="false">A Level Tools</button>
+          <button class="drop-btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <span data-i18n="navTools">A Level Tools</span>
+            <svg class="chev" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
           <div class="dropdown-content">
-            <a href="bonus-questions.html" data-i18n="navBonus">Bonus Questions</a>
+            <a href="bonus-questions.html"><span class="dot"></span><span data-i18n="navBonus">Bonus Questions</span></a>
           </div>
         </div>
         <button id="langBtn" class="lang-btn" type="button">中文</button>

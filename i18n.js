@@ -59,6 +59,10 @@ const i18n = {
     bonusDesc: "A Level bonus questions and practice.",
     bonusTitle: "Bonus Questions",
     bonusPlaceholder: "Content coming soon.",
+    bonusEyebrow: "A Level Tools",
+    bonusLede: "Challenging extension questions and practice set for A Level Mathematics.",
+    embedTitle: "Embed your system here",
+    embedHint: "Set the iframe src in bonus-questions.html to your app URL, or drop your system into this container.",
 
     footerName: "Demo User", footerSite: "Personal Site",
     footerNote: "Deployed on GitHub Pages · Static site"
@@ -123,6 +127,10 @@ const i18n = {
     bonusDesc: "A Level 附加题与练习。",
     bonusTitle: "附加题",
     bonusPlaceholder: "内容整理中。",
+    bonusEyebrow: "A Level 工具",
+    bonusLede: "面向 A Level 数学的拓展难题与专项练习。",
+    embedTitle: "在此嵌入你的系统",
+    embedHint: "把 bonus-questions.html 里的 iframe src 改成你的应用地址，或直接把系统放进这个容器。",
 
     footerName: "示例用户", footerSite: "个人主页",
     footerNote: "基于 GitHub Pages 部署 · 纯静态站点"
@@ -181,3 +189,13 @@ document.addEventListener('click', function () {
     if (b) b.setAttribute('aria-expanded', 'false');
   });
 });
+
+// Sticky nav: subtle shadow once scrolled
+var navEl = document.querySelector('.nav');
+function onScroll() {
+  if (!navEl) return;
+  if (window.scrollY > 8) navEl.classList.add('scrolled');
+  else navEl.classList.remove('scrolled');
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
