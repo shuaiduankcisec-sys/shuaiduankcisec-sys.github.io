@@ -10,9 +10,12 @@
   var BASE = 'bonus/data';
   var state = {
     level: 'AS',
+    board: 'all',    // exam board filter
     chapter: null,   // null = all chapters
     chapters: [],    // full chapter list
     index: [],       // question metadata
+    boards: [],      // exam boards config
+    boardRules: {},  // board id -> rules
     activeId: null
   };
 
@@ -129,7 +132,23 @@
 
   function buildMainHead() {
     var head = el('div', 'bq-main-head');
-    head.appendChild(el('h2', null, 'Questions'));
+    // exam board filter dropdown
+    var boardWrap = el('div', 'bq-board-select');
+    var bsel = el('select');
+    bsel.setAttribute('aria-label', 'Filter by exam board');
+    state.boards.forEach(function (b) {
+      var o = el('option', null, b.name);
+      o.value = b.id;
+      bsel.appendChild(o);
+    });
+    bsel.value = state.board;
+    bsel.addEventListener('change', function () {
+      state.board = bsel.value;
+      state.activeId = null;
+      renderList();
+    });
+    boardWrap.appendChild(bsel);
+    head.appendChild(boardWrap);
     var count = el('span', 'bq-count', '');
     head.appendChild(count);
     appEl._count = count;
@@ -140,9 +159,23 @@
     return state.chapters.filter(function (c) { return c.level === state.level; });
   }
 
+  // returns true if a question is within the selected board's syllabus
+  function inBoard(q) {
+    if (state.board === 'all') return true;
+    var rule = state.boardRules[state.board];
+    if (!rule || !rule.excludeMethods) return true;
+    var methods = (q.methods || []).map(function (m) { return m.toLowerCase(); });
+    for (var i = 0; i < rule.excludeMethods.length; i++) {
+      if (methods.indexOf(rule.excludeMethods[i].toLowerCase()) !== -1) return false;
+    }
+    return true;
+  }
+
   function questionsForChapter() {
     return state.index.filter(function (q) {
-      return q.level === state.level && (state.chapter == null || q.chapter === state.chapter);
+      return q.level === state.level
+        && (state.chapter == null || q.chapter === state.chapter)
+        && inBoard(q);
     });
   }
 
@@ -350,10 +383,13 @@
   // ---------- init ----------
   Promise.all([
     fetchJSON(BASE + '/chapters.json'),
-    fetchJSON(BASE + '/index.json')
+    fetchJSON(BASE + '/index.json'),
+    fetchJSON(BASE + '/exam-boards.json')
   ]).then(function (res) {
     state.chapters = res[0];
     state.index = res[1];
+    state.boards = res[2].boards || [];
+    state.boardRules = res[2].rules || {};
     buildShell();
     renderSidebar();
     renderList();
