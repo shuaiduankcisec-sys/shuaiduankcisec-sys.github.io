@@ -183,6 +183,21 @@
     });
   }
 
+  // ---------- shared badge helpers ----------
+  function sourceLabel(q) {
+    if (q.source === 'Original') return 'Original';
+    return q.source + (q.paper ? ' ' + q.paper : '');
+  }
+  function appendMeta(container, q) {
+    var meta = el('div', 'bq-q-meta');
+    meta.appendChild(el('span', 'bq-badge src', sourceLabel(q)));
+    if (q.year) meta.appendChild(el('span', 'bq-badge', String(q.year)));
+    if (q.level === 'A2-extension') meta.appendChild(el('span', 'bq-badge a2', 'A2 stretch'));
+    meta.appendChild(el('span', 'bq-badge diff', 'Difficulty ' + q.difficulty + '/5'));
+    if (q.solutionStatus === 'full') meta.appendChild(el('span', 'bq-badge has-sol', '✓ Solution'));
+    container.appendChild(meta);
+  }
+
   // ---------- list ----------
   function renderList() {
     var wrap = appEl._listWrap;
@@ -207,13 +222,13 @@
     qs.forEach(function (q) {
       var item = el('div', 'bq-q-item' + (state.activeId === q.id ? ' active' : ''));
       item.appendChild(el('div', 'bq-q-title', q.title));
-      var meta = el('div', 'bq-q-meta');
-      meta.appendChild(el('span', 'bq-badge src', q.source + (q.paper ? ' ' + q.paper : '')));
-      if (q.year) meta.appendChild(el('span', 'bq-badge', String(q.year)));
-      if (q.level === 'A2-extension') meta.appendChild(el('span', 'bq-badge a2', 'A2 stretch'));
-      meta.appendChild(el('span', 'bq-badge diff', 'Difficulty ' + q.difficulty + '/5'));
-      if (q.solutionStatus === 'full') meta.appendChild(el('span', 'bq-badge has-sol', '✓ Solution'));
-      item.appendChild(meta);
+      // show the question's opening lines directly in the list
+      if (q.preview) {
+        var prev = el('div', 'bq-q-preview');
+        prev.textContent = q.preview;
+        item.appendChild(prev);
+      }
+      appendMeta(item, q);
       item.addEventListener('click', function () { openDetail(q); });
       wrap.appendChild(item);
     });
@@ -249,12 +264,7 @@
 
     detail.appendChild(el('h2', null, q.title));
 
-    var meta = el('div', 'bq-q-meta');
-    meta.appendChild(el('span', 'bq-badge src', q.source + (q.paper ? ' ' + q.paper : '')));
-    if (q.year) meta.appendChild(el('span', 'bq-badge', String(q.year)));
-    if (q.level === 'A2-extension') meta.appendChild(el('span', 'bq-badge a2', 'A2 stretch'));
-    meta.appendChild(el('span', 'bq-badge diff', 'Difficulty ' + q.difficulty + '/5'));
-    detail.appendChild(meta);
+    appendMeta(detail, q);
 
     var stmt = el('div', 'bq-statement');
     renderContent(stmt, q.statement || '');

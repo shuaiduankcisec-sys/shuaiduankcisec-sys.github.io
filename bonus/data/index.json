@@ -3,25 +3,35 @@
     "id": "ch02-001",
     "chapter": 2,
     "title": "Sum and product of roots under a linear constraint",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 1997,
+    "source": "Original",
+    "paper": "",
+    "year": null,
     "level": "AS",
     "difficulty": 3,
-    "topics": ["quadratics", "roots of equations"],
-    "solutionStatus": "full"
+    "topics": [
+      "quadratics",
+      "roots of equations",
+      "symmetric functions of roots"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let the quadratic equation $x^2 + px + q = 0$ have roots $\\alpha$ and $\\beta$. Given that $\\alpha$ and $\\beta$ are real and that $$3\\alpha…"
   },
   {
     "id": "ch06-001",
     "chapter": 6,
     "title": "Stationary points of a cubic and touching the x-axis",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 1996,
+    "source": "Original",
+    "paper": "",
+    "year": null,
     "level": "AS",
-    "difficulty": 3,
-    "topics": ["differentiation", "stationary points"],
-    "solutionStatus": "full"
+    "difficulty": 4,
+    "topics": [
+      "differentiation",
+      "stationary points",
+      "increasing and decreasing functions"
+    ],
+    "solutionStatus": "full",
+    "preview": "The curve $$y = x^3 - 3x + k$$ has two distinct turning points. Find the values of $x$ at these turning points, and determine the values of…"
   },
   {
     "id": "ch06-002",
@@ -32,8 +42,14 @@
     "year": 1988,
     "level": "AS",
     "difficulty": 3,
-    "topics": ["differentiation", "chain rule", "stationary points"],
-    "solutionStatus": "full"
+    "topics": [
+      "differentiation",
+      "chain rule",
+      "stationary points",
+      "trigonometric functions"
+    ],
+    "solutionStatus": "full",
+    "preview": "The functions $f$ and $g$ are related (for all real $x$) by $$g(x)=f(x)+\\frac{1}{f(x)}.$$ Express $g'(x)$ and $g''(x)$ in terms of $f(x)$…"
   },
   {
     "id": "ch06-003",
@@ -44,8 +60,14 @@
     "year": 1991,
     "level": "AS",
     "difficulty": 4,
-    "topics": ["differentiation", "related rates", "optimisation"],
-    "solutionStatus": "full"
+    "topics": [
+      "differentiation",
+      "related rates",
+      "optimisation",
+      "maxima and minima"
+    ],
+    "solutionStatus": "full",
+    "preview": "Frosty the snowman is made from two uniform spherical snowballs, of initial radii $2R$ and $3R$. The smaller (which is his head) stands on…"
   },
   {
     "id": "ch06-004",
@@ -56,7 +78,13 @@
     "year": 1994,
     "level": "A2-extension",
     "difficulty": 4,
-    "topics": ["differentiation", "logarithmic differentiation"],
-    "solutionStatus": "full"
+    "topics": [
+      "differentiation",
+      "logarithmic differentiation",
+      "implicit differentiation",
+      "exponentials and logarithms"
+    ],
+    "solutionStatus": "full",
+    "preview": "Given that $a$ is constant, differentiate the following expressions with respect to $x$: (i) $x^{a}$; (ii) $a^{x}$; (iii) $x^{x}$; (iv)…"
   }
 ]

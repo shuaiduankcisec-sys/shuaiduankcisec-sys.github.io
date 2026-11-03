@@ -242,8 +242,9 @@ a:hover { text-decoration: underline; }
 .section {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 56px 24px;
+  padding: 40px 24px;
 }
+.embed-section { padding-top: 12px; }
 .section-title {
   font-size: 26px;
   margin: 0 0 24px;
@@ -326,7 +327,7 @@ a.card.link-card:hover {
 /* ---------- Page head (Bonus / inner pages) ---------- */
 .page-head {
   background: linear-gradient(180deg, var(--accent-soft), #ffffff 82%);
-  padding: 64px 24px 46px;
+  padding: 28px 24px 26px;
   text-align: center;
 }
 .page-head-inner { max-width: 680px; margin: 0 auto; }
