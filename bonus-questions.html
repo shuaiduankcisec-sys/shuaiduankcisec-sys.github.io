@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="bonusPageTitle">Bonus Questions · A Level Tools</title>
+  <meta name="description" data-i18n-attr="content:bonusDesc" content="A Level bonus questions and practice." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <a class="brand" href="index.html"><span data-i18n="brandName">Demo User</span><span class="brand-sub" data-i18n="brandSub">· Demo</span></a>
+        <a class="nav-home" href="index.html" data-i18n="navHome">Home</a>
+      </div>
+      <nav class="nav-right">
+        <a href="about.html" data-i18n="navAbout">About</a>
+        <div class="dropdown">
+          <button class="drop-btn" type="button" data-i18n="navTools" aria-haspopup="true" aria-expanded="false">A Level Tools</button>
+          <div class="dropdown-content">
+            <a href="bonus-questions.html" data-i18n="navBonus">Bonus Questions</a>
+          </div>
+        </div>
+        <button id="langBtn" class="lang-btn" type="button">中文</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2 class="section-title" data-i18n="bonusTitle">Bonus Questions</h2>
+      <p class="lede placeholder" data-i18n="bonusPlaceholder">Content coming soon.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> <span data-i18n="footerName">Demo User</span> · <span data-i18n="footerSite">Personal Site</span></p>
+    <p class="footer-note" data-i18n="footerNote">Deployed on GitHub Pages · Static site</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>

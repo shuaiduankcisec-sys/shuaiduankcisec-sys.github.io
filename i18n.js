@@ -4,6 +4,7 @@ const i18n = {
     brandSub: "· Demo",
     navAbout: "About", navExp: "Experience", navSkills: "Expertise",
     navAch: "Achievements", navContact: "Contact",
+    navHome: "Home", navTools: "A Level Tools", navBonus: "Bonus Questions",
 
     homeTitle: "Demo User | Personal Site",
     homeDesc: "Demo personal site: experience, expertise and achievements.",
@@ -54,6 +55,10 @@ const i18n = {
     contactTitle: "Contact",
     contactLede: "Feel free to reach out for teaching, research, or course inquiries.",
     cEmail: "Email", cWechat: "WeChat", cGithub: "GitHub",
+    bonusPageTitle: "Bonus Questions · A Level Tools",
+    bonusDesc: "A Level bonus questions and practice.",
+    bonusTitle: "Bonus Questions",
+    bonusPlaceholder: "Content coming soon.",
 
     footerName: "Demo User", footerSite: "Personal Site",
     footerNote: "Deployed on GitHub Pages · Static site"
@@ -63,6 +68,7 @@ const i18n = {
     brandSub: "· 示例",
     navAbout: "关于", navExp: "经历", navSkills: "专长",
     navAch: "成果", navContact: "联系",
+    navHome: "主页", navTools: "A Level 工具", navBonus: "附加题",
 
     homeTitle: "示例用户 | 个人主页",
     homeDesc: "示例个人主页：涵盖经历、专长与成果。",
@@ -113,6 +119,10 @@ const i18n = {
     contactTitle: "联系方式",
     contactLede: "欢迎就教学、教研合作或课程咨询与我联系。",
     cEmail: "邮箱", cWechat: "微信", cGithub: "GitHub",
+    bonusPageTitle: "附加题 · A Level 工具",
+    bonusDesc: "A Level 附加题与练习。",
+    bonusTitle: "附加题",
+    bonusPlaceholder: "内容整理中。",
 
     footerName: "示例用户", footerSite: "个人主页",
     footerNote: "基于 GitHub Pages 部署 · 纯静态站点"
@@ -152,3 +162,22 @@ if (langBtn) {
 
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// Dropdown menu toggle (click for touch devices; hover handled by CSS)
+document.querySelectorAll('.dropdown').forEach(function (d) {
+  var btn = d.querySelector('.drop-btn');
+  if (btn) {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = d.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+});
+document.addEventListener('click', function () {
+  document.querySelectorAll('.dropdown.open').forEach(function (d) {
+    d.classList.remove('open');
+    var b = d.querySelector('.drop-btn');
+    if (b) b.setAttribute('aria-expanded', 'false');
+  });
+});
