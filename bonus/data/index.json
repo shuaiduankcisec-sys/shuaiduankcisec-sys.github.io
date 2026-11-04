@@ -23,6 +23,27 @@
     "preview": "(i) Express $(3+2\\sqrt{5})^3$ in the form $a+b\\sqrt{5}$, where $a$ and $b$ are integers. (ii) Find the positive integers $c$ and $d$ such…"
   },
   {
+    "id": "ch01-002",
+    "chapter": 1,
+    "title": "",
+    "source": "MAT",
+    "paper": "Q1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "number theory",
+      "square numbers",
+      "divisibility"
+    ],
+    "methods": [
+      "last-digit test for squares",
+      "factorising"
+    ],
+    "solutionStatus": "full",
+    "preview": "Exactly one of these five numbers is a square number. Which one? (a) $99{,}999{,}999$  (b) $123{,}333{,}333$  (c) $649{,}485{,}225$  (d)…"
+  },
+  {
     "id": "ch02-002",
     "chapter": 2,
     "title": "",
@@ -42,6 +63,27 @@
     ],
     "solutionStatus": "full",
     "preview": "The graphs of $y=x^2+5x+6$ and $y=mx-3$, where $m$ is a constant, are plotted on the same set of axes. Given that the graphs do not meet,…"
+  },
+  {
+    "id": "ch02-003",
+    "chapter": 2,
+    "title": "",
+    "source": "MAT",
+    "paper": "Q1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "quadratics",
+      "discriminant",
+      "repeated roots"
+    ],
+    "methods": [
+      "discriminant",
+      "algebraic manipulation"
+    ],
+    "solutionStatus": "full",
+    "preview": "The real numbers $a$, $b$, and $c$ are non-zero. Each of the following quadratic equations has a repeated real root (not necessarily the…"
   },
   {
     "id": "ch03-001",
@@ -85,6 +127,27 @@
     ],
     "solutionStatus": "full",
     "preview": "It is given that $f(x)=x^2-6x$. The curves $y=f(kx)$ and $y=f(x-c)$ have the same minimum point, where $k>0$ and $c>0$. Which of the…"
+  },
+  {
+    "id": "ch04-002",
+    "chapter": 4,
+    "title": "",
+    "source": "MAT",
+    "paper": "Q1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "functions",
+      "equations",
+      "counting roots"
+    ],
+    "methods": [
+      "solving nested equations",
+      "counting distinct real roots"
+    ],
+    "solutionStatus": "full",
+    "preview": "How many distinct real solutions $x$ are there to the equation $ \\left(\\left((x^2-1)^2-2\\right)^2-3\\right)^2=4\\,?$"
   },
   {
     "id": "ch05-001",
@@ -212,6 +275,27 @@
     "preview": "In the simplified expansion of $(2+3x)^{12}$, how many of the terms have a coefficient that is divisible by $12$?"
   },
   {
+    "id": "ch08-002",
+    "chapter": 8,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "series",
+      "geometric series",
+      "trigonometric series"
+    ],
+    "methods": [
+      "simplifying trigonometric terms",
+      "summing a geometric series"
+    ],
+    "solutionStatus": "full",
+    "preview": "Evaluate $ \\sum_{n=0}^{\\infty}\\frac{\\sin\\left(n\\pi+\\dfrac{\\pi}{3}\\right)}{2^n}.$"
+  },
+  {
     "id": "ch09-001",
     "chapter": 9,
     "title": "",
@@ -275,6 +359,27 @@
     "preview": "A triangle $XYZ$ is called *fun* if it has the following properties: $ \\angle YXZ = 30^\\circ, \\qquad XY=\\sqrt{3}a, \\qquad YZ=a,$  where $a$…"
   },
   {
+    "id": "ch10-002",
+    "chapter": 10,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "trigonometry",
+      "exponential functions",
+      "range of a function"
+    ],
+    "methods": [
+      "range of cos x",
+      "solving quadratics"
+    ],
+    "solutionStatus": "full",
+    "preview": "The difference between the maximum and minimum values of the function $ f(x)=a^{\\cos x},$  where $a>0$ and $x$ is real, is $3$. Find the…"
+  },
+  {
     "id": "ch11-001",
     "chapter": 11,
     "title": "",
@@ -293,6 +398,27 @@
     ],
     "solutionStatus": "full",
     "preview": "How many solutions are there to $ (1+3\\cos 3\\theta)^2=4$  in the interval $0^\\circ\\le\\theta\\le180^\\circ$?"
+  },
+  {
+    "id": "ch11-002",
+    "chapter": 11,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "trigonometric equations",
+      "solutions in an interval"
+    ],
+    "methods": [
+      "equating powers",
+      "factoring trigonometric equations",
+      "counting solutions"
+    ],
+    "solutionStatus": "full",
+    "preview": "How many solutions are there to the equation $ 2^{\\tan^2 x}=4^{\\sin^2 x}$  in the range $0\\le x\\le2\\pi$?"
   },
   {
     "id": "ch12-001",
@@ -357,6 +483,26 @@
     ],
     "solutionStatus": "full",
     "preview": "Write down the binomial expansion of $(1+x)^n$, where $n$ is a positive integer. (i) By substituting particular values of $x$, or…"
+  },
+  {
+    "id": "A2-02-002",
+    "chapter": "A2-02",
+    "title": "",
+    "source": "MAT",
+    "paper": "Q1",
+    "year": 2023,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "binomial theorem",
+      "binomial coefficients"
+    ],
+    "methods": [
+      "combining factors",
+      "binomial expansion"
+    ],
+    "solutionStatus": "full",
+    "preview": "The coefficient of $x^{12}$ in $ (1-2x)^5(1+4x^2)^5(1+2x)^5$  is"
   },
   {
     "id": "A2-03-001",

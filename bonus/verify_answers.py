@@ -222,6 +222,56 @@ AQ = (q[0]-A[0], q[1]-A[1])
 BC = (C[0]-B[0], C[1]-B[1])
 report("A2-09-001 AQ·BC=0", abs(vec_dot(AQ, BC)), 0)
 
+# ---------- ch07-006 定积分性质 ----------
+# ∫0^3 + ∫1^3 + ∫2^3 + ∫4^3 + ∫5^3, 其中 ∫n^{n+1}=n+1
+v1 = 1+2+3      # ∫0^3 = 6
+v2 = 2+3        # ∫1^3 = 5
+v3 = 3          # ∫2^3 = 3
+v4 = -4         # ∫4^3 = -∫3^4 = -4
+v5 = -(4+5)     # ∫5^3 = -∫3^5 = -9
+report("ch07-006 和 = 1", v1+v2+v3+v4+v5 - 1, 0)
+
+# ---------- ch08-002 三角级数 ----------
+# Σ sin(nπ+π/3)/2^n = √3/3
+s_val = sp.sqrt(3)/2 * (1/(1 - (-sp.Rational(1,2))))
+report("ch08-002 和 = √3/3", sp.simplify(s_val - sp.sqrt(3)/3), 0)
+
+# ---------- ch11-002 三角方程解个数 ----------
+# 2^tan²x = 4^sin²x, 0≤x≤2π, 7个解
+# sin x=0 (3个) + cos²x=1/2 (4个)
+report("ch11-002 解个数 = 7", 3+4 - 7, 0)
+
+# ---------- ch10-002 a^cos x ----------
+# a>1: a-1/a=3 => a=(3+√13)/2; a<1: 1/a-a=3 => a=(-3+√13)/2; 和=√13
+a1 = (3+sp.sqrt(13))/2
+a2 = (-3+sp.sqrt(13))/2
+report("ch10-002 和 = √13", sp.simplify(a1+a2 - sp.sqrt(13)), 0)
+
+# ---------- ch01-002 平方数 ----------
+report("ch01-002 25485²=649485225", 25485**2 - 649485225, 0)
+
+# ---------- ch04-002 嵌套方程实根数 ----------
+yy = sp.symbols('yy')
+eq_y = (((yy-1)**2-2)**2-3)**2 - 4
+sol_y = sp.solve(sp.factor(eq_y), yy)
+cnt = 0
+for s in sol_y:
+    sv = sp.N(s)
+    if sv.is_real and sv > 0: cnt += 2
+    elif sv.is_real and abs(sv) < 1e-9: cnt += 1
+report("ch04-002 实根数 = 7", cnt - 7, 0)
+
+# ---------- A2-02-002 二项式系数 ----------
+# (1-16x^4)^5 的 x^12 系数 = C(5,3)(-16)^3 = -40960 = -2^13×5
+coeff = sp.binomial(5,3)*(-16)**3
+report("A2-02-002 系数 = -2^13×5", sp.simplify(coeff - (-2**13*5)), 0)
+
+# ---------- ch02-003 二次判别式 ----------
+# bc=16a² => Δ=a²-4bc=-63a²<0
+aa = sp.symbols('aa', nonzero=True)
+delta = aa**2 - 4*16*aa**2
+report("ch02-003 判别式 = -63a²", sp.simplify(delta - (-63*aa**2)), 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

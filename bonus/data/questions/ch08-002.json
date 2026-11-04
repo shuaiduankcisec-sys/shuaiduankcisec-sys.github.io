@@ -1,0 +1,24 @@
+{
+  "id": "ch08-002",
+  "chapter": 8,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2023,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144109/TMUA-2023-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["series", "geometric series", "trigonometric series"],
+  "methods": ["simplifying trigonometric terms", "summing a geometric series"],
+  "statement": "Evaluate\n$$\\sum_{n=0}^{\\infty}\\frac{\\sin\\left(n\\pi+\\dfrac{\\pi}{3}\\right)}{2^n}.$$",
+  "options": ["$0$", "$\\dfrac13$", "$\\dfrac{\\sqrt3}{3}$", "$\\sqrt3$", "$3$"],
+  "answer": "C",
+  "solution": "Using the addition formula,\n$$\\sin\\left(n\\pi+\\tfrac{\\pi}{3}\\right)=\\sin(n\\pi)\\cos\\tfrac{\\pi}{3}+\\cos(n\\pi)\\sin\\tfrac{\\pi}{3}=0+(-1)^n\\cdot\\tfrac{\\sqrt3}{2}=\\frac{\\sqrt3}{2}(-1)^n.$$\n\nTherefore the series is\n$$\\sum_{n=0}^{\\infty}\\frac{\\frac{\\sqrt3}{2}(-1)^n}{2^n}=\\frac{\\sqrt3}{2}\\sum_{n=0}^{\\infty}\\left(-\\frac12\\right)^n.$$\n\nThis is a geometric series with first term $1$ and common ratio $-\\tfrac12$, whose sum is\n$$\\frac{1}{1-(-\\tfrac12)}=\\frac{1}{\\tfrac32}=\\frac23.$$\n\nHence the value is\n$$\\frac{\\sqrt3}{2}\\cdot\\frac23=\\frac{\\sqrt3}{3},$$\nwhich is **option C**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Simplify sin(nπ+π/3) using the addition formula to get (-1)^n √3/2.",
+    "This turns the series into a geometric series with ratio -1/2.",
+    "Sum the geometric series and multiply by √3/2."
+  ]
+}
