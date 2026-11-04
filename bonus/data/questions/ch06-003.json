@@ -8,9 +8,17 @@
   "sourceUrl": "https://step.maths.org/questions/88-s1-q7",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 4,
-  "topics": ["differentiation", "quadratics", "inequalities"],
-  "methods": ["differentiating a quadratic", "bounding a derivative", "triangle inequality"],
+  "difficulty": 5,
+  "topics": [
+    "differentiation",
+    "quadratics",
+    "inequalities"
+  ],
+  "methods": [
+    "differentiating a quadratic",
+    "bounding a derivative",
+    "triangle inequality"
+  ],
   "statement": "The function $f$ is defined by $f(x)=ax^2+bx+c$.\n\nShow that\n$$f'(x)=f(1)\\left(x+\\tfrac12\\right)+f(-1)\\left(x-\\tfrac12\\right)-2f(0)x.$$\n\nIf $a,b$ and $c$ are real and such that $|f(x)|\\le1$ for $|x|\\le1$, show that $|f'(x)|\\le4$ for $|x|\\le1$.\n\nFind particular values of $a,b$ and $c$ such that, for the corresponding function $f$, $|f(x)|\\le1$ for all $x$ with $|x|\\le1$ and $|f'(x)|=4$ for some $x$ satisfying $|x|\\le1$.",
   "solution": "**The identity.** Since $f(1)=a+b+c$, $f(-1)=a-b+c$, $f(0)=c$:\n$$f(1)(x+\\tfrac12)+f(-1)(x-\\tfrac12)-2f(0)x=(a+b+c)(x+\\tfrac12)+(a-b+c)(x-\\tfrac12)-2cx.$$\nThe $x$ coefficient is $(a+b+c)+(a-b+c)-2c=2a$, and the constant term is $\\tfrac12(a+b+c)-\\tfrac12(a-b+c)=b$. So the whole expression is $2ax+b=f'(x)$.\n\n**The bound.** From the identity and the triangle inequality,\n$$|f'(x)|\\le|f(1)|\\,|x+\\tfrac12|+|f(-1)|\\,|x-\\tfrac12|+2|f(0)|\\,|x|\\le|x+\\tfrac12|+|x-\\tfrac12|+2|x|,$$\nusing $|f(\\pm1)|\\le1$ and $|f(0)|\\le1$.\n\nFor $0\\le x\\le1$: if $x\\ge\\tfrac12$ then $|x+\\tfrac12|+|x-\\tfrac12|+2x=(x+\\tfrac12)+(x-\\tfrac12)+2x=4x\\le4$; if $x<\\tfrac12$ then it equals $(x+\\tfrac12)+(\\tfrac12-x)+2x=1+2x\\le2$. So $|f'(x)|\\le4$.\n\nBy symmetry (the same argument with $x\\mapsto-x$, or directly for $-1\\le x\\le0$), the bound also holds on $[-1,0]$. Hence $|f'(x)|\\le4$ for all $|x|\\le1$.\n\n**Sharp example.** Take $f(x)=2x^2-1$, i.e. $a=2$, $b=0$, $c=-1$. Then $|f(x)|=|2x^2-1|\\le1$ for $|x|\\le1$ (since $0\\le x^2\\le1$), and $f'(x)=4x$, so $|f'(\\pm1)|=4$.",
   "solutionStatus": "full",

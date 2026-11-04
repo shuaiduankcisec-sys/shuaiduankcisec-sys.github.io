@@ -9,8 +9,15 @@
   "solutionUrl": "",
   "level": "AS",
   "difficulty": 3,
-  "topics": ["differentiation", "stationary points", "roots of polynomials"],
-  "methods": ["finding stationary points", "intermediate value / sign analysis"],
+  "topics": [
+    "differentiation",
+    "stationary points",
+    "roots of polynomials"
+  ],
+  "methods": [
+    "finding stationary points",
+    "intermediate value / sign analysis"
+  ],
   "statement": "The function\n$$f(x)=\\frac23 x^3+2mx^2+n, \\qquad m>0$$\nhas three distinct real roots.\n\nWhat is the complete range of possible values of $n$, in terms of $m$?",
   "options": [
     "$-\\frac83 m^3<n<0$",

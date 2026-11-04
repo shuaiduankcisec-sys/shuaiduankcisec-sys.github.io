@@ -8,9 +8,16 @@
   "sourceUrl": "https://www.maths.ox.ac.uk/system/files/attachments/test23.pdf",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 3,
-  "topics": ["coordinate geometry", "circles", "tangency"],
-  "methods": ["geometry of tangent circles", "distance formula"],
+  "difficulty": 4,
+  "topics": [
+    "coordinate geometry",
+    "circles",
+    "tangency"
+  ],
+  "methods": [
+    "geometry of tangent circles",
+    "distance formula"
+  ],
   "statement": "Two circles are inside a square $ABCD$ of side-length $1$. One of the circles is tangent to sides $AB$ and to $BC$. The other circle is tangent to sides $CD$ and $DA$. The circles are tangent to each other. The area of the larger circle is $10$ times the area of the smaller circle.\n\nThe sum of the radii of the circles is",
   "options": [
     "$\\dfrac{1+\\sqrt{10}}{8}$",

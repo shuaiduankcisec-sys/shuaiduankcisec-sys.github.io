@@ -8,11 +8,24 @@
   "sourceUrl": "https://www.maths.ox.ac.uk/system/files/attachments/test23.pdf",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 3,
-  "topics": ["polynomials", "repeated roots", "factor theorem"],
-  "methods": ["factor theorem", "equating coefficients"],
+  "difficulty": 4,
+  "topics": [
+    "polynomials",
+    "repeated roots",
+    "factor theorem"
+  ],
+  "methods": [
+    "factor theorem",
+    "equating coefficients"
+  ],
   "statement": "The polynomial $p(x)$ has degree $3$ and has $p(0)=0$, $p(1)=1$, $p(2)=2$.\n\nThe polynomial has a repeated root at $x=M$ with $M>0$. The value of $M$ is",
-  "options": ["$\\dfrac76$", "$\\dfrac65$", "$\\dfrac54$", "$\\dfrac43$", "$\\dfrac32$"],
+  "options": [
+    "$\\dfrac76$",
+    "$\\dfrac65$",
+    "$\\dfrac54$",
+    "$\\dfrac43$",
+    "$\\dfrac32$"
+  ],
   "answer": "E",
   "solution": "Since $p(0)=0$, $x=0$ is a root. Since $x=M$ is a repeated root, the polynomial has the form\n$$p(x)=A\\,x(x-M)^2$$\nfor some constant $A$ (a cubic with roots $0$, $M$, $M$).\n\nUsing $p(1)=1$ and $p(2)=2$:\n$$A(1-M)^2=1, \\qquad A\\cdot 2(2-M)^2=2.$$\n\nThe second equation gives $A(2-M)^2=1$. Equating with the first,\n$$(2-M)^2=(1-M)^2.$$\n\nTaking square roots, $2-M=\\pm(1-M)$. The case $2-M=1-M$ gives $2=1$, impossible. So $2-M=-(1-M)=M-1$, giving $2M=3$, i.e. $M=\\tfrac32$.\n\nThe answer is **E**.",
   "solutionStatus": "full",

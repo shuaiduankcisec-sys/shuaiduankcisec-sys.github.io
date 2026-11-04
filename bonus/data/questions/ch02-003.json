@@ -8,11 +8,24 @@
   "sourceUrl": "https://www.maths.ox.ac.uk/system/files/attachments/test23.pdf",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 3,
-  "topics": ["quadratics", "discriminant", "repeated roots"],
-  "methods": ["discriminant", "algebraic manipulation"],
+  "difficulty": 4,
+  "topics": [
+    "quadratics",
+    "discriminant",
+    "repeated roots"
+  ],
+  "methods": [
+    "discriminant",
+    "algebraic manipulation"
+  ],
   "statement": "The real numbers $a$, $b$, and $c$ are non-zero. Each of the following quadratic equations has a repeated real root (not necessarily the same value):\n$$ax^2+bx+c=0,\\qquad bx^2+cx+a=0.$$\n\nHow many distinct real roots does the equation $cx^2+ax+b=0$ have?",
-  "options": ["$0$", "$1$", "$2$", "$3$", "It depends on $a$"],
+  "options": [
+    "$0$",
+    "$1$",
+    "$2$",
+    "$3$",
+    "It depends on $a$"
+  ],
   "answer": "A",
   "solution": "A quadratic has a repeated root precisely when its discriminant is zero. So\n$$b^2-4ac=0 \\quad\\Rightarrow\\quad b^2=4ac, \\tag{1}$$\n$$c^2-4ab=0 \\quad\\Rightarrow\\quad c^2=4ab. \\tag{2}$$\n\nMultiply (1) and (2):\n$$b^2c^2=16a^2bc.$$\nSince $b$ and $c$ are non-zero, divide by $bc$ to get\n$$bc=16a^2.$$\n\nNow consider the third quadratic $cx^2+ax+b=0$. Its discriminant is\n$$\\Delta=a^2-4bc=a^2-4(16a^2)=a^2-64a^2=-63a^2<0,$$\nsince $a\\neq0$. A negative discriminant means no real roots.\n\nTherefore the equation $cx^2+ax+b=0$ has $0$ distinct real roots.\n\nThe answer is **A**.",
   "solutionStatus": "full",

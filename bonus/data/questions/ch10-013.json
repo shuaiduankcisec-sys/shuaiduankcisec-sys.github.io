@@ -8,11 +8,21 @@
   "sourceUrl": "https://step.maths.org/questions",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 5,
-  "topics": ["trigonometric inequality", "product-to-sum"],
-  "methods": ["using sum-to-product", "analysing sign"],
+  "difficulty": 3,
+  "topics": [
+    "trigonometric inequality",
+    "product-to-sum"
+  ],
+  "methods": [
+    "using sum-to-product",
+    "analysing sign"
+  ],
   "statement": "Prove the identity $\\sin A+\\sin B=2\\sin\\tfrac{A+B}{2}\\cos\\tfrac{A-B}{2}$. Hence solve $\\sin3x+\\sin x=0$ for $0\\le x<2\\pi$.",
   "solution": "The identity is standard. Applying it, $\\sin3x+\\sin x=2\\sin2x\\cos x$. Setting this to zero gives either $\\sin2x=0$ or $\\cos x=0$. $\\sin2x=0$ gives $2x=k\\pi$, i.e. $x=0,\\frac{\\pi}{2},\\pi,\\frac{3\\pi}{2}$. $\\cos x=0$ gives $x=\\frac{\\pi}{2},\\frac{3\\pi}{2}$. The distinct solutions in $[0,2\\pi)$ are $x=0,\\frac{\\pi}{2},\\pi,\\frac{3\\pi}{2}$.",
   "solutionStatus": "full",
-  "hints": ["Apply the sum-to-product identity with A=3x, B=x.", "Set each factor to zero.", "Collect the distinct solutions in [0,2pi)."]
+  "hints": [
+    "Apply the sum-to-product identity with A=3x, B=x.",
+    "Set each factor to zero.",
+    "Collect the distinct solutions in [0,2pi)."
+  ]
 }

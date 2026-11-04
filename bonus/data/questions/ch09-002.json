@@ -8,11 +8,25 @@
   "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144109/TMUA-2023-paper-1.pdf",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 3,
-  "topics": ["coordinate geometry", "circles", "series"],
-  "methods": ["completing the square for circles", "sum of a series"],
+  "difficulty": 4,
+  "topics": [
+    "coordinate geometry",
+    "circles",
+    "series"
+  ],
+  "methods": [
+    "completing the square for circles",
+    "sum of a series"
+  ],
   "statement": "A circle $C_n$ is defined by\n$$x^2+y^2=2n(x+y),$$\nwhere $n$ is a positive integer.\n\n$C_1$ and $C_2$ are drawn and the area between them is shaded. Next, $C_3$ and $C_4$ are drawn and the area between them is shaded, and so on. This process continues until $100$ circles have been drawn.\n\nWhat is the total shaded area?",
-  "options": ["$100\\pi$", "$500\\pi$", "$2500\\pi$", "$5050\\pi$", "$10100\\pi$", "$40400\\pi$"],
+  "options": [
+    "$100\\pi$",
+    "$500\\pi$",
+    "$2500\\pi$",
+    "$5050\\pi$",
+    "$10100\\pi$",
+    "$40400\\pi$"
+  ],
   "answer": "E",
   "solution": "Completing the square, $x^2-2nx+y^2-2ny=0$ becomes\n$$(x-n)^2+(y-n)^2=2n^2,$$\nso $C_n$ is a circle centred at $(n,n)$ with radius $\\sqrt2\\,n$, and area $\\pi(\\sqrt2 n)^2=2\\pi n^2$.\n\nThe shaded region between $C_{2k-1}$ and $C_{2k}$ (for $k=1,2,\\dots,50$) has area\n$$2\\pi(2k)^2-2\\pi(2k-1)^2=2\\pi\\bigl(4k^2-(4k^2-4k+1)\\bigr)=2\\pi(4k-1).$$\n\nSumming over the 50 pairs:\n$$\\text{total}=2\\pi\\sum_{k=1}^{50}(4k-1)=2\\pi\\left(4\\cdot\\frac{50\\cdot51}{2}-50\\right)=2\\pi(5100-50)=2\\pi\\cdot5050=10100\\pi,$$\nwhich is **option E**.",
   "solutionStatus": "full",

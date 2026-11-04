@@ -9,10 +9,23 @@
   "solutionUrl": "",
   "level": "AS",
   "difficulty": 3,
-  "topics": ["series", "geometric series", "trigonometric series"],
-  "methods": ["simplifying trigonometric terms", "summing a geometric series"],
+  "topics": [
+    "series",
+    "geometric series",
+    "trigonometric series"
+  ],
+  "methods": [
+    "simplifying trigonometric terms",
+    "summing a geometric series"
+  ],
   "statement": "Evaluate\n$$\\sum_{n=0}^{\\infty}\\frac{\\sin\\left(n\\pi+\\dfrac{\\pi}{3}\\right)}{2^n}.$$",
-  "options": ["$0$", "$\\dfrac13$", "$\\dfrac{\\sqrt3}{3}$", "$\\sqrt3$", "$3$"],
+  "options": [
+    "$0$",
+    "$\\dfrac13$",
+    "$\\dfrac{\\sqrt3}{3}$",
+    "$\\sqrt3$",
+    "$3$"
+  ],
   "answer": "C",
   "solution": "Using the addition formula,\n$$\\sin\\left(n\\pi+\\tfrac{\\pi}{3}\\right)=\\sin(n\\pi)\\cos\\tfrac{\\pi}{3}+\\cos(n\\pi)\\sin\\tfrac{\\pi}{3}=0+(-1)^n\\cdot\\tfrac{\\sqrt3}{2}=\\frac{\\sqrt3}{2}(-1)^n.$$\n\nTherefore the series is\n$$\\sum_{n=0}^{\\infty}\\frac{\\frac{\\sqrt3}{2}(-1)^n}{2^n}=\\frac{\\sqrt3}{2}\\sum_{n=0}^{\\infty}\\left(-\\frac12\\right)^n.$$\n\nThis is a geometric series with first term $1$ and common ratio $-\\tfrac12$, whose sum is\n$$\\frac{1}{1-(-\\tfrac12)}=\\frac{1}{\\tfrac32}=\\frac23.$$\n\nHence the value is\n$$\\frac{\\sqrt3}{2}\\cdot\\frac23=\\frac{\\sqrt3}{3},$$\nwhich is **option C**.",
   "solutionStatus": "full",

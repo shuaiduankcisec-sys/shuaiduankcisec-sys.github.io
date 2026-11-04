@@ -8,11 +8,21 @@
   "sourceUrl": "https://step.maths.org/questions",
   "solutionUrl": "",
   "level": "A2",
-  "difficulty": 5,
-  "topics": ["trapezium rule", "error bound"],
-  "methods": ["numerical integration with 4 strips", "estimating the second derivative"],
+  "difficulty": 4,
+  "topics": [
+    "trapezium rule",
+    "error bound"
+  ],
+  "methods": [
+    "numerical integration with 4 strips",
+    "estimating the second derivative"
+  ],
   "statement": "Use the trapezium rule with 4 strips to estimate $I=\\\\int_{0}^{1}e^{-x^{2}}\\,dx$. Given that $|f''(x)|\\\\le2$ on $[0,1]$, state an upper bound for the error of your estimate.",
   "solution": "With $h=1/4$ the nodes are $x=0,0.25,0.5,0.75,1$ and $f(x)=e^{-x^{2}}$ takes values $1,\\,e^{-0.0625}\\\\approx0.9394,\\,e^{-0.25}\\\\approx0.7788,\\,e^{-0.5625}\\\\approx0.5698,\\,e^{-1}\\\\approx0.3679$. The trapezium estimate is $\\\\frac{h}{2}\\bigl[f_{0}+2(f_{1}+f_{2}+f_{3})+f_{4}\\\\bigr]=\\\\frac{1}{8}\\bigl[1+2(0.9394+0.7788+0.5698)+0.3679\\\\bigr]\\\\approx0.7430$. The trapezium error satisfies $|E|\\\\le\\\\frac{(b-a)h^{2}}{12}\\\\max|f''|$; with $\\\\max|f''|\\\\le2$ this gives $|E|\\\\le\\\\frac{1\\\\cdot(1/4)^{2}}{12}\\\\cdot2=\\\\frac{1}{96}\\\\approx0.0104$.",
   "solutionStatus": "full",
-  "hints": ["List the five function values at the four strip boundaries.","Apply the trapezium formula h/2[f0+2(f1+f2+f3)+f4].","Use the error bound (b-a)h^2/12 times max|f''|."]
+  "hints": [
+    "List the five function values at the four strip boundaries.",
+    "Apply the trapezium formula h/2[f0+2(f1+f2+f3)+f4].",
+    "Use the error bound (b-a)h^2/12 times max|f''|."
+  ]
 }

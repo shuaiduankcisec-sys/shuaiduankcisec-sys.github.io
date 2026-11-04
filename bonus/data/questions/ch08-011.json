@@ -9,10 +9,20 @@
   "solutionUrl": "",
   "level": "AS",
   "difficulty": 4,
-  "topics": ["summation", "telescoping series"],
-  "methods": ["difference method", "summing geometric pieces"],
+  "topics": [
+    "summation",
+    "telescoping series"
+  ],
+  "methods": [
+    "difference method",
+    "summing geometric pieces"
+  ],
   "statement": "Show that $(r+1)2^{r+1}-r2^{r}=(r+2)2^{r}$. Hence find a closed form for $\\\\sum_{r=1}^{n} r2^{r}$.",
   "solution": "We have $(r+1)2^{r+1}-r2^{r}=2^{r}\\bigl(2(r+1)-r\\bigr)=2^{r}(r+2)=(r+2)2^{r}$. Summing this identity from $r=1$ to $n$ gives a telescoping sum on the left: $\\\\sum_{r=1}^{n}\\bigl((r+1)2^{r+1}-r2^{r}\\bigr)=(n+1)2^{n+1}-1\\\\cdot2^{1}=(n+1)2^{n+1}-2$. Therefore $\\\\sum_{r=1}^{n}(r+2)2^{r}=(n+1)2^{n+1}-2$. But $\\\\sum(r+2)2^{r}=\\\\sum r2^{r}+2\\\\sum2^{r}=\\\\sum r2^{r}+2(2^{n+1}-2)$. Hence $\\\\sum_{r=1}^{n}r2^{r}=(n+1)2^{n+1}-2-2^{n+2}+4=(n-1)2^{n+1}+2$.",
   "solutionStatus": "full",
-  "hints": ["Verify the identity by factoring 2^r.", "Sum the identity telescopically from r=1 to n.", "Separate the sum of r2^r from the geometric part."]
+  "hints": [
+    "Verify the identity by factoring 2^r.",
+    "Sum the identity telescopically from r=1 to n.",
+    "Separate the sum of r2^r from the geometric part."
+  ]
 }

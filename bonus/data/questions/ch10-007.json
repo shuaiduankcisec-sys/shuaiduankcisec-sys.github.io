@@ -9,8 +9,14 @@
   "solutionUrl": "",
   "level": "AS",
   "difficulty": 3,
-  "topics": ["trigonometry", "harmonic form"],
-  "methods": ["Rcos form", "compound angle"],
+  "topics": [
+    "trigonometry",
+    "harmonic form"
+  ],
+  "methods": [
+    "Rcos form",
+    "compound angle"
+  ],
   "statement": "Find the maximum value of $5\\cos\\theta+12\\sin\\theta$ and a value of $\\theta$ in $[0,2\\pi)$ at which it is attained.",
   "solution": "Write $5\\cos\\theta+12\\sin\\theta=R\\cos(\\theta-\\alpha)$ where $R=\\sqrt{5^2+12^2}=13$, $\\cos\\alpha=\\tfrac{5}{13}$ and $\\sin\\alpha=\\tfrac{12}{13}$. Hence\n$$5\\cos\\theta+12\\sin\\theta=13\\cos(\\theta-\\alpha).$$\nThe maximum value is $13$, attained when $\\cos(\\theta-\\alpha)=1$, i.e. $\\theta=\\alpha$. So one such value is $\\theta=\\alpha$ with $\\tan\\alpha=\\tfrac{12}{5}$ (approximately $1.176$ rad).",
   "solutionStatus": "full",

@@ -8,11 +8,21 @@
   "sourceUrl": "https://step.maths.org/questions",
   "solutionUrl": "",
   "level": "A2",
-  "difficulty": 5,
-  "topics": ["range of a function", "rational functions"],
-  "methods": ["expressing y in terms of x", "solving for x in terms of y"],
+  "difficulty": 3,
+  "topics": [
+    "range of a function",
+    "rational functions"
+  ],
+  "methods": [
+    "expressing y in terms of x",
+    "solving for x in terms of y"
+  ],
   "statement": "Find the range of the function $f(x)=\\dfrac{2x+1}{x-1}$ for $x>1$.",
   "solution": "Let $y=\\frac{2x+1}{x-1}$. Solving for $x$: $y(x-1)=2x+1$, so $x(y-2)=y+1$, giving $x=\\frac{y+1}{y-2}$. For $x>1$ we require $\\frac{y+1}{y-2}>1$, i.e. $\\frac{y+1-(y-2)}{y-2}=\\frac{3}{y-2}>0$, so $y>2$. Hence the range is $(2,\\infty)$.",
   "solutionStatus": "full",
-  "hints": ["Set y=f(x) and solve for x in terms of y.", "Impose the condition x>1.", "Determine which y satisfy the inequality."]
+  "hints": [
+    "Set y=f(x) and solve for x in terms of y.",
+    "Impose the condition x>1.",
+    "Determine which y satisfy the inequality."
+  ]
 }

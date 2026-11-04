@@ -8,11 +8,24 @@
   "sourceUrl": "https://www.maths.ox.ac.uk/system/files/attachments/test23.pdf",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 3,
-  "topics": ["functions", "equations", "counting roots"],
-  "methods": ["solving nested equations", "counting distinct real roots"],
+  "difficulty": 4,
+  "topics": [
+    "functions",
+    "equations",
+    "counting roots"
+  ],
+  "methods": [
+    "solving nested equations",
+    "counting distinct real roots"
+  ],
   "statement": "How many distinct real solutions $x$ are there to the equation\n$$\\left(\\left((x^2-1)^2-2\\right)^2-3\\right)^2=4\\,?$$",
-  "options": ["$5$", "$6$", "$7$", "$8$", "$9$"],
+  "options": [
+    "$5$",
+    "$6$",
+    "$7$",
+    "$8$",
+    "$9$"
+  ],
   "answer": "C",
   "solution": "Take square roots, working from the outside in. Since $\\left(\\cdots\\right)^2=4$, the inner quantity is $\\pm2$:\n$$\\left((x^2-1)^2-2\\right)^2-3=\\pm2 \\quad\\Rightarrow\\quad \\left((x^2-1)^2-2\\right)^2=5\\ \\text{or}\\ 1.$$\n\n**Case $((x^2-1)^2-2)^2=5$:** then $(x^2-1)^2-2=\\pm\\sqrt5$, so $(x^2-1)^2=2+\\sqrt5$ or $2-\\sqrt5$. Since $2-\\sqrt5<0$, only $(x^2-1)^2=2+\\sqrt5$ gives solutions, namely $x^2=1\\pm\\sqrt{2+\\sqrt5}$. Here $1+\\sqrt{2+\\sqrt5}>0$ gives $2$ roots, while $1-\\sqrt{2+\\sqrt5}<0$ gives none. Total: $2$.\n\n**Case $((x^2-1)^2-2)^2=1$:** then $(x^2-1)^2-2=\\pm1$, so $(x^2-1)^2=3$ or $1$.\n- $(x^2-1)^2=3$: $x^2=1\\pm\\sqrt3$. Only $1+\\sqrt3>0$, giving $2$ roots.\n- $(x^2-1)^2=1$: $x^2-1=\\pm1$, so $x^2=2$ (giving $2$ roots) or $x^2=0$ (giving $1$ root). Total: $3$.\n\nAdding: $2+2+2+1=7$ distinct real solutions.\n\nThe answer is **C**.",
   "solutionStatus": "full",

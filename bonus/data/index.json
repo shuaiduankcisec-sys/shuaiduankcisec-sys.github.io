@@ -7,7 +7,7 @@
     "paper": "STEP I",
     "year": 2004,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "surds",
       "indices",
@@ -21,27 +21,6 @@
     ],
     "solutionStatus": "full",
     "preview": "(i) Express $(3+2\\sqrt{5})^3$ in the form $a+b\\sqrt{5}$, where $a$ and $b$ are integers. (ii) Find the positive integers $c$ and $d$ such…"
-  },
-  {
-    "id": "ch01-002",
-    "chapter": 1,
-    "title": "",
-    "source": "MAT",
-    "paper": "Q1",
-    "year": 2023,
-    "level": "AS",
-    "difficulty": 2,
-    "topics": [
-      "number theory",
-      "square numbers",
-      "divisibility"
-    ],
-    "methods": [
-      "last-digit test for squares",
-      "factorising"
-    ],
-    "solutionStatus": "full",
-    "preview": "Exactly one of these five numbers is a square number. Which one? (a) $99{,}999{,}999$  (b) $123{,}333{,}333$  (c) $649{,}485{,}225$  (d)…"
   },
   {
     "id": "ch01-003",
@@ -92,7 +71,7 @@
     "paper": "STEP II",
     "year": 2002,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "nested radicals",
       "squaring differences"
@@ -105,26 +84,6 @@
     "preview": "Let $x=\\\\sqrt{2+\\\\sqrt{3}}-\\\\sqrt{2-\\\\sqrt{3}}$. Show that $x^{2}=2$ and hence find $x$. Deduce the exact values of $\\\\sqrt{2+\\\\sqrt{3}}$…"
   },
   {
-    "id": "ch01-010",
-    "chapter": 1,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2005,
-    "level": "AS",
-    "difficulty": 4,
-    "topics": [
-      "rationalising surds",
-      "sum of two square roots"
-    ],
-    "methods": [
-      "squaring to relate a+b and ab",
-      "constructing integer solutions"
-    ],
-    "solutionStatus": "full",
-    "preview": "Given that $\\sqrt{a}+\\sqrt{b}=\\sqrt{7+2\\sqrt{10}}$ with $a$ and $b$ positive integers, find $a$ and $b$. Hence express…"
-  },
-  {
     "id": "ch01-011",
     "chapter": 1,
     "title": "",
@@ -132,7 +91,7 @@
     "paper": "STEP II",
     "year": 2006,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "indices",
       "nested radicals"
@@ -145,27 +104,6 @@
     "preview": "Solve the equation $2^{2x+1}+2^{x+1}=80$."
   },
   {
-    "id": "ch02-002",
-    "chapter": 2,
-    "title": "",
-    "source": "TMUA",
-    "paper": "Paper 1",
-    "year": 2023,
-    "level": "AS",
-    "difficulty": 2,
-    "topics": [
-      "quadratics",
-      "discriminant",
-      "intersection of graphs"
-    ],
-    "methods": [
-      "discriminant",
-      "simultaneous equations"
-    ],
-    "solutionStatus": "full",
-    "preview": "The graphs of $y=x^2+5x+6$ and $y=mx-3$, where $m$ is a constant, are plotted on the same set of axes. Given that the graphs do not meet,…"
-  },
-  {
     "id": "ch02-003",
     "chapter": 2,
     "title": "",
@@ -173,7 +111,7 @@
     "paper": "Q1",
     "year": 2023,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "quadratics",
       "discriminant",
@@ -194,7 +132,7 @@
     "paper": "STEP I",
     "year": 2010,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "quadratics",
       "completing the square",
@@ -276,7 +214,7 @@
     "paper": "STEP I",
     "year": 2001,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "roots of quadratics",
       "Vieta's formulae"
@@ -296,7 +234,7 @@
     "paper": "STEP II",
     "year": 2003,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "powers of roots",
       "linear recurrence"
@@ -336,7 +274,7 @@
     "paper": "STEP I",
     "year": 2005,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "symmetric sums",
       "cubic from roots"
@@ -356,7 +294,7 @@
     "paper": "STEP I",
     "year": 1996,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "algebraic division",
       "factorisation",
@@ -377,7 +315,7 @@
     "paper": "Q1",
     "year": 2023,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "polynomials",
       "repeated roots",
@@ -398,7 +336,7 @@
     "paper": "STEP I",
     "year": 2001,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "polynomials",
       "cubic roots",
@@ -412,66 +350,6 @@
     "preview": "Sketch, without calculating the stationary points, the graph of the function $f(x)$ given by $ f(x)=(x-p)(x-q)(x-r),$  where $p<q<r$. By…"
   },
   {
-    "id": "ch03-004",
-    "chapter": 3,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2003,
-    "level": "AS",
-    "difficulty": 3,
-    "topics": [
-      "factor theorem",
-      "algebraic division"
-    ],
-    "methods": [
-      "factor theorem",
-      "repeated roots",
-      "polynomial factorisation"
-    ],
-    "solutionStatus": "full",
-    "preview": "Let $f(x)=x^3-x^2-8x+12$. Show that $x=2$ is a repeated root of $f(x)=0$ and find all the real roots."
-  },
-  {
-    "id": "ch03-005",
-    "chapter": 3,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2013,
-    "level": "AS",
-    "difficulty": 3,
-    "topics": [
-      "remainder theorem",
-      "simultaneous equations"
-    ],
-    "methods": [
-      "remainder theorem",
-      "solving linear equations"
-    ],
-    "solutionStatus": "full",
-    "preview": "When $x^3+ax^2+bx+6$ is divided by $x-2$ the remainder is $0$, and when divided by $x-3$ the remainder is $8$. Find $a$ and $b$."
-  },
-  {
-    "id": "ch03-008",
-    "chapter": 3,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2000,
-    "level": "AS",
-    "difficulty": 4,
-    "topics": [
-      "remainder theorem",
-      "factor theorem"
-    ],
-    "methods": [
-      "setting up linear equations from remainders"
-    ],
-    "solutionStatus": "full",
-    "preview": "The polynomial $p(x)=x^{3}+ax^{2}+bx+c$ leaves remainder $2$ when divided by $x-1$, remainder $-6$ when divided by $x+1$, and has a factor…"
-  },
-  {
     "id": "ch03-009",
     "chapter": 3,
     "title": "",
@@ -479,7 +357,7 @@
     "paper": "STEP II",
     "year": 2004,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "polynomial division",
       "remainder theorem"
@@ -492,26 +370,6 @@
     "preview": "Find the remainder when $x^{4}+px^{3}+qx^{2}+rx+s$ is divided by $x^{2}-1$. Hence determine the condition on $p,q,r,s$ for $x^{2}-1$ to be…"
   },
   {
-    "id": "ch03-010",
-    "chapter": 3,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2003,
-    "level": "AS",
-    "difficulty": 4,
-    "topics": [
-      "factor theorem",
-      "cubic factorisation"
-    ],
-    "methods": [
-      "rational root test",
-      "long division"
-    ],
-    "solutionStatus": "full",
-    "preview": "Show that $x-1$ is a factor of $x^{3}-6x^{2}+11x-6$, and hence factorise the cubic completely. Deduce the three roots of…"
-  },
-  {
     "id": "ch03-011",
     "chapter": 3,
     "title": "",
@@ -519,7 +377,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "remainder theorem",
       "system of equations"
@@ -561,7 +419,7 @@
     "paper": "Q1",
     "year": 2023,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "functions",
       "equations",
@@ -646,7 +504,7 @@
     "paper": "STEP I",
     "year": 2007,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "functions",
       "inverse functions",
@@ -668,7 +526,7 @@
     "paper": "STEP I",
     "year": 2005,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "self-inverse functions",
       "function composition"
@@ -688,7 +546,7 @@
     "paper": "STEP II",
     "year": 2006,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "functional equations",
       "integer-valued functions"
@@ -708,7 +566,7 @@
     "paper": "STEP I",
     "year": 2004,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "function iteration",
       "fixed points"
@@ -728,7 +586,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "functional equations",
       "recursive definition"
@@ -748,7 +606,7 @@
     "paper": "Paper 1",
     "year": 2023,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "coordinate geometry",
       "perpendicular lines",
@@ -769,7 +627,7 @@
     "paper": "STEP I",
     "year": 1999,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "coordinate geometry",
       "locus",
@@ -791,7 +649,7 @@
     "paper": "STEP I",
     "year": 2005,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "coordinate geometry",
       "tangents and normals",
@@ -813,7 +671,7 @@
     "paper": "STEP I",
     "year": 2008,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "coordinate geometry",
       "rotation",
@@ -826,26 +684,6 @@
     ],
     "solutionStatus": "full",
     "preview": "The point $P$ has coordinates $(x,y)$ with respect to the origin $O$. By writing $x=r\\cos\\theta$ and $y=r\\sin\\theta$, or otherwise, show…"
-  },
-  {
-    "id": "ch05-005",
-    "chapter": 5,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2009,
-    "level": "AS",
-    "difficulty": 3,
-    "topics": [
-      "coordinate geometry",
-      "circles"
-    ],
-    "methods": [
-      "perpendicular bisector",
-      "equation of a circle"
-    ],
-    "solutionStatus": "full",
-    "preview": "Find the equation of the circle passing through the points $(1,0)$, $(0,1)$ and $(2,1)$."
   },
   {
     "id": "ch05-008",
@@ -889,26 +727,6 @@
     "preview": "For the ellipse $\\\\dfrac{x^{2}}{a^{2}}+\\\\dfrac{y^{2}}{b^{2}}=1$ with $a>b>0$, let the foci be $F_{1}$ and $F_{2}$. Show that the product of…"
   },
   {
-    "id": "ch05-010",
-    "chapter": 5,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2004,
-    "level": "AS",
-    "difficulty": 4,
-    "topics": [
-      "locus",
-      "perpendicular distance"
-    ],
-    "methods": [
-      "distance formula",
-      "squaring to eliminate the root"
-    ],
-    "solutionStatus": "full",
-    "preview": "Find the equation of the locus of points that are equidistant from the point $(1,2)$ and the line $y=0$."
-  },
-  {
     "id": "ch05-011",
     "chapter": 5,
     "title": "",
@@ -916,7 +734,7 @@
     "paper": "STEP II",
     "year": 2006,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "parametric parabola",
       "tangent"
@@ -957,7 +775,7 @@
     "paper": "STEP I",
     "year": 1996,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "differentiation",
       "optimisation",
@@ -978,7 +796,7 @@
     "paper": "STEP I",
     "year": 1988,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "differentiation",
       "quadratics",
@@ -1021,7 +839,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "differentiation",
       "optimisation",
@@ -1042,7 +860,7 @@
     "paper": "STEP I",
     "year": 2002,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "maxima and minima",
       "ellipse"
@@ -1062,7 +880,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "logarithmic differentiation",
       "maxima"
@@ -1075,26 +893,6 @@
     "preview": "For $x>0$ let $f(x)=x^{1/x}$. By taking logarithms, show that $f$ attains its maximum at $x=e$ and find the maximum value of $f$."
   },
   {
-    "id": "ch06-010",
-    "chapter": 6,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2004,
-    "level": "AS",
-    "difficulty": 4,
-    "topics": [
-      "related rates",
-      "implicit differentiation"
-    ],
-    "methods": [
-      "relating volume to radius",
-      "chain rule"
-    ],
-    "solutionStatus": "full",
-    "preview": "A spherical balloon is inflated so that its volume increases at a constant rate of $20\\,\\text{cm}^{3}/\\text{s}$. Find the rate at which the…"
-  },
-  {
     "id": "ch06-011",
     "chapter": 6,
     "title": "",
@@ -1102,7 +900,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "optimisation",
       "snell-like reflection"
@@ -1122,7 +920,7 @@
     "paper": "STEP I",
     "year": 1996,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "integration",
       "binomial theorem",
@@ -1137,47 +935,6 @@
     "preview": "(i) Show that $ \\int_0^1\\bigl(1+(\\alpha-1)x\\bigr)^n\\,dx=\\frac{\\alpha^{n+1}-1}{(n+1)(\\alpha-1)}$  when $\\alpha\\neq 1$ and $n$ is a positive…"
   },
   {
-    "id": "ch07-005",
-    "chapter": 7,
-    "title": "",
-    "source": "TMUA",
-    "paper": "Paper 1",
-    "year": 2023,
-    "level": "AS",
-    "difficulty": 2,
-    "topics": [
-      "integration",
-      "definite integrals"
-    ],
-    "methods": [
-      "integration of linear functions",
-      "solving simultaneous equations"
-    ],
-    "solutionStatus": "full",
-    "preview": "Given that $ \\int_0^1 (ax+b)\\,dx = 1$  and $ \\int_0^1 x(ax+b)\\,dx = 1,$  find the value of $a+b$."
-  },
-  {
-    "id": "ch07-006",
-    "chapter": 7,
-    "title": "",
-    "source": "TMUA",
-    "paper": "Paper 1",
-    "year": 2023,
-    "level": "AS",
-    "difficulty": 2,
-    "topics": [
-      "integration",
-      "definite integrals",
-      "properties of integrals"
-    ],
-    "methods": [
-      "additivity of integrals",
-      "reversing limits"
-    ],
-    "solutionStatus": "full",
-    "preview": "For any integer $n\\ge0$, $ \\int_n^{n+1} f(x)\\,dx = n+1.$  Evaluate …"
-  },
-  {
     "id": "ch07-007",
     "chapter": 7,
     "title": "",
@@ -1185,7 +942,7 @@
     "paper": "Paper 1",
     "year": 2022,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "integration",
       "area under a curve",
@@ -1226,7 +983,7 @@
     "paper": "STEP I",
     "year": 2007,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "integration",
       "integration by parts"
@@ -1265,7 +1022,7 @@
     "paper": "STEP I",
     "year": 2001,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "integration by substitution",
       "trigonometric integrals"
@@ -1285,7 +1042,7 @@
     "paper": "STEP II",
     "year": 2003,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "definite integrals",
       "symmetry"
@@ -1298,26 +1055,6 @@
     "preview": "By using the substitution $x=\\\\dfrac{\\\\pi}{2}-t$, or otherwise, evaluate $I=\\\\int_{0}^{\\\\pi/2}\\\\dfrac{\\\\sin x}{\\\\sin x+\\\\cos x}\\,dx$."
   },
   {
-    "id": "ch07-016",
-    "chapter": 7,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2004,
-    "level": "AS",
-    "difficulty": 4,
-    "topics": [
-      "definite integral",
-      "symmetry of odd/even"
-    ],
-    "methods": [
-      "splitting x/(1+x^2)",
-      "using even/odd properties"
-    ],
-    "solutionStatus": "full",
-    "preview": "Evaluate $\\displaystyle\\int_{-1}^{1}\\dfrac{x^{3}+x}{1+x^{2}}\\,dx$ and explain why the integral of the $x^{3}$ part vanishes."
-  },
-  {
     "id": "ch07-017",
     "chapter": 7,
     "title": "",
@@ -1325,7 +1062,7 @@
     "paper": "STEP II",
     "year": 2006,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "integration by parts",
       "reduction"
@@ -1345,7 +1082,7 @@
     "paper": "Paper 1",
     "year": 2023,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "binomial theorem",
       "divisibility"
@@ -1408,7 +1145,7 @@
     "paper": "Paper 1",
     "year": 2022,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "sequences and series",
       "geometric series"
@@ -1428,7 +1165,7 @@
     "paper": "STEP I",
     "year": 2011,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "series",
       "binomial expansion",
@@ -1463,27 +1200,6 @@
     "preview": "A sequence is defined by $u_1=2$ and $u_{n+1}=3u_n-2$ for $n\\ge 1$. Prove by induction that $u_n = 3^{n-1}+1$ for all $n\\ge 1$."
   },
   {
-    "id": "ch08-007",
-    "chapter": 8,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2004,
-    "level": "AS",
-    "difficulty": 3,
-    "topics": [
-      "sequences",
-      "recurrence relations",
-      "closed form"
-    ],
-    "methods": [
-      "linear recurrence",
-      "particular solution"
-    ],
-    "solutionStatus": "full",
-    "preview": "A sequence is defined by $u_1=1$ and $u_{n+1}=2u_n+1$ for $n\\ge1$. Find a closed form for $u_n$."
-  },
-  {
     "id": "ch08-011",
     "chapter": 8,
     "title": "",
@@ -1511,7 +1227,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "recursive sequences",
       "monotone convergence"
@@ -1525,26 +1241,6 @@
     "preview": "Define $a_{1}=\\\\sqrt{2}$ and $a_{n+1}=\\\\sqrt{2+a_{n}}$ for $n\\\\ge1$. Show by induction that $a_{n}<2$ for all $n$, that the sequence is…"
   },
   {
-    "id": "ch08-013",
-    "chapter": 8,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2005,
-    "level": "AS",
-    "difficulty": 4,
-    "topics": [
-      "method of differences",
-      "summation"
-    ],
-    "methods": [
-      "partial fraction of 1/[r(r+1)]",
-      "telescoping"
-    ],
-    "solutionStatus": "full",
-    "preview": "Show that $\\dfrac{1}{r(r+1)}=\\dfrac1r-\\dfrac{1}{r+1}$, and hence find $\\displaystyle\\sum_{r=1}^{n}\\dfrac{1}{r(r+1)}$. Deduce the limit as…"
-  },
-  {
     "id": "ch08-014",
     "chapter": 8,
     "title": "",
@@ -1552,7 +1248,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "arithmetic-geometric series",
       "summation"
@@ -1565,27 +1261,6 @@
     "preview": "Find the sum to $n$ terms of the series $1+2x+3x^{2}+\\cdots+nx^{n-1}$ for $x\\neq1$."
   },
   {
-    "id": "ch09-001",
-    "chapter": 9,
-    "title": "",
-    "source": "TMUA",
-    "paper": "Paper 1",
-    "year": 2023,
-    "level": "AS",
-    "difficulty": 2,
-    "topics": [
-      "coordinate geometry",
-      "circles",
-      "distance between points"
-    ],
-    "methods": [
-      "distance formula",
-      "circle geometry"
-    ],
-    "solutionStatus": "full",
-    "preview": "Point $P$ lies on the circle with equation $(x-2)^2+(y-1)^2=16$. Point $Q$ lies on the circle with equation $(x-4)^2+(y+5)^2=16$. What is…"
-  },
-  {
     "id": "ch09-002",
     "chapter": 9,
     "title": "",
@@ -1593,7 +1268,7 @@
     "paper": "Paper 1",
     "year": 2023,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "coordinate geometry",
       "circles",
@@ -1614,7 +1289,7 @@
     "paper": "Q1",
     "year": 2023,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "coordinate geometry",
       "circles",
@@ -1626,27 +1301,6 @@
     ],
     "solutionStatus": "full",
     "preview": "Two circles are inside a square $ABCD$ of side-length $1$. One of the circles is tangent to sides $AB$ and to $BC$. The other circle is…"
-  },
-  {
-    "id": "ch09-004",
-    "chapter": 9,
-    "title": "",
-    "source": "TMUA",
-    "paper": "Paper 1",
-    "year": 2022,
-    "level": "AS",
-    "difficulty": 2,
-    "topics": [
-      "coordinate geometry",
-      "circles",
-      "completing the square"
-    ],
-    "methods": [
-      "completing the square",
-      "circle condition"
-    ],
-    "solutionStatus": "full",
-    "preview": "Find the complete set of values of $p$ for which the equation $ x^2-2px+y^2-6y-p^2+8p+9=0$  describes a circle in the $x$-$y$ plane."
   },
   {
     "id": "ch09-005",
@@ -1692,27 +1346,6 @@
     "preview": "A circle has centre the origin and radius $r$. Show that the tangent to the circle at the point $(x_0,y_0)$ on the circle has equation…"
   },
   {
-    "id": "ch09-008",
-    "chapter": 9,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2015,
-    "level": "AS",
-    "difficulty": 3,
-    "topics": [
-      "coordinate geometry",
-      "circles",
-      "tangent length"
-    ],
-    "methods": [
-      "equation of a circle",
-      "length of a tangent"
-    ],
-    "solutionStatus": "full",
-    "preview": "A circle has centre $(2,-1)$ and passes through $(5,3)$. Find its equation and the length of the tangent from the point $(6,5)$ to the…"
-  },
-  {
     "id": "ch09-011",
     "chapter": 9,
     "title": "",
@@ -1753,26 +1386,6 @@
     "preview": "Two circles $x^{2}+y^{2}+2g_{1}x+2f_{1}y+c_{1}=0$ and $x^{2}+y^{2}+2g_{2}x+2f_{2}y+c_{2}=0$ are orthogonal if the tangents at a common…"
   },
   {
-    "id": "ch09-013",
-    "chapter": 9,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2004,
-    "level": "AS",
-    "difficulty": 4,
-    "topics": [
-      "circle geometry",
-      "tangent length"
-    ],
-    "methods": [
-      "power of a point",
-      "tangent length formula"
-    ],
-    "solutionStatus": "full",
-    "preview": "From the point $P(5,1)$, tangents are drawn to the circle $x^{2}+y^{2}=9$. Find the length of each tangent from $P$ to the circle."
-  },
-  {
     "id": "ch09-014",
     "chapter": 9,
     "title": "",
@@ -1780,7 +1393,7 @@
     "paper": "STEP II",
     "year": 2006,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "circle through three points",
       "circumcircle"
@@ -1835,27 +1448,6 @@
     "preview": "The difference between the maximum and minimum values of the function $ f(x)=a^{\\cos x},$  where $a>0$ and $x$ is real, is $3$. Find the…"
   },
   {
-    "id": "ch10-003",
-    "chapter": 10,
-    "title": "",
-    "source": "MAT",
-    "paper": "Q1",
-    "year": 2023,
-    "level": "AS",
-    "difficulty": 2,
-    "topics": [
-      "trigonometry",
-      "area of a triangle",
-      "optimisation"
-    ],
-    "methods": [
-      "area of an isosceles triangle",
-      "finding a maximum"
-    ],
-    "solutionStatus": "full",
-    "preview": "Which of these triangles has the largest area? (a) an isosceles triangle with side lengths $10,10,1$; (b) an isosceles triangle with side…"
-  },
-  {
     "id": "ch10-004",
     "chapter": 10,
     "title": "",
@@ -1863,7 +1455,7 @@
     "paper": "STEP I",
     "year": 1991,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "trigonometry",
       "trigonometric identities",
@@ -1924,7 +1516,7 @@
     "paper": "STEP I",
     "year": 2002,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "compound angle identities",
       "trigonometric equations"
@@ -1944,7 +1536,7 @@
     "paper": "STEP II",
     "year": 2004,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "sum of sines",
       "telescoping"
@@ -1964,7 +1556,7 @@
     "paper": "STEP II",
     "year": 2004,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "compound angles",
       "trigonometric identities"
@@ -1984,7 +1576,7 @@
     "paper": "STEP II",
     "year": 2006,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "trigonometric inequality",
       "product-to-sum"
@@ -2038,47 +1630,6 @@
     "preview": "How many solutions are there to the equation $ 2^{\\tan^2 x}=4^{\\sin^2 x}$  in the range $0\\le x\\le2\\pi$?"
   },
   {
-    "id": "ch11-003",
-    "chapter": 11,
-    "title": "",
-    "source": "TMUA",
-    "paper": "Paper 1",
-    "year": 2022,
-    "level": "AS",
-    "difficulty": 2,
-    "topics": [
-      "trigonometric equations",
-      "quadratic in disguise"
-    ],
-    "methods": [
-      "factorising a quadratic in cos²θ",
-      "solving cosθ=±1"
-    ],
-    "solutionStatus": "full",
-    "preview": "How many real solutions are there to the equation $ 2\\cos^4\\theta-5\\cos^2\\theta+3=0$  in the interval $0\\le\\theta\\le2\\pi$?"
-  },
-  {
-    "id": "ch11-004",
-    "chapter": 11,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 1999,
-    "level": "AS",
-    "difficulty": 3,
-    "topics": [
-      "trigonometry",
-      "compound-angle formulae",
-      "multiple angles"
-    ],
-    "methods": [
-      "addition formula",
-      "double-angle formula"
-    ],
-    "solutionStatus": "full",
-    "preview": "Prove the identity $\\sin 3\\theta = 3\\sin\\theta - 4\\sin^3\\theta$."
-  },
-  {
     "id": "ch11-007",
     "chapter": 11,
     "title": "",
@@ -2106,7 +1657,7 @@
     "paper": "STEP I",
     "year": 2005,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "sum-to-product",
       "bounds"
@@ -2126,7 +1677,7 @@
     "paper": "STEP II",
     "year": 2006,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "trigonometric equations",
       "multiple angles"
@@ -2139,26 +1690,6 @@
     "preview": "Find all solutions in the interval $0\\\\le x<2\\\\pi$ of the equation $\\\\sin3x=\\\\cos2x$."
   },
   {
-    "id": "ch11-012",
-    "chapter": 11,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2005,
-    "level": "AS",
-    "difficulty": 4,
-    "topics": [
-      "R-form",
-      "harmonic equation"
-    ],
-    "methods": [
-      "R cos(theta+alpha)",
-      "solving via phase shift"
-    ],
-    "solutionStatus": "full",
-    "preview": "Express $3\\sin\\theta+4\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$ with $R>0$, and find the maximum value of $3\\sin\\theta+4\\cos\\theta$."
-  },
-  {
     "id": "ch11-013",
     "chapter": 11,
     "title": "",
@@ -2166,7 +1697,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "trigonometric equations",
       "multiple angles"
@@ -2207,7 +1738,7 @@
     "paper": "Q1",
     "year": 2023,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "logarithms",
       "laws of logarithms",
@@ -2219,27 +1750,6 @@
     ],
     "solutionStatus": "full",
     "preview": "In this question we write $\\alpha=\\log_{10}2$, $\\beta=\\log_{10}3$, and $\\gamma=\\log_{10}7$. Each of the following numbers is close to an…"
-  },
-  {
-    "id": "ch12-003",
-    "chapter": 12,
-    "title": "",
-    "source": "TMUA",
-    "paper": "Paper 1",
-    "year": 2022,
-    "level": "AS",
-    "difficulty": 2,
-    "topics": [
-      "logarithms",
-      "series",
-      "summation"
-    ],
-    "methods": [
-      "power rule for logarithms",
-      "sum of an arithmetic series"
-    ],
-    "solutionStatus": "full",
-    "preview": "Evaluate $ \\sum_{n=1}^{100}\\log_{10}\\left(3^{1-n}\\right).$"
   },
   {
     "id": "ch12-005",
@@ -2270,7 +1780,7 @@
     "paper": "STEP I",
     "year": 2016,
     "level": "AS",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "exponentials",
       "logarithms",
@@ -2291,7 +1801,7 @@
     "paper": "STEP I",
     "year": 2003,
     "level": "AS",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "exponential functions",
       "AM-GM inequality"
@@ -2311,7 +1821,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "simultaneous exponential equations",
       "logarithms"
@@ -2324,26 +1834,6 @@
     "preview": "Solve the simultaneous equations $2^{x}3^{y}=12$ and $3^{x}2^{y}=18$."
   },
   {
-    "id": "ch12-012",
-    "chapter": 12,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2004,
-    "level": "AS",
-    "difficulty": 4,
-    "topics": [
-      "logarithmic equations",
-      "change of base"
-    ],
-    "methods": [
-      "converting to base 2",
-      "solving the resulting equation"
-    ],
-    "solutionStatus": "full",
-    "preview": "Solve the equation $\\log_{2}x+\\log_{4}x=3$."
-  },
-  {
     "id": "ch12-013",
     "chapter": 12,
     "title": "",
@@ -2351,7 +1841,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "AS",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "exponential growth",
       "half-life"
@@ -2371,7 +1861,7 @@
     "paper": "Paper 1",
     "year": 2023,
     "level": "A2",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "functions",
       "range of a composite function",
@@ -2392,7 +1882,7 @@
     "paper": "STEP I",
     "year": 1989,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "functions",
       "curves",
@@ -2413,7 +1903,7 @@
     "paper": "STEP I",
     "year": 1998,
     "level": "A2",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "functions",
       "logarithms",
@@ -2470,26 +1960,6 @@
     "preview": "Let $f(x)=\\dfrac{1}{x-1}$ (for $x\\neq1$). Find $f(f(x))$ and solve $f(f(x))=x$."
   },
   {
-    "id": "A2-01-008",
-    "chapter": "A2-01",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2003,
-    "level": "A2",
-    "difficulty": 4,
-    "topics": [
-      "maxima and minima",
-      "odd functions"
-    ],
-    "methods": [
-      "differentiation",
-      "using the first derivative test"
-    ],
-    "solutionStatus": "full",
-    "preview": "For $x\\\\ge0$, the function $f(x)=\\\\dfrac{x}{1+x^{2}}$ has a maximum. Find the value of $x$ at which it occurs and the maximum value. Show…"
-  },
-  {
     "id": "A2-01-009",
     "chapter": "A2-01",
     "title": "",
@@ -2497,7 +1967,7 @@
     "paper": "STEP II",
     "year": 2006,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "turning points",
       "inverse function derivative"
@@ -2537,7 +2007,7 @@
     "paper": "STEP II",
     "year": 2006,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "range of a function",
       "rational functions"
@@ -2557,7 +2027,7 @@
     "paper": "STEP I",
     "year": 1989,
     "level": "A2",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "binomial theorem",
       "binomial coefficients",
@@ -2599,7 +2069,7 @@
     "paper": "STEP I",
     "year": 2003,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "binomial theorem",
       "fractional powers"
@@ -2613,46 +2083,6 @@
     "preview": "(i) In the binomial expansion of $(2x+1/x^2)^6$ for $x\\neq0$, show that the term which is independent of $x$ is $240$. Find the term which…"
   },
   {
-    "id": "A2-02-004",
-    "chapter": "A2-02",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2005,
-    "level": "A2",
-    "difficulty": 3,
-    "topics": [
-      "binomial expansion",
-      "approximation"
-    ],
-    "methods": [
-      "binomial series for fractional power",
-      "approximation"
-    ],
-    "solutionStatus": "full",
-    "preview": "Find the first four terms in the expansion of $(1+x)^{1/2}$ in ascending powers of $x$, and hence estimate $\\sqrt{1.02}$."
-  },
-  {
-    "id": "A2-02-005",
-    "chapter": "A2-02",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2014,
-    "level": "A2",
-    "difficulty": 3,
-    "topics": [
-      "binomial expansion",
-      "coefficients"
-    ],
-    "methods": [
-      "binomial theorem",
-      "collecting terms"
-    ],
-    "solutionStatus": "full",
-    "preview": "Find the coefficient of $x^3$ in the expansion of $(1+2x)(1-3x)^5$."
-  },
-  {
     "id": "A2-02-008",
     "chapter": "A2-02",
     "title": "",
@@ -2660,7 +2090,7 @@
     "paper": "STEP I",
     "year": 2004,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "generalised binomial theorem",
       "negative integer index"
@@ -2680,7 +2110,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "product of binomial expansions",
       "series multiplication"
@@ -2693,26 +2123,6 @@
     "preview": "Obtain the expansion of $(1+x)^{1/2}(1-2x)^{1/3}$ up to and including the term in $x^{2}$."
   },
   {
-    "id": "A2-02-010",
-    "chapter": "A2-02",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2005,
-    "level": "A2",
-    "difficulty": 4,
-    "topics": [
-      "binomial expansion",
-      "approximation"
-    ],
-    "methods": [
-      "expanding to x^2",
-      "substituting a small value"
-    ],
-    "solutionStatus": "full",
-    "preview": "Using the binomial expansion, show that for small $x$, $\\sqrt{1+x}\\approx1+\\tfrac12x-\\tfrac18x^{2}$, and use this to estimate $\\sqrt{1.02}$…"
-  },
-  {
     "id": "A2-02-011",
     "chapter": "A2-02",
     "title": "",
@@ -2720,7 +2130,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "validity of binomial series",
       "convergence"
@@ -2740,7 +2150,7 @@
     "paper": "STEP I",
     "year": 2015,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "trigonometry",
       "triple-angle formulae",
@@ -2762,7 +2172,7 @@
     "paper": "STEP I",
     "year": 1990,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "trigonometry",
       "double-angle formulae",
@@ -2784,7 +2194,7 @@
     "paper": "STEP I",
     "year": 2001,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "trigonometry",
       "triple-angle formulae",
@@ -2798,25 +2208,6 @@
     "preview": "Show that $ \\tan3\\theta=\\frac{3\\tan\\theta-\\tan^3\\theta}{1-3\\tan^2\\theta}.$  Given that $\\theta=\\cos^{-1}(2/\\sqrt5)$ and $0<\\theta<\\pi/2$,…"
   },
   {
-    "id": "A2-03-004",
-    "chapter": "A2-03",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2006,
-    "level": "A2",
-    "difficulty": 3,
-    "topics": [
-      "trigonometry",
-      "sum-to-product"
-    ],
-    "methods": [
-      "sum-to-product identities"
-    ],
-    "solutionStatus": "full",
-    "preview": "Prove that $\\dfrac{\\sin A+\\sin B}{\\cos A+\\cos B}=\\tan\\dfrac{A+B}{2}$."
-  },
-  {
     "id": "A2-03-007",
     "chapter": "A2-03",
     "title": "",
@@ -2824,7 +2215,7 @@
     "paper": "STEP I",
     "year": 2002,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "harmonic form",
       "trigonometric equations"
@@ -2844,7 +2235,7 @@
     "paper": "STEP II",
     "year": 2004,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "addition formula for tan",
       "angle sum pi"
@@ -2864,7 +2255,7 @@
     "paper": "STEP II",
     "year": 2004,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "addition formulae",
       "angles in a triangle"
@@ -2877,26 +2268,6 @@
     "preview": "If $A$, $B$ and $C$ are the angles of a triangle, show that $\\tan A+\\tan B+\\tan C=\\tan A\\tan B\\tan C$."
   },
   {
-    "id": "A2-03-010",
-    "chapter": "A2-03",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2006,
-    "level": "A2",
-    "difficulty": 5,
-    "topics": [
-      "double angle",
-      "trigonometric equations"
-    ],
-    "methods": [
-      "using sin2x=2sinxcosx",
-      "factorising"
-    ],
-    "solutionStatus": "full",
-    "preview": "Solve the equation $\\sin2x=\\cos x$ for $0\\le x<2\\pi$."
-  },
-  {
     "id": "A2-04-001",
     "chapter": "A2-04",
     "title": "",
@@ -2904,7 +2275,7 @@
     "paper": "STEP I",
     "year": 1988,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "exponentials",
       "logarithms",
@@ -2925,7 +2296,7 @@
     "paper": "STEP I",
     "year": 1999,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "logarithms",
       "harmonic series",
@@ -2982,26 +2353,6 @@
     "preview": "Find $\\displaystyle\\int \\frac{e^x}{1+e^{2x}}\\,dx$."
   },
   {
-    "id": "A2-04-007",
-    "chapter": "A2-04",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2003,
-    "level": "A2",
-    "difficulty": 4,
-    "topics": [
-      "logarithmic differentiation",
-      "exponential form"
-    ],
-    "methods": [
-      "writing x^x as e^(x ln x)",
-      "chain rule"
-    ],
-    "solutionStatus": "full",
-    "preview": "Using the fact that $x^{x}=e^{x\\\\ln x}$, find $\\\\dfrac{d}{dx}(x^{x})$."
-  },
-  {
     "id": "A2-04-008",
     "chapter": "A2-04",
     "title": "",
@@ -3009,7 +2360,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "differentiation under the integral sign",
       "logarithmic integrals"
@@ -3022,46 +2373,6 @@
     "preview": "Given that $\\\\int_{0}^{1}x^{a-1}\\,dx=\\\\frac{1}{a}$ for $a>0$, differentiate both sides with respect to $a$ to evaluate…"
   },
   {
-    "id": "A2-04-009",
-    "chapter": "A2-04",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2004,
-    "level": "A2",
-    "difficulty": 4,
-    "topics": [
-      "logarithmic equations",
-      "quadratic in logs"
-    ],
-    "methods": [
-      "substitution u=log x",
-      "solving the quadratic"
-    ],
-    "solutionStatus": "full",
-    "preview": "Solve the equation $(\\ln x)^{2}-\\ln x-2=0$."
-  },
-  {
-    "id": "A2-04-010",
-    "chapter": "A2-04",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2006,
-    "level": "A2",
-    "difficulty": 5,
-    "topics": [
-      "exponential inequality",
-      "logarithms"
-    ],
-    "methods": [
-      "taking logs",
-      "rearranging the inequality"
-    ],
-    "solutionStatus": "full",
-    "preview": "Solve the inequality $e^{2x}-4e^{x}+3>0$."
-  },
-  {
     "id": "A2-05-001",
     "chapter": "A2-05",
     "title": "",
@@ -3069,7 +2380,7 @@
     "paper": "STEP I",
     "year": 2000,
     "level": "A2",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "differentiation",
       "quotient rule",
@@ -3091,7 +2402,7 @@
     "paper": "STEP I",
     "year": 1988,
     "level": "A2",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "differentiation",
       "chain rule",
@@ -3113,7 +2424,7 @@
     "paper": "STEP I",
     "year": 1991,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "differentiation",
       "related rates",
@@ -3199,7 +2510,7 @@
     "paper": "STEP I",
     "year": 2002,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "optimisation",
       "cylinders"
@@ -3219,7 +2530,7 @@
     "paper": "STEP II",
     "year": 2004,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "optimisation",
       "cone in a sphere"
@@ -3232,26 +2543,6 @@
     "preview": "A right circular cone is inscribed in a sphere of radius $R$, with its base a circle inside the sphere. Show that the volume of the cone is…"
   },
   {
-    "id": "A2-05-009",
-    "chapter": "A2-05",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2004,
-    "level": "A2",
-    "difficulty": 4,
-    "topics": [
-      "parametric differentiation",
-      "stationary points"
-    ],
-    "methods": [
-      "dy/dx via dy/dt and dx/dt",
-      "solving dy/dx=0"
-    ],
-    "solutionStatus": "full",
-    "preview": "For the parametric curve $x=t^{2}$, $y=t^{3}-3t$, find $\\dfrac{dy}{dx}$ and the coordinates of the stationary points."
-  },
-  {
     "id": "A2-05-010",
     "chapter": "A2-05",
     "title": "",
@@ -3259,7 +2550,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 3,
     "topics": [
       "optimisation",
       "distance minimisation"
@@ -3300,7 +2591,7 @@
     "paper": "STEP I",
     "year": 1994,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "integration",
       "inverse trigonometric functions",
@@ -3322,7 +2613,7 @@
     "paper": "STEP I",
     "year": 1995,
     "level": "A2",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "integration",
       "trigonometric integrals",
@@ -3343,7 +2634,7 @@
     "paper": "STEP I",
     "year": 1987,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "integration",
       "inverse functions",
@@ -3365,7 +2656,7 @@
     "paper": "STEP I",
     "year": 1996,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "integration",
       "trigonometric series",
@@ -3386,7 +2677,7 @@
     "paper": "STEP I",
     "year": 1987,
     "level": "A2",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "integration",
       "integration by substitution",
@@ -3407,7 +2698,7 @@
     "paper": "STEP I",
     "year": 1987,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "integration",
       "trigonometric substitution"
@@ -3418,46 +2709,6 @@
     ],
     "solutionStatus": "full",
     "preview": "Using the substitution $x=\\alpha\\cos^2\\theta+\\beta\\sin^2\\theta$, show that, if $\\alpha<\\beta$, …"
-  },
-  {
-    "id": "A2-06-008",
-    "chapter": "A2-06",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2002,
-    "level": "A2",
-    "difficulty": 3,
-    "topics": [
-      "integration by parts",
-      "repeated application"
-    ],
-    "methods": [
-      "IBP with u = x^2",
-      "applying IBP a second time"
-    ],
-    "solutionStatus": "full",
-    "preview": "Find $\\displaystyle\\int x^{2}e^{x}\\,dx$."
-  },
-  {
-    "id": "A2-06-010",
-    "chapter": "A2-06",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2001,
-    "level": "A2",
-    "difficulty": 4,
-    "topics": [
-      "trigonometric integrals",
-      "power-reduction"
-    ],
-    "methods": [
-      "sin^2 half-angle identity",
-      "integrating cos 2x and cos 4x"
-    ],
-    "solutionStatus": "full",
-    "preview": "Using the identity $\\\\sin^{2}x=\\\\tfrac12(1-\\\\cos2x)$, evaluate $I=\\\\int_{0}^{\\\\pi/2}\\\\sin^{4}x\\,dx$."
   },
   {
     "id": "A2-06-011",
@@ -3478,46 +2729,6 @@
     ],
     "solutionStatus": "full",
     "preview": "By using the substitution $x=\\\\pi/2-t$ and the identity $\\\\sin x\\\\cos x=\\\\tfrac12\\\\sin2x$, show that …"
-  },
-  {
-    "id": "A2-06-012",
-    "chapter": "A2-06",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2004,
-    "level": "A2",
-    "difficulty": 4,
-    "topics": [
-      "integration by substitution",
-      "definite integrals"
-    ],
-    "methods": [
-      "substitution u=ln x",
-      "changing limits"
-    ],
-    "solutionStatus": "full",
-    "preview": "Using the substitution $u=\\ln x$, evaluate $\\displaystyle\\int_{1}^{e}\\dfrac{\\ln x}{x}\\,dx$."
-  },
-  {
-    "id": "A2-06-013",
-    "chapter": "A2-06",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2005,
-    "level": "A2",
-    "difficulty": 5,
-    "topics": [
-      "integration by parts",
-      "trigonometric substitution"
-    ],
-    "methods": [
-      "parts with u=ln x",
-      "repeated application"
-    ],
-    "solutionStatus": "full",
-    "preview": "Evaluate $\\displaystyle\\int_{1}^{e}x\\ln x\\,dx$."
   },
   {
     "id": "A2-07-001",
@@ -3548,7 +2759,7 @@
     "paper": "STEP I",
     "year": 1995,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "differential equations",
       "substitution",
@@ -3570,7 +2781,7 @@
     "paper": "STEP I",
     "year": 1989,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "differential equations",
       "normals to a curve"
@@ -3632,7 +2843,7 @@
     "paper": "STEP I",
     "year": 2002,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 3,
     "topics": [
       "first-order linear ODE",
       "integrating factor"
@@ -3652,7 +2863,7 @@
     "paper": "STEP II",
     "year": 2004,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "logistic equation",
       "separation of variables"
@@ -3665,26 +2876,6 @@
     "preview": "The population $P(t)$ satisfies $\\\\dfrac{dP}{dt}=kP\\\\left(1-\\\\dfrac{P}{M}\\\\right)$ with $k,M>0$ and $P(0)=P_{0}$. Show that…"
   },
   {
-    "id": "A2-07-010",
-    "chapter": "A2-07",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2004,
-    "level": "A2",
-    "difficulty": 4,
-    "topics": [
-      "second-order ODE",
-      "general solution"
-    ],
-    "methods": [
-      "auxiliary equation",
-      "finding roots"
-    ],
-    "solutionStatus": "full",
-    "preview": "Solve the differential equation $\\dfrac{d^{2}y}{dx^{2}}-5\\dfrac{dy}{dx}+6y=0$."
-  },
-  {
     "id": "A2-07-011",
     "chapter": "A2-07",
     "title": "",
@@ -3692,7 +2883,7 @@
     "paper": "STEP II",
     "year": 2006,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "first-order linear ODE",
       "integrating factor"
@@ -3733,7 +2924,7 @@
     "paper": "STEP I",
     "year": 2017,
     "level": "A2",
-    "difficulty": 4,
+    "difficulty": 5,
     "topics": [
       "numerical methods",
       "sequences",
@@ -3837,7 +3028,7 @@
     "paper": "STEP II",
     "year": 2005,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "trapezium rule",
       "error bound"
@@ -3850,26 +3041,6 @@
     "preview": "Use the trapezium rule with 4 strips to estimate $I=\\\\int_{0}^{1}e^{-x^{2}}\\,dx$. Given that $|f''(x)|\\\\le2$ on $[0,1]$, state an upper…"
   },
   {
-    "id": "A2-08-010",
-    "chapter": "A2-08",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2004,
-    "level": "A2",
-    "difficulty": 4,
-    "topics": [
-      "Newton-Raphson",
-      "root finding"
-    ],
-    "methods": [
-      "Newton's method formula",
-      "one iteration"
-    ],
-    "solutionStatus": "full",
-    "preview": "Use one iteration of the Newton-Raphson method, starting from $x_{0}=1$, to find an approximation to a root of $f(x)=x^{3}-2x-5$."
-  },
-  {
     "id": "A2-08-011",
     "chapter": "A2-08",
     "title": "",
@@ -3877,7 +3048,7 @@
     "paper": "STEP II",
     "year": 2006,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "fixed-point iteration",
       "convergence"
@@ -3920,7 +3091,7 @@
     "paper": "STEP I",
     "year": 1990,
     "level": "A2",
-    "difficulty": 3,
+    "difficulty": 4,
     "topics": [
       "vectors",
       "parallelogram",
@@ -3975,26 +3146,6 @@
     "preview": "Show that the lines $\\mathbf{r}=(1,2,0)+t(1,0,1)$ and $\\mathbf{r}=(0,2,2)+s(1,0,-1)$ intersect, and find their point of intersection."
   },
   {
-    "id": "A2-09-007",
-    "chapter": "A2-09",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 2002,
-    "level": "A2",
-    "difficulty": 4,
-    "topics": [
-      "planes",
-      "distance from a point to a plane"
-    ],
-    "methods": [
-      "intercept form of a plane",
-      "perpendicular distance formula"
-    ],
-    "solutionStatus": "full",
-    "preview": "The points $A(1,0,0)$, $B(0,1,0)$ and $C(0,0,1)$ lie on a plane. Find the equation of the plane and the perpendicular distance from the…"
-  },
-  {
     "id": "A2-09-008",
     "chapter": "A2-09",
     "title": "",
@@ -4002,7 +3153,7 @@
     "paper": "STEP II",
     "year": 2004,
     "level": "A2",
-    "difficulty": 5,
+    "difficulty": 4,
     "topics": [
       "skew lines",
       "shortest distance"
@@ -4013,45 +3164,5 @@
     ],
     "solutionStatus": "full",
     "preview": "Find the shortest distance between the two lines $\\\\mathbf{r}=(0,0,0)+s(1,1,0)$ and $\\\\mathbf{r}=(0,0,1)+t(0,1,1)$, and the points on each…"
-  },
-  {
-    "id": "A2-09-009",
-    "chapter": "A2-09",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2004,
-    "level": "A2",
-    "difficulty": 4,
-    "topics": [
-      "scalar triple product",
-      "coplanarity"
-    ],
-    "methods": [
-      "triple product = 0",
-      "volume of parallelepiped"
-    ],
-    "solutionStatus": "full",
-    "preview": "Show that the vectors $\\mathbf{a}=(1,2,3)$, $\\mathbf{b}=(2,-1,1)$ and $\\mathbf{c}=(4,3,7)$ are coplanar."
-  },
-  {
-    "id": "A2-09-010",
-    "chapter": "A2-09",
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP II",
-    "year": 2006,
-    "level": "A2",
-    "difficulty": 5,
-    "topics": [
-      "line-plane intersection",
-      "vector equations"
-    ],
-    "methods": [
-      "substituting the line into the plane",
-      "solving for the parameter"
-    ],
-    "solutionStatus": "full",
-    "preview": "Find the point of intersection of the line $\\mathbf{r}=(1,2,3)+t(2,-1,1)$ with the plane $x+2y+3z=14$."
   }
 ]

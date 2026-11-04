@@ -8,11 +8,21 @@
   "sourceUrl": "https://step.maths.org/questions",
   "solutionUrl": "",
   "level": "A2",
-  "difficulty": 4,
-  "topics": ["addition formulae", "angles in a triangle"],
-  "methods": ["using A+B+C=pi", "tan addition formula"],
+  "difficulty": 3,
+  "topics": [
+    "addition formulae",
+    "angles in a triangle"
+  ],
+  "methods": [
+    "using A+B+C=pi",
+    "tan addition formula"
+  ],
   "statement": "If $A$, $B$ and $C$ are the angles of a triangle, show that $\\tan A+\\tan B+\\tan C=\\tan A\\tan B\\tan C$.",
   "solution": "Since $A+B+C=\\pi$, we have $A+B=\\pi-C$, so $\\tan(A+B)=-\\tan C$. Using the addition formula, $\\frac{\\tan A+\\tan B}{1-\\tan A\\tan B}=-\\tan C$. Cross-multiplying gives $\\tan A+\\tan B=-\\tan C+\\tan A\\tan B\\tan C$, hence $\\tan A+\\tan B+\\tan C=\\tan A\\tan B\\tan C$.",
   "solutionStatus": "full",
-  "hints": ["Use A+B = pi - C so tan(A+B) = -tan C.", "Apply the tangent addition formula.", "Cross-multiply and rearrange."]
+  "hints": [
+    "Use A+B = pi - C so tan(A+B) = -tan C.",
+    "Apply the tangent addition formula.",
+    "Cross-multiply and rearrange."
+  ]
 }

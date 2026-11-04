@@ -8,9 +8,17 @@
   "sourceUrl": "https://step.maths.org/questions/95-s1-q6",
   "solutionUrl": "",
   "level": "A2",
-  "difficulty": 4,
-  "topics": ["differential equations", "substitution", "integrating factor"],
-  "methods": ["substitution u=1/y", "solving linear ODEs", "integrating factor"],
+  "difficulty": 5,
+  "topics": [
+    "differential equations",
+    "substitution",
+    "integrating factor"
+  ],
+  "methods": [
+    "substitution u=1/y",
+    "solving linear ODEs",
+    "integrating factor"
+  ],
   "statement": "(i) In the differential equation\n$$\\frac{1}{y^2}\\frac{dy}{dx}+\\frac{1}{y}=e^{2x},$$\nmake the substitution $u=1/y$, and hence show that the general solution of the original equation is\n$$y=\\frac{1}{Ae^x-e^{2x}}.$$\n\n(ii) Use a similar method to solve the equation\n$$\\frac{1}{y^3}\\frac{dy}{dx}+\\frac{1}{y^2}=e^{2x}.$$",
   "solution": "(i) Let $u=1/y$, so $\\dfrac{du}{dx}=-\\dfrac{1}{y^2}\\dfrac{dy}{dx}$. Substituting into the equation,\n$$-\\frac{du}{dx}+u=e^{2x} \\quad\\Rightarrow\\quad \\frac{du}{dx}-u=-e^{2x}.$$\n\nThis is linear in $u$ with integrating factor $e^{-x}$:\n$$\\frac{d}{dx}\\left(ue^{-x}\\right)=-e^{x}.$$\nIntegrating, $ue^{-x}=-e^{x}+A$, so $u=Ae^{x}-e^{2x}$. Therefore\n$$y=\\frac{1}{u}=\\frac{1}{Ae^x-e^{2x}}.$$\n\n(ii) Let $u=1/y^2$, so $\\dfrac{du}{dx}=-\\dfrac{2}{y^3}\\dfrac{dy}{dx}$. Substituting,\n$$-\\frac12\\frac{du}{dx}+u=e^{2x} \\quad\\Rightarrow\\quad \\frac{du}{dx}-2u=-2e^{2x}.$$\n\nThis is linear with integrating factor $e^{-2x}$:\n$$\\frac{d}{dx}\\left(ue^{-2x}\\right)=-2.$$\nIntegrating, $ue^{-2x}=-2x+A$, so $u=(A-2x)e^{2x}$. Therefore\n$$\\frac{1}{y^2}=(A-2x)e^{2x} \\quad\\Rightarrow\\quad y^2=\\frac{e^{-2x}}{A-2x},$$\nand hence\n$$y=\\pm\\frac{e^{-x}}{\\sqrt{A-2x}}.$$",
   "solutionStatus": "full",

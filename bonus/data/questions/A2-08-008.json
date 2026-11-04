@@ -9,10 +9,20 @@
   "solutionUrl": "",
   "level": "A2",
   "difficulty": 4,
-  "topics": ["fixed-point iteration", "error analysis"],
-  "methods": ["linearising the error", "order of convergence"],
+  "topics": [
+    "fixed-point iteration",
+    "error analysis"
+  ],
+  "methods": [
+    "linearising the error",
+    "order of convergence"
+  ],
   "statement": "For the iteration $x_{n+1}=\\\\cos x_{n}$ converging to the root $\\\\alpha$ of $x=\\\\cos x$, show that the error $e_{n}=\\\\alpha-x_{n}$ satisfies $e_{n+1}\\\\approx-\\\\sin\\\\alpha\\,e_{n}$, and state the order of convergence.",
   "solution": "Since $\\\\alpha=\\\\cos\\\\alpha$, the error is $e_{n+1}=\\\\alpha-x_{n+1}=\\\\cos\\\\alpha-\\\\cos x_{n}$. Writing $x_{n}=\\\\alpha-e_{n}$ and using $\\\\cos(\\\\alpha-e_{n})\\\\approx\\\\cos\\\\alpha+e_{n}\\\\sin\\\\alpha$ gives $e_{n+1}\\\\approx\\\\cos\\\\alpha-(\\\\cos\\\\alpha+e_{n}\\\\sin\\\\alpha)=-e_{n}\\\\sin\\\\alpha$. Thus the errors shrink by a factor $|\\sin\\\\alpha|\\\\approx0.674$ each step, so the convergence is linear (first order).",
   "solutionStatus": "full",
-  "hints": ["Express e_{n+1} as cos alpha - cos x_n.","Expand cos(alpha - e_n) to first order in e_n.","Compare the coefficient to identify the convergence factor."]
+  "hints": [
+    "Express e_{n+1} as cos alpha - cos x_n.",
+    "Expand cos(alpha - e_n) to first order in e_n.",
+    "Compare the coefficient to identify the convergence factor."
+  ]
 }

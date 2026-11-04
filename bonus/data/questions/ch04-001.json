@@ -9,8 +9,16 @@
   "solutionUrl": "",
   "level": "AS",
   "difficulty": 3,
-  "topics": ["functions", "graph transformations", "quadratics"],
-  "methods": ["graph transformations", "completing the square", "finding a minimum point"],
+  "topics": [
+    "functions",
+    "graph transformations",
+    "quadratics"
+  ],
+  "methods": [
+    "graph transformations",
+    "completing the square",
+    "finding a minimum point"
+  ],
   "statement": "It is given that $f(x)=x^2-6x$.\n\nThe curves $y=f(kx)$ and $y=f(x-c)$ have the same minimum point, where $k>0$ and $c>0$.\n\nWhich of the following is a correct expression for $k$ in terms of $c$?",
   "options": [
     "$k=\\dfrac{3-c}{3}$",

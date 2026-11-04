@@ -9,8 +9,16 @@
   "solutionUrl": "",
   "level": "AS",
   "difficulty": 3,
-  "topics": ["circles", "tangents", "coordinate geometry"],
-  "methods": ["gradient of radius", "perpendicular gradient", "point-gradient form"],
+  "topics": [
+    "circles",
+    "tangents",
+    "coordinate geometry"
+  ],
+  "methods": [
+    "gradient of radius",
+    "perpendicular gradient",
+    "point-gradient form"
+  ],
   "statement": "A circle has centre the origin and radius $r$. Show that the tangent to the circle at the point $(x_0,y_0)$ on the circle has equation $x_0x+y_0y=r^2$.",
   "solution": "Since $(x_0,y_0)$ lies on the circle, $x_0^2+y_0^2=r^2$.\n\nThe radius from the origin to $(x_0,y_0)$ has gradient $\\dfrac{y_0}{x_0}$ (for $x_0\\neq 0$). The tangent is perpendicular to the radius, so its gradient is $-\\dfrac{x_0}{y_0}$.\n\nUsing the point-gradient form at $(x_0,y_0)$:\n$$y-y_0=-\\frac{x_0}{y_0}(x-x_0).$$\nMultiply by $y_0$:\n$$y_0(y-y_0)=-x_0(x-x_0) \\;\\Rightarrow\\; x_0x+y_0y=x_0^2+y_0^2=r^2.$$\n(The cases $x_0=0$ or $y_0=0$ give the horizontal/vertical tangents $y=\\pm r$ or $x=\\pm r$, which also satisfy $x_0x+y_0y=r^2$.)",
   "solutionStatus": "full",

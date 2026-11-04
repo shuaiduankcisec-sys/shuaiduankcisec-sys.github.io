@@ -8,9 +8,17 @@
   "sourceUrl": "https://step.maths.org/questions/89-s1-q5",
   "solutionUrl": "",
   "level": "A2",
-  "difficulty": 3,
-  "topics": ["binomial theorem", "binomial coefficients", "series"],
-  "methods": ["binomial expansion", "substituting special values", "differentiating the binomial expansion"],
+  "difficulty": 4,
+  "topics": [
+    "binomial theorem",
+    "binomial coefficients",
+    "series"
+  ],
+  "methods": [
+    "binomial expansion",
+    "substituting special values",
+    "differentiating the binomial expansion"
+  ],
   "statement": "Write down the binomial expansion of $(1+x)^n$, where $n$ is a positive integer.\n\n(i) By substituting particular values of $x$, or otherwise, show that if $n$ is an even positive integer, then\n$$\\binom n0+\\binom n2+\\binom n4+\\cdots+\\binom nn=\\binom n1+\\binom n3+\\cdots+\\binom n{n-1}=2^{n-1}.$$\n\n(ii) Show that if $n$ is any positive integer, then\n$$\\binom n1+2\\binom n2+3\\binom n3+\\cdots+n\\binom nn=n2^{n-1}.$$\n\nHence evaluate\n$$\\sum_{r=0}^{n}\\bigl(r+(-1)^r\\bigr)\\binom nr.$$",
   "solution": "The binomial expansion is\n$$(1+x)^n=\\sum_{r=0}^{n}\\binom nr x^r.$$\n\n(i) Substituting $x=1$:\n$$2^n=\\binom n0+\\binom n1+\\cdots+\\binom nn. \\tag{1}$$\nSubstituting $x=-1$ (with $n$ even):\n$$0=\\binom n0-\\binom n1+\\binom n2-\\cdots-\\binom n{n-1}+\\binom nn. \\tag{2}$$\n\nAdding (1) and (2), then dividing by 2:\n$$\\binom n0+\\binom n2+\\cdots+\\binom nn=2^{n-1}.$$\nSubtracting (2) from (1), then dividing by 2:\n$$\\binom n1+\\binom n3+\\cdots+\\binom n{n-1}=2^{n-1}.$$\n\n(ii) Differentiate $(1+x)^n=\\sum_{r=0}^n\\binom nr x^r$ with respect to $x$:\n$$n(1+x)^{n-1}=\\sum_{r=1}^n r\\binom nr x^{r-1}.$$\nSubstituting $x=1$:\n$$n2^{n-1}=\\binom n1+2\\binom n2+3\\binom n3+\\cdots+n\\binom nn.$$\n\nFinally,\n$$\\sum_{r=0}^n(r+(-1)^r)\\binom nr=\\sum_{r=0}^n r\\binom nr+\\sum_{r=0}^n(-1)^r\\binom nr.$$\nThe first sum is $n2^{n-1}$ (from (ii), noting the $r=0$ term is zero). The second is $(1-1)^n=0$ for $n\\ge1$. Hence the value is $n2^{n-1}$.",
   "solutionStatus": "full",

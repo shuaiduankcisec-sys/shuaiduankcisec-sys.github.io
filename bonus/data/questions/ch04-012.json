@@ -8,11 +8,21 @@
   "sourceUrl": "https://step.maths.org/questions",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 4,
-  "topics": ["function iteration", "fixed points"],
-  "methods": ["composing f with itself", "solving f(f(x))=x"],
+  "difficulty": 3,
+  "topics": [
+    "function iteration",
+    "fixed points"
+  ],
+  "methods": [
+    "composing f with itself",
+    "solving f(f(x))=x"
+  ],
   "statement": "Let $f(x)=\\dfrac{1}{x-1}$ for $x\\neq1$. Show that $f(f(x))=f(x)-1$ is not generally true, but find $f(f(x))$ explicitly and solve $f(f(x))=x$.",
   "solution": "$f(f(x))=\\dfrac{1}{\\frac{1}{x-1}-1}=\\dfrac{1}{\\frac{1-(x-1)}{x-1}}=\\dfrac{x-1}{2-x}$ for $x\\neq2$. Setting $f(f(x))=x$ gives $\\dfrac{x-1}{2-x}=x$, so $x-1=x(2-x)=2x-x^{2}$, i.e. $x^{2}-x-1=0$. Hence $x=\\dfrac{1\\pm\\sqrt{5}}{2}$.",
   "solutionStatus": "full",
-  "hints": ["Substitute f(x) into f and simplify the double fraction.", "Set the result equal to x.", "Solve the resulting quadratic."]
+  "hints": [
+    "Substitute f(x) into f and simplify the double fraction.",
+    "Set the result equal to x.",
+    "Solve the resulting quadratic."
+  ]
 }

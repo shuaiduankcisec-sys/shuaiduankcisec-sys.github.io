@@ -9,8 +9,16 @@
   "solutionUrl": "",
   "level": "AS",
   "difficulty": 3,
-  "topics": ["series", "powers", "arithmetic series"],
-  "methods": ["sum of an arithmetic series", "sum of a geometric series", "complementary counting"],
+  "topics": [
+    "series",
+    "powers",
+    "arithmetic series"
+  ],
+  "methods": [
+    "sum of an arithmetic series",
+    "sum of a geometric series",
+    "complementary counting"
+  ],
   "statement": "The first few positive whole numbers that are not powers of $3$ are $2,4,5,6,7,8,10$.\n\nWhat is the sum of all the positive whole numbers that are less than $3^{10}$ and are also not powers of $3$?",
   "options": [
     "$\\dfrac{(3^{10}-1)^2}{2}$",

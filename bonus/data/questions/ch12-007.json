@@ -8,9 +8,16 @@
   "sourceUrl": "https://step.maths.org/questions",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 3,
-  "topics": ["exponentials", "logarithms", "indices"],
-  "methods": ["common base", "relating exponents"],
+  "difficulty": 4,
+  "topics": [
+    "exponentials",
+    "logarithms",
+    "indices"
+  ],
+  "methods": [
+    "common base",
+    "relating exponents"
+  ],
   "statement": "Suppose $2^x=3^y=6^z$. Express $z$ in terms of $x$ and $y$.",
   "solution": "Let $2^x=3^y=6^z=k$. Then $2=k^{1/x}$ and $3=k^{1/y}$. Since $6=2\\cdot3$,\n$$k^{1/z}=6=2\\cdot3=k^{1/x}\\cdot k^{1/y}=k^{1/x+1/y}.$$\nHence $\\dfrac1z=\\dfrac1x+\\dfrac1y$, so\n$$z=\\frac{xy}{x+y}.$$",
   "solutionStatus": "full",

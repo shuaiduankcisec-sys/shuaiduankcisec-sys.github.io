@@ -9,10 +9,20 @@
   "solutionUrl": "",
   "level": "AS",
   "difficulty": 4,
-  "topics": ["locus", "circle geometry"],
-  "methods": ["equation of chord with given midpoint", "eliminating parameters"],
+  "topics": [
+    "locus",
+    "circle geometry"
+  ],
+  "methods": [
+    "equation of chord with given midpoint",
+    "eliminating parameters"
+  ],
   "statement": "Chords of the circle $x^{2}+y^{2}=a^{2}$ are drawn through the fixed point $(p,0)$. Show that the midpoints of all such chords lie on the circle $x^{2}+y^{2}-px=0$.",
   "solution": "Let $(h,k)$ be the midpoint of a chord. The chord of $x^{2}+y^{2}=a^{2}$ with midpoint $(h,k)$ has equation $hx+ky=h^{2}+k^{2}$ (the chord is perpendicular to the radius to its midpoint and passes through $(h,k)$). Because the chord passes through $(p,0)$, we have $hp=h^{2}+k^{2}$, i.e. $h^{2}+k^{2}-ph=0$. Therefore every midpoint $(x,y)$ satisfies $x^{2}+y^{2}-px=0$, which is a circle.",
   "solutionStatus": "full",
-  "hints": ["Recall the equation of a chord of x^2+y^2=a^2 with given midpoint (h,k).", "Substitute the fixed point (p,0) into that chord equation.", "Recognise the resulting equation as a circle."]
+  "hints": [
+    "Recall the equation of a chord of x^2+y^2=a^2 with given midpoint (h,k).",
+    "Substitute the fixed point (p,0) into that chord equation.",
+    "Recognise the resulting equation as a circle."
+  ]
 }

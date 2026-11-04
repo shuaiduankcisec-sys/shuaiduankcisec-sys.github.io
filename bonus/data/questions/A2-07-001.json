@@ -9,8 +9,15 @@
   "solutionUrl": "",
   "level": "A2",
   "difficulty": 3,
-  "topics": ["differential equations", "absolute value", "integration"],
-  "methods": ["integrating piecewise", "handling absolute values"],
+  "topics": [
+    "differential equations",
+    "absolute value",
+    "integration"
+  ],
+  "methods": [
+    "integrating piecewise",
+    "handling absolute values"
+  ],
   "statement": "The solution to the differential equation\n$$\\frac{dy}{dx}=|-6x|\\quad\\text{for all }x$$\nis $y=f(x)+c$, where $c$ is a constant.\n\nWhich one of the following is a correct expression for $f(x)$?",
   "options": [
     "$-\\dfrac{6x}{|x|}$",

@@ -8,9 +8,16 @@
   "sourceUrl": "https://step.maths.org/questions/90-s1-q6",
   "solutionUrl": "",
   "level": "A2",
-  "difficulty": 3,
-  "topics": ["vectors", "parallelogram", "dot product"],
-  "methods": ["parallelogram identity", "dot product and projections"],
+  "difficulty": 4,
+  "topics": [
+    "vectors",
+    "parallelogram",
+    "dot product"
+  ],
+  "methods": [
+    "parallelogram identity",
+    "dot product and projections"
+  ],
   "statement": "Let $ABCD$ be a parallelogram. By using vectors, or otherwise, prove that:\n\n(i) $AB^2+BC^2+CD^2+DA^2=AC^2+BD^2$;\n\n(ii) $|AC^2-BD^2|$ is $4$ times the area of the rectangle whose sides are *any* side of the parallelogram and the projection of an adjacent side on that side.\n\nState and prove a result like (ii) about $|AB^2-AD^2|$ and the diagonals.",
   "solution": "Let $\\overrightarrow{AB}=\\mathbf a$ and $\\overrightarrow{AD}=\\mathbf b$. Then $\\overrightarrow{AC}=\\mathbf a+\\mathbf b$ and $\\overrightarrow{BD}=\\mathbf a-\\mathbf b$.\n\n(i) The four sides have squared lengths $|\\mathbf a|^2+|\\mathbf b|^2+|\\mathbf a|^2+|\\mathbf b|^2=2|\\mathbf a|^2+2|\\mathbf b|^2$. The diagonals give\n$$AC^2+BD^2=|\\mathbf a+\\mathbf b|^2+|\\mathbf a-\\mathbf b|^2=(|\\mathbf a|^2+2\\mathbf a\\cdot\\mathbf b+|\\mathbf b|^2)+(|\\mathbf a|^2-2\\mathbf a\\cdot\\mathbf b+|\\mathbf b|^2)=2|\\mathbf a|^2+2|\\mathbf b|^2.$$\nSo the two sums are equal.\n\n(ii) Now\n$$AC^2-BD^2=|\\mathbf a+\\mathbf b|^2-|\\mathbf a-\\mathbf b|^2=4\\,\\mathbf a\\cdot\\mathbf b.$$\nNow $\\mathbf a\\cdot\\mathbf b=|\\mathbf a|\\times(\\text{projection of }\\mathbf b\\text{ onto }\\mathbf a)$, so\n$$|AC^2-BD^2|=4|\\mathbf a|\\times|\\text{projection of }\\mathbf b\\text{ on }\\mathbf a|,$$\nwhich is $4$ times the area of the rectangle with sides $AB$ and the projection of $AD$ onto $AB$.\n\n**Analogous result for sides and diagonals.** Using $|\\mathbf a+\\mathbf b|^2-|\\mathbf a-\\mathbf b|^2=4\\mathbf a\\cdot\\mathbf b$ again, we also have, from the diagonals $\\mathbf a+\\mathbf b$ and $\\mathbf a-\\mathbf b$:\n$$|AB^2-AD^2|=\\bigl||\\mathbf a|^2-|\\mathbf b|^2\\bigr|.$$\nWriting the diagonals as $\\mathbf u=\\mathbf a+\\mathbf b$ and $\\mathbf v=\\mathbf a-\\mathbf b$, one obtains\n$$AB^2-AD^2=\\mathbf a\\cdot(\\mathbf a-\\mathbf b)+\\mathbf a\\cdot\\mathbf b=\\mathbf u\\cdot\\mathbf v,$$\ni.e. $|AB^2-AD^2|$ equals the product of the two diagonal lengths times $\\cos$ of the angle between them.",
   "solutionStatus": "full",

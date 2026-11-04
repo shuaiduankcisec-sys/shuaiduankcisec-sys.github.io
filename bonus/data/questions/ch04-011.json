@@ -8,11 +8,21 @@
   "sourceUrl": "https://step.maths.org/questions",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 5,
-  "topics": ["functional equations", "integer-valued functions"],
-  "methods": ["using recurrence-like relations", "induction on integers"],
+  "difficulty": 4,
+  "topics": [
+    "functional equations",
+    "integer-valued functions"
+  ],
+  "methods": [
+    "using recurrence-like relations",
+    "induction on integers"
+  ],
   "statement": "A function $f:\\\\mathbb{R}\\\\setminus\\{0\\}$ satisfies $f(x+1)=f(x)+1$ for all real $x$ and $f(1/x)=-f(x)$ for all $x\\\\neq0$. Given $f(1)=0$, show that $f(n)=n-1$ for every integer $n$, and find the value of $f(2/3)$.",
   "solution": "From $f(x+1)=f(x)+1$ and $f(1)=0$ we get by induction $f(n)=n-1$ for all positive integers $n$. Also $f(0)=f(-1+1)=f(-1)+1$, while $f(-1)=f(1/(-1))=-f(-1)$ gives $f(-1)=0$, so $f(0)=-1$; descending gives $f(n)=n-1$ for all integers. Now $f(3/2)=f(1/2+1)=f(1/2)+1=-f(2)+1=-1+1=0$. Then $f(2/3)=-f(3/2)=0$.",
   "solutionStatus": "full",
-  "hints": ["Use f(x+1)=f(x)+1 repeatedly to get f(n) for integers.", "Relate f(0) to f(-1) via the second equation.", "Compute f(3/2) from f(1/2), then use f(1/x)=-f(x)."]
+  "hints": [
+    "Use f(x+1)=f(x)+1 repeatedly to get f(n) for integers.",
+    "Relate f(0) to f(-1) via the second equation.",
+    "Compute f(3/2) from f(1/2), then use f(1/x)=-f(x)."
+  ]
 }

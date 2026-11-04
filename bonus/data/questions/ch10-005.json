@@ -9,8 +9,14 @@
   "solutionUrl": "",
   "level": "AS",
   "difficulty": 3,
-  "topics": ["trigonometry", "trigonometric equations"],
-  "methods": ["Pythagorean identity", "factorising"],
+  "topics": [
+    "trigonometry",
+    "trigonometric equations"
+  ],
+  "methods": [
+    "Pythagorean identity",
+    "factorising"
+  ],
   "statement": "Solve $2\\cos^2\\theta+\\sin\\theta-1=0$ for $0\\le\\theta\\le2\\pi$.",
   "solution": "Using $\\cos^2\\theta=1-\\sin^2\\theta$:\n$$2(1-\\sin^2\\theta)+\\sin\\theta-1=0\\quad\\Rightarrow\\quad -2\\sin^2\\theta+\\sin\\theta+1=0,$$\ni.e. $2\\sin^2\\theta-\\sin\\theta-1=0$. Factorising,\n$$(2\\sin\\theta+1)(\\sin\\theta-1)=0.$$\nSo $\\sin\\theta=-\\tfrac12$ or $\\sin\\theta=1$. In $[0,2\\pi]$:\n- $\\sin\\theta=1$ gives $\\theta=\\tfrac{\\pi}{2}$;\n- $\\sin\\theta=-\\tfrac12$ gives $\\theta=\\tfrac{7\\pi}{6},\\,\\tfrac{11\\pi}{6}$.\n\nThus $\\theta\\in\\left\\{\\tfrac{\\pi}{2},\\,\\tfrac{7\\pi}{6},\\,\\tfrac{11\\pi}{6}\\right\\}$.",
   "solutionStatus": "full",

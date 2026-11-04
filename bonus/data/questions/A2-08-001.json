@@ -9,8 +9,15 @@
   "solutionUrl": "",
   "level": "A2",
   "difficulty": 3,
-  "topics": ["numerical methods", "trapezium rule", "integration"],
-  "methods": ["trapezium rule", "area of a semicircle"],
+  "topics": [
+    "numerical methods",
+    "trapezium rule",
+    "integration"
+  ],
+  "methods": [
+    "trapezium rule",
+    "area of a semicircle"
+  ],
   "statement": "The trapezium rule with 4 strips is used to estimate the integral\n$$\\int_{-2}^{2}\\sqrt{4-x^2}\\,dx.$$\n\nWhat is the positive difference between the estimate and the exact value of the integral?",
   "options": [
     "$2(\\pi-2-2\\sqrt3)$",

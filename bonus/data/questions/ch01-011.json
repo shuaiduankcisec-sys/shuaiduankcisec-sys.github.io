@@ -8,11 +8,21 @@
   "sourceUrl": "https://step.maths.org/questions",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 5,
-  "topics": ["indices", "nested radicals"],
-  "methods": ["expressing terms as powers of 2", "solving an exponential equation"],
+  "difficulty": 3,
+  "topics": [
+    "indices",
+    "nested radicals"
+  ],
+  "methods": [
+    "expressing terms as powers of 2",
+    "solving an exponential equation"
+  ],
   "statement": "Solve the equation $2^{2x+1}+2^{x+1}=80$.",
   "solution": "Let $y=2^{x}>0$. Then $2^{2x+1}=2\\cdot(2^{x})^{2}=2y^{2}$ and $2^{x+1}=2y$. The equation becomes $2y^{2}+2y-80=0$, i.e. $y^{2}+y-40=0$. Hence $y=\\frac{-1+\\sqrt{161}}{2}$ (the positive root). Therefore $2^{x}=\\frac{-1+\\sqrt{161}}{2}$, so $x=\\log_{2}\\bigl(\\tfrac{-1+\\sqrt{161}}{2}\\bigr)$.",
   "solutionStatus": "full",
-  "hints": ["Substitute y=2^x.", "Rewrite 2^{2x+1} as 2y^2.", "Solve the quadratic and take logs."]
+  "hints": [
+    "Substitute y=2^x.",
+    "Rewrite 2^{2x+1} as 2y^2.",
+    "Solve the quadratic and take logs."
+  ]
 }

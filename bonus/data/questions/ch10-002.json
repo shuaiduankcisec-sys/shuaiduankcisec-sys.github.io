@@ -9,10 +9,24 @@
   "solutionUrl": "",
   "level": "AS",
   "difficulty": 3,
-  "topics": ["trigonometry", "exponential functions", "range of a function"],
-  "methods": ["range of cos x", "solving quadratics"],
+  "topics": [
+    "trigonometry",
+    "exponential functions",
+    "range of a function"
+  ],
+  "methods": [
+    "range of cos x",
+    "solving quadratics"
+  ],
   "statement": "The difference between the maximum and minimum values of the function\n$$f(x)=a^{\\cos x},$$\nwhere $a>0$ and $x$ is real, is $3$.\n\nFind the sum of the possible values of $a$.",
-  "options": ["$0$", "$\\dfrac32$", "$\\dfrac52$", "$3$", "$10$", "$\\sqrt{13}$"],
+  "options": [
+    "$0$",
+    "$\\dfrac32$",
+    "$\\dfrac52$",
+    "$3$",
+    "$10$",
+    "$\\sqrt{13}$"
+  ],
   "answer": "F",
   "solution": "Since $\\cos x$ ranges over $[-1,1]$, the maximum and minimum of $a^{\\cos x}$ occur at $\\cos x=1$ and $\\cos x=-1$, giving the values $a$ and $a^{-1}=\\tfrac1a$ (in some order depending on whether $a>1$ or $a<1$).\n\n**Case $a>1$:** then $a>\\tfrac1a$, so the difference is $a-\\tfrac1a=3$. Multiplying by $a$:\n$$a^2-3a-1=0 \\quad\\Rightarrow\\quad a=\\frac{3\\pm\\sqrt{13}}{2}.$$\nSince $a>0$, we take $a=\\dfrac{3+\\sqrt{13}}{2}$.\n\n**Case $a<1$:** then $\\tfrac1a>a$, so the difference is $\\tfrac1a-a=3$. Multiplying by $a$:\n$$a^2+3a-1=0 \\quad\\Rightarrow\\quad a=\\frac{-3\\pm\\sqrt{13}}{2}.$$\nSince $a>0$, we take $a=\\dfrac{-3+\\sqrt{13}}{2}$.\n\nThe sum of the two possible values is\n$$\\frac{3+\\sqrt{13}}{2}+\\frac{-3+\\sqrt{13}}{2}=\\sqrt{13},$$\nwhich is **option F**.",
   "solutionStatus": "full",

@@ -8,9 +8,16 @@
   "sourceUrl": "https://step.maths.org/questions/96-s1-q6",
   "solutionUrl": "",
   "level": "A2",
-  "difficulty": 4,
-  "topics": ["integration", "trigonometric series", "Dirichlet kernel"],
-  "methods": ["telescoping trigonometric sum", "definite integration"],
+  "difficulty": 5,
+  "topics": [
+    "integration",
+    "trigonometric series",
+    "Dirichlet kernel"
+  ],
+  "methods": [
+    "telescoping trigonometric sum",
+    "definite integration"
+  ],
   "statement": "Let\n$$f(x)=\\frac{\\sin\\left((n+\\tfrac12)x\\right)}{\\sin\\tfrac12 x} \\quad \\text{for } 0<x\\le\\pi.$$\n\n(i) Using the formula $2\\sin\\tfrac12x\\cos kx=\\sin(k+\\tfrac12)x-\\sin(k-\\tfrac12)x$ (which you may assume), or otherwise, show that\n$$f(x)=1+2\\sum_{k=1}^{n}\\cos kx.$$\n\n(ii) Find $\\displaystyle\\int_0^{\\pi} f(x)\\,dx$ and $\\displaystyle\\int_0^{\\pi} f(x)\\cos x\\,dx$.",
   "solution": "(i) The identity $2\\sin\\tfrac12x\\cos kx=\\sin(k+\\tfrac12)x-\\sin(k-\\tfrac12)x$ gives\n$$2\\sin\\tfrac12x\\sum_{k=1}^n\\cos kx=\\sum_{k=1}^n\\bigl(\\sin(k+\\tfrac12)x-\\sin(k-\\tfrac12)x\\bigr)=\\sin(n+\\tfrac12)x-\\sin\\tfrac12x,$$\nby telescoping. Therefore\n$$2\\sin\\tfrac12x\\left(1+2\\sum_{k=1}^n\\cos kx\\right)=2\\sin\\tfrac12x+2\\left(\\sin(n+\\tfrac12)x-\\sin\\tfrac12x\\right)=2\\sin(n+\\tfrac12)x.$$\nDividing by $2\\sin\\tfrac12x$,\n$$f(x)=\\frac{\\sin(n+\\tfrac12)x}{\\sin\\tfrac12x}=1+2\\sum_{k=1}^n\\cos kx.$$\n\n(ii) Integrating term by term,\n$$\\int_0^\\pi f(x)\\,dx=\\int_0^\\pi\\left(1+2\\sum_{k=1}^n\\cos kx\\right)dx=\\pi+2\\sum_{k=1}^n\\left[\\frac{\\sin kx}{k}\\right]_0^\\pi=\\pi,$$\nsince $\\sin k\\pi=0$ for every integer $k$.\n\nFor the second integral,\n$$\\int_0^\\pi f(x)\\cos x\\,dx=\\int_0^\\pi\\cos x\\,dx+2\\sum_{k=1}^n\\int_0^\\pi\\cos kx\\cos x\\,dx.$$\nThe first term is $0$. Using $\\cos kx\\cos x=\\tfrac12\\bigl(\\cos(k+1)x+\\cos(k-1)x\\bigr)$:\n- for $k=1$, $\\int_0^\\pi\\cos x\\cos x\\,dx=\\int_0^\\pi\\cos^2x\\,dx=\\tfrac\\pi2$;\n- for $k\\ge2$, $\\int_0^\\pi\\cos kx\\cos x\\,dx=\\tfrac12\\int_0^\\pi(\\cos(k+1)x+\\cos(k-1)x)dx=0$.\n\nHence\n$$\\int_0^\\pi f(x)\\cos x\\,dx=2\\cdot\\frac\\pi2=\\pi.$$",
   "solutionStatus": "full",

@@ -8,11 +8,21 @@
   "sourceUrl": "https://step.maths.org/questions",
   "solutionUrl": "",
   "level": "A2",
-  "difficulty": 5,
-  "topics": ["differentiation under the integral sign", "logarithmic integrals"],
-  "methods": ["differentiating a parameter", "Leibniz rule"],
+  "difficulty": 4,
+  "topics": [
+    "differentiation under the integral sign",
+    "logarithmic integrals"
+  ],
+  "methods": [
+    "differentiating a parameter",
+    "Leibniz rule"
+  ],
   "statement": "Given that $\\\\int_{0}^{1}x^{a-1}\\,dx=\\\\frac{1}{a}$ for $a>0$, differentiate both sides with respect to $a$ to evaluate $\\\\int_{0}^{1}x^{a-1}\\\\ln x\\,dx$.",
   "solution": "Differentiating $\\\\int_{0}^{1}x^{a-1}\\,dx=\\\\frac{1}{a}$ with respect to $a$ (passing the derivative inside the integral) gives $\\\\int_{0}^{1}\\\\frac{\\\\partial}{\\\\partial a}\\bigl(x^{a-1}\\bigr)\\,dx=\\\\int_{0}^{1}x^{a-1}\\\\ln x\\,dx$ on the left, and $-\\\\frac{1}{a^{2}}$ on the right. Therefore $\\\\int_{0}^{1}x^{a-1}\\\\ln x\\,dx=-\\\\frac{1}{a^{2}}$ for $a>0$.",
   "solutionStatus": "full",
-  "hints": ["Differentiate the integrand x^(a-1) with respect to a.","Differentiate 1/a on the right.","Equate the two results."]
+  "hints": [
+    "Differentiate the integrand x^(a-1) with respect to a.",
+    "Differentiate 1/a on the right.",
+    "Equate the two results."
+  ]
 }

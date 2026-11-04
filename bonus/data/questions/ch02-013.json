@@ -8,11 +8,21 @@
   "sourceUrl": "https://step.maths.org/questions",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 5,
-  "topics": ["symmetric sums", "cubic from roots"],
-  "methods": ["expressing alpha^n+beta^n via recurrence", "deducing coefficients"],
+  "difficulty": 3,
+  "topics": [
+    "symmetric sums",
+    "cubic from roots"
+  ],
+  "methods": [
+    "expressing alpha^n+beta^n via recurrence",
+    "deducing coefficients"
+  ],
   "statement": "The roots of $x^{2}-px+q=0$ are $\\alpha$ and $\\beta$. Express $\\alpha^{3}+\\beta^{3}$ in terms of $p$ and $q$, and hence find the quadratic whose roots are $\\alpha^{3}$ and $\\beta^{3}$.",
   "solution": "We have $\\alpha+\\beta=p$ and $\\alpha\\beta=q$. Then $\\alpha^{3}+\\beta^{3}=(\\alpha+\\beta)^{3}-3\\alpha\\beta(\\alpha+\\beta)=p^{3}-3pq$. Also $\\alpha^{3}\\beta^{3}=q^{3}$. The quadratic with roots $\\alpha^{3}$ and $\\beta^{3}$ has sum $p^{3}-3pq$ and product $q^{3}$, so it is $x^{2}-(p^{3}-3pq)x+q^{3}=0$.",
   "solutionStatus": "full",
-  "hints": ["Use alpha^3+beta^3=(alpha+beta)^3-3ab(alpha+beta).", "The product of the new roots is q^3.", "Form the quadratic from its sum and product of roots."]
+  "hints": [
+    "Use alpha^3+beta^3=(alpha+beta)^3-3ab(alpha+beta).",
+    "The product of the new roots is q^3.",
+    "Form the quadratic from its sum and product of roots."
+  ]
 }

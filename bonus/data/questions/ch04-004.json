@@ -9,8 +9,15 @@
   "solutionUrl": "",
   "level": "AS",
   "difficulty": 3,
-  "topics": ["functions", "inverse functions", "composition"],
-  "methods": ["solving for the inverse", "function composition"],
+  "topics": [
+    "functions",
+    "inverse functions",
+    "composition"
+  ],
+  "methods": [
+    "solving for the inverse",
+    "function composition"
+  ],
   "statement": "Let $f(x)=\\dfrac{2x+1}{x-1}$ for $x\\neq 1$. Find $f^{-1}(x)$, and verify that $f^{-1}(f(x))=x$ for all admissible $x$.",
   "solution": "Set $y=\\dfrac{2x+1}{x-1}$ and solve for $x$:\n$$y(x-1)=2x+1 \\;\\Rightarrow\\; yx-y=2x+1 \\;\\Rightarrow\\; x(y-2)=y+1,$$\nso $x=\\dfrac{y+1}{y-2}$. Therefore\n$$f^{-1}(x)=\\frac{x+1}{x-2}\\quad (x\\neq 2).$$\nNow verify:\n$$f^{-1}(f(x))=\\frac{f(x)+1}{f(x)-2}.$$\nWith $f(x)=\\dfrac{2x+1}{x-1}$,\n$$f(x)+1=\\frac{2x+1}{x-1}+1=\\frac{3x}{x-1},\\qquad f(x)-2=\\frac{2x+1}{x-1}-2=\\frac{3}{x-1}.$$\nHence\n$$f^{-1}(f(x))=\\frac{\\frac{3x}{x-1}}{\\frac{3}{x-1}}=x,$$\nas required.",
   "solutionStatus": "full",

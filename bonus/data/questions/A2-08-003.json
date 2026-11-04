@@ -9,8 +9,16 @@
   "solutionUrl": "",
   "level": "A2",
   "difficulty": 4,
-  "topics": ["numerical methods", "root finding", "fixed-point iteration"],
-  "methods": ["intermediate value theorem", "fixed-point iteration", "convergence"],
+  "topics": [
+    "numerical methods",
+    "root finding",
+    "fixed-point iteration"
+  ],
+  "methods": [
+    "intermediate value theorem",
+    "fixed-point iteration",
+    "convergence"
+  ],
   "statement": "Consider the equation $x^3-x-1=0$. Show that it has exactly one real root $\\alpha$, with $1<\\alpha<2$. Taking $x_0=1$, use the iteration $x_{n+1}=\\sqrt[3]{x_n+1}$ to find $\\alpha$ correct to 3 decimal places.",
   "solution": "Let $f(x)=x^3-x-1$. Then $f(1)=-1<0$ and $f(2)=5>0$, so by the intermediate value theorem there is a root in $(1,2)$.\n\nFor $x\\ge 1$, $f'(x)=3x^2-1>0$, so $f$ is strictly increasing on $[1,2]$; hence there is exactly one real root there (and therefore exactly one real root in total, since a cubic has at most three real roots and the other two, if real, would also have to lie where $f'<0$ \\,-\\, but on $[1,2]$ $f$ is already strictly increasing and crosses zero once).\n\nRearranging $x^3=x+1$ gives the fixed-point iteration $x_{n+1}=\\sqrt[3]{x_n+1}$. Starting from $x_0=1$:\n$$\\begin{aligned}\nx_1 &= \\sqrt[3]{2} \\approx 1.259921,\\\\\nx_2 &= \\sqrt[3]{2.259921} \\approx 1.312,\\\\\nx_3 &\\approx 1.322,\\\\\nx_4 &\\approx 1.324,\\\\\nx_5 &\\approx 1.3247,\\\\\nx_6 &\\approx 1.3247.\n\\end{aligned}$$\nThe values stabilise, so to 3 decimal places $\\alpha \\approx 1.325$ (since $1.3247$ rounds to $1.325$).",
   "solutionStatus": "full",

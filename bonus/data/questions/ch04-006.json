@@ -8,9 +8,17 @@
   "sourceUrl": "https://step.maths.org/questions",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 3,
-  "topics": ["functions", "inverse functions", "domain and range"],
-  "methods": ["monotonicity", "range of a function", "finding an inverse"],
+  "difficulty": 4,
+  "topics": [
+    "functions",
+    "inverse functions",
+    "domain and range"
+  ],
+  "methods": [
+    "monotonicity",
+    "range of a function",
+    "finding an inverse"
+  ],
   "statement": "Let $f(x)=\\dfrac{e^x}{e^x+1}$. Show that $f$ is increasing on $\\mathbb{R}$, find its range, and find $f^{-1}(x)$ together with the domain of $f^{-1}$.",
   "solution": "We have $f(x)=\\dfrac{e^x}{e^x+1}=1-\\dfrac{1}{e^x+1}$. Since $e^x$ increases, $\\dfrac{1}{e^x+1}$ decreases, so $f(x)$ increases; hence $f$ is strictly increasing on $\\mathbb{R}$.\n\nAs $x\\to-\\infty$, $e^x\\to0$ so $f(x)\\to0$; as $x\\to\\infty$, $e^x\\to\\infty$ so $f(x)\\to1$. Thus the range of $f$ is $(0,1)$.\n\nTo invert, set $y=\\dfrac{e^x}{e^x+1}$. Then $y(e^x+1)=e^x$, so $e^x(y-1)=-y$ and $e^x=\\dfrac{y}{1-y}$. Hence\n$$x=\\ln\\!\\left(\\frac{y}{1-y}\\right).$$\nTherefore $f^{-1}(x)=\\ln\\!\\left(\\dfrac{x}{1-x}\\right)$, with domain $(0,1)$ (the range of $f$).",
   "solutionStatus": "full",

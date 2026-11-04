@@ -8,9 +8,16 @@
   "sourceUrl": "https://step.maths.org/questions/89-s1-q7",
   "solutionUrl": "",
   "level": "A2",
-  "difficulty": 4,
-  "topics": ["functions", "curves", "optimisation"],
-  "methods": ["inscribed rectangle", "optimisation via differentiation"],
+  "difficulty": 5,
+  "topics": [
+    "functions",
+    "curves",
+    "optimisation"
+  ],
+  "methods": [
+    "inscribed rectangle",
+    "optimisation via differentiation"
+  ],
   "statement": "Sketch the curve $y^2=1-|x|$. A rectangle, with sides parallel to the axes, is inscribed within this curve.\n\nShow that the largest possible area of the rectangle is $\\dfrac{8}{\\sqrt{27}}$.\n\nFind the maximum area of a rectangle similarly inscribed within the curve given by $y^{2m}=(1-|x|)^n$, where $m$ and $n$ are positive integers, with $n$ odd.",
   "solution": "**Sketch.** $y^2=1-|x|$ is a closed curve symmetric in both axes, made of two parabolic arcs meeting at $x=\\pm1$ (a 'diamond' shape).\n\n**First part.** By symmetry, take a rectangle with corners at $(\\pm a,\\pm y)$ where $y^2=1-a$ (so $0<a<1$). Its area is\n$$A=2a\\cdot2y=4a\\sqrt{1-a}.$$\n\nDifferentiate:\n$$\\frac{dA}{da}=4\\sqrt{1-a}-\\frac{2a}{\\sqrt{1-a}}=\\frac{4-6a}{\\sqrt{1-a}}.$$\nSetting this to zero gives $a=\\tfrac23$, and the maximum area is\n$$4\\cdot\\frac23\\cdot\\sqrt{1-\\frac23}=\\frac83\\cdot\\frac1{\\sqrt3}=\\frac{8}{3\\sqrt3}=\\frac{8}{\\sqrt{27}}.$$\n\n**Second part.** For $y^{2m}=(1-|x|)^n$ we have $y=(1-a)^{n/(2m)}$ (using $n$ odd so the sign is unambiguous). The rectangle has area\n$$A=4a(1-a)^{n/(2m)}.$$\n\nDifferentiating,\n$$\\frac{dA}{da}=4(1-a)^{n/(2m)}-4a\\cdot\\frac{n}{2m}(1-a)^{n/(2m)-1}.$$\nSetting this to zero,\n$$1-a=a\\cdot\\frac{n}{2m} \\quad\\Rightarrow\\quad a=\\frac{2m}{2m+n}.$$\n\nThe maximum area is\n$$A_{\\max}=4\\cdot\\frac{2m}{2m+n}\\cdot\\left(\\frac{n}{2m+n}\\right)^{n/(2m)}=\\frac{8m}{2m+n}\\left(\\frac{n}{2m+n}\\right)^{n/(2m)}.$$",
   "solutionStatus": "full",

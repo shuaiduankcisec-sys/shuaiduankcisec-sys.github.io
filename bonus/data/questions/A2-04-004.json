@@ -9,8 +9,15 @@
   "solutionUrl": "",
   "level": "A2",
   "difficulty": 3,
-  "topics": ["integration", "exponentials", "substitution"],
-  "methods": ["substitution u=e^x", "standard integral"],
+  "topics": [
+    "integration",
+    "exponentials",
+    "substitution"
+  ],
+  "methods": [
+    "substitution u=e^x",
+    "standard integral"
+  ],
   "statement": "Find $\\displaystyle\\int \\frac{e^x}{1+e^{2x}}\\,dx$.",
   "solution": "Let $u=e^x$, so $du=e^x\\,dx$. Then\n$$\\int\\frac{e^x}{1+e^{2x}}\\,dx=\\int\\frac{1}{1+u^2}\\,du=\\arctan u+C=\\arctan(e^x)+C.$$",
   "solutionStatus": "full",

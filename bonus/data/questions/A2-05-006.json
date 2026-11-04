@@ -9,8 +9,14 @@
   "solutionUrl": "",
   "level": "A2",
   "difficulty": 3,
-  "topics": ["implicit differentiation", "gradient of a curve"],
-  "methods": ["differentiating term by term", "solving for dy/dx"],
+  "topics": [
+    "implicit differentiation",
+    "gradient of a curve"
+  ],
+  "methods": [
+    "differentiating term by term",
+    "solving for dy/dx"
+  ],
   "statement": "A curve is given by $x^{2}+xy+y^{2}=7$. Find $\\dfrac{dy}{dx}$ and the gradient at the point $(1,2)$.",
   "solution": "Differentiate implicitly with respect to $x$:\n$$2x+y+x\\frac{dy}{dx}+2y\\frac{dy}{dx}=0.$$\nCollecting $\\tfrac{dy}{dx}$ terms:\n$$\\frac{dy}{dx}(x+2y)=-(2x+y)\\quad\\Rightarrow\\quad \\frac{dy}{dx}=-\\frac{2x+y}{x+2y}.$$\nAt $(1,2)$: $\\dfrac{dy}{dx}=-\\dfrac{2+2}{1+4}=-\\dfrac45$.",
   "solutionStatus": "full",

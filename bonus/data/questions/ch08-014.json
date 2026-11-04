@@ -8,11 +8,21 @@
   "sourceUrl": "https://step.maths.org/questions",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 5,
-  "topics": ["arithmetic-geometric series", "summation"],
-  "methods": ["multiply by the common ratio", "subtracting shifted series"],
+  "difficulty": 4,
+  "topics": [
+    "arithmetic-geometric series",
+    "summation"
+  ],
+  "methods": [
+    "multiply by the common ratio",
+    "subtracting shifted series"
+  ],
   "statement": "Find the sum to $n$ terms of the series $1+2x+3x^{2}+\\cdots+nx^{n-1}$ for $x\\neq1$.",
   "solution": "Let $S_{n}=1+2x+3x^{2}+\\cdots+nx^{n-1}$. Multiply by $x$: $xS_{n}=x+2x^{2}+3x^{3}+\\cdots+nx^{n}$. Subtracting, $(1-x)S_{n}=1+x+x^{2}+\\cdots+x^{n-1}-nx^{n}=\\frac{1-x^{n}}{1-x}-nx^{n}$. Hence $S_{n}=\\frac{1-x^{n}}{(1-x)^{2}}-\\frac{nx^{n}}{1-x}$.",
   "solutionStatus": "full",
-  "hints": ["Write the series and multiply by x.", "Subtract the shifted series term by term.", "The difference is a geometric series minus nx^n."]
+  "hints": [
+    "Write the series and multiply by x.",
+    "Subtract the shifted series term by term.",
+    "The difference is a geometric series minus nx^n."
+  ]
 }

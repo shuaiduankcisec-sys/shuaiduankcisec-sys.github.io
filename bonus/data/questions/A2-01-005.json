@@ -9,8 +9,15 @@
   "solutionUrl": "",
   "level": "A2",
   "difficulty": 3,
-  "topics": ["functions", "composition", "self-inverse"],
-  "methods": ["function composition", "solving equations"],
+  "topics": [
+    "functions",
+    "composition",
+    "self-inverse"
+  ],
+  "methods": [
+    "function composition",
+    "solving equations"
+  ],
   "statement": "Let $f(x)=\\dfrac{1}{x-1}$ (for $x\\neq1$). Find $f(f(x))$ and solve $f(f(x))=x$.",
   "solution": "Composing,\n$$f(f(x))=\\frac{1}{\\frac{1}{x-1}-1}=\\frac{1}{\\frac{1-(x-1)}{x-1}}=\\frac{x-1}{2-x}.$$\nNow solve $\\dfrac{x-1}{2-x}=x$ (with $x\\neq1,2$):\n$$x-1=x(2-x)=2x-x^2\\quad\\Rightarrow\\quad x^2-x-1=0.$$\nHence $x=\\dfrac{1\\pm\\sqrt5}{2}$. Both values avoid the excluded points, so they are the solutions.",
   "solutionStatus": "full",

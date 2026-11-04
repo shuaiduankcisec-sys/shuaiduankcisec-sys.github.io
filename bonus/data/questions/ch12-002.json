@@ -8,9 +8,16 @@
   "sourceUrl": "https://www.maths.ox.ac.uk/system/files/attachments/test23.pdf",
   "solutionUrl": "",
   "level": "AS",
-  "difficulty": 3,
-  "topics": ["logarithms", "laws of logarithms", "estimation"],
-  "methods": ["laws of logarithms", "numerical estimation"],
+  "difficulty": 4,
+  "topics": [
+    "logarithms",
+    "laws of logarithms",
+    "estimation"
+  ],
+  "methods": [
+    "laws of logarithms",
+    "numerical estimation"
+  ],
   "statement": "In this question we write $\\alpha=\\log_{10}2$, $\\beta=\\log_{10}3$, and $\\gamma=\\log_{10}7$. Each of the following numbers is close to an integer. Which is the closest to an integer?\n\n(a) $2\\beta$  (b) $5\\alpha+\\beta$  (c) $\\alpha+2\\gamma$  (d) $2\\alpha+5\\beta$  (e) $2\\alpha+\\beta+\\gamma$.\n\n[*Hint: $2^2\\times3^5=9.72\\times10^2$*]",
   "options": [
     "$2\\beta$",

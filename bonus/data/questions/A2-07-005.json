@@ -9,8 +9,15 @@
   "solutionUrl": "",
   "level": "A2",
   "difficulty": 3,
-  "topics": ["differential equations", "separable equations", "logistic equation"],
-  "methods": ["partial fractions", "separation of variables"],
+  "topics": [
+    "differential equations",
+    "separable equations",
+    "logistic equation"
+  ],
+  "methods": [
+    "partial fractions",
+    "separation of variables"
+  ],
   "statement": "Solve $\\dfrac{dy}{dx}=y(1-y)$, given that $y(0)=\\tfrac12$.",
   "solution": "Separating variables,\n$$\\frac{dy}{y(1-y)}=dx.$$\nUsing partial fractions, $\\dfrac{1}{y(1-y)}=\\dfrac1y+\\dfrac1{1-y}$. Integrating,\n$$\\ln|y|-\\ln|1-y|=x+C\\quad\\Rightarrow\\quad \\ln\\frac{y}{1-y}=x+C.$$\nSo $\\dfrac{y}{1-y}=Ae^x$. With $y(0)=\\tfrac12$, the left side is $1$, so $A=1$. Hence $\\dfrac{y}{1-y}=e^x$, giving\n$$y=\\frac{e^x}{1+e^x}.$$",
   "solutionStatus": "full",
