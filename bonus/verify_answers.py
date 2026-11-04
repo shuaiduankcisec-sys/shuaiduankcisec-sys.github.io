@@ -522,6 +522,31 @@ h2 = abs(py)
 h3 = abs(m8.sqrt(3)*px + py - m8.sqrt(3))/2
 report("ch05-004 h1+h2+h3=√3/2", abs((h1+h2+h3) - m8.sqrt(3)/2) < 1e-9, True)
 
+# ---------- ch03-003 三次多项式判别式 ----------
+# f'=3x²-2(p+q+r)x+(qr+rp+pq)，判别式>0 => (p+q+r)²>3(qr+rp+pq)
+# 用具体 p=1,q=2,r=3 验证
+pv,qv,rv = 1,2,3
+lhs = (pv+qv+rv)**2
+rhs = 3*(qv*rv+rv*pv+pv*qv)
+report("ch03-003 (p+q+r)²>3(qr+rp+pq)", 1 if lhs > rhs else 0, 1)
+
+# ---------- A2-02-003 二项式常数项 ----------
+# (2x+1/x²)^6 常数项 = C(6,2)2^4 = 240
+c1 = sp.binomial(6,2)*2**4
+report("A2-02-003 常数项=240", c1 - 240, 0)
+# (1+3/x)^(1/2) 的 x^-3 系数 × x^3 = C(1/2,3)3^3 = 27/16
+c2 = sp.binomial(sp.Rational(1,2),3)*3**3
+report("A2-02-003 常数项=27/16", c2 - sp.Rational(27,16), 0)
+
+# ---------- A2-07-003 法线微分方程 ----------
+# f(x) = -e^(-x²/2) - 1
+xx9 = sp.symbols('xx9')
+f_sol = -sp.exp(-xx9**2/2) - 1
+fp = sp.diff(f_sol, xx9)
+PQ2_val = xx9**2 + xx9**2/fp**2
+report("A2-07-003 PQ²=e^(x²)+x²", sp.simplify(PQ2_val - (sp.exp(xx9**2)+xx9**2)), 0)
+report("A2-07-003 f(0)=-2", f_sol.subs(xx9, 0) - (-2), 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

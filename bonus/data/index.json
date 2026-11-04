@@ -171,6 +171,27 @@
     "preview": "The polynomial $p(x)$ has degree $3$ and has $p(0)=0$, $p(1)=1$, $p(2)=2$. The polynomial has a repeated root at $x=M$ with $M>0$. The…"
   },
   {
+    "id": "ch03-003",
+    "chapter": 3,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2001,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "polynomials",
+      "cubic roots",
+      "discriminant"
+    ],
+    "methods": [
+      "Rolle's theorem / number of roots",
+      "discriminant of a quadratic"
+    ],
+    "solutionStatus": "full",
+    "preview": "Sketch, without calculating the stationary points, the graph of the function $f(x)$ given by $ f(x)=(x-p)(x-q)(x-r),$  where $p<q<r$. By…"
+  },
+  {
     "id": "ch04-001",
     "chapter": 4,
     "title": "",
@@ -950,6 +971,27 @@
     "preview": "The coefficient of $x^{12}$ in $ (1-2x)^5(1+4x^2)^5(1+2x)^5$  is"
   },
   {
+    "id": "A2-02-003",
+    "chapter": "A2-02",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2003,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "binomial theorem",
+      "fractional powers"
+    ],
+    "methods": [
+      "binomial expansion",
+      "finding the constant term",
+      "fractional binomial coefficients"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) In the binomial expansion of $(2x+1/x^2)^6$ for $x\\neq0$, show that the term which is independent of $x$ is $240$. Find the term which…"
+  },
+  {
     "id": "A2-03-001",
     "chapter": "A2-03",
     "title": "",
@@ -1337,6 +1379,27 @@
     ],
     "solutionStatus": "full",
     "preview": "(i) In the differential equation $ \\frac{1}{y^2}\\frac{dy}{dx}+\\frac{1}{y}=e^{2x},$  make the substitution $u=1/y$, and hence show that the…"
+  },
+  {
+    "id": "A2-07-003",
+    "chapter": "A2-07",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1989,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "differential equations",
+      "normals to a curve"
+    ],
+    "methods": [
+      "equation of a normal",
+      "distance formula",
+      "separable differential equation"
+    ],
+    "solutionStatus": "full",
+    "preview": "The normal to the curve $y=f(x)$ at the point $P$ with coordinates $(x,f(x))$ cuts the $y$-axis at the point $Q$. Derive an expression in…"
   },
   {
     "id": "A2-08-001",
