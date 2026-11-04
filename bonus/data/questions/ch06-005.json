@@ -19,7 +19,7 @@
     "maximisation"
   ],
   "statement": "A right circular cylinder is inscribed in a sphere of radius $R$. If $x$ is half the height of the cylinder, show that its volume is $V=2\\pi x(R^2-x^2)$, and find the maximum possible volume.",
-  "solution": "Let the cylinder have radius $r$ and height $2x$. By Pythagoras in the cross-section through the axis, $r^2+x^2=R^2$, so $r^2=R^2-x^2$. The volume is\n$$V=\\pi r^2(2x)=2\\pi x(R^2-x^2).$$\nDifferentiating,\n$$\\frac{dV}{dx}=2\\pi(R^2-3x^2).$$\nThis vanishes when $x=R/\\sqrt3$. Since $dV/dx>0$ for $x<R/\\sqrt3$ and $<0$ for $x>R/\\sqrt3$, this gives a maximum. The maximum volume is\n$$V_{\\max}=2\\pi\\cdot\\frac{R}{\\sqrt3}\\left(R^2-\\frac{R^2}{3}\\right)=\\frac{4\\pi R^3}{3\\sqrt3}.$$",
+  "solution": "Let the cylinder have radius $r$ and height $2x$. By Pythagoras in the cross-section through the axis, $r^2+x^2=R^2$, so $r^2=R^2-x^2$. The volume is\n$$V=\\pi r^2(2x)=2\\pi x(R^2-x^2).$$\nDifferentiating,\n$$\\frac{dV}{dx}=2\\pi(R^2-3x^2).$$\nThis vanishes when $x=R/\\sqrt3$. Since $dV/dx>0$ for $x<R/\\sqrt3$ and $<0$ for $x>R/\\sqrt3$, this gives a maximum. The maximum volume is\n$$V_{\\max}=2\\pi\\cdot\\frac{R}{\\sqrt3}\\left(R^2-\\frac{R^2}{3}\\right)=\\frac{4\\pi R^3}{3\\sqrt3}.$$\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Relate cylinder radius r to x and R via r^2+x^2=R^2.",

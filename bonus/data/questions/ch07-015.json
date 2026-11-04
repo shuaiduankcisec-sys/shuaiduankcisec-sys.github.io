@@ -18,7 +18,7 @@
     "adding the two forms"
   ],
   "statement": "By using the substitution $x=\\\\dfrac{\\\\pi}{2}-t$, or otherwise, evaluate $I=\\\\int_{0}^{\\\\pi/2}\\\\dfrac{\\\\sin x}{\\\\sin x+\\\\cos x}\\,dx$.",
-  "solution": "Let $I=\\\\int_{0}^{\\\\pi/2}\\\\frac{\\\\sin x}{\\\\sin x+\\\\cos x}\\,dx$. Under $x=\\\\pi/2-t$ we have $dx=-dt$ and the limits swap, giving $I=\\\\int_{0}^{\\\\pi/2}\\\\frac{\\\\cos t}{\\\\cos t+\\\\sin t}\\,dt$. Adding the two expressions for $I$, $2I=\\\\int_{0}^{\\\\pi/2}\\\\frac{\\\\sin x+\\\\cos x}{\\\\sin x+\\\\cos x}\\,dx=\\\\int_{0}^{\\\\pi/2}1\\,dx=\\\\frac{\\\\pi}{2}$. Therefore $I=\\\\pi/4$.",
+  "solution": "Let $I=\\\\int_{0}^{\\\\pi/2}\\\\frac{\\\\sin x}{\\\\sin x+\\\\cos x}\\,dx$. Under $x=\\\\pi/2-t$ we have $dx=-dt$ and the limits swap, giving $I=\\\\int_{0}^{\\\\pi/2}\\\\frac{\\\\cos t}{\\\\cos t+\\\\sin t}\\,dt$. Adding the two expressions for $I$, $2I=\\\\int_{0}^{\\\\pi/2}\\\\frac{\\\\sin x+\\\\cos x}{\\\\sin x+\\\\cos x}\\,dx=\\\\int_{0}^{\\\\pi/2}1\\,dx=\\\\frac{\\\\pi}{2}$. Therefore $I=\\\\pi/4$.\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5是 → 4星]",
   "solutionStatus": "full",
   "hints": [
     "Apply the substitution x=pi/2 - t to get a second form of I.",

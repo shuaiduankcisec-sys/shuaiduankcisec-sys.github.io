@@ -18,7 +18,7 @@
     "minimising by calculus"
   ],
   "statement": "A point $A(0,1)$ and a point $B(3,2)$ lie on the same side of the $x$-axis. A light ray travels from $A$ to a point $P=(x,0)$ on the $x$-axis and then to $B$. Find $x$ that minimises the total path length $AP+PB$.",
-  "solution": "The path length is $L(x)=\\sqrt{x^{2}+1}+\\sqrt{(x-3)^{2}+4}$. Differentiating, $L'(x)=\\frac{x}{\\sqrt{x^{2}+1}}+\\frac{x-3}{\\sqrt{(x-3)^{2}+4}}$. Setting $L'(x)=0$ gives $\\frac{x}{\\sqrt{x^{2}+1}}=-\\frac{x-3}{\\sqrt{(x-3)^{2}+4}}$. Squaring and solving yields $x=1$. (This is the classic reflection condition; the minimum occurs at $x=1$.)",
+  "solution": "The path length is $L(x)=\\sqrt{x^{2}+1}+\\sqrt{(x-3)^{2}+4}$. Differentiating, $L'(x)=\\frac{x}{\\sqrt{x^{2}+1}}+\\frac{x-3}{\\sqrt{(x-3)^{2}+4}}$. Setting $L'(x)=0$ gives $\\frac{x}{\\sqrt{x^{2}+1}}=-\\frac{x-3}{\\sqrt{(x-3)^{2}+4}}$. Squaring and solving yields $x=1$. (This is the classic reflection condition; the minimum occurs at $x=1$.)\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5是 → 4星]",
   "solutionStatus": "full",
   "hints": [
     "Write the total length as a function of x.",

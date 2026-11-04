@@ -18,7 +18,7 @@
     "solving sin A = sin B"
   ],
   "statement": "Find all solutions in the interval $0\\\\le x<2\\\\pi$ of the equation $\\\\sin3x=\\\\cos2x$.",
-  "solution": "Since $\\\\cos2x=\\\\sin(\\\\pi/2-2x)$, the equation becomes $\\\\sin3x=\\\\sin(\\\\pi/2-2x)$. Hence either $3x=\\\\pi/2-2x+2\\\\pi k$, giving $5x=\\\\pi/2+2\\\\pi k$ so $x=\\\\pi/10+2\\\\pi k/5$; or $3x=\\\\pi-(\\\\pi/2-2x)+2\\\\pi k=\\\\pi/2+2x+2\\\\pi k$, giving $x=\\\\pi/2+2\\\\pi k$. In $[0,2\\\\pi)$ the first family yields $x=\\\\pi/10,\\\\pi/2,9\\\\pi/10,13\\\\pi/10,17\\\\pi/10$ and the second yields $x=\\\\pi/2$ (already listed). Thus the distinct solutions are $\\\\pi/10,\\\\pi/2,9\\\\pi/10,13\\\\pi/10,17\\\\pi/10$.",
+  "solution": "Since $\\\\cos2x=\\\\sin(\\\\pi/2-2x)$, the equation becomes $\\\\sin3x=\\\\sin(\\\\pi/2-2x)$. Hence either $3x=\\\\pi/2-2x+2\\\\pi k$, giving $5x=\\\\pi/2+2\\\\pi k$ so $x=\\\\pi/10+2\\\\pi k/5$; or $3x=\\\\pi-(\\\\pi/2-2x)+2\\\\pi k=\\\\pi/2+2x+2\\\\pi k$, giving $x=\\\\pi/2+2\\\\pi k$. In $[0,2\\\\pi)$ the first family yields $x=\\\\pi/10,\\\\pi/2,9\\\\pi/10,13\\\\pi/10,17\\\\pi/10$ and the second yields $x=\\\\pi/2$ (already listed). Thus the distinct solutions are $\\\\pi/10,\\\\pi/2,9\\\\pi/10,13\\\\pi/10,17\\\\pi/10$.\n\n[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Rewrite cos2x as sin(pi/2 - 2x).",

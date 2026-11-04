@@ -19,7 +19,7 @@
     "finding an inverse"
   ],
   "statement": "The function $f(x)=x^2-4x+3$ is defined for $x\\ge2$. Find $f^{-1}(x)$, stating its domain and range.",
-  "solution": "Completing the square, $f(x)=(x-2)^2-1$. For $x\\ge2$ this is increasing, with minimum $-1$ at $x=2$, so the range of $f$ is $[-1,\\infty)$.\n\nSet $y=(x-2)^2-1$. Since $x\\ge2$, $x-2=\\sqrt{y+1}$ (the positive root). Hence $x=2+\\sqrt{y+1}$, and\n$$f^{-1}(x)=2+\\sqrt{x+1}.$$\nThe domain of $f^{-1}$ is the range of $f$, namely $[-1,\\infty)$; its range is $[2,\\infty)$ (the domain of $f$).",
+  "solution": "Completing the square, $f(x)=(x-2)^2-1$. For $x\\ge2$ this is increasing, with minimum $-1$ at $x=2$, so the range of $f$ is $[-1,\\infty)$.\n\nSet $y=(x-2)^2-1$. Since $x\\ge2$, $x-2=\\sqrt{y+1}$ (the positive root). Hence $x=2+\\sqrt{y+1}$, and\n$$f^{-1}(x)=2+\\sqrt{x+1}.$$\nThe domain of $f^{-1}$ is the range of $f$, namely $[-1,\\infty)$; its range is $[2,\\infty)$ (the domain of $f$).\n\n[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Complete the square: f(x)=(x-2)^2-1.",

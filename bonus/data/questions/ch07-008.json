@@ -27,7 +27,7 @@
     "$6$"
   ],
   "answer": "F",
-  "solution": "Integrate $f''(x)=a$ twice:\n$$f'(x)=ax+b, \\qquad f(x)=\\tfrac12ax^2+bx+c.$$\n\nFrom $f(0)=1$ we get $c=1$. From $f(1)=2$,\n$$\\tfrac12a+b+1=2 \\quad\\Rightarrow\\quad a+2b=2. \\tag{1}$$\n\nFrom the integral condition,\n$$\\int_0^1 f(x)\\,dx=\\left[\\tfrac16ax^3+\\tfrac12bx^2+x\\right]_0^1=\\tfrac16a+\\tfrac12b+1=1,$$\nso $\\tfrac16a+\\tfrac12b=0$, i.e.\n$$a+3b=0. \\tag{2}$$\n\nSubtracting (1) from (2): $b=-2$. Then (1) gives $a+2(-2)=2$, so $a=6$.\n\nThe answer is **F**.",
+  "solution": "Integrate $f''(x)=a$ twice:\n$$f'(x)=ax+b, \\qquad f(x)=\\tfrac12ax^2+bx+c.$$\n\nFrom $f(0)=1$ we get $c=1$. From $f(1)=2$,\n$$\\tfrac12a+b+1=2 \\quad\\Rightarrow\\quad a+2b=2. \\tag{1}$$\n\nFrom the integral condition,\n$$\\int_0^1 f(x)\\,dx=\\left[\\tfrac16ax^3+\\tfrac12bx^2+x\\right]_0^1=\\tfrac16a+\\tfrac12b+1=1,$$\nso $\\tfrac16a+\\tfrac12b=0$, i.e.\n$$a+3b=0. \\tag{2}$$\n\nSubtracting (1) from (2): $b=-2$. Then (1) gives $a+2(-2)=2$, so $a=6$.\n\nThe answer is **F**.\n\n[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Integrate f''(x)=a twice to get f(x) in terms of a, b, c.",

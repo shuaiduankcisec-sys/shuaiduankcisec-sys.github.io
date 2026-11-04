@@ -18,7 +18,7 @@
     "calculus minimum"
   ],
   "statement": "A closed cylindrical can of fixed volume $V$ is to be made. Show that its surface area is minimised when its height equals its diameter.",
-  "solution": "Let the radius be $r$ and the height $h$. The volume condition gives $V=\\\\pi r^{2}h$, so $h=V/(\\\\pi r^{2})$. The surface area is $A=2\\\\pi r^{2}+2\\\\pi r h=2\\\\pi r^{2}+2V/r$. Then $\\\\frac{dA}{dr}=4\\\\pi r-2V/r^{2}$, which vanishes when $4\\\\pi r^{3}=2V=2\\\\pi r^{2}h$, i.e. $2r=h$. Since $\\\\frac{d^{2}A}{dr^{2}}=4\\\\pi+4V/r^{3}>0$, this is a minimum, so the area is least when height equals diameter.",
+  "solution": "Let the radius be $r$ and the height $h$. The volume condition gives $V=\\\\pi r^{2}h$, so $h=V/(\\\\pi r^{2})$. The surface area is $A=2\\\\pi r^{2}+2\\\\pi r h=2\\\\pi r^{2}+2V/r$. Then $\\\\frac{dA}{dr}=4\\\\pi r-2V/r^{2}$, which vanishes when $4\\\\pi r^{3}=2V=2\\\\pi r^{2}h$, i.e. $2r=h$. Since $\\\\frac{d^{2}A}{dr^{2}}=4\\\\pi+4V/r^{3}>0$, this is a minimum, so the area is least when height equals diameter.\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Write h in terms of r and V.",

@@ -29,7 +29,7 @@
     "$8$"
   ],
   "answer": "F",
-  "solution": "Since $4^{\\sin^2x}=(2^2)^{\\sin^2x}=2^{2\\sin^2x}$, the equation becomes\n$$2^{\\tan^2x}=2^{2\\sin^2x},$$\nso $\\tan^2x=2\\sin^2x$.\n\nWrite $\\tan x=\\dfrac{\\sin x}{\\cos x}$:\n$$\\frac{\\sin^2x}{\\cos^2x}=2\\sin^2x.$$\nMultiplying by $\\cos^2x$ and rearranging,\n$$\\sin^2x=2\\sin^2x\\cos^2x \\quad\\Rightarrow\\quad \\sin^2x(1-2\\cos^2x)=0.$$\n\nSo either $\\sin x=0$ or $\\cos^2x=\\tfrac12$.\n\n- $\\sin x=0$ gives $x=0,\\pi,2\\pi$ (3 solutions).\n- $\\cos^2x=\\tfrac12$ gives $\\cos x=\\pm\\tfrac{1}{\\sqrt2}$, i.e. $x=\\tfrac{\\pi}{4},\\tfrac{3\\pi}{4},\\tfrac{5\\pi}{4},\\tfrac{7\\pi}{4}$ (4 solutions), none of which coincide with $0,\\pi,2\\pi$.\n\nTotal: $3+4=7$ solutions, which is **option F**.",
+  "solution": "Since $4^{\\sin^2x}=(2^2)^{\\sin^2x}=2^{2\\sin^2x}$, the equation becomes\n$$2^{\\tan^2x}=2^{2\\sin^2x},$$\nso $\\tan^2x=2\\sin^2x$.\n\nWrite $\\tan x=\\dfrac{\\sin x}{\\cos x}$:\n$$\\frac{\\sin^2x}{\\cos^2x}=2\\sin^2x.$$\nMultiplying by $\\cos^2x$ and rearranging,\n$$\\sin^2x=2\\sin^2x\\cos^2x \\quad\\Rightarrow\\quad \\sin^2x(1-2\\cos^2x)=0.$$\n\nSo either $\\sin x=0$ or $\\cos^2x=\\tfrac12$.\n\n- $\\sin x=0$ gives $x=0,\\pi,2\\pi$ (3 solutions).\n- $\\cos^2x=\\tfrac12$ gives $\\cos x=\\pm\\tfrac{1}{\\sqrt2}$, i.e. $x=\\tfrac{\\pi}{4},\\tfrac{3\\pi}{4},\\tfrac{5\\pi}{4},\\tfrac{7\\pi}{4}$ (4 solutions), none of which coincide with $0,\\pi,2\\pi$.\n\nTotal: $3+4=7$ solutions, which is **option F**.\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Write 4^sin²x = 2^(2 sin²x) and equate exponents.",

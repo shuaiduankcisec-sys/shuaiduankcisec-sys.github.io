@@ -18,7 +18,7 @@
     "factorising"
   ],
   "statement": "Solve $2\\cos^2\\theta+\\sin\\theta-1=0$ for $0\\le\\theta\\le2\\pi$.",
-  "solution": "Using $\\cos^2\\theta=1-\\sin^2\\theta$:\n$$2(1-\\sin^2\\theta)+\\sin\\theta-1=0\\quad\\Rightarrow\\quad -2\\sin^2\\theta+\\sin\\theta+1=0,$$\ni.e. $2\\sin^2\\theta-\\sin\\theta-1=0$. Factorising,\n$$(2\\sin\\theta+1)(\\sin\\theta-1)=0.$$\nSo $\\sin\\theta=-\\tfrac12$ or $\\sin\\theta=1$. In $[0,2\\pi]$:\n- $\\sin\\theta=1$ gives $\\theta=\\tfrac{\\pi}{2}$;\n- $\\sin\\theta=-\\tfrac12$ gives $\\theta=\\tfrac{7\\pi}{6},\\,\\tfrac{11\\pi}{6}$.\n\nThus $\\theta\\in\\left\\{\\tfrac{\\pi}{2},\\,\\tfrac{7\\pi}{6},\\,\\tfrac{11\\pi}{6}\\right\\}$.",
+  "solution": "Using $\\cos^2\\theta=1-\\sin^2\\theta$:\n$$2(1-\\sin^2\\theta)+\\sin\\theta-1=0\\quad\\Rightarrow\\quad -2\\sin^2\\theta+\\sin\\theta+1=0,$$\ni.e. $2\\sin^2\\theta-\\sin\\theta-1=0$. Factorising,\n$$(2\\sin\\theta+1)(\\sin\\theta-1)=0.$$\nSo $\\sin\\theta=-\\tfrac12$ or $\\sin\\theta=1$. In $[0,2\\pi]$:\n- $\\sin\\theta=1$ gives $\\theta=\\tfrac{\\pi}{2}$;\n- $\\sin\\theta=-\\tfrac12$ gives $\\theta=\\tfrac{7\\pi}{6},\\,\\tfrac{11\\pi}{6}$.\n\nThus $\\theta\\in\\left\\{\\tfrac{\\pi}{2},\\,\\tfrac{7\\pi}{6},\\,\\tfrac{11\\pi}{6}\\right\\}$.\n\n[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Replace cos^2 with 1-sin^2.",

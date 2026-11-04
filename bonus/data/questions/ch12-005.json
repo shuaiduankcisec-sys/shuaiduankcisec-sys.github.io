@@ -19,7 +19,7 @@
     "domain check"
   ],
   "statement": "Solve $\\log_2(x+3) + \\log_2(x-1) = 3$.",
-  "solution": "For the logarithms to be defined we need $x+3>0$ and $x-1>0$, so $x>1$.\n\nUsing $\\log_2 A + \\log_2 B = \\log_2(AB)$,\n$$\\log_2\\bigl((x+3)(x-1)\\bigr)=3 \\;\\Rightarrow\\; (x+3)(x-1)=2^3=8.$$\nExpanding:\n$$x^2+2x-3=8 \\;\\Rightarrow\\; x^2+2x-11=0.$$\nBy the quadratic formula,\n$$x=\\frac{-2\\pm\\sqrt{4+44}}{2}=\\frac{-2\\pm\\sqrt{48}}{2}=-1\\pm 2\\sqrt3.$$\nThe root $-1-2\\sqrt3$ is negative and does not satisfy $x>1$. The root $-1+2\\sqrt3\\approx 2.46$ does. Hence\n$$x=-1+2\\sqrt3.$$",
+  "solution": "For the logarithms to be defined we need $x+3>0$ and $x-1>0$, so $x>1$.\n\nUsing $\\log_2 A + \\log_2 B = \\log_2(AB)$,\n$$\\log_2\\bigl((x+3)(x-1)\\bigr)=3 \\;\\Rightarrow\\; (x+3)(x-1)=2^3=8.$$\nExpanding:\n$$x^2+2x-3=8 \\;\\Rightarrow\\; x^2+2x-11=0.$$\nBy the quadratic formula,\n$$x=\\frac{-2\\pm\\sqrt{4+44}}{2}=\\frac{-2\\pm\\sqrt{48}}{2}=-1\\pm 2\\sqrt3.$$\nThe root $-1-2\\sqrt3$ is negative and does not satisfy $x>1$. The root $-1+2\\sqrt3\\approx 2.46$ does. Hence\n$$x=-1+2\\sqrt3.$$\n\n[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Combine the two logs into log2 of a product.",

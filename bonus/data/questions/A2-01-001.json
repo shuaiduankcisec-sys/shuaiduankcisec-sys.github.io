@@ -30,7 +30,7 @@
     "$\\frac{33}{4}$"
   ],
   "answer": "F",
-  "solution": "Let $t=f(x)$. Since $f$ takes every value in $[-2,2]$, the values of $(f(x))^2-f(x)=t^2-t$ range over $g(t)=t^2-t$ for $t\\in[-2,2]$.\n\nComplete the square: $g(t)=t^2-t=(t-\\tfrac12)^2-\\tfrac14$, so $g$ has a minimum of $-\\tfrac14$ at $t=\\tfrac12$ (which lies in $[-2,2]$).\n\nOn the interval $[-2,2]$, the maximum of $g$ occurs at the endpoint farthest from $t=\\tfrac12$, namely $t=-2$: $g(-2)=4+2=6$. (The other endpoint gives $g(2)=4-2=2$.)\n\nHence the maximum value is $6$ and the minimum is $-\\tfrac14$, so the difference is\n$$6-\\left(-\\tfrac14\\right)=\\frac{25}{4},$$\nwhich is **option F**.",
+  "solution": "Let $t=f(x)$. Since $f$ takes every value in $[-2,2]$, the values of $(f(x))^2-f(x)=t^2-t$ range over $g(t)=t^2-t$ for $t\\in[-2,2]$.\n\nComplete the square: $g(t)=t^2-t=(t-\\tfrac12)^2-\\tfrac14$, so $g$ has a minimum of $-\\tfrac14$ at $t=\\tfrac12$ (which lies in $[-2,2]$).\n\nOn the interval $[-2,2]$, the maximum of $g$ occurs at the endpoint farthest from $t=\\tfrac12$, namely $t=-2$: $g(-2)=4+2=6$. (The other endpoint gives $g(2)=4-2=2$.)\n\nHence the maximum value is $6$ and the minimum is $-\\tfrac14$, so the difference is\n$$6-\\left(-\\tfrac14\\right)=\\frac{25}{4},$$\nwhich is **option F**.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
   "solutionStatus": "full",
   "hints": [
     "Write the expression as t^2 - t with t = f(x) in [-2,2].",

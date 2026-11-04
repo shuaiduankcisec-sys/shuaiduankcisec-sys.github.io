@@ -18,7 +18,7 @@
     "factorising the derivative"
   ],
   "statement": "Differentiate $y=\\dfrac{x^{2}}{\\sqrt{1+x^{3}}}$ with respect to $x$.",
-  "solution": "Write $y=x^{2}(1+x^{3})^{-1/2}$. By the product and chain rules,\n\\begin{align*}\n\\frac{dy}{dx}&=2x(1+x^{3})^{-1/2}+x^{2}\\left(-\\tfrac12\\right)(1+x^{3})^{-3/2}(3x^{2})\\\\\n&=2x(1+x^{3})^{-1/2}-\\tfrac{3x^{4}}{2}(1+x^{3})^{-3/2}\\\\\n&=(1+x^{3})^{-3/2}\\left[2x(1+x^{3})-\\tfrac32x^{4}\\right]\\\\\n&=(1+x^{3})^{-3/2}\\left(2x+2x^{4}-\\tfrac32x^{4}\\right)\\\\\n&=\\frac{x(4+x^{3})}{2(1+x^{3})^{3/2}}.\n\\end{align*}",
+  "solution": "Write $y=x^{2}(1+x^{3})^{-1/2}$. By the product and chain rules,\n\\begin{align*}\n\\frac{dy}{dx}&=2x(1+x^{3})^{-1/2}+x^{2}\\left(-\\tfrac12\\right)(1+x^{3})^{-3/2}(3x^{2})\\\\\n&=2x(1+x^{3})^{-1/2}-\\tfrac{3x^{4}}{2}(1+x^{3})^{-3/2}\\\\\n&=(1+x^{3})^{-3/2}\\left[2x(1+x^{3})-\\tfrac32x^{4}\\right]\\\\\n&=(1+x^{3})^{-3/2}\\left(2x+2x^{4}-\\tfrac32x^{4}\\right)\\\\\n&=\\frac{x(4+x^{3})}{2(1+x^{3})^{3/2}}.\n\\end{align*}\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Write the denominator as (1+x^3)^{-1/2}.",

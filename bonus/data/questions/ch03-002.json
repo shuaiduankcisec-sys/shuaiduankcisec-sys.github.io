@@ -27,7 +27,7 @@
     "$\\dfrac32$"
   ],
   "answer": "E",
-  "solution": "Since $p(0)=0$, $x=0$ is a root. Since $x=M$ is a repeated root, the polynomial has the form\n$$p(x)=A\\,x(x-M)^2$$\nfor some constant $A$ (a cubic with roots $0$, $M$, $M$).\n\nUsing $p(1)=1$ and $p(2)=2$:\n$$A(1-M)^2=1, \\qquad A\\cdot 2(2-M)^2=2.$$\n\nThe second equation gives $A(2-M)^2=1$. Equating with the first,\n$$(2-M)^2=(1-M)^2.$$\n\nTaking square roots, $2-M=\\pm(1-M)$. The case $2-M=1-M$ gives $2=1$, impossible. So $2-M=-(1-M)=M-1$, giving $2M=3$, i.e. $M=\\tfrac32$.\n\nThe answer is **E**.",
+  "solution": "Since $p(0)=0$, $x=0$ is a root. Since $x=M$ is a repeated root, the polynomial has the form\n$$p(x)=A\\,x(x-M)^2$$\nfor some constant $A$ (a cubic with roots $0$, $M$, $M$).\n\nUsing $p(1)=1$ and $p(2)=2$:\n$$A(1-M)^2=1, \\qquad A\\cdot 2(2-M)^2=2.$$\n\nThe second equation gives $A(2-M)^2=1$. Equating with the first,\n$$(2-M)^2=(1-M)^2.$$\n\nTaking square roots, $2-M=\\pm(1-M)$. The case $2-M=1-M$ gives $2=1$, impossible. So $2-M=-(1-M)=M-1$, giving $2M=3$, i.e. $M=\\tfrac32$.\n\nThe answer is **E**.\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5是 → 4星]",
   "solutionStatus": "full",
   "hints": [
     "Use the factor theorem: p(x)=A·x·(x-M)².",

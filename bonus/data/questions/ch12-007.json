@@ -19,7 +19,7 @@
     "relating exponents"
   ],
   "statement": "Suppose $2^x=3^y=6^z$. Express $z$ in terms of $x$ and $y$.",
-  "solution": "Let $2^x=3^y=6^z=k$. Then $2=k^{1/x}$ and $3=k^{1/y}$. Since $6=2\\cdot3$,\n$$k^{1/z}=6=2\\cdot3=k^{1/x}\\cdot k^{1/y}=k^{1/x+1/y}.$$\nHence $\\dfrac1z=\\dfrac1x+\\dfrac1y$, so\n$$z=\\frac{xy}{x+y}.$$",
+  "solution": "Let $2^x=3^y=6^z=k$. Then $2=k^{1/x}$ and $3=k^{1/y}$. Since $6=2\\cdot3$,\n$$k^{1/z}=6=2\\cdot3=k^{1/x}\\cdot k^{1/y}=k^{1/x+1/y}.$$\nHence $\\dfrac1z=\\dfrac1x+\\dfrac1y$, so\n$$z=\\frac{xy}{x+y}.$$\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5是 → 4星]",
   "solutionStatus": "full",
   "hints": [
     "Set 2^x = 3^y = 6^z = k.",

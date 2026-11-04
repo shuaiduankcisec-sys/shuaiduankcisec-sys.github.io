@@ -18,7 +18,7 @@
     "double-angle identities"
   ],
   "statement": "Use the substitution $x=\\\\sin^{2}\\\\theta$ to evaluate $I=\\\\int_{0}^{1}\\\\sqrt{x(1-x)}\\,dx$, and show that $I=\\\\pi/8$.",
-  "solution": "With $x=\\\\sin^{2}\\\\theta$, $dx=2\\\\sin\\\\theta\\\\cos\\\\theta\\,d\\\\theta$, and the limits become $\\\\theta=0$ to $\\\\pi/2$. Also $\\\\sqrt{x(1-x)}=\\\\sin\\\\theta\\\\cos\\\\theta$ (positive on this interval). Hence $I=\\\\int_{0}^{\\\\pi/2}(\\\\sin\\\\theta\\\\cos\\\\theta)(2\\\\sin\\\\theta\\\\cos\\\\theta)\\,d\\\\theta=2\\\\int_{0}^{\\\\pi/2}\\\\sin^{2}\\\\theta\\\\cos^{2}\\\\theta\\,d\\\\theta=\\\\frac{1}{2}\\\\int_{0}^{\\\\pi/2}\\\\sin^{2}2\\\\theta\\,d\\\\theta=\\\\frac{1}{4}\\\\int_{0}^{\\\\pi/2}(1-\\\\cos4\\\\theta)\\,d\\\\theta=\\\\frac{1}{4}\\left[\\\\theta-\\\\frac{1}{4}\\\\sin4\\\\theta\\right]_{0}^{\\\\pi/2}=\\\\frac{1}{4}\\\\cdot\\\\frac{\\\\pi}{2}=\\\\frac{\\\\pi}{8}$.",
+  "solution": "With $x=\\\\sin^{2}\\\\theta$, $dx=2\\\\sin\\\\theta\\\\cos\\\\theta\\,d\\\\theta$, and the limits become $\\\\theta=0$ to $\\\\pi/2$. Also $\\\\sqrt{x(1-x)}=\\\\sin\\\\theta\\\\cos\\\\theta$ (positive on this interval). Hence $I=\\\\int_{0}^{\\\\pi/2}(\\\\sin\\\\theta\\\\cos\\\\theta)(2\\\\sin\\\\theta\\\\cos\\\\theta)\\,d\\\\theta=2\\\\int_{0}^{\\\\pi/2}\\\\sin^{2}\\\\theta\\\\cos^{2}\\\\theta\\,d\\\\theta=\\\\frac{1}{2}\\\\int_{0}^{\\\\pi/2}\\\\sin^{2}2\\\\theta\\,d\\\\theta=\\\\frac{1}{4}\\\\int_{0}^{\\\\pi/2}(1-\\\\cos4\\\\theta)\\,d\\\\theta=\\\\frac{1}{4}\\left[\\\\theta-\\\\frac{1}{4}\\\\sin4\\\\theta\\right]_{0}^{\\\\pi/2}=\\\\frac{1}{4}\\\\cdot\\\\frac{\\\\pi}{2}=\\\\frac{\\\\pi}{8}$.\n\n[难度自评: Q1否 Q2是 Q3否 Q4否 Q5是 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Substitute x=sin^2 theta and change the limits.",

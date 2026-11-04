@@ -18,7 +18,7 @@
     "ratio test for validity"
   ],
   "statement": "Show that the coefficient of $x^{n}$ in the expansion of $(1-x)^{-1/2}$ is $\\dfrac{(2n)!}{2^{2n}(n!)^{2}}$, and state the values of $x$ for which the expansion is valid.",
-  "solution": "$(1-x)^{-1/2}=\\sum_{n=0}^{\\infty}\\dfrac{(-\\tfrac12)(-\\tfrac32)\\cdots(-\\tfrac{2n-1}{2})}{n!}(-x)^{n}$. The product of the $n$ negative half-integers equals $\\dfrac{(2n)!}{2^{2n}n!}$ in magnitude (after collecting signs), giving coefficient $\\dfrac{(2n)!}{2^{2n}(n!)^{2}}$. The expansion is valid for $|x|<1$.",
+  "solution": "$(1-x)^{-1/2}=\\sum_{n=0}^{\\infty}\\dfrac{(-\\tfrac12)(-\\tfrac32)\\cdots(-\\tfrac{2n-1}{2})}{n!}(-x)^{n}$. The product of the $n$ negative half-integers equals $\\dfrac{(2n)!}{2^{2n}n!}$ in magnitude (after collecting signs), giving coefficient $\\dfrac{(2n)!}{2^{2n}(n!)^{2}}$. The expansion is valid for $|x|<1$.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
   "solutionStatus": "full",
   "hints": [
     "Write the general binomial coefficient for index -1/2.",

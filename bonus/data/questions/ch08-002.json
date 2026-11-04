@@ -27,7 +27,7 @@
     "$3$"
   ],
   "answer": "C",
-  "solution": "Using the addition formula,\n$$\\sin\\left(n\\pi+\\tfrac{\\pi}{3}\\right)=\\sin(n\\pi)\\cos\\tfrac{\\pi}{3}+\\cos(n\\pi)\\sin\\tfrac{\\pi}{3}=0+(-1)^n\\cdot\\tfrac{\\sqrt3}{2}=\\frac{\\sqrt3}{2}(-1)^n.$$\n\nTherefore the series is\n$$\\sum_{n=0}^{\\infty}\\frac{\\frac{\\sqrt3}{2}(-1)^n}{2^n}=\\frac{\\sqrt3}{2}\\sum_{n=0}^{\\infty}\\left(-\\frac12\\right)^n.$$\n\nThis is a geometric series with first term $1$ and common ratio $-\\tfrac12$, whose sum is\n$$\\frac{1}{1-(-\\tfrac12)}=\\frac{1}{\\tfrac32}=\\frac23.$$\n\nHence the value is\n$$\\frac{\\sqrt3}{2}\\cdot\\frac23=\\frac{\\sqrt3}{3},$$\nwhich is **option C**.",
+  "solution": "Using the addition formula,\n$$\\sin\\left(n\\pi+\\tfrac{\\pi}{3}\\right)=\\sin(n\\pi)\\cos\\tfrac{\\pi}{3}+\\cos(n\\pi)\\sin\\tfrac{\\pi}{3}=0+(-1)^n\\cdot\\tfrac{\\sqrt3}{2}=\\frac{\\sqrt3}{2}(-1)^n.$$\n\nTherefore the series is\n$$\\sum_{n=0}^{\\infty}\\frac{\\frac{\\sqrt3}{2}(-1)^n}{2^n}=\\frac{\\sqrt3}{2}\\sum_{n=0}^{\\infty}\\left(-\\frac12\\right)^n.$$\n\nThis is a geometric series with first term $1$ and common ratio $-\\tfrac12$, whose sum is\n$$\\frac{1}{1-(-\\tfrac12)}=\\frac{1}{\\tfrac32}=\\frac23.$$\n\nHence the value is\n$$\\frac{\\sqrt3}{2}\\cdot\\frac23=\\frac{\\sqrt3}{3},$$\nwhich is **option C**.\n\n[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Simplify sin(nπ+π/3) using the addition formula to get (-1)^n √3/2.",

@@ -19,7 +19,7 @@
     "nature of stationary points"
   ],
   "statement": "Find the coordinates of the stationary points of $y=x^2e^{-x}$ and determine their nature.",
-  "solution": "Using the product rule,\n$$\\frac{dy}{dx}=2xe^{-x}+x^2(-e^{-x})=xe^{-x}(2-x).$$\nStationary points occur when $x=0$ or $x=2$.\n\nAt $x=0$, $y=0$. For $x<0$, $x(2-x)<0$ (since $x<0$ and $2-x>0$), so $y$ is decreasing; for $0<x<2$, $x(2-x)>0$, so $y$ is increasing. Hence $(0,0)$ is a local minimum.\n\nAt $x=2$, $y=4e^{-2}$. For $0<x<2$ the derivative is positive and for $x>2$ it is negative, so $(2,4e^{-2})$ is a local maximum.",
+  "solution": "Using the product rule,\n$$\\frac{dy}{dx}=2xe^{-x}+x^2(-e^{-x})=xe^{-x}(2-x).$$\nStationary points occur when $x=0$ or $x=2$.\n\nAt $x=0$, $y=0$. For $x<0$, $x(2-x)<0$ (since $x<0$ and $2-x>0$), so $y$ is decreasing; for $0<x<2$, $x(2-x)>0$, so $y$ is increasing. Hence $(0,0)$ is a local minimum.\n\nAt $x=2$, $y=4e^{-2}$. For $0<x<2$ the derivative is positive and for $x>2$ it is negative, so $(2,4e^{-2})$ is a local maximum.\n\n[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Differentiate using the product rule.",

@@ -18,7 +18,7 @@
     "one iteration of Newton-Raphson"
   ],
   "statement": "Show that $x^{3}-x-1=0$ has a root between $1.3$ and $1.4$, and use one iteration of the Newton-Raphson method from $x_{0}=1.3$ to improve the approximation.",
-  "solution": "Let $f(x)=x^{3}-x-1$. Then $f(1.3)=2.197-1.3-1=-0.103<0$ and $f(1.4)=2.744-1.4-1=0.344>0$, so a root lies in $(1.3,1.4)$.\nWith $f'(x)=3x^{2}-1$, the Newton-Raphson iteration is $x_{1}=x_{0}-\\dfrac{f(x_{0})}{f'(x_{0})}$.\n$$x_{1}=1.3-\\frac{-0.103}{3(1.3)^{2}-1}=1.3+\\frac{0.103}{5.07-1}=1.3+\\frac{0.103}{4.07}\\approx1.3+0.0253=1.3253.$$\nSo $x_{1}\\approx1.325$ (to 3 d.p.).",
+  "solution": "Let $f(x)=x^{3}-x-1$. Then $f(1.3)=2.197-1.3-1=-0.103<0$ and $f(1.4)=2.744-1.4-1=0.344>0$, so a root lies in $(1.3,1.4)$.\nWith $f'(x)=3x^{2}-1$, the Newton-Raphson iteration is $x_{1}=x_{0}-\\dfrac{f(x_{0})}{f'(x_{0})}$.\n$$x_{1}=1.3-\\frac{-0.103}{3(1.3)^{2}-1}=1.3+\\frac{0.103}{5.07-1}=1.3+\\frac{0.103}{4.07}\\approx1.3+0.0253=1.3253.$$\nSo $x_{1}\\approx1.325$ (to 3 d.p.).\n\n[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Evaluate f(1.3) and f(1.4) to show a sign change.",

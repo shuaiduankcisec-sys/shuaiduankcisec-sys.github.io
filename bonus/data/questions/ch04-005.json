@@ -20,7 +20,7 @@
     "odd-function style symmetry"
   ],
   "statement": "Let $f(x)=\\dfrac{x}{1+x^2}$. Show that $f(1/x)=f(x)$ for all $x\\neq 0$, and find the maximum value of $f(x)$ for $x>0$.",
-  "solution": "For $x\\neq 0$:\n$$f\\!\\left(\\frac1x\\right)=\\frac{\\frac1x}{1+\\frac1{x^2}}=\\frac{\\frac1x}{\\frac{x^2+1}{x^2}}=\\frac{x}{x^2+1}=f(x).$$\nTo maximise for $x>0$, differentiate:\n$$f'(x)=\\frac{(1)(1+x^2)-x(2x)}{(1+x^2)^2}=\\frac{1-x^2}{(1+x^2)^2}.$$\nThis is positive for $0<x<1$ and negative for $x>1$, so the maximum occurs at $x=1$, where\n$$f(1)=\\frac{1}{1+1}=\\frac12.$$\nThus the maximum value is $\\tfrac12$.",
+  "solution": "For $x\\neq 0$:\n$$f\\!\\left(\\frac1x\\right)=\\frac{\\frac1x}{1+\\frac1{x^2}}=\\frac{\\frac1x}{\\frac{x^2+1}{x^2}}=\\frac{x}{x^2+1}=f(x).$$\nTo maximise for $x>0$, differentiate:\n$$f'(x)=\\frac{(1)(1+x^2)-x(2x)}{(1+x^2)^2}=\\frac{1-x^2}{(1+x^2)^2}.$$\nThis is positive for $0<x<1$ and negative for $x>1$, so the maximum occurs at $x=1$, where\n$$f(1)=\\frac{1}{1+1}=\\frac12.$$\nThus the maximum value is $\\tfrac12$.\n\n[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Substitute 1/x and simplify by multiplying numerator and denominator by x^2.",

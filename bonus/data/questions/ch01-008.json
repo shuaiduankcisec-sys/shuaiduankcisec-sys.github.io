@@ -18,7 +18,7 @@
     "norm of a surd"
   ],
   "statement": "Let $a=\\\\sqrt[3]{2+\\\\sqrt{5}}+\\\\sqrt[3]{2-\\\\sqrt{5}}$. By writing $u=\\\\sqrt[3]{2+\\\\sqrt{5}}$ and $v=\\\\sqrt[3]{2-\\\\sqrt{5}}$, show that $a$ satisfies $a^{3}+3a-4=0$, and hence find the exact value of $a$.",
-  "solution": "Let $u=\\\\sqrt[3]{2+\\\\sqrt{5}}$ and $v=\\\\sqrt[3]{2-\\\\sqrt{5}}$. Then $uv=\\\\sqrt[3]{(2+\\\\sqrt{5})(2-\\\\sqrt{5})}=\\\\sqrt[3]{4-5}=\\\\sqrt[3]{-1}=-1$, and $u^{3}+v^{3}=(2+\\\\sqrt{5})+(2-\\\\sqrt{5})=4$. Now $a^{3}=(u+v)^{3}=u^{3}+v^{3}+3uv(u+v)=4+3(-1)a=4-3a$, so $a^{3}+3a-4=0$. Testing $a=1$ gives $1+3-4=0$, so $(a-1)(a^{2}+a+4)=0$. The quadratic factor has discriminant $1-16<0$, so the only real root is $a=1$.",
+  "solution": "Let $u=\\\\sqrt[3]{2+\\\\sqrt{5}}$ and $v=\\\\sqrt[3]{2-\\\\sqrt{5}}$. Then $uv=\\\\sqrt[3]{(2+\\\\sqrt{5})(2-\\\\sqrt{5})}=\\\\sqrt[3]{4-5}=\\\\sqrt[3]{-1}=-1$, and $u^{3}+v^{3}=(2+\\\\sqrt{5})+(2-\\\\sqrt{5})=4$. Now $a^{3}=(u+v)^{3}=u^{3}+v^{3}+3uv(u+v)=4+3(-1)a=4-3a$, so $a^{3}+3a-4=0$. Testing $a=1$ gives $1+3-4=0$, so $(a-1)(a^{2}+a+4)=0$. The quadratic factor has discriminant $1-16<0$, so the only real root is $a=1$.\n\n[难度自评: Q1是 Q2是 Q3否 Q4是 Q5否 → 4星]",
   "solutionStatus": "full",
   "hints": [
     "Compute uv and u^3+v^3 first.",

@@ -18,7 +18,7 @@
     "setting up a recurrence for alpha^n+beta^n"
   ],
   "statement": "The roots of $x^{2}-6x+4=0$ are $\\\\alpha$ and $\\\\beta$. For each integer $n\\\\ge0$, define $S_{n}=\\\\alpha^{n}+\\\\beta^{n}$. Show that $S_{n}$ satisfies $S_{n+2}=6S_{n+1}-4S_{n}$, and hence find $S_{5}$.",
-  "solution": "We have $\\\\alpha+\\\\beta=6$ and $\\\\alpha\\\\beta=4$. Then $S_{n+2}=\\\\alpha^{n+2}+\\\\beta^{n+2}=(\\\\alpha+\\\\beta)(\\\\alpha^{n+1}+\\\\beta^{n+1})-\\\\alpha\\\\beta(\\\\alpha^{n}+\\\\beta^{n})=6S_{n+1}-4S_{n}$. The initial values are $S_{0}=2$ and $S_{1}=6$. Hence $S_{2}=6\\\\cdot6-4\\\\cdot2=28$, $S_{3}=6\\\\cdot28-4\\\\cdot6=144$, $S_{4}=6\\\\cdot144-4\\\\cdot28=752$, and $S_{5}=6\\\\cdot752-4\\\\cdot144=3936$. Thus $S_{5}=3936$.",
+  "solution": "We have $\\\\alpha+\\\\beta=6$ and $\\\\alpha\\\\beta=4$. Then $S_{n+2}=\\\\alpha^{n+2}+\\\\beta^{n+2}=(\\\\alpha+\\\\beta)(\\\\alpha^{n+1}+\\\\beta^{n+1})-\\\\alpha\\\\beta(\\\\alpha^{n}+\\\\beta^{n})=6S_{n+1}-4S_{n}$. The initial values are $S_{0}=2$ and $S_{1}=6$. Hence $S_{2}=6\\\\cdot6-4\\\\cdot2=28$, $S_{3}=6\\\\cdot28-4\\\\cdot6=144$, $S_{4}=6\\\\cdot144-4\\\\cdot28=752$, and $S_{5}=6\\\\cdot752-4\\\\cdot144=3936$. Thus $S_{5}=3936$.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
   "solutionStatus": "full",
   "hints": [
     "Use alpha^(n+2) = (alpha+beta)alpha^(n+1) - alpha beta alpha^n.",

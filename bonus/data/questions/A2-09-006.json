@@ -18,7 +18,7 @@
     "solving for parameters"
   ],
   "statement": "Show that the lines $\\mathbf{r}=(1,2,0)+t(1,0,1)$ and $\\mathbf{r}=(0,2,2)+s(1,0,-1)$ intersect, and find their point of intersection.",
-  "solution": "Line 1: $(1+t,\\,2,\\,t)$. Line 2: $(s,\\,2,\\,2-s)$.\nEquating coordinates:\n\\begin{align*}\n1+t&=s,\\tag{1}\\\\\n2&=2,\\tag{2}\\\\\nt&=2-s.\\tag{3}\n\\end{align*}\nFrom (1), $s=1+t$. Substituting into (3): $t=2-(1+t)=1-t$, so $2t=1$ and $t=\\tfrac12$; then $s=1+\\tfrac12=\\tfrac32$. Check (1): $1+\\tfrac12=\\tfrac32=s$.\nThe intersection point is $(1+\\tfrac12,\\,2,\\,\\tfrac12)=\\left(\\tfrac32,\\,2,\\,\\tfrac12\\right)$.",
+  "solution": "Line 1: $(1+t,\\,2,\\,t)$. Line 2: $(s,\\,2,\\,2-s)$.\nEquating coordinates:\n\\begin{align*}\n1+t&=s,\\tag{1}\\\\\n2&=2,\\tag{2}\\\\\nt&=2-s.\\tag{3}\n\\end{align*}\nFrom (1), $s=1+t$. Substituting into (3): $t=2-(1+t)=1-t$, so $2t=1$ and $t=\\tfrac12$; then $s=1+\\tfrac12=\\tfrac32$. Check (1): $1+\\tfrac12=\\tfrac32=s$.\nThe intersection point is $(1+\\tfrac12,\\,2,\\,\\tfrac12)=\\left(\\tfrac32,\\,2,\\,\\tfrac12\\right)$.\n\n[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Write each line in parametric coordinate form.",

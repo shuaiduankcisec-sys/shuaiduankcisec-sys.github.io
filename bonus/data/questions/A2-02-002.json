@@ -26,7 +26,7 @@
     "$0$"
   ],
   "answer": "A",
-  "solution": "Group the factors using the difference of two squares:\n$$(1-2x)^5(1+2x)^5=\\bigl((1-2x)(1+2x)\\bigr)^5=(1-4x^2)^5.$$\n\nThen the whole expression is\n$$(1-4x^2)^5(1+4x^2)^5=\\bigl((1-4x^2)(1+4x^2)\\bigr)^5=(1-16x^4)^5.$$\n\nExpanding $(1-16x^4)^5$ by the binomial theorem, the term in $x^{12}=(x^4)^3$ is\n$$\\binom{5}{3}(-16x^4)^3=10\\cdot(-16)^3x^{12}=-10\\cdot4096\\,x^{12}=-2^{13}\\cdot5\\,x^{12},$$\nsince $10\\cdot4096=40960$ and $2^{13}\\cdot5=8192\\cdot5=40960$.\n\nSo the coefficient of $x^{12}$ is $-2^{13}\\times5$.\n\nThe answer is **A**.",
+  "solution": "Group the factors using the difference of two squares:\n$$(1-2x)^5(1+2x)^5=\\bigl((1-2x)(1+2x)\\bigr)^5=(1-4x^2)^5.$$\n\nThen the whole expression is\n$$(1-4x^2)^5(1+4x^2)^5=\\bigl((1-4x^2)(1+4x^2)\\bigr)^5=(1-16x^4)^5.$$\n\nExpanding $(1-16x^4)^5$ by the binomial theorem, the term in $x^{12}=(x^4)^3$ is\n$$\\binom{5}{3}(-16x^4)^3=10\\cdot(-16)^3x^{12}=-10\\cdot4096\\,x^{12}=-2^{13}\\cdot5\\,x^{12},$$\nsince $10\\cdot4096=40960$ and $2^{13}\\cdot5=8192\\cdot5=40960$.\n\nSo the coefficient of $x^{12}$ is $-2^{13}\\times5$.\n\nThe answer is **A**.\n\n[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]",
   "solutionStatus": "full",
   "hints": [
     "Combine (1-2x)(1+2x) and (1-4x²)(1+4x²) using difference of squares.",
