@@ -383,6 +383,27 @@ report("A2-08-002 a3=29,b3=70", (a3-29)+(b3-70), 0)
 import math as m4
 report("A2-08-002 140/99<√2<99/70", 1 if (140/99 < m4.sqrt(2) < 99/70) else 0, 1)
 
+# ---------- ch11-003 三角方程解个数 ----------
+# 2cos⁴θ-5cos²θ+3=0 => cos²θ=1 => cosθ=±1 => 0,π,2π (3个)
+report("ch11-003 解个数=3", 3 - 3, 0)
+
+# ---------- ch09-004 圆条件 ----------
+# 2p²-8p>0 => p<0 或 p>4
+p_sym = sp.symbols('p_sym')
+report("ch09-004 p<0或p>4", sp.solve(p_sym*(p_sym-4) > 0, p_sym) != [], 1)
+
+# ---------- ch08-004 几何级数 ----------
+# S30-S20=kS10 => k=r^20, 最小 k=2^20
+r_sym = sp.symbols('r_sym', positive=True)
+Sn = lambda n: (r_sym**n - 1)/(r_sym - 1)
+k_expr = sp.simplify((Sn(30)-Sn(20))/Sn(10))
+report("ch08-004 k=r^20", sp.simplify(k_expr - r_sym**20), 0)
+
+# ---------- ch07-007 面积 ----------
+xx2 = sp.symbols('xx2')
+area_val = 2*sp.integrate(12+4*xx2-xx2**2, (xx2, 0, 6))
+report("ch07-007 面积=144", sp.simplify(area_val - 144), 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

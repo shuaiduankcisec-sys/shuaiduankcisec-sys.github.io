@@ -1,0 +1,24 @@
+{
+  "id": "ch11-003",
+  "chapter": 11,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2022,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["trigonometric equations", "quadratic in disguise"],
+  "methods": ["factorising a quadratic in cos²θ", "solving cosθ=±1"],
+  "statement": "How many real solutions are there to the equation\n$$2\\cos^4\\theta-5\\cos^2\\theta+3=0$$\nin the interval $0\\le\\theta\\le2\\pi$?",
+  "options": ["$1$", "$2$", "$3$", "$4$", "$5$", "$6$", "$7$"],
+  "answer": "C",
+  "solution": "Treat the equation as a quadratic in $\\cos^2\\theta$. It factorises as\n$$2\\cos^4\\theta-5\\cos^2\\theta+3=(2\\cos^2\\theta-3)(\\cos^2\\theta-1)=0.$$\n\nSo $\\cos^2\\theta=\\tfrac32$ or $\\cos^2\\theta=1$. The first has no real solutions (as $\\cos^2\\theta\\le1$). The second gives $\\cos\\theta=\\pm1$.\n\nIn $0\\le\\theta\\le2\\pi$:\n- $\\cos\\theta=1$ gives $\\theta=0$ and $\\theta=2\\pi$;\n- $\\cos\\theta=-1$ gives $\\theta=\\pi$.\n\nHence there are $3$ real solutions, which is **option C**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Treat it as a quadratic in cos²θ and factorise.",
+    "cos²θ = 3/2 is impossible; only cos²θ = 1 matters.",
+    "Count the solutions of cos θ = ±1 in the interval."
+  ]
+}

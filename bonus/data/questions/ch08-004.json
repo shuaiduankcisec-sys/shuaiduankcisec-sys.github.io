@@ -1,0 +1,24 @@
+{
+  "id": "ch08-004",
+  "chapter": 8,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2022,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["sequences and series", "geometric series"],
+  "methods": ["sum of a geometric series", "factorising"],
+  "statement": "A geometric sequence has first term $a$ and common ratio $r$, where $a$ and $r$ are positive integers and $r>1$.\n\nThe sum of the first $n$ terms of this sequence is denoted by $S_n$. It is given that the terms of the sequence satisfy\n$$S_{30}-S_{20}=kS_{10}$$\nfor some positive integer $k$.\n\nWhat is the smallest possible value of $k$?",
+  "options": ["$2^{10}$", "$2^{20}$", "$2^{30}$", "$\\dfrac{2^{10}}{2^{10}-1}$", "$\\dfrac{2^{20}}{2^{20}-1}$"],
+  "answer": "B",
+  "solution": "Using the sum formula $S_n=\\dfrac{a(r^n-1)}{r-1}$,\n$$S_{30}-S_{20}=\\frac{a(r^{30}-1)-a(r^{20}-1)}{r-1}=\\frac{a(r^{30}-r^{20})}{r-1}.$$\n\nThe condition $S_{30}-S_{20}=kS_{10}$ gives\n$$\\frac{a(r^{30}-r^{20})}{r-1}=k\\cdot\\frac{a(r^{10}-1)}{r-1},$$\nso (multiplying by $r-1$ and dividing by $a$)\n$$r^{30}-r^{20}=k(r^{10}-1).$$\n\nFactorising the left side, $r^{20}(r^{10}-1)=k(r^{10}-1)$. Since $r>1$, $r^{10}-1\\ne0$, so $k=r^{20}$.\n\nAs $r$ is a positive integer greater than $1$, the smallest possible $r$ is $2$, giving the smallest $k=2^{20}$.\n\nThe answer is **B**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the geometric sum formula for S_30, S_20, S_10.",
+    "Substitute into the condition and cancel common factors.",
+    "Factor r^30 - r^20 = r^20(r^10 - 1)."
+  ]
+}

@@ -319,6 +319,27 @@
     "preview": "For any integer $n\\ge0$, $ \\int_n^{n+1} f(x)\\,dx = n+1.$  Evaluate …"
   },
   {
+    "id": "ch07-007",
+    "chapter": 7,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2022,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "integration",
+      "area under a curve",
+      "absolute value"
+    ],
+    "methods": [
+      "splitting by sign of x",
+      "definite integration"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the finite area enclosed between the line $y=0$ and the curve $y=x^2-4|x|-12$."
+  },
+  {
     "id": "ch08-001",
     "chapter": 8,
     "title": "",
@@ -382,6 +403,26 @@
     "preview": "The first few positive whole numbers that are not powers of $3$ are $2,4,5,6,7,8,10$. What is the sum of all the positive whole numbers…"
   },
   {
+    "id": "ch08-004",
+    "chapter": 8,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2022,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "sequences and series",
+      "geometric series"
+    ],
+    "methods": [
+      "sum of a geometric series",
+      "factorising"
+    ],
+    "solutionStatus": "full",
+    "preview": "A geometric sequence has first term $a$ and common ratio $r$, where $a$ and $r$ are positive integers and $r>1$. The sum of the first $n$…"
+  },
+  {
     "id": "ch09-001",
     "chapter": 9,
     "title": "",
@@ -443,6 +484,27 @@
     ],
     "solutionStatus": "full",
     "preview": "Two circles are inside a square $ABCD$ of side-length $1$. One of the circles is tangent to sides $AB$ and to $BC$. The other circle is…"
+  },
+  {
+    "id": "ch09-004",
+    "chapter": 9,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2022,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "coordinate geometry",
+      "circles",
+      "completing the square"
+    ],
+    "methods": [
+      "completing the square",
+      "circle condition"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the complete set of values of $p$ for which the equation $ x^2-2px+y^2-6y-p^2+8p+9=0$  describes a circle in the $x$-$y$ plane."
   },
   {
     "id": "ch10-001",
@@ -547,6 +609,26 @@
     ],
     "solutionStatus": "full",
     "preview": "How many solutions are there to the equation $ 2^{\\tan^2 x}=4^{\\sin^2 x}$  in the range $0\\le x\\le2\\pi$?"
+  },
+  {
+    "id": "ch11-003",
+    "chapter": 11,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2022,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "trigonometric equations",
+      "quadratic in disguise"
+    ],
+    "methods": [
+      "factorising a quadratic in cos²θ",
+      "solving cosθ=±1"
+    ],
+    "solutionStatus": "full",
+    "preview": "How many real solutions are there to the equation $ 2\\cos^4\\theta-5\\cos^2\\theta+3=0$  in the interval $0\\le\\theta\\le2\\pi$?"
   },
   {
     "id": "ch12-001",

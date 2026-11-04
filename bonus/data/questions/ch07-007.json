@@ -1,0 +1,24 @@
+{
+  "id": "ch07-007",
+  "chapter": 7,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2022,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["integration", "area under a curve", "absolute value"],
+  "methods": ["splitting by sign of x", "definite integration"],
+  "statement": "Find the finite area enclosed between the line $y=0$ and the curve $y=x^2-4|x|-12$.",
+  "options": ["$\\dfrac{128}{3}$", "$\\dfrac{176}{3}$", "$\\dfrac{256}{3}$", "$108$", "$144$"],
+  "answer": "E",
+  "solution": "Split by the sign of $x$.\n\nFor $x\\ge0$, $y=x^2-4x-12=(x-6)(x+2)$, which crosses the $x$-axis at $x=6$ (and $x=-2$, outside this range). For $x<0$, $y=x^2+4x-12=(x+6)(x-2)$, crossing at $x=-6$.\n\nSo the enclosed region lies between $x=-6$ and $x=6$. By symmetry, the area is twice the area from $0$ to $6$:\n$$\\text{area}=2\\int_0^6\\bigl(12+4x-x^2\\bigr)\\,dx=2\\left[12x+2x^2-\\frac{x^3}{3}\\right]_0^6.$$\n\nEvaluating, $[\\cdots]_0^6=72+72-72=72$, so the area is $2\\times72=144$.\n\nThe answer is **E**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Split into x≥0 and x<0 and find where the curve meets the x-axis.",
+    "The region is symmetric about the y-axis.",
+    "Integrate 12+4x-x² from 0 to 6 and double."
+  ]
+}

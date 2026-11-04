@@ -1,0 +1,24 @@
+{
+  "id": "ch09-004",
+  "chapter": 9,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2022,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["coordinate geometry", "circles", "completing the square"],
+  "methods": ["completing the square", "circle condition"],
+  "statement": "Find the complete set of values of $p$ for which the equation\n$$x^2-2px+y^2-6y-p^2+8p+9=0$$\ndescribes a circle in the $x$-$y$ plane.",
+  "options": ["$p<-\\dfrac94$", "$0<p<4$", "$-1<p<9$", "$p<0$ or $p>4$", "$p<1$ or $p>9$"],
+  "answer": "D",
+  "solution": "Complete the square for $x$ and $y$:\n$$(x-p)^2-p^2+(y-3)^2-9-p^2+8p+9=0,$$\nwhich simplifies to\n$$(x-p)^2+(y-3)^2=2p^2-8p.$$\n\nThis is a circle (with centre $(p,3)$) exactly when the squared radius $2p^2-8p$ is positive:\n$$2p^2-8p>0 \\quad\\Rightarrow\\quad p(p-4)>0.$$\n\nThe quadratic $p(p-4)$ has roots $0$ and $4$ and is positive outside the roots, so\n$$p<0\\ \\text{or}\\ p>4,$$\nwhich is **option D**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Complete the square to put the equation in circle form.",
+    "The squared radius must be positive.",
+    "Solve the quadratic inequality in p."
+  ]
+}
