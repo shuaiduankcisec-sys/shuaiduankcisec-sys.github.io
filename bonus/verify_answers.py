@@ -178,6 +178,50 @@ trap = 0.5*(0 + 2*(sp.sqrt(3)+2+sp.sqrt(3)) + 0)
 exact = 2*sp.pi
 report("A2-08-001 差 = 2(π-1-√3)", sp.simplify(exact - trap - 2*(sp.pi-1-sp.sqrt(3))), 0)
 
+# ---------- A2-01-001 函数 f²-f 极值差 ----------
+# g(t)=t²-t, t∈[-2,2], max=6 (t=-2), min=-1/4 (t=1/2), 差=25/4
+g = sp.symbols('g')
+gmin = sp.Rational(1,4)**2 - sp.Rational(1,4)  # 错了，重新算
+t = sp.symbols('t')
+gt = t**2 - t
+g_max = gt.subs(t, -2)   # 6
+g_min = gt.subs(t, sp.Rational(1,2))  # -1/4
+report("A2-01-001 差 = 25/4", sp.simplify(g_max - g_min - sp.Rational(25,4)), 0)
+
+# ---------- A2-02-001 二项式系数恒等式 ----------
+# Σ C(n,r)=2^n, Σ r C(n,r)=n 2^(n-1)
+n = sp.symbols('n', integer=True, positive=True)
+r = sp.symbols('r')
+# 验证 Σ r C(n,r) = n 2^(n-1) 用具体 n=5
+n5 = 5
+s1 = sum(r*sp.binomial(n5, r) for r in range(1, n5+1))
+report("A2-02-001 ΣrC(5,r)=5·2⁴", sp.simplify(s1 - n5*2**4), 0)
+# Σ(-1)^r C(5,r) = 0
+s2 = sum((-1)**r*sp.binomial(n5, r) for r in range(n5+1))
+report("A2-02-001 Σ(-1)^rC(5,r)=0", sp.simplify(s2), 0)
+
+# ---------- ch03-001 整除性 ----------
+# n^5-n^3 被 24 整除，2^(2n)-1 被 3 整除，n^3-1 被 9 整除(当 n-1被3整除)
+nvals = [2, 3, 4, 5, 6, 7, 8]
+ok24 = all((v**5 - v**3) % 24 == 0 for v in nvals)
+ok3 = all((2**(2*v) - 1) % 3 == 0 for v in nvals)
+report("ch03-001 n^5-n^3 被24整除(抽样)", 1 if ok24 else 0, 1)
+report("ch03-001 2^(2n)-1 被3整除(抽样)", 1 if ok3 else 0, 1)
+ok9 = all(((3*k+1)**3 - 1) % 9 == 0 for k in range(1, 10))
+report("ch03-001 n^3-1 被9整除(n=3k+1)", 1 if ok9 else 0, 1)
+
+# ---------- A2-09-001 向量九点圆 ----------
+# 验证 q=a+b+c，AQ·BC=0（|b|=|c|时）
+# 用具体向量：a,b,c 都在半径为1的圆上
+import math as m
+def vec_dot(u, v): return sum(x*y for x,y in zip(u,v))
+# 取外接圆半径1，三个单位向量
+A = (1, 0); B = (m.cos(2*m.pi/3), m.sin(2*m.pi/3)); C = (m.cos(4*m.pi/3), m.sin(4*m.pi/3))
+q = tuple(A[i]+B[i]+C[i] for i in range(2))
+AQ = (q[0]-A[0], q[1]-A[1])
+BC = (C[0]-B[0], C[1]-B[1])
+report("A2-09-001 AQ·BC=0", abs(vec_dot(AQ, BC)), 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

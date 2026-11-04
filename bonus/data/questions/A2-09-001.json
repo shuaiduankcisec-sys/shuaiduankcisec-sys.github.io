@@ -1,0 +1,22 @@
+{
+  "id": "A2-09-001",
+  "chapter": "A2-09",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions/95-s1-q7",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": ["vectors", "triangle geometry", "orthocentre", "nine-point circle"],
+  "methods": ["position vectors", "dot product", "centroid and orthocentre"],
+  "statement": "Let $A,B,C$ be three non-collinear points in the plane. Explain briefly why it is possible to choose an origin equidistant from the three points.\n\nLet $O$ be such an origin, let $G$ be the centroid of the triangle $ABC$, let $Q$ be a point such that $\\overrightarrow{GQ}=2\\overrightarrow{OG}$, and let $N$ be the midpoint of $OQ$.\n\n(i) Show that $\\overrightarrow{AQ}$ is perpendicular to $\\overrightarrow{BC}$ and deduce that the three altitudes of $\\triangle ABC$ are concurrent.\n\n(ii) Show that the midpoints of $AQ$, $BQ$ and $CQ$, and the midpoints of the sides of $\\triangle ABC$, are all equidistant from $N$.\n\n[*The centroid of $\\triangle ABC$ is the point $G$ such that $\\overrightarrow{OG}=\\tfrac13(\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC})$. The altitudes of the triangle are the lines through the vertices perpendicular to the opposite sides.*]",
+  "solution": "**Existence of the origin.** The perpendicular bisectors of $AB$ and $BC$ are two non-parallel lines, so they meet at a point $O$ equidistant from $A$, $B$ and $C$ (the circumcentre). Take $O$ as origin and write the position vectors as $\\mathbf a,\\mathbf b,\\mathbf c$, so that $|\\mathbf a|=|\\mathbf b|=|\\mathbf c|$.\n\nThe centroid is $\\mathbf g=\\tfrac13(\\mathbf a+\\mathbf b+\\mathbf c)$. Since $\\overrightarrow{GQ}=2\\overrightarrow{OG}$, we have $\\mathbf q-\\mathbf g=2\\mathbf g$, so $\\mathbf q=3\\mathbf g=\\mathbf a+\\mathbf b+\\mathbf c$.\n\n(i) Compute\n$$\\overrightarrow{AQ}=\\mathbf q-\\mathbf a=(\\mathbf a+\\mathbf b+\\mathbf c)-\\mathbf a=\\mathbf b+\\mathbf c,$$\nand $\\overrightarrow{BC}=\\mathbf c-\\mathbf b$. Their dot product is\n$$\\overrightarrow{AQ}\\cdot\\overrightarrow{BC}=(\\mathbf b+\\mathbf c)\\cdot(\\mathbf c-\\mathbf b)=\\mathbf b\\cdot\\mathbf c-|\\mathbf b|^2+|\\mathbf c|^2-\\mathbf c\\cdot\\mathbf b=|\\mathbf c|^2-|\\mathbf b|^2=0,$$\nusing $|\\mathbf b|=|\\mathbf c|$. Hence $AQ$ is perpendicular to $BC$.\n\nBy symmetry, $BQ\\perp CA$ and $CQ\\perp AB$. Therefore the lines $AQ$, $BQ$, $CQ$ are the three altitudes (each passes through a vertex and is perpendicular to the opposite side), and they all pass through the single point $Q$. Hence the altitudes are concurrent at $Q$ (the orthocentre).\n\n(ii) The midpoint of $OQ$ is $\\mathbf n=\\tfrac12\\mathbf q=\\tfrac12(\\mathbf a+\\mathbf b+\\mathbf c)$.\n\nFirst, the midpoint of $AQ$ has position vector $\\tfrac12(\\mathbf a+\\mathbf q)=\\tfrac12(\\mathbf a+\\mathbf a+\\mathbf b+\\mathbf c)=\\tfrac12(2\\mathbf a+\\mathbf b+\\mathbf c)$. Its distance from $N$ is\n$$\\left|\\tfrac12(2\\mathbf a+\\mathbf b+\\mathbf c)-\\tfrac12(\\mathbf a+\\mathbf b+\\mathbf c)\\right|=\\left|\\tfrac12\\mathbf a\\right|=\\tfrac12|\\mathbf a|=\\tfrac12 R,$$\nwhere $R=|\\mathbf a|$ is the circumradius. Identically for the midpoints of $BQ$ and $CQ$ (each gives $\\tfrac12 R$).\n\nThe midpoint of side $BC$ has position vector $\\tfrac12(\\mathbf b+\\mathbf c)$, and its distance from $N$ is\n$$\\left|\\tfrac12(\\mathbf b+\\mathbf c)-\\tfrac12(\\mathbf a+\\mathbf b+\\mathbf c)\\right|=\\left|-\\tfrac12\\mathbf a\\right|=\\tfrac12 R,$$\nand similarly for the midpoints of $CA$ and $AB$.\n\nThus all six midpoints (the three midpoints of $AQ$, $BQ$, $CQ$ and the three side-midpoints) are at distance $\\tfrac12 R$ from $N$ — these are six of the nine points of the **nine-point circle**, which is centred at $N$ with radius $\\tfrac12 R$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Take the circumcentre as origin, so |a|=|b|=|c|.",
+    "Show q = a+b+c using g=(a+b+c)/3 and GQ=2OG.",
+    "Use dot products to prove AQ ⊥ BC, and compute distances from N=Q/2."
+  ]
+}

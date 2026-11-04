@@ -1,0 +1,24 @@
+{
+  "id": "A2-01-001",
+  "chapter": "A2-01",
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2023,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144109/TMUA-2023-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 3,
+  "topics": ["functions", "range of a composite function", "quadratics"],
+  "methods": ["composing functions", "finding the range of a quadratic"],
+  "statement": "The diagram shows the graph of $y=f(x)$.\n\nThe function $f$ attains its maximum value of $2$ at $x=1$, and its minimum value of $-2$ at $x=-1$.\n\nFind the difference between the maximum and minimum values of $(f(x))^2-f(x)$.",
+  "options": ["$2$", "$\\frac94$", "$4$", "$\\frac{17}{4}$", "$6$", "$\\frac{25}{4}$", "$8$", "$\\frac{33}{4}$"],
+  "answer": "F",
+  "solution": "Let $t=f(x)$. Since $f$ takes every value in $[-2,2]$, the values of $(f(x))^2-f(x)=t^2-t$ range over $g(t)=t^2-t$ for $t\\in[-2,2]$.\n\nComplete the square: $g(t)=t^2-t=(t-\\tfrac12)^2-\\tfrac14$, so $g$ has a minimum of $-\\tfrac14$ at $t=\\tfrac12$ (which lies in $[-2,2]$).\n\nOn the interval $[-2,2]$, the maximum of $g$ occurs at the endpoint farthest from $t=\\tfrac12$, namely $t=-2$: $g(-2)=4+2=6$. (The other endpoint gives $g(2)=4-2=2$.)\n\nHence the maximum value is $6$ and the minimum is $-\\tfrac14$, so the difference is\n$$6-\\left(-\\tfrac14\\right)=\\frac{25}{4},$$\nwhich is **option F**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write the expression as t^2 - t with t = f(x) in [-2,2].",
+    "Complete the square to find the minimum of t^2 - t.",
+    "Check the endpoints t=-2 and t=2 for the maximum."
+  ]
+}

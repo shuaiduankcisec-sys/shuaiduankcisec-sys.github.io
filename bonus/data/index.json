@@ -44,6 +44,27 @@
     "preview": "The graphs of $y=x^2+5x+6$ and $y=mx-3$, where $m$ is a constant, are plotted on the same set of axes. Given that the graphs do not meet,…"
   },
   {
+    "id": "ch03-001",
+    "chapter": 3,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1996,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "algebraic division",
+      "factorisation",
+      "divisibility"
+    ],
+    "methods": [
+      "factorisation",
+      "divisibility arguments"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $n$ be a positive integer. (i) Factorise $n^5-n^3$, and show that it is divisible by $24$. (ii) Prove that $2^{2n}-1$ is divisible by…"
+  },
+  {
     "id": "ch04-001",
     "chapter": 4,
     "title": "",
@@ -272,6 +293,49 @@
     ],
     "solutionStatus": "full",
     "preview": "$P(x)$ and $Q(x)$ are defined as follows: $ P(x)=2^x+4,\\qquad Q(x)=2^{2x-2}-2^{x+2}+16.$  Find the largest value of $x$ such that $P(x)$…"
+  },
+  {
+    "id": "A2-01-001",
+    "chapter": "A2-01",
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "functions",
+      "range of a composite function",
+      "quadratics"
+    ],
+    "methods": [
+      "composing functions",
+      "finding the range of a quadratic"
+    ],
+    "solutionStatus": "full",
+    "preview": "The diagram shows the graph of $y=f(x)$. The function $f$ attains its maximum value of $2$ at $x=1$, and its minimum value of $-2$ at…"
+  },
+  {
+    "id": "A2-02-001",
+    "chapter": "A2-02",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1989,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "binomial theorem",
+      "binomial coefficients",
+      "series"
+    ],
+    "methods": [
+      "binomial expansion",
+      "substituting special values",
+      "differentiating the binomial expansion"
+    ],
+    "solutionStatus": "full",
+    "preview": "Write down the binomial expansion of $(1+x)^n$, where $n$ is a positive integer. (i) By substituting particular values of $x$, or…"
   },
   {
     "id": "A2-03-001",
@@ -533,5 +597,28 @@
     ],
     "solutionStatus": "full",
     "preview": "The trapezium rule with 4 strips is used to estimate the integral $ \\int_{-2}^{2}\\sqrt{4-x^2}\\,dx.$  What is the positive difference…"
+  },
+  {
+    "id": "A2-09-001",
+    "chapter": "A2-09",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1995,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "vectors",
+      "triangle geometry",
+      "orthocentre",
+      "nine-point circle"
+    ],
+    "methods": [
+      "position vectors",
+      "dot product",
+      "centroid and orthocentre"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $A,B,C$ be three non-collinear points in the plane. Explain briefly why it is possible to choose an origin equidistant from the three…"
   }
 ]

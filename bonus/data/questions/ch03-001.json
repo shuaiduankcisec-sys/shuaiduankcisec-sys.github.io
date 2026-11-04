@@ -1,0 +1,22 @@
+{
+  "id": "ch03-001",
+  "chapter": 3,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions/96-s1-q3",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["algebraic division", "factorisation", "divisibility"],
+  "methods": ["factorisation", "divisibility arguments"],
+  "statement": "Let $n$ be a positive integer.\n\n(i) Factorise $n^5-n^3$, and show that it is divisible by $24$.\n\n(ii) Prove that $2^{2n}-1$ is divisible by $3$.\n\n(iii) If $n-1$ is divisible by $3$, show that $n^3-1$ is divisible by $9$.",
+  "solution": "(i) Factorise:\n$$n^5-n^3=n^3(n^2-1)=n^3(n-1)(n+1).$$\n\nSince $(n-1)n(n+1)$ is the product of three consecutive integers, it is divisible by $3$ (one of the three is a multiple of $3$) and by $2$ (at least one is even). In fact $n^3(n-1)(n+1)=n^2\\cdot n(n-1)(n+1)$ is divisible by $8$: if $n$ is even then $n^3$ contains $2^3$; if $n$ is odd then $(n-1)(n+1)$ is the product of two consecutive even numbers, which is divisible by $8$. Together with the factor $3$, the product is divisible by $8\\times3=24$.\n\n(ii) Write $2^{2n}-1=4^n-1$. Since $4\\equiv1\\pmod3$, we have $4^n\\equiv1^n=1\\pmod3$, so $4^n-1\\equiv0\\pmod3$. Hence $2^{2n}-1$ is divisible by $3$.\n\n(iii) Since $n-1$ is divisible by $3$, write $n=3k+1$. Then\n$$n^3-1=(n-1)(n^2+n+1).$$\nNow $n-1=3k$ is divisible by $3$. Also $n^2+n+1=(3k+1)^2+(3k+1)+1=9k^2+9k+3=3(3k^2+3k+1)$, which is divisible by $3$. Since both factors are divisible by $3$, their product $n^3-1$ is divisible by $9$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Factorise n^5-n^3 as n^3(n-1)(n+1) and use divisibility of consecutive integers.",
+    "Write 2^(2n) = 4^n and reduce mod 3.",
+    "For (iii), write n=3k+1 and factor n^3-1."
+  ]
+}
