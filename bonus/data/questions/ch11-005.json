@@ -1,0 +1,22 @@
+{
+  "id": "ch11-005",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2008,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["trigonometric equations", "reciprocal identities"],
+  "methods": ["substitution t=tan x", "solving a quadratic"],
+  "statement": "Solve $\\tan x + \\cot x = 2$ for $0<x<\\tfrac{\\pi}{2}$, showing that the only solution is $x=\\tfrac{\\pi}{4}$.",
+  "solution": "For $0<x<\\tfrac{\\pi}{2}$, $\\tan x>0$. Since $\\cot x = \\dfrac{1}{\\tan x}$, let $t=\\tan x$ (so $t>0$). The equation becomes\n$$t+\\frac1t = 2 \\;\\Rightarrow\\; t^2+1=2t \\;\\Rightarrow\\; (t-1)^2=0.$$\nHence $t=1$, i.e. $\\tan x = 1$, giving $x=\\tfrac{\\pi}{4}$ as the unique solution in $\\bigl(0,\\tfrac{\\pi}{2}\\bigr)$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write cot x as 1/tan x and set t = tan x.",
+    "Multiply through to get a quadratic in t.",
+    "Solve (t-1)^2=0."
+  ]
+}

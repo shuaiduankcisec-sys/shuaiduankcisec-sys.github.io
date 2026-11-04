@@ -1,0 +1,22 @@
+{
+  "id": "ch07-009",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2007,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["integration", "integration by parts"],
+  "methods": ["integration by parts (twice)", "definite integral"],
+  "statement": "Evaluate $\\displaystyle\\int_0^1 x^2 e^x\\,dx$ using integration by parts.",
+  "solution": "Integrate by parts with $u=x^2$, $dv=e^x\\,dx$ (so $du=2x\\,dx$, $v=e^x$):\n$$\\int_0^1 x^2 e^x\\,dx = \\Bigl[x^2 e^x\\Bigr]_0^1 - \\int_0^1 2x e^x\\,dx = e - 2\\int_0^1 x e^x\\,dx.$$\nNow $\\int x e^x\\,dx = x e^x - e^x$ (again by parts), so\n$$\\int_0^1 x e^x\\,dx = \\Bigl[x e^x - e^x\\Bigr]_0^1 = (e-e) - (0-1) = 1.$$\nTherefore\n$$\\int_0^1 x^2 e^x\\,dx = e - 2(1) = e-2.$$",
+  "solutionStatus": "full",
+  "hints": [
+    "First integration by parts: u=x^2, dv=e^x dx.",
+    "The remaining integral int x e^x dx also needs parts.",
+    "int_0^1 x e^x dx = 1, so the answer is e-2."
+  ]
+}

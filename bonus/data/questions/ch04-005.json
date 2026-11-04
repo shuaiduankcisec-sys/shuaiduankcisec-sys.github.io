@@ -1,0 +1,22 @@
+{
+  "id": "ch04-005",
+  "chapter": 4,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2006,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["functions", "symmetry", "maxima"],
+  "methods": ["substitution", "differentiation", "odd-function style symmetry"],
+  "statement": "Let $f(x)=\\dfrac{x}{1+x^2}$. Show that $f(1/x)=f(x)$ for all $x\\neq 0$, and find the maximum value of $f(x)$ for $x>0$.",
+  "solution": "For $x\\neq 0$:\n$$f\\!\\left(\\frac1x\\right)=\\frac{\\frac1x}{1+\\frac1{x^2}}=\\frac{\\frac1x}{\\frac{x^2+1}{x^2}}=\\frac{x}{x^2+1}=f(x).$$\nTo maximise for $x>0$, differentiate:\n$$f'(x)=\\frac{(1)(1+x^2)-x(2x)}{(1+x^2)^2}=\\frac{1-x^2}{(1+x^2)^2}.$$\nThis is positive for $0<x<1$ and negative for $x>1$, so the maximum occurs at $x=1$, where\n$$f(1)=\\frac{1}{1+1}=\\frac12.$$\nThus the maximum value is $\\tfrac12$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Substitute 1/x and simplify by multiplying numerator and denominator by x^2.",
+    "Differentiate using the quotient rule.",
+    "Set f'(x)=0; the only positive critical point is x=1."
+  ]
+}

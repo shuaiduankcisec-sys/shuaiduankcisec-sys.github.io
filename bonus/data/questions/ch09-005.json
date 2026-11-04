@@ -1,0 +1,22 @@
+{
+  "id": "ch09-005",
+  "chapter": 9,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2002,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["coordinate geometry", "circles", "concyclic points"],
+  "methods": ["general equation of a circle", "solving simultaneous equations"],
+  "statement": "The points $A(1,0)$, $B(-1,0)$ and $C(0,2)$ lie on a circle. Find the equation of the circle and the coordinates of its centre.",
+  "solution": "Use the general circle equation $x^2+y^2+Dx+Ey+F=0$.\n\nSubstituting the three points:\n- $A(1,0)$: $1+D+F=0$.\n- $B(-1,0)$: $1-D+F=0$.\n- $C(0,2)$: $4+2E+F=0$.\n\nFrom the first two equations, adding gives $2+2F=0$ so $F=-1$, and then $D=0$.\nFrom the third, $4+2E-1=0$, so $E=-\\tfrac32$.\n\nThus the circle is\n$$x^2+y^2-\\frac32 y-1=0,$$\nor, completing the square in $y$,\n$$x^2+\\left(y-\\tfrac34\\right)^2=1+\\frac{9}{16}=\\frac{25}{16}.$$\nHence the centre is $\\bigl(0,\\tfrac34\\bigr)$ and the radius is $\\tfrac54$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write the general form x^2+y^2+Dx+Ey+F=0.",
+    "Substitute A, B, C to get three equations in D, E, F.",
+    "Complete the square to read off the centre."
+  ]
+}

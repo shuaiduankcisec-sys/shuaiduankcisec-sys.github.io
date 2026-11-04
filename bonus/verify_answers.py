@@ -585,6 +585,40 @@ xx11 = sp.symbols('xx11')
 x0_val = (sp.sqrt(5)-1)/4
 report("ch10-004 8x³+8x²-1=0 根", sp.simplify(8*x0_val**3 + 8*x0_val**2 - 1), 0)
 
+# ---------- 新增 STEP 题答案二次验证（2026-11-04 扩充） ----------
+# ch12-004: 2^(2x) - 5*2^x + 4 = 0  => x = 0 或 2
+_x = sp.symbols('_x')
+_expr12004 = 2**(2*_x) - 5*2**_x + 4
+_sol12004 = sp.solve(sp.Eq(_expr12004, 0), _x)
+_ok12004 = set([int(sp.N(s)) for s in _sol12004]) == {0, 2}
+print(f"  [{'PASS' if _ok12004 else 'FAIL'}] ch12-004 解 = {_sol12004}（期望 0, 2）")
+if _ok12004:
+    ok_count += 1
+else:
+    fail_count += 1
+
+# ch12-005: log2(x+3)+log2(x-1)=3 => x = -1 + 2*sqrt(3)
+_x2 = sp.symbols('_x2', positive=True)
+_expr12005 = sp.log(_x2 + 3, 2) + sp.log(_x2 - 1, 2) - 3
+_sol12005 = sp.solve(sp.Eq(_expr12005, 0), _x2)
+_root12005 = [s for s in _sol12005 if sp.N(s) > 1][0]
+report("ch12-005 解 (-1+2√3)", 0, sp.N(_root12005 - (-1 + 2*sp.sqrt(3))))
+
+# ch02-005: 若 x^2+px+q=0 根为 α,β，则 α^2,β^2 的多项式为 x^2-(p^2-2q)x+q^2
+_p, _q, _t = sp.symbols('_p _q _t')
+_y = sp.symbols('_y')
+_rts = sp.solve(_t**2 + _p*_t + _q, _t)
+_poly = sp.expand((_y - _rts[0]**2)*(_y - _rts[1]**2))
+_expected02005 = sp.expand(_y**2 - (_p**2 - 2*_q)*_y + _q**2)
+report("ch02-005 平方根多项式", 0, sp.expand(_poly - _expected02005))
+
+# A2-08-003: x^3-x-1=0 的唯一实根 ≈ 1.3247（迭代收敛到 3 位小数 1.325）
+_x3 = sp.symbols('_x3')
+_f2803 = _x3**3 - _x3 - 1
+_root2803 = [r for r in sp.nroots(_f2803) if abs(sp.im(r)) < 1e-10][0]
+report("A2-08-003 f(根)=0", 0, abs(sp.N(_f2803.subs(_x3, _root2803))))
+print(f"  [INFO] A2-08-003 实根 = {float(_root2803):.6f}，四舍五入到 3 位小数 = {round(float(_root2803), 3)}")
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:
