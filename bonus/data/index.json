@@ -740,6 +740,28 @@
     "preview": "Sketch the graph of the function $h$, where $ h(x)=\\frac{\\ln x}{x},\\qquad (x>0).$  Hence, or otherwise, find all pairs of distinct positive…"
   },
   {
+    "id": "A2-04-002",
+    "chapter": "A2-04",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1999,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "logarithms",
+      "harmonic series",
+      "inequalities"
+    ],
+    "methods": [
+      "integral bounds for sums",
+      "telescoping sums",
+      "divergence of the harmonic series"
+    ],
+    "solutionStatus": "full",
+    "preview": "The function $f$ satisfies $0\\le f(t)\\le K$ when $0\\le t\\le x$. Explain by means of a sketch, or otherwise, why …"
+  },
+  {
     "id": "A2-05-001",
     "chapter": "A2-05",
     "title": "",
@@ -980,6 +1002,28 @@
     "preview": "The trapezium rule with 4 strips is used to estimate the integral $ \\int_{-2}^{2}\\sqrt{4-x^2}\\,dx.$  What is the positive difference…"
   },
   {
+    "id": "A2-08-002",
+    "chapter": "A2-08",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2017,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "numerical methods",
+      "sequences",
+      "approximation of √2"
+    ],
+    "methods": [
+      "induction",
+      "limits of sequences",
+      "rational approximation"
+    ],
+    "solutionStatus": "full",
+    "preview": "Two sequences are defined by $a_1=1$ and $b_1=2$ and, for $n\\ge1$, $ a_{n+1}=a_n+2b_n, \\qquad b_{n+1}=2a_n+5b_n.$  Prove by induction that,…"
+  },
+  {
     "id": "A2-09-001",
     "chapter": "A2-09",
     "title": "",
@@ -1001,5 +1045,26 @@
     ],
     "solutionStatus": "full",
     "preview": "Let $A,B,C$ be three non-collinear points in the plane. Explain briefly why it is possible to choose an origin equidistant from the three…"
+  },
+  {
+    "id": "A2-09-002",
+    "chapter": "A2-09",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1990,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "vectors",
+      "parallelogram",
+      "dot product"
+    ],
+    "methods": [
+      "parallelogram identity",
+      "dot product and projections"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $ABCD$ be a parallelogram. By using vectors, or otherwise, prove that: (i) $AB^2+BC^2+CD^2+DA^2=AC^2+BD^2$; (ii) $|AC^2-BD^2|$ is $4$…"
   }
 ]

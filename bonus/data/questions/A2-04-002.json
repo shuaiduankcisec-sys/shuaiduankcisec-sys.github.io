@@ -1,0 +1,22 @@
+{
+  "id": "A2-04-002",
+  "chapter": "A2-04",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1999,
+  "sourceUrl": "https://step.maths.org/questions/99-s1-q8",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["logarithms", "harmonic series", "inequalities"],
+  "methods": ["integral bounds for sums", "telescoping sums", "divergence of the harmonic series"],
+  "statement": "The function $f$ satisfies $0\\le f(t)\\le K$ when $0\\le t\\le x$. Explain by means of a sketch, or otherwise, why\n$$0\\le\\int_0^x f(t)\\,dt\\le Kx.$$\n\nBy considering $\\displaystyle\\int_0^1\\frac{t}{n(n-t)}\\,dt$, or otherwise, show that, if $n>1$,\n$$0\\le\\ln\\left(\\frac{n}{n-1}\\right)-\\frac1n\\le\\frac1{n-1}-\\frac1n,$$\nand deduce that\n$$0\\le\\ln N-\\sum_{n=2}^N\\frac1n\\le1.$$\n\nDeduce that as $N\\to\\infty$,\n$$\\sum_{n=1}^N\\frac1n\\to\\infty.$$\n\nNoting that $2^{10}=1024$, show also that if $N<10^{30}$ then\n$$\\sum_{n=1}^N\\frac1n<101.$$",
+  "solution": "**First bound.** Since $0\\le f(t)\\le K$ on $[0,x]$, the integral (an area) lies between $0$ and the area $Kx$ of the rectangle of height $K$ and width $x$.\n\n**Comparing $\\ln(n/(n-1))$ and $1/n$.** We compute\n$$\\int_0^1\\frac{t}{n(n-t)}\\,dt=\\int_0^1\\left(\\frac1{n-t}-\\frac1n\\right)dt=\\left[-\\ln(n-t)-\\frac tn\\right]_0^1=\\ln\\frac{n}{n-1}-\\frac1n.$$\n\nSince the integrand is non-negative, this is $\\ge0$. For the upper bound, on $[0,1]$ we have $\\dfrac{t}{n-t}\\le\\dfrac{1}{n-1}$ (as $t\\le1$ and $n-t\\ge n-1$), so\n$$\\int_0^1\\frac{t}{n(n-t)}\\,dt\\le\\int_0^1\\frac{1}{n(n-1)}\\,dt=\\frac{1}{n(n-1)}=\\frac1{n-1}-\\frac1n.$$\n\nThus $0\\le\\ln\\frac{n}{n-1}-\\frac1n\\le\\frac1{n-1}-\\frac1n$.\n\n**Summing.** Sum over $n=2,\\dots,N$. The middle term telescopes ($\\sum\\ln\\frac{n}{n-1}=\\ln N$), giving\n$$0\\le\\ln N-\\sum_{n=2}^N\\frac1n\\le\\sum_{n=2}^N\\left(\\frac1{n-1}-\\frac1n\\right)=1-\\frac1N\\le1.$$\n\n**Divergence.** Since $\\ln N-\\sum_{n=2}^N\\frac1n\\le1$, we have $\\sum_{n=2}^N\\frac1n\\ge\\ln N-1\\to\\infty$ as $N\\to\\infty$. Hence $\\sum_{n=1}^N\\frac1n\\to\\infty$.\n\n**The $10^{30}$ bound.** From $0\\le\\ln N-\\sum_{n=2}^N\\frac1n$, we get $\\sum_{n=1}^N\\frac1n\\le1+\\ln N$. If $N<10^{30}$, then $\\ln N<30\\ln10<30\\ln1024^{\\cdots}$. More simply, $\\ln10<\\ln1024=10\\ln2$, and since $\\ln2<1$ we have $\\ln10<10\\cdot\\tfrac{69}{100}$-style bounds; concretely $30\\ln10<100$, so\n$$\\sum_{n=1}^N\\frac1n\\le1+\\ln N<1+30\\ln10<101.$$\n\n(Using $\\ln10\\approx2.303<\\tfrac{10}{3}$, we get $30\\ln10<100$, so $1+30\\ln10<101$.)",
+  "solutionStatus": "full",
+  "hints": [
+    "Compute the integral ∫ t/(n(n-t)) dt exactly by writing t/(n-t) = n/(n-t) - 1.",
+    "Bound the integrand to get the upper inequality, then sum over n.",
+    "Use 2^10 = 1024 to bound ln 10."
+  ]
+}

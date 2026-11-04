@@ -347,6 +347,42 @@ A_rect = 4*a_sym*sp.sqrt(1-a_sym)
 a_opt = sp.solve(sp.Eq(sp.diff(A_rect, a_sym), 0), a_sym)[0]
 report("A2-01-002 最大面积=8/√27", sp.simplify(A_rect.subs(a_sym, a_opt) - 8/sp.sqrt(27)), 0)
 
+# ---------- A2-04-002 调和级数逼近 ----------
+# ∫₀¹ t/(n(n-t)) dt = ln(n/(n-1)) - 1/n （数值验证，避免 log 分支）
+import math as m5
+for test_n in [2, 3, 5, 10]:
+    lhs_val = m5.log(test_n/(test_n-1)) - 1/test_n
+    # 数值积分 t/(n(n-t))
+    rhs_val = 0
+    for i in range(1000):
+        tv = (i+0.5)/1000
+        rhs_val += tv/(test_n*(test_n-tv))/1000
+    if abs(lhs_val - rhs_val) > 1e-3:
+        report(f"A2-04-002 ∫=ln(n/(n-1))-1/n (n={test_n})", 1, 0)
+        break
+else:
+    report("A2-04-002 ∫=ln(n/(n-1))-1/n (数值验证)", 0, 0)
+
+# ---------- A2-09-002 平行四边形 ----------
+# |a+b|²+|a-b|² = 2|a|²+2|b|²，|a+b|²-|a-b|²=4a·b
+# 用具体向量验证
+a_vec = (3, 1); b_vec = (1, 2)
+def dot(u,v): return u[0]*v[0]+u[1]*v[1]
+def norm2(u): return dot(u,u)
+apb = (a_vec[0]+b_vec[0], a_vec[1]+b_vec[1])
+amb = (a_vec[0]-b_vec[0], a_vec[1]-b_vec[1])
+report("A2-09-002 平行四边形法则", norm2(apb)+norm2(amb) - (2*norm2(a_vec)+2*norm2(b_vec)), 0)
+report("A2-09-002 对角线差=4a·b", (norm2(apb)-norm2(amb)) - 4*dot(a_vec,b_vec), 0)
+
+# ---------- A2-08-002 迭代逼近√2 ----------
+# 验证 a3=29,b3=70, 140/99<√2<99/70
+a1,b1 = 1,2
+a2,b2 = a1+2*b1, 2*a1+5*b1
+a3,b3 = a2+2*b2, 2*a2+5*b2
+report("A2-08-002 a3=29,b3=70", (a3-29)+(b3-70), 0)
+import math as m4
+report("A2-08-002 140/99<√2<99/70", 1 if (140/99 < m4.sqrt(2) < 99/70) else 0, 1)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:
