@@ -1,0 +1,22 @@
+{
+  "id": "A2-06-001",
+  "chapter": "A2-06",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1988,
+  "sourceUrl": "https://step.maths.org/questions/88-s1-q9",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["integration", "integration by parts", "integration by substitution"],
+  "methods": ["integration by parts", "integration by substitution"],
+  "statement": "Find the following integrals:\n\n(i) $\\displaystyle\\int_1^{e}\\frac{\\ln x}{x^2}\\,dx$;\n\n(ii) $\\displaystyle\\int\\frac{\\cos x}{\\sin x\\sqrt{1+\\sin x}}\\,dx$.",
+  "solution": "(i) Integrate by parts with $u=\\ln x$ and $dv=x^{-2}dx$, so $du=\\frac{dx}{x}$ and $v=-x^{-1}=-\\frac1x$:\n$$\\int\\frac{\\ln x}{x^2}\\,dx=-\\frac{\\ln x}{x}+\\int\\frac{1}{x^2}\\,dx=-\\frac{\\ln x}{x}-\\frac1x+C=-\\frac{\\ln x+1}{x}+C.$$\n\nHence\n$$\\int_1^e\\frac{\\ln x}{x^2}\\,dx=\\left[-\\frac{\\ln x+1}{x}\\right]_1^e=-\\frac{\\ln e+1}{e}+\\frac{\\ln 1+1}{1}=-\\frac{2}{e}+1=1-\\frac{2}{e}.$$\n\n(ii) Substitute $t=\\sin x$, so $dt=\\cos x\\,dx$:\n$$\\int\\frac{\\cos x}{\\sin x\\sqrt{1+\\sin x}}\\,dx=\\int\\frac{dt}{t\\sqrt{1+t}}.$$\n\nNow substitute $w=\\sqrt{1+t}$, so $t=w^2-1$ and $dt=2w\\,dw$:\n$$\\int\\frac{dt}{t\\sqrt{1+t}}=\\int\\frac{2w\\,dw}{(w^2-1)w}=2\\int\\frac{dw}{w^2-1}.$$\n\nUsing partial fractions, $\\frac{1}{w^2-1}=\\frac{1}{(w-1)(w+1)}=\\frac{1}{2}\\left(\\frac{1}{w-1}-\\frac{1}{w+1}\\right)$:\n$$2\\int\\frac{dw}{w^2-1}=\\int\\left(\\frac{1}{w-1}-\\frac{1}{w+1}\\right)dw=\\ln|w-1|-\\ln|w+1|+C=\\ln\\left|\\frac{w-1}{w+1}\\right|+C.$$\n\nSubstituting back $w=\\sqrt{1+\\sin x}$:\n$$\\int\\frac{\\cos x}{\\sin x\\sqrt{1+\\sin x}}\\,dx=\\ln\\left|\\frac{\\sqrt{1+\\sin x}-1}{\\sqrt{1+\\sin x}+1}\\right|+C.$$\n\n(An equivalent form, using $\\sqrt{1+\\sin x}-1$ rationalisation, is $\\ln\\left|\\dfrac{\\sin x}{1+\\sin x+2\\sqrt{1+\\sin x}+1}\\right|$; the logarithmic form above is the cleanest.)",
+  "solutionStatus": "full",
+  "hints": [
+    "For (i), integrate by parts with u=ln x.",
+    "For (ii), substitute t=sin x first, then w=sqrt(1+t).",
+    "The second substitution reduces it to a partial-fractions integral."
+  ]
+}

@@ -10,5 +10,14 @@
   { "id": 9, "level": "AS", "title": "Coordinate Geometry and Circles" },
   { "id": 10, "level": "AS", "title": "Trigonometry" },
   { "id": 11, "level": "AS", "title": "Trigonometric Functions and Equations" },
-  { "id": 12, "level": "AS", "title": "Exponentials and Logarithms" }
+  { "id": 12, "level": "AS", "title": "Exponentials and Logarithms" },
+  { "id": "A2-01", "level": "A2", "title": "Functions" },
+  { "id": "A2-02", "level": "A2", "title": "Binomial Series" },
+  { "id": "A2-03", "level": "A2", "title": "Trigonometric Functions and Formulae" },
+  { "id": "A2-04", "level": "A2", "title": "Exponential and Logarithmic Functions" },
+  { "id": "A2-05", "level": "A2", "title": "Differentiation" },
+  { "id": "A2-06", "level": "A2", "title": "Integration" },
+  { "id": "A2-07", "level": "A2", "title": "Differential Equations" },
+  { "id": "A2-08", "level": "A2", "title": "Numerical Methods" },
+  { "id": "A2-09", "level": "A2", "title": "Vectors" }
 ]

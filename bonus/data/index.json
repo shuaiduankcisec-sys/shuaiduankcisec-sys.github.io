@@ -1,116 +1,5 @@
 [
   {
-    "id": "ch06-002",
-    "chapter": 6,
-    "title": "Composite function: derivatives and stationary points",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 1988,
-    "level": "AS",
-    "difficulty": 3,
-    "topics": [
-      "differentiation",
-      "chain rule",
-      "stationary points",
-      "trigonometric functions"
-    ],
-    "methods": [
-      "chain rule",
-      "second derivative test"
-    ],
-    "solutionStatus": "full",
-    "preview": "The functions $f$ and $g$ are related (for all real $x$) by $ g(x)=f(x)+\\frac{1}{f(x)}.$  Express $g'(x)$ and $g''(x)$ in terms of $f(x)$…"
-  },
-  {
-    "id": "ch06-003",
-    "chapter": 6,
-    "title": "Melting snowman: related rates and optimisation",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 1991,
-    "level": "AS",
-    "difficulty": 4,
-    "topics": [
-      "differentiation",
-      "related rates",
-      "optimisation",
-      "maxima and minima"
-    ],
-    "methods": [
-      "related rates",
-      "chain rule",
-      "optimisation"
-    ],
-    "solutionStatus": "full",
-    "preview": "Frosty the snowman is made from two uniform spherical snowballs, of initial radii $2R$ and $3R$. The smaller (which is his head) stands on…"
-  },
-  {
-    "id": "ch06-004",
-    "chapter": 6,
-    "title": "Logarithmic differentiation of x^x and beyond",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 1994,
-    "level": "A2-extension",
-    "difficulty": 4,
-    "topics": [
-      "differentiation",
-      "logarithmic differentiation",
-      "implicit differentiation",
-      "exponentials and logarithms"
-    ],
-    "methods": [
-      "logarithmic differentiation",
-      "implicit differentiation",
-      "chain rule"
-    ],
-    "solutionStatus": "full",
-    "preview": "Given that $a$ is constant, differentiate the following expressions with respect to $x$: (i) $x^{a}$; (ii) $a^{x}$; (iii) $x^{x}$; (iv)…"
-  },
-  {
-    "id": "ch07-001",
-    "chapter": 7,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 1994,
-    "level": "AS",
-    "difficulty": 4,
-    "topics": [
-      "integration",
-      "inverse trigonometric functions",
-      "partial fractions"
-    ],
-    "methods": [
-      "completing the square",
-      "inverse trigonometric integrals",
-      "half-angle formula"
-    ],
-    "solutionStatus": "full",
-    "preview": "Show that (i) $\\dfrac{1-\\cos\\alpha}{\\sin\\alpha}=\\tan\\dfrac{\\alpha}{2}$; (ii) if $|k|<1$ then …"
-  },
-  {
-    "id": "ch07-002",
-    "chapter": 7,
-    "title": "",
-    "source": "STEP",
-    "paper": "STEP I",
-    "year": 1995,
-    "level": "AS",
-    "difficulty": 3,
-    "topics": [
-      "integration",
-      "trigonometric integrals",
-      "integration by substitution"
-    ],
-    "methods": [
-      "adding and subtracting integrals",
-      "integration by substitution"
-    ],
-    "solutionStatus": "full",
-    "preview": "(i) Suppose that $ S=\\int\\frac{\\cos x}{\\cos x+\\sin x}\\,dx\\quad\\text{and}\\quad T=\\int\\frac{\\sin x}{\\cos x+\\sin x}\\,dx.$  By considering…"
-  },
-  {
     "id": "ch07-003",
     "chapter": 7,
     "title": "",
@@ -133,13 +22,167 @@
     "preview": "(i) Show that $ \\int_0^1\\bigl(1+(\\alpha-1)x\\bigr)^n\\,dx=\\frac{\\alpha^{n+1}-1}{(n+1)(\\alpha-1)}$  when $\\alpha\\neq 1$ and $n$ is a positive…"
   },
   {
-    "id": "ch07-004",
-    "chapter": 7,
+    "id": "A2-05-001",
+    "chapter": "A2-05",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2000,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "differentiation",
+      "quotient rule",
+      "inequalities"
+    ],
+    "methods": [
+      "quotient rule",
+      "finding the sign of a derivative",
+      "completing the square"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $ f(x)=ax-\\frac{x^3}{1+x^2},$  where $a$ is a constant. Show that, if $a\\ge \\frac98$, then $f'(x)\\ge 0$ for all $x$."
+  },
+  {
+    "id": "A2-05-002",
+    "chapter": "A2-05",
+    "title": "Composite function: derivatives and stationary points",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1988,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "differentiation",
+      "chain rule",
+      "stationary points",
+      "trigonometric functions"
+    ],
+    "methods": [
+      "chain rule",
+      "second derivative test"
+    ],
+    "solutionStatus": "full",
+    "preview": "The functions $f$ and $g$ are related (for all real $x$) by $ g(x)=f(x)+\\frac{1}{f(x)}.$  Express $g'(x)$ and $g''(x)$ in terms of $f(x)$…"
+  },
+  {
+    "id": "A2-05-003",
+    "chapter": "A2-05",
+    "title": "Melting snowman: related rates and optimisation",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1991,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "differentiation",
+      "related rates",
+      "optimisation",
+      "maxima and minima"
+    ],
+    "methods": [
+      "related rates",
+      "chain rule",
+      "optimisation"
+    ],
+    "solutionStatus": "full",
+    "preview": "Frosty the snowman is made from two uniform spherical snowballs, of initial radii $2R$ and $3R$. The smaller (which is his head) stands on…"
+  },
+  {
+    "id": "A2-05-004",
+    "chapter": "A2-05",
+    "title": "Logarithmic differentiation of x^x and beyond",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1994,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "differentiation",
+      "logarithmic differentiation",
+      "implicit differentiation",
+      "exponentials and logarithms"
+    ],
+    "methods": [
+      "logarithmic differentiation",
+      "implicit differentiation",
+      "chain rule"
+    ],
+    "solutionStatus": "full",
+    "preview": "Given that $a$ is constant, differentiate the following expressions with respect to $x$: (i) $x^{a}$; (ii) $a^{x}$; (iii) $x^{x}$; (iv)…"
+  },
+  {
+    "id": "A2-06-001",
+    "chapter": "A2-06",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1988,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "integration",
+      "integration by parts",
+      "integration by substitution"
+    ],
+    "methods": [
+      "integration by parts",
+      "integration by substitution"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the following integrals: (i) $\\displaystyle\\int_1^{e}\\frac{\\ln x}{x^2}\\,dx$; (ii) …"
+  },
+  {
+    "id": "A2-06-002",
+    "chapter": "A2-06",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1994,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "integration",
+      "inverse trigonometric functions",
+      "partial fractions"
+    ],
+    "methods": [
+      "completing the square",
+      "inverse trigonometric integrals",
+      "half-angle formula"
+    ],
+    "solutionStatus": "full",
+    "preview": "Show that (i) $\\dfrac{1-\\cos\\alpha}{\\sin\\alpha}=\\tan\\dfrac{\\alpha}{2}$; (ii) if $|k|<1$ then …"
+  },
+  {
+    "id": "A2-06-003",
+    "chapter": "A2-06",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1995,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "integration",
+      "trigonometric integrals",
+      "integration by substitution"
+    ],
+    "methods": [
+      "adding and subtracting integrals",
+      "integration by substitution"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Suppose that $ S=\\int\\frac{\\cos x}{\\cos x+\\sin x}\\,dx\\quad\\text{and}\\quad T=\\int\\frac{\\sin x}{\\cos x+\\sin x}\\,dx.$  By considering…"
+  },
+  {
+    "id": "A2-06-004",
+    "chapter": "A2-06",
     "title": "",
     "source": "STEP",
     "paper": "STEP I",
     "year": 1987,
-    "level": "A2-extension",
+    "level": "A2",
     "difficulty": 4,
     "topics": [
       "integration",

@@ -1,16 +1,24 @@
 {
-  "id": "ch07-004",
-  "chapter": 7,
+  "id": "A2-06-004",
+  "chapter": "A2-06",
   "title": "",
   "source": "STEP",
   "paper": "STEP I",
   "year": 1987,
   "sourceUrl": "https://step.maths.org/questions/87-s1-q6",
   "solutionUrl": "",
-  "level": "A2-extension",
+  "level": "A2",
   "difficulty": 4,
-  "topics": ["integration", "inverse functions", "area under a curve"],
-  "methods": ["geometric interpretation of integrals", "integration of inverse functions", "differentiation to verify"],
+  "topics": [
+    "integration",
+    "inverse functions",
+    "area under a curve"
+  ],
+  "methods": [
+    "geometric interpretation of integrals",
+    "integration of inverse functions",
+    "differentiation to verify"
+  ],
   "statement": "Let $y=f(x)$, ($0\\le x\\le a$), be a continuous curve lying in the first quadrant and passing through the origin. Suppose that, for each non-negative value of $y$ with $0\\le y\\le f(a)$, there is *exactly* one value of $x$ such that $f(x)=y$; thus we may write $x=g(y)$ for a suitable function $g$.\n\nFor $0\\le s\\le a$, $0\\le t\\le f(a)$, define\n$$F(s)=\\int_0^s f(x)\\,dx,\\qquad G(t)=\\int_0^t g(y)\\,dy.$$\n\nBy a geometrical argument, show that\n$$F(s)+G(t)\\ge st.$$\nWhen does equality occur?\n\nSuppose that $y=\\sin x$ and that the ranges of $x,y,s,t$ are restricted to $0\\le x\\le s\\le\\tfrac{\\pi}{2}$, $0\\le y\\le t\\le 1$. By considering the value of $s$ for which equality holds, show that\n$$\\int_0^t\\sin^{-1}y\\,dy=t\\sin^{-1}t-\\left(1-\\cos(\\sin^{-1}t)\\right).$$\n\nCheck this result by differentiating both sides with respect to $t$.",
   "solution": "**Geometrical argument.** The rectangle $[0,s]\\times[0,t]$ has area $st$. The area under $y=f(x)$ from $0$ to $s$ is $F(s)$; the area under $x=g(y)$ from $0$ to $t$ is $G(t)$. Since $f$ is increasing (as each horizontal line meets the curve once), the region under the curve and to the left of the curve together cover the rectangle, possibly with overlap. Precisely, $F(s)$ is the area under the curve between $x=0$ and $x=s$, and $G(t)$ is the area to the left of the curve between $y=0$ and $y=t$. Their union covers the rectangle $[0,s]\\times[0,t]$, so $F(s)+G(t)\\ge st$.\n\nEquality occurs when the curve passes through the corner $(s,t)$, i.e. when $t=f(s)$ (equivalently $s=g(t)$).\n\n**Application to $y=\\sin x$.** Here $g(y)=\\sin^{-1}y$ and $f(x)=\\sin x$. For $0\\le t\\le 1$, take $s=\\sin^{-1}t$, so that $t=\\sin s=f(s)$ and equality holds:\n$$F(s)+G(t)=st.$$\n\nNow $F(s)=\\int_0^s\\sin x\\,dx=1-\\cos s=1-\\cos(\\sin^{-1}t)$, and $st=t\\sin^{-1}t$. Therefore\n$$G(t)=st-F(s)=t\\sin^{-1}t-\\left(1-\\cos(\\sin^{-1}t)\\right).$$\n\nSince $G(t)=\\int_0^t g(y)\\,dy=\\int_0^t\\sin^{-1}y\\,dy$, this gives the required formula.\n\n**Verification by differentiation.** Differentiating the right-hand side with respect to $t$:\n$$\\frac{d}{dt}\\left[t\\sin^{-1}t-1+\\cos(\\sin^{-1}t)\\right]=\\sin^{-1}t+\\frac{t}{\\sqrt{1-t^2}}-\\sin(\\sin^{-1}t)\\cdot\\frac{1}{\\sqrt{1-t^2}}.$$\n\nSince $\\sin(\\sin^{-1}t)=t$, the last two terms cancel, leaving $\\sin^{-1}t$. By the Fundamental Theorem of Calculus, the derivative of the left-hand side $\\int_0^t\\sin^{-1}y\\,dy$ is also $\\sin^{-1}t$. Both sides agree, confirming the result.",
   "solutionStatus": "full",

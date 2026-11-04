@@ -5,16 +5,22 @@
   ],
   "rules": {
     "oxford-aqa": {
-      "note": "Oxford AQA International AS (9660) Unit P1 syllabus: no chain/product/quotient rule, no logarithmic/implicit differentiation, only basic integration (x^n). These methods are out of scope and questions using them are hidden.",
-      "excludeMethods": [
-        "chain rule",
-        "product rule",
-        "quotient rule",
-        "logarithmic differentiation",
-        "implicit differentiation",
-        "integration by substitution",
-        "integration by parts"
-      ]
+      "AS": {
+        "note": "Oxford AQA International AS (9660) Unit P1: no chain/product/quotient rule, no logarithmic/implicit differentiation, only basic integration (x^n).",
+        "excludeMethods": [
+          "chain rule",
+          "product rule",
+          "quotient rule",
+          "logarithmic differentiation",
+          "implicit differentiation",
+          "integration by substitution",
+          "integration by parts"
+        ]
+      },
+      "A2": {
+        "note": "Oxford AQA International A2 (9660) Unit P2 includes chain/product/quotient rule and substitution/parts integration, so no exclusions at A2.",
+        "excludeMethods": []
+      }
     }
   }
 }

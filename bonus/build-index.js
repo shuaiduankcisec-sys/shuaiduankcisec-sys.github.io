@@ -44,8 +44,18 @@ const entries = files.map(f => {
   };
 });
 
-// 按 chapter 排序，再按 id 排序
-entries.sort((a, b) => (a.chapter - b.chapter) || (a.id < b.id ? -1 : 1));
+// sort by chapter (numeric AS first, then A2 string ids), then by id
+entries.sort((a, b) => {
+  const ca = String(a.chapter), cb = String(b.chapter);
+  if (ca !== cb) {
+    const na = Number(a.chapter), nb = Number(b.chapter);
+    if (Number.isFinite(na) && Number.isFinite(nb)) return na - nb;
+    if (Number.isFinite(na)) return -1;
+    if (Number.isFinite(nb)) return 1;
+    return ca < cb ? -1 : 1;
+  }
+  return a.id < b.id ? -1 : 1;
+});
 
 fs.writeFileSync(INDEX_PATH, JSON.stringify(entries, null, 2) + '\n', 'utf8');
 console.log(`Generated index.json with ${entries.length} questions.`);

@@ -162,8 +162,11 @@
   // returns true if a question is within the selected board's syllabus
   function inBoard(q) {
     if (state.board === 'all') return true;
-    var rule = state.boardRules[state.board];
-    if (!rule || !rule.excludeMethods) return true;
+    var boardRule = state.boardRules[state.board];
+    if (!boardRule) return true;
+    // rules are per-level (AS / A2); fall back to the question's own level
+    var rule = boardRule[state.level] || boardRule[q.level];
+    if (!rule || !rule.excludeMethods || rule.excludeMethods.length === 0) return true;
     var methods = (q.methods || []).map(function (m) { return m.toLowerCase(); });
     for (var i = 0; i < rule.excludeMethods.length; i++) {
       if (methods.indexOf(rule.excludeMethods[i].toLowerCase()) !== -1) return false;
@@ -203,7 +206,9 @@
       var cnt = questionsForChapter().filter(function (q) { return q.chapter === c.id; }).length;
       var btn = el('button', 'bq-chapter' + (state.chapter === c.id ? ' active' : ''));
       btn.type = 'button';
-      btn.appendChild(el('span', 'num', String(c.id)));
+      // numeric AS chapters show their number; A2 chapters show the numeric part of "A2-0N"
+      var numLabel = (typeof c.id === 'number') ? String(c.id) : String(c.id).replace('A2-', '');
+      btn.appendChild(el('span', 'num', numLabel));
       btn.appendChild(el('span', null, c.title));
       btn.appendChild(el('span', 'cnt', String(cnt)));
       btn.addEventListener('click', function () {
