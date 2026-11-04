@@ -308,6 +308,45 @@ report("ch12-002 最接近整数的是 α+2γ", 1 if closest == 'α+2γ' else 0,
 S_val = sp.sqrt(2)/(sp.sqrt(2)+1)
 report("ch09-003 半径和=2-√2", sp.simplify(S_val - (2-sp.sqrt(2))), 0)
 
+# ---------- ch05-002 轨迹是圆 ----------
+# 3(x-x̄)²+3(y-ȳ)² = a² - Σdᵢ²，验证质心配方
+x1,x2,x3,y1,y2,y3 = sp.symbols('x1 x2 x3 y1 y2 y3')
+xb = (x1+x2+x3)/3; yb = (y1+y2+y3)/3
+lhs = (x1-xb)**2+(y1-yb)**2+(x2-xb)**2+(y2-yb)**2+(x3-xb)**2+(y3-yb)**2
+# Σdᵢ² = Σ(xᵢ²+yᵢ²) - 3(x̄²+ȳ²)
+rhs = (x1**2+y1**2+x2**2+y2**2+x3**2+y3**2) - 3*(xb**2+yb**2)
+report("ch05-002 质心距离平方和公式", sp.simplify(lhs - rhs), 0)
+
+# ---------- ch06-002 圆柱优化 ----------
+V = sp.symbols('V', positive=True); rr = sp.symbols('rr', positive=True)
+h_expr = V/(sp.pi*rr**2)
+S_cyl = 2*sp.pi*rr**2 + 2*sp.pi*rr*h_expr
+rr_min = sp.solve(sp.Eq(sp.diff(S_cyl, rr), 0), rr)[0]
+S_min = sp.simplify(S_cyl.subs(rr, rr_min))
+report("ch06-002 S_min=3(2πV²)^(1/3)", sp.simplify(S_min - 3*(2*sp.pi*V**2)**sp.Rational(1,3)), 0)
+V_in = sp.simplify(sp.Rational(4,3)*sp.pi*rr_min**3)
+report("ch06-002 内切球=2V/3", sp.simplify(V_in - sp.Rational(2,3)*V), 0)
+
+# ---------- A2-07-002 伯努利方程 ----------
+xx, yy, AA = sp.symbols('x y A')
+y_sol1 = 1/(AA*sp.exp(xx) - sp.exp(2*xx))
+dy1 = sp.diff(y_sol1, xx)
+report("A2-07-002 (i) 解验证", sp.simplify(dy1/y_sol1**2 + 1/y_sol1 - sp.exp(2*xx)), 0)
+
+# ---------- A2-03-002 连乘积 ----------
+aa = sp.symbols('aa', real=True)
+# ∏cos(aa/2^k) = sin(aa)/(2^n sin(aa/2^n))
+# 验证 n=3
+prod3 = sp.cos(aa/2)*sp.cos(aa/4)*sp.cos(aa/8)
+rhs3 = sp.sin(aa)/(8*sp.sin(aa/8))
+report("A2-03-002 连乘积(n=3)", sp.simplify(prod3 - rhs3), 0)
+
+# ---------- A2-01-002 矩形优化 ----------
+a_sym = sp.symbols('a_sym', positive=True)
+A_rect = 4*a_sym*sp.sqrt(1-a_sym)
+a_opt = sp.solve(sp.Eq(sp.diff(A_rect, a_sym), 0), a_sym)[0]
+report("A2-01-002 最大面积=8/√27", sp.simplify(A_rect.subs(a_sym, a_opt) - 8/sp.sqrt(27)), 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:
