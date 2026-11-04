@@ -66,6 +66,10 @@
   function libraryItems() {
     return col.library.slice();
   }
+  function clearLibrary() {
+    col.library = [];
+    persist();
+  }
 
   // ---------- Projects ----------
   function createProject(meta) {
@@ -155,6 +159,7 @@
     hasInLibrary: hasInLibrary,
     toggleLibrary: toggleLibrary,
     libraryItems: libraryItems,
+    clearLibrary: clearLibrary,
     createProject: createProject,
     updateProject: updateProject,
     deleteProject: deleteProject,

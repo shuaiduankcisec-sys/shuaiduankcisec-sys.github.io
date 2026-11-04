@@ -43,7 +43,7 @@
       back: 'Back to questions', source: 'Source', difficulty: 'Difficulty', exportSettings: 'Export settings', bookNameToc: 'Book title (TOC)',
       preview: 'Preview', exportPdf: 'Export PDF (print)', noExport: 'Nothing to export. Add questions to your library or project first.',
       comingSoon: 'Coming soon', noQuestions: 'No questions yet', preparing: 'Questions for this chapter are being prepared.',
-      clearBoard: 'Clear board filter'
+      clearSelected: 'Clear selected', clearSelectedConfirm: 'Clear all selected questions from your library?'
     },
     zh: {
       tabQuestions: '题库', tabLibrary: '收藏', tabProjects: '项目',
@@ -62,7 +62,7 @@
       back: '返回题目列表', source: '来源', difficulty: '难度', exportSettings: '导出设置', bookNameToc: '书名（目录标题）',
       preview: '预览', exportPdf: '导出 PDF（打印）', noExport: '没有可导出的题目。请先在收藏或项目中添加题目。',
       comingSoon: '敬请期待', noQuestions: '暂无题目', preparing: '本章题目正在准备中。',
-      clearBoard: '清除考试局筛选'
+      clearSelected: '清除已选', clearSelectedConfirm: '确定清除收藏夹里所有已选中的题目吗？'
     }
   };
   function bqLang() {
@@ -216,26 +216,28 @@
       state.board = bsel.value;
       state.activeId = null;
       renderList();
-      updateClearBtn();
     });
     boardWrap.appendChild(bsel);
-    // one-click clear button (visible when a board is selected)
+    // one-click "clear selected" button (unchecks all library-selected questions)
     var clearBtn = el('button', 'bq-board-clear');
     clearBtn.type = 'button';
-    clearBtn.title = t('clearBoard');
-    clearBtn.setAttribute('aria-label', t('clearBoard'));
-    clearBtn.innerHTML = '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>';
+    clearBtn.title = t('clearSelected');
+    clearBtn.setAttribute('aria-label', t('clearSelected'));
+    clearBtn.innerHTML = '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>' + t('clearSelected') + '</span>';
     clearBtn.addEventListener('click', function () {
-      state.board = 'all';
-      state.activeId = null;
-      bsel.value = 'all';
-      renderList();
-      updateClearBtn();
+      if (window.bonusCollection.libraryItems().length === 0) return;
+      if (confirm(t('clearSelectedConfirm'))) {
+        window.bonusCollection.clearLibrary();
+        renderList();
+        updateClearBtn();
+      }
     });
     function updateClearBtn() {
-      clearBtn.style.display = (state.board && state.board !== 'all') ? '' : 'none';
+      var n = window.bonusCollection ? window.bonusCollection.libraryItems().length : 0;
+      clearBtn.style.display = (n > 0) ? '' : 'none';
     }
     boardWrap.appendChild(clearBtn);
+    appEl._clearBtn = clearBtn;
     updateClearBtn();
     head.appendChild(boardWrap);
     var count = el('span', 'bq-count', '');
@@ -374,6 +376,9 @@
         check.classList.toggle('on', on);
         check.setAttribute('aria-pressed', on ? 'true' : 'false');
         item.classList.toggle('in-library', on);
+        if (appEl._clearBtn) {
+          appEl._clearBtn.style.display = window.bonusCollection.libraryItems().length > 0 ? '' : 'none';
+        }
       });
       item.appendChild(check);
 
