@@ -18,11 +18,12 @@
     "solving with an initial condition"
   ],
   "statement": "Solve the differential equation $\\\\frac{dy}{dx}+2y=e^{-x}$ given that $y=1$ when $x=0$.",
-  "solution": "The integrating factor is $e^{\\\\int2\\,dx}=e^{2x}$. Multiplying through gives $\\\\frac{d}{dx}(ye^{2x})=e^{x}$. Integrating, $ye^{2x}=e^{x}+C$. With $y(0)=1$ we get $1=1+C$, so $C=0$. Hence $y=e^{x}/e^{2x}=e^{-x}$.\n\n[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]",
+  "solution": "The integrating factor is $e^{\\\\int2\\,dx}=e^{2x}$. Multiplying through gives $\\\\frac{d}{dx}(ye^{2x})=e^{x}$. Integrating, $ye^{2x}=e^{x}+C$. With $y(0)=1$ we get $1=1+C$, so $C=0$. Hence $y=e^{x}/e^{2x}=e^{-x}$.",
   "solutionStatus": "full",
   "hints": [
     "Identify the integrating factor e^(2x).",
     "Multiply and recognise a perfect derivative.",
     "Use y(0)=1 to fix the constant."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]"
 }

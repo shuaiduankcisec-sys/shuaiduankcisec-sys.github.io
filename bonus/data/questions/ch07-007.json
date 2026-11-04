@@ -27,11 +27,12 @@
     "$144$"
   ],
   "answer": "E",
-  "solution": "Split by the sign of $x$.\n\nFor $x\\ge0$, $y=x^2-4x-12=(x-6)(x+2)$, which crosses the $x$-axis at $x=6$ (and $x=-2$, outside this range). For $x<0$, $y=x^2+4x-12=(x+6)(x-2)$, crossing at $x=-6$.\n\nSo the enclosed region lies between $x=-6$ and $x=6$. By symmetry, the area is twice the area from $0$ to $6$:\n$$\\text{area}=2\\int_0^6\\bigl(12+4x-x^2\\bigr)\\,dx=2\\left[12x+2x^2-\\frac{x^3}{3}\\right]_0^6.$$\n\nEvaluating, $[\\cdots]_0^6=72+72-72=72$, so the area is $2\\times72=144$.\n\nThe answer is **E**.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "solution": "Split by the sign of $x$.\n\nFor $x\\ge0$, $y=x^2-4x-12=(x-6)(x+2)$, which crosses the $x$-axis at $x=6$ (and $x=-2$, outside this range). For $x<0$, $y=x^2+4x-12=(x+6)(x-2)$, crossing at $x=-6$.\n\nSo the enclosed region lies between $x=-6$ and $x=6$. By symmetry, the area is twice the area from $0$ to $6$:\n$$\\text{area}=2\\int_0^6\\bigl(12+4x-x^2\\bigr)\\,dx=2\\left[12x+2x^2-\\frac{x^3}{3}\\right]_0^6.$$\n\nEvaluating, $[\\cdots]_0^6=72+72-72=72$, so the area is $2\\times72=144$.\n\nThe answer is **E**.",
   "solutionStatus": "full",
   "hints": [
     "Split into x≥0 and x<0 and find where the curve meets the x-axis.",
     "The region is symmetric about the y-axis.",
     "Integrate 12+4x-x² from 0 to 6 and double."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
 }

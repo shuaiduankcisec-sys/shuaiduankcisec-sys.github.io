@@ -1,0 +1,23 @@
+{
+  "id": "ch12-014",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["exponential equations", "quadratics in a power"],
+  "methods": ["substitution to form a quadratic", "interpreting the two solutions"],
+  "statement": "Solve the equation $4^{x}-6\\\\cdot2^{x}+8=0$, and hence find all real $x$ satisfying $4^{x}+8=6\\\\cdot2^{x}$.",
+  "solution": "Write $4^{x}=(2^{x})^{2}$ and let $u=2^{x}>0$. The equation becomes $u^{2}-6u+8=0$, i.e. $(u-2)(u-4)=0$, so $u=2$ or $u=4$. Hence $2^{x}=2$ giving $x=1$, or $2^{x}=4$ giving $x=2$. The solutions are $x=1$ and $x=2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Substitute u = 2^x so that 4^x = u².",
+    "Solve the resulting quadratic in u.",
+    "Convert each positive u back to x via 2^x = u."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]"
+}

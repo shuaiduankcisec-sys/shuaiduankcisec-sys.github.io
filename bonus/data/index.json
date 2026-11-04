@@ -104,6 +104,46 @@
     "preview": "Solve the equation $2^{2x+1}+2^{x+1}=80$."
   },
   {
+    "id": "ch01-012",
+    "chapter": 1,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2004,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "indices",
+      "simultaneous equations"
+    ],
+    "methods": [
+      "substitution to reduce to a quadratic",
+      "solving a quadratic in a power"
+    ],
+    "solutionStatus": "full",
+    "preview": "Given that $2^{x}+2^{y}=12$ and $2^{x+y}=32$, find the values of $x$ and $y$."
+  },
+  {
+    "id": "ch01-013",
+    "chapter": 1,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2005,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "nested radicals",
+      "cubing"
+    ],
+    "methods": [
+      "introducing u and v",
+      "using the sum-and-product of u,v"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $a=\\\\sqrt[3]{9+\\\\sqrt{80}}+\\\\sqrt[3]{9-\\\\sqrt{80}}$. By writing $u=\\\\sqrt[3]{9+\\\\sqrt{80}}$ and $v=\\\\sqrt[3]{9-\\\\sqrt{80}}$, show that…"
+  },
+  {
     "id": "ch02-003",
     "chapter": 2,
     "title": "",
@@ -1075,6 +1115,26 @@
     "preview": "Using integration by parts, evaluate $\\displaystyle\\int_{1}^{e}x^{2}\\ln x\\,dx$."
   },
   {
+    "id": "ch07-018",
+    "chapter": 7,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2003,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "definite integrals",
+      "symmetry"
+    ],
+    "methods": [
+      "substitution x=a-t",
+      "adding the two forms of the integral"
+    ],
+    "solutionStatus": "full",
+    "preview": "By using the substitution $x=\\\\pi-t$, or otherwise, evaluate $I=\\\\int_{0}^{\\\\pi}\\\\dfrac{x\\\\sin x}{1+\\\\cos^{2}x}\\\\,dx$."
+  },
+  {
     "id": "ch08-001",
     "chapter": 8,
     "title": "",
@@ -1406,6 +1466,26 @@
     "preview": "Find the equation of the circle passing through the points $A(1,0)$, $B(5,0)$ and $C(0,3)$."
   },
   {
+    "id": "ch09-015",
+    "chapter": 9,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2004,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "circle geometry",
+      "chords and tangents"
+    ],
+    "methods": [
+      "power of a point",
+      "angle between tangent and chord"
+    ],
+    "solutionStatus": "full",
+    "preview": "A circle has centre $O$ and radius $r$. The tangent at a point $P$ on the circle meets the tangent at another point $Q$ at the point $T$.…"
+  },
+  {
     "id": "ch10-001",
     "chapter": 10,
     "title": "",
@@ -1589,6 +1669,26 @@
     "preview": "Prove the identity $\\sin A+\\sin B=2\\sin\\tfrac{A+B}{2}\\cos\\tfrac{A-B}{2}$. Hence solve $\\sin3x+\\sin x=0$ for $0\\le x<2\\pi$."
   },
   {
+    "id": "ch10-014",
+    "chapter": 10,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2004,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "trigonometric identities",
+      "harmonic form"
+    ],
+    "methods": [
+      "expressing as R cos(theta-alpha)",
+      "solving a maximum problem"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the maximum value of $3\\\\sin\\\\theta+4\\\\cos\\\\theta$ for real $\\\\theta$, and the values of $\\\\theta$ in $[0,2\\\\pi)$ at which it is…"
+  },
+  {
     "id": "ch11-001",
     "chapter": 11,
     "title": "",
@@ -1708,6 +1808,46 @@
     ],
     "solutionStatus": "full",
     "preview": "Solve the equation $\\cos2\\theta=\\cos\\theta$ for $0\\le\\theta<2\\pi$."
+  },
+  {
+    "id": "ch11-014",
+    "chapter": 11,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2004,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "trigonometric equations",
+      "multiple angles"
+    ],
+    "methods": [
+      "expressing everything in sin and cos",
+      "solving a quartic in tan"
+    ],
+    "solutionStatus": "full",
+    "preview": "By writing $t=\\\\tan\\\\theta$, express $\\\\sin2\\\\theta$ and $\\\\cos2\\\\theta$ in terms of $t$. Hence solve the equation…"
+  },
+  {
+    "id": "ch11-015",
+    "chapter": 11,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2005,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "trigonometric equations",
+      "sum-to-product"
+    ],
+    "methods": [
+      "rewriting as a product",
+      "solving a trigonometric equation with range restrictions"
+    ],
+    "solutionStatus": "full",
+    "preview": "Show that $\\\\sin3\\\\theta+\\\\sin\\\\theta=2\\\\sin2\\\\theta\\\\cos\\\\theta$. Hence solve the equation $\\\\sin3\\\\theta+\\\\sin\\\\theta=\\\\sin2\\\\theta$ for…"
   },
   {
     "id": "ch12-001",
@@ -1852,6 +1992,46 @@
     ],
     "solutionStatus": "full",
     "preview": "A quantity $Q$ decays exponentially so that $Q=Q_{0}e^{-kt}$. Given that $Q$ is $80$ at $t=1$ and $40$ at $t=3$, find $k$ and $Q_{0}$, and…"
+  },
+  {
+    "id": "ch12-014",
+    "chapter": 12,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2004,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "exponential equations",
+      "quadratics in a power"
+    ],
+    "methods": [
+      "substitution to form a quadratic",
+      "interpreting the two solutions"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve the equation $4^{x}-6\\\\cdot2^{x}+8=0$, and hence find all real $x$ satisfying $4^{x}+8=6\\\\cdot2^{x}$."
+  },
+  {
+    "id": "ch12-015",
+    "chapter": 12,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2004,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "comparing magnitudes",
+      "powers"
+    ],
+    "methods": [
+      "rewriting both as powers of a common base",
+      "using 2^10 > 3^6"
+    ],
+    "solutionStatus": "full",
+    "preview": "Without using a calculator, determine which is larger: $2^{100}$ or $3^{63}$. Justify your answer."
   },
   {
     "id": "A2-01-001",

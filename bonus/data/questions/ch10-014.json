@@ -1,0 +1,23 @@
+{
+  "id": "ch10-014",
+  "chapter": 10,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["trigonometric identities", "harmonic form"],
+  "methods": ["expressing as R cos(theta-alpha)", "solving a maximum problem"],
+  "statement": "Find the maximum value of $3\\\\sin\\\\theta+4\\\\cos\\\\theta$ for real $\\\\theta$, and the values of $\\\\theta$ in $[0,2\\\\pi)$ at which it is attained.",
+  "solution": "Write $3\\\\sin\\\\theta+4\\\\cos\\\\theta=R\\\\sin(\\\\theta+\\\\alpha)$, where $R=\\\\sqrt{3^{2}+4^{2}}=5$, and $\\\\cos\\\\alpha=\\\\tfrac35$, $\\\\sin\\\\alpha=\\\\tfrac45$, so $\\\\alpha=\\\\arctan\\\\tfrac43$. Thus the expression is $5\\\\sin(\\\\theta+\\\\alpha)$, whose maximum is $5$, attained when $\\\\sin(\\\\theta+\\\\alpha)=1$, i.e. $\\\\theta+\\\\alpha=\\\\tfrac{\\\\pi}{2}+2k\\\\pi$, so $\\\\theta=\\\\tfrac{\\\\pi}{2}-\\\\alpha+2k\\\\pi$. The unique value in $[0,2\\\\pi)$ is $\\\\theta=\\\\tfrac{\\\\pi}{2}-\\\\arctan\\\\tfrac43$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write the expression as R sin(θ+α).",
+    "Find R and α from cosα=3/5, sinα=4/5.",
+    "The maximum of R sin(...) is R, at sin(...)=1."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

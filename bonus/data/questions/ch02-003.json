@@ -27,11 +27,12 @@
     "It depends on $a$"
   ],
   "answer": "A",
-  "solution": "A quadratic has a repeated root precisely when its discriminant is zero. So\n$$b^2-4ac=0 \\quad\\Rightarrow\\quad b^2=4ac, \\tag{1}$$\n$$c^2-4ab=0 \\quad\\Rightarrow\\quad c^2=4ab. \\tag{2}$$\n\nMultiply (1) and (2):\n$$b^2c^2=16a^2bc.$$\nSince $b$ and $c$ are non-zero, divide by $bc$ to get\n$$bc=16a^2.$$\n\nNow consider the third quadratic $cx^2+ax+b=0$. Its discriminant is\n$$\\Delta=a^2-4bc=a^2-4(16a^2)=a^2-64a^2=-63a^2<0,$$\nsince $a\\neq0$. A negative discriminant means no real roots.\n\nTherefore the equation $cx^2+ax+b=0$ has $0$ distinct real roots.\n\nThe answer is **A**.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "solution": "A quadratic has a repeated root precisely when its discriminant is zero. So\n$$b^2-4ac=0 \\quad\\Rightarrow\\quad b^2=4ac, \\tag{1}$$\n$$c^2-4ab=0 \\quad\\Rightarrow\\quad c^2=4ab. \\tag{2}$$\n\nMultiply (1) and (2):\n$$b^2c^2=16a^2bc.$$\nSince $b$ and $c$ are non-zero, divide by $bc$ to get\n$$bc=16a^2.$$\n\nNow consider the third quadratic $cx^2+ax+b=0$. Its discriminant is\n$$\\Delta=a^2-4bc=a^2-4(16a^2)=a^2-64a^2=-63a^2<0,$$\nsince $a\\neq0$. A negative discriminant means no real roots.\n\nTherefore the equation $cx^2+ax+b=0$ has $0$ distinct real roots.\n\nThe answer is **A**.",
   "solutionStatus": "full",
   "hints": [
     "A repeated root means the discriminant is zero for each of the first two quadratics.",
     "Combine b²=4ac and c²=4ab to find bc in terms of a.",
     "Compute the discriminant of the third quadratic and check its sign."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
 }

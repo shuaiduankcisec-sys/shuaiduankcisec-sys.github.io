@@ -18,11 +18,12 @@
     "comparing coefficients"
   ],
   "statement": "A polynomial $f$ of degree $2$ satisfies $f(x+1)-f(x)=2x+1$ and $f(0)=0$. Find $f(x)$.",
-  "solution": "Let $f(x)=ax^{2}+bx+c$ with $f(0)=0$, so $c=0$. Then $f(x+1)-f(x)=a(x+1)^{2}+b(x+1)-ax^{2}-bx=a(2x+1)+b=2ax+(a+b)$. Equating to $2x+1$ gives $2a=2$ so $a=1$, and $a+b=1$ so $b=0$. Hence $f(x)=x^{2}$.\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]",
+  "solution": "Let $f(x)=ax^{2}+bx+c$ with $f(0)=0$, so $c=0$. Then $f(x+1)-f(x)=a(x+1)^{2}+b(x+1)-ax^{2}-bx=a(2x+1)+b=2ax+(a+b)$. Equating to $2x+1$ gives $2a=2$ so $a=1$, and $a+b=1$ so $b=0$. Hence $f(x)=x^{2}$.",
   "solutionStatus": "full",
   "hints": [
     "Write f as ax^2+bx+c and use f(0)=0.",
     "Compute f(x+1)-f(x).",
     "Compare coefficients with 2x+1."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]"
 }

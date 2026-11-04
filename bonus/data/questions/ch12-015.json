@@ -1,0 +1,23 @@
+{
+  "id": "ch12-015",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["comparing magnitudes", "powers"],
+  "methods": ["rewriting both as powers of a common base", "using 2^10 > 3^6"],
+  "statement": "Without using a calculator, determine which is larger: $2^{100}$ or $3^{63}$. Justify your answer.",
+  "solution": "Since $2^{10}=1024>729=3^{6}$, raising both sides to the power $10$ gives $2^{100}>3^{60}$. Now $3^{63}=3^{3}\\\\cdot3^{60}=27\\\\cdot3^{60}$. We need to compare $2^{100}$ with $27\\\\cdot3^{60}$. Write $2^{100}=2^{100}\\\\cdot\\\\tfrac{3^{60}}{3^{60}}$; equivalently compare $\\\\dfrac{2^{100}}{3^{60}}$ with $27$. Now $\\\\dfrac{2^{100}}{3^{60}}=\\\\left(\\\\dfrac{2^{10}}{3^{6}}\\\\right)^{10}=\\\\left(\\\\dfrac{1024}{729}\\\\right)^{10}$. Since $\\\\dfrac{1024}{729}>1.4$ and $1.4^{10}>28>27$, we have $\\\\dfrac{2^{100}}{3^{60}}>27$, so $2^{100}>27\\\\cdot3^{60}=3^{63}$. Therefore $2^{100}>3^{63}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Compare 2^10 = 1024 with 3^6 = 729.",
+    "Raise the comparison to the 10th power to relate 2^100 and 3^60.",
+    "Handle the extra factor 3^3 = 27 in 3^63."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

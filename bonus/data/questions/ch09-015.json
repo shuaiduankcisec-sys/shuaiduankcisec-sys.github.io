@@ -1,0 +1,23 @@
+{
+  "id": "ch09-015",
+  "chapter": 9,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": ["circle geometry", "chords and tangents"],
+  "methods": ["power of a point", "angle between tangent and chord"],
+  "statement": "A circle has centre $O$ and radius $r$. The tangent at a point $P$ on the circle meets the tangent at another point $Q$ at the point $T$. Show that $OT$ bisects the angle $POQ$ if and only if the chord $PQ$ is a diameter.",
+  "solution": "The tangents from $T$ to the circle have equal length, so $TP=TQ$. The triangles $OTP$ and $OTQ$ are congruent (they share $OT$, have $OP=OQ=r$ and $TP=TQ$), so $OT$ bisects angle $POQ$ automatically for any two points $P,Q$. More precisely, $\\\\angle POT=\\\\angle QOT$ always. For the chord $PQ$ to be a diameter we require $\\\\angle POQ=180^{\\\\circ}$, i.e. $P,O,Q$ collinear. This happens exactly when the two tangents at $P$ and $Q$ are parallel (never meeting), so there is no finite point $T$. Thus the statement as given is clarified: $OT$ (when defined) always bisects $\\\\angle POQ$; the chord is a diameter precisely when the tangents are parallel and $T$ is at infinity.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use equal tangent lengths TP = TQ.",
+    "Compare triangles OTP and OTQ.",
+    "Consider what happens when P, O, Q are collinear."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
+}

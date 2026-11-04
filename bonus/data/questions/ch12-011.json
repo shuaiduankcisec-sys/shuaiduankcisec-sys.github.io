@@ -18,11 +18,12 @@
     "solving the linear system"
   ],
   "statement": "Solve the simultaneous equations $2^{x}3^{y}=12$ and $3^{x}2^{y}=18$.",
-  "solution": "Take natural logarithms: $x\\\\ln2+y\\\\ln3=\\\\ln12=\\\\ln(4\\\\cdot3)=2\\\\ln2+\\\\ln3$, and $x\\\\ln3+y\\\\ln2=\\\\ln18=\\\\ln(9\\\\cdot2)=2\\\\ln3+\\\\ln2$. Adding these two equations gives $(x+y)(\\\\ln2+\\\\ln3)=3(\\\\ln2+\\\\ln3)$, so $x+y=3$. Subtracting gives $(x-y)(\\\\ln2-\\\\ln3)=\\\\ln2-\\\\ln3$, so $x-y=1$. Solving yields $x=2$ and $y=1$. (Check: $2^{2}3^{1}=12$ and $3^{2}2^{1}=18$, both satisfied.)\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "solution": "Take natural logarithms: $x\\\\ln2+y\\\\ln3=\\\\ln12=\\\\ln(4\\\\cdot3)=2\\\\ln2+\\\\ln3$, and $x\\\\ln3+y\\\\ln2=\\\\ln18=\\\\ln(9\\\\cdot2)=2\\\\ln3+\\\\ln2$. Adding these two equations gives $(x+y)(\\\\ln2+\\\\ln3)=3(\\\\ln2+\\\\ln3)$, so $x+y=3$. Subtracting gives $(x-y)(\\\\ln2-\\\\ln3)=\\\\ln2-\\\\ln3$, so $x-y=1$. Solving yields $x=2$ and $y=1$. (Check: $2^{2}3^{1}=12$ and $3^{2}2^{1}=18$, both satisfied.)",
   "solutionStatus": "full",
   "hints": [
     "Take logs of both equations.",
     "Add and subtract the two log equations.",
     "Solve the resulting linear system for x+y and x-y."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
 }

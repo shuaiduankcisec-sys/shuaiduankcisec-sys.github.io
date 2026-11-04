@@ -18,11 +18,12 @@
     "solving for closest points"
   ],
   "statement": "Find the shortest distance between the two lines $\\\\mathbf{r}=(0,0,0)+s(1,1,0)$ and $\\\\mathbf{r}=(0,0,1)+t(0,1,1)$, and the points on each line that are closest together.",
-  "solution": "A general point on the first line is $(s,s,0)$ and on the second is $(0,t,1+t)$. The vector joining them is $(s,\\,s-t,\\,-1-t)$. For the shortest distance this vector is perpendicular to both direction vectors $(1,1,0)$ and $(0,1,1)$: dot with $(1,1,0)$ gives $s+(s-t)=2s-t=0$, so $t=2s$; dot with $(0,1,1)$ gives $(s-t)+(-1-t)=s-2t-1=0$. Substituting $t=2s$ yields $s-4s-1=0$, so $s=-1/3$ and $t=-2/3$. The closest points are $(-1/3,-1/3,0)$ on the first line and $(0,-2/3,1/3)$ on the second; the joining vector is $(1/3,-1/3,1/3)$ of length $\\\\sqrt{3}/3=1/\\\\sqrt{3}$. Hence the shortest distance is $1/\\\\sqrt{3}$.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "solution": "A general point on the first line is $(s,s,0)$ and on the second is $(0,t,1+t)$. The vector joining them is $(s,\\,s-t,\\,-1-t)$. For the shortest distance this vector is perpendicular to both direction vectors $(1,1,0)$ and $(0,1,1)$: dot with $(1,1,0)$ gives $s+(s-t)=2s-t=0$, so $t=2s$; dot with $(0,1,1)$ gives $(s-t)+(-1-t)=s-2t-1=0$. Substituting $t=2s$ yields $s-4s-1=0$, so $s=-1/3$ and $t=-2/3$. The closest points are $(-1/3,-1/3,0)$ on the first line and $(0,-2/3,1/3)$ on the second; the joining vector is $(1/3,-1/3,1/3)$ of length $\\\\sqrt{3}/3=1/\\\\sqrt{3}$. Hence the shortest distance is $1/\\\\sqrt{3}$.",
   "solutionStatus": "full",
   "hints": [
     "Parameterise a point on each line.",
     "Set the joining vector perpendicular to both direction vectors.",
     "Solve for s and t, then compute the distance."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
 }

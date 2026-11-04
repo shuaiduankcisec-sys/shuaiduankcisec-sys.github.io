@@ -19,11 +19,12 @@
     "finding the limit"
   ],
   "statement": "Define $a_{1}=\\\\sqrt{2}$ and $a_{n+1}=\\\\sqrt{2+a_{n}}$ for $n\\\\ge1$. Show by induction that $a_{n}<2$ for all $n$, that the sequence is increasing, and hence find $\\\\lim_{n\\\\to\\\\infty}a_{n}$.",
-  "solution": "Boundedness: $a_{1}=\\\\sqrt{2}<2$. If $a_{n}<2$ then $a_{n+1}=\\\\sqrt{2+a_{n}}<\\\\sqrt{4}=2$, so by induction $a_{n}<2$ for all $n$. Monotonicity: $a_{n+1}^{2}-a_{n}^{2}=2+a_{n}-a_{n}^{2}=(2-a_{n})(1+a_{n})$. Since $0<a_{n}<2$, both factors are positive, so $a_{n+1}^{2}>a_{n}^{2}$ and thus $a_{n+1}>a_{n}$. The sequence is increasing and bounded above by $2$, so it converges to some limit $L$. Then $L=\\\\sqrt{2+L}$, i.e. $L^{2}-L-2=0$, giving $L=2$ (the positive root). Thus $\\\\lim_{n\\\\to\\\\infty}a_{n}=2$.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "solution": "Boundedness: $a_{1}=\\\\sqrt{2}<2$. If $a_{n}<2$ then $a_{n+1}=\\\\sqrt{2+a_{n}}<\\\\sqrt{4}=2$, so by induction $a_{n}<2$ for all $n$. Monotonicity: $a_{n+1}^{2}-a_{n}^{2}=2+a_{n}-a_{n}^{2}=(2-a_{n})(1+a_{n})$. Since $0<a_{n}<2$, both factors are positive, so $a_{n+1}^{2}>a_{n}^{2}$ and thus $a_{n+1}>a_{n}$. The sequence is increasing and bounded above by $2$, so it converges to some limit $L$. Then $L=\\\\sqrt{2+L}$, i.e. $L^{2}-L-2=0$, giving $L=2$ (the positive root). Thus $\\\\lim_{n\\\\to\\\\infty}a_{n}=2$.",
   "solutionStatus": "full",
   "hints": [
     "Use induction to prove a_n<2.",
     "Compare a_{n+1}^2 and a_n^2 to show increase.",
     "Let the limit be L and solve L=sqrt(2+L)."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
 }

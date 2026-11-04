@@ -18,11 +18,12 @@
     "solving for dy/dx=0"
   ],
   "statement": "The curve $x^{3}+y^{3}=6xy$ is called the folium of Descartes. Find $\\dfrac{dy}{dx}$ and hence find the coordinates of the point with $x=y\\neq0$ on the curve.",
-  "solution": "Differentiating implicitly, $3x^{2}+3y^{2}\\frac{dy}{dx}=6y+6x\\frac{dy}{dx}$, so $\\frac{dy}{dx}=\\frac{2y-x^{2}}{y^{2}-2x}$. Setting $x=y$ gives $2x^{3}=6x^{2}$, i.e. $x^{2}(x-3)=0$. Since $x\\neq0$, $x=3$, so the point is $(3,3)$.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "solution": "Differentiating implicitly, $3x^{2}+3y^{2}\\frac{dy}{dx}=6y+6x\\frac{dy}{dx}$, so $\\frac{dy}{dx}=\\frac{2y-x^{2}}{y^{2}-2x}$. Setting $x=y$ gives $2x^{3}=6x^{2}$, i.e. $x^{2}(x-3)=0$. Since $x\\neq0$, $x=3$, so the point is $(3,3)$.",
   "solutionStatus": "full",
   "hints": [
     "Differentiate both sides implicitly with respect to x.",
     "Collect the dy/dx terms.",
     "Substitute x=y into the original equation."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
 }

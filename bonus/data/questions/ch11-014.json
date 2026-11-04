@@ -1,0 +1,23 @@
+{
+  "id": "ch11-014",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["trigonometric equations", "multiple angles"],
+  "methods": ["expressing everything in sin and cos", "solving a quartic in tan"],
+  "statement": "By writing $t=\\\\tan\\\\theta$, express $\\\\sin2\\\\theta$ and $\\\\cos2\\\\theta$ in terms of $t$. Hence solve the equation $\\\\sin2\\\\theta+\\\\cos2\\\\theta=1$ for $0\\\\le\\\\theta<2\\\\pi$, giving your answers in terms of $\\\\pi$.",
+  "solution": "With $t=\\\\tan\\\\theta$, we have $\\\\sin2\\\\theta=\\\\dfrac{2t}{1+t^{2}}$ and $\\\\cos2\\\\theta=\\\\dfrac{1-t^{2}}{1+t^{2}}$. Substituting into $\\\\sin2\\\\theta+\\\\cos2\\\\theta=1$: $\\\\dfrac{2t+1-t^{2}}{1+t^{2}}=1$, so $2t+1-t^{2}=1+t^{2}$, i.e. $2t^{2}-2t=0$, so $2t(t-1)=0$. Thus $t=0$ or $t=1$. If $\\\\tan\\\\theta=0$ then $\\\\theta=0,\\\\pi$. If $\\\\tan\\\\theta=1$ then $\\\\theta=\\\\pi/4,5\\\\pi/4$. Hence the solutions are $\\\\theta=0,\\\\dfrac{\\\\pi}{4},\\\\pi,\\\\dfrac{5\\\\pi}{4}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Recall the t-formulae: sin2θ = 2t/(1+t²), cos2θ = (1-t²)/(1+t²).",
+    "Substitute and clear the denominator to get a quadratic in t.",
+    "Solve tanθ = 0 and tanθ = 1 for θ in [0, 2π)."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

@@ -19,11 +19,12 @@
     "using log to find leading digits"
   ],
   "statement": "To nine decimal places, $\\log_{10}2=0.301029996$ and $\\log_{10}3=0.477121255$.\n\n(i) Calculate $\\log_{10}5$ and $\\log_{10}6$ to three decimal places. By taking logs, or otherwise, show that\n$$5\\times10^{47}<3^{100}<6\\times10^{47}.$$\nHence write down the first digit of $3^{100}$.\n\n(ii) Find the first digit of each of the following numbers: $2^{1000}$; $2^{10000}$; and $2^{100000}$.",
-  "solution": "(i) $\\log_{10}5=\\log_{10}(10/2)=1-0.301=0.699$, and $\\log_{10}6=\\log_{10}2+\\log_{10}3=0.301+0.477=0.778$.\n\nTaking logs, $\\log_{10}(3^{100})=100\\times0.477121255=47.7121255$. Since $47<47.712<48$,\n$$10^{47}<3^{100}<10^{48}.$$\nMore precisely, $3^{100}=10^{47.712}=10^{0.712}\\times10^{47}$, and $10^{0.712}\\approx5.15$, so $5\\times10^{47}<3^{100}<6\\times10^{47}$.\n\nTherefore the first digit of $3^{100}$ is $5$.\n\n(ii) We use the fractional part of the logarithm.\n\n- $\\log_{10}(2^{1000})=1000\\times0.301029996=301.03$, so $2^{1000}=10^{301.03}=10^{0.03}\\times10^{301}$, and $10^{0.03}\\approx1.07$, giving first digit $1$.\n- $\\log_{10}(2^{10000})=3010.29996$, so the fractional part is $0.29996$, and $10^{0.3}\\approx2$ (in fact $\\approx1.995$), giving first digit $1$.\n- $\\log_{10}(2^{100000})=30102.9996$, fractional part $0.9996$, and $10^{0.9996}\\approx9.99$, giving first digit $9$.\n\nSo the first digits are $1$, $1$, and $9$ respectively.\n\n[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]",
+  "solution": "(i) $\\log_{10}5=\\log_{10}(10/2)=1-0.301=0.699$, and $\\log_{10}6=\\log_{10}2+\\log_{10}3=0.301+0.477=0.778$.\n\nTaking logs, $\\log_{10}(3^{100})=100\\times0.477121255=47.7121255$. Since $47<47.712<48$,\n$$10^{47}<3^{100}<10^{48}.$$\nMore precisely, $3^{100}=10^{47.712}=10^{0.712}\\times10^{47}$, and $10^{0.712}\\approx5.15$, so $5\\times10^{47}<3^{100}<6\\times10^{47}$.\n\nTherefore the first digit of $3^{100}$ is $5$.\n\n(ii) We use the fractional part of the logarithm.\n\n- $\\log_{10}(2^{1000})=1000\\times0.301029996=301.03$, so $2^{1000}=10^{301.03}=10^{0.03}\\times10^{301}$, and $10^{0.03}\\approx1.07$, giving first digit $1$.\n- $\\log_{10}(2^{10000})=3010.29996$, so the fractional part is $0.29996$, and $10^{0.3}\\approx2$ (in fact $\\approx1.995$), giving first digit $1$.\n- $\\log_{10}(2^{100000})=30102.9996$, fractional part $0.9996$, and $10^{0.9996}\\approx9.99$, giving first digit $9$.\n\nSo the first digits are $1$, $1$, and $9$ respectively.",
   "solutionStatus": "full",
   "hints": [
     "Use log 5 = 1 - log 2 and log 6 = log 2 + log 3.",
     "For a leading digit, look at the fractional part of the base-10 logarithm.",
     "10^(fractional part) lies in [1,10), and its integer part is the leading digit."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]"
 }

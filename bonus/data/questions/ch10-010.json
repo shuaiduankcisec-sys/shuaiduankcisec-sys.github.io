@@ -18,11 +18,12 @@
     "solving via substitution x=cos theta"
   ],
   "statement": "Prove the identity $\\\\cos3\\\\theta=4\\\\cos^{3}\\\\theta-3\\\\cos\\\\theta$, and hence solve $4x^{3}-3x=\\\\tfrac{1}{2}$ for $x\\\\in[-1,1]$.",
-  "solution": "$\\\\cos3\\\\theta=\\\\cos(2\\\\theta+\\\\theta)=\\\\cos2\\\\theta\\\\cos\\\\theta-\\\\sin2\\\\theta\\\\sin\\\\theta=(2\\\\cos^{2}\\\\theta-1)\\\\cos\\\\theta-2\\\\sin^{2}\\\\theta\\\\cos\\\\theta=2\\\\cos^{3}\\\\theta-\\\\cos\\\\theta-2(1-\\\\cos^{2}\\\\theta)\\\\cos\\\\theta=4\\\\cos^{3}\\\\theta-3\\\\cos\\\\theta$. For the equation set $x=\\\\cos\\\\theta\\\\in[-1,1]$; then $4x^{3}-3x=\\\\cos3\\\\theta=\\\\tfrac{1}{2}$, so $3\\\\theta=2\\\\pi k\\\\pm\\\\tfrac{\\\\pi}{3}$. The three distinct values in $[-1,1]$ are $x=\\\\cos(\\\\pi/9)$, $x=\\\\cos(5\\\\pi/9)$ and $x=\\\\cos(7\\\\pi/9)$.\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]",
+  "solution": "$\\\\cos3\\\\theta=\\\\cos(2\\\\theta+\\\\theta)=\\\\cos2\\\\theta\\\\cos\\\\theta-\\\\sin2\\\\theta\\\\sin\\\\theta=(2\\\\cos^{2}\\\\theta-1)\\\\cos\\\\theta-2\\\\sin^{2}\\\\theta\\\\cos\\\\theta=2\\\\cos^{3}\\\\theta-\\\\cos\\\\theta-2(1-\\\\cos^{2}\\\\theta)\\\\cos\\\\theta=4\\\\cos^{3}\\\\theta-3\\\\cos\\\\theta$. For the equation set $x=\\\\cos\\\\theta\\\\in[-1,1]$; then $4x^{3}-3x=\\\\cos3\\\\theta=\\\\tfrac{1}{2}$, so $3\\\\theta=2\\\\pi k\\\\pm\\\\tfrac{\\\\pi}{3}$. The three distinct values in $[-1,1]$ are $x=\\\\cos(\\\\pi/9)$, $x=\\\\cos(5\\\\pi/9)$ and $x=\\\\cos(7\\\\pi/9)$.",
   "solutionStatus": "full",
   "hints": [
     "Expand cos(2theta+theta).",
     "Convert sin^2 to 1-cos^2.",
     "Let x=cos theta to reduce the cubic to cos3theta=1/2."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]"
 }

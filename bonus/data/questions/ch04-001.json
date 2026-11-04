@@ -29,11 +29,12 @@
     "$k=\\dfrac{9}{c-9}$"
   ],
   "answer": "B",
-  "solution": "Complete the square: $f(x)=x^2-6x=(x-3)^2-9$, so the minimum point of $y=f(x)$ is at $(3,-9)$.\n\n**Graph $y=f(kx)$.** Replacing $x$ by $kx$ stretches the graph horizontally by a factor of $1/k$, so its minimum is at $x=3/k$ (with the same $y=-9$).\n\n**Graph $y=f(x-c)$.** Replacing $x$ by $x-c$ translates the graph $c$ units to the right, so its minimum is at $x=3+c$.\n\nFor the two minima to coincide we need\n$$\\frac{3}{k}=3+c.$$\nRearranging,\n$$k=\\frac{3}{3+c},$$\nwhich is **option B**.\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]",
+  "solution": "Complete the square: $f(x)=x^2-6x=(x-3)^2-9$, so the minimum point of $y=f(x)$ is at $(3,-9)$.\n\n**Graph $y=f(kx)$.** Replacing $x$ by $kx$ stretches the graph horizontally by a factor of $1/k$, so its minimum is at $x=3/k$ (with the same $y=-9$).\n\n**Graph $y=f(x-c)$.** Replacing $x$ by $x-c$ translates the graph $c$ units to the right, so its minimum is at $x=3+c$.\n\nFor the two minima to coincide we need\n$$\\frac{3}{k}=3+c.$$\nRearranging,\n$$k=\\frac{3}{3+c},$$\nwhich is **option B**.",
   "solutionStatus": "full",
   "hints": [
     "Complete the square to find the minimum point of f(x).",
     "f(kx) stretches horizontally by 1/k, so its minimum x is 3/k.",
     "f(x-c) translates right by c, so its minimum x is 3+c."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]"
 }

@@ -28,11 +28,12 @@
     "$3x^2$"
   ],
   "answer": "D",
-  "solution": "First note $|-6x|=|6x|=6|x|$, so we integrate $6|x|$.\n\nFor $x\\ge0$, $|x|=x$, so $\\dfrac{dy}{dx}=6x$ and $y=3x^2+c$.\n\nFor $x<0$, $|x|=-x$, so $\\dfrac{dy}{dx}=-6x$ and $y=-3x^2+c$.\n\nBoth pieces agree at $x=0$ (both give $y=c$), so the single expression is\n$$y=\\begin{cases}3x^2+c & x\\ge0\\\\ -3x^2+c & x<0\\end{cases}.$$\n\nSince $3x^2=3x\\cdot x$ (for $x\\ge0$) and $-3x^2=3x\\cdot(-x)$ (for $x<0$), both are equal to $3x|x|$. Hence\n$$f(x)=3x|x|,$$\nwhich is **option D**.\n\n(Check: for $x\\ge0$, $\\tfrac{d}{dx}(3x^2)=6x=6|x|$; for $x<0$, $\\tfrac{d}{dx}(-3x^2)=-6x=6|x|$.)\n\n[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]",
+  "solution": "First note $|-6x|=|6x|=6|x|$, so we integrate $6|x|$.\n\nFor $x\\ge0$, $|x|=x$, so $\\dfrac{dy}{dx}=6x$ and $y=3x^2+c$.\n\nFor $x<0$, $|x|=-x$, so $\\dfrac{dy}{dx}=-6x$ and $y=-3x^2+c$.\n\nBoth pieces agree at $x=0$ (both give $y=c$), so the single expression is\n$$y=\\begin{cases}3x^2+c & x\\ge0\\\\ -3x^2+c & x<0\\end{cases}.$$\n\nSince $3x^2=3x\\cdot x$ (for $x\\ge0$) and $-3x^2=3x\\cdot(-x)$ (for $x<0$), both are equal to $3x|x|$. Hence\n$$f(x)=3x|x|,$$\nwhich is **option D**.\n\n(Check: for $x\\ge0$, $\\tfrac{d}{dx}(3x^2)=6x=6|x|$; for $x<0$, $\\tfrac{d}{dx}(-3x^2)=-6x=6|x|$.)",
   "solutionStatus": "full",
   "hints": [
     "Note |-6x| = 6|x| and split into x≥0 and x<0.",
     "Integrate each piece separately.",
     "Combine the pieces using the fact that x·|x| = x² for x≥0 and -x² for x<0."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]"
 }

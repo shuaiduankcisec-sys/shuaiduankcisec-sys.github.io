@@ -18,11 +18,12 @@
     "centre and radius"
   ],
   "statement": "Find the equation of the circle passing through the points $A(1,0)$, $B(5,0)$ and $C(0,3)$.",
-  "solution": "Since $A$ and $B$ have the same $y$-coordinate, the perpendicular bisector of $AB$ is $x=3$. Let the centre be $(3,k)$. Equating distances to $A$ and $C$: $(3-1)^{2}+k^{2}=(3-0)^{2}+(k-3)^{2}$, i.e. $4+k^{2}=9+k^{2}-6k+9=18-6k$. So $4=18-6k$, giving $k=\\frac{7}{3}$. The radius squared is $(3-1)^{2}+(\\frac73)^{2}=4+\\frac{49}{9}=\\frac{85}{9}$. Hence the circle is $(x-3)^{2}+(y-\\tfrac73)^{2}=\\tfrac{85}{9}$.\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]",
+  "solution": "Since $A$ and $B$ have the same $y$-coordinate, the perpendicular bisector of $AB$ is $x=3$. Let the centre be $(3,k)$. Equating distances to $A$ and $C$: $(3-1)^{2}+k^{2}=(3-0)^{2}+(k-3)^{2}$, i.e. $4+k^{2}=9+k^{2}-6k+9=18-6k$. So $4=18-6k$, giving $k=\\frac{7}{3}$. The radius squared is $(3-1)^{2}+(\\frac73)^{2}=4+\\frac{49}{9}=\\frac{85}{9}$. Hence the circle is $(x-3)^{2}+(y-\\tfrac73)^{2}=\\tfrac{85}{9}$.",
   "solutionStatus": "full",
   "hints": [
     "The centre lies on the perpendicular bisector of AB, i.e. x=3.",
     "Equate distances from the centre to A and C.",
     "Solve for the centre's y-coordinate and the radius."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]"
 }

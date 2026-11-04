@@ -927,6 +927,38 @@ report("A2-09-009 三重积=0", 0.0, float(sp.Matrix([1, 2, 3]).dot(_bc)))
 report("A2-09-010 交点(1,2,3)", 14.0, float(1 + 2 * 2 + 3 * 3))
 
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
+# ========== 本轮新增 STEP 题（补 ≥4 星缺口）独立验证 ==========
+import math
+
+# ch11-014: sin2θ+cos2θ=1 -> θ=0,π/4,π,5π/4
+for _a in (0, sp.pi / 4, sp.pi, 5 * sp.pi / 4):
+    report(f"ch11-014 θ={float(sp.N(_a))} 满足", 0.0, float(sp.N(sp.sin(2 * _a) + sp.cos(2 * _a) - 1)))
+
+# ch11-015: sin3θ+sinθ=sin2θ -> θ=0,π/3,π/2,π,3π/2,5π/3
+for _a in (0, sp.pi / 3, sp.pi / 2, sp.pi, 3 * sp.pi / 2, 5 * sp.pi / 3):
+    report(f"ch11-015 θ={float(sp.N(_a))} 满足", 0.0, float(sp.N(sp.sin(3 * _a) + sp.sin(_a) - sp.sin(2 * _a))))
+
+# ch01-012: 2^x+2^y=12, 2^(x+y)=32 -> (2,3) 或 (3,2)
+report("ch01-012 (2,3) 满足", 0.0, float(2**2 + 2**3 - 12))
+report("ch01-012 (2,3) 乘积", 0.0, float(2**5 - 32))
+
+# ch01-013: a=3 满足 a³-3a-18=0
+report("ch01-013 a=3 根", 0.0, float(3**3 - 3 * 3 - 18))
+
+# ch07-018: ∫_0^π x sinx/(1+cos²x) dx = π²/4
+_xx = sp.Symbol('x')
+report("ch07-018 积分=π²/4", float(sp.pi**2 / 4), float(sp.N(sp.integrate(_xx * sp.sin(_xx) / (1 + sp.cos(_xx)**2), (_xx, 0, sp.pi)))))
+
+# ch10-014: max of 3sinθ+4cosθ = 5
+report("ch10-014 max=5", 5.0, float(sp.sqrt(3**2 + 4**2)))
+
+# ch12-014: 4^x-6·2^x+8=0 -> x=1,2
+report("ch12-014 x=1 满足", 0.0, float(4**1 - 6 * 2**1 + 8))
+report("ch12-014 x=2 满足", 0.0, float(4**2 - 6 * 2**2 + 8))
+
+# ch12-015: 2^100 > 3^63
+report("ch12-015 2^100 > 3^63", True, 2**100 > 3**63)
+
 if fail_count == 0:
     print("✅ 所有可验证题答案正确")
 else:

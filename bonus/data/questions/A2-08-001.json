@@ -28,11 +28,12 @@
     "$4\\pi-6\\sqrt3$"
   ],
   "answer": "B",
-  "solution": "The graph of $y=\\sqrt{4-x^2}$ is the upper semicircle of the circle $x^2+y^2=4$ (radius $2$). The exact integral over $-2\\le x\\le2$ is therefore the semicircle area:\n$$\\int_{-2}^2\\sqrt{4-x^2}\\,dx=\\tfrac12\\pi(2)^2=2\\pi.$$\n\nFor the trapezium rule with 4 strips, the step is $h=1$ and the points are $x=-2,-1,0,1,2$ with $y=\\sqrt{4-x^2}$ giving $0,\\sqrt3,2,\\sqrt3,0$. The estimate is\n$$\\frac{h}{2}\\bigl[y_0+2(y_1+y_2+y_3)+y_4\\bigr]=\\frac12\\bigl[0+2(\\sqrt3+2+\\sqrt3)+0\\bigr]=2+2\\sqrt3.$$\n\nThe positive difference is\n$$2\\pi-(2+2\\sqrt3)=2(\\pi-1-\\sqrt3),$$\nwhich is **option B**.\n\n[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]",
+  "solution": "The graph of $y=\\sqrt{4-x^2}$ is the upper semicircle of the circle $x^2+y^2=4$ (radius $2$). The exact integral over $-2\\le x\\le2$ is therefore the semicircle area:\n$$\\int_{-2}^2\\sqrt{4-x^2}\\,dx=\\tfrac12\\pi(2)^2=2\\pi.$$\n\nFor the trapezium rule with 4 strips, the step is $h=1$ and the points are $x=-2,-1,0,1,2$ with $y=\\sqrt{4-x^2}$ giving $0,\\sqrt3,2,\\sqrt3,0$. The estimate is\n$$\\frac{h}{2}\\bigl[y_0+2(y_1+y_2+y_3)+y_4\\bigr]=\\frac12\\bigl[0+2(\\sqrt3+2+\\sqrt3)+0\\bigr]=2+2\\sqrt3.$$\n\nThe positive difference is\n$$2\\pi-(2+2\\sqrt3)=2(\\pi-1-\\sqrt3),$$\nwhich is **option B**.",
   "solutionStatus": "full",
   "hints": [
     "The integral is the area of a semicircle of radius 2.",
     "Apply the trapezium rule with h=1 over [-2,2].",
     "Subtract the estimate from the exact value."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]"
 }

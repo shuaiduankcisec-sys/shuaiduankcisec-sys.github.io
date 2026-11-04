@@ -18,11 +18,12 @@
     "using sin x cos x = (1/2) sin 2x"
   ],
   "statement": "By using the substitution $x=\\\\pi/2-t$ and the identity $\\\\sin x\\\\cos x=\\\\tfrac12\\\\sin2x$, show that $\\\\int_{0}^{\\\\pi/2}\\\\ln(\\\\sin x)\\,dx=-\\\\frac{\\\\pi}{2}\\\\ln2$.",
-  "solution": "Let $I=\\\\int_{0}^{\\\\pi/2}\\\\ln(\\\\sin x)\\,dx$. The substitution $x=\\\\pi/2-t$ gives $I=\\\\int_{0}^{\\\\pi/2}\\\\ln(\\\\cos t)\\,dt$. Adding, $2I=\\\\int_{0}^{\\\\pi/2}\\\\ln(\\\\sin x\\\\cos x)\\,dx=\\\\int_{0}^{\\\\pi/2}\\\\ln\\\\bigl(\\\\tfrac12\\\\sin2x\\bigr)\\,dx=\\\\int_{0}^{\\\\pi/2}\\\\ln(\\\\sin2x)\\,dx-\\\\int_{0}^{\\\\pi/2}\\\\ln2\\,dx$. With $u=2x$, $\\\\int_{0}^{\\\\pi/2}\\\\ln(\\\\sin2x)\\,dx=\\\\tfrac12\\\\int_{0}^{\\\\pi}\\\\ln(\\\\sin u)\\,du=\\\\tfrac12\\\\cdot2I=I$ by symmetry. Thus $2I=I-\\\\frac{\\\\pi}{2}\\\\ln2$, so $I=-\\\\frac{\\\\pi}{2}\\\\ln2$.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]",
+  "solution": "Let $I=\\\\int_{0}^{\\\\pi/2}\\\\ln(\\\\sin x)\\,dx$. The substitution $x=\\\\pi/2-t$ gives $I=\\\\int_{0}^{\\\\pi/2}\\\\ln(\\\\cos t)\\,dt$. Adding, $2I=\\\\int_{0}^{\\\\pi/2}\\\\ln(\\\\sin x\\\\cos x)\\,dx=\\\\int_{0}^{\\\\pi/2}\\\\ln\\\\bigl(\\\\tfrac12\\\\sin2x\\bigr)\\,dx=\\\\int_{0}^{\\\\pi/2}\\\\ln(\\\\sin2x)\\,dx-\\\\int_{0}^{\\\\pi/2}\\\\ln2\\,dx$. With $u=2x$, $\\\\int_{0}^{\\\\pi/2}\\\\ln(\\\\sin2x)\\,dx=\\\\tfrac12\\\\int_{0}^{\\\\pi}\\\\ln(\\\\sin u)\\,du=\\\\tfrac12\\\\cdot2I=I$ by symmetry. Thus $2I=I-\\\\frac{\\\\pi}{2}\\\\ln2$, so $I=-\\\\frac{\\\\pi}{2}\\\\ln2$.",
   "solutionStatus": "full",
   "hints": [
     "Show the integral of ln sin equals that of ln cos.",
     "Combine the logs into ln((1/2) sin2x).",
     "Rescale the sin2x integral back to I using symmetry."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
 }

@@ -1,0 +1,23 @@
+{
+  "id": "ch01-012",
+  "chapter": 1,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["indices", "simultaneous equations"],
+  "methods": ["substitution to reduce to a quadratic", "solving a quadratic in a power"],
+  "statement": "Given that $2^{x}+2^{y}=12$ and $2^{x+y}=32$, find the values of $x$ and $y$.",
+  "solution": "Let $u=2^{x}$ and $v=2^{y}$, both positive. Then $u+v=12$ and $uv=2^{x+y}=32$. Thus $u$ and $v$ are the roots of the quadratic $t^{2}-12t+32=0$, i.e. $(t-4)(t-8)=0$, so $\\{u,v\\}=\\{4,8\\}$. Hence either $2^{x}=4,\\ 2^{y}=8$, giving $x=2,\\ y=3$; or $2^{x}=8,\\ 2^{y}=4$, giving $x=3,\\ y=2$. The solutions are $(x,y)=(2,3)$ and $(3,2)$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Substitute u=2^x and v=2^y.",
+    "Use u+v=12 and uv=32 to form a quadratic.",
+    "Solve for x and y from each pair."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]"
+}

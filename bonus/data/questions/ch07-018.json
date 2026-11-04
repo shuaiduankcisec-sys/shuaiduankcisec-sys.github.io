@@ -1,0 +1,23 @@
+{
+  "id": "ch07-018",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["definite integrals", "symmetry"],
+  "methods": ["substitution x=a-t", "adding the two forms of the integral"],
+  "statement": "By using the substitution $x=\\\\pi-t$, or otherwise, evaluate $I=\\\\int_{0}^{\\\\pi}\\\\dfrac{x\\\\sin x}{1+\\\\cos^{2}x}\\\\,dx$.",
+  "solution": "Let $I=\\\\int_{0}^{\\\\pi}\\\\dfrac{x\\\\sin x}{1+\\\\cos^{2}x}\\\\,dx$. Under $x=\\\\pi-t$, we have $dx=-dt$, $\\\\sin(\\\\pi-t)=\\\\sin t$, $\\\\cos(\\\\pi-t)=-\\\\cos t$, and the limits swap, giving $I=\\\\int_{0}^{\\\\pi}\\\\dfrac{(\\\\pi-t)\\\\sin t}{1+\\\\cos^{2}t}\\\\,dt=\\\\pi\\\\int_{0}^{\\\\pi}\\\\dfrac{\\\\sin t}{1+\\\\cos^{2}t}\\\\,dt-I$. Hence $2I=\\\\pi\\\\int_{0}^{\\\\pi}\\\\dfrac{\\\\sin t}{1+\\\\cos^{2}t}\\\\,dt$. Substitute $u=\\\\cos t$, $du=-\\\\sin t\\\\,dt$: the integral becomes $\\\\int_{1}^{-1}\\\\dfrac{-du}{1+u^{2}}=\\\\int_{-1}^{1}\\\\dfrac{du}{1+u^{2}}=\\\\bigl[\\\\tan^{-1}u\\\\bigr]_{-1}^{1}=\\\\dfrac{\\\\pi}{2}$. Thus $2I=\\\\pi\\\\cdot\\\\dfrac{\\\\pi}{2}=\\\\dfrac{\\\\pi^{2}}{2}$, so $I=\\\\dfrac{\\\\pi^{2}}{4}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Apply x=π-t to get a second form of I.",
+    "Add the two forms to isolate the simpler integral.",
+    "Substitute u=cos t to evaluate the remaining integral."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

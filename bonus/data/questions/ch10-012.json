@@ -18,11 +18,12 @@
     "solving with double-angle"
   ],
   "statement": "Prove that $\\tan2\\theta=\\dfrac{2\\tan\\theta}{1-\\tan^{2}\\theta}$, and hence solve $\\tan2\\theta=1$ for $0\\le\\theta<\\pi$.",
-  "solution": "$\\tan2\\theta=\\dfrac{\\sin2\\theta}{\\cos2\\theta}=\\dfrac{2\\sin\\theta\\cos\\theta}{\\cos^{2}\\theta-\\sin^{2}\\theta}=\\dfrac{2\\tan\\theta}{1-\\tan^{2}\\theta}$ (dividing by $\\cos^{2}\\theta$). Setting $\\tan2\\theta=1$ gives $2\\theta=\\frac{\\pi}{4}+k\\pi$, so $\\theta=\\frac{\\pi}{8}+\\frac{k\\pi}{2}$. In $[0,\\pi)$ the solutions are $\\theta=\\frac{\\pi}{8}$ and $\\theta=\\frac{5\\pi}{8}$.\n\n[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]",
+  "solution": "$\\tan2\\theta=\\dfrac{\\sin2\\theta}{\\cos2\\theta}=\\dfrac{2\\sin\\theta\\cos\\theta}{\\cos^{2}\\theta-\\sin^{2}\\theta}=\\dfrac{2\\tan\\theta}{1-\\tan^{2}\\theta}$ (dividing by $\\cos^{2}\\theta$). Setting $\\tan2\\theta=1$ gives $2\\theta=\\frac{\\pi}{4}+k\\pi$, so $\\theta=\\frac{\\pi}{8}+\\frac{k\\pi}{2}$. In $[0,\\pi)$ the solutions are $\\theta=\\frac{\\pi}{8}$ and $\\theta=\\frac{5\\pi}{8}$.",
   "solutionStatus": "full",
   "hints": [
     "Write tan2theta = sin2theta/cos2theta.",
     "Divide through by cos^2 theta.",
     "Solve 2theta = pi/4 + k pi."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]"
 }

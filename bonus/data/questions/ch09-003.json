@@ -27,11 +27,12 @@
     "$\\sqrt{10}-1$"
   ],
   "answer": "B",
-  "solution": "Let the radii be $r_1$ and $r_2$ (with $r_1$ the larger). Placing the square with $A$ at $(0,1)$, $B$ at $(0,0)$, $C$ at $(1,0)$, $D$ at $(1,1)$: the circle tangent to $AB$ and $BC$ has centre $(r_1,r_1)$; the circle tangent to $CD$ and $DA$ has centre $(1-r_2,1-r_2)$.\n\nSince the circles are tangent to each other, the distance between their centres is $r_1+r_2$:\n$$r_1+r_2=\\sqrt{(1-r_2-r_1)^2+(1-r_2-r_1)^2}=\\sqrt2\\,(1-r_1-r_2).$$\n\nLet $S=r_1+r_2$. Then\n$$S=\\sqrt2(1-S) \\quad\\Rightarrow\\quad S(\\sqrt2+1)=\\sqrt2 \\quad\\Rightarrow\\quad S=\\frac{\\sqrt2}{\\sqrt2+1}.$$\n\nRationalising,\n$$S=\\frac{\\sqrt2(\\sqrt2-1)}{(\\sqrt2+1)(\\sqrt2-1)}=\\frac{2-\\sqrt2}{1}=2-\\sqrt2.$$\n\n(Note the area ratio $10:1$ is not actually needed to find the sum of the radii.)\n\nThe answer is **B**.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "solution": "Let the radii be $r_1$ and $r_2$ (with $r_1$ the larger). Placing the square with $A$ at $(0,1)$, $B$ at $(0,0)$, $C$ at $(1,0)$, $D$ at $(1,1)$: the circle tangent to $AB$ and $BC$ has centre $(r_1,r_1)$; the circle tangent to $CD$ and $DA$ has centre $(1-r_2,1-r_2)$.\n\nSince the circles are tangent to each other, the distance between their centres is $r_1+r_2$:\n$$r_1+r_2=\\sqrt{(1-r_2-r_1)^2+(1-r_2-r_1)^2}=\\sqrt2\\,(1-r_1-r_2).$$\n\nLet $S=r_1+r_2$. Then\n$$S=\\sqrt2(1-S) \\quad\\Rightarrow\\quad S(\\sqrt2+1)=\\sqrt2 \\quad\\Rightarrow\\quad S=\\frac{\\sqrt2}{\\sqrt2+1}.$$\n\nRationalising,\n$$S=\\frac{\\sqrt2(\\sqrt2-1)}{(\\sqrt2+1)(\\sqrt2-1)}=\\frac{2-\\sqrt2}{1}=2-\\sqrt2.$$\n\n(Note the area ratio $10:1$ is not actually needed to find the sum of the radii.)\n\nThe answer is **B**.",
   "solutionStatus": "full",
   "hints": [
     "Place the square on coordinates and write the centres of the two circles.",
     "Use the fact that tangent circles have centre distance equal to the sum of radii.",
     "Solve for the sum of the radii (the area ratio is a red herring)."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
 }

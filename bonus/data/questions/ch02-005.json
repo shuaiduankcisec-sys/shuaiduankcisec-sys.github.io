@@ -18,11 +18,12 @@
     "constructing a quadratic"
   ],
   "statement": "The roots of $x^2+px+q=0$ are $\\alpha$ and $\\beta$. Find, in terms of $p$ and $q$, the quadratic equation whose roots are $\\alpha^2$ and $\\beta^2$.",
-  "solution": "By Vieta's formulae for $x^2+px+q=0$:\n$$\\alpha+\\beta=-p,\\qquad \\alpha\\beta=q.$$\nThe new roots are $\\alpha^2$ and $\\beta^2$. Their sum and product are\n$$\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta = p^2-2q,$$\n$$\\alpha^2\\beta^2 = (\\alpha\\beta)^2 = q^2.$$\nA monic quadratic with these roots is $x^2-(\\text{sum})x+(\\text{product})=0$, so the required equation is\n$$x^2-(p^2-2q)x+q^2=0.$$\n(Equivalently $x^2+(2q-p^2)x+q^2=0$.)\n\n[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]",
+  "solution": "By Vieta's formulae for $x^2+px+q=0$:\n$$\\alpha+\\beta=-p,\\qquad \\alpha\\beta=q.$$\nThe new roots are $\\alpha^2$ and $\\beta^2$. Their sum and product are\n$$\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta = p^2-2q,$$\n$$\\alpha^2\\beta^2 = (\\alpha\\beta)^2 = q^2.$$\nA monic quadratic with these roots is $x^2-(\\text{sum})x+(\\text{product})=0$, so the required equation is\n$$x^2-(p^2-2q)x+q^2=0.$$\n(Equivalently $x^2+(2q-p^2)x+q^2=0$.)",
   "solutionStatus": "full",
   "hints": [
     "Use Vieta: alpha+beta=-p, alpha*beta=q.",
     "Compute alpha^2+beta^2 from (alpha+beta)^2 - 2 alpha beta.",
     "Write x^2 - (sum) x + (product) = 0."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]"
 }

@@ -20,11 +20,12 @@
     "counterexamples"
   ],
   "statement": "Which of the following statements are true and which are false? Justify your answers.\n\n(i) $a^{\\ln b}=b^{\\ln a}$ for all $a,b>0$.\n\n(ii) $\\cos(\\sin\\theta)=\\sin(\\cos\\theta)$ for all real $\\theta$.\n\n(iii) There exists a polynomial $P$ such that $|P(\\theta)-\\cos\\theta|\\le10^{-6}$ for all real $\\theta$.\n\n(iv) $x^4+3+x^{-4}\\ge5$ for all $x>0$.",
-  "solution": "(i) **True.** Taking logarithms,\n$$\\ln(a^{\\ln b})=\\ln b\\cdot\\ln a=\\ln a\\cdot\\ln b=\\ln(b^{\\ln a}),$$\nso $a^{\\ln b}=b^{\\ln a}$.\n\n(ii) **False.** Take $\\theta=0$: then $\\cos(\\sin0)=\\cos0=1$, but $\\sin(\\cos0)=\\sin1\\approx0.84\\ne1$. So the statement fails.\n\n(iii) **False.** A non-constant polynomial is unbounded as $|\\theta|\\to\\infty$, whereas $\\cos\\theta$ is bounded between $-1$ and $1$. No polynomial can approximate $\\cos\\theta$ to within $10^{-6}$ for *all* real $\\theta$.\n\n(iv) **True.** By AM-GM, $x^4+x^{-4}\\ge2\\sqrt{x^4\\cdot x^{-4}}=2$, so $x^4+3+x^{-4}\\ge2+3=5$ for all $x>0$.\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5是 → 4星]",
+  "solution": "(i) **True.** Taking logarithms,\n$$\\ln(a^{\\ln b})=\\ln b\\cdot\\ln a=\\ln a\\cdot\\ln b=\\ln(b^{\\ln a}),$$\nso $a^{\\ln b}=b^{\\ln a}$.\n\n(ii) **False.** Take $\\theta=0$: then $\\cos(\\sin0)=\\cos0=1$, but $\\sin(\\cos0)=\\sin1\\approx0.84\\ne1$. So the statement fails.\n\n(iii) **False.** A non-constant polynomial is unbounded as $|\\theta|\\to\\infty$, whereas $\\cos\\theta$ is bounded between $-1$ and $1$. No polynomial can approximate $\\cos\\theta$ to within $10^{-6}$ for *all* real $\\theta$.\n\n(iv) **True.** By AM-GM, $x^4+x^{-4}\\ge2\\sqrt{x^4\\cdot x^{-4}}=2$, so $x^4+3+x^{-4}\\ge2+3=5$ for all $x>0$.",
   "solutionStatus": "full",
   "hints": [
     "For (i), take logarithms of both sides.",
     "For (ii) and (iii), find a counterexample or use boundedness.",
     "For (iv), use AM-GM on x⁴ and x⁻⁴."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5是 → 4星]"
 }

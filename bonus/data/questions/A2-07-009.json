@@ -18,11 +18,12 @@
     "solving for P(t)"
   ],
   "statement": "The population $P(t)$ satisfies $\\\\dfrac{dP}{dt}=kP\\\\left(1-\\\\dfrac{P}{M}\\\\right)$ with $k,M>0$ and $P(0)=P_{0}$. Show that $P(t)=\\\\dfrac{M}{1+Ae^{-kt}}$ for some constant $A$, and express $A$ in terms of $P_{0}$ and $M$.",
-  "solution": "Separating variables, $\\\\frac{dP}{P(1-P/M)}=k\\,dt$. Now $\\\\frac{1}{P(1-P/M)}=\\\\frac{M}{P(M-P)}=\\\\frac{1}{P}+\\\\frac{1}{M-P}$, so integrating gives $\\\\ln P-\\\\ln(M-P)=kt+C$, i.e. $\\\\frac{P}{M-P}=Ce^{kt}$. Solving for $P$: $P=\\\\frac{MCe^{kt}}{1+Ce^{kt}}=\\\\frac{M}{1+(1/C)e^{-kt}}=\\\\frac{M}{1+Ae^{-kt}}$ with $A=1/C$. At $t=0$, $P_{0}=\\\\frac{M}{1+A}$, so $A=\\\\frac{M-P_{0}}{P_{0}}$.\n\n[难度自评: Q1否 Q2否 Q3是 Q4是 Q5是 → 4星]",
+  "solution": "Separating variables, $\\\\frac{dP}{P(1-P/M)}=k\\,dt$. Now $\\\\frac{1}{P(1-P/M)}=\\\\frac{M}{P(M-P)}=\\\\frac{1}{P}+\\\\frac{1}{M-P}$, so integrating gives $\\\\ln P-\\\\ln(M-P)=kt+C$, i.e. $\\\\frac{P}{M-P}=Ce^{kt}$. Solving for $P$: $P=\\\\frac{MCe^{kt}}{1+Ce^{kt}}=\\\\frac{M}{1+(1/C)e^{-kt}}=\\\\frac{M}{1+Ae^{-kt}}$ with $A=1/C$. At $t=0$, $P_{0}=\\\\frac{M}{1+A}$, so $A=\\\\frac{M-P_{0}}{P_{0}}$.",
   "solutionStatus": "full",
   "hints": [
     "Separate variables and use partial fractions.",
     "Integrate ln P - ln(M-P) = kt + C.",
     "Solve for P and use P(0)=P0 to find A."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2否 Q3是 Q4是 Q5是 → 4星]"
 }

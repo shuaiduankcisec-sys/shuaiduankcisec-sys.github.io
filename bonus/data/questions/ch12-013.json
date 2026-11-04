@@ -18,11 +18,12 @@
     "using two data points"
   ],
   "statement": "A quantity $Q$ decays exponentially so that $Q=Q_{0}e^{-kt}$. Given that $Q$ is $80$ at $t=1$ and $40$ at $t=3$, find $k$ and $Q_{0}$, and determine the time at which $Q=10$.",
-  "solution": "From the two data points, $80=Q_{0}e^{-k}$ and $40=Q_{0}e^{-3k}$. Dividing, $\\frac12=e^{-2k}$, so $k=\\frac12\\ln2$. Then $Q_{0}=80e^{k}=80\\cdot\\sqrt{2}=80\\sqrt{2}$. For $Q=10$: $10=80\\sqrt{2}\\,e^{-kt}$, so $e^{-kt}=\\frac{10}{80\\sqrt{2}}=\\frac{1}{8\\sqrt{2}}$, giving $-kt=\\ln\\frac{1}{8\\sqrt{2}}=-\\ln(8\\sqrt{2})$, hence $t=\\frac{\\ln(8\\sqrt{2})}{k}=\\frac{\\ln(8\\sqrt{2})}{\\frac12\\ln2}=2\\log_{2}(8\\sqrt{2})=2(3+\\tfrac12)=7$.\n\n[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]",
+  "solution": "From the two data points, $80=Q_{0}e^{-k}$ and $40=Q_{0}e^{-3k}$. Dividing, $\\frac12=e^{-2k}$, so $k=\\frac12\\ln2$. Then $Q_{0}=80e^{k}=80\\cdot\\sqrt{2}=80\\sqrt{2}$. For $Q=10$: $10=80\\sqrt{2}\\,e^{-kt}$, so $e^{-kt}=\\frac{10}{80\\sqrt{2}}=\\frac{1}{8\\sqrt{2}}$, giving $-kt=\\ln\\frac{1}{8\\sqrt{2}}=-\\ln(8\\sqrt{2})$, hence $t=\\frac{\\ln(8\\sqrt{2})}{k}=\\frac{\\ln(8\\sqrt{2})}{\\frac12\\ln2}=2\\log_{2}(8\\sqrt{2})=2(3+\\tfrac12)=7$.",
   "solutionStatus": "full",
   "hints": [
     "Divide the two equations to eliminate Q0 and find k.",
     "Recover Q0 from either point.",
     "Solve 10 = Q0 e^{-kt} for t."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2否 Q3否 Q4是 Q5是 → 3星]"
 }

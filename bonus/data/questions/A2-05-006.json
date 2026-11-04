@@ -18,11 +18,12 @@
     "solving for dy/dx"
   ],
   "statement": "A curve is given by $x^{2}+xy+y^{2}=7$. Find $\\dfrac{dy}{dx}$ and the gradient at the point $(1,2)$.",
-  "solution": "Differentiate implicitly with respect to $x$:\n$$2x+y+x\\frac{dy}{dx}+2y\\frac{dy}{dx}=0.$$\nCollecting $\\tfrac{dy}{dx}$ terms:\n$$\\frac{dy}{dx}(x+2y)=-(2x+y)\\quad\\Rightarrow\\quad \\frac{dy}{dx}=-\\frac{2x+y}{x+2y}.$$\nAt $(1,2)$: $\\dfrac{dy}{dx}=-\\dfrac{2+2}{1+4}=-\\dfrac45$.\n\n[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]",
+  "solution": "Differentiate implicitly with respect to $x$:\n$$2x+y+x\\frac{dy}{dx}+2y\\frac{dy}{dx}=0.$$\nCollecting $\\tfrac{dy}{dx}$ terms:\n$$\\frac{dy}{dx}(x+2y)=-(2x+y)\\quad\\Rightarrow\\quad \\frac{dy}{dx}=-\\frac{2x+y}{x+2y}.$$\nAt $(1,2)$: $\\dfrac{dy}{dx}=-\\dfrac{2+2}{1+4}=-\\dfrac45$.",
   "solutionStatus": "full",
   "hints": [
     "Differentiate xy using the product rule.",
     "Treat y as a function of x throughout.",
     "Substitute x = 1, y = 2 at the end."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]"
 }

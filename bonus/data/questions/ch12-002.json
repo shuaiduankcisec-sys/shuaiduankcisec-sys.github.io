@@ -27,11 +27,12 @@
     "$2\\alpha+\\beta+\\gamma$"
   ],
   "answer": "C",
-  "solution": "Use the laws of logarithms to combine each expression into a single logarithm:\n\n- $2\\beta=\\log_{10}3^2=\\log_{10}9$ (difference from $1$ is $\\log_{10}\\frac{10}{9}\\approx0.046$).\n- $5\\alpha+\\beta=\\log_{10}(2^5\\cdot3)=\\log_{10}96$ (difference from $2$ is $\\log_{10}\\frac{100}{96}\\approx0.018$).\n- $\\alpha+2\\gamma=\\log_{10}(2\\cdot7^2)=\\log_{10}98$ (difference from $2$ is $\\log_{10}\\frac{100}{98}\\approx0.009$).\n- $2\\alpha+5\\beta=\\log_{10}(2^2\\cdot3^5)=\\log_{10}972$ (difference from $3$ is $\\log_{10}\\frac{1000}{972}\\approx0.012$).\n- $2\\alpha+\\beta+\\gamma=\\log_{10}(2^2\\cdot3\\cdot7)=\\log_{10}84$ (difference from $2$ is $\\log_{10}\\frac{100}{84}\\approx0.076$).\n\nThe smallest difference is for $\\log_{10}98$, i.e. $\\alpha+2\\gamma$, which is the closest to an integer.\n\nThe answer is **C**.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "solution": "Use the laws of logarithms to combine each expression into a single logarithm:\n\n- $2\\beta=\\log_{10}3^2=\\log_{10}9$ (difference from $1$ is $\\log_{10}\\frac{10}{9}\\approx0.046$).\n- $5\\alpha+\\beta=\\log_{10}(2^5\\cdot3)=\\log_{10}96$ (difference from $2$ is $\\log_{10}\\frac{100}{96}\\approx0.018$).\n- $\\alpha+2\\gamma=\\log_{10}(2\\cdot7^2)=\\log_{10}98$ (difference from $2$ is $\\log_{10}\\frac{100}{98}\\approx0.009$).\n- $2\\alpha+5\\beta=\\log_{10}(2^2\\cdot3^5)=\\log_{10}972$ (difference from $3$ is $\\log_{10}\\frac{1000}{972}\\approx0.012$).\n- $2\\alpha+\\beta+\\gamma=\\log_{10}(2^2\\cdot3\\cdot7)=\\log_{10}84$ (difference from $2$ is $\\log_{10}\\frac{100}{84}\\approx0.076$).\n\nThe smallest difference is for $\\log_{10}98$, i.e. $\\alpha+2\\gamma$, which is the closest to an integer.\n\nThe answer is **C**.",
   "solutionStatus": "full",
   "hints": [
     "Combine each expression into a single log using the laws of logarithms.",
     "Compare how close each single log is to a whole-number power of 10.",
     "The one closest to a power of 10 is the answer."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
 }

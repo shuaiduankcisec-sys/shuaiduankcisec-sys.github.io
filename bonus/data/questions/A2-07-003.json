@@ -19,11 +19,12 @@
     "separable differential equation"
   ],
   "statement": "The normal to the curve $y=f(x)$ at the point $P$ with coordinates $(x,f(x))$ cuts the $y$-axis at the point $Q$.\n\nDerive an expression in terms of $x$, $f(x)$ and $f'(x)$ for the $y$-coordinate of $Q$.\n\nIf, for all $x$, $PQ=\\sqrt{e^{x^2}+x^2}$, find a differential equation satisfied by $f(x)$. If the curve also has a minimum point $(0,-2)$, find its equation.",
-  "solution": "**$y$-coordinate of $Q$.** The normal at $P$ has gradient $-1/f'(x)$, so its equation is\n$$Y-f(x)=-\\frac{1}{f'(x)}(X-x).$$\nAt the $y$-axis, $X=0$, giving\n$$Y_Q=f(x)+\\frac{x}{f'(x)}.$$\n\n**The differential equation.** The length $PQ$ is the distance between $P=(x,f(x))$ and $Q=(0,f(x)+x/f'(x))$:\n$$PQ^2=x^2+\\left(\\frac{x}{f'(x)}\\right)^2=x^2+\\frac{x^2}{(f'(x))^2}.$$\nGiven $PQ^2=e^{x^2}+x^2$, we get\n$$\\frac{x^2}{(f'(x))^2}=e^{x^2} \\quad\\Rightarrow\\quad (f'(x))^2=x^2e^{-x^2}.$$\n\n**Solving.** Taking $f'(x)=xe^{-x^2/2}$ (the sign chosen so that $f$ has a minimum at $0$), we integrate:\n$$f(x)=\\int xe^{-x^2/2}\\,dx=-e^{-x^2/2}+C.$$\nSince $(0,-2)$ is on the curve, $f(0)=-1+C=-2$, so $C=-1$. Hence\n$$f(x)=-e^{-x^2/2}-1.$$\n\n[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "solution": "**$y$-coordinate of $Q$.** The normal at $P$ has gradient $-1/f'(x)$, so its equation is\n$$Y-f(x)=-\\frac{1}{f'(x)}(X-x).$$\nAt the $y$-axis, $X=0$, giving\n$$Y_Q=f(x)+\\frac{x}{f'(x)}.$$\n\n**The differential equation.** The length $PQ$ is the distance between $P=(x,f(x))$ and $Q=(0,f(x)+x/f'(x))$:\n$$PQ^2=x^2+\\left(\\frac{x}{f'(x)}\\right)^2=x^2+\\frac{x^2}{(f'(x))^2}.$$\nGiven $PQ^2=e^{x^2}+x^2$, we get\n$$\\frac{x^2}{(f'(x))^2}=e^{x^2} \\quad\\Rightarrow\\quad (f'(x))^2=x^2e^{-x^2}.$$\n\n**Solving.** Taking $f'(x)=xe^{-x^2/2}$ (the sign chosen so that $f$ has a minimum at $0$), we integrate:\n$$f(x)=\\int xe^{-x^2/2}\\,dx=-e^{-x^2/2}+C.$$\nSince $(0,-2)$ is on the curve, $f(0)=-1+C=-2$, so $C=-1$. Hence\n$$f(x)=-e^{-x^2/2}-1.$$",
   "solutionStatus": "full",
   "hints": [
     "Write the normal's equation and set X=0 for its y-intercept.",
     "Use the distance formula for PQ and equate to the given length.",
     "Solve the separable equation and use the minimum point for the constant."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
 }

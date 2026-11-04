@@ -19,11 +19,12 @@
     "distance from a point to a line"
   ],
   "statement": "For the ellipse $\\\\dfrac{x^{2}}{a^{2}}+\\\\dfrac{y^{2}}{b^{2}}=1$ with $a>b>0$, let the foci be $F_{1}$ and $F_{2}$. Show that the product of the perpendicular distances from $F_{1}$ and $F_{2}$ to any tangent to the ellipse equals $b^{2}$.",
-  "solution": "Write a tangent in gradient form $y=mx\\\\pm\\\\sqrt{a^{2}m^{2}+b^{2}}$, i.e. $mx-y\\\\pm\\\\sqrt{a^{2}m^{2}+b^{2}}=0$. The foci are at $(\\\\pm c,0)$ where $c^{2}=a^{2}-b^{2}$. The perpendicular distance from $(c,0)$ is $d_{2}=\\\\dfrac{|\\\\pm\\\\sqrt{a^{2}m^{2}+b^{2}}-mc|}{\\\\sqrt{1+m^{2}}}$ and from $(-c,0)$ is $d_{1}=\\\\dfrac{|\\\\pm\\\\sqrt{a^{2}m^{2}+b^{2}}+mc|}{\\\\sqrt{1+m^{2}}}$. Their product is $d_{1}d_{2}=\\\\dfrac{|(a^{2}m^{2}+b^{2})-m^{2}c^{2}|}{1+m^{2}}=\\\\dfrac{|a^{2}m^{2}+b^{2}-m^{2}(a^{2}-b^{2})|}{1+m^{2}}=\\\\dfrac{|b^{2}+b^{2}m^{2}|}{1+m^{2}}=b^{2}$.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]",
+  "solution": "Write a tangent in gradient form $y=mx\\\\pm\\\\sqrt{a^{2}m^{2}+b^{2}}$, i.e. $mx-y\\\\pm\\\\sqrt{a^{2}m^{2}+b^{2}}=0$. The foci are at $(\\\\pm c,0)$ where $c^{2}=a^{2}-b^{2}$. The perpendicular distance from $(c,0)$ is $d_{2}=\\\\dfrac{|\\\\pm\\\\sqrt{a^{2}m^{2}+b^{2}}-mc|}{\\\\sqrt{1+m^{2}}}$ and from $(-c,0)$ is $d_{1}=\\\\dfrac{|\\\\pm\\\\sqrt{a^{2}m^{2}+b^{2}}+mc|}{\\\\sqrt{1+m^{2}}}$. Their product is $d_{1}d_{2}=\\\\dfrac{|(a^{2}m^{2}+b^{2})-m^{2}c^{2}|}{1+m^{2}}=\\\\dfrac{|a^{2}m^{2}+b^{2}-m^{2}(a^{2}-b^{2})|}{1+m^{2}}=\\\\dfrac{|b^{2}+b^{2}m^{2}|}{1+m^{2}}=b^{2}$.",
   "solutionStatus": "full",
   "hints": [
     "Write the tangent in the form y=mx+/-sqrt(a^2 m^2+b^2).",
     "Use the point-to-line distance formula for each focus.",
     "Substitute c^2=a^2-b^2 and simplify the product."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
 }

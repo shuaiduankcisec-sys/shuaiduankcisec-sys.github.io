@@ -3,11 +3,11 @@
  *
  * 依据 DIFFICULTY-GUIDE.md 的「5 项是非打分法」。
  *
- * 每道题的 solution 中应含一行自评注释，格式：
- *   [难度自评: Q1否 Q2是 Q3是 Q4是 Q5否 → 3星]
+ * 每道题应有 _difficultyNote 字段（前端不渲染，仅用于难度校验），格式：
+ *   "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5否 → 3星]"
  *
  * 本脚本：
- *   1. 解析自评注释里的 5 个 Q 答案（是/否）与箭头后的星数；
+ *   1. 解析 _difficultyNote 里的 5 个 Q 答案（是/否）与箭头后的星数；
  *   2. 独立复算：得分 = "是"的个数，难度 = 1 + 得分；
  *   3. 核对：(a) 复算难度是否 = 自评星数；(b) 自评星数是否 = 题目的 difficulty 字段；
  *   4. 任一不符 → 报错。
@@ -29,12 +29,12 @@ let missing = 0;
 
 files.forEach(f => {
   const q = JSON.parse(fs.readFileSync(path.join(QUESTIONS_DIR, f), 'utf8'));
-  const sol = q.solution || '';
+  const sol = q._difficultyNote || '';
   const m = sol.match(SELF_ASSESS_RE);
 
   if (!m) {
     missing++;
-    console.log(`  [缺失自评] ${q.id} — solution 中未找到 "[难度自评: ...]" 注释`);
+    console.log(`  [缺失自评] ${q.id} — 无 _difficultyNote 字段或格式不符`);
     return;
   }
 

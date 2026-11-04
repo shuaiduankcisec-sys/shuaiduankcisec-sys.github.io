@@ -28,11 +28,12 @@
     "$40400\\pi$"
   ],
   "answer": "E",
-  "solution": "Completing the square, $x^2-2nx+y^2-2ny=0$ becomes\n$$(x-n)^2+(y-n)^2=2n^2,$$\nso $C_n$ is a circle centred at $(n,n)$ with radius $\\sqrt2\\,n$, and area $\\pi(\\sqrt2 n)^2=2\\pi n^2$.\n\nThe shaded region between $C_{2k-1}$ and $C_{2k}$ (for $k=1,2,\\dots,50$) has area\n$$2\\pi(2k)^2-2\\pi(2k-1)^2=2\\pi\\bigl(4k^2-(4k^2-4k+1)\\bigr)=2\\pi(4k-1).$$\n\nSumming over the 50 pairs:\n$$\\text{total}=2\\pi\\sum_{k=1}^{50}(4k-1)=2\\pi\\left(4\\cdot\\frac{50\\cdot51}{2}-50\\right)=2\\pi(5100-50)=2\\pi\\cdot5050=10100\\pi,$$\nwhich is **option E**.\n\n[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "solution": "Completing the square, $x^2-2nx+y^2-2ny=0$ becomes\n$$(x-n)^2+(y-n)^2=2n^2,$$\nso $C_n$ is a circle centred at $(n,n)$ with radius $\\sqrt2\\,n$, and area $\\pi(\\sqrt2 n)^2=2\\pi n^2$.\n\nThe shaded region between $C_{2k-1}$ and $C_{2k}$ (for $k=1,2,\\dots,50$) has area\n$$2\\pi(2k)^2-2\\pi(2k-1)^2=2\\pi\\bigl(4k^2-(4k^2-4k+1)\\bigr)=2\\pi(4k-1).$$\n\nSumming over the 50 pairs:\n$$\\text{total}=2\\pi\\sum_{k=1}^{50}(4k-1)=2\\pi\\left(4\\cdot\\frac{50\\cdot51}{2}-50\\right)=2\\pi(5100-50)=2\\pi\\cdot5050=10100\\pi,$$\nwhich is **option E**.",
   "solutionStatus": "full",
   "hints": [
     "Complete the square to find each circle's radius.",
     "The shaded area between C_{2k-1} and C_{2k} is the difference of their areas.",
     "Sum the 50 pair-differences using the arithmetic series formula."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
 }

@@ -18,11 +18,12 @@
     "inequalities"
   ],
   "statement": "Find the range of values of $k$ for which $x^2-2kx+3k-2>0$ for all real $x$.",
-  "solution": "The quadratic in $x$ is positive for all real $x$ precisely when its discriminant is negative (and the coefficient of $x^2$ is positive, which it is).\n$$\\Delta = (-2k)^2-4(1)(3k-2)=4k^2-12k+8=4(k^2-3k+2)=4(k-1)(k-2).$$\nWe require $\\Delta<0$, i.e. $(k-1)(k-2)<0$, which holds for\n$$1<k<2.$$\n\n[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]",
+  "solution": "The quadratic in $x$ is positive for all real $x$ precisely when its discriminant is negative (and the coefficient of $x^2$ is positive, which it is).\n$$\\Delta = (-2k)^2-4(1)(3k-2)=4k^2-12k+8=4(k^2-3k+2)=4(k-1)(k-2).$$\nWe require $\\Delta<0$, i.e. $(k-1)(k-2)<0$, which holds for\n$$1<k<2.$$",
   "solutionStatus": "full",
   "hints": [
     "A positive quadratic is >0 for all x iff its discriminant is negative.",
     "Compute the discriminant in terms of k.",
     "Solve the inequality 4(k-1)(k-2) < 0."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]"
 }

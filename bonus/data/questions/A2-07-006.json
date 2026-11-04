@@ -18,11 +18,12 @@
     "separating and integrating"
   ],
   "statement": "Solve $\\dfrac{dy}{dx}=y(2-y)$ given that $y=1$ when $x=0$.",
-  "solution": "Separate variables: $\\dfrac{dy}{y(2-y)}=dx$.\nPartial fractions: $\\dfrac{1}{y(2-y)}=\\tfrac12\\left(\\dfrac1y+\\dfrac1{2-y}\\right)$.\nIntegrating:\n$$\\tfrac12\\bigl(\\ln|y|-\\ln|2-y|\\bigr)=x+C\\quad\\Rightarrow\\quad \\ln\\left|\\frac{y}{2-y}\\right|=2x+C'.$$\nAt $x=0$, $y=1$: $\\ln(1)=0=C'$. So $\\ln\\dfrac{y}{2-y}=2x$, giving $\\dfrac{y}{2-y}=e^{2x}$.\nHence $y=(2-y)e^{2x}$, so $y(1+e^{2x})=2e^{2x}$ and\n$$y=\\frac{2e^{2x}}{1+e^{2x}}.$$\n\n[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]",
+  "solution": "Separate variables: $\\dfrac{dy}{y(2-y)}=dx$.\nPartial fractions: $\\dfrac{1}{y(2-y)}=\\tfrac12\\left(\\dfrac1y+\\dfrac1{2-y}\\right)$.\nIntegrating:\n$$\\tfrac12\\bigl(\\ln|y|-\\ln|2-y|\\bigr)=x+C\\quad\\Rightarrow\\quad \\ln\\left|\\frac{y}{2-y}\\right|=2x+C'.$$\nAt $x=0$, $y=1$: $\\ln(1)=0=C'$. So $\\ln\\dfrac{y}{2-y}=2x$, giving $\\dfrac{y}{2-y}=e^{2x}$.\nHence $y=(2-y)e^{2x}$, so $y(1+e^{2x})=2e^{2x}$ and\n$$y=\\frac{2e^{2x}}{1+e^{2x}}.$$",
   "solutionStatus": "full",
   "hints": [
     "Separate: dy/(y(2-y)) = dx.",
     "Decompose 1/(y(2-y)) into partial fractions.",
     "Use the initial condition to fix the constant."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2否 Q3是 Q4是 Q5否 → 3星]"
 }

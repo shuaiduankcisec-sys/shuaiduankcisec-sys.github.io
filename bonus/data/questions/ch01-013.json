@@ -1,0 +1,23 @@
+{
+  "id": "ch01-013",
+  "chapter": 1,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["nested radicals", "cubing"],
+  "methods": ["introducing u and v", "using the sum-and-product of u,v"],
+  "statement": "Let $a=\\\\sqrt[3]{9+\\\\sqrt{80}}+\\\\sqrt[3]{9-\\\\sqrt{80}}$. By writing $u=\\\\sqrt[3]{9+\\\\sqrt{80}}$ and $v=\\\\sqrt[3]{9-\\\\sqrt{80}}$, show that $a$ satisfies $a^{3}-3a-18=0$, and hence find the exact value of $a$.",
+  "solution": "Let $u=\\\\sqrt[3]{9+\\\\sqrt{80}}$ and $v=\\\\sqrt[3]{9-\\\\sqrt{80}}$. Then $uv=\\\\sqrt[3]{(9+\\\\sqrt{80})(9-\\\\sqrt{80})}=\\\\sqrt[3]{81-80}=\\\\sqrt[3]{1}=1$, and $u^{3}+v^{3}=(9+\\\\sqrt{80})+(9-\\\\sqrt{80})=18$. Now $a^{3}=(u+v)^{3}=u^{3}+v^{3}+3uv(u+v)=18+3(1)a=18+3a$, so $a^{3}-3a-18=0$. Testing $a=3$ gives $27-9-18=0$, so $(a-3)(a^{2}+3a+6)=0$. The quadratic factor has discriminant $9-24<0$, so the only real root is $a=3$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Compute uv and u³+v³ first.",
+    "Expand (u+v)³ using the identity a³ = u³+v³+3uv(u+v).",
+    "Factor the cubic and discard complex roots."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

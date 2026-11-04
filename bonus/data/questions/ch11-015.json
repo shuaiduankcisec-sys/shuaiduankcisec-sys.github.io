@@ -1,0 +1,23 @@
+{
+  "id": "ch11-015",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": ["trigonometric equations", "sum-to-product"],
+  "methods": ["rewriting as a product", "solving a trigonometric equation with range restrictions"],
+  "statement": "Show that $\\\\sin3\\\\theta+\\\\sin\\\\theta=2\\\\sin2\\\\theta\\\\cos\\\\theta$. Hence solve the equation $\\\\sin3\\\\theta+\\\\sin\\\\theta=\\\\sin2\\\\theta$ for $0\\\\le\\\\theta<2\\\\pi$, giving all solutions.",
+  "solution": "Using $\\\\sin A+\\\\sin B=2\\\\sin\\\\tfrac{A+B}{2}\\\\cos\\\\tfrac{A-B}{2}$, we get $\\\\sin3\\\\theta+\\\\sin\\\\theta=2\\\\sin2\\\\theta\\\\cos\\\\theta$. The equation becomes $2\\\\sin2\\\\theta\\\\cos\\\\theta=\\\\sin2\\\\theta$, so $\\\\sin2\\\\theta(2\\\\cos\\\\theta-1)=0$. Either $\\\\sin2\\\\theta=0$, giving $2\\\\theta=k\\\\pi$ so $\\\\theta=0,\\\\tfrac{\\\\pi}{2},\\\\pi,\\\\tfrac{3\\\\pi}{2}$; or $2\\\\cos\\\\theta-1=0$, i.e. $\\\\cos\\\\theta=\\\\tfrac12$, giving $\\\\theta=\\\\tfrac{\\\\pi}{3},\\\\tfrac{5\\\\pi}{3}$. The full solution set is $\\\\theta=0,\\\\tfrac{\\\\pi}{3},\\\\tfrac{\\\\pi}{2},\\\\pi,\\\\tfrac{3\\\\pi}{2},\\\\tfrac{5\\\\pi}{3}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the sum-to-product identity to combine sin3θ and sinθ.",
+    "Factor out sin2θ to split the equation.",
+    "Solve sin2θ = 0 and cosθ = 1/2 separately, collecting all θ in [0,2π)."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

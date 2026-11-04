@@ -18,11 +18,12 @@
     "symmetric expressions"
   ],
   "statement": "The roots of $x^2+(a-1)x+(a+2)=0$ are $\\alpha$ and $\\beta$. Given that $\\alpha^2+\\beta^2=10$, find the possible values of $a$.",
-  "solution": "By Vieta's formulae,\n$$\\alpha+\\beta=1-a,\\qquad \\alpha\\beta=a+2.$$\nThen\n$$\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta=(1-a)^2-2(a+2)=1-2a+a^2-2a-4=a^2-4a-3.$$\nSetting this equal to $10$ gives $a^2-4a-13=0$, so\n$$a=\\frac{4\\pm\\sqrt{16+52}}{2}=\\frac{4\\pm\\sqrt{68}}{2}=2\\pm\\sqrt{17}.$$\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]",
+  "solution": "By Vieta's formulae,\n$$\\alpha+\\beta=1-a,\\qquad \\alpha\\beta=a+2.$$\nThen\n$$\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta=(1-a)^2-2(a+2)=1-2a+a^2-2a-4=a^2-4a-3.$$\nSetting this equal to $10$ gives $a^2-4a-13=0$, so\n$$a=\\frac{4\\pm\\sqrt{16+52}}{2}=\\frac{4\\pm\\sqrt{68}}{2}=2\\pm\\sqrt{17}.$$",
   "solutionStatus": "full",
   "hints": [
     "Use Vieta: alpha+beta = 1-a, alpha beta = a+2.",
     "Express alpha^2+beta^2 as (alpha+beta)^2 - 2 alpha beta.",
     "Solve the resulting quadratic in a."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]"
 }

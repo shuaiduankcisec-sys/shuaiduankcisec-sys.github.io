@@ -29,11 +29,12 @@
     "$\\log_2 20$"
   ],
   "answer": "F",
-  "solution": "The ratio $P(x):Q(x)=4:1$ means $P(x)=4Q(x)$, so\n$$2^x+4=4\\left(2^{2x-2}-2^{x+2}+16\\right).$$\n\nSimplify the right-hand side using the laws of indices:\n$$4\\cdot 2^{2x-2}=2^2\\cdot 2^{2x-2}=2^{2x},\\qquad 4\\cdot 2^{x+2}=2^2\\cdot 2^{x+2}=2^{x+4},$$\nso\n$$2^x+4=2^{2x}-2^{x+4}+64.$$\n\nLet $u=2^x$. Then $2^{2x}=u^2$ and $2^{x+4}=16u$ (since $2^{x+4}=2^x\\cdot 2^4=16u$), giving\n$$u+4=u^2-16u+64.$$\n\nRearranging,\n$$u^2-17u+60=0 \\quad\\Rightarrow\\quad (u-5)(u-12)=0,$$\nso $u=5$ or $u=12$.\n\nSince $u=2^x$:\n$$2^x=5 \\Rightarrow x=\\log_2 5, \\qquad 2^x=12 \\Rightarrow x=\\log_2 12.$$\n\nThe largest value of $x$ is $\\log_2 12$, which is **option F**.\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]",
+  "solution": "The ratio $P(x):Q(x)=4:1$ means $P(x)=4Q(x)$, so\n$$2^x+4=4\\left(2^{2x-2}-2^{x+2}+16\\right).$$\n\nSimplify the right-hand side using the laws of indices:\n$$4\\cdot 2^{2x-2}=2^2\\cdot 2^{2x-2}=2^{2x},\\qquad 4\\cdot 2^{x+2}=2^2\\cdot 2^{x+2}=2^{x+4},$$\nso\n$$2^x+4=2^{2x}-2^{x+4}+64.$$\n\nLet $u=2^x$. Then $2^{2x}=u^2$ and $2^{x+4}=16u$ (since $2^{x+4}=2^x\\cdot 2^4=16u$), giving\n$$u+4=u^2-16u+64.$$\n\nRearranging,\n$$u^2-17u+60=0 \\quad\\Rightarrow\\quad (u-5)(u-12)=0,$$\nso $u=5$ or $u=12$.\n\nSince $u=2^x$:\n$$2^x=5 \\Rightarrow x=\\log_2 5, \\qquad 2^x=12 \\Rightarrow x=\\log_2 12.$$\n\nThe largest value of $x$ is $\\log_2 12$, which is **option F**.",
   "solutionStatus": "full",
   "hints": [
     "P:Q = 4:1 means P(x) = 4Q(x).",
     "Substitute u = 2^x to turn it into a quadratic in u.",
     "Solve the quadratic, then convert back using logarithms."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5否 → 3星]"
 }

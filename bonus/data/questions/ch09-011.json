@@ -18,11 +18,12 @@
     "common points"
   ],
   "statement": "The circles $C_{1}:x^{2}+y^{2}+2g_{1}x+2f_{1}y+c_{1}=0$ and $C_{2}:x^{2}+y^{2}+2g_{2}x+2f_{2}y+c_{2}=0$ meet at two points $P$ and $Q$. Show that, for any constant $\\\\lambda\\\\neq-1$, the equation $(x^{2}+y^{2}+2g_{1}x+2f_{1}y+c_{1})+\\\\lambda(x^{2}+y^{2}+2g_{2}x+2f_{2}y+c_{2})=0$ represents a circle passing through $P$ and $Q$.",
-  "solution": "At the intersection points $P$ and $Q$ both $C_{1}=0$ and $C_{2}=0$, so any linear combination is also zero there; hence the curve passes through $P$ and $Q$. For $\\\\lambda\\\\neq-1$ the coefficients of $x^{2}$ and $y^{2}$ are both $1+\\\\lambda$ (non-zero and equal) and there is no $xy$ term, so the equation is that of a circle. (When $\\\\lambda=-1$ the quadratic terms cancel and the equation reduces to the common chord $PQ$.)\n\n[难度自评: Q1是 Q2否 Q3否 Q4是 Q5是 → 4星]",
+  "solution": "At the intersection points $P$ and $Q$ both $C_{1}=0$ and $C_{2}=0$, so any linear combination is also zero there; hence the curve passes through $P$ and $Q$. For $\\\\lambda\\\\neq-1$ the coefficients of $x^{2}$ and $y^{2}$ are both $1+\\\\lambda$ (non-zero and equal) and there is no $xy$ term, so the equation is that of a circle. (When $\\\\lambda=-1$ the quadratic terms cancel and the equation reduces to the common chord $PQ$.)",
   "solutionStatus": "full",
   "hints": [
     "Check that P and Q satisfy the combined equation.",
     "Verify the coefficients of x^2 and y^2 are equal and non-zero.",
     "Note what happens when lambda=-1."
-  ]
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5是 → 4星]"
 }
