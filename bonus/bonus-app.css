@@ -430,3 +430,128 @@
   .bq-chapter { padding: 7px 10px; font-size: 13px; }
   .bq-chapter .cnt { display: none; }
 }
+
+/* ---------- view tabs ---------- */
+.bq-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+}
+.bq-tab {
+  flex: 1;
+  padding: 7px 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+.bq-tab:hover { background: var(--bg-soft); }
+.bq-tab.active { background: var(--accent); color: #fff; }
+
+.bq-head-title { font-size: 17px; font-weight: 600; color: var(--ink); }
+.bq-head-actions { margin-left: auto; display: flex; gap: 8px; }
+
+/* ---------- bookmark ---------- */
+.bq-q-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.bq-bookmark {
+  border: none;
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+.bq-bookmark:hover { background: var(--bg-soft); color: var(--ink); }
+.bq-bookmark.on { color: #185FA5; }
+.bq-bookmark.on svg path { fill: #185FA5; stroke: #185FA5; }
+
+/* ---------- buttons ---------- */
+.bq-btn {
+  padding: 7px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+}
+.bq-btn:hover { background: var(--bg-soft); }
+.bq-btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.bq-btn-primary:hover { background: #0c447c; }
+.bq-icon-btn {
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink-soft);
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.bq-icon-btn:hover { background: var(--bg-soft); color: var(--ink); }
+
+/* ---------- project ---------- */
+.bq-proj-title { font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+.bq-proj-meta { font-size: 12px; color: var(--ink-soft); }
+
+/* ---------- modal / overlay ---------- */
+.bq-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 16px;
+}
+.bq-modal {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  width: 440px;
+  max-width: 92vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.bq-modal-wide { width: 520px; }
+.bq-modal h3 { margin: 0 0 16px; font-size: 18px; color: var(--ink); }
+.bq-field { margin-bottom: 12px; }
+.bq-field-label { display: block; font-size: 12px; color: var(--ink-soft); margin-bottom: 4px; }
+.bq-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--ink);
+}
+.bq-field input:focus { outline: none; border-color: var(--accent); }
+.bq-modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+.bq-proj-picker { display: flex; flex-direction: column; gap: 6px; }
+.bq-proj-pick {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  color: var(--ink);
+}
+.bq-proj-pick:hover { background: var(--bg-soft); }

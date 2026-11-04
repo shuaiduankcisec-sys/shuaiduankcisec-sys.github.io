@@ -161,10 +161,16 @@ let current = 'en';
 try { current = localStorage.getItem('lang') || 'en'; } catch (e) {}
 setLang(current);
 
+// expose language state + change hook for dynamic UI (e.g. Bonus Questions app)
+window.getCurrentLang = function () { return current; };
+window._langChangeHandlers = window._langChangeHandlers || [];
+window.onLangChange = function (fn) { window._langChangeHandlers.push(fn); };
+
 if (langBtn) {
   langBtn.addEventListener('click', function () {
     current = (current === 'zh') ? 'en' : 'zh';
     setLang(current);
+    (window._langChangeHandlers || []).forEach(function (fn) { try { fn(current); } catch (e) {} });
   });
 }
 
