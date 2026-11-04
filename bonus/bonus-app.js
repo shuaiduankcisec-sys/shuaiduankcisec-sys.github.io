@@ -37,6 +37,7 @@
       editProject: 'Edit project', newProjectTitle: 'New book project',
       remove: 'Remove', moveUp: '↑', moveDown: '↓', bookEmpty: 'This book is empty', bookHint: 'Go back to Questions and use "Add to project" to add questions.',
       chapters: 'Chapters', allChapters: 'All chapters', saveToLibrary: 'Save to Library', saved: 'Saved',
+      allLevels: 'All levels',
       libraryLabel: 'Library', projectsLabel: 'Projects', questions: 'questions',
       showSolution: 'Show solution', hideSolution: 'Hide solution', noSolution: 'No solution available yet.',
       back: 'Back to questions', source: 'Source', difficulty: 'Difficulty', exportSettings: 'Export settings', bookNameToc: 'Book title (TOC)',
@@ -54,6 +55,7 @@
       editProject: '编辑项目', newProjectTitle: '新建书籍项目',
       remove: '移除', moveUp: '↑', moveDown: '↓', bookEmpty: '书还是空的', bookHint: '回到题库，用「加入项目」把题目加进这本书。',
       chapters: '章节', allChapters: '全部章节', saveToLibrary: '收藏到 Library', saved: '已收藏',
+      allLevels: '全部级别',
       libraryLabel: '收藏', projectsLabel: '项目', questions: '道题',
       showSolution: '显示解答', hideSolution: '隐藏解答', noSolution: '暂无解答。',
       back: '返回题目列表', source: '来源', difficulty: '难度', exportSettings: '导出设置', bookNameToc: '书名（目录标题）',
@@ -160,6 +162,7 @@
     var sel = el('select');
     sel.setAttribute('aria-label', 'Select level');
     var levels = [
+      { v: 'all', label: t('allLevels') },
       { v: 'AS', label: 'AS Level' },
       { v: 'A2', label: 'A2 Level' }
     ];
@@ -221,6 +224,7 @@
   }
 
   function chaptersForLevel() {
+    if (state.level === 'all') return state.chapters.slice();
     return state.chapters.filter(function (c) { return c.level === state.level; });
   }
 
@@ -241,7 +245,7 @@
 
   function questionsForChapter() {
     return state.index.filter(function (q) {
-      return q.level === state.level
+      return (state.level === 'all' || q.level === state.level)
         && (state.chapter == null || q.chapter === state.chapter)
         && inBoard(q);
     });
@@ -270,7 +274,7 @@
     chs.forEach(function (c) {
       // count questions in this chapter by level + board only (NOT by the selected chapter)
       var cnt = state.index.filter(function (q) {
-        return q.level === state.level && q.chapter === c.id && inBoard(q);
+        return (state.level === 'all' || q.level === state.level) && q.chapter === c.id && inBoard(q);
       }).length;
       var btn = el('button', 'bq-chapter' + (state.chapter === c.id ? ' active' : ''));
       btn.type = 'button';
@@ -360,9 +364,12 @@
         body.appendChild(prev);
         renderMath(prev);
       }
-      // source tag + method tags (source first, in the same pill style)
+      // source tag + level badge + method tags (source first, in the same pill style)
       var mWrap = el('div', 'bq-methods');
       mWrap.appendChild(el('span', 'bq-method src ' + sourceClass(q), sourceLabel(q) + (q.year ? ' ' + q.year : '')));
+      if (q.level === 'AS' || q.level === 'A2') {
+        mWrap.appendChild(el('span', 'bq-method bq-level-badge', q.level));
+      }
       if (q.level === 'A2-extension') mWrap.appendChild(el('span', 'bq-method a2', 'A2 stretch'));
       if (q.methods && q.methods.length) {
         q.methods.forEach(function (m) {
@@ -589,6 +596,7 @@
       }
       var mWrap = el('div', 'bq-methods');
       mWrap.appendChild(el('span', 'bq-method src ' + sourceClass(q), sourceLabel(q) + (q.year ? ' ' + q.year : '')));
+      if (q.level === 'AS' || q.level === 'A2') mWrap.appendChild(el('span', 'bq-method bq-level-badge', q.level));
       if (q.methods) q.methods.forEach(function (m) { mWrap.appendChild(el('span', 'bq-method', m)); });
       body.appendChild(mWrap);
       item.appendChild(body);
@@ -697,6 +705,7 @@
         }
         var mWrap = el('div', 'bq-methods');
         mWrap.appendChild(el('span', 'bq-method src ' + sourceClass(q), sourceLabel(q) + (q.year ? ' ' + q.year : '')));
+        if (q.level === 'AS' || q.level === 'A2') mWrap.appendChild(el('span', 'bq-method bq-level-badge', q.level));
         body.appendChild(mWrap);
         item.appendChild(body);
         var right = el('div', 'bq-q-right');

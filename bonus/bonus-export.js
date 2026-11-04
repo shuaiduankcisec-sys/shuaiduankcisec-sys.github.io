@@ -35,7 +35,11 @@
       cancel: 'Cancel', preview: 'Preview', exportPdf: 'Export PDF',
       noExport: 'Nothing to export. Add questions to your library or project first.',
       solution: 'Solution', answers: 'Answers', tableOfContents: 'Table of Contents',
-      cover: 'Cover', coverBg: 'Cover background', headerDefault: '', footerDefault: ''
+      cover: 'Cover', coverBg: 'Cover background', headerDefault: '', footerDefault: '',
+      layout: 'Layout', dense: 'Compact (flow questions)', denseHint: 'One question per page when off',
+      pageSetup: 'Page setup', headerPosition: 'Header position', footerPosition: 'Footer position',
+      posLeft: 'Left', posCenter: 'Center', posRight: 'Right', posOff: 'Off',
+      headerText2: 'Header text', footerText2: 'Footer text'
     },
     zh: {
       exportSettings: '导出设置',
@@ -56,7 +60,11 @@
       cancel: '取消', preview: '预览', exportPdf: '导出 PDF',
       noExport: '没有可导出的题目。请先在收藏或项目中添加题目。',
       solution: '解答', answers: '答案', tableOfContents: '目录',
-      cover: '封面', coverBg: '封面背景', headerDefault: '', footerDefault: ''
+      cover: '封面', coverBg: '封面背景', headerDefault: '', footerDefault: '',
+      layout: '排版', dense: '紧凑排列（题目连续排列）', denseHint: '不勾选时一题一页',
+      pageSetup: '页面设置', headerPosition: '页眉位置', footerPosition: '页脚位置',
+      posLeft: '左', posCenter: '中', posRight: '右', posOff: '关闭',
+      headerText2: '页眉文字', footerText2: '页脚文字'
     }
   };
   function s(key) {
@@ -177,7 +185,8 @@
       coverTitle: defaults.coverTitle, coverSubtitle: defaults.coverSubtitle,
       copyright: defaults.copyright, coverBg: defaults.coverBg,
       content: 'qa', includeCover: true, includeToc: true, tocByBoard: true,
-      showSource: true, pageNumbers: true, headerText: '', footerText: ''
+      showSource: true, pageNumbers: true, headerText: '', footerText: '',
+      dense: true, headerPos: 'center', footerPos: 'center', pageSize: 'a4'
     };
 
     function field(label, key) {
@@ -270,10 +279,27 @@
     panel.appendChild(checkbox(s('showSource'), 'showSource'));
     panel.appendChild(checkbox(s('pageNumbers'), 'pageNumbers'));
 
-    // 5. header / footer
-    panel.appendChild(el('div', 'bq-export-sec', s('headerText')));
-    panel.appendChild(field(s('headerText'), 'headerText'));
-    panel.appendChild(field(s('footerText'), 'footerText'));
+    // 5. layout (dense / one-per-page)
+    panel.appendChild(el('div', 'bq-export-sec', s('layout')));
+    panel.appendChild(checkbox(s('dense'), 'dense'));
+    panel.appendChild(el('p', 'bq-field-hint', s('denseHint')));
+
+    // 6. page setup: header/footer position + text
+    panel.appendChild(el('div', 'bq-export-sec', s('pageSetup')));
+    panel.appendChild(selectField(s('headerPosition'), 'headerPos', [
+      { v: 'off', label: s('posOff') },
+      { v: 'left', label: s('posLeft') },
+      { v: 'center', label: s('posCenter') },
+      { v: 'right', label: s('posRight') }
+    ], 'center'));
+    panel.appendChild(field(s('headerText2'), 'headerText'));
+    panel.appendChild(selectField(s('footerPosition'), 'footerPos', [
+      { v: 'off', label: s('posOff') },
+      { v: 'left', label: s('posLeft') },
+      { v: 'center', label: s('posCenter') },
+      { v: 'right', label: s('posRight') }
+    ], 'center'));
+    panel.appendChild(field(s('footerText2'), 'footerText'));
     panel.appendChild(field(s('copyright'), 'copyright'));
 
     // actions
@@ -383,11 +409,16 @@
     var autoRender = document.querySelector('script[src*="auto-render.min.js"]');
 
     var style = doc.createElement('style');
-    style.textContent = EXPORT_CSS;
+    style.textContent = makeCss(settings);
     doc.head.appendChild(style);
 
     var body = doc.body;
     var content = settings.content || 'qa'; // qa | q | a
+
+    // wrap everything in a #paper container (A4 sheet appearance in preview)
+    var paper = doc.createElement('div');
+    paper.id = 'paper';
+    body.appendChild(paper);
 
     // ---- cover ----
     if (settings.includeCover) {
@@ -403,7 +434,7 @@
         '<div class="cover-author">' + esc(settings.author || '') + '</div>' +
         (settings.copyright ? '<div class="cover-copy">' + esc(settings.copyright) + '</div>' : '') +
         '</div>';
-      body.appendChild(cover);
+      paper.appendChild(cover);
     }
 
     // ---- TOC ----
@@ -456,7 +487,7 @@
         });
       }
       toc.appendChild(tocList);
-      body.appendChild(toc);
+      paper.appendChild(toc);
     }
 
     // ---- questions ----
@@ -506,7 +537,7 @@
           sec.appendChild(sol);
         }
       }
-      body.appendChild(sec);
+      paper.appendChild(sec);
     });
 
     // footer copyright (also on last page)
@@ -514,56 +545,88 @@
       var foot = doc.createElement('div');
       foot.className = 'doc-copyright';
       foot.textContent = settings.copyright;
-      body.appendChild(foot);
+      paper.appendChild(foot);
     }
 
     return { doc: doc, headerText: settings.headerText || '', footerText: settings.footerText || '' };
   }
 
   // ---------- open preview in a new window ----------
-  var EXPORT_CSS = [
-    '@page { size: A4; margin: 18mm 16mm; }',
-    '@page { @top-left { content: string(header); font-size: 9pt; color: #666; } }',
-    '@page { @top-right { content: string(pagetitle); font-size: 9pt; color: #666; } }',
-    '@page { @bottom-center { content: counter(page); font-size: 9pt; color: #666; } }',
-    'body { font-family: "Segoe UI", -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; color: #1a1a1a; margin: 0; font-size: 13px; }',
-    'section { page-break-after: always; }',
-    'section:last-of-type { page-break-after: auto; }',
-    '.cover { height: 92vh; display: flex; align-items: center; justify-content: center; text-align: center; page-break-after: always; }',
-    '.cover-inner { padding: 40px; }',
-    '.cover-org { font-size: 14px; letter-spacing: 3px; color: inherit; opacity: 0.75; margin-bottom: 40px; text-transform: uppercase; }',
-    '.cover-title { font-size: 38px; font-weight: 700; margin: 0 0 16px; line-height: 1.25; color: inherit; }',
-    '.cover-subtitle { font-size: 17px; color: inherit; opacity: 0.85; margin-bottom: 48px; }',
-    '.cover-author { font-size: 15px; color: inherit; opacity: 0.9; }',
-    '.cover-copy { margin-top: 60px; font-size: 11px; color: inherit; opacity: 0.6; }',
-    '.toc h1 { font-size: 22px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }',
-    '.toc-list { list-style: none; padding: 0; }',
-    '.toc-list li { display: flex; align-items: baseline; padding: 6px 0; font-size: 13px; }',
-    '.toc-group { font-weight: 700; color: #185FA5; padding: 12px 0 4px; border-bottom: 1px solid #eee; margin-top: 8px; }',
-    '.toc-num { color: #999; width: 32px; flex-shrink: 0; }',
-    '.toc-title { flex: 1; }',
-    '.toc-dots { flex: 1; border-bottom: 1px dotted #bbb; margin: 0 8px; }',
-    '.question-page { padding: 10px 0; }',
-    '.q-head { display: flex; align-items: center; gap: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; margin-bottom: 14px; }',
-    '.q-no { font-weight: 700; font-size: 17px; color: #333; }',
-    '.q-src { color: #fff; font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 600; }',
-    '.q-src.src-step { background: #7F77DD; }',
-    '.q-src.src-tmua { background: #378ADD; }',
-    '.q-src.src-mat { background: #1D9E75; }',
-    '.q-src.src-esat { background: #BA7517; }',
-    '.q-src.src-other { background: #888780; }',
-    '.q-stars { margin-left: auto; color: #e0a800; font-size: 13px; }',
-    '.q-statement { font-size: 13px; line-height: 1.7; }',
-    '.q-statement p { margin: 0 0 10px; }',
-    '.q-options { margin-top: 10px; }',
-    '.q-option { display: flex; gap: 10px; padding: 3px 0; font-size: 13px; }',
-    '.q-opt-label { font-weight: 600; color: #666; width: 20px; }',
-    '.q-solution { margin-top: 18px; border-top: 1px solid #eee; padding-top: 12px; }',
-    '.q-sol-title { font-weight: 700; color: #333; margin-bottom: 8px; }',
-    '.q-solution { font-size: 13px; line-height: 1.7; color: #333; }',
-    '.doc-copyright { text-align: center; font-size: 10px; color: #999; padding: 20px 0; }',
-    '.katex-display { overflow-x: auto; overflow-y: hidden; }'
-  ].join('\n');
+  function makeCss(settings) {
+    var pageSize = (settings.pageSize === 'letter') ? 'Letter' : 'A4';
+    // header / footer position -> @page margin boxes
+    var headerPos = settings.headerPos || 'center';
+    var footerPos = settings.footerPos || 'center';
+    var headerRule = '';
+    var footerRule = '';
+    if (headerPos !== 'off' && (settings.headerText || settings.title)) {
+      var hc = '@top-' + headerPos + ' { content: "' + escCss(settings.headerText || settings.title) + '"; font-size: 9pt; color: #666; }';
+      headerRule = '@page { ' + hc + ' }';
+    }
+    if (settings.pageNumbers && footerPos !== 'off') {
+      var fc = '@bottom-' + footerPos + ' { content: counter(page); font-size: 9pt; color: #666; }';
+      footerRule = '@page { ' + fc + ' }';
+    } else if (footerPos !== 'off' && settings.footerText) {
+      var fc2 = '@bottom-' + footerPos + ' { content: "' + escCss(settings.footerText) + '"; font-size: 9pt; color: #666; }';
+      footerRule = '@page { ' + fc2 + ' }';
+    }
+
+    // dense: questions flow together; otherwise one question per page
+    var sectionRule = settings.dense === false
+      ? 'section.question-page { page-break-after: always; } section.question-page:last-of-type { page-break-after: auto; }'
+      : 'section.question-page { page-break-after: auto; } section.question-page + section.question-page { margin-top: 24px; border-top: 1px solid #eee; padding-top: 20px; }';
+
+    return [
+      '@page { size: ' + pageSize + '; margin: 18mm 16mm; }',
+      headerRule,
+      footerRule,
+      'body { font-family: "Segoe UI", -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; color: #1a1a1a; margin: 0; font-size: 13px; }',
+      // A4 paper appearance on screen (preview); plain white in print
+      '@media screen { body { background: #6b7280; padding: 24px 0; } #paper { width: 210mm; min-height: 297mm; margin: 0 auto; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.35); padding: 18mm 16mm; box-sizing: border-box; } }',
+      '@media print { body { background: #fff; } #paper { width: auto; min-height: 0; margin: 0; padding: 0; box-shadow: none; } }',
+      'section.cover, section.toc { page-break-after: always; }',
+      sectionRule,
+      '.cover { height: 92vh; display: flex; align-items: center; justify-content: center; text-align: center; page-break-after: always; }',
+      '.cover-inner { padding: 40px; }',
+      '.cover-org { font-size: 14px; letter-spacing: 3px; color: inherit; opacity: 0.75; margin-bottom: 40px; text-transform: uppercase; }',
+      '.cover-title { font-size: 38px; font-weight: 700; margin: 0 0 16px; line-height: 1.25; color: inherit; }',
+      '.cover-subtitle { font-size: 17px; color: inherit; opacity: 0.85; margin-bottom: 48px; }',
+      '.cover-author { font-size: 15px; color: inherit; opacity: 0.9; }',
+      '.cover-copy { margin-top: 60px; font-size: 11px; color: inherit; opacity: 0.6; }',
+      '.toc h1 { font-size: 22px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }',
+      '.toc-list { list-style: none; padding: 0; }',
+      '.toc-list li { display: flex; align-items: baseline; padding: 6px 0; font-size: 13px; }',
+      '.toc-group { font-weight: 700; color: #185FA5; padding: 12px 0 4px; border-bottom: 1px solid #eee; margin-top: 8px; }',
+      '.toc-num { color: #999; width: 32px; flex-shrink: 0; }',
+      '.toc-title { flex: 1; }',
+      '.toc-dots { flex: 1; border-bottom: 1px dotted #bbb; margin: 0 8px; }',
+      '.question-page { padding: 10px 0; }',
+      '.q-head { display: flex; align-items: center; gap: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; margin-bottom: 14px; }',
+      '.q-no { font-weight: 700; font-size: 17px; color: #333; }',
+      '.q-src { color: #fff; font-size: 11px; padding: 2px 10px; border-radius: 999px; font-weight: 600; }',
+      '.q-src.src-step { background: #7F77DD; }',
+      '.q-src.src-tmua { background: #378ADD; }',
+      '.q-src.src-mat { background: #1D9E75; }',
+      '.q-src.src-esat { background: #BA7517; }',
+      '.q-src.src-other { background: #888780; }',
+      '.q-stars { margin-left: auto; color: #e0a800; font-size: 13px; }',
+      '.q-statement { font-size: 13px; line-height: 1.7; }',
+      '.q-statement p { margin: 0 0 10px; }',
+      '.q-options { margin-top: 10px; }',
+      '.q-option { display: flex; gap: 10px; padding: 3px 0; font-size: 13px; }',
+      '.q-opt-label { font-weight: 600; color: #666; width: 20px; }',
+      '.q-solution { margin-top: 18px; border-top: 1px solid #eee; padding-top: 12px; }',
+      '.q-sol-title { font-weight: 700; color: #333; margin-bottom: 8px; }',
+      '.q-solution { font-size: 13px; line-height: 1.7; color: #333; }',
+      '.doc-copyright { text-align: center; font-size: 10px; color: #999; padding: 20px 0; }',
+      '.katex-display { overflow-x: auto; overflow-y: hidden; }'
+    ].join('\n');
+  }
+
+  // escape a string for use inside CSS content: ""
+  function escCss(s) {
+    return String(s == null ? '' : s).replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, ' ');
+  }
 
   global.bonusExport = { open: open };
 })(window);
