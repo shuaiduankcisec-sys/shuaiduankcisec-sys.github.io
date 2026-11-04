@@ -1,0 +1,31 @@
+{
+  "id": "ch07-019",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "integration",
+    "trigonometric substitution",
+    "cos^2 identity"
+  ],
+  "methods": [
+    "substitution x=tan theta",
+    "secant identity",
+    "cos^2 = (1+cos2theta)/2"
+  ],
+  "statement": "By using the substitution $x=\\tan\\theta$, or otherwise, evaluate $\\int_{0}^{1}\\dfrac{1}{(1+x^{2})^{2}}\\,dx$.",
+  "solution": "With $x=\\tan\\theta$, $dx=\\sec^{2}\\theta\\,d\\theta$ and $1+x^{2}=\\sec^{2}\\theta$. The limits become $0$ to $\\tfrac{\\pi}{4}$, and the integral is $\\int_{0}^{\\pi/4}\\cos^{2}\\theta\\,d\\theta=\\int_{0}^{\\pi/4}\\tfrac12(1+\\cos2\\theta)\\,d\\theta=\\bigl[\\tfrac{\\theta}{2}+\\tfrac{\\sin2\\theta}{4}\\bigr]_{0}^{\\pi/4}=\\tfrac{\\pi}{8}+\\tfrac14$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Substitute $x=\tan\theta$ and $dx=\\sec^{2}\theta\\,d\theta$.",
+    "Simplify using $1+\tan^{2}\theta=\\sec^{2}\theta$.",
+    "Use $\\cos^{2}\theta=(1+\\cos2\theta)/2$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

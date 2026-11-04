@@ -1,0 +1,31 @@
+{
+  "id": "ch02-015",
+  "chapter": 2,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "quadratics",
+    "discriminant",
+    "sum of squares"
+  ],
+  "methods": [
+    "expanding a symmetric quadratic",
+    "computing the discriminant",
+    "sum-of-squares identity"
+  ],
+  "statement": "Let $f(x)=(x-a)(x-b)+(x-b)(x-c)+(x-c)(x-a)$, where $a,b,c$ are real. Show that the equation $f(x)=0$ has real roots, and that these two roots are equal only when $a=b=c$.",
+  "solution": "$f(x)$ is quadratic with leading coefficient $3$. Its discriminant is $4(a+b+c)^{2}-12(ab+bc+ca)=4(a^{2}+b^{2}+c^{2}-ab-bc-ca)=2\\bigl((a-b)^{2}+(b-c)^{2}+(c-a)^{2}\\bigr)\\ge 0$, so the roots are real. The roots are equal exactly when the discriminant is zero, i.e. when $(a-b)^{2}+(b-c)^{2}+(c-a)^{2}=0$, which holds only if $a=b=c$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand $f(x)$ to find its coefficients.",
+    "Compute the discriminant of the quadratic.",
+    "Rewrite the discriminant as a sum of squares."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ch11-018",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2006,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "trigonometry",
+    "product-to-sum",
+    "trigonometric equations"
+  ],
+  "methods": [
+    "cos A + cos B identity",
+    "setting each factor to zero",
+    "collecting solutions"
+  ],
+  "statement": "By writing $\\cos5\\theta+\\cos\\theta$ as a product, or otherwise, solve $\\cos5\\theta+\\cos\\theta=0$ for $0\\le\\theta<\\pi$.",
+  "solution": "Using $\\cos A+\\cos B=2\\cos\\tfrac{A+B}{2}\\cos\\tfrac{A-B}{2}$: $\\cos5\\theta+\\cos\\theta=2\\cos3\\theta\\cos2\\theta$. Setting this to zero gives $\\cos3\\theta=0$ or $\\cos2\\theta=0$. For $0\\le\\theta<\\pi$, $\\cos3\\theta=0$ gives $3\\theta=\\tfrac{\\pi}{2},\\tfrac{3\\pi}{2},\\tfrac{5\\pi}{2}$, so $\\theta=\\tfrac{\\pi}{6},\\tfrac{\\pi}{2},\\tfrac{5\\pi}{6}$; and $\\cos2\\theta=0$ gives $2\\theta=\\tfrac{\\pi}{2},\\tfrac{3\\pi}{2}$, so $\\theta=\\tfrac{\\pi}{4},\\tfrac{3\\pi}{4}$. The solutions are $\\theta=\\tfrac{\\pi}{6},\\tfrac{\\pi}{4},\\tfrac{\\pi}{2},\\tfrac{3\\pi}{4},\\tfrac{5\\pi}{6}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use $\\cos A+\\cos B=2\\cos\tfrac{A+B}{2}\\cos\tfrac{A-B}{2}$.",
+    "Set each cosine factor to zero.",
+    "Collect the solutions in $[0,\\pi)$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

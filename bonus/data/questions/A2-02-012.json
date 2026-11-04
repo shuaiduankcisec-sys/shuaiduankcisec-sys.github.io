@@ -1,0 +1,31 @@
+{
+  "id": "A2-02-012",
+  "chapter": "A2-02",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "binomial theorem",
+    "central binomial coefficient",
+    "parity"
+  ],
+  "methods": [
+    "stating C(2n,n)",
+    "rewriting as 2*C(2n-1,n-1)",
+    "concluding evenness"
+  ],
+  "statement": "Find the coefficient of $x^{n}$ in the expansion of $(1+x)^{2n}$, and show that this coefficient is even for every integer $n\\ge1$.",
+  "solution": "The coefficient of $x^{n}$ in $(1+x)^{2n}$ is $\\binom{2n}{n}$. Using $\\binom{2n}{n}=\\dfrac{2n}{n}\\binom{2n-1}{n-1}=2\\binom{2n-1}{n-1}$, it is exactly twice an integer, hence even for all $n\\ge1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "State the coefficient as $\binom{2n}{n}$.",
+    "Rewrite it as $2\binom{2n-1}{n-1}$.",
+    "Conclude it is even."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
+}

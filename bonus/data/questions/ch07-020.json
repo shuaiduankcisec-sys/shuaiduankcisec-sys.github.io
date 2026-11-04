@@ -1,0 +1,31 @@
+{
+  "id": "ch07-020",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "integration",
+    "logarithmic integrals",
+    "substitution"
+  ],
+  "methods": [
+    "substitution x=tan theta",
+    "rewriting 1+tan theta",
+    "cancelling log cos integrals"
+  ],
+  "statement": "Show that $\\int_{0}^{1}\\dfrac{\\ln(1+x)}{1+x^{2}}\\,dx=\\dfrac{\\pi}{8}\\ln2$.",
+  "solution": "Substitute $x=\\tan\\theta$ to get $I=\\int_{0}^{\\pi/4}\\ln(1+\\tan\\theta)\\,d\\theta$. Since $1+\\tan\\theta=\\dfrac{\\sin\\theta+\\cos\\theta}{\\cos\\theta}=\\dfrac{\\sqrt2\\,\\cos(\\tfrac{\\pi}{4}-\\theta)}{\\cos\\theta}$, we have $\\ln(1+\\tan\\theta)=\\tfrac12\\ln2+\\ln\\cos(\\tfrac{\\pi}{4}-\\theta)-\\ln\\cos\\theta$. Integrating from $0$ to $\\pi/4$ and using $\\int_{0}^{\\pi/4}\\ln\\cos(\\tfrac{\\pi}{4}-\\theta)\\,d\\theta=\\int_{0}^{\\pi/4}\\ln\\cos u\\,du$, the logarithm terms cancel, leaving $I=\\int_{0}^{\\pi/4}\\tfrac12\\ln2\\,d\\theta=\\tfrac{\\pi}{8}\\ln2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Substitute $x=\tan\theta$.",
+    "Rewrite $1+\tan\theta$ using $\\sin\theta+\\cos\theta=\\sqrt2\\cos(\\pi/4-\theta)$.",
+    "The two $\\ln\\cos$ integrals cancel by a shift of variable."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
+}

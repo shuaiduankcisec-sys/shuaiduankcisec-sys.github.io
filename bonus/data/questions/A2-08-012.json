@@ -1,0 +1,31 @@
+{
+  "id": "A2-08-012",
+  "chapter": "A2-08",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "numerical methods",
+    "Newton-Raphson",
+    "monotonicity"
+  ],
+  "methods": [
+    "showing f' > 0",
+    "locating the root",
+    "Newton iteration"
+  ],
+  "statement": "Show that the equation $x^{3}+3x-5=0$ has exactly one real root. Use the Newton–Raphson method with starting value $x_{0}=1$ to find this root correct to three decimal places.",
+  "solution": "Let $f(x)=x^{3}+3x-5$. Then $f'(x)=3x^{2}+3>0$ for all real $x$, so $f$ is strictly increasing and has at most one real root. Since $f(1)=-1<0$ and $f(2)=9>0$, there is exactly one real root in $(1,2)$. Newton's method gives $x_{1}=1-\\dfrac{f(1)}{f'(1)}=1-\\dfrac{-1}{6}=\\tfrac76\\approx1.1667$. Continuing, $x_{2}\\approx1.1791$, $x_{3}\\approx1.1545$, $x_{4}\\approx1.1542$, so to three decimal places the root is $x\\approx1.154$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Show $f'(x)>0$ so there is at most one root.",
+    "Locate the root between $x=1$ and $x=2$.",
+    "Apply Newton's iteration from $x_0=1$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ch08-015",
+  "chapter": 8,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2006,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "sequences",
+    "recurrence relations",
+    "limits"
+  ],
+  "methods": [
+    "reciprocal substitution",
+    "solving a linear recurrence",
+    "taking a limit"
+  ],
+  "statement": "A sequence is defined by $u_{1}=2$ and $u_{n+1}=\\dfrac{2u_{n}}{1+u_{n}}$ for $n\\ge1$. Find a formula for $u_{n}$ in terms of $n$, and find $\\lim_{n\\to\\infty}u_{n}$.",
+  "solution": "Let $v_{n}=1/u_{n}$. Then $v_{n+1}=\\dfrac{1+u_{n}}{2u_{n}}=\\tfrac12+\\tfrac12v_{n}$, with $v_{1}=\\tfrac12$. This linear recurrence has fixed point $1$, and $v_{n}-1=(\\tfrac12)^{n}$, so $v_{n}=1-2^{-n}$ and $u_{n}=\\dfrac{1}{1-2^{-n}}=\\dfrac{2^{n}}{2^{n}-1}$. Hence $\\lim_{n\\to\\infty}u_{n}=1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Take reciprocals to linearise the recurrence.",
+    "Solve the linear recurrence for $v_{n}=1/u_{n}$.",
+    "Take the limit."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

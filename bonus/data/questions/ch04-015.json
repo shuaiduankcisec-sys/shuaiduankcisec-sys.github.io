@@ -1,0 +1,31 @@
+{
+  "id": "ch04-015",
+  "chapter": 4,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1999,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "functions",
+    "inverse functions",
+    "composition"
+  ],
+  "methods": [
+    "finding an inverse",
+    "composing a Mobius map",
+    "simplifying compound fractions"
+  ],
+  "statement": "The function $f$ is defined by $f(x)=\\dfrac{x}{1+x}$ for $x>-1$. Find the inverse function $f^{-1}(x)$ and show that $f(f(x))=\\dfrac{x}{1+2x}$ for $x>0$.",
+  "solution": "To invert, solve $y=\\dfrac{x}{1+x}$ for $x$: $y(1+x)=x\\Rightarrow x(1-y)=y\\Rightarrow x=\\dfrac{y}{1-y}$, so $f^{-1}(x)=\\dfrac{x}{1-x}$ (domain $0<x<1$). For the composition, $f(f(x))=\\dfrac{\\frac{x}{1+x}}{1+\\frac{x}{1+x}}=\\dfrac{x}{1+2x}$ for $x>0$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Solve $y=x/(1+x)$ for $x$.",
+    "Substitute $f(x)$ into $f$ again.",
+    "Simplify the compound fraction."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

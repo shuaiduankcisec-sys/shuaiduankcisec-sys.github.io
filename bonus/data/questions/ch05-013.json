@@ -1,0 +1,31 @@
+{
+  "id": "ch05-013",
+  "chapter": 5,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2006,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "parabola",
+    "parametric form",
+    "chord"
+  ],
+  "methods": [
+    "gradient of a chord",
+    "chord equation",
+    "condition to pass through the focus"
+  ],
+  "statement": "The points $A(at^{2},2at)$ and $B(as^{2},2as)$ lie on the parabola $y^{2}=4ax$. Find the equation of the chord $AB$, and show that if this chord passes through the focus $(a,0)$ then $ts=-1$.",
+  "solution": "The slope of $AB$ is $\\dfrac{2a(s-t)}{a(s^{2}-t^{2})}=\\dfrac{2}{s+t}$. Its equation is $y-2at=\\tfrac{2}{s+t}(x-at^{2})$, which simplifies to $(s+t)y=2x+2ats$. Substituting the focus $(a,0)$ gives $0=2a+2ats$, so $ts=-1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Find the gradient of $AB$ from the parametric coordinates.",
+    "Derive the chord equation and simplify.",
+    "Substitute $(a,0)$ to find the condition on $t$ and $s$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

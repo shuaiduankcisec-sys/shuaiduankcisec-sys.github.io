@@ -1,0 +1,31 @@
+{
+  "id": "ch10-015",
+  "chapter": 10,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "trigonometry",
+    "triple angle",
+    "trigonometric equations"
+  ],
+  "methods": [
+    "sin 3x identity",
+    "factoring the equation",
+    "collecting solutions"
+  ],
+  "statement": "Show that, for $0<x<\\pi$, $\\dfrac{\\sin3x}{\\sin x}=2\\cos2x+1$. Hence solve the equation $\\sin3x=\\sin x$ for $0<x<2\\pi$.",
+  "solution": "$\\sin3x=\\sin x(3-4\\sin^{2}x)=\\sin x(4\\cos^{2}x-1)=\\sin x(2\\cos2x+1)$, so the identity holds. Then $\\sin3x=\\sin x$ gives either $\\sin x=0$ (so $x=\\pi$ in the interval) or $2\\cos2x+1=1$, i.e. $\\cos2x=0$, giving $2x=\\tfrac{\\pi}{2},\\tfrac{3\\pi}{2},\\tfrac{5\\pi}{2},\\tfrac{7\\pi}{2}$, so $x=\\tfrac{\\pi}{4},\\tfrac{3\\pi}{4},\\tfrac{5\\pi}{4},\\tfrac{7\\pi}{4}$. The full solution set is $x=\\tfrac{\\pi}{4},\\tfrac{3\\pi}{4},\\pi,\\tfrac{5\\pi}{4},\\tfrac{7\\pi}{4}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Express $\\sin3x$ in terms of $\\sin x$ and $\\cos x$.",
+    "Factor the equation into $\\sin x=0$ and $2\\cos2x+1=1$.",
+    "Collect all solutions in $(0,2\\pi)$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

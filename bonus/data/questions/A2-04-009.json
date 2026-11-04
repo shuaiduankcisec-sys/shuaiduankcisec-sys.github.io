@@ -1,0 +1,31 @@
+{
+  "id": "A2-04-009",
+  "chapter": "A2-04",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2008,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "integration",
+    "series expansion",
+    "Dirichlet eta"
+  ],
+  "methods": [
+    "power series of ln(1+x)",
+    "term-by-term integration",
+    "eta(2)"
+  ],
+  "statement": "Show that $\\int_{0}^{1}\\dfrac{\\ln(1+x)}{x}\\,dx=\\dfrac{\\pi^{2}}{12}$.",
+  "solution": "For $|x|<1$, $\\ln(1+x)=\\sum_{k=1}^{\\infty}(-1)^{k+1}\\dfrac{x^{k}}{k}$. Dividing by $x$ and integrating term by term from $0$ to $1$ gives $\\sum_{k=1}^{\\infty}\\dfrac{(-1)^{k+1}}{k^{2}}=1-\\tfrac14+\\tfrac19-\\tfrac1{16}+\\cdots$. This alternating series equals $\\eta(2)=(1-2^{1-2})\\zeta(2)=\\tfrac12\\cdot\\tfrac{\\pi^{2}}{6}=\\tfrac{\\pi^{2}}{12}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand $\\ln(1+x)$ as a power series.",
+    "Integrate term by term.",
+    "Recognise the alternating sum as $\\eta(2)=\\pi^{2}/12$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
+}

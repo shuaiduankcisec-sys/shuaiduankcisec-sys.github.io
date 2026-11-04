@@ -1,0 +1,31 @@
+{
+  "id": "A2-07-012",
+  "chapter": "A2-07",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "differential equations",
+    "integrating factor",
+    "initial condition"
+  ],
+  "methods": [
+    "integrating factor sin x",
+    "integration",
+    "applying y(pi/2)=0"
+  ],
+  "statement": "Solve the differential equation $\\dfrac{dy}{dx}+y\\cot x=\\cos x$, given that $y=0$ when $x=\\tfrac{\\pi}{2}$.",
+  "solution": "The integrating factor is $e^{\\int\\cot x\\,dx}=\\sin x$. Then $\\frac{d}{dx}(y\\sin x)=\\cos x\\sin x$, so $y\\sin x=\\tfrac12\\sin^{2}x+C$. At $x=\\tfrac{\\pi}{2}$, $0=\\tfrac12+C$, giving $C=-\\tfrac12$ and $y\\sin x=\\tfrac12(\\sin^{2}x-1)=-\\tfrac12\\cos^{2}x$. Hence $y=-\\dfrac{\\cos^{2}x}{2\\sin x}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Find the integrating factor $\\sin x$.",
+    "Integrate both sides.",
+    "Apply the condition $y(\\pi/2)=0$ to fix the constant."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
+}

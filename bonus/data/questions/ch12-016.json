@@ -1,0 +1,29 @@
+{
+  "id": "ch12-016",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2009,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "logarithms",
+    "change of base",
+    "reciprocal identity"
+  ],
+  "methods": [
+    "chain of logarithms",
+    "reciprocal relation of logs"
+  ],
+  "statement": "Given that $\\log_{2}3=a$ and $\\log_{3}5=b$, express $\\log_{5}2$ in terms of $a$ and $b$.",
+  "solution": "By the change-of-base formula, $\\log_{2}5=\\log_{2}3\\cdot\\log_{3}5=ab$. Therefore $\\log_{5}2=\\dfrac{1}{\\log_{2}5}=\\dfrac{1}{ab}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write $\\log_{2}5$ using $\\log_{2}3$ and $\\log_{3}5$.",
+    "Use the reciprocal relation $\\log_{5}2=1/\\log_{2}5$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

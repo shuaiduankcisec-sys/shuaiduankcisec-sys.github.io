@@ -1,0 +1,31 @@
+{
+  "id": "ch09-016",
+  "chapter": 9,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2007,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "circles",
+    "common chord",
+    "family of circles"
+  ],
+  "methods": [
+    "subtracting circle equations",
+    "finding intersection points",
+    "centre on a given line"
+  ],
+  "statement": "The circles $C_{1}:x^{2}+y^{2}+2x-4y=0$ and $C_{2}:x^{2}+y^{2}-6x+2y=0$ intersect at $O$ and $A$. Find the equation of the circle, passing through $O$ and $A$, whose centre lies on the line $x+y=0$.",
+  "solution": "Subtracting the two equations gives the common chord $4x-3y=0$. With $y=\\tfrac43x$, substituting into $C_{1}$ yields $x=0$ (point $O$) or $x=\\tfrac65$, giving $A=(\\tfrac65,\\tfrac85)$. A circle through $O$ and $A$ with centre $(h,-h)$ satisfies $(h-\\tfrac65)^{2}+(-h-\\tfrac85)^{2}=2h^{2}$ (equating distances to $O$ and $A$), which gives $h=-5$. The centre is $(-5,5)$ and radius ${}^{2}=50$, so the circle is $(x+5)^{2}+(y-5)^{2}=50$, i.e. $x^{2}+y^{2}+10x-10y=0$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Find the common chord by subtracting the two circle equations.",
+    "Locate the two intersection points.",
+    "Use a centre on $x+y=0$ and equal distances to both points."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

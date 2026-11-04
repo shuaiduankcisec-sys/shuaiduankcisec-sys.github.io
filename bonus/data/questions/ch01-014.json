@@ -1,0 +1,31 @@
+{
+  "id": "ch01-014",
+  "chapter": 1,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "surds",
+    "symmetric sums",
+    "binomial identity"
+  ],
+  "methods": [
+    "expanding conjugates",
+    "using ab=1",
+    "symmetric power identity"
+  ],
+  "statement": "Let $a=\\sqrt{2}+1$ and $b=\\sqrt{2}-1$. Show that $a^{2}+b^{2}=6$ and that $a^{3}+b^{3}=10\\sqrt{2}$. Hence find the value of $(\\sqrt{2}+1)^{6}+(\\sqrt{2}-1)^{6}$.",
+  "solution": "We have $a^{2}=(\\sqrt{2}+1)^{2}=3+2\\sqrt{2}$ and $b^{2}=(\\sqrt{2}-1)^{2}=3-2\\sqrt{2}$, so $a^{2}+b^{2}=6$. Also $a^{3}=(3+2\\sqrt{2})(\\sqrt{2}+1)=7+5\\sqrt{2}$ and $b^{3}=7-5\\sqrt{2}$, giving $a^{3}+b^{3}=10\\sqrt{2}$. For the final sum, use $(a^{3}+b^{3})^{2}=a^{6}+b^{6}+2a^{3}b^{3}=a^{6}+b^{6}+2(ab)^{3}$. Since $ab=(\\sqrt{2}+1)(\\sqrt{2}-1)=1$, we obtain $a^{6}+b^{6}=(10\\sqrt{2})^{2}-2=200-2=198$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand $a^{2}$ and $b^{2}$ directly.",
+    "Find $a^{3}+b^{3}$ and note that $ab=1$.",
+    "Use $(a^{3}+b^{3})^{2}=a^{6}+b^{6}+2(ab)^{3}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

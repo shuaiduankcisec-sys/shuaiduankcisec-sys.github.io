@@ -1,0 +1,31 @@
+{
+  "id": "A2-01-012",
+  "chapter": "A2-01",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "functions",
+    "range",
+    "stationary points"
+  ],
+  "methods": [
+    "quotient rule",
+    "solving f'(x)=0",
+    "limiting behaviour"
+  ],
+  "statement": "Let $f(x)=\\dfrac{2x}{x^{2}+1}$. Find the range of $f$ and the coordinates of its stationary points.",
+  "solution": "$f'(x)=\\dfrac{2(1-x^{2})}{(x^{2}+1)^{2}}$, which vanishes at $x=\\pm1$. We have $f(1)=1$ and $f(-1)=-1$. As $x\\to\\pm\\infty$, $f(x)\\to0$, so $f$ increases to a maximum of $1$ at $x=1$ and decreases to a minimum of $-1$ at $x=-1$; the range is $[-1,1]$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Differentiate using the quotient rule.",
+    "Solve $f'(x)=0$.",
+    "Examine the limiting behaviour as $x\to\\pm\\infty$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

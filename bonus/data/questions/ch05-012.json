@@ -1,0 +1,31 @@
+{
+  "id": "ch05-012",
+  "chapter": 5,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "coordinate geometry",
+    "circles",
+    "simultaneous equations"
+  ],
+  "methods": [
+    "general equation of a circle",
+    "solving three linear equations",
+    "finding centre and radius"
+  ],
+  "statement": "Find the equation of the circle which passes through the three points $(1,1)$, $(2,3)$ and $(4,2)$.",
+  "solution": "Let the circle be $x^{2}+y^{2}+2gx+2fy+c=0$. Substituting the three points gives $2g+2f+c=-2$, $4g+6f+c=-13$ and $8g+4f+c=-20$. Solving yields $g=-\\tfrac52$, $f=-\\tfrac32$, $c=6$, so the circle is $x^{2}+y^{2}-5x-3y+6=0$ (centre $(\\tfrac52,\\tfrac32)$, radius $\\tfrac{\\sqrt{10}}{2}$).",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the general circle equation with three unknowns.",
+    "Set up and solve three linear equations.",
+    "Write the final equation in standard form."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

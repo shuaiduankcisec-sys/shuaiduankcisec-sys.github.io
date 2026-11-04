@@ -1,0 +1,31 @@
+{
+  "id": "ch09-017",
+  "chapter": 9,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "circles",
+    "tangents",
+    "coordinate geometry"
+  ],
+  "methods": [
+    "general equation of a circle",
+    "centre and radius",
+    "perpendicular radius and tangent"
+  ],
+  "statement": "The points $A(-2,0)$, $B(2,0)$ and $C(0,3)$ lie on a circle. Find the equation of the circle and the equation of the tangent at $C$.",
+  "solution": "Let the circle be $x^{2}+y^{2}+2gx+2fy+c=0$. From $A$ and $B$: $4-4g+c=0$ and $4+4g+c=0$, giving $g=0$ and $c=-4$. From $C$: $9+6f-4=0$ gives $f=-\\tfrac56$. The circle is $x^{2}+y^{2}-\\tfrac53y-4=0$, centre $(0,\\tfrac56)$ and radius $\\tfrac{13}{6}$. The radius to $C$ is vertical, so the tangent at $C$ is horizontal: $y=3$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the general circle equation and the three points.",
+    "Find the centre and radius.",
+    "The tangent at $C$ is perpendicular to the radius $OC$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ch03-012",
+  "chapter": 3,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1999,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "factorisation",
+    "complex roots",
+    "difference of squares"
+  ],
+  "methods": [
+    "Sophie Germain factorisation",
+    "solving quadratics",
+    "complex numbers"
+  ],
+  "statement": "Show that $x^{4}+4$ factorises as $(x^{2}+2x+2)(x^{2}-2x+2)$, and hence find the four complex roots of the equation $x^{4}+4=0$.",
+  "solution": "Using the difference of two squares, $(x^{2}+2)^{2}-(2x)^{2}=(x^{2}+2x+2)(x^{2}-2x+2)=x^{4}+4$. Setting this to zero gives $x^{2}+2x+2=0$ or $x^{2}-2x+2=0$, whose roots are $x=-1\\pm i$ and $x=1\\pm i$ respectively.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write $x^{4}+4$ as $(x^{2}+2)^{2}-(2x)^{2}$.",
+    "Solve each quadratic factor.",
+    "The roots are $\\pm1\\pm i$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

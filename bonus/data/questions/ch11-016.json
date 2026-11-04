@@ -1,0 +1,31 @@
+{
+  "id": "ch11-016",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "trigonometry",
+    "tan and cot",
+    "double angle"
+  ],
+  "methods": [
+    "combining tan+cot",
+    "sin 2theta identity",
+    "solving sin 2theta=1/2"
+  ],
+  "statement": "Solve the equation $\\tan\\theta+\\cot\\theta=4$ for $0<\\theta<\\tfrac{\\pi}{2}$.",
+  "solution": "Since $\\tan\\theta+\\cot\\theta=\\dfrac{\\sin\\theta}{\\cos\\theta}+\\dfrac{\\cos\\theta}{\\sin\\theta}=\\dfrac{1}{\\sin\\theta\\cos\\theta}=\\dfrac{2}{\\sin2\\theta}$, the equation becomes $\\dfrac{2}{\\sin2\\theta}=4$, so $\\sin2\\theta=\\tfrac12$. In $(0,\\pi)$ this gives $2\\theta=\\tfrac{\\pi}{6},\\tfrac{5\\pi}{6}$, hence $\\theta=\\tfrac{\\pi}{12},\\tfrac{5\\pi}{12}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Combine $\tan\theta+\\cot\theta$ over a common denominator.",
+    "Use $\\sin2\theta=2\\sin\theta\\cos\theta$.",
+    "Solve $\\sin2\theta=\tfrac12$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

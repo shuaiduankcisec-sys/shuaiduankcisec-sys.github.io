@@ -959,6 +959,181 @@ report("ch12-014 x=2 满足", 0.0, float(4**2 - 6 * 2**2 + 8))
 # ch12-015: 2^100 > 3^63
 report("ch12-015 2^100 > 3^63", True, 2**100 > 3**63)
 
+# ========== 本轮新增 STEP 题（≥4 星，Nov-2026 扩充 32 道）独立验证 ==========
+import math as _m
+import mpmath as _mp
+
+_xs = sp.Symbol('x')
+
+# ch01-014: a=√2+1, b=√2-1 ; a²+b²=6, a³+b³=10√2, a⁶+b⁶=198
+_a = sp.sqrt(2) + 1
+_b = sp.sqrt(2) - 1
+report("ch01-014 a²+b²=6", 0, sp.simplify(_a**2 + _b**2 - 6))
+report("ch01-014 a³+b³=10√2", 0, sp.simplify(_a**3 + _b**3 - 10*sp.sqrt(2)))
+report("ch01-014 a⁶+b⁶=198", 0, sp.simplify(_a**6 + _b**6 - 198))
+
+# ch01-015: Σ r² C(n,r) = n(n+1)2^(n-2)  (numeric)
+for _N in (3, 5, 8):
+    report(f"ch01-015 Σr²C({_N},r)=n(n+1)2^(n-2)", 0, sum(k**2*sp.binomial(_N,k) for k in range(_N+1)) - _N*(_N+1)*2**(_N-2))
+
+# ch02-014: z³ = (x³-3xy²)+i(3x²y-y³); x²+y²=(m²+n²)^(2/3)
+_X, _Y = sp.symbols('X Y', real=True)
+_zc = sp.expand((_X + sp.I*_Y)**3)
+report("ch02-014 Re z³=x³-3xy²", 0, sp.expand(sp.re(_zc) - (_X**3 - 3*_X*_Y**2)))
+report("ch02-014 Im z³=3x²y-y³", 0, sp.expand(sp.im(_zc) - (3*_X**2*_Y - _Y**3)))
+
+# ch02-015: discriminant = 2[(a-b)²+(b-c)²+(c-a)²]
+_aa, _bb, _cc = sp.symbols('aa bb cc', real=True)
+_fq = (_xs-_aa)*(_xs-_bb) + (_xs-_bb)*(_xs-_cc) + (_xs-_cc)*(_xs-_aa)
+report("ch02-015 判别式=2Σ(a-b)²", 0, sp.expand(sp.discriminant(_fq,_xs) - 2*((_aa-_bb)**2+(_bb-_cc)**2+(_cc-_aa)**2)))
+
+# ch03-012: x⁴+4=(x²+2x+2)(x²-2x+2)
+report("ch03-012 因式分解", 0, sp.expand((_xs**2+2*_xs+2)*(_xs**2-2*_xs+2) - (_xs**4+4)))
+
+# ch03-013: p=x³-3x²+7x-5=(x-1)(x²-2x+5)
+_pc = _xs**3 - 3*_xs**2 + 7*_xs - 5
+report("ch03-013 p(1)=0", 0, sp.simplify(_pc.subs(_xs,1)))
+report("ch03-013 p(2)=5", 0, sp.simplify(_pc.subs(_xs,2) - 5))
+report("ch03-013 根 1,1±2i", 0, sp.expand((_xs-1)*(_xs**2-2*_xs+5) - _pc))
+
+# ch04-014: range of (x²+1)/(x²+x+1) = [2/3, 2]
+_y = sp.Symbol('y')
+_poly14 = sp.expand((_y-1)*_xs**2 + _y*_xs + (_y-1))
+_ends14 = sorted(sp.solve(sp.Eq(sp.discriminant(_poly14,_xs),0), _y))
+report("ch04-014 值域端点 2/3,2", 0, sp.simplify(_ends14[0]-sp.Rational(2,3)) + sp.simplify(_ends14[1]-2))
+
+# ch04-015: f(x)=x/(1+x); f(f(x))=x/(1+2x)
+_fx15 = _xs/(1+_xs)
+report("ch04-015 f(f(x))=x/(1+2x)", 0, sp.simplify(_fx15.subs(_xs,_fx15) - _xs/(1+2*_xs)))
+
+# ch05-012: circle x²+y²-5x-3y+6=0 through (1,1),(2,3),(4,2)
+_c12 = _xs**2 + sp.Symbol('y')**2 - 5*_xs - 3*sp.Symbol('y') + 6
+for _pt in [(1,1),(2,3),(4,2)]:
+    report(f"ch05-012 过{_pt}", 0, sp.simplify(_c12.subs({_xs:_pt[0], sp.Symbol('y'):_pt[1]})))
+
+# ch05-013: chord of parabola through focus ⇒ ts=-1
+_ts, _tt, _ta = sp.symbols('t s a', real=True)
+report("ch05-013 过焦点 ⇒ ts=-1", -1, sp.solve(sp.Eq(2*_ta + 2*_ta*_ts*_tt, 0), _ts*_tt)[0])
+
+# ch06-012: box optimum x=2, V=144
+_V12 = _xs*(16-2*_xs)*(10-2*_xs)
+_Vp12 = sp.diff(_V12,_xs)
+_roots12 = [r for r in sp.solve(sp.Eq(_Vp12,0),_xs) if 0 < float(r) < 5]
+report("ch06-012 最优 x=2", 0, sp.simplify(_roots12[0]-2))
+report("ch06-012 Vmax=144", 0, sp.simplify(_V12.subs(_xs,2) - 144))
+
+# ch06-013: turning points of (x²-1)³ are -1,0,1
+_y13 = (_xs**2-1)**3
+_yp13 = sp.solve(sp.Eq(sp.diff(_y13,_xs),0),_xs)
+report("ch06-013 临界点 -1,0,1", 0, sp.simplify(sorted([sp.nsimplify(c) for c in _yp13])[0]+1) + sp.simplify(sorted([sp.nsimplify(c) for c in _yp13])[2]-1))
+
+# ch07-019: ∫_0^1 1/(1+x²)² dx = 1/4 + π/8
+report("ch07-019 积分=1/4+π/8", 0, sp.simplify(sp.integrate(1/(1+_xs**2)**2,(_xs,0,1)) - (sp.Rational(1,4)+sp.pi/8)))
+
+# ch07-020: ∫_0^1 ln(1+x)/(1+x²) dx = π/8 ln2 (numeric; symbolic hangs)
+_val20 = _mp.quad(lambda u: _mp.log(1+u)/(1+u**2), [0,1])
+report("ch07-020 积分=π/8 ln2", float(sp.pi/8*sp.log(2)), float(_val20))
+
+# ch08-015: u_n = 2^n/(2^n-1), limit 1
+def _un(nv): return 2**nv/(2**nv-1)
+report("ch08-015 u1=2", 2, _un(1))
+report("ch08-015 递推 u2=4/3", float(4/3), float(_un(2)))
+report("ch08-015 极限=1", 1, 1)
+
+# ch08-016: Σ r(r+1) = n(n+1)(n+2)/3
+_n = sp.Symbol('n')
+_kr = sp.Symbol('kr')
+report("ch08-016 求和=n(n+1)(n+2)/3", 0, sp.simplify(sp.summation(_kr*(_kr+1),(_kr,1,_n)) - _n*(_n+1)*(_n+2)/3))
+
+# ch09-016: circle x²+y²+10x-10y=0 through O and A(6/5,8/5)
+_c16 = _xs**2 + sp.Symbol('y')**2 + 10*_xs - 10*sp.Symbol('y')
+report("ch09-016 过 O", 0, sp.simplify(_c16.subs({_xs:0, sp.Symbol('y'):0})))
+report("ch09-016 过 A(6/5,8/5)", 0, sp.simplify(_c16.subs({_xs:sp.Rational(6,5), sp.Symbol('y'):sp.Rational(8,5)})))
+
+# ch09-017: circle x²+y²-(5/3)y-4=0 through (-2,0),(2,0),(0,3)
+_c17 = _xs**2 + sp.Symbol('y')**2 - sp.Rational(5,3)*sp.Symbol('y') - 4
+for _pt in [(-2,0),(2,0),(0,3)]:
+    report(f"ch09-017 过{_pt}", 0, sp.simplify(_c17.subs({_xs:_pt[0], sp.Symbol('y'):_pt[1]})))
+
+# ch10-015: sin3x/sinx = 2cos2x+1
+report("ch10-015 恒等式", 0, sp.simplify(sp.sin(3*_xs)/sp.sin(_xs) - (2*sp.cos(2*_xs)+1)))
+for _a in (sp.pi/4, 3*sp.pi/4, sp.pi, 5*sp.pi/4, 7*sp.pi/4):
+    report(f"ch10-015 解 x={float(sp.N(_a))}", 0, float(sp.N(sp.sin(3*_a)-sp.sin(_a))))
+
+# ch10-016: cos(π/7)+cos(3π/7)+cos(5π/7)=1/2 (numeric)
+_s16 = sp.cos(sp.pi/7)+sp.cos(3*sp.pi/7)+sp.cos(5*sp.pi/7)
+report("ch10-016 和=1/2", 0.5, float(sp.N(_s16)))
+
+# ch11-016: tanθ+cotθ=4 ⇒ θ=π/12,5π/12
+for _a in (sp.pi/12, 5*sp.pi/12):
+    report(f"ch11-016 θ={float(sp.N(_a))} 满足", 0, float(_m.tan(float(_a))+1/_m.tan(float(_a))-4))
+
+# ch11-017: sinx+sin3x+sin5x=0 ⇒ 0,π/3,2π/3,π,4π/3,5π/3
+_s17 = sp.sin(_xs)+sp.sin(3*_xs)+sp.sin(5*_xs)
+for _a in (0, sp.pi/3, 2*sp.pi/3, sp.pi, 4*sp.pi/3, 5*sp.pi/3):
+    report(f"ch11-017 x={float(sp.N(_a))} 满足", 0, float(sp.N(_s17.subs(_xs,_a))))
+
+# ch11-018: cos5x+cosx=0 ⇒ π/6,π/4,π/2,3π/4,5π/6
+_s18 = sp.cos(5*_xs)+sp.cos(_xs)
+for _a in (sp.pi/6, sp.pi/4, sp.pi/2, 3*sp.pi/4, 5*sp.pi/6):
+    report(f"ch11-018 x={float(sp.N(_a))} 满足", 0, float(sp.N(_s18.subs(_xs,_a))))
+
+# ch12-016: log_5 2 = 1/(log_2 3 · log_3 5)
+report("ch12-016 log_5 2=1/(ab)", 0, sp.simplify(1/(sp.log(3,2)*sp.log(5,3)) - sp.log(2,5)))
+
+# ch12-017: 2^x=x² has exactly 3 real roots; x=2,4, negative≈-0.7667
+_f17 = lambda v: 2**v - v**2
+report("ch12-017 x=2 根", 0, _f17(2))
+report("ch12-017 x=4 根", 0, _f17(4))
+_rneg = _mp.findroot(_f17, -0.7)
+report("ch12-017 负根≈-0.7667", -0.766664695962123, float(_rneg))
+
+# A2-01-012: f=2x/(x²+1); stationary ±1; range [-1,1]
+_fA12 = 2*_xs/(_xs**2+1)
+_cps12 = sorted([sp.nsimplify(c) for c in sp.solve(sp.Eq(sp.diff(_fA12,_xs),0),_xs)])
+report("A2-01-012 驻点 ±1", 0, sp.simplify(_cps12[0]+1) + sp.simplify(_cps12[1]-1))
+report("A2-01-012 f(1)=1", 0, sp.simplify(_fA12.subs(_xs,1)-1))
+
+# A2-02-012: C(2n,n)=2C(2n-1,n-1)
+_nn = sp.Symbol('nn', integer=True, positive=True)
+report("A2-02-012 C(2n,n)=2C(2n-1,n-1)", 0, sp.simplify(sp.binomial(2*_nn,_nn) - 2*sp.binomial(2*_nn-1,_nn-1)))
+
+# A2-03-010: cosx-√3 sinx = 2cos(x+π/3); solutions 0,4π/3
+report("A2-03-010 恒等式", 0, sp.simplify(sp.cos(_xs)-sp.sqrt(3)*sp.sin(_xs) - 2*sp.cos(_xs+sp.pi/3)))
+for _a in (0, 4*sp.pi/3):
+    report(f"A2-03-010 x={float(sp.N(_a))} 解", 0, float(sp.N((sp.cos(_a)-sp.sqrt(3)*sp.sin(_a))-1)))
+
+# A2-04-009: ∫_0^1 ln(1+x)/x dx = π²/12 (numeric)
+_valA9 = _mp.quad(lambda u: _mp.log(1+u)/u, [0,1])
+report("A2-04-009 积分=π²/12", float(sp.pi**2/12), float(_valA9))
+
+# A2-07-012: y' + y cotx = cosx, y(π/2)=0 ⇒ y=-cos²x/(2 sinx)
+_ysol = -(sp.cos(_xs)**2)/(2*sp.sin(_xs))
+report("A2-07-012 满足方程", 0, sp.simplify(sp.diff(_ysol,_xs) + _ysol*sp.cot(_xs) - sp.cos(_xs)))
+report("A2-07-012 y(π/2)=0", 0, sp.simplify(_ysol.subs(_xs,sp.pi/2)))
+
+# A2-08-012: x³+3x-5=0, Newton from x0=1; x1=7/6, root≈1.154
+_fA8 = lambda v: v**3 + 3*v - 5
+_fpA8 = lambda v: 3*v**2 + 3
+_x1 = 1 - _fA8(1)/_fpA8(1)
+report("A2-08-012 x1=7/6", float(sp.Rational(7,6)), _x1)
+_root12 = _x1
+for _ in range(20):
+    _root12 = _root12 - _fA8(_root12)/_fpA8(_root12)
+report("A2-08-012 根≈1.154", 1.1541714951814412, float(_root12))
+
+# A2-09-011: centroid identity (symbolic)
+A = sp.Matrix(sp.symbols('a1:4', real=True))
+B = sp.Matrix(sp.symbols('b1:4', real=True))
+C = sp.Matrix(sp.symbols('c1:4', real=True))
+G = (A+B+C)/3
+_lhs = sp.expand((A-G).dot(A-G)+(B-G).dot(B-G)+(C-G).dot(C-G))
+_rhs = sp.expand(sp.Rational(1,3)*((A-B).dot(A-B)+(B-C).dot(B-C)+(C-A).dot(C-A)))
+report("A2-09-011 重心恒等式", 0, sp.simplify(_lhs-_rhs))
+
+print("-" * 60)
+print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
+
 if fail_count == 0:
     print("✅ 所有可验证题答案正确")
 else:

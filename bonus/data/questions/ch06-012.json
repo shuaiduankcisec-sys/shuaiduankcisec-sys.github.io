@@ -1,0 +1,31 @@
+{
+  "id": "ch06-012",
+  "chapter": 6,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2002,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "optimisation",
+    "differentiation",
+    "volume"
+  ],
+  "methods": [
+    "modelling the box volume",
+    "differentiation",
+    "rejecting inadmissible roots"
+  ],
+  "statement": "A rectangular sheet of metal $16$ cm by $10$ cm has a square of side $x$ cm cut from each corner. The sides are then folded up to make an open box. Find the value of $x$ that gives the box of maximum volume, and find this maximum volume.",
+  "solution": "The box has volume $V=x(16-2x)(10-2x)=4x^{3}-52x^{2}+160x$. Then $V'=12x^{2}-104x+160=4(x-2)(3x-20)$. The only critical point with $0<x<5$ is $x=2$, and $V''<0$ there, so it gives the maximum volume $V=2\\times12\\times6=144$ cm$^{3}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Express the volume as a function of $x$.",
+    "Differentiate and solve $V'=0$.",
+    "Reject the inadmissible root and compute the volume."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

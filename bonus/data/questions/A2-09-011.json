@@ -1,0 +1,31 @@
+{
+  "id": "A2-09-011",
+  "chapter": "A2-09",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "vectors",
+    "centroid",
+    "dot product identities"
+  ],
+  "methods": [
+    "squared distances from centroid",
+    "expanding position vectors",
+    "comparing both sides"
+  ],
+  "statement": "Let $A,B,C$ be points with position vectors $\\mathbf{a},\\mathbf{b},\\mathbf{c}$, and let $G$ be the centroid of triangle $ABC$ so that $\\mathbf{g}=\\tfrac13(\\mathbf{a}+\\mathbf{b}+\\mathbf{c})$. Show that $GA^{2}+GB^{2}+GC^{2}=\\tfrac13(AB^{2}+BC^{2}+CA^{2})$.",
+  "solution": "$GA^{2}+GB^{2}+GC^{2}=|\\mathbf{a}-\\mathbf{g}|^{2}+|\\mathbf{b}-\\mathbf{g}|^{2}+|\\mathbf{c}-\\mathbf{g}|^{2}$. Since $\\mathbf{g}=\\tfrac13(\\mathbf{a}+\\mathbf{b}+\\mathbf{c})$, expanding gives $\\tfrac13(|\\mathbf{a}|^{2}+|\\mathbf{b}|^{2}+|\\mathbf{c}|^{2})-\\tfrac23(\\mathbf{a}\\cdot\\mathbf{b}+\\mathbf{b}\\cdot\\mathbf{c}+\\mathbf{c}\\cdot\\mathbf{a})$. Meanwhile $AB^{2}+BC^{2}+CA^{2}=2(|\\mathbf{a}|^{2}+|\\mathbf{b}|^{2}+|\\mathbf{c}|^{2})-2(\\mathbf{a}\\cdot\\mathbf{b}+\\mathbf{b}\\cdot\\mathbf{c}+\\mathbf{c}\\cdot\\mathbf{a})$. Dividing this by $3$ gives exactly the expression above, so the identity holds.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write each squared distance from the centroid.",
+    "Expand using $\\mathbf{g}=\tfrac13(\\mathbf{a}+\\mathbf{b}+\\mathbf{c})$.",
+    "Compare with the expanded form of $AB^{2}+BC^{2}+CA^{2}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ch02-014",
+  "chapter": 2,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2002,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "complex numbers",
+    "modulus",
+    "algebraic identities"
+  ],
+  "methods": [
+    "expanding (x+iy)^3",
+    "taking moduli",
+    "relating |z|^2 to x^2+y^2"
+  ],
+  "statement": "The real numbers $x$ and $y$ satisfy $x^{3}-3xy^{2}=m$ and $3x^{2}y-y^{3}=n$. By considering the complex number $z=x+iy$, show that $z^{3}=m+in$, and deduce that $x^{2}+y^{2}=(m^{2}+n^{2})^{2/3}$.",
+  "solution": "We have $z^{3}=(x+iy)^{3}=x^{3}+3ix^{2}y-3xy^{2}-iy^{3}=(x^{3}-3xy^{2})+i(3x^{2}y-y^{3})=m+in$. Taking moduli, $|z|^{3}=|z^{3}|=|m+in|=\\sqrt{m^{2}+n^{2}}$. Since $|z|^{2}=x^{2}+y^{2}$, we have $(x^{2}+y^{2})^{3/2}=\\sqrt{m^{2}+n^{2}}$, so $x^{2}+y^{2}=(m^{2}+n^{2})^{2/3}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand $(x+iy)^{3}$ and compare real and imaginary parts.",
+    "Take moduli on both sides.",
+    "Relate $|z|^{2}$ to $x^{2}+y^{2}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]"
+}

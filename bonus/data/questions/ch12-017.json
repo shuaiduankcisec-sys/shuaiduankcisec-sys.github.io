@@ -1,0 +1,31 @@
+{
+  "id": "ch12-017",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2007,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "exponentials",
+    "graphical analysis",
+    "real roots"
+  ],
+  "methods": [
+    "spotting obvious roots",
+    "monotonicity for x<0",
+    "limiting behaviour"
+  ],
+  "statement": "Show that the equation $2^{x}=x^{2}$ has exactly three real roots, and find two of them exactly.",
+  "solution": "Let $f(x)=2^{x}-x^{2}$. We have $f(2)=0$ and $f(4)=0$, so $x=2$ and $x=4$ are roots. For negative $x$, $f(-1)=\\tfrac12-1<0$ and $f(0)=1>0$, so there is a root in $(-1,0)$ (numerically $x\\approx-0.7667$). To see there are exactly three, note $f'(x)=2^{x}\\ln2-2x$. On $x<0$, $2^{x}\\ln2>0$ and $-2x>0$, so $f'(x)>0$: $f$ is strictly increasing and has exactly one negative root. On $x>0$, $f(x)\\to+\\infty$ as $x\\to\\infty$ and $f$ has at most two more stationary points, giving exactly the two positive roots $2$ and $4$. Thus there are exactly three real roots: $-0.7667\\ldots,\\;2,\\;4$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Spot the obvious positive roots $x=2$ and $x=4$.",
+    "Show $f$ is strictly increasing for $x<0$ to get exactly one negative root.",
+    "Argue there can be no further positive roots."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
+}
