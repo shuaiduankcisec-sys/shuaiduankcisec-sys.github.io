@@ -763,6 +763,27 @@
     "preview": "Which of these triangles has the largest area? (a) an isosceles triangle with side lengths $10,10,1$; (b) an isosceles triangle with side…"
   },
   {
+    "id": "ch10-004",
+    "chapter": 10,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1991,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "trigonometry",
+      "trigonometric identities",
+      "special angles"
+    ],
+    "methods": [
+      "complementary angle identities",
+      "deriving a polynomial for a special sine"
+    ],
+    "solutionStatus": "full",
+    "preview": "If $\\theta+\\phi+\\psi=\\tfrac12\\pi$, show that $ \\sin^2\\theta+\\sin^2\\phi+\\sin^2\\psi+2\\sin\\theta\\sin\\phi\\sin\\psi=1.$  By taking…"
+  },
+  {
     "id": "ch11-001",
     "chapter": 11,
     "title": "",
@@ -927,6 +948,28 @@
     ],
     "solutionStatus": "full",
     "preview": "Sketch the curve $y^2=1-|x|$. A rectangle, with sides parallel to the axes, is inscribed within this curve. Show that the largest possible…"
+  },
+  {
+    "id": "A2-01-003",
+    "chapter": "A2-01",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1998,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "functions",
+      "logarithms",
+      "inequalities"
+    ],
+    "methods": [
+      "laws of logarithms",
+      "AM-GM inequality",
+      "counterexamples"
+    ],
+    "solutionStatus": "full",
+    "preview": "Which of the following statements are true and which are false? Justify your answers. (i) $a^{\\ln b}=b^{\\ln a}$ for all $a,b>0$. (ii)…"
   },
   {
     "id": "A2-02-001",

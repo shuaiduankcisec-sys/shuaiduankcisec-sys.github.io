@@ -566,6 +566,25 @@ target_9 = sp.expand((3*mu9-4*lam9-5)**2 + (lam9-1)**2 + 36)
 report("A2-09-003 D²表达式", sp.simplify(D2_9 - target_9), 0)
 report("A2-09-003 最小距离=6", 36 - 36, 0)
 
+# ---------- A2-01-003 真假判断 ----------
+# (i) a^ln b = b^ln a（真）
+aa9, bb9 = sp.symbols('a9 b9', positive=True)
+report("A2-01-003 a^lnb=b^lna", sp.simplify(sp.log(aa9**sp.log(bb9)) - sp.log(bb9**sp.log(aa9))), 0)
+# (iv) x⁴+3+x⁻⁴≥5（真）
+xx10 = sp.symbols('xx10', positive=True)
+report("A2-01-003 x⁴+3+x⁻⁴≥5", sp.simplify(xx10**4 + 3 + xx10**-4 - 5).subs(xx10, 1), 0)
+
+# ---------- ch10-004 三角恒等式 + sin(π/10) ----------
+# 恒等式 = 1
+th10, ph10 = sp.symbols('th10 ph10')
+psi10 = sp.pi/2 - th10 - ph10
+lhs10 = sp.sin(th10)**2 + sp.sin(ph10)**2 + sp.sin(psi10)**2 + 2*sp.sin(th10)*sp.sin(ph10)*sp.sin(psi10)
+report("ch10-004 恒等式=1", sp.trigsimp(lhs10 - 1), 0)
+# sin(π/10) 是 8x³+8x²-1=0 的根
+xx11 = sp.symbols('xx11')
+x0_val = (sp.sqrt(5)-1)/4
+report("ch10-004 8x³+8x²-1=0 根", sp.simplify(8*x0_val**3 + 8*x0_val**2 - 1), 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:
