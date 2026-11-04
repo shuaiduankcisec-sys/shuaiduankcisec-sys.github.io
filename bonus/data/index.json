@@ -66,6 +66,27 @@
     "preview": "It is given that $f(x)=x^2-6x$. The curves $y=f(kx)$ and $y=f(x-c)$ have the same minimum point, where $k>0$ and $c>0$. Which of the…"
   },
   {
+    "id": "ch05-001",
+    "chapter": 5,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "coordinate geometry",
+      "perpendicular lines",
+      "right-angled triangles"
+    ],
+    "methods": [
+      "dot product / perpendicular gradients",
+      "distance in coordinates"
+    ],
+    "solutionStatus": "full",
+    "preview": "A right-angled triangle has vertices at $(2,3)$, $(9,-1)$ and $(5,k)$. Find the sum of all the possible values of $k$."
+  },
+  {
     "id": "ch07-003",
     "chapter": 7,
     "title": "",
@@ -126,6 +147,48 @@
     ],
     "solutionStatus": "full",
     "preview": "In the simplified expansion of $(2+3x)^{12}$, how many of the terms have a coefficient that is divisible by $12$?"
+  },
+  {
+    "id": "ch09-001",
+    "chapter": 9,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "coordinate geometry",
+      "circles",
+      "distance between points"
+    ],
+    "methods": [
+      "distance formula",
+      "circle geometry"
+    ],
+    "solutionStatus": "full",
+    "preview": "Point $P$ lies on the circle with equation $(x-2)^2+(y-1)^2=16$. Point $Q$ lies on the circle with equation $(x-4)^2+(y+5)^2=16$. What is…"
+  },
+  {
+    "id": "ch09-002",
+    "chapter": 9,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "coordinate geometry",
+      "circles",
+      "series"
+    ],
+    "methods": [
+      "completing the square for circles",
+      "sum of a series"
+    ],
+    "solutionStatus": "full",
+    "preview": "A circle $C_n$ is defined by $ x^2+y^2=2n(x+y),$  where $n$ is a positive integer. $C_1$ and $C_2$ are drawn and the area between them is…"
   },
   {
     "id": "ch10-001",
@@ -386,5 +449,26 @@
     ],
     "solutionStatus": "full",
     "preview": "Let $y=f(x)$, ($0\\le x\\le a$), be a continuous curve lying in the first quadrant and passing through the origin. Suppose that, for each…"
+  },
+  {
+    "id": "A2-07-001",
+    "chapter": "A2-07",
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "differential equations",
+      "absolute value",
+      "integration"
+    ],
+    "methods": [
+      "integrating piecewise",
+      "handling absolute values"
+    ],
+    "solutionStatus": "full",
+    "preview": "The solution to the differential equation $ \\frac{dy}{dx}=|-6x|\\quad\\text{for all }x$  is $y=f(x)+c$, where $c$ is a constant. Which one of…"
   }
 ]

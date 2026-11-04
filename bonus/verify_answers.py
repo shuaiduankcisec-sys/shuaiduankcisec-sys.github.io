@@ -134,6 +134,31 @@ for k in range(3):
         sol_set.add(round(th3/3, 6))
 report("ch11-001 解个数", len(sol_set), 5)
 
+# ---------- ch09-001 两圆最大距离 ----------
+import math
+d_centres = math.sqrt((4-2)**2 + (-5-1)**2)
+report("ch09-001 圆心距 2√10", sp.simplify(d_centres - 2*math.sqrt(10)), 0)
+report("ch09-001 最大距离 8+2√10", sp.simplify(d_centres + 8 - (8 + 2*math.sqrt(10))), 0)
+
+# ---------- ch05-001 直角三角形 k 之和 ----------
+kk = sp.symbols('kk')
+vals = []
+vals += sp.solve(sp.Eq(7*3 + (-4)*(kk-3), 0), kk)          # 直角在 (2,3)
+vals += sp.solve(sp.Eq((-7)*(-4) + 4*(kk+1), 0), kk)        # 直角在 (9,-1)
+vals += sp.solve(sp.Eq((-3)*4 + (3-kk)*(-1-kk), 0), kk)      # 直角在 (5,k)
+report("ch05-001 k 值之和 2.25", sp.simplify(sum(vals) - sp.Rational(9,4)), 0)
+
+# ---------- ch09-002 圆面积累加 10100π ----------
+total_area = 2*sum(4*k-1 for k in range(1, 51))
+report("ch09-002 总阴影面积 10100π", sp.simplify(total_area - 10100), 0)
+
+# ---------- A2-07-001 微分方程 f(x)=3x|x| ----------
+xx = sp.symbols('xx', real=True)
+# 验证 3x|x| 的导数是 6|x|
+fx = 3*xx*sp.Abs(xx)
+deriv = sp.simplify(sp.diff(fx, xx))
+report("A2-07-001 d/dx(3x|x|) = 6|x|", sp.simplify(deriv - 6*sp.Abs(xx)), 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

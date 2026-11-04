@@ -1,0 +1,31 @@
+{
+  "id": "A2-07-001",
+  "chapter": "A2-07",
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2023,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144109/TMUA-2023-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 3,
+  "topics": ["differential equations", "absolute value", "integration"],
+  "methods": ["integrating piecewise", "handling absolute values"],
+  "statement": "The solution to the differential equation\n$$\\frac{dy}{dx}=|-6x|\\quad\\text{for all }x$$\nis $y=f(x)+c$, where $c$ is a constant.\n\nWhich one of the following is a correct expression for $f(x)$?",
+  "options": [
+    "$-\\dfrac{6x}{|x|}$",
+    "$\\dfrac{6x}{|x|}$",
+    "$-3x|x|$",
+    "$3x|x|$",
+    "$-3x^2$",
+    "$3x^2$"
+  ],
+  "answer": "D",
+  "solution": "First note $|-6x|=|6x|=6|x|$, so we integrate $6|x|$.\n\nFor $x\\ge0$, $|x|=x$, so $\\dfrac{dy}{dx}=6x$ and $y=3x^2+c$.\n\nFor $x<0$, $|x|=-x$, so $\\dfrac{dy}{dx}=-6x$ and $y=-3x^2+c$.\n\nBoth pieces agree at $x=0$ (both give $y=c$), so the single expression is\n$$y=\\begin{cases}3x^2+c & x\\ge0\\\\ -3x^2+c & x<0\\end{cases}.$$\n\nSince $3x^2=3x\\cdot x$ (for $x\\ge0$) and $-3x^2=3x\\cdot(-x)$ (for $x<0$), both are equal to $3x|x|$. Hence\n$$f(x)=3x|x|,$$\nwhich is **option D**.\n\n(Check: for $x\\ge0$, $\\tfrac{d}{dx}(3x^2)=6x=6|x|$; for $x<0$, $\\tfrac{d}{dx}(-3x^2)=-6x=6|x|$.)",
+  "solutionStatus": "full",
+  "hints": [
+    "Note |-6x| = 6|x| and split into x≥0 and x<0.",
+    "Integrate each piece separately.",
+    "Combine the pieces using the fact that x·|x| = x² for x≥0 and -x² for x<0."
+  ]
+}

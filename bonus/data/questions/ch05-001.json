@@ -1,0 +1,24 @@
+{
+  "id": "ch05-001",
+  "chapter": 5,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2023,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144109/TMUA-2023-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["coordinate geometry", "perpendicular lines", "right-angled triangles"],
+  "methods": ["dot product / perpendicular gradients", "distance in coordinates"],
+  "statement": "A right-angled triangle has vertices at $(2,3)$, $(9,-1)$ and $(5,k)$.\n\nFind the sum of all the possible values of $k$.",
+  "options": ["$-8$", "$-6$", "$0.25$", "$2$", "$2.25$", "$8.25$", "$10.25$"],
+  "answer": "E",
+  "solution": "Let $A=(2,3)$, $B=(9,-1)$, $C=(5,k)$. The right angle can be at any of the three vertices.\n\n**Right angle at $A$:** vectors $\\overrightarrow{AB}=(7,-4)$ and $\\overrightarrow{AC}=(3,k-3)$ are perpendicular, so\n$$7\\cdot3+(-4)(k-3)=0 \\Rightarrow 21-4k+12=0 \\Rightarrow k=\\tfrac{33}{4}.$$\n\n**Right angle at $B$:** vectors $\\overrightarrow{BA}=(-7,4)$ and $\\overrightarrow{BC}=(-4,k+1)$ are perpendicular, so\n$$(-7)(-4)+4(k+1)=0 \\Rightarrow 28+4k+4=0 \\Rightarrow k=-8.$$\n\n**Right angle at $C$:** vectors $\\overrightarrow{CA}=(-3,3-k)$ and $\\overrightarrow{CB}=(4,-1-k)$ are perpendicular, so\n$$(-3)(4)+(3-k)(-1-k)=0 \\Rightarrow -12-(3-k)(1+k)=0.$$\nExpanding, $-12-(3+2k-k^2)=0$, i.e. $k^2-2k-15=0$, so $(k-5)(k+3)=0$, giving $k=5$ or $k=-3$.\n\nThe possible values of $k$ are $\\tfrac{33}{4}$, $-8$, $5$, $-3$. Their sum is\n$$\\tfrac{33}{4}+(-8)+5+(-3)=\\tfrac{33}{4}-6=\\tfrac{33-24}{4}=\\tfrac94=2.25,$$\nwhich is **option E**.",
+  "solutionStatus": "full",
+  "hints": [
+    "The right angle can be at any of the three vertices.",
+    "For each case, use the dot product of two side vectors set to zero.",
+    "Collect all k values and add them."
+  ]
+}
