@@ -36,6 +36,7 @@
       bookTitle: 'Book title', coverTitle: 'Cover title', coverSubtitle: 'Cover subtitle', author: 'Author', org: 'Institution / School',
       editProject: 'Edit project', newProjectTitle: 'New book project',
       remove: 'Remove', moveUp: '↑', moveDown: '↓', bookEmpty: 'This book is empty', bookHint: 'Go back to Questions and use "Add to project" to add questions.',
+      delete: 'Delete', deleteConfirm: 'Delete project',
       chapters: 'Chapters', allChapters: 'All chapters', saveToLibrary: 'Save to Library', saved: 'Saved',
       allLevels: 'All levels',
       libraryLabel: 'Library', projectsLabel: 'Projects', questions: 'questions',
@@ -55,6 +56,7 @@
       bookTitle: '书名', coverTitle: '封面标题', coverSubtitle: '封面副标题', author: '作者', org: '机构 / 学校',
       editProject: '编辑项目', newProjectTitle: '新建书籍项目',
       remove: '移除', moveUp: '↑', moveDown: '↓', bookEmpty: '书还是空的', bookHint: '回到题库，用「加入项目」把题目加进这本书。',
+      delete: '删除', deleteConfirm: '删除项目',
       chapters: '章节', allChapters: '全部章节', saveToLibrary: '收藏到 Library', saved: '已收藏',
       allLevels: '全部级别',
       libraryLabel: '收藏', projectsLabel: '项目', questions: '道题',
@@ -234,7 +236,7 @@
     });
     function updateClearBtn() {
       var n = window.bonusCollection ? window.bonusCollection.libraryItems().length : 0;
-      clearBtn.style.display = (n > 0) ? '' : 'none';
+      clearBtn.disabled = (n === 0);
     }
     boardWrap.appendChild(clearBtn);
     appEl._clearBtn = clearBtn;
@@ -377,7 +379,7 @@
         check.setAttribute('aria-pressed', on ? 'true' : 'false');
         item.classList.toggle('in-library', on);
         if (appEl._clearBtn) {
-          appEl._clearBtn.style.display = window.bonusCollection.libraryItems().length > 0 ? '' : 'none';
+          appEl._clearBtn.disabled = window.bonusCollection.libraryItems().length === 0;
         }
       });
       item.appendChild(check);
@@ -679,6 +681,17 @@
       editBtn.type = 'button';
       editBtn.addEventListener('click', function (e) { e.stopPropagation(); openProjectEditor(p.id); });
       right.appendChild(editBtn);
+      var delBtn = el('button', 'bq-icon-btn bq-icon-danger', t('delete'));
+      delBtn.type = 'button';
+      delBtn.title = t('delete');
+      delBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (confirm(t('deleteConfirm') + ' "' + (p.title || 'Untitled book') + '"?')) {
+          window.bonusCollection.deleteProject(p.id);
+          renderProjects();
+        }
+      });
+      right.appendChild(delBtn);
       item.appendChild(right);
       item.addEventListener('click', function () { openProject(p.id); });
       wrap.appendChild(item);
