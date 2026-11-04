@@ -529,6 +529,28 @@
     "preview": "A geometric sequence has first term $a$ and common ratio $r$, where $a$ and $r$ are positive integers and $r>1$. The sum of the first $n$…"
   },
   {
+    "id": "ch08-005",
+    "chapter": 8,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2011,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "series",
+      "binomial expansion",
+      "generating functions"
+    ],
+    "methods": [
+      "binomial expansion of (1-x)^-3",
+      "coefficient extraction",
+      "summing infinite series"
+    ],
+    "solutionStatus": "full",
+    "preview": "Use the binomial expansion to show that the coefficient of $x^r$ in the expansion of $(1-x)^{-3}$ is $\\tfrac12(r+1)(r+2)$. (i) Show that…"
+  },
+  {
     "id": "ch09-001",
     "chapter": 9,
     "title": "",

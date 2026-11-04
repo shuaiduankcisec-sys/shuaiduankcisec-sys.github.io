@@ -466,6 +466,15 @@ I_b = sp.integrate(-xx6**2/(1+xx6**2)**2, (xx6, -1, 1))
 report("A2-06-006 ∫1/(1+x²)²=1/2+π/4", sp.simplify(I_a - (sp.Rational(1,2)+sp.pi/4)), 0)
 report("A2-06-006 ∫-x²/(1+x²)²=1/2-π/4", sp.simplify(I_b - (sp.Rational(1,2)-sp.pi/4)), 0)
 
+# ---------- ch08-005 生成函数级数 ----------
+nn2 = sp.symbols('nn2')
+# 级数1 = (1-x+2x²)/(1-x)³ 在 x=1/2 = 8
+s1_gen = sp.simplify((1-sp.Rational(1,2)+2*(sp.Rational(1,2))**2)/(1-sp.Rational(1,2))**3)
+report("ch08-005 级数1=8", s1_gen - 8, 0)
+# 级数2 = 2Σ n²/2^n = 12
+s2_gen = sp.summation(nn2**2/2**nn2, (nn2, 1, sp.oo))
+report("ch08-005 级数2=12", sp.simplify(2*s2_gen - 12), 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:
