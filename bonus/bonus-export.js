@@ -39,7 +39,8 @@
       layout: 'Layout', dense: 'Compact (flow questions)', denseHint: 'One question per page when off',
       pageSetup: 'Page setup', headerPosition: 'Header position', footerPosition: 'Footer position',
       posLeft: 'Left', posCenter: 'Center', posRight: 'Right', posOff: 'Off',
-      headerText2: 'Header text', footerText2: 'Footer text'
+      headerText2: 'Header text', footerText2: 'Footer text',
+      zoomIn: 'Zoom in', zoomOut: 'Zoom out', zoomFit: 'Fit width'
     },
     zh: {
       exportSettings: '导出设置',
@@ -64,7 +65,8 @@
       layout: '排版', dense: '紧凑排列（题目连续排列）', denseHint: '不勾选时一题一页',
       pageSetup: '页面设置', headerPosition: '页眉位置', footerPosition: '页脚位置',
       posLeft: '左', posCenter: '中', posRight: '右', posOff: '关闭',
-      headerText2: '页眉文字', footerText2: '页脚文字'
+      headerText2: '页眉文字', footerText2: '页脚文字',
+      zoomIn: '放大', zoomOut: '缩小', zoomFit: '适应宽度'
     }
   };
   function s(key) {
@@ -314,16 +316,54 @@
     btns.appendChild(print);
     panel.appendChild(btns);
 
-    // ---- right: live preview ----
+    // ---- right: live preview (with zoom controls) ----
     var previewWrap = el('div', 'bq-export-preview');
+    var zoomBar = el('div', 'bq-zoom-bar');
+    var zoomOut = el('button', 'bq-zoom-btn', '−');
+    zoomOut.type = 'button';
+    zoomOut.title = s('zoomOut');
+    var zoomIn = el('button', 'bq-zoom-btn', '+');
+    zoomIn.type = 'button';
+    zoomIn.title = s('zoomIn');
+    var zoomFit = el('button', 'bq-zoom-btn bq-zoom-fit', s('zoomFit'));
+    zoomFit.type = 'button';
+    var zoomLabel = el('span', 'bq-zoom-label', '100%');
+    zoomBar.appendChild(zoomOut);
+    zoomBar.appendChild(zoomLabel);
+    zoomBar.appendChild(zoomIn);
+    zoomBar.appendChild(zoomFit);
+    previewWrap.appendChild(zoomBar);
+
+    var frameScroller = el('div', 'bq-export-scroll');
     var frame = document.createElement('iframe');
     frame.className = 'bq-export-frame';
     frame.setAttribute('title', s('preview'));
-    previewWrap.appendChild(frame);
+    frameScroller.appendChild(frame);
+    previewWrap.appendChild(frameScroller);
 
     overlay.appendChild(panel);
     overlay.appendChild(previewWrap);
     document.body.appendChild(overlay);
+
+    // zoom state
+    var zoom = 1.0;
+    function applyZoom() {
+      // scale the iframe content; use transform on the frame
+      frame.style.transformOrigin = 'top center';
+      frame.style.transform = 'scale(' + zoom + ')';
+      frame.style.width = (100 / zoom) + '%';
+      frame.style.height = (100 / zoom) + '%';
+      zoomLabel.textContent = Math.round(zoom * 100) + '%';
+    }
+    zoomOut.addEventListener('click', function () { zoom = Math.max(0.25, zoom - 0.1); applyZoom(); });
+    zoomIn.addEventListener('click', function () { zoom = Math.min(2.5, zoom + 0.1); applyZoom(); });
+    zoomFit.addEventListener('click', function () {
+      // fit to width of the scroll area
+      var w = frameScroller.clientWidth;
+      var paperW = 210 * 3.779527559; // 210mm in px (~794px)
+      zoom = Math.max(0.2, Math.min(1.5, (w - 32) / paperW));
+      applyZoom();
+    });
 
     // render preview (debounced)
     var renderTimer = null;
@@ -372,10 +412,15 @@
       } catch (e) { /* ignore */ }
     }
     function doPrint() {
-      // print from the preview iframe
+      // print from the preview iframe; auto-close after printing
       try {
-        frame.contentWindow.focus();
-        frame.contentWindow.print();
+        var fw = frame.contentWindow;
+        // close overlay after the print dialog is dismissed
+        fw.onafterprint = function () { overlay.remove(); };
+        fw.focus();
+        fw.print();
+        // fallback close (if onafterprint not fired)
+        setTimeout(function () { overlay.remove(); }, 60000);
       } catch (e) {
         // fallback: open in a new window
         var built = buildDoc(questions, settings);
@@ -387,8 +432,9 @@
       }
     }
 
-    // initial render
+    // initial render + fit zoom
     renderPreview();
+    setTimeout(function () { zoomFit.click(); }, 500);
   }
 
   // ---------- build the exported document ----------
@@ -572,9 +618,13 @@
     }
 
     // dense: questions flow together; otherwise one question per page
-    var sectionRule = settings.dense === false
+    // print uses page-break; screen preview uses visual separation
+    var densePrint = settings.dense === false
       ? 'section.question-page { page-break-after: always; } section.question-page:last-of-type { page-break-after: auto; }'
-      : 'section.question-page { page-break-after: auto; } section.question-page + section.question-page { margin-top: 24px; border-top: 1px solid #eee; padding-top: 20px; }';
+      : 'section.question-page { page-break-after: auto; }';
+    var denseScreen = settings.dense === false
+      ? '@media screen { section.question-page { min-height: 260mm; page-break-after: always; border-bottom: 2px dashed #cbd5e1; margin-bottom: 20px; padding-bottom: 20px; } section.question-page:last-of-type { border-bottom: none; } }'
+      : '@media screen { section.question-page + section.question-page { margin-top: 24px; border-top: 1px solid #e5e7eb; padding-top: 20px; } }';
 
     return [
       '@page { size: ' + pageSize + '; margin: 18mm 16mm; }',
@@ -585,7 +635,8 @@
       '@media screen { body { background: #6b7280; padding: 24px 0; } #paper { width: 210mm; min-height: 297mm; margin: 0 auto; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.35); padding: 18mm 16mm; box-sizing: border-box; } }',
       '@media print { body { background: #fff; } #paper { width: auto; min-height: 0; margin: 0; padding: 0; box-shadow: none; } }',
       'section.cover, section.toc { page-break-after: always; }',
-      sectionRule,
+      densePrint,
+      denseScreen,
       '.cover { height: 92vh; display: flex; align-items: center; justify-content: center; text-align: center; page-break-after: always; }',
       '.cover-inner { padding: 40px; }',
       '.cover-org { font-size: 14px; letter-spacing: 3px; color: inherit; opacity: 0.75; margin-bottom: 40px; text-transform: uppercase; }',
@@ -612,8 +663,8 @@
       '.q-stars { margin-left: auto; color: #e0a800; font-size: 13px; }',
       '.q-statement { font-size: 13px; line-height: 1.7; }',
       '.q-statement p { margin: 0 0 10px; }',
-      '.q-options { margin-top: 10px; }',
-      '.q-option { display: flex; gap: 10px; padding: 3px 0; font-size: 13px; }',
+      '.q-options { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px 20px; }',
+      '.q-option { display: flex; gap: 8px; padding: 3px 0; font-size: 13px; align-items: baseline; }',
       '.q-opt-label { font-weight: 600; color: #666; width: 20px; }',
       '.q-solution { margin-top: 18px; border-top: 1px solid #eee; padding-top: 12px; }',
       '.q-sol-title { font-weight: 700; color: #333; margin-bottom: 8px; }',
