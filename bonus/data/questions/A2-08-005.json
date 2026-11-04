@@ -1,0 +1,22 @@
+{
+  "id": "A2-08-005",
+  "chapter": "A2-08",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2019,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 2,
+  "topics": ["numerical methods", "fixed-point iteration"],
+  "methods": ["fixed-point iteration"],
+  "statement": "The equation $x=\\cos x$ has a root $\\alpha$. Using the iteration $x_{n+1}=\\cos x_n$ with $x_0=0.7$, find $x_1$ and $x_2$ to 3 decimal places.",
+  "solution": "Apply the iteration:\n$$x_1=\\cos(0.7)\\approx0.764842\\approx0.765\\quad(\\text{to 3 d.p.}),$$\n$$x_2=\\cos(0.764842)\\approx0.721488\\approx0.721\\quad(\\text{to 3 d.p.}).$$\nSo $x_1\\approx0.765$ and $x_2\\approx0.721$ (the root $\\alpha\\approx0.739$ to which the iteration converges).",
+  "solutionStatus": "full",
+  "hints": [
+    "Compute x_1 = cos(0.7).",
+    "Then x_2 = cos(x_1).",
+    "Round each to 3 decimal places."
+  ]
+}

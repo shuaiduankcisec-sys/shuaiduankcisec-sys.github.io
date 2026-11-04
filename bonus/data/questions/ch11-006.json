@@ -1,0 +1,22 @@
+{
+  "id": "ch11-006",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2009,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["trigonometry", "trigonometric equations"],
+  "methods": ["reciprocal identities", "solving"],
+  "statement": "Solve $\\tan\\theta+\\cot\\theta=2$ for $0<\\theta<\\pi$.",
+  "solution": "Since $\\cot\\theta=1/\\tan\\theta$ (for $\\tan\\theta\\neq0$),\n$$\\tan\\theta+\\frac{1}{\\tan\\theta}=2\\quad\\Rightarrow\\quad \\frac{\\tan^2\\theta+1}{\\tan\\theta}=2\\quad\\Rightarrow\\quad \\tan^2\\theta-2\\tan\\theta+1=0.$$\nThus $(\\tan\\theta-1)^2=0$, so $\\tan\\theta=1$. In $(0,\\pi)$ this gives $\\theta=\\tfrac{\\pi}{4}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write cot θ = 1/tan θ.",
+    "Multiply through by tan θ.",
+    "Solve the quadratic: (tan θ - 1)^2 = 0."
+  ]
+}

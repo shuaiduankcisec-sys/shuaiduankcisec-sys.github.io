@@ -1,0 +1,22 @@
+{
+  "id": "ch09-007",
+  "chapter": 9,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2006,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["coordinate geometry", "circles", "tangents"],
+  "methods": ["implicit differentiation", "equation of a tangent"],
+  "statement": "Find the equation of the tangent to the circle $x^2+y^2=25$ at the point $(3,4)$.",
+  "solution": "Differentiating implicitly, $2x+2y\\dfrac{dy}{dx}=0$, so $\\dfrac{dy}{dx}=-\\dfrac{x}{y}$. At $(3,4)$ the gradient is $-\\dfrac34$.\n\nThe tangent is therefore\n$$y-4=-\\frac34(x-3)\\quad\\Rightarrow\\quad 4y-16=-3x+9\\quad\\Rightarrow\\quad 3x+4y=25.$$\n(Indeed $3\\cdot3+4\\cdot4=25$, confirming the point lies on the circle.)",
+  "solutionStatus": "full",
+  "hints": [
+    "Implicitly differentiate x^2+y^2=25.",
+    "Find the gradient at (3,4): -x/y = -3/4.",
+    "Write the line through (3,4) with that gradient."
+  ]
+}

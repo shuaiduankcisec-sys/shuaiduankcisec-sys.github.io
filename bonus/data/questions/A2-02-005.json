@@ -1,0 +1,22 @@
+{
+  "id": "A2-02-005",
+  "chapter": "A2-02",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2014,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 3,
+  "topics": ["binomial expansion", "coefficients"],
+  "methods": ["binomial theorem", "collecting terms"],
+  "statement": "Find the coefficient of $x^3$ in the expansion of $(1+2x)(1-3x)^5$.",
+  "solution": "First expand $(1-3x)^5$:\n$$(1-3x)^5=1+5(-3x)+10(-3x)^2+10(-3x)^3+\\cdots=1-15x+90x^2-270x^3+\\cdots.$$\nMultiplying by $(1+2x)$, the $x^3$ term comes from $1\\cdot(-270x^3)$ and $2x\\cdot90x^2$:\n$$-270x^3+180x^3=-90x^3.$$\nSo the coefficient of $x^3$ is $-90$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand (1-3x)^5 up to x^3.",
+    "Multiply by (1+2x).",
+    "Add the two contributions to x^3: -270 + 180."
+  ]
+}

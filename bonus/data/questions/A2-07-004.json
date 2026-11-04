@@ -1,0 +1,22 @@
+{
+  "id": "A2-07-004",
+  "chapter": "A2-07",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2010,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 2,
+  "topics": ["differential equations", "separable equations"],
+  "methods": ["separation of variables", "integrating"],
+  "statement": "Solve $\\dfrac{dy}{dx}=2xy$, given that $y=3$ when $x=0$.",
+  "solution": "Separating variables,\n$$\\frac{dy}{y}=2x\\,dx\\quad\\Rightarrow\\quad \\ln|y|=x^2+C.$$\nSo $y=Ae^{x^2}$ for some constant $A$. Using $y(0)=3$ gives $A=3$. Hence\n$$y=3e^{x^2}.$$",
+  "solutionStatus": "full",
+  "hints": [
+    "Separate: dy/y = 2x dx.",
+    "Integrate both sides.",
+    "Apply y(0)=3 to find A."
+  ]
+}

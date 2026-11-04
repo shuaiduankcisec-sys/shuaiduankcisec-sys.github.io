@@ -1,0 +1,22 @@
+{
+  "id": "ch01-004",
+  "chapter": 1,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2008,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["indices", "exponential equations"],
+  "methods": ["writing as powers of 2", "equating exponents"],
+  "statement": "(i) Write $4^{x+1}\\times 2^{2x}$ as a single power of $2$.\n\n(ii) Hence solve $4^{x+1}\\times 2^{2x}=8^{x+2}$.",
+  "solution": "(i) Since $4=2^2$, we have $4^{x+1}=2^{2x+2}$. Therefore\n$$4^{x+1}\\times 2^{2x}=2^{2x+2}\\times 2^{2x}=2^{4x+2}.$$\n\n(ii) The right-hand side is $8^{x+2}=(2^3)^{x+2}=2^{3x+6}$. Equating powers of $2$\n$$2^{4x+2}=2^{3x+6}\\quad\\Rightarrow\\quad 4x+2=3x+6,$$\nso $x=4$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write 4 and 8 as powers of 2.",
+    "In (i) add the exponents.",
+    "In (ii) equate the exponents since the bases are equal."
+  ]
+}

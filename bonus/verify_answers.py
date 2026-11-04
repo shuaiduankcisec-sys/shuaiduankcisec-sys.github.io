@@ -619,6 +619,102 @@ _root2803 = [r for r in sp.nroots(_f2803) if abs(sp.im(r)) < 1e-10][0]
 report("A2-08-003 f(根)=0", 0, abs(sp.N(_f2803.subs(_x3, _root2803))))
 print(f"  [INFO] A2-08-003 实根 = {float(_root2803):.6f}，四舍五入到 3 位小数 = {round(float(_root2803), 3)}")
 
+# ================= 本轮新增 STEP 题（34 道）抽取带数值结论的题做 sympy 独立验证 =================
+
+print("-" * 60)
+print("本轮新增 STEP 题（部分）sympy 独立验证")
+
+# ch01-004: 解 4^(x+1)·2^(2x) = 8^(x+2)  =>  x=4
+_x = sp.symbols('x', real=True)
+_eq = sp.Eq(2**(2*(x+1)) * 2**(2*x), 2**(3*(x+2)))
+report("ch01-004 x=4", 4, sp.solve(_eq, x)[0])
+
+# ch02-006: a 满足 a^2-4a-13=0（即 a=2±√17）
+_a = sp.symbols('a')
+report("ch02-006 a=2+√17 满足 a²-4a-13=0", 0, sp.simplify((2+sp.sqrt(17))**2 - 4*(2+sp.sqrt(17)) - 13))
+
+# ch02-007: 判别式 = 4k^2-12k+8，在 k=3/2 处 = -1（<0 => 1<k<2）
+_k = sp.symbols('k')
+_disc = 4*_k**2 - 12*_k + 8
+report("ch02-007 判别式(k=3/2) = -1", -1, _disc.subs(_k, sp.Rational(3,2)))
+
+# ch03-004: (x-2)^2(x+3) ≡ x^3 - x^2 - 8x + 12
+report("ch03-004 (x-2)²(x+3) 展开一致", 0, sp.expand((_x-2)**2*(_x+3) - (_x**3 - _x**2 - 8*_x + 12)))
+
+# ch03-005: a=-4/3, b=-13/3；验证 f(2)=0, f(3)=8
+_a, _b = sp.symbols('a b')
+_solab = sp.solve([sp.Eq(8+4*_a+2*_b+6, 0), sp.Eq(27+9*_a+3*_b+6, 8)], [_a, _b])
+report("ch03-005 a=-4/3", sp.Rational(-4,3), _solab[_a])
+report("ch03-005 b=-13/3", sp.Rational(-13,3), _solab[_b])
+
+# ch04-006: f(x)=e^x/(e^x+1), f⁻¹(t)=ln(t/(1-t))，验证 f⁻¹(f(x))=x
+_t = sp.symbols('t')
+_finv = sp.log(_t/(1-_t))
+report("ch04-006 f⁻¹(f(x))=x", _x, sp.simplify(_finv.subs(_t, sp.exp(_x)/(sp.exp(_x)+1))))
+
+# ch05-005: 圆 (x-1)²+(y-1)²=1 过 (1,0),(0,1),(2,1)
+_c = lambda px, py: (px-1)**2 + (py-1)**2
+report("ch05-005 过(1,0)", 1, _c(1,0))
+report("ch05-005 过(0,1)", 1, _c(0,1))
+report("ch05-005 过(2,1)", 1, _c(2,1))
+
+# ch06-005: V=2πx(R²-x²)，最大值 = 4πR³/(3√3)
+_R, _x = sp.symbols('R x', positive=True)
+_V = 2*sp.pi*_x*(_R**2 - _x**2)
+_Vmax = sp.simplify(_V.subs(_x, _R/sp.sqrt(3)))
+report("ch06-005 Vmax = 4πR³/(3√3)", 4*sp.pi*_R**3/(3*sp.sqrt(3)), _Vmax)
+
+# ch07-011: ∫_0^1 x²e^x dx = e-2
+_t = sp.symbols('t')
+report("ch07-011 ∫ = e-2", sp.E - 2, sp.integrate(_t**2*sp.exp(_t), (_t, 0, 1)))
+
+# ch09-008: 切线长 = √(52-25) = 3√3
+report("ch09-008 切线长 = 3√3", 3*sp.sqrt(3), sp.sqrt(52-25))
+
+# ch10-005: θ=π/2, 7π/6, 11π/6 满足 2cos²θ+sinθ-1=0
+import math
+def _chk1005(th):
+    return abs(2*math.cos(th)**2 + math.sin(th) - 1) < 1e-9
+report("ch10-005 θ=π/2", True, _chk1005(math.pi/2))
+report("ch10-005 θ=7π/6", True, _chk1005(7*math.pi/6))
+report("ch10-005 θ=11π/6", True, _chk1005(11*math.pi/6))
+
+# ch10-007: 最大值 = √(5²+12²) = 13
+report("ch10-007 最大值 = 13", 13, sp.sqrt(5**2 + 12**2))
+
+# ch12-006: 解 (x+2)(x-1)=4 的有效根 x=2
+_x = sp.symbols('x')
+_sol12 = sp.solve(sp.Eq((_x+2)*(_x-1), 4), _x)
+report("ch12-006 有效解 x=2", 2, [s for s in _sol12 if s > 1][0])
+
+# ch12-007: z=xy/(x+y) 满足 1/z = 1/x + 1/y
+_x, _y = sp.symbols('x y', positive=True)
+report("ch12-007 1/z=1/x+1/y", 0, sp.simplify(1/(_x*_y/(_x+_y)) - (1/_x + 1/_y)))
+
+# A2-01-005: f(f(x))=x 的解 x=(1±√5)/2
+_x = sp.symbols('x')
+_ff = 1/(1/(_x-1) - 1)
+report("A2-01-005 一根 = (1+√5)/2", (1+sp.sqrt(5))/2, sp.solve(sp.Eq(_ff, _x), _x)[1])
+
+# A2-02-004: √1.02 的四项二项式近似 = 1.0099505（与四项展开精确值一致）
+_approx = 1 + sp.Rational(1,2)*sp.Rational(2,100) - sp.Rational(1,8)*sp.Rational(2,100)**2 + sp.Rational(1,16)*sp.Rational(2,100)**3
+report("A2-02-004 四项近似 = 1.0099505", sp.Rational(2019901, 2000000), sp.nsimplify(_approx))
+
+# A2-02-005: (1+2x)(1-3x)^5 中 x³ 系数 = -90
+_x = sp.symbols('x')
+report("A2-02-005 x³ 系数 = -90", -90, sp.expand((1+2*_x)*sp.expand((1-3*_x)**5)).coeff(_x, 3))
+
+# A2-08-004: Newton 一步 x1 = 1 - f(1)/f'(1), f=x³+x-1 => 0.75
+report("A2-08-004 x1=0.75", sp.Rational(3,4), 1 - (1**3+1-1)/(3*1**2+1))
+
+# A2-08-005: x1=cos(0.7)≈0.765, x2=cos(x1)≈0.722
+_x1b = math.cos(0.7); _x2b = math.cos(_x1b)
+report("A2-08-005 x1≈0.765", 0.765, round(_x1b, 3))
+report("A2-08-005 x2≈0.721", 0.721, round(_x2b, 3))
+
+# A2-09-004: cosθ = (a·b)/(|a||b|) = 4/9
+report("A2-09-004 cosθ=4/9", sp.Rational(4,9), (1*2 + 2*(-1) + 2*2)/(3*3))
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

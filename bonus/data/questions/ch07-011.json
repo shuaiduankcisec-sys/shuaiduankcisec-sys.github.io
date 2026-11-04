@@ -1,0 +1,22 @@
+{
+  "id": "ch07-011",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2008,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["integration", "integration by parts"],
+  "methods": ["integration by parts"],
+  "statement": "Evaluate $\\displaystyle\\int_0^1 x^2e^x\\,dx$ using integration by parts.",
+  "solution": "Integrate by parts with $u=x^2$, $dv=e^x\\,dx$ (so $du=2x\\,dx$, $v=e^x$):\n$$\\int x^2e^x\\,dx=x^2e^x-\\int 2xe^x\\,dx.$$\nFor $\\int 2xe^x\\,dx$, integrate by parts again: $u=2x$, $dv=e^x\\,dx$, giving $2xe^x-\\int 2e^x\\,dx=2xe^x-2e^x$. Hence\n$$\\int x^2e^x\\,dx=x^2e^x-2xe^x+2e^x.$$\nEvaluating from $0$ to $1$:\n$$\\left[e^x(x^2-2x+2)\\right]_0^1 = e(1-2+2)-2(1)=e-2.$$",
+  "solutionStatus": "full",
+  "hints": [
+    "Use integration by parts with u=x^2.",
+    "Apply parts a second time to the remaining integral.",
+    "Evaluate between 0 and 1."
+  ]
+}

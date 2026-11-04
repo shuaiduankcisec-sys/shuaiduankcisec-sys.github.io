@@ -1,0 +1,22 @@
+{
+  "id": "ch09-008",
+  "chapter": 9,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2015,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["coordinate geometry", "circles", "tangent length"],
+  "methods": ["equation of a circle", "length of a tangent"],
+  "statement": "A circle has centre $(2,-1)$ and passes through $(5,3)$. Find its equation and the length of the tangent from the point $(6,5)$ to the circle.",
+  "solution": "The squared radius is $r^2=(5-2)^2+(3-(-1))^2=9+16=25$, so $r=5$ and the circle is\n$$(x-2)^2+(y+1)^2=25.$$\nThe distance from $P(6,5)$ to the centre $C(2,-1)$ is $PC=\\sqrt{(6-2)^2+(5+1)^2}=\\sqrt{16+36}=\\sqrt{52}$. The length of the tangent from $P$ is\n$$\\sqrt{PC^2-r^2}=\\sqrt{52-25}=\\sqrt{27}=3\\sqrt3.$$",
+  "solutionStatus": "full",
+  "hints": [
+    "Find r^2 from centre to (5,3).",
+    "Write the circle equation.",
+    "Use tangent length = sqrt(PC^2 - r^2)."
+  ]
+}

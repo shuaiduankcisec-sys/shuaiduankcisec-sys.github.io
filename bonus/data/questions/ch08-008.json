@@ -1,0 +1,22 @@
+{
+  "id": "ch08-008",
+  "chapter": 8,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2011,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["sequences", "series", "arithmetic sequences"],
+  "methods": ["nth term from partial sums"],
+  "statement": "The sum of the first $n$ terms of a sequence is $S_n=n^2+3n$. Find the $n$th term $u_n$ and show that the sequence is arithmetic.",
+  "solution": "For $n\\ge2$, $u_n=S_n-S_{n-1}=n^2+3n-\\big((n-1)^2+3(n-1)\\big)$. Expanding, $(n-1)^2+3(n-1)=n^2-2n+1+3n-3=n^2+n-2$, so\n$$u_n=n^2+3n-(n^2+n-2)=2n+2.$$\nFor $n=1$, $u_1=S_1=4=2(1)+2$, so the formula $u_n=2n+2$ holds for all $n\\ge1$. Since $u_{n+1}-u_n=2$ is constant, the sequence is arithmetic with common difference $2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use u_n = S_n - S_{n-1}.",
+    "Expand and simplify to get 2n+2.",
+    "Check the difference u_{n+1}-u_n."
+  ]
+}

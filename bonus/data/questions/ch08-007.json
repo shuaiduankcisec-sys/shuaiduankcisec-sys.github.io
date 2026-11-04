@@ -1,0 +1,22 @@
+{
+  "id": "ch08-007",
+  "chapter": 8,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["sequences", "recurrence relations", "closed form"],
+  "methods": ["linear recurrence", "particular solution"],
+  "statement": "A sequence is defined by $u_1=1$ and $u_{n+1}=2u_n+1$ for $n\\ge1$. Find a closed form for $u_n$.",
+  "solution": "Rewrite the recurrence as $u_{n+1}+1=2(u_n+1)$. Hence the sequence $v_n=u_n+1$ satisfies $v_{n+1}=2v_n$, so it is geometric with ratio $2$. Since $v_1=u_1+1=2$, we have $v_n=2\\cdot2^{n-1}=2^n$. Therefore\n$$u_n=v_n-1=2^n-1.$$",
+  "solutionStatus": "full",
+  "hints": [
+    "Add 1 to both sides: u_{n+1}+1 = 2(u_n+1).",
+    "Recognise a geometric sequence.",
+    "Substitute back for u_n."
+  ]
+}

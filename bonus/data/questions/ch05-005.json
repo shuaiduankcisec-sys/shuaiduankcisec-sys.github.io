@@ -1,0 +1,22 @@
+{
+  "id": "ch05-005",
+  "chapter": 5,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2009,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["coordinate geometry", "circles"],
+  "methods": ["perpendicular bisector", "equation of a circle"],
+  "statement": "Find the equation of the circle passing through the points $(1,0)$, $(0,1)$ and $(2,1)$.",
+  "solution": "Let the circle have centre $(h,k)$ and radius $r$. Equating squared distances from the three points to the centre:\n$$(h-1)^2+k^2=h^2+(k-1)^2 \\quad\\Rightarrow\\quad -2h+1=-2k+1 \\quad\\Rightarrow\\quad h=k.$$\nAlso\n$$h^2+(k-1)^2=(h-2)^2+(k-1)^2 \\quad\\Rightarrow\\quad h^2=(h-2)^2 \\quad\\Rightarrow\\quad 4h=4 \\quad\\Rightarrow\\quad h=1.$$\nSo $h=k=1$. The radius satisfies $r^2=(1-1)^2+(1-0)^2=1$. Hence the circle is\n$$(x-1)^2+(y-1)^2=1.$$",
+  "solutionStatus": "full",
+  "hints": [
+    "Set the squared distances from (h,k) to each point equal.",
+    "From the first two points deduce h=k.",
+    "From the last two points find h=1, then r^2."
+  ]
+}

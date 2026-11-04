@@ -1,0 +1,22 @@
+{
+  "id": "A2-09-004",
+  "chapter": "A2-09",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2008,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 2,
+  "topics": ["vectors", "scalar product"],
+  "methods": ["dot product", "angle between vectors"],
+  "statement": "Find the angle between the vectors $\\mathbf{a}=(1,2,2)$ and $\\mathbf{b}=(2,-1,2)$.",
+  "solution": "The scalar product is $\\mathbf{a}\\cdot\\mathbf{b}=1\\cdot2+2\\cdot(-1)+2\\cdot2=2-2+4=4$. Also $|\\mathbf{a}|=\\sqrt{1+4+4}=3$ and $|\\mathbf{b}|=\\sqrt{4+1+4}=3$. Hence\n$$\\cos\\theta=\\frac{\\mathbf{a}\\cdot\\mathbf{b}}{|\\mathbf{a}||\\mathbf{b}|}=\\frac{4}{9},$$\nso $\\theta=\\arccos\\tfrac49$ (approximately $1.11$ rad, or $63.6^\\circ$).",
+  "solutionStatus": "full",
+  "hints": [
+    "Compute the dot product.",
+    "Find the magnitudes of a and b.",
+    "Use cos theta = (a·b)/(|a||b|)."
+  ]
+}

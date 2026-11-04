@@ -65,6 +65,46 @@
     "preview": "Find all rational numbers $r$ and $s$ which satisfy $ (r+s\\sqrt3)^2=4-2\\sqrt3.$"
   },
   {
+    "id": "ch01-004",
+    "chapter": 1,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2008,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "indices",
+      "exponential equations"
+    ],
+    "methods": [
+      "writing as powers of 2",
+      "equating exponents"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Write $4^{x+1}\\times 2^{2x}$ as a single power of $2$. (ii) Hence solve $4^{x+1}\\times 2^{2x}=8^{x+2}$."
+  },
+  {
+    "id": "ch01-005",
+    "chapter": 1,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2011,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "surds",
+      "rationalising the denominator"
+    ],
+    "methods": [
+      "rationalising",
+      "difference of squares"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Express $\\dfrac{1}{\\sqrt{5}-\\sqrt{3}}$ in the form $a\\sqrt{5}+b\\sqrt{3}$ where $a$ and $b$ are rational. (ii) Show that…"
+  },
+  {
     "id": "ch02-002",
     "chapter": 2,
     "title": "",
@@ -149,6 +189,46 @@
     "preview": "The roots of $x^2+px+q=0$ are $\\alpha$ and $\\beta$. Find, in terms of $p$ and $q$, the quadratic equation whose roots are $\\alpha^2$ and…"
   },
   {
+    "id": "ch02-006",
+    "chapter": 2,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2006,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "quadratics",
+      "Vieta's formulae"
+    ],
+    "methods": [
+      "sum and product of roots",
+      "symmetric expressions"
+    ],
+    "solutionStatus": "full",
+    "preview": "The roots of $x^2+(a-1)x+(a+2)=0$ are $\\alpha$ and $\\beta$. Given that $\\alpha^2+\\beta^2=10$, find the possible values of $a$."
+  },
+  {
+    "id": "ch02-007",
+    "chapter": 2,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2010,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "quadratics",
+      "discriminant"
+    ],
+    "methods": [
+      "discriminant",
+      "inequalities"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the range of values of $k$ for which $x^2-2kx+3k-2>0$ for all real $x$."
+  },
+  {
     "id": "ch03-001",
     "chapter": 3,
     "title": "",
@@ -210,6 +290,47 @@
     ],
     "solutionStatus": "full",
     "preview": "Sketch, without calculating the stationary points, the graph of the function $f(x)$ given by $ f(x)=(x-p)(x-q)(x-r),$  where $p<q<r$. By…"
+  },
+  {
+    "id": "ch03-004",
+    "chapter": 3,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2003,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "factor theorem",
+      "algebraic division"
+    ],
+    "methods": [
+      "factor theorem",
+      "repeated roots",
+      "polynomial factorisation"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $f(x)=x^3-x^2-8x+12$. Show that $x=2$ is a repeated root of $f(x)=0$ and find all the real roots."
+  },
+  {
+    "id": "ch03-005",
+    "chapter": 3,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2013,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "remainder theorem",
+      "simultaneous equations"
+    ],
+    "methods": [
+      "remainder theorem",
+      "solving linear equations"
+    ],
+    "solutionStatus": "full",
+    "preview": "When $x^3+ax^2+bx+6$ is divided by $x-2$ the remainder is $0$, and when divided by $x-3$ the remainder is $8$. Find $a$ and $b$."
   },
   {
     "id": "ch04-001",
@@ -319,6 +440,48 @@
     "preview": "Let $f(x)=\\dfrac{x}{1+x^2}$. Show that $f(1/x)=f(x)$ for all $x\\neq 0$, and find the maximum value of $f(x)$ for $x>0$."
   },
   {
+    "id": "ch04-006",
+    "chapter": 4,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2007,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "functions",
+      "inverse functions",
+      "domain and range"
+    ],
+    "methods": [
+      "monotonicity",
+      "range of a function",
+      "finding an inverse"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $f(x)=\\dfrac{e^x}{e^x+1}$. Show that $f$ is increasing on $\\mathbb{R}$, find its range, and find $f^{-1}(x)$ together with the domain…"
+  },
+  {
+    "id": "ch04-007",
+    "chapter": 4,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2014,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "graph sketching",
+      "stationary points"
+    ],
+    "methods": [
+      "differentiation",
+      "curve sketching"
+    ],
+    "solutionStatus": "full",
+    "preview": "Sketch the graph of $y=x^3-3x$, and find the coordinates of its stationary points."
+  },
+  {
     "id": "ch05-001",
     "chapter": 5,
     "title": "",
@@ -406,6 +569,26 @@
     "preview": "The point $P$ has coordinates $(x,y)$ with respect to the origin $O$. By writing $x=r\\cos\\theta$ and $y=r\\sin\\theta$, or otherwise, show…"
   },
   {
+    "id": "ch05-005",
+    "chapter": 5,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2009,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "coordinate geometry",
+      "circles"
+    ],
+    "methods": [
+      "perpendicular bisector",
+      "equation of a circle"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the equation of the circle passing through the points $(1,0)$, $(0,1)$ and $(2,1)$."
+  },
+  {
     "id": "ch06-001",
     "chapter": 6,
     "title": "",
@@ -468,6 +651,48 @@
     ],
     "solutionStatus": "full",
     "preview": "The function $f$ is defined by $f(x)=ax^2+bx+c$. Show that $ f'(x)=f(1)\\left(x+\\tfrac12\\right)+f(-1)\\left(x-\\tfrac12\\right)-2f(0)x.$  If…"
+  },
+  {
+    "id": "ch06-004",
+    "chapter": 6,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2012,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "differentiation",
+      "stationary points",
+      "optimisation"
+    ],
+    "methods": [
+      "product rule",
+      "nature of stationary points"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the coordinates of the stationary points of $y=x^2e^{-x}$ and determine their nature."
+  },
+  {
+    "id": "ch06-005",
+    "chapter": 6,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2005,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "differentiation",
+      "optimisation",
+      "3D geometry"
+    ],
+    "methods": [
+      "related quantities",
+      "maximisation"
+    ],
+    "solutionStatus": "full",
+    "preview": "A right circular cylinder is inscribed in a sphere of radius $R$. If $x$ is half the height of the cylinder, show that its volume is…"
   },
   {
     "id": "ch07-003",
@@ -614,6 +839,25 @@
     "preview": "Show that $\\displaystyle\\int_0^{\\pi/2} \\cos^2 x\\,dx = \\frac{\\pi}{4}$."
   },
   {
+    "id": "ch07-011",
+    "chapter": 7,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2008,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "integration",
+      "integration by parts"
+    ],
+    "methods": [
+      "integration by parts"
+    ],
+    "solutionStatus": "full",
+    "preview": "Evaluate $\\displaystyle\\int_0^1 x^2e^x\\,dx$ using integration by parts."
+  },
+  {
     "id": "ch08-001",
     "chapter": 8,
     "title": "",
@@ -737,6 +981,47 @@
     ],
     "solutionStatus": "full",
     "preview": "A sequence is defined by $u_1=2$ and $u_{n+1}=3u_n-2$ for $n\\ge 1$. Prove by induction that $u_n = 3^{n-1}+1$ for all $n\\ge 1$."
+  },
+  {
+    "id": "ch08-007",
+    "chapter": 8,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2004,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "sequences",
+      "recurrence relations",
+      "closed form"
+    ],
+    "methods": [
+      "linear recurrence",
+      "particular solution"
+    ],
+    "solutionStatus": "full",
+    "preview": "A sequence is defined by $u_1=1$ and $u_{n+1}=2u_n+1$ for $n\\ge1$. Find a closed form for $u_n$."
+  },
+  {
+    "id": "ch08-008",
+    "chapter": 8,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2011,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "sequences",
+      "series",
+      "arithmetic sequences"
+    ],
+    "methods": [
+      "nth term from partial sums"
+    ],
+    "solutionStatus": "full",
+    "preview": "The sum of the first $n$ terms of a sequence is $S_n=n^2+3n$. Find the $n$th term $u_n$ and show that the sequence is arithmetic."
   },
   {
     "id": "ch09-001",
@@ -866,6 +1151,48 @@
     "preview": "A circle has centre the origin and radius $r$. Show that the tangent to the circle at the point $(x_0,y_0)$ on the circle has equation…"
   },
   {
+    "id": "ch09-007",
+    "chapter": 9,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2006,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "coordinate geometry",
+      "circles",
+      "tangents"
+    ],
+    "methods": [
+      "implicit differentiation",
+      "equation of a tangent"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the equation of the tangent to the circle $x^2+y^2=25$ at the point $(3,4)$."
+  },
+  {
+    "id": "ch09-008",
+    "chapter": 9,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2015,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "coordinate geometry",
+      "circles",
+      "tangent length"
+    ],
+    "methods": [
+      "equation of a circle",
+      "length of a tangent"
+    ],
+    "solutionStatus": "full",
+    "preview": "A circle has centre $(2,-1)$ and passes through $(5,3)$. Find its equation and the length of the tangent from the point $(6,5)$ to the…"
+  },
+  {
     "id": "ch10-001",
     "chapter": 10,
     "title": "",
@@ -948,6 +1275,66 @@
     ],
     "solutionStatus": "full",
     "preview": "If $\\theta+\\phi+\\psi=\\tfrac12\\pi$, show that $ \\sin^2\\theta+\\sin^2\\phi+\\sin^2\\psi+2\\sin\\theta\\sin\\phi\\sin\\psi=1.$  By taking…"
+  },
+  {
+    "id": "ch10-005",
+    "chapter": 10,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2007,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "trigonometry",
+      "trigonometric equations"
+    ],
+    "methods": [
+      "Pythagorean identity",
+      "factorising"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $2\\cos^2\\theta+\\sin\\theta-1=0$ for $0\\le\\theta\\le2\\pi$."
+  },
+  {
+    "id": "ch10-006",
+    "chapter": 10,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2010,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "trigonometry",
+      "compound angle formulae"
+    ],
+    "methods": [
+      "compound angle formula",
+      "double angle"
+    ],
+    "solutionStatus": "full",
+    "preview": "Prove that $\\cos3\\theta=4\\cos^3\\theta-3\\cos\\theta$."
+  },
+  {
+    "id": "ch10-007",
+    "chapter": 10,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2003,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "trigonometry",
+      "harmonic form"
+    ],
+    "methods": [
+      "Rcos form",
+      "compound angle"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the maximum value of $5\\cos\\theta+12\\sin\\theta$ and a value of $\\theta$ in $[0,2\\pi)$ at which it is attained."
   },
   {
     "id": "ch11-001",
@@ -1050,6 +1437,46 @@
     ],
     "solutionStatus": "full",
     "preview": "Solve $\\tan x + \\cot x = 2$ for $0<x<\\tfrac{\\pi}{2}$, showing that the only solution is $x=\\tfrac{\\pi}{4}$."
+  },
+  {
+    "id": "ch11-006",
+    "chapter": 11,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2009,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "trigonometry",
+      "trigonometric equations"
+    ],
+    "methods": [
+      "reciprocal identities",
+      "solving"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $\\tan\\theta+\\cot\\theta=2$ for $0<\\theta<\\pi$."
+  },
+  {
+    "id": "ch11-007",
+    "chapter": 11,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2013,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "trigonometry",
+      "compound angle formulae"
+    ],
+    "methods": [
+      "tan addition formula",
+      "rationalising"
+    ],
+    "solutionStatus": "full",
+    "preview": "Show that $\\tan(A+B)=\\dfrac{\\tan A+\\tan B}{1-\\tan A\\tan B}$, and hence find the exact value of $\\tan\\dfrac{\\pi}{12}$."
   },
   {
     "id": "ch12-001",
@@ -1156,6 +1583,47 @@
     "preview": "Solve $\\log_2(x+3) + \\log_2(x-1) = 3$."
   },
   {
+    "id": "ch12-006",
+    "chapter": 12,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2008,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "logarithms",
+      "logarithmic equations"
+    ],
+    "methods": [
+      "log laws",
+      "solving quadratics"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $\\log_2(x+2)+\\log_2(x-1)=2$."
+  },
+  {
+    "id": "ch12-007",
+    "chapter": 12,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2016,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "exponentials",
+      "logarithms",
+      "indices"
+    ],
+    "methods": [
+      "common base",
+      "relating exponents"
+    ],
+    "solutionStatus": "full",
+    "preview": "Suppose $2^x=3^y=6^z$. Express $z$ in terms of $x$ and $y$."
+  },
+  {
     "id": "A2-01-001",
     "chapter": "A2-01",
     "title": "",
@@ -1220,6 +1688,48 @@
     "preview": "Which of the following statements are true and which are false? Justify your answers. (i) $a^{\\ln b}=b^{\\ln a}$ for all $a,b>0$. (ii)…"
   },
   {
+    "id": "A2-01-004",
+    "chapter": "A2-01",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2012,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "functions",
+      "inverse functions",
+      "restricted domain"
+    ],
+    "methods": [
+      "completing the square",
+      "finding an inverse"
+    ],
+    "solutionStatus": "full",
+    "preview": "The function $f(x)=x^2-4x+3$ is defined for $x\\ge2$. Find $f^{-1}(x)$, stating its domain and range."
+  },
+  {
+    "id": "A2-01-005",
+    "chapter": "A2-01",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2018,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "functions",
+      "composition",
+      "self-inverse"
+    ],
+    "methods": [
+      "function composition",
+      "solving equations"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $f(x)=\\dfrac{1}{x-1}$ (for $x\\neq1$). Find $f(f(x))$ and solve $f(f(x))=x$."
+  },
+  {
     "id": "A2-02-001",
     "chapter": "A2-02",
     "title": "",
@@ -1281,6 +1791,46 @@
     ],
     "solutionStatus": "full",
     "preview": "(i) In the binomial expansion of $(2x+1/x^2)^6$ for $x\\neq0$, show that the term which is independent of $x$ is $240$. Find the term which…"
+  },
+  {
+    "id": "A2-02-004",
+    "chapter": "A2-02",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2005,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "binomial expansion",
+      "approximation"
+    ],
+    "methods": [
+      "binomial series for fractional power",
+      "approximation"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the first four terms in the expansion of $(1+x)^{1/2}$ in ascending powers of $x$, and hence estimate $\\sqrt{1.02}$."
+  },
+  {
+    "id": "A2-02-005",
+    "chapter": "A2-02",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2014,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "binomial expansion",
+      "coefficients"
+    ],
+    "methods": [
+      "binomial theorem",
+      "collecting terms"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the coefficient of $x^3$ in the expansion of $(1+2x)(1-3x)^5$."
   },
   {
     "id": "A2-03-001",
@@ -1348,6 +1898,25 @@
     "preview": "Show that $ \\tan3\\theta=\\frac{3\\tan\\theta-\\tan^3\\theta}{1-3\\tan^2\\theta}.$  Given that $\\theta=\\cos^{-1}(2/\\sqrt5)$ and $0<\\theta<\\pi/2$,…"
   },
   {
+    "id": "A2-03-004",
+    "chapter": "A2-03",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2006,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "trigonometry",
+      "sum-to-product"
+    ],
+    "methods": [
+      "sum-to-product identities"
+    ],
+    "solutionStatus": "full",
+    "preview": "Prove that $\\dfrac{\\sin A+\\sin B}{\\cos A+\\cos B}=\\tan\\dfrac{A+B}{2}$."
+  },
+  {
     "id": "A2-04-001",
     "chapter": "A2-04",
     "title": "",
@@ -1410,6 +1979,27 @@
     ],
     "solutionStatus": "full",
     "preview": "To nine decimal places, $\\log_{10}2=0.301029996$ and $\\log_{10}3=0.477121255$. (i) Calculate $\\log_{10}5$ and $\\log_{10}6$ to three decimal…"
+  },
+  {
+    "id": "A2-04-004",
+    "chapter": "A2-04",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2007,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "integration",
+      "exponentials",
+      "substitution"
+    ],
+    "methods": [
+      "substitution u=e^x",
+      "standard integral"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find $\\displaystyle\\int \\frac{e^x}{1+e^{2x}}\\,dx$."
   },
   {
     "id": "A2-05-001",
@@ -1714,6 +2304,47 @@
     "preview": "The normal to the curve $y=f(x)$ at the point $P$ with coordinates $(x,f(x))$ cuts the $y$-axis at the point $Q$. Derive an expression in…"
   },
   {
+    "id": "A2-07-004",
+    "chapter": "A2-07",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2010,
+    "level": "A2",
+    "difficulty": 2,
+    "topics": [
+      "differential equations",
+      "separable equations"
+    ],
+    "methods": [
+      "separation of variables",
+      "integrating"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $\\dfrac{dy}{dx}=2xy$, given that $y=3$ when $x=0$."
+  },
+  {
+    "id": "A2-07-005",
+    "chapter": "A2-07",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2017,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "differential equations",
+      "separable equations",
+      "logistic equation"
+    ],
+    "methods": [
+      "partial fractions",
+      "separation of variables"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $\\dfrac{dy}{dx}=y(1-y)$, given that $y(0)=\\tfrac12$."
+  },
+  {
     "id": "A2-08-001",
     "chapter": "A2-08",
     "title": "",
@@ -1779,6 +2410,45 @@
     "preview": "Consider the equation $x^3-x-1=0$. Show that it has exactly one real root $\\alpha$, with $1<\\alpha<2$. Taking $x_0=1$, use the iteration…"
   },
   {
+    "id": "A2-08-004",
+    "chapter": "A2-08",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2011,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "numerical methods",
+      "Newton-Raphson"
+    ],
+    "methods": [
+      "intermediate value theorem",
+      "Newton-Raphson iteration"
+    ],
+    "solutionStatus": "full",
+    "preview": "Show that $x^3+x-1=0$ has a root in $(0,1)$ and use one iteration of the Newton-Raphson method, starting from $x_0=1$, to estimate it."
+  },
+  {
+    "id": "A2-08-005",
+    "chapter": "A2-08",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2019,
+    "level": "A2",
+    "difficulty": 2,
+    "topics": [
+      "numerical methods",
+      "fixed-point iteration"
+    ],
+    "methods": [
+      "fixed-point iteration"
+    ],
+    "solutionStatus": "full",
+    "preview": "The equation $x=\\cos x$ has a root $\\alpha$. Using the iteration $x_{n+1}=\\cos x_n$ with $x_0=0.7$, find $x_1$ and $x_2$ to 3 decimal…"
+  },
+  {
     "id": "A2-09-001",
     "chapter": "A2-09",
     "title": "",
@@ -1842,5 +2512,25 @@
     ],
     "solutionStatus": "full",
     "preview": "The line $L_1$ has vector equation $ \\mathbf r=\\begin{pmatrix}1\\\\0\\\\2\\end{pmatrix}+\\lambda\\begin{pmatrix}2\\\\2\\\\-3\\end{pmatrix}.$  The line…"
+  },
+  {
+    "id": "A2-09-004",
+    "chapter": "A2-09",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2008,
+    "level": "A2",
+    "difficulty": 2,
+    "topics": [
+      "vectors",
+      "scalar product"
+    ],
+    "methods": [
+      "dot product",
+      "angle between vectors"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the angle between the vectors $\\mathbf{a}=(1,2,2)$ and $\\mathbf{b}=(2,-1,2)$."
   }
 ]
