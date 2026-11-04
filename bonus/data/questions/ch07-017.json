@@ -1,0 +1,18 @@
+{
+  "id": "ch07-017",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2006,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": ["integration by parts", "reduction"],
+  "methods": ["parts with u=ln x", "repeated application"],
+  "statement": "Using integration by parts, evaluate $\\displaystyle\\int_{1}^{e}x^{2}\\ln x\\,dx$.",
+  "solution": "Let $u=\\ln x$ and $dv=x^{2}\\,dx$, so $du=\\frac1x\\,dx$ and $v=\\frac{x^{3}}{3}$. Then $\\int x^{2}\\ln x\\,dx=\\frac{x^{3}}{3}\\ln x-\\int\\frac{x^{3}}{3}\\cdot\\frac1x\\,dx=\\frac{x^{3}}{3}\\ln x-\\frac{x^{3}}{9}+C$. Evaluating from $1$ to $e$: $\\bigl[\\frac{x^{3}}{3}\\ln x-\\frac{x^{3}}{9}\\bigr]_{1}^{e}=\\bigl(\\frac{e^{3}}{3}-\\frac{e^{3}}{9}\\bigr)-\\bigl(0-\\frac{1}{9}\\bigr)=\\frac{2e^{3}}{9}+\\frac{1}{9}$.",
+  "solutionStatus": "full",
+  "hints": ["Choose u=ln x so that du simplifies.", "Integrate x^2 to get x^3/3.", "Evaluate at the limits carefully."]
+}

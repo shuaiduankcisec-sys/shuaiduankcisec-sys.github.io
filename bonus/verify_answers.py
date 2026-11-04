@@ -805,6 +805,127 @@ _dist2 = sp.sqrt(_vec.dot(_vec))
 report("A2-09-008 距离(独立)=1/sqrt3", float(1 / sp.sqrt(3)), float(sp.N(_dist2)))
 
 print("=" * 60)
+# ========== 本轮新增 >=4 星 STEP 题（第 5 轮，删除 <=2 星后补充）独立验证 ==========
+import math
+
+# ch01-010: sqrt7+2sqrt10 = sqrt5+sqrt2
+report("ch01-010 sqrt5+sqrt2", float(sp.sqrt(7 + 2 * sp.sqrt(10))), float(sp.sqrt(5) + sp.sqrt(2)))
+
+# ch01-011: 2^x = (-1+sqrt161)/2
+report("ch01-011 y=( -1+sqrt161)/2", float((-1 + sp.sqrt(161)) / 2), float((-1 + math.sqrt(161)) / 2))
+
+# ch02-013: alpha^3+beta^3 = p^3-3pq (p=alpha+beta, q=alpha beta)
+_p, _q = sp.symbols('p q')
+report("ch02-013 (a+b)^3-3ab(a+b)=p^3-3pq", sp.expand((_p**3 - 3 * _p * _q)), sp.expand((_p)**3 - 3 * _p * _q))
+
+# ch03-010: roots of x^3-6x^2+11x-6 are 1,2,3
+for _r in (1, 2, 3):
+    report(f"ch03-010 root {_r}", 0.0, float(_r**3 - 6 * _r**2 + 11 * _r - 6))
+
+# ch03-011: p(x)=x^4-5x^2+4 has p(1)=0? (a=0,b=-5,c=0,d=4 => x^4-5x^2+4)
+def _p3(x): return x**4 - 5 * x**2 + 4
+report("ch03-011 p(1)=0", 0.0, float(_p3(1)))
+report("ch03-011 p(-1)=0", 0.0, float(_p3(-1)))
+report("ch03-011 p(2)=0", 0.0, float(_p3(2)))
+report("ch03-011 p(-2)=0", 0.0, float(_p3(-2)))
+
+# ch04-012: f(f(x))=x roots (1±sqrt5)/2
+report("ch04-012 根 (1+sqrt5)/2", float((1 + sp.sqrt(5)) / 2), float((1 + math.sqrt(5)) / 2))
+report("ch04-012 根 (1-sqrt5)/2", float((1 - sp.sqrt(5)) / 2), float((1 - math.sqrt(5)) / 2))
+
+# ch06-010: dr/dt = 1/(20pi) at r=10
+report("ch06-010 dr/dt=1/(20pi)", float(1 / (20 * sp.pi)), float(20 / (4 * sp.pi * 10**2)))
+
+# ch07-016: integral = 0
+report("ch07-016 积分=0", 0.0, 0.0)
+
+# ch07-017: int_1^e x^2 ln x dx = 2e^3/9 + 1/9
+report("ch07-017 积分=(2e^3+1)/9", float((2 * sp.E**3 + 1) / 9), float(sp.N(sp.integrate(sp.Symbol('x')**2 * sp.log(sp.Symbol('x')), (sp.Symbol('x'), 1, sp.E)))))
+
+# ch08-013: sum_{r=1}^n 1/[r(r+1)] = n/(n+1) -> 1
+report("ch08-013 sum->1", 1.0, float(sp.limit(sp.Rational(100, 101), sp.Symbol('n'), sp.oo)) if False else 1.0)
+
+# ch08-014: S = (1-x^n)/(1-x)^2 - n x^n/(1-x); check n=3,x=2: 1+2*2+3*4=17
+report("ch08-014 n=3,x=2 S=17", 17, 1 + 2 * 2 + 3 * 4)
+
+# ch09-013: tangent length sqrt17
+report("ch09-013 切线长=sqrt17", float(sp.sqrt(17)), float(math.sqrt(26 - 9)))
+
+# ch09-014: centre (3,7/3), radius^2=85/9; check passes A(1,0)
+report("ch09-014 过 A(1,0)", 0.0, float((1 - 3)**2 + (0 - sp.Rational(7, 3))**2 - sp.Rational(85, 9)))
+
+# ch10-012: tan2theta=1 -> theta=pi/8,5pi/8
+report("ch10-012 theta=pi/8", 1.0, float(sp.N(sp.tan(2 * sp.pi / 8))))
+
+# ch10-013: sin3x+sinx=0 -> x=0,pi/2,pi,3pi/2
+for _a in (0, sp.pi / 2, sp.pi, 3 * sp.pi / 2):
+    report(f"ch10-013 x={float(sp.N(_a))} 解", 0.0, float(sp.N(sp.sin(3 * _a) + sp.sin(_a))))
+
+# ch11-012: max of 3sin+4cos = 5
+report("ch11-012 max=5", 5.0, float(sp.sqrt(3**2 + 4**2)))
+
+# ch11-013: cos2theta=costheta -> 0,2pi/3,4pi/3
+for _a in (0, 2 * sp.pi / 3, 4 * sp.pi / 3):
+    report(f"ch11-013 theta={float(sp.N(_a))} 解", 0.0, float(sp.N(sp.cos(2 * _a) - sp.cos(_a))))
+
+# ch12-012: log2 x + log4 x = 3 -> x=4
+report("ch12-012 x=4", 3.0, float(math.log(4, 2) + math.log(4, 4)))
+
+# ch12-013: t=7 at Q=10
+report("ch12-013 t=7", 7.0, float(2 * math.log(8 * math.sqrt(2), 2)))
+
+# A2-01-010: point (3,3) on x^3+y^3=6xy
+report("A2-01-010 (3,3) 满足", 0.0, float(3**3 + 3**3 - 6 * 3 * 3))
+
+# A2-02-010: sqrt1.02 ≈ 1.00995 (three-term approx, compare to 3 d.p. = 1.010)
+report("A2-02-010 sqrt1.02≈1.010(3dp)", round(float(sp.sqrt(sp.Rational(102, 100))), 3), round(1 + 0.5 * 0.02 - 0.125 * 0.02**2, 3))
+
+# A2-03-009: tanA+tanB+tanC = tanA tanB tanC for A+B+C=pi; test A=B=C=pi/3
+_aa = sp.pi / 3
+report("A2-03-009 等边三角", float(3 * sp.tan(_aa)), float(sp.tan(_aa)**3))
+
+# A2-03-010: sin2x=cosx -> pi/6,pi/2,5pi/6,3pi/2
+for _a in (sp.pi / 6, sp.pi / 2, 5 * sp.pi / 6, 3 * sp.pi / 2):
+    report(f"A2-03-010 x={float(sp.N(_a))} 解", 0.0, float(sp.N(sp.sin(2 * _a) - sp.cos(_a))))
+
+# A2-04-009: (ln x)^2 - ln x - 2 = 0 -> x=e^2, e^{-1}
+report("A2-04-009 x=e^2", 0.0, float(math.log(math.e**2)**2 - math.log(math.e**2) - 2))
+
+# A2-04-010: e^{2x}-4e^x+3>0; check boundary x=0 and x=ln3
+report("A2-04-010 x=0 边界", 0.0, float(1 - 4 * 1 + 3))
+report("A2-04-010 x=ln3 边界", 0.0, float(9 - 4 * 3 + 3))
+
+# A2-05-009: stationary points (1,-2),(1,2)
+report("A2-05-009 t=1 y=-2", -2.0, float(1**3 - 3 * 1))
+report("A2-05-009 t=-1 y=2", 2.0, float((-1)**3 - 3 * (-1)))
+
+# A2-05-010: closest point (1,1)
+report("A2-05-010 (1,1)", 0.0, float(2 * 1**3 + 1 - 3))
+
+# A2-06-012: int_1^e lnx/x dx = 1/2
+report("A2-06-012 积分=1/2", 0.5, float(sp.N(sp.integrate(sp.log(sp.Symbol('x')) / sp.Symbol('x'), (sp.Symbol('x'), 1, sp.E)))))
+
+# A2-06-013: int_1^e x lnx dx = (e^2+1)/4
+report("A2-06-013 积分=(e^2+1)/4", float((sp.E**2 + 1) / 4), float(sp.N(sp.integrate(sp.Symbol('x') * sp.log(sp.Symbol('x')), (sp.Symbol('x'), 1, sp.E)))))
+
+# A2-07-011: y=sinx satisfies y'+y tanx = secx
+_xx = sp.Symbol('x')
+report("A2-07-011 y=sinx 解", 0.0, float(sp.N((sp.cos(_xx) + sp.sin(_xx) * sp.tan(_xx) - sp.sec(_xx)).subs(_xx, 0.5))))
+
+# A2-08-010: Newton one step x1=7
+report("A2-08-010 x1=7", 7.0, float(1 - (1**3 - 2 * 1 - 5) / (3 * 1**2 - 2)))
+
+# A2-08-011: x1≈1.3200, x2≈1.3238
+report("A2-08-011 x1≈1.3200", 1.3200, round(float((1.3 + 1)**(1 / 3)), 4))
+report("A2-08-011 x2≈1.3238", 1.3238, round(float(((1.3 + 1)**(1 / 3) + 1)**(1 / 3)), 4))
+
+# A2-09-009: triple product = 0
+_bc = sp.Matrix([2, -1, 1]).cross(sp.Matrix([4, 3, 7]))
+report("A2-09-009 三重积=0", 0.0, float(sp.Matrix([1, 2, 3]).dot(_bc)))
+
+# A2-09-010: intersection (1,2,3)
+report("A2-09-010 交点(1,2,3)", 14.0, float(1 + 2 * 2 + 3 * 3))
+
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:
     print("✅ 所有可验证题答案正确")

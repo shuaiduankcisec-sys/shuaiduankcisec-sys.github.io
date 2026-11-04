@@ -1,0 +1,18 @@
+{
+  "id": "ch12-012",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["logarithmic equations", "change of base"],
+  "methods": ["converting to base 2", "solving the resulting equation"],
+  "statement": "Solve the equation $\\log_{2}x+\\log_{4}x=3$.",
+  "solution": "Using $\\log_{4}x=\\frac{\\log_{2}x}{\\log_{2}4}=\\frac{\\log_{2}x}{2}$, the equation becomes $\\log_{2}x+\\frac12\\log_{2}x=\\frac32\\log_{2}x=3$, so $\\log_{2}x=2$ and $x=4$.",
+  "solutionStatus": "full",
+  "hints": ["Change base of log_4 x to base 2.", "Combine the two logs into one.", "Solve for x."]
+}

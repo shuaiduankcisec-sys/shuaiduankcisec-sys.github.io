@@ -1,0 +1,18 @@
+{
+  "id": "A2-09-009",
+  "chapter": "A2-09",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["scalar triple product", "coplanarity"],
+  "methods": ["triple product = 0", "volume of parallelepiped"],
+  "statement": "Show that the vectors $\\mathbf{a}=(1,2,3)$, $\\mathbf{b}=(2,-1,1)$ and $\\mathbf{c}=(4,3,7)$ are coplanar.",
+  "solution": "The three vectors are coplanar if their scalar triple product $\\mathbf{a}\\cdot(\\mathbf{b}\\times\\mathbf{c})$ is zero. We have $\\mathbf{b}\\times\\mathbf{c}=(2,-1,1)\\times(4,3,7)=(-10,-10,10)$. Then $\\mathbf{a}\\cdot(\\mathbf{b}\\times\\mathbf{c})=(1,2,3)\\cdot(-10,-10,10)=-10-20+30=0$. Hence the vectors are coplanar.",
+  "solutionStatus": "full",
+  "hints": ["Compute the cross product b x c.", "Take the dot product with a.", "The vectors are coplanar iff the triple product is zero."]
+}

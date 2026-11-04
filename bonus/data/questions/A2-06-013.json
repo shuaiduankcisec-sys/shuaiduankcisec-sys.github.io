@@ -1,0 +1,18 @@
+{
+  "id": "A2-06-013",
+  "chapter": "A2-06",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": ["integration by parts", "trigonometric substitution"],
+  "methods": ["parts with u=ln x", "repeated application"],
+  "statement": "Evaluate $\\displaystyle\\int_{1}^{e}x\\ln x\\,dx$.",
+  "solution": "Let $u=\\ln x$ and $dv=x\\,dx$, so $du=\\frac1x\\,dx$ and $v=\\frac{x^{2}}{2}$. Then $\\int x\\ln x\\,dx=\\frac{x^{2}}{2}\\ln x-\\int\\frac{x^{2}}{2}\\cdot\\frac1x\\,dx=\\frac{x^{2}}{2}\\ln x-\\frac{x^{2}}{4}+C$. Evaluating from $1$ to $e$: $\\bigl[\\frac{x^{2}}{2}\\ln x-\\frac{x^{2}}{4}\\bigr]_{1}^{e}=\\bigl(\\frac{e^{2}}{2}-\\frac{e^{2}}{4}\\bigr)-\\bigl(0-\\frac{1}{4}\\bigr)=\\frac{e^{2}}{4}+\\frac{1}{4}=\\frac{e^{2}+1}{4}$.",
+  "solutionStatus": "full",
+  "hints": ["Choose u=ln x and dv=x dx.", "Apply integration by parts.", "Evaluate at the limits 1 and e."]
+}

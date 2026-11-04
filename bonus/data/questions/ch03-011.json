@@ -1,0 +1,18 @@
+{
+  "id": "ch03-011",
+  "chapter": 3,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": ["remainder theorem", "system of equations"],
+  "methods": ["remainder conditions", "solving for coefficients"],
+  "statement": "The polynomial $p(x)=x^{4}+ax^{3}+bx^{2}+cx+d$ leaves remainder $1$ when divided by $x-1$, remainder $-1$ when divided by $x+1$, and is divisible by $x^{2}-4$. Find $a,b,c,d$.",
+  "solution": "Divisibility by $x^{2}-4$ means $p(2)=0$ and $p(-2)=0$. The remainder conditions give $p(1)=1$ and $p(-1)=-1$. We obtain the four equations $p(1)=1+a+b+c+d=1$, $p(-1)=1-a+b-c+d=-1$, $p(2)=16+8a+4b+2c+d=0$, $p(-2)=16-8a+4b-2c+d=0$. From the first two: $a+b+c+d=0$ and $-a+b-c+d=-2$, so adding gives $2b+2d=-2$, i.e. $b+d=-1$. From the last two: $8a+2c=0$ (subtracting) so $c=-4a$, and $16+4b+d=0$ (adding) so $4b+d=-16$. Solving $b+d=-1$ and $4b+d=-16$ gives $3b=-15$, so $b=-5$ and $d=4$. Then $a+c=0$ (from $a+b+c+d=0$ with $b+d=-1$) and $c=-4a$ gives $a-4a=0$, so $a=0$, $c=0$. Thus $a=0,b=-5,c=0,d=4$.",
+  "solutionStatus": "full",
+  "hints": ["Write the four conditions p(1), p(-1), p(2), p(-2).", "Add/subtract pairs to reduce to simpler systems.", "Solve for b, d first, then a and c."]
+}

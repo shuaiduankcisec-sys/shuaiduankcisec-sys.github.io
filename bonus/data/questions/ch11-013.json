@@ -1,0 +1,18 @@
+{
+  "id": "ch11-013",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": ["trigonometric equations", "multiple angles"],
+  "methods": ["squaring or factorising", "solving cos2theta = cos theta"],
+  "statement": "Solve the equation $\\cos2\\theta=\\cos\\theta$ for $0\\le\\theta<2\\pi$.",
+  "solution": "Using $\\cos2\\theta=2\\cos^{2}\\theta-1$, the equation becomes $2\\cos^{2}\\theta-1=\\cos\\theta$, i.e. $2\\cos^{2}\\theta-\\cos\\theta-1=0$. Factorising: $(2\\cos\\theta+1)(\\cos\\theta-1)=0$. So $\\cos\\theta=1$ gives $\\theta=0$, and $\\cos\\theta=-\\tfrac12$ gives $\\theta=\\frac{2\\pi}{3},\\frac{4\\pi}{3}$. The solutions are $\\theta=0,\\frac{2\\pi}{3},\\frac{4\\pi}{3}$.",
+  "solutionStatus": "full",
+  "hints": ["Replace cos2theta with 2cos^2 theta -1.", "Solve the resulting quadratic in cos theta.", "Read off all angles in [0,2pi)."]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ch05-011",
+  "chapter": 5,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2006,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": ["parametric parabola", "tangent"],
+  "methods": ["parametric form of y^2=4ax", "tangent equation"],
+  "statement": "For the parabola $y^{2}=4ax$, show that the tangent at the point $(at^{2},2at)$ has equation $ty=x+at^{2}$, and find where this tangent meets the $x$-axis.",
+  "solution": "The point $(at^{2},2at)$ lies on $y^{2}=4ax$ since $(2at)^{2}=4a\\cdot at^{2}$. The tangent has gradient $\\frac{dy}{dx}=\\frac{dy/dt}{dx/dt}=\\frac{2a}{2at}=\\frac{1}{t}$, so its equation is $y-2at=\\frac{1}{t}(x-at^{2})$, i.e. $ty=x+at^{2}$. Setting $y=0$ gives $x=-at^{2}$, so the tangent meets the $x$-axis at $(-at^{2},0)$.",
+  "solutionStatus": "full",
+  "hints": ["Differentiate parametrically to find the gradient dy/dx.", "Use the point-slope form of the tangent.", "Set y=0 to find the x-intercept."]
+}

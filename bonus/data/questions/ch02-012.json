@@ -1,0 +1,18 @@
+{
+  "id": "ch02-012",
+  "chapter": 2,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["common roots", "quadratics"],
+  "methods": ["setting up conditions for a common root", "eliminating the root"],
+  "statement": "The quadratics $x^{2}+px+q=0$ and $x^{2}+rx+s=0$ have a common root. Show that $(q-s)^{2}=(p-r)(ps-qr)$.",
+  "solution": "Let the common root be $\\alpha$. Then $\\alpha^{2}+p\\alpha+q=0$ and $\\alpha^{2}+r\\alpha+s=0$. Subtracting gives $(p-r)\\alpha+(q-s)=0$, so (assuming $p\\neq r$) $\\alpha=\\frac{s-q}{p-r}$. Substituting $\\alpha$ back into the first equation and clearing denominators gives the required relation: $(q-s)^{2}=(p-r)(ps-qr)$.",
+  "solutionStatus": "full",
+  "hints": ["Let alpha be the common root.", "Subtract the two equations to isolate alpha.", "Substitute alpha back and simplify."]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "A2-08-011",
+  "chapter": "A2-08",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2006,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": ["fixed-point iteration", "convergence"],
+  "methods": ["finding a suitable rearrangement", "verifying convergence"],
+  "statement": "The equation $x^{3}-x-1=0$ has a root $\\alpha$ near $1.3$. Show that the iteration $x_{n+1}=\\sqrt[3]{x_{n}+1}$ converges to $\\alpha$, and carry out two iterations starting from $x_{0}=1.3$.",
+  "solution": "The rearrangement $x=\\sqrt[3]{x+1}$ has $g(x)=\\sqrt[3]{x+1}$ with $g'(x)=\\frac{1}{3}(x+1)^{-2/3}$. Near $x=1.3$, $|g'(x)|\\approx\\frac{1}{3}(2.3)^{-2/3}\\approx0.19<1$, so the iteration converges. Two iterations: $x_{1}=\\sqrt[3]{2.3}\\approx1.3200$ and $x_{2}=\\sqrt[3]{2.3200}\\approx1.3238$.",
+  "solutionStatus": "full",
+  "hints": ["Rearrange x^3=x+1 as x=(x+1)^{1/3}.", "Check |g'(x)|<1 near the root.", "Iterate twice starting from 1.3."]
+}

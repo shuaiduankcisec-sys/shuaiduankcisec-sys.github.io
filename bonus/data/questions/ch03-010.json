@@ -1,0 +1,18 @@
+{
+  "id": "ch03-010",
+  "chapter": 3,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["factor theorem", "cubic factorisation"],
+  "methods": ["rational root test", "long division"],
+  "statement": "Show that $x-1$ is a factor of $x^{3}-6x^{2}+11x-6$, and hence factorise the cubic completely. Deduce the three roots of $x^{3}-6x^{2}+11x-6=0$.",
+  "solution": "Let $f(x)=x^{3}-6x^{2}+11x-6$. Then $f(1)=1-6+11-6=0$, so $x-1$ is a factor. Dividing, $f(x)=(x-1)(x^{2}-5x+6)=(x-1)(x-2)(x-3)$. Hence the roots are $x=1,2,3$.",
+  "solutionStatus": "full",
+  "hints": ["Evaluate f(1).", "Divide by (x-1) to get a quadratic.", "Factorise the quadratic and read off the roots."]
+}

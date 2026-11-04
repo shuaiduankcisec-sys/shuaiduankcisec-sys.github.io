@@ -1,0 +1,18 @@
+{
+  "id": "A2-07-010",
+  "chapter": "A2-07",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["second-order ODE", "general solution"],
+  "methods": ["auxiliary equation", "finding roots"],
+  "statement": "Solve the differential equation $\\dfrac{d^{2}y}{dx^{2}}-5\\dfrac{dy}{dx}+6y=0$.",
+  "solution": "The auxiliary equation is $m^{2}-5m+6=0$, i.e. $(m-2)(m-3)=0$, giving roots $m=2,3$. Hence the general solution is $y=Ae^{2x}+Be^{3x}$ where $A,B$ are arbitrary constants.",
+  "solutionStatus": "full",
+  "hints": ["Form the auxiliary equation m^2-5m+6=0.", "Factorise to find the roots.", "Write the general solution with two constants."]
+}

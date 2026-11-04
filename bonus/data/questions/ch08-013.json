@@ -1,0 +1,18 @@
+{
+  "id": "ch08-013",
+  "chapter": 8,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["method of differences", "summation"],
+  "methods": ["partial fraction of 1/[r(r+1)]", "telescoping"],
+  "statement": "Show that $\\dfrac{1}{r(r+1)}=\\dfrac1r-\\dfrac{1}{r+1}$, and hence find $\\displaystyle\\sum_{r=1}^{n}\\dfrac{1}{r(r+1)}$. Deduce the limit as $n\\to\\infty$.",
+  "solution": "The identity is a standard partial fraction. Summing from $r=1$ to $n$ gives a telescoping sum: $\\sum_{r=1}^{n}\\bigl(\\tfrac1r-\\tfrac{1}{r+1}\\bigr)=1-\\tfrac{1}{n+1}=\\tfrac{n}{n+1}$. As $n\\to\\infty$, this tends to $1$.",
+  "solutionStatus": "full",
+  "hints": ["Verify the partial fraction identity.", "Write out a few terms to see the cancellation.", "Take the limit as n tends to infinity."]
+}

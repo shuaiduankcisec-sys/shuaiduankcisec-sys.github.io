@@ -1,0 +1,18 @@
+{
+  "id": "ch01-010",
+  "chapter": 1,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["rationalising surds", "sum of two square roots"],
+  "methods": ["squaring to relate a+b and ab", "constructing integer solutions"],
+  "statement": "Given that $\\sqrt{a}+\\sqrt{b}=\\sqrt{7+2\\sqrt{10}}$ with $a$ and $b$ positive integers, find $a$ and $b$. Hence express $\\sqrt{7+2\\sqrt{10}}$ in the form $\\sqrt{p}+\\sqrt{q}$.",
+  "solution": "Square both sides: $a+b+2\\sqrt{ab}=7+2\\sqrt{10}$. Comparing the rational and irrational parts gives $a+b=7$ and $\\sqrt{ab}=\\sqrt{10}$, so $ab=10$. The pairs of positive integers with sum $7$ and product $10$ are $(2,5)$ (or $(5,2)$). Hence $\\sqrt{7+2\\sqrt{10}}=\\sqrt{5}+\\sqrt{2}$.",
+  "solutionStatus": "full",
+  "hints": ["Square both sides and split rational and irrational parts.", "You get a+b=7 and ab=10.", "Solve the small system for a and b."]
+}

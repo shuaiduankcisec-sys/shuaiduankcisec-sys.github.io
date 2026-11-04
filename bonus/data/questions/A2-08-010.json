@@ -1,0 +1,18 @@
+{
+  "id": "A2-08-010",
+  "chapter": "A2-08",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["Newton-Raphson", "root finding"],
+  "methods": ["Newton's method formula", "one iteration"],
+  "statement": "Use one iteration of the Newton-Raphson method, starting from $x_{0}=1$, to find an approximation to a root of $f(x)=x^{3}-2x-5$.",
+  "solution": "$f'(x)=3x^{2}-2$. The Newton-Raphson formula is $x_{n+1}=x_{n}-\\frac{f(x_{n})}{f'(x_{n})}$. With $x_{0}=1$: $f(1)=1-2-5=-6$ and $f'(1)=3-2=1$, so $x_{1}=1-\\frac{-6}{1}=7$.",
+  "solutionStatus": "full",
+  "hints": ["Write down f and f'.", "Apply x_{n+1}=x_n - f(x_n)/f'(x_n).", "Substitute x_0=1."]
+}

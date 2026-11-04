@@ -1,0 +1,18 @@
+{
+  "id": "ch10-012",
+  "chapter": 10,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["compound angles", "trigonometric identities"],
+  "methods": ["expressing tan2theta", "solving with double-angle"],
+  "statement": "Prove that $\\tan2\\theta=\\dfrac{2\\tan\\theta}{1-\\tan^{2}\\theta}$, and hence solve $\\tan2\\theta=1$ for $0\\le\\theta<\\pi$.",
+  "solution": "$\\tan2\\theta=\\dfrac{\\sin2\\theta}{\\cos2\\theta}=\\dfrac{2\\sin\\theta\\cos\\theta}{\\cos^{2}\\theta-\\sin^{2}\\theta}=\\dfrac{2\\tan\\theta}{1-\\tan^{2}\\theta}$ (dividing by $\\cos^{2}\\theta$). Setting $\\tan2\\theta=1$ gives $2\\theta=\\frac{\\pi}{4}+k\\pi$, so $\\theta=\\frac{\\pi}{8}+\\frac{k\\pi}{2}$. In $[0,\\pi)$ the solutions are $\\theta=\\frac{\\pi}{8}$ and $\\theta=\\frac{5\\pi}{8}$.",
+  "solutionStatus": "full",
+  "hints": ["Write tan2theta = sin2theta/cos2theta.", "Divide through by cos^2 theta.", "Solve 2theta = pi/4 + k pi."]
+}

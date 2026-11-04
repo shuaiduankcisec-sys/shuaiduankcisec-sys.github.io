@@ -1,0 +1,18 @@
+{
+  "id": "ch07-016",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["definite integral", "symmetry of odd/even"],
+  "methods": ["splitting x/(1+x^2)", "using even/odd properties"],
+  "statement": "Evaluate $\\displaystyle\\int_{-1}^{1}\\dfrac{x^{3}+x}{1+x^{2}}\\,dx$ and explain why the integral of the $x^{3}$ part vanishes.",
+  "solution": "$\\dfrac{x^{3}+x}{1+x^{2}}=\\dfrac{x(x^{2}+1)}{1+x^{2}}=x$. Hence $\\int_{-1}^{1}\\frac{x^{3}+x}{1+x^{2}}\\,dx=\\int_{-1}^{1}x\\,dx=0$. The $x^{3}$ term $\\frac{x^{3}}{1+x^{2}}$ is an odd function integrated over a symmetric interval, so its contribution is zero.",
+  "solutionStatus": "full",
+  "hints": ["Factor the numerator to simplify the integrand.", "Recognise the remaining integrand is odd.", "Integrate an odd function over a symmetric interval."]
+}

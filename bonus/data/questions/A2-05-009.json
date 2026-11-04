@@ -1,0 +1,18 @@
+{
+  "id": "A2-05-009",
+  "chapter": "A2-05",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["parametric differentiation", "stationary points"],
+  "methods": ["dy/dx via dy/dt and dx/dt", "solving dy/dx=0"],
+  "statement": "For the parametric curve $x=t^{2}$, $y=t^{3}-3t$, find $\\dfrac{dy}{dx}$ and the coordinates of the stationary points.",
+  "solution": "$\\frac{dy}{dx}=\\frac{dy/dt}{dx/dt}=\\frac{3t^{2}-3}{2t}$. Stationary points occur when $\\frac{dy}{dx}=0$, i.e. $3t^{2}-3=0$, so $t=\\pm1$. At $t=1$: $(x,y)=(1,-2)$. At $t=-1$: $(x,y)=(1,2)$. The stationary points are $(1,-2)$ and $(1,2)$.",
+  "solutionStatus": "full",
+  "hints": ["Differentiate x and y with respect to t.", "Form dy/dx = (dy/dt)/(dx/dt).", "Set the numerator to zero and find t."]
+}

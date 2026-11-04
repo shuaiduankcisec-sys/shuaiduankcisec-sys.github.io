@@ -1,0 +1,18 @@
+{
+  "id": "A2-07-011",
+  "chapter": "A2-07",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2006,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": ["first-order linear ODE", "integrating factor"],
+  "methods": ["integrating factor", "initial condition"],
+  "statement": "Solve $\\dfrac{dy}{dx}+y\\tan x=\\sec x$ for $0<x<\\tfrac{\\pi}{2}$, given that $y=0$ when $x=0$.",
+  "solution": "The integrating factor is $e^{\\int\\tan x\\,dx}=e^{-\\ln(\\cos x)}=\\sec x$. Multiplying through, $\\frac{d}{dx}(y\\sec x)=\\sec^{2}x$. Integrating, $y\\sec x=\\tan x+C$. With $y(0)=0$ and $\\sec0=1$, $\\tan0=0$, we get $C=0$. Hence $y\\sec x=\\tan x$, so $y=\\sin x$.",
+  "solutionStatus": "full",
+  "hints": ["Compute the integrating factor e^{integral tan x dx}.", "Recognise d/dx(y sec x) = sec^2 x.", "Use y(0)=0 to fix the constant."]
+}
