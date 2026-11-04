@@ -1,0 +1,24 @@
+{
+  "id": "ch12-001",
+  "chapter": 12,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2023,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144109/TMUA-2023-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["exponentials", "logarithms", "quadratics in disguise"],
+  "methods": ["substitution u=2^x", "solving a disguised quadratic"],
+  "statement": "$P(x)$ and $Q(x)$ are defined as follows:\n$$P(x)=2^x+4,\\qquad Q(x)=2^{2x-2}-2^{x+2}+16.$$\n\nFind the largest value of $x$ such that $P(x)$ and $Q(x)$ are in the ratio $4:1$, respectively.",
+  "options": ["$5$", "$12$", "$32$", "$\\log_2 3$", "$\\log_2 5$", "$\\log_2 12$", "$\\log_2 20$"],
+  "answer": "F",
+  "solution": "The ratio $P(x):Q(x)=4:1$ means $P(x)=4Q(x)$, so\n$$2^x+4=4\\left(2^{2x-2}-2^{x+2}+16\\right).$$\n\nSimplify the right-hand side using the laws of indices:\n$$4\\cdot 2^{2x-2}=2^2\\cdot 2^{2x-2}=2^{2x},\\qquad 4\\cdot 2^{x+2}=2^2\\cdot 2^{x+2}=2^{x+4},$$\nso\n$$2^x+4=2^{2x}-2^{x+4}+64.$$\n\nLet $u=2^x$. Then $2^{2x}=u^2$ and $2^{x+4}=16u$ (since $2^{x+4}=2^x\\cdot 2^4=16u$), giving\n$$u+4=u^2-16u+64.$$\n\nRearranging,\n$$u^2-17u+60=0 \\quad\\Rightarrow\\quad (u-5)(u-12)=0,$$\nso $u=5$ or $u=12$.\n\nSince $u=2^x$:\n$$2^x=5 \\Rightarrow x=\\log_2 5, \\qquad 2^x=12 \\Rightarrow x=\\log_2 12.$$\n\nThe largest value of $x$ is $\\log_2 12$, which is **option F**.",
+  "solutionStatus": "full",
+  "hints": [
+    "P:Q = 4:1 means P(x) = 4Q(x).",
+    "Substitute u = 2^x to turn it into a quadratic in u.",
+    "Solve the quadratic, then convert back using logarithms."
+  ]
+}

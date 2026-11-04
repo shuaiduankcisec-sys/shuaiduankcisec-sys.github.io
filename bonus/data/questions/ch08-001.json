@@ -1,0 +1,24 @@
+{
+  "id": "ch08-001",
+  "chapter": 8,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2023,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144109/TMUA-2023-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["binomial theorem", "divisibility"],
+  "methods": ["binomial coefficients", "divisibility by 12"],
+  "statement": "In the simplified expansion of $(2+3x)^{12}$, how many of the terms have a coefficient that is divisible by $12$?",
+  "options": ["$0$", "$2$", "$5$", "$10$", "$11$", "$12$", "$13$"],
+  "answer": "E",
+  "solution": "By the binomial theorem, the coefficient of $x^k$ (for $0\\le k\\le 12$) is\n$$\\binom{12}{k}\\cdot 2^{12-k}\\cdot 3^k.$$\n\nA coefficient is divisible by $12=4\\times 3$ exactly when it is divisible by both $4$ and $3$.\n\n- The factor $3^k$ ensures divisibility by $3$ whenever $k\\ge 1$.\n- The factor $2^{12-k}$ ensures divisibility by $4=2^2$ whenever $12-k\\ge 2$, i.e. $k\\le 10$.\n\nSo for $1\\le k\\le 10$, the coefficient is automatically divisible by both $3$ and $4$, hence by $12$. We only need to check the boundary cases $k=0$, $k=11$, $k=12$:\n\n- $k=0$: coefficient $=\\binom{12}{0}\\cdot 2^{12}=2^{12}$, which is not divisible by $3$, so not by $12$.\n- $k=11$: coefficient $=\\binom{12}{11}\\cdot 2^1\\cdot 3^{11}=12\\cdot 3^{11}$, which **is** divisible by $12$.\n- $k=12$: coefficient $=\\binom{12}{12}\\cdot 3^{12}=3^{12}$, which is not divisible by $2$, so not by $12$.\n\nTherefore the coefficient is divisible by $12$ for $k=1,2,\\dots,11$, i.e. for $11$ terms.\n\nThis is **option E**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write the general term using the binomial theorem.",
+    "A number is divisible by 12 iff divisible by 4 and by 3.",
+    "Only the boundary cases k=0, 11, 12 need checking."
+  ]
+}

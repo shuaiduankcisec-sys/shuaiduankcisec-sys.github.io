@@ -226,6 +226,15 @@
     if (q.source === 'Original') return 'Original';
     return q.source + (q.paper ? ' ' + q.paper : '');
   }
+  // colour class per exam source
+  function sourceClass(q) {
+    var s = String(q.source || '').toLowerCase();
+    if (s === 'step') return 'src-step';
+    if (s === 'tmua') return 'src-tmua';
+    if (s === 'mat') return 'src-mat';
+    if (s === 'esat') return 'src-esat';
+    return 'src-other';
+  }
   function starsHTML(n) {
     var s = '';
     for (var i = 1; i <= 5; i++) {
@@ -266,20 +275,16 @@
         body.appendChild(prev);
         renderMath(prev);
       }
-      // source line (small, subdued)
-      var srcLine = el('div', 'bq-q-src');
-      var srcText = sourceLabel(q) + (q.year ? ' ' + q.year : '');
-      if (q.level === 'A2-extension') srcText += ' · A2 stretch';
-      srcLine.textContent = srcText;
-      body.appendChild(srcLine);
-      // methods / mathematical ideas
+      // source tag + method tags (source first, in the same pill style)
+      var mWrap = el('div', 'bq-methods');
+      mWrap.appendChild(el('span', 'bq-method src ' + sourceClass(q), sourceLabel(q) + (q.year ? ' ' + q.year : '')));
+      if (q.level === 'A2-extension') mWrap.appendChild(el('span', 'bq-method a2', 'A2 stretch'));
       if (q.methods && q.methods.length) {
-        var mWrap = el('div', 'bq-methods');
         q.methods.forEach(function (m) {
           mWrap.appendChild(el('span', 'bq-method', m));
         });
-        body.appendChild(mWrap);
       }
+      body.appendChild(mWrap);
       item.appendChild(body);
 
       // difficulty stars on the right
@@ -328,7 +333,7 @@
     var head = el('div', 'bq-detail-head');
     var srcText = sourceLabel(q) + (q.year ? ' ' + q.year : '');
     if (q.level === 'A2-extension') srcText += ' · A2 stretch';
-    head.appendChild(el('span', 'bq-detail-src', srcText));
+    head.appendChild(el('span', 'bq-detail-src ' + sourceClass(q), srcText));
     var stars = el('span', 'bq-detail-stars');
     stars.title = 'Difficulty ' + q.difficulty + '/5';
     stars.setAttribute('aria-label', 'Difficulty ' + q.difficulty + ' out of 5');
@@ -339,6 +344,22 @@
     var stmt = el('div', 'bq-statement');
     renderContent(stmt, q.statement || '');
     detail.appendChild(stmt);
+
+    // multiple-choice options (no pre-highlighted answer)
+    if (q.options && q.options.length) {
+      var optWrap = el('div', 'bq-options');
+      var letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      q.options.forEach(function (opt, idx) {
+        var optRow = el('div', 'bq-option');
+        var optLabel = el('span', 'bq-option-label', letters[idx]);
+        optRow.appendChild(optLabel);
+        var optText = el('span', 'bq-option-text');
+        renderContent(optText, opt);
+        optRow.appendChild(optText);
+        optWrap.appendChild(optRow);
+      });
+      detail.appendChild(optWrap);
+    }
 
     if (q.methods && q.methods.length) {
       var mWrap = el('div', 'bq-methods');

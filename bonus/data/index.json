@@ -1,5 +1,26 @@
 [
   {
+    "id": "ch02-002",
+    "chapter": 2,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "quadratics",
+      "discriminant",
+      "intersection of graphs"
+    ],
+    "methods": [
+      "discriminant",
+      "simultaneous equations"
+    ],
+    "solutionStatus": "full",
+    "preview": "The graphs of $y=x^2+5x+6$ and $y=mx-3$, where $m$ is a constant, are plotted on the same set of axes. Given that the graphs do not meet,…"
+  },
+  {
     "id": "ch07-003",
     "chapter": 7,
     "title": "",
@@ -20,6 +41,67 @@
     ],
     "solutionStatus": "full",
     "preview": "(i) Show that $ \\int_0^1\\bigl(1+(\\alpha-1)x\\bigr)^n\\,dx=\\frac{\\alpha^{n+1}-1}{(n+1)(\\alpha-1)}$  when $\\alpha\\neq 1$ and $n$ is a positive…"
+  },
+  {
+    "id": "ch07-005",
+    "chapter": 7,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "integration",
+      "definite integrals"
+    ],
+    "methods": [
+      "integration of linear functions",
+      "solving simultaneous equations"
+    ],
+    "solutionStatus": "full",
+    "preview": "Given that $ \\int_0^1 (ax+b)\\,dx = 1$  and $ \\int_0^1 x(ax+b)\\,dx = 1,$  find the value of $a+b$."
+  },
+  {
+    "id": "ch08-001",
+    "chapter": 8,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "binomial theorem",
+      "divisibility"
+    ],
+    "methods": [
+      "binomial coefficients",
+      "divisibility by 12"
+    ],
+    "solutionStatus": "full",
+    "preview": "In the simplified expansion of $(2+3x)^{12}$, how many of the terms have a coefficient that is divisible by $12$?"
+  },
+  {
+    "id": "ch12-001",
+    "chapter": 12,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "exponentials",
+      "logarithms",
+      "quadratics in disguise"
+    ],
+    "methods": [
+      "substitution u=2^x",
+      "solving a disguised quadratic"
+    ],
+    "solutionStatus": "full",
+    "preview": "$P(x)$ and $Q(x)$ are defined as follows: $ P(x)=2^x+4,\\qquad Q(x)=2^{2x-2}-2^{x+2}+16.$  Find the largest value of $x$ such that $P(x)$…"
   },
   {
     "id": "A2-05-001",
