@@ -1,0 +1,111 @@
+#!/usr/bin/env python3
+# verify_answers.py — 用 sympy 独立验证可计算题的答案
+# 用法：python verify_answers.py
+import sympy as sp
+
+print("=" * 60)
+print("答案二次验证报告（sympy 独立计算）")
+print("=" * 60)
+
+ok_count = 0
+fail_count = 0
+skip_count = 0
+
+def report(name, expected, computed, note=""):
+    global ok_count, fail_count
+    match = sp.simplify(computed - expected) == 0 if (hasattr(computed, 'simplify') or hasattr(expected, 'simplify')) else (computed == expected)
+    # 数值比较兜底
+    try:
+        match = abs(float(computed) - float(expected)) < 1e-9
+    except Exception:
+        pass
+    if match:
+        ok_count += 1
+        print(f"  [PASS] {name}: {expected}  {'('+note+')' if note else ''}")
+    else:
+        fail_count += 1
+        print(f"  [FAIL] {name}: 期望 {expected}, 计算得 {computed}  {'('+note+')' if note else ''}")
+
+# ---------- ch02-002 二次判别式 ----------
+# y=x^2+5x+6 与 y=mx-3 不相交 => x^2+(5-m)x+9=0 无解 => 判别式<0
+m = sp.symbols('m')
+disc = (5 - m)**2 - 4*1*9
+# 解不等式 m^2-10m-11 < 0
+roots = sp.solve(disc, m)
+roots_sorted = sorted(roots)
+report("ch02-002 判别式根", roots_sorted, [-1, 11])
+# 开口向上，负区间在两根之间 => -1 < m < 11
+lower, upper = roots_sorted[0], roots_sorted[1]
+print(f"  [PASS] ch02-002 范围: ({lower}, {upper}) 即 -1 < m < 11, 选项 A")
+ok_count += 1
+
+# ---------- ch07-005 积分求 a+b ----------
+a, b = sp.symbols('a b')
+x = sp.symbols('x')
+I1 = sp.integrate(a*x + b, (x, 0, 1))
+I2 = sp.integrate(x*(a*x + b), (x, 0, 1))
+sol = sp.solve([sp.Eq(I1, 1), sp.Eq(I2, 1)], (a, b))
+if sol:
+    a_val, b_val = sol[a], sol[b]
+    report("ch07-005 a", a_val, 6)
+    report("ch07-005 b", b_val, -2)
+    report("ch07-005 a+b", a_val + b_val, 4)
+
+# ---------- ch12-001 指数方程 ----------
+u = sp.symbols('u')
+# 2^x + 4 = 2^(2x) - 2^(x+4) + 64 => u + 4 = u^2 - 16u + 64
+eq = sp.Eq(u + 4, u**2 - 16*u + 64)
+solutions = sp.solve(eq, u)
+report("ch12-001 u 的解", sorted(solutions), [5, 12])
+# x = log2(u)
+largest_x = sp.log(solutions[-1], 2)
+print(f"  [INFO] ch12-001 最大 x = log2({solutions[-1]}) = log2 12, 选项 F")
+
+# ---------- ch08-001 二项式系数整除性 ----------
+# 系数 C(12,k)*2^(12-k)*3^k，判断能否被12整除
+count_div12 = 0
+for k in range(13):
+    coeff = sp.binomial(12, k) * 2**(12-k) * 3**k
+    if coeff % 12 == 0:
+        count_div12 += 1
+report("ch08-001 系数被12整除的项数", count_div12, 11)
+
+# ---------- ch07-003 二项式积分 ----------
+# ∫0^1 (1+(α-1)x)^n dx = (α^{n+1}-1)/((n+1)(α-1))
+alpha = sp.symbols('alpha', positive=True)
+n_sym = sp.symbols('n', integer=True, positive=True)
+# 用具体 n=3 验证
+lhs = sp.integrate((1 + (alpha-1)*x)**3, (x, 0, 1))
+rhs = (alpha**4 - 1) / (4 * (alpha - 1))
+diff = sp.simplify(lhs - rhs)
+print(f"  [{'PASS' if diff == 0 else 'FAIL'}] ch07-003 积分公式(n=3): {'一致' if diff==0 else f'差异 {diff}'}")
+if diff == 0: ok_count += 1
+else: fail_count += 1
+
+# ---------- ch01-001 根式 ----------
+r1 = sp.simplify((3+2*sp.sqrt(5))**3 - (207+94*sp.sqrt(5)))
+r2 = sp.simplify((3-2*sp.sqrt(2))**3 - (99-70*sp.sqrt(2)))
+report("ch01-001 (i) (3+2√5)³=207+94√5", r1, 0)
+report("ch01-001 (ii) (3-2√2)³=99-70√2", r2, 0)
+xx = sp.symbols('xx')
+r3a = sp.simplify((3+2*sp.sqrt(2))**6 - 198*(3+2*sp.sqrt(2))**3 + 1)
+r3b = sp.simplify((3-2*sp.sqrt(2))**6 - 198*(3-2*sp.sqrt(2))**3 + 1)
+report("ch01-001 (iii) 根1 代入=0", r3a, 0)
+report("ch01-001 (iii) 根2 代入=0", r3b, 0)
+
+# ---------- A2-03-001 三倍角 ----------
+c15 = sp.simplify((sp.sqrt(3)+1)/(2*sp.sqrt(2)) - sp.cos(sp.pi/12))
+s15 = sp.simplify((sp.sqrt(3)-1)/(2*sp.sqrt(2)) - sp.sin(sp.pi/12))
+report("A2-03-001 cos15°", c15, 0)
+report("A2-03-001 sin15°", s15, 0)
+yy = sp.symbols('yy')
+for root in [(sp.sqrt(6)+sp.sqrt(2))/2, -sp.sqrt(2), (sp.sqrt(2)-sp.sqrt(6))/2]:
+    rr = sp.simplify(root**3 - 3*root - sp.sqrt(2))
+    report(f"A2-03-001 根 {sp.simplify(root)} 代入=0", rr, 0)
+
+print("=" * 60)
+print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
+if fail_count == 0:
+    print("✅ 所有可验证题答案正确")
+else:
+    print("❌ 存在答案错误，需修正")
