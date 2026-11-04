@@ -171,6 +171,27 @@
     "preview": "Given that $ \\int_0^1 (ax+b)\\,dx = 1$  and $ \\int_0^1 x(ax+b)\\,dx = 1,$  find the value of $a+b$."
   },
   {
+    "id": "ch07-006",
+    "chapter": 7,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "integration",
+      "definite integrals",
+      "properties of integrals"
+    ],
+    "methods": [
+      "additivity of integrals",
+      "reversing limits"
+    ],
+    "solutionStatus": "full",
+    "preview": "For any integer $n\\ge0$, $ \\int_n^{n+1} f(x)\\,dx = n+1.$  Evaluate …"
+  },
+  {
     "id": "ch08-001",
     "chapter": 8,
     "title": "",

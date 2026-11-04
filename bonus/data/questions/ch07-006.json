@@ -1,0 +1,24 @@
+{
+  "id": "ch07-006",
+  "chapter": 7,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2023,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144109/TMUA-2023-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["integration", "definite integrals", "properties of integrals"],
+  "methods": ["additivity of integrals", "reversing limits"],
+  "statement": "For any integer $n\\ge0$,\n$$\\int_n^{n+1} f(x)\\,dx = n+1.$$\n\nEvaluate\n$$\\int_0^3 f(x)\\,dx + \\int_1^3 f(x)\\,dx + \\int_2^3 f(x)\\,dx + \\int_4^3 f(x)\\,dx + \\int_5^3 f(x)\\,dx.$$",
+  "options": ["$-2$", "$0$", "$1$", "$4$", "$18$", "$27$"],
+  "answer": "C",
+  "solution": "Split each integral into unit intervals using $\\int_a^b=\\int_a^c+\\int_c^b$:\n\n$$\\int_0^3 f = \\int_0^1 f + \\int_1^2 f + \\int_2^3 f = 1+2+3 = 6,$$\n$$\\int_1^3 f = \\int_1^2 f + \\int_2^3 f = 2+3 = 5,$$\n$$\\int_2^3 f = 3.$$\n\nFor the last two, reverse the limits using $\\int_a^b f = -\\int_b^a f$:\n$$\\int_4^3 f = -\\int_3^4 f = -4,$$\n$$\\int_5^3 f = -\\int_3^5 f = -\\left(\\int_3^4 f + \\int_4^5 f\\right) = -(4+5) = -9.$$\n\nAdding all five:\n$$6+5+3-4-9 = 1,$$\nwhich is **option C**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use additivity to split integrals like ∫0^3 into unit intervals.",
+    "For ∫4^3 and ∫5^3, reverse the limits (they are negative).",
+    "Sum the five results."
+  ]
+}
