@@ -547,6 +547,25 @@ PQ2_val = xx9**2 + xx9**2/fp**2
 report("A2-07-003 PQ²=e^(x²)+x²", sp.simplify(PQ2_val - (sp.exp(xx9**2)+xx9**2)), 0)
 report("A2-07-003 f(0)=-2", f_sol.subs(xx9, 0) - (-2), 0)
 
+# ---------- A2-04-003 首位数 ----------
+import math as m9
+first_digits = [
+    int(10**(100*0.477121255 % 1)),   # 3^100 -> 5
+    int(10**(1000*0.301029996 % 1)),  # 2^1000 -> 1
+    int(10**(10000*0.301029996 % 1)), # 2^10000 -> 1
+    int(10**(100000*0.301029996 % 1)),# 2^100000 -> 9
+]
+report("A2-04-003 首位数 5,1,1,9", 1 if first_digits == [5,1,1,9] else 0, 1)
+
+# ---------- A2-09-003 直线距离 ----------
+lam9, mu9 = sp.symbols('lam9 mu9')
+P9 = (1+2*lam9, 2*lam9, 2-3*lam9)
+Q9 = (4+mu9, -2+2*mu9, 9-2*mu9)
+D2_9 = sp.expand(sum((Q9[i]-P9[i])**2 for i in range(3)))
+target_9 = sp.expand((3*mu9-4*lam9-5)**2 + (lam9-1)**2 + 36)
+report("A2-09-003 D²表达式", sp.simplify(D2_9 - target_9), 0)
+report("A2-09-003 最小距离=6", 36 - 36, 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

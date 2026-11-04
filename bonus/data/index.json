@@ -1100,6 +1100,27 @@
     "preview": "The function $f$ satisfies $0\\le f(t)\\le K$ when $0\\le t\\le x$. Explain by means of a sketch, or otherwise, why …"
   },
   {
+    "id": "A2-04-003",
+    "chapter": "A2-04",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2000,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "logarithms",
+      "powers",
+      "leading digits"
+    ],
+    "methods": [
+      "laws of logarithms",
+      "using log to find leading digits"
+    ],
+    "solutionStatus": "full",
+    "preview": "To nine decimal places, $\\log_{10}2=0.301029996$ and $\\log_{10}3=0.477121255$. (i) Calculate $\\log_{10}5$ and $\\log_{10}6$ to three decimal…"
+  },
+  {
     "id": "A2-05-001",
     "chapter": "A2-05",
     "title": "",
@@ -1487,5 +1508,26 @@
     ],
     "solutionStatus": "full",
     "preview": "Let $ABCD$ be a parallelogram. By using vectors, or otherwise, prove that: (i) $AB^2+BC^2+CD^2+DA^2=AC^2+BD^2$; (ii) $|AC^2-BD^2|$ is $4$…"
+  },
+  {
+    "id": "A2-09-003",
+    "chapter": "A2-09",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2007,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "vectors",
+      "distance between skew lines"
+    ],
+    "methods": [
+      "vector equation of a line",
+      "minimising a quadratic",
+      "completing the square"
+    ],
+    "solutionStatus": "full",
+    "preview": "The line $L_1$ has vector equation $ \\mathbf r=\\begin{pmatrix}1\\\\0\\\\2\\end{pmatrix}+\\lambda\\begin{pmatrix}2\\\\2\\\\-3\\end{pmatrix}.$  The line…"
   }
 ]

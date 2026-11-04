@@ -1,0 +1,22 @@
+{
+  "id": "A2-09-003",
+  "chapter": "A2-09",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2007,
+  "sourceUrl": "https://step.maths.org/questions/07-s1-q7",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["vectors", "distance between skew lines"],
+  "methods": ["vector equation of a line", "minimising a quadratic", "completing the square"],
+  "statement": "The line $L_1$ has vector equation\n$$\\mathbf r=\\begin{pmatrix}1\\\\0\\\\2\\end{pmatrix}+\\lambda\\begin{pmatrix}2\\\\2\\\\-3\\end{pmatrix}.$$\nThe line $L_2$ has vector equation\n$$\\mathbf r=\\begin{pmatrix}4\\\\-2\\\\9\\end{pmatrix}+\\mu\\begin{pmatrix}1\\\\2\\\\-2\\end{pmatrix}.$$\n\nShow that the distance $D$ between a point on $L_1$ and a point on $L_2$ can be expressed in the form\n$$D^2=(3\\mu-4\\lambda-5)^2+(\\lambda-1)^2+36.$$\n\nHence determine the minimum distance between the two lines.",
+  "solution": "A general point on $L_1$ is $(1+2\\lambda,\\,2\\lambda,\\,2-3\\lambda)$ and on $L_2$ is $(4+\\mu,\\,-2+2\\mu,\\,9-2\\mu)$. The squared distance between them is\n$$D^2=(3+\\mu-2\\lambda)^2+(-2+2\\mu-2\\lambda)^2+(7-2\\mu+3\\lambda)^2.$$\nExpanding and collecting,\n$$D^2=17\\lambda^2-24\\lambda\\mu+38\\lambda+9\\mu^2-30\\mu+62=(3\\mu-4\\lambda-5)^2+(\\lambda-1)^2+36.$$\n\nSince squares are non-negative, $D^2\\ge36$, and equality is achieved when both squares vanish, i.e.\n$$3\\mu-4\\lambda-5=0 \\quad\\text{and}\\quad \\lambda-1=0.$$\nThe second gives $\\lambda=1$, and then $3\\mu-4-5=0$ gives $\\mu=3$.\n\nTherefore the minimum distance is $D_{\\min}=\\sqrt{36}=6$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write a general point on each line using the parameters.",
+    "Compute the squared distance and expand it.",
+    "Complete the square to see the minimum is 36, attained when both squares are zero."
+  ]
+}
