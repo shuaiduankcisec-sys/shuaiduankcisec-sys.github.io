@@ -634,6 +634,8 @@
       // A4 paper appearance on screen (preview); plain white in print
       '@media screen { body { background: #6b7280; padding: 24px 0; } #paper { width: 210mm; min-height: 297mm; margin: 0 auto; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.35); padding: 18mm 16mm; box-sizing: border-box; } }',
       '@media print { body { background: #fff; } #paper { width: auto; min-height: 0; margin: 0; padding: 0; box-shadow: none; } }',
+      // screen preview page-number simulation (page numbers in @page only show when printing)
+      '@media screen { #paper { counter-reset: page 1; } section { counter-increment: page; position: relative; } section::after { content: counter(page); position: absolute; bottom: -12mm; left: 50%; transform: translateX(-50%); font-size: 10pt; color: #999; } }',
       'section.cover, section.toc { page-break-after: always; }',
       densePrint,
       denseScreen,
@@ -663,8 +665,8 @@
       '.q-stars { margin-left: auto; color: #e0a800; font-size: 13px; }',
       '.q-statement { font-size: 13px; line-height: 1.7; }',
       '.q-statement p { margin: 0 0 10px; }',
-      '.q-options { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px 20px; }',
-      '.q-option { display: flex; gap: 8px; padding: 3px 0; font-size: 13px; align-items: baseline; }',
+      '.q-options { margin-top: 10px; }',
+      '.q-option { display: inline-flex; gap: 8px; padding: 3px 16px 3px 0; font-size: 13px; align-items: baseline; white-space: nowrap; }',
       '.q-opt-label { font-weight: 600; color: #666; width: 20px; }',
       '.q-solution { margin-top: 18px; border-top: 1px solid #eee; padding-top: 12px; }',
       '.q-sol-title { font-weight: 700; color: #333; margin-bottom: 8px; }',

@@ -886,6 +886,11 @@
 
   // ---------- export (delegated to bonus-export.js) ----------
   function openExport(source) {
+    // exit fullscreen first so the export overlay can render on top
+    if (document.fullscreenElement && document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+    appEl.classList.remove('bq-fullscreen');
     if (window.bonusExport && window.bonusExport.open) {
       window.bonusExport.open(source);
     }
