@@ -498,6 +498,30 @@ alpha_v, beta_v = 1.0, 4.0
 I2_num = simpson_fix(lambda th: 2/(alpha_v*m6.cos(th)**2 + beta_v*m6.sin(th)**2), 0, m6.pi/2, 20000)
 report("A2-06-007 第二问=π/√(αβ)", abs(I2_num - m6.pi/m6.sqrt(alpha_v*beta_v)) < 1e-3, True)
 
+# ---------- ch05-003 抛物线切法线 ----------
+pp, qq = sp.symbols('p q', real=True)
+# R = (pq, p+q)
+# 切线 ty=x+t², 交点 x=pq, y=p+q
+# S: x=p²+pq+q²+2, y=-pq(p+q)
+xS_val = sp.solve(sp.Eq(-pp*x+pp**3+2*pp, -qq*x+qq**3+2*qq), x)[0]
+report("ch05-003 S_x=p²+pq+q²+2", sp.simplify(xS_val - (pp**2+pp*qq+qq**2+2)), 0)
+# pq=-1 => S=(p²+q²+1, p+q)
+xS_sub = sp.simplify(xS_val.subs(pp*qq, -1))
+report("ch05-003 S_x=p²+q²+1 (pq=-1)", sp.simplify(xS_sub - (pp**2+qq**2+1)), 0)
+
+# ---------- ch05-004 旋转+距离 ----------
+# 顺时针旋转60°，新 y = (y-√3x)/2
+xx8, yy8, r8, th8 = sp.symbols('x8 y8 r8 th8', real=True)
+new_y = sp.simplify(r8*sp.sin(th8 - sp.pi/3) - (yy8 - sp.sqrt(3)*xx8)/2)
+report("ch05-004 旋转后 y=(y-√3x)/2", sp.simplify(new_y.subs({xx8: r8*sp.cos(th8), yy8: r8*sp.sin(th8)})), 0)
+# Viviani: h1+h2+h3 = √3/2（在三角形内，取点 (1/2, √3/6) 验证）
+import math as m8
+px, py = 0.5, m8.sqrt(3)/6
+h1 = abs(py - m8.sqrt(3)*px)/2
+h2 = abs(py)
+h3 = abs(m8.sqrt(3)*px + py - m8.sqrt(3))/2
+report("ch05-004 h1+h2+h3=√3/2", abs((h1+h2+h3) - m8.sqrt(3)/2) < 1e-9, True)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

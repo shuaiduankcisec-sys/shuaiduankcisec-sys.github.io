@@ -278,6 +278,50 @@
     "preview": "A point moves in the $x$-$y$ plane so that the sum of the squares of its distances from the three fixed points $(x_1,y_1)$, $(x_2,y_2)$,…"
   },
   {
+    "id": "ch05-003",
+    "chapter": 5,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2005,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "coordinate geometry",
+      "tangents and normals",
+      "parabola"
+    ],
+    "methods": [
+      "parametric form of a parabola",
+      "tangent and normal equations",
+      "intersection of lines"
+    ],
+    "solutionStatus": "full",
+    "preview": "The point $P$ has coordinates $(p^2,2p)$ and the point $Q$ has coordinates $(q^2,2q)$, where $p$ and $q$ are non-zero and $p\\neq q$. The…"
+  },
+  {
+    "id": "ch05-004",
+    "chapter": 5,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2008,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "coordinate geometry",
+      "rotation",
+      "distance to a line"
+    ],
+    "methods": [
+      "rotation of coordinates",
+      "perpendicular distance formula",
+      "Viviani's theorem"
+    ],
+    "solutionStatus": "full",
+    "preview": "The point $P$ has coordinates $(x,y)$ with respect to the origin $O$. By writing $x=r\\cos\\theta$ and $y=r\\sin\\theta$, or otherwise, show…"
+  },
+  {
     "id": "ch06-001",
     "chapter": 6,
     "title": "",
