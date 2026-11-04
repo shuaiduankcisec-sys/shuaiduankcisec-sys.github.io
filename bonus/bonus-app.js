@@ -410,7 +410,7 @@
     back.type = 'button';
     back.setAttribute('aria-label', t('back'));
     back.title = t('back');
-    back.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>' + t('back') + '</span>';
+    back.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
     back.addEventListener('click', function () {
       state.activeId = null;
       renderList();
@@ -661,9 +661,11 @@
     main.innerHTML = '';
 
     var head = el('div', 'bq-main-head');
-    var back = el('button', 'bq-back bq-back-inline', t('backToProjects'));
+    var back = el('button', 'bq-back bq-back-inline');
     back.type = 'button';
-    back.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>' + t('backToProjects') + '</span>';
+    back.setAttribute('aria-label', t('backToProjects'));
+    back.title = t('backToProjects');
+    back.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
     back.addEventListener('click', function () { renderProjects(); });
     head.appendChild(back);
     head.appendChild(el('span', 'bq-head-title', p.title || 'Untitled book'));

@@ -35,7 +35,7 @@
       cancel: 'Cancel', preview: 'Preview', exportPdf: 'Export PDF',
       noExport: 'Nothing to export. Add questions to your library or project first.',
       solution: 'Solution', answers: 'Answers', tableOfContents: 'Table of Contents',
-      headerDefault: '', footerDefault: ''
+      cover: 'Cover', coverBg: 'Cover background', headerDefault: '', footerDefault: ''
     },
     zh: {
       exportSettings: '导出设置',
@@ -56,7 +56,7 @@
       cancel: '取消', preview: '预览', exportPdf: '导出 PDF',
       noExport: '没有可导出的题目。请先在收藏或项目中添加题目。',
       solution: '解答', answers: '答案', tableOfContents: '目录',
-      headerDefault: '', footerDefault: ''
+      cover: '封面', coverBg: '封面背景', headerDefault: '', footerDefault: ''
     }
   };
   function s(key) {
@@ -110,50 +110,98 @@
       return;
     }
     var app = global.bonusApp;
+    // load full questions and merge back the metadata (preview lives in index.json only)
     var loads = questions.map(function (q) { return app.loadQuestion(q.id); });
     Promise.all(loads).then(function (fullQuestions) {
+      fullQuestions.forEach(function (full, i) {
+        if (!full) return;
+        // carry over metadata fields that only exist in index.json
+        var meta = questions[i];
+        if (!full.preview && meta && meta.preview) full.preview = meta.preview;
+        if (!full.difficulty && meta) full.difficulty = meta.difficulty;
+        if (meta) full._chapterTitle = chapterName(meta.chapter);
+      });
       showSettings(source, fullQuestions);
     });
   }
 
+  // cover background presets
+  var COVER_BG = [
+    { id: 'plain', label: { en: 'Plain white', zh: '纯白' }, css: 'background:#fff;color:#1a1a1a;' },
+    { id: 'navy', label: { en: 'Deep blue', zh: '深蓝' }, css: 'background:linear-gradient(160deg,#1e3a5f,#2c5f8a);color:#fff;' },
+    { id: 'purple', label: { en: 'Purple', zh: '紫色' }, css: 'background:linear-gradient(160deg,#4a2d7a,#7b4fb0);color:#fff;' },
+    { id: 'green', label: { en: 'Green', zh: '绿色' }, css: 'background:linear-gradient(160deg,#0f4c3a,#1d9e75);color:#fff;' },
+    { id: 'ink', label: { en: 'Charcoal', zh: '墨黑' }, css: 'background:linear-gradient(160deg,#1a1a1a,#3a3a3a);color:#fff;' },
+    { id: 'warm', label: { en: 'Warm sand', zh: '暖沙' }, css: 'background:linear-gradient(160deg,#f7f3ec,#e8dcc8);color:#5a4632;' }
+  ];
+
+  function coverBgCss(id) {
+    var found = COVER_BG.find(function (b) { return b.id === id; });
+    return found ? found.css : COVER_BG[0].css;
+  }
+  function coverBgLabel(id) {
+    var lang = (global.getCurrentLang && global.getCurrentLang() === 'zh') ? 'zh' : 'en';
+    var found = COVER_BG.find(function (b) { return b.id === id; });
+    return found ? found.label[lang] : id;
+  }
+
   function showSettings(source, questions) {
+    var isProject = source !== 'library';
+    var project = isProject ? global.bonusCollection.findProject(source) : null;
+
     var overlay = document.createElement('div');
-    overlay.className = 'bq-overlay';
+    overlay.className = 'bq-export-overlay';
 
-    var box = document.createElement('div');
-    box.className = 'bq-modal bq-modal-wide';
-    box.appendChild(el('h3', null, s('exportSettings')));
+    // ---- left: settings panel ----
+    var panel = el('div', 'bq-export-panel');
+    panel.appendChild(el('h3', null, s('exportSettings')));
 
-    var defaults = source === 'library'
-      ? { title: 'Bonus Questions', author: '', org: '', coverTitle: 'Bonus Questions', coverSubtitle: 'Selected Practice Problems', copyright: '' }
-      : (function () {
-          var p = global.bonusCollection.findProject(source);
-          return {
-            title: p ? (p.title || 'Untitled book') : 'Untitled book',
-            author: p ? p.author : '',
-            org: p ? p.org : '',
-            coverTitle: p ? (p.coverTitle || p.title || '') : '',
-            coverSubtitle: p ? p.coverSubtitle : '',
-            copyright: p ? (p.copyright || '') : ''
-          };
-        })();
+    var defaults = isProject
+      ? {
+          title: project ? (project.title || 'Untitled book') : 'Untitled book',
+          author: project ? project.author : '',
+          org: project ? project.org : '',
+          coverTitle: project ? (project.coverTitle || project.title || '') : '',
+          coverSubtitle: project ? project.coverSubtitle : '',
+          copyright: project ? (project.copyright || '') : '',
+          coverBg: project && project.coverBg ? project.coverBg : 'navy'
+        }
+      : {
+          title: 'Bonus Questions', author: '', org: '',
+          coverTitle: 'Bonus Questions', coverSubtitle: 'Selected Practice Problems',
+          copyright: '', coverBg: 'navy'
+        };
 
-    function field(label, key, val) {
+    var settings = {
+      title: defaults.title, author: defaults.author, org: defaults.org,
+      coverTitle: defaults.coverTitle, coverSubtitle: defaults.coverSubtitle,
+      copyright: defaults.copyright, coverBg: defaults.coverBg,
+      content: 'qa', includeCover: true, includeToc: true, tocByBoard: true,
+      showSource: true, pageNumbers: true, headerText: '', footerText: ''
+    };
+
+    function field(label, key) {
       var wrap = el('div', 'bq-field');
       wrap.appendChild(el('label', 'bq-field-label', label));
       var input = el('input');
       input.type = 'text';
-      input.value = val || '';
-      input.setAttribute('data-key', key);
+      input.value = settings[key] || '';
+      input.addEventListener('input', function () {
+        settings[key] = input.value;
+        rerender();
+      });
       wrap.appendChild(input);
       return wrap;
     }
-    function checkbox(label, key, checked) {
+    function checkbox(label, key) {
       var wrap = el('label', 'bq-field bq-field-check');
       var input = el('input');
       input.type = 'checkbox';
-      input.checked = !!checked;
-      input.setAttribute('data-key', key);
+      input.checked = !!settings[key];
+      input.addEventListener('change', function () {
+        settings[key] = input.checked;
+        rerender();
+      });
       wrap.appendChild(input);
       wrap.appendChild(el('span', null, label));
       return wrap;
@@ -162,76 +210,159 @@
       var wrap = el('div', 'bq-field');
       wrap.appendChild(el('label', 'bq-field-label', label));
       var sel = el('select');
-      sel.setAttribute('data-key', key);
       options.forEach(function (o) {
         var op = el('option', null, o.label);
         op.value = o.v;
         sel.appendChild(op);
       });
       sel.value = val || options[0].v;
+      sel.addEventListener('change', function () {
+        settings[key] = sel.value;
+        rerender();
+      });
       wrap.appendChild(sel);
       return wrap;
     }
 
-    box.appendChild(field(s('bookTitle'), 'title', defaults.title));
-    box.appendChild(field(s('coverTitle'), 'coverTitle', defaults.coverTitle));
-    box.appendChild(field(s('coverSubtitle'), 'coverSubtitle', defaults.coverSubtitle));
-    box.appendChild(field(s('author'), 'author', defaults.author));
-    box.appendChild(field(s('org'), 'org', defaults.org));
+    // 1. book info
+    panel.appendChild(el('div', 'bq-export-sec', s('bookTitle')));
+    panel.appendChild(field(s('bookTitle'), 'title'));
+    panel.appendChild(field(s('author'), 'author'));
+    panel.appendChild(field(s('org'), 'org'));
 
-    box.appendChild(el('div', 'bq-export-sec', s('content')));
-    box.appendChild(selectField(s('content'), 'content', [
+    // 2. cover (only for projects, but harmless for library)
+    panel.appendChild(el('div', 'bq-export-sec', s('cover')));
+    panel.appendChild(field(s('coverTitle'), 'coverTitle'));
+    panel.appendChild(field(s('coverSubtitle'), 'coverSubtitle'));
+    // cover background swatches
+    var bgWrap = el('div', 'bq-field');
+    bgWrap.appendChild(el('label', 'bq-field-label', s('coverBg')));
+    var swatches = el('div', 'bq-cover-swatches');
+    COVER_BG.forEach(function (bg) {
+      var sw = el('button', 'bq-cover-swatch' + (settings.coverBg === bg.id ? ' active' : ''));
+      sw.type = 'button';
+      sw.title = coverBgLabel(bg.id);
+      sw.setAttribute('style', bg.css);
+      sw.addEventListener('click', function () {
+        settings.coverBg = bg.id;
+        swatches.querySelectorAll('.bq-cover-swatch').forEach(function (x) { x.classList.remove('active'); });
+        sw.classList.add('active');
+        rerender();
+      });
+      swatches.appendChild(sw);
+    });
+    bgWrap.appendChild(swatches);
+    panel.appendChild(bgWrap);
+    panel.appendChild(checkbox(s('includeCover'), 'includeCover'));
+
+    // 3. content
+    panel.appendChild(el('div', 'bq-export-sec', s('content')));
+    panel.appendChild(selectField(s('content'), 'content', [
       { v: 'qa', label: s('contentQuestionsAnswers') },
       { v: 'q', label: s('contentQuestionsOnly') },
       { v: 'a', label: s('contentAnswersOnly') }
     ], 'qa'));
 
-    box.appendChild(el('div', 'bq-export-sec', s('tableOfContents')));
-    box.appendChild(checkbox(s('includeCover'), 'includeCover', true));
-    box.appendChild(checkbox(s('includeToc'), 'includeToc', true));
-    box.appendChild(checkbox(s('tocByBoard'), 'tocByBoard', true));
-    box.appendChild(checkbox(s('showSource'), 'showSource', true));
-    box.appendChild(checkbox(s('pageNumbers'), 'pageNumbers', true));
+    // 4. TOC
+    panel.appendChild(el('div', 'bq-export-sec', s('tableOfContents')));
+    panel.appendChild(checkbox(s('includeToc'), 'includeToc'));
+    panel.appendChild(checkbox(s('tocByBoard'), 'tocByBoard'));
+    panel.appendChild(checkbox(s('showSource'), 'showSource'));
+    panel.appendChild(checkbox(s('pageNumbers'), 'pageNumbers'));
 
-    box.appendChild(el('div', 'bq-export-sec', s('headerText')));
-    box.appendChild(field(s('headerText'), 'headerText', s('headerDefault')));
-    box.appendChild(field(s('footerText'), 'footerText', s('footerDefault')));
-    box.appendChild(field(s('copyright'), 'copyright', defaults.copyright));
+    // 5. header / footer
+    panel.appendChild(el('div', 'bq-export-sec', s('headerText')));
+    panel.appendChild(field(s('headerText'), 'headerText'));
+    panel.appendChild(field(s('footerText'), 'footerText'));
+    panel.appendChild(field(s('copyright'), 'copyright'));
 
+    // actions
     var btns = el('div', 'bq-modal-actions');
-    var cancel = el('button', 'bq-btn', s('cancel'));
-    cancel.type = 'button';
-    cancel.addEventListener('click', function () { overlay.remove(); });
-    var preview = el('button', 'bq-btn', s('preview'));
-    preview.type = 'button';
-    preview.addEventListener('click', function () {
-      var settings = readSettings(box);
-      overlay.remove();
-      openPreview(questions, settings);
-    });
+    var close = el('button', 'bq-btn', s('cancel'));
+    close.type = 'button';
+    close.addEventListener('click', function () { overlay.remove(); });
     var print = el('button', 'bq-btn bq-btn-primary', s('exportPdf'));
     print.type = 'button';
-    print.addEventListener('click', function () {
-      var settings = readSettings(box);
-      overlay.remove();
-      openPreview(questions, settings, true);
-    });
-    btns.appendChild(cancel);
-    btns.appendChild(preview);
+    print.addEventListener('click', function () { doPrint(); });
+    btns.appendChild(close);
     btns.appendChild(print);
-    box.appendChild(btns);
-    overlay.appendChild(box);
-    document.body.appendChild(overlay);
-    overlay.addEventListener('click', function (e) { if (e.target === overlay) overlay.remove(); });
-  }
+    panel.appendChild(btns);
 
-  function readSettings(box) {
-    var s = {};
-    box.querySelectorAll('input[data-key],select[data-key]').forEach(function (inp) {
-      if (inp.type === 'checkbox') s[inp.getAttribute('data-key')] = inp.checked;
-      else s[inp.getAttribute('data-key')] = inp.value;
-    });
-    return s;
+    // ---- right: live preview ----
+    var previewWrap = el('div', 'bq-export-preview');
+    var frame = document.createElement('iframe');
+    frame.className = 'bq-export-frame';
+    frame.setAttribute('title', s('preview'));
+    previewWrap.appendChild(frame);
+
+    overlay.appendChild(panel);
+    overlay.appendChild(previewWrap);
+    document.body.appendChild(overlay);
+
+    // render preview (debounced)
+    var renderTimer = null;
+    function rerender() {
+      clearTimeout(renderTimer);
+      renderTimer = setTimeout(renderPreview, 250);
+    }
+    function renderPreview() {
+      var built = buildDoc(questions, settings);
+      var html = '<!DOCTYPE html>\n' + built.doc.documentElement.outerHTML;
+      frame.contentDocument.open();
+      frame.contentDocument.write(html);
+      frame.contentDocument.close();
+      renderMathInFrame(frame);
+    }
+    function renderMathInFrame(f) {
+      try {
+        var fd = f.contentDocument;
+        var w = f.contentWindow;
+        if (w && w.renderMathInElement) {
+          w.renderMathInElement(fd.body, {
+            delimiters: [
+              { left: '$$', right: '$$', display: true },
+              { left: '$', right: '$', display: false }
+            ],
+            throwOnError: false
+          });
+          return;
+        }
+        // KaTeX not in frame yet — inject scripts
+        var katexJs = document.querySelector('script[src*="katex.min.js"]');
+        var autoRender = document.querySelector('script[src*="auto-render.min.js"]');
+        if (katexJs && !fd.querySelector('script[src*="katex.min.js"]')) {
+          var sc1 = fd.createElement('script');
+          sc1.src = katexJs.src;
+          fd.head.appendChild(sc1);
+          if (autoRender) {
+            var sc2 = fd.createElement('script');
+            sc2.src = autoRender.src;
+            sc2.onload = function () {
+              if (w.renderMathInElement) w.renderMathInElement(fd.body, { delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }], throwOnError: false });
+            };
+            fd.head.appendChild(sc2);
+          }
+        }
+      } catch (e) { /* ignore */ }
+    }
+    function doPrint() {
+      // print from the preview iframe
+      try {
+        frame.contentWindow.focus();
+        frame.contentWindow.print();
+      } catch (e) {
+        // fallback: open in a new window
+        var built = buildDoc(questions, settings);
+        var w = global.open('', '_blank');
+        if (w) {
+          w.document.write('<!DOCTYPE html>\n' + built.doc.documentElement.outerHTML);
+          w.document.close();
+        }
+      }
+    }
+
+    // initial render
+    renderPreview();
   }
 
   // ---------- build the exported document ----------
@@ -262,6 +393,8 @@
     if (settings.includeCover) {
       var cover = doc.createElement('section');
       cover.className = 'cover';
+      cover.setAttribute('style', coverBgCss(settings.coverBg || 'plain'));
+      var isDark = (settings.coverBg || 'plain') !== 'plain' && (settings.coverBg || 'plain') !== 'warm';
       cover.innerHTML =
         '<div class="cover-inner">' +
         '<div class="cover-org">' + esc(settings.org || '') + '</div>' +
@@ -281,6 +414,17 @@
       var tocList = doc.createElement('ol');
       tocList.className = 'toc-list';
 
+      // make a readable title for a question: chapter title + statement snippet
+      function tocTitle(q, i) {
+        var snippet = q.preview || q.statement || '';
+        // strip LaTeX dollars for the TOC (keep it readable, no math)
+        var plain = String(snippet).replace(/\$\$?/g, '').replace(/\s+/g, ' ').trim();
+        if (plain.length > 70) plain = plain.slice(0, 70) + '…';
+        var chap = q._chapterTitle || chapterName(q.chapter) || '';
+        if (chap) return chap + (plain ? ' — ' + plain : '');
+        return plain || ('Question ' + (i + 1));
+      }
+
       if (settings.tocByBoard) {
         // group by exam board (source)
         var groups = {};
@@ -297,7 +441,7 @@
           groups[key].forEach(function (item) {
             var li = doc.createElement('li');
             li.innerHTML = '<span class="toc-num">' + (item.i + 1) + '</span>' +
-              '<span class="toc-title">' + esc(item.q.preview || ('Question ' + (item.i + 1))) + '</span>' +
+              '<span class="toc-title">' + esc(tocTitle(item.q, item.i)) + '</span>' +
               '<span class="toc-dots"></span>';
             tocList.appendChild(li);
           });
@@ -306,7 +450,7 @@
         questions.forEach(function (q, i) {
           var li = doc.createElement('li');
           li.innerHTML = '<span class="toc-num">' + (i + 1) + '</span>' +
-            '<span class="toc-title">' + esc(q.preview || ('Question ' + (i + 1))) + '</span>' +
+            '<span class="toc-title">' + esc(tocTitle(q, i)) + '</span>' +
             '<span class="toc-dots"></span>';
           tocList.appendChild(li);
         });
@@ -377,60 +521,6 @@
   }
 
   // ---------- open preview in a new window ----------
-  function openPreview(questions, settings, doPrint) {
-    var built = buildDoc(questions, settings);
-    var doc = built.doc;
-    var html = '<!DOCTYPE html>\n' + doc.documentElement.outerHTML;
-
-    var w = global.open('', '_blank', 'width=900,height=1000,resizable=yes,scrollbars=yes');
-    if (!w) { alert('Popup blocked. Please allow popups for this site.'); return; }
-
-    w.document.open();
-    w.document.write(html);
-    w.document.close();
-
-    // render KaTeX + trigger print after resources load
-    var katexJs = document.querySelector('script[src*="katex.min.js"]');
-    var autoRender = document.querySelector('script[src*="auto-render.min.js"]');
-    var setup = function () {
-      var wd = w.document;
-      // load KaTeX scripts into the new window
-      var loadScripts = function (cb) {
-        var srcs = [];
-        if (katexJs) srcs.push(katexJs.src);
-        if (autoRender) srcs.push(autoRender.src);
-        var loaded = 0;
-        if (!srcs.length) return cb();
-        srcs.forEach(function (src) {
-          var sc = wd.createElement('script');
-          sc.src = src;
-          sc.onload = function () { loaded++; if (loaded === srcs.length) cb(); };
-          sc.onerror = function () { loaded++; if (loaded === srcs.length) cb(); };
-          wd.head.appendChild(sc);
-        });
-      };
-      loadScripts(function () {
-        try {
-          if (w.renderMathInElement) {
-            w.renderMathInElement(wd.body, {
-              delimiters: [
-                { left: '$$', right: '$$', display: true },
-                { left: '$', right: '$', display: false }
-              ],
-              throwOnError: false
-            });
-          }
-        } catch (e) { /* ignore */ }
-        if (doPrint) {
-          setTimeout(function () { w.focus(); w.print(); }, 300);
-        }
-      });
-    };
-
-    // wait for the new window to load the KaTeX CSS
-    setTimeout(setup, 400);
-  }
-
   var EXPORT_CSS = [
     '@page { size: A4; margin: 18mm 16mm; }',
     '@page { @top-left { content: string(header); font-size: 9pt; color: #666; } }',
@@ -441,11 +531,11 @@
     'section:last-of-type { page-break-after: auto; }',
     '.cover { height: 92vh; display: flex; align-items: center; justify-content: center; text-align: center; page-break-after: always; }',
     '.cover-inner { padding: 40px; }',
-    '.cover-org { font-size: 14px; letter-spacing: 3px; color: #888; margin-bottom: 40px; text-transform: uppercase; }',
-    '.cover-title { font-size: 38px; font-weight: 700; margin: 0 0 16px; line-height: 1.25; }',
-    '.cover-subtitle { font-size: 17px; color: #555; margin-bottom: 48px; }',
-    '.cover-author { font-size: 15px; color: #333; }',
-    '.cover-copy { margin-top: 60px; font-size: 11px; color: #999; }',
+    '.cover-org { font-size: 14px; letter-spacing: 3px; color: inherit; opacity: 0.75; margin-bottom: 40px; text-transform: uppercase; }',
+    '.cover-title { font-size: 38px; font-weight: 700; margin: 0 0 16px; line-height: 1.25; color: inherit; }',
+    '.cover-subtitle { font-size: 17px; color: inherit; opacity: 0.85; margin-bottom: 48px; }',
+    '.cover-author { font-size: 15px; color: inherit; opacity: 0.9; }',
+    '.cover-copy { margin-top: 60px; font-size: 11px; color: inherit; opacity: 0.6; }',
     '.toc h1 { font-size: 22px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }',
     '.toc-list { list-style: none; padding: 0; }',
     '.toc-list li { display: flex; align-items: baseline; padding: 6px 0; font-size: 13px; }',
