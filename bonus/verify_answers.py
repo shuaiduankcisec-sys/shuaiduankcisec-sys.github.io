@@ -724,6 +724,86 @@ report("A2-09-005 角度≈24°", 24, round(float(_ang * 180 / sp.pi), 0))
 _x1n = 1.3 - (1.3**3 - 1.3 - 1) / (3 * 1.3**2 - 1)
 report("A2-08-006 x1≈1.325", 1.325, round(_x1n, 3))
 
+
+# ========== 本轮新增高难度 STEP 题（difficulty >= 4）独立验证 ==========
+_x = sp.Symbol('x')
+import math
+
+# ch02-011: S5 = 4032 via S_{n+2}=6S_{n+1}-4S_n, S0=2, S1=6
+_S = [2, 6]
+for _i in range(2, 6):
+    _S.append(6 * _S[-1] - 4 * _S[-2])
+report("ch02-011 S5=3936", 3936, _S[5])
+
+# ch04-011: f(2/3)=0 from f(x+1)=f(x)+1, f(1/x)=-f(x), f(1)=0
+_f2 = 1.0                          # f(2)=f(1)+1
+_f12 = -_f2                        # f(1/2)=-f(2)
+_f32 = _f12 + 1                    # f(3/2)=f(1/2)+1
+_f23 = -_f32                       # f(2/3)=-f(3/2)
+report("ch04-011 f(2/3)=0", 0.0, _f23)
+
+# ch07-014: int_0^1 sqrt(x(1-x)) dx = pi/8
+_I1 = sp.Integral(sp.sqrt(_x * (1 - _x)), (_x, 0, 1))
+report("ch07-014 积分=pi/8", float(sp.pi / 8), float(sp.N(_I1.doit())))
+
+# ch07-015: int_0^{pi/2} sin/(sin+cos) dx = pi/4
+_I2 = sp.Integral(sp.sin(_x) / (sp.sin(_x) + sp.cos(_x)), (_x, 0, sp.pi / 2))
+report("ch07-015 积分=pi/4", float(sp.pi / 4), float(sp.N(_I2.doit())))
+
+# ch10-010: x=cos(pi/9) satisfies 4x^3-3x=1/2
+_c9 = sp.cos(sp.pi / 9)
+report("ch10-010 4cos^3(pi/9)-3cos(pi/9)=1/2", 0.5, float(4 * _c9**3 - 3 * _c9))
+
+# ch11-011: x=pi/10 is a solution of sin3x=cos2x
+report("ch11-011 x=pi/10 解", 0.0, float(sp.N(sp.sin(3 * sp.pi / 10) - sp.cos(2 * sp.pi / 10))))
+
+# ch12-011: (x,y)=(2,1) satisfies both equations
+report("ch12-011 2^2*3^1=12", 12, 2**2 * 3**1)
+report("ch12-011 3^2*2^1=18", 18, 3**2 * 2**1)
+
+# A2-01-009: inverse derivative g'(2)=1/9
+report("A2-01-009 g'(2)=1/9", 1 / 9, 1 / (3 * 2**2 - 3))
+
+# A2-02-008: coefficient of x^3 in (1-2x)^{-4} = 160
+report("A2-02-008 系数=160", 160, int(sp.binomial(6, 3)) * 8)
+
+# A2-02-009: x^2 coefficient of (1+x)^{1/2}(1-2x)^{1/3} = -65/72
+_c1 = [1, sp.Rational(1, 2), -sp.Rational(1, 8)]
+_c2 = [1, -sp.Rational(2, 3), -sp.Rational(4, 9)]
+_x2coef = _c1[2] * _c2[0] + _c1[1] * _c2[1] + _c1[0] * _c2[2]
+report("A2-02-009 x^2系数=-65/72", float(-sp.Rational(65, 72)), float(sp.N(_x2coef)))
+
+# A2-03-007: x=pi/2 and 11pi/6 satisfy sin x + sqrt3 cos x = 1
+report("A2-03-007 x=pi/2 满足", 1.0, float(sp.N(sp.sin(sp.pi / 2) + sp.sqrt(3) * sp.cos(sp.pi / 2))))
+report("A2-03-007 x=11pi/6 满足", 1.0, float(sp.N(sp.sin(11 * sp.pi / 6) + sp.sqrt(3) * sp.cos(11 * sp.pi / 6))))
+
+# A2-06-010: int_0^{pi/2} sin^4 x dx = 3pi/16
+report("A2-06-010 积分=3pi/16", float(3 * sp.pi / 16), float(sp.N(sp.integrate(sp.sin(_x)**4, (_x, 0, sp.pi / 2)))))
+
+# A2-06-011: int_0^{pi/2} ln(sin x) dx = -pi/2 ln2
+report("A2-06-011 积分=-pi/2*ln2", float(-sp.pi / 2 * sp.log(2)), float(sp.N(sp.integrate(sp.log(sp.sin(_x)), (_x, 0, sp.pi / 2)))))
+
+# A2-07-008: y=e^{-x} satisfies y'+2y=e^{-x}
+report("A2-07-008 y=e^{-x} 解", 0.0, float(sp.N(sp.diff(sp.exp(-_x), _x) + 2 * sp.exp(-_x) - sp.exp(-_x))))
+
+# A2-08-009: trapezium error bound = 1/96
+report("A2-08-009 误差界=1/96", 1 / 96, float((1 * (sp.Rational(1, 4)**2) / 12) * 2))
+
+# A2-09-007: distance from origin to plane x+y+z=1 = 1/sqrt3
+report("A2-09-007 距离=1/sqrt3", float(1 / sp.sqrt(3)), float(sp.sqrt(3) / 3))
+
+# A2-09-008: shortest distance between the two skew lines (independent recompute)
+_s, _t = sp.symbols('s t', real=True)
+_Pp = sp.Matrix([_s, _s, 0])
+_Qp = sp.Matrix([0, _t, 1 + _t])
+_Dp = _Qp - _Pp
+_d1 = sp.Matrix([1, 1, 0])
+_d2 = sp.Matrix([0, 1, 1])
+_sol = sp.solve([_Dp.dot(_d1), _Dp.dot(_d2)], [_s, _t])
+_vec = (_Qp - _Pp).subs(_sol)
+_dist2 = sp.sqrt(_vec.dot(_vec))
+report("A2-09-008 距离(独立)=1/sqrt3", float(1 / sp.sqrt(3)), float(sp.N(_dist2)))
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

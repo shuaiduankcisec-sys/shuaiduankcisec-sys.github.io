@@ -1,0 +1,18 @@
+{
+  "id": "ch03-009",
+  "chapter": 3,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": ["polynomial division", "remainder theorem"],
+  "methods": ["linear remainder ansatz", "evaluating at roots of the divisor"],
+  "statement": "Find the remainder when $x^{4}+px^{3}+qx^{2}+rx+s$ is divided by $x^{2}-1$. Hence determine the condition on $p,q,r,s$ for $x^{2}-1$ to be a factor of the quartic.",
+  "solution": "The remainder on division by a quadratic is at most linear, so write $x^{4}+px^{3}+qx^{2}+rx+s=(x^{2}-1)Q(x)+Ax+B$. Substituting $x=1$ gives $1+p+q+r+s=A+B$. Substituting $x=-1$ gives $1-p+q-r+s=-A+B$. Adding yields $2(1+q+s)=2B$, so $B=1+q+s$. Subtracting yields $2(p+r)=2A$, so $A=p+r$. The remainder is therefore $(p+r)x+(1+q+s)$. For $x^{2}-1$ to be a factor the remainder must vanish, giving $p+r=0$ and $1+q+s=0$, i.e. $r=-p$ and $s=-q-1$.",
+  "solutionStatus": "full",
+  "hints": ["The remainder has the form Ax+B.", "Plug in x=1 and x=-1 (the roots of x^2-1).", "Set the remainder to zero for divisibility."]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ch06-008",
+  "chapter": 6,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2002,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["maxima and minima", "ellipse"],
+  "methods": ["expressing area in one variable", "AM-GM or calculus"],
+  "statement": "A rectangle with sides parallel to the axes is inscribed in the ellipse $\\\\dfrac{x^{2}}{a^{2}}+\\\\dfrac{y^{2}}{b^{2}}=1$. Show that its maximum area is $2ab$.",
+  "solution": "Let a corner in the first quadrant be $(x,y)$ with $x,y>0$ and $\\\\frac{x^{2}}{a^{2}}+\\\\frac{y^{2}}{b^{2}}=1$. The area is $A=4xy$. From the constraint $y=b\\\\sqrt{1-x^{2}/a^{2}}$, so $A=4bx\\\\sqrt{1-x^{2}/a^{2}}$. To maximise, square: $A^{2}=16b^{2}\\left(x^{2}-\\\\frac{x^{4}}{a^{2}}\\right)$. This quadratic in $u=x^{2}$ is maximised at $u=\\\\frac{a^{2}}{2}$, giving $x=\\\\frac{a}{\\\\sqrt{2}}$, $y=\\\\frac{b}{\\\\sqrt{2}}$, and $A=4\\\\cdot\\\\frac{a}{\\\\sqrt{2}}\\\\cdot\\\\frac{b}{\\\\sqrt{2}}=2ab$.",
+  "solutionStatus": "full",
+  "hints": ["Express the area in terms of one variable using the ellipse equation.", "Maximise A^2 (or use AM-GM on x^2 and a^2-x^2).", "Substitute back to find the maximum area."]
+}

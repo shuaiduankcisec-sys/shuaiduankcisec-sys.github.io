@@ -1,0 +1,18 @@
+{
+  "id": "ch06-009",
+  "chapter": 6,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": ["logarithmic differentiation", "maxima"],
+  "methods": ["differentiating log f", "locating and classifying the critical point"],
+  "statement": "For $x>0$ let $f(x)=x^{1/x}$. By taking logarithms, show that $f$ attains its maximum at $x=e$ and find the maximum value of $f$.",
+  "solution": "Set $y=x^{1/x}$; then $\\\\ln y=\\\\frac{\\\\ln x}{x}$. Differentiating, $\\\\frac{y'}{y}=\\\\frac{1-\\\\ln x}{x^{2}}$, so $y'=x^{1/x}\\\\frac{1-\\\\ln x}{x^{2}}$. This vanishes only when $\\\\ln x=1$, i.e. $x=e$. For $x<e$ we have $\\\\ln x<1$ so $y'>0$, and for $x>e$ we have $y'<0$; hence $f$ has a maximum at $x=e$. The maximum value is $f(e)=e^{1/e}$.",
+  "solutionStatus": "full",
+  "hints": ["Take natural logs before differentiating.", "Differentiate (ln x)/x using the quotient rule.", "Check the sign of the derivative on either side of x=e."]
+}

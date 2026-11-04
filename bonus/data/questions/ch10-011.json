@@ -1,0 +1,18 @@
+{
+  "id": "ch10-011",
+  "chapter": 10,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": ["sum of sines", "telescoping"],
+  "methods": ["product-to-sum", "telescoping the sum"],
+  "statement": "By multiplying $\\\\sum_{k=1}^{n}\\\\sin(k\\\\theta)$ by $2\\\\sin(\\\\theta/2)$ and using $2\\\\sin A\\\\sin B=\\\\cos(A-B)-\\\\cos(A+B)$, obtain a closed form for the sum.",
+  "solution": "We have $2\\\\sin(\\theta/2)\\sum_{k=1}^{n}\\\\sin(k\\\\theta)=\\\\sum_{k=1}^{n}2\\\\sin(k\\\\theta)\\\\sin(\\theta/2)=\\\\sum_{k=1}^{n}\\bigl[\\\\cos((k-\\\\tfrac12)\\\\theta)-\\\\cos((k+\\\\tfrac12)\\\\theta)\\bigr]$, which telescopes to $\\\\cos(\\\\theta/2)-\\\\cos((n+\\\\tfrac12)\\\\theta)$. Using $\\\\cos u-\\\\cos v=-2\\\\sin\\\\tfrac{u+v}{2}\\\\sin\\\\tfrac{u-v}{2}$, this equals $2\\\\sin\\\\tfrac{(n+1)\\\\theta}{2}\\\\sin\\\\tfrac{n\\\\theta}{2}$. Hence $\\\\sum_{k=1}^{n}\\\\sin(k\\\\theta)=\\\\dfrac{\\\\sin\\\\tfrac{n\\\\theta}{2}\\\\sin\\\\tfrac{(n+1)\\\\theta}{2}}{\\\\sin\\\\tfrac{\\\\theta}{2}}$ (for $\\\\sin(\\theta/2)\\\\neq0$).",
+  "solutionStatus": "full",
+  "hints": ["Apply the product-to-sum identity to each term.", "Watch the sum telescope.", "Convert the remaining difference of cosines back to sines."]
+}

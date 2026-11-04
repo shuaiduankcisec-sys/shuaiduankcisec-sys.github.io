@@ -1,0 +1,18 @@
+{
+  "id": "ch01-009",
+  "chapter": 1,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2002,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": ["nested radicals", "squaring differences"],
+  "methods": ["squaring to remove radicals", "solving a sum-and-difference system"],
+  "statement": "Let $x=\\\\sqrt{2+\\\\sqrt{3}}-\\\\sqrt{2-\\\\sqrt{3}}$. Show that $x^{2}=2$ and hence find $x$. Deduce the exact values of $\\\\sqrt{2+\\\\sqrt{3}}$ and $\\\\sqrt{2-\\\\sqrt{3}}$.",
+  "solution": "We have $x^{2}=(2+\\\\sqrt{3})+(2-\\\\sqrt{3})-2\\\\sqrt{(2+\\\\sqrt{3})(2-\\\\sqrt{3})}=4-2\\\\sqrt{4-3}=4-2=2$. Since $\\\\sqrt{2+\\\\sqrt{3}}>\\\\sqrt{2-\\\\sqrt{3}}$, we have $x>0$, so $x=\\\\sqrt{2}$. Set $a=\\\\sqrt{2+\\\\sqrt{3}}$ and $b=\\\\sqrt{2-\\\\sqrt{3}}$. Then $a-b=\\\\sqrt{2}$ and $ab=\\\\sqrt{(2+\\\\sqrt{3})(2-\\\\sqrt{3})}=1$. Also $a^{2}+b^{2}=4$, so $(a+b)^{2}=a^{2}+b^{2}+2ab=4+2=6$, hence $a+b=\\\\sqrt{6}$. Therefore $a=\\\\dfrac{\\\\sqrt{6}+\\\\sqrt{2}}{2}$ and $b=\\\\dfrac{\\\\sqrt{6}-\\\\sqrt{2}}{2}$.",
+  "solutionStatus": "full",
+  "hints": ["Square x and simplify the cross term using (2+root3)(2-root3)=1.", "Use ab=1 and a^2+b^2=4 to find a+b.", "Solve for a and b from the system a-b and a+b."]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ch04-010",
+  "chapter": 4,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["self-inverse functions", "function composition"],
+  "methods": ["composing a Mobius transformation", "comparing coefficients"],
+  "statement": "Let $f(x)=\\\\dfrac{ax+b}{cx+d}$ where $ad-bc\\\\neq0$. Find the condition on $a,b,c,d$ under which $f(f(x))=x$ for all $x$ for which both sides are defined. Hence describe the resulting family of functions.",
+  "solution": "We compute $f(f(x))=\\\\dfrac{a\\\\frac{ax+b}{cx+d}+b}{c\\\\frac{ax+b}{cx+d}+d}=\\\\dfrac{a(ax+b)+b(cx+d)}{c(ax+b)+d(cx+d)}=\\\\dfrac{(a^{2}+bc)x+b(a+d)}{c(a+d)x+(bc+d^{2})}$. For this to equal $x$ identically we need $(a^{2}+bc)x+b(a+d)=c(a+d)x^{2}+(bc+d^{2})x$. Comparing coefficients gives $c(a+d)=0$, $b(a+d)=0$ and $a^{2}=d^{2}$. If $a+d\\\\neq0$ then $b=c=0$ and $a^{2}=d^{2}$; with $ad\\\\neq0$ this forces $a=-d$, giving $f(x)=-x$. If $a+d=0$ then $d=-a$ and $a^{2}=d^{2}$ holds automatically, with the only remaining requirement $ad-bc=-a^{2}-bc\\\\neq0$. Thus the non-trivial family is $f(x)=\\\\dfrac{ax+b}{cx-a}$ with $a^{2}+bc\\\\neq0$ (these are exactly the self-inverse Mobius maps, together with the trivial cases $f(x)=x$ and $f(x)=-x$).",
+  "solutionStatus": "full",
+  "hints": ["Compose f with itself and simplify the double fraction.", "Compare coefficients of x^2, x and the constant term.", "Two cases arise: a+d=0 or b=c=0."]
+}

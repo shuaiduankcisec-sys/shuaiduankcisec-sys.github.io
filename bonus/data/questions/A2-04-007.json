@@ -1,0 +1,18 @@
+{
+  "id": "A2-04-007",
+  "chapter": "A2-04",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["logarithmic differentiation", "exponential form"],
+  "methods": ["writing x^x as e^(x ln x)", "chain rule"],
+  "statement": "Using the fact that $x^{x}=e^{x\\\\ln x}$, find $\\\\dfrac{d}{dx}(x^{x})$.",
+  "solution": "Let $y=x^{x}=e^{x\\\\ln x}$. Then $\\\\frac{dy}{dx}=e^{x\\\\ln x}\\\\cdot\\\\frac{d}{dx}(x\\\\ln x)=x^{x}\\left(\\\\ln x+1\\\\right)$. Hence $\\\\dfrac{d}{dx}(x^{x})=x^{x}(1+\\\\ln x)$ for $x>0$.",
+  "solutionStatus": "full",
+  "hints": ["Rewrite x^x using the exponential function.","Differentiate the exponent x ln x.","Apply the chain rule."]
+}

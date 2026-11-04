@@ -1,0 +1,18 @@
+{
+  "id": "ch02-010",
+  "chapter": 2,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2001,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["roots of quadratics", "Vieta's formulae"],
+  "methods": ["using sum and product of roots", "expressing symmetric functions"],
+  "statement": "The roots of $x^{2}+px+q=0$ are $\\\\alpha$ and $\\\\beta$. Find, in terms of $p$ and $q$, the quadratic equation whose roots are $\\\\dfrac{\\\\alpha}{\\\\beta}$ and $\\\\dfrac{\\\\beta}{\\\\alpha}$.",
+  "solution": "We have $\\\\alpha+\\\\beta=-p$ and $\\\\alpha\\\\beta=q$. The new roots are $r_{1}=\\\\alpha/\\\\beta$ and $r_{2}=\\\\beta/\\\\alpha$. Their sum is $r_{1}+r_{2}=\\\\dfrac{\\\\alpha^{2}+\\\\beta^{2}}{\\\\alpha\\\\beta}=\\\\dfrac{(\\\\alpha+\\\\beta)^{2}-2\\\\alpha\\\\beta}{\\\\alpha\\\\beta}=\\\\dfrac{p^{2}-2q}{q}$, and their product is $r_{1}r_{2}=1$. Hence the required quadratic is $x^{2}-\\\\dfrac{p^{2}-2q}{q}x+1=0$, or equivalently $qx^{2}-(p^{2}-2q)x+q=0$.",
+  "solutionStatus": "full",
+  "hints": ["Write down alpha+beta and alpha beta from Vieta.", "Express the sum of the new roots using alpha^2+beta^2=(alpha+beta)^2-2ab.", "The product of the new roots is 1."]
+}

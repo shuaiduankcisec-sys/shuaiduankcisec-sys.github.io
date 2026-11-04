@@ -1,0 +1,18 @@
+{
+  "id": "A2-06-010",
+  "chapter": "A2-06",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2001,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["trigonometric integrals", "power-reduction"],
+  "methods": ["sin^2 half-angle identity", "integrating cos 2x and cos 4x"],
+  "statement": "Using the identity $\\\\sin^{2}x=\\\\tfrac12(1-\\\\cos2x)$, evaluate $I=\\\\int_{0}^{\\\\pi/2}\\\\sin^{4}x\\,dx$.",
+  "solution": "$\\\\sin^{4}x=\\\\bigl(\\\\tfrac12(1-\\\\cos2x)\\bigr)^{2}=\\\\tfrac14(1-2\\\\cos2x+\\\\cos^{2}2x)=\\\\tfrac14\\\\bigl(1-2\\\\cos2x+\\\\tfrac12(1+\\\\cos4x)\\bigr)=\\\\tfrac38-\\\\tfrac12\\\\cos2x+\\\\tfrac18\\\\cos4x$. Integrating from $0$ to $\\\\pi/2$: $\\\\int_{0}^{\\\\pi/2}\\\\tfrac38\\,dx=\\\\tfrac{3\\\\pi}{16}$, while $\\\\int_{0}^{\\\\pi/2}\\\\cos2x\\,dx=\\\\bigl[\\\\tfrac12\\\\sin2x\\bigr]_{0}^{\\\\pi/2}=0$ and $\\\\int_{0}^{\\\\pi/2}\\\\cos4x\\,dx=\\\\bigl[\\\\tfrac14\\\\sin4x\\bigr]_{0}^{\\\\pi/2}=0$. Hence $I=\\\\frac{3\\\\pi}{16}$.",
+  "solutionStatus": "full",
+  "hints": ["Square the sin^2 identity to get sin^4.","Replace cos^2 2x using the double-angle formula again.","Integrate term by term; the cosine terms vanish over [0,pi/2]."]
+}

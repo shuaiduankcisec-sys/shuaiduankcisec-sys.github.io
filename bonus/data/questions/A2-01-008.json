@@ -1,0 +1,18 @@
+{
+  "id": "A2-01-008",
+  "chapter": "A2-01",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["maxima and minima", "odd functions"],
+  "methods": ["differentiation", "using the first derivative test"],
+  "statement": "For $x\\\\ge0$, the function $f(x)=\\\\dfrac{x}{1+x^{2}}$ has a maximum. Find the value of $x$ at which it occurs and the maximum value. Show also that $f$ is an odd function.",
+  "solution": "$f'(x)=\\\\dfrac{(1+x^{2})-x(2x)}{(1+x^{2})^{2}}=\\\\dfrac{1-x^{2}}{(1+x^{2})^{2}}$. For $x\\\\ge0$ the only critical point is $x=1$; $f'(x)>0$ for $0<x<1$ and $f'(x)<0$ for $x>1$, so the maximum occurs at $x=1$ with value $f(1)=\\\\tfrac12$. Finally $f(-x)=\\\\frac{-x}{1+(-x)^{2}}=-\\\\frac{x}{1+x^{2}}=-f(x)$, so $f$ is odd.",
+  "solutionStatus": "full",
+  "hints": ["Differentiate using the quotient rule.","Solve f'(x)=0 for x>= 0.","Check f(-x) to test oddness."]
+}

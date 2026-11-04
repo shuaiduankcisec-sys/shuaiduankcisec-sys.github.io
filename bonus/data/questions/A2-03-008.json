@@ -1,0 +1,18 @@
+{
+  "id": "A2-03-008",
+  "chapter": "A2-03",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": ["addition formula for tan", "angle sum pi"],
+  "methods": ["compound angle formula", "deduction when A+B+C=pi"],
+  "statement": "Show that $\\\\tan(A+B+C)=\\\\dfrac{\\\\tan A+\\\\tan B+\\\\tan C-\\\\tan A\\\\tan B\\\\tan C}{1-\\\\tan A\\\\tan B-\\\\tan B\\\\tan C-\\\\tan C\\\\tan A}$. Deduce that if $A+B+C=\\\\pi$ (and no angle equals $\\\\pi/2$), then $\\\\tan A+\\\\tan B+\\\\tan C=\\\\tan A\\\\tan B\\\\tan C$.",
+  "solution": "Using $\\\\tan(A+B)=\\\\frac{\\\\tan A+\\\\tan B}{1-\\\\tan A\\\\tan B}$ and $\\\\tan((A+B)+C)=\\\\frac{\\\\tan(A+B)+\\\\tan C}{1-\\\\tan(A+B)\\\\tan C}$, substitute and simplify the numerator and denominator to obtain the stated formula. If $A+B+C=\\\\pi$ then $\\\\tan(A+B+C)=\\\\tan\\\\pi=0$, so the numerator of the formula must be zero, giving $\\\\tan A+\\\\tan B+\\\\tan C=\\\\tan A\\\\tan B\\\\tan C$.",
+  "solutionStatus": "full",
+  "hints": ["First combine A and B, then add C.","Simplify the double fraction carefully.","Set the whole tangent equal to tan(pi)=0."]
+}

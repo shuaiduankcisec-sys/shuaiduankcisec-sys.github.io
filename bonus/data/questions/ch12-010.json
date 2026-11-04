@@ -1,0 +1,18 @@
+{
+  "id": "ch12-010",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["exponential functions", "AM-GM inequality"],
+  "methods": ["applying AM-GM", "reducing to a quadratic"],
+  "statement": "For $a>1$, let $f(x)=a^{x}+a^{-x}$. Show that $f(x)$ has a minimum at $x=0$ and find the minimum value. Hence solve $2^{x}+2^{-x}=5$.",
+  "solution": "By AM-GM, $a^{x}+a^{-x}\\\\ge2\\\\sqrt{a^{x}a^{-x}}=2$, with equality when $a^{x}=a^{-x}$, i.e. $x=0$. So the minimum value is $2$ at $x=0$. For $2^{x}+2^{-x}=5$, set $u=2^{x}>0$ to get $u+u^{-1}=5$, so $u^{2}-5u+1=0$ and $u=\\\\frac{5\\\\pm\\\\sqrt{21}}{2}$, both positive. Hence $x=\\\\log_{2}\\!\\left(\\\\frac{5\\\\pm\\\\sqrt{21}}{2}\\right)$, giving two real solutions.",
+  "solutionStatus": "full",
+  "hints": ["Apply AM-GM to a^x and a^{-x}.", "Equality occurs when the two terms are equal.", "Substitute u=2^x to get a quadratic."]
+}

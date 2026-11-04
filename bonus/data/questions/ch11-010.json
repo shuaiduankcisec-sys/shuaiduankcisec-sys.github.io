@@ -1,0 +1,18 @@
+{
+  "id": "ch11-010",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["sum-to-product", "bounds"],
+  "methods": ["squaring and adding", "using cos(theta-phi)"],
+  "statement": "Given that $\\\\sin\\\\theta+\\\\sin\\\\phi=a$ and $\\\\cos\\\\theta+\\\\cos\\\\phi=b$, show that $\\\\cos(\\\\theta-\\\\phi)=\\\\dfrac{a^{2}+b^{2}-2}{2}$. Hence find the maximum possible value of $a^{2}+b^{2}$.",
+  "solution": "Squaring and adding the two given equations: $a^{2}+b^{2}=(\\\\sin\\\\theta+\\\\sin\\\\phi)^{2}+(\\\\cos\\\\theta+\\\\cos\\\\phi)^{2}=2+2(\\\\sin\\\\theta\\\\sin\\\\phi+\\\\cos\\\\theta\\\\cos\\\\phi)=2+2\\\\cos(\\\\theta-\\\\phi)$. Therefore $\\\\cos(\\\\theta-\\\\phi)=\\\\frac{a^{2}+b^{2}-2}{2}$. Since $\\\\cos(\\\\theta-\\\\phi)\\\\le1$, we get $a^{2}+b^{2}\\\\le4$, with equality when $\\\\theta=\\\\phi$. So the maximum possible value of $a^{2}+b^{2}$ is $4$.",
+  "solutionStatus": "full",
+  "hints": ["Square both equations and add them.", "Use sin sin + cos cos = cos(theta-phi).", "Use the bound cos(theta-phi) <= 1."]
+}

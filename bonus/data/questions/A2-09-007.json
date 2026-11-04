@@ -1,0 +1,18 @@
+{
+  "id": "A2-09-007",
+  "chapter": "A2-09",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2002,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["planes", "distance from a point to a plane"],
+  "methods": ["intercept form of a plane", "perpendicular distance formula"],
+  "statement": "The points $A(1,0,0)$, $B(0,1,0)$ and $C(0,0,1)$ lie on a plane. Find the equation of the plane and the perpendicular distance from the origin to it.",
+  "solution": "The plane meets the axes at $1,1,1$, so its equation is $\\\\frac{x}{1}+\\\\frac{y}{1}+\\\\frac{z}{1}=1$, i.e. $x+y+z=1$. The perpendicular distance from the origin to the plane $x+y+z-1=0$ is $\\\\frac{|0+0+0-1|}{\\\\sqrt{1^{2}+1^{2}+1^{2}}}=\\\\frac{1}{\\\\sqrt{3}}$.",
+  "solutionStatus": "full",
+  "hints": ["Use the intercept form of the plane.","Write it in the form ax+by+cz+d=0.","Apply the point-to-plane distance formula."]
+}
