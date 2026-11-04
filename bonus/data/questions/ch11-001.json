@@ -1,0 +1,24 @@
+{
+  "id": "ch11-001",
+  "chapter": 11,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2023,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144109/TMUA-2023-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["trigonometric equations", "solutions in an interval"],
+  "methods": ["solving trigonometric equations", "counting solutions in an interval"],
+  "statement": "How many solutions are there to\n$$(1+3\\cos 3\\theta)^2=4$$\nin the interval $0^\\circ\\le\\theta\\le180^\\circ$?",
+  "options": ["$1$", "$2$", "$3$", "$4$", "$5$", "$6$"],
+  "answer": "E",
+  "solution": "Taking square roots, $(1+3\\cos3\\theta)^2=4$ gives\n$$1+3\\cos3\\theta=\\pm2,$$\nso either $3\\cos3\\theta=1$ (i.e. $\\cos3\\theta=\\tfrac13$) or $3\\cos3\\theta=-3$ (i.e. $\\cos3\\theta=-1$).\n\n**Case $\\cos3\\theta=-1$:** then $3\\theta=180^\\circ,540^\\circ$ (since $0^\\circ\\le3\\theta\\le540^\\circ$), giving $\\theta=60^\\circ,180^\\circ$. That is $2$ solutions.\n\n**Case $\\cos3\\theta=\\tfrac13$:** let $\\phi=\\arccos\\tfrac13\\approx70.5^\\circ$. Then $3\\theta=\\phi,\\;360^\\circ-\\phi,\\;360^\\circ+\\phi$ (the next, $720^\\circ-\\phi$, exceeds $540^\\circ$). These give $\\theta\\approx23.5^\\circ,\\;96.5^\\circ,\\;143.5^\\circ$. That is $3$ solutions.\n\nTotal: $2+3=5$ solutions, which is **option E**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Take square roots to get two cases: cos3θ = 1/3 and cos3θ = -1.",
+    "Since 0°≤θ≤180°, the angle 3θ ranges over 0° to 540°.",
+    "Count solutions in each case and add them."
+  ]
+}

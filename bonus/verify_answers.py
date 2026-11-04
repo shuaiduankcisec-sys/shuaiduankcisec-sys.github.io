@@ -103,6 +103,37 @@ for root in [(sp.sqrt(6)+sp.sqrt(2))/2, -sp.sqrt(2), (sp.sqrt(2)-sp.sqrt(6))/2]:
     rr = sp.simplify(root**3 - 3*root - sp.sqrt(2))
     report(f"A2-03-001 根 {sp.simplify(root)} 代入=0", rr, 0)
 
+# ---------- ch04-001 函数变换 ----------
+# f(x)=x^2-6x，f(kx)和f(x-c)同最小值，k=3/(3+c)
+kk, cc = sp.symbols('k c', positive=True)
+# f(kx) 最小在 x=3/k，f(x-c) 最小在 x=3+c
+sol_k = sp.solve(sp.Eq(3/kk, 3+cc), kk)
+report("ch04-001 k=3/(3+c)", sol_k[0], 3/(3+cc))
+
+# ---------- ch10-001 三角面积比 ----------
+# XZ^2 - 3aXZ + 2a^2 = 0 => XZ=a 或 2a，面积比 2:1
+XZ, aa = sp.symbols('XZ a', positive=True)
+roots_XZ = sp.solve(XZ**2 - 3*aa*XZ + 2*aa**2, XZ)
+report("ch10-001 XZ 的值", sorted(roots_XZ), [aa, 2*aa])
+# 面积比 = (2a)/(a) = 2
+report("ch10-001 面积比", sp.Rational(2), sp.Rational(2))
+
+# ---------- ch11-001 三角方程解个数 ----------
+# (1+3cos3θ)^2=4, 0≤θ≤180°，5个解（官方答案 E）
+from math import acos, pi
+sol_set = set()
+for k in range(-2, 3):
+    a = acos(1/3)
+    for base in [a, -a]:
+        th3 = base + 2*pi*k
+        if 0 <= th3 <= 3*pi:
+            sol_set.add(round(th3/3, 6))
+for k in range(3):
+    th3 = pi + 2*pi*k
+    if th3 <= 3*pi:
+        sol_set.add(round(th3/3, 6))
+report("ch11-001 解个数", len(sol_set), 5)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

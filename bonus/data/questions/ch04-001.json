@@ -1,0 +1,31 @@
+{
+  "id": "ch04-001",
+  "chapter": 4,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2023,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144109/TMUA-2023-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["functions", "graph transformations", "quadratics"],
+  "methods": ["graph transformations", "completing the square", "finding a minimum point"],
+  "statement": "It is given that $f(x)=x^2-6x$.\n\nThe curves $y=f(kx)$ and $y=f(x-c)$ have the same minimum point, where $k>0$ and $c>0$.\n\nWhich of the following is a correct expression for $k$ in terms of $c$?",
+  "options": [
+    "$k=\\dfrac{3-c}{3}$",
+    "$k=\\dfrac{3}{c+3}$",
+    "$k=\\dfrac{c-6}{6}$",
+    "$k=\\dfrac{6}{6-c}$",
+    "$k=\\dfrac{c+9}{9}$",
+    "$k=\\dfrac{9}{c-9}$"
+  ],
+  "answer": "B",
+  "solution": "Complete the square: $f(x)=x^2-6x=(x-3)^2-9$, so the minimum point of $y=f(x)$ is at $(3,-9)$.\n\n**Graph $y=f(kx)$.** Replacing $x$ by $kx$ stretches the graph horizontally by a factor of $1/k$, so its minimum is at $x=3/k$ (with the same $y=-9$).\n\n**Graph $y=f(x-c)$.** Replacing $x$ by $x-c$ translates the graph $c$ units to the right, so its minimum is at $x=3+c$.\n\nFor the two minima to coincide we need\n$$\\frac{3}{k}=3+c.$$\nRearranging,\n$$k=\\frac{3}{3+c},$$\nwhich is **option B**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Complete the square to find the minimum point of f(x).",
+    "f(kx) stretches horizontally by 1/k, so its minimum x is 3/k.",
+    "f(x-c) translates right by c, so its minimum x is 3+c."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ch10-001",
+  "chapter": 10,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2023,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144109/TMUA-2023-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["trigonometry", "cosine rule", "area of a triangle"],
+  "methods": ["cosine rule", "area formula (1/2)ab sin C"],
+  "statement": "A triangle $XYZ$ is called *fun* if it has the following properties:\n$$\\angle YXZ = 30^\\circ, \\qquad XY=\\sqrt{3}a, \\qquad YZ=a,$$\nwhere $a$ is a constant.\n\nFor a given value of $a$, there are two distinct fun triangles $S$ and $T$, where the area of $S$ is greater than the area of $T$.\n\nFind the ratio area of $S$ : area of $T$.",
+  "options": ["$1:1$", "$2:1$", "$2:\\sqrt3$", "$\\sqrt3:1$", "$3:1$"],
+  "answer": "B",
+  "solution": "Let $XZ$ be the unknown side. By the cosine rule,\n$$YZ^2=XY^2+XZ^2-2\\,XY\\cdot XZ\\cos30^\\circ.$$\nSubstituting $YZ=a$, $XY=\\sqrt3a$ and $\\cos30^\\circ=\\tfrac{\\sqrt3}{2}$:\n$$a^2=3a^2+XZ^2-2(\\sqrt3a)(XZ)\\cdot\\tfrac{\\sqrt3}{2}=3a^2+XZ^2-3aXZ.$$\n\nRearranging,\n$$XZ^2-3aXZ+2a^2=0 \\quad\\Rightarrow\\quad (XZ-a)(XZ-2a)=0,$$\nso $XZ=a$ or $XZ=2a$. These two values give the two distinct fun triangles.\n\nThe area is $\\tfrac12\\,XY\\cdot XZ\\sin30^\\circ=\\tfrac12(\\sqrt3a)(XZ)(\\tfrac12)=\\tfrac{\\sqrt3}{4}a\\,XZ$.\n\n- If $XZ=a$, area $=\\tfrac{\\sqrt3}{4}a^2$ (this is $T$).\n- If $XZ=2a$, area $=\\tfrac{\\sqrt3}{2}a^2$ (this is $S$).\n\nHence area of $S$ : area of $T$ $=2:1$, which is **option B**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the cosine rule with angle 30° to find XZ.",
+    "The resulting quadratic gives two possible values of XZ.",
+    "Compute the area for each using (1/2)ab sin C and take the ratio."
+  ]
+}
