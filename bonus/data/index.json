@@ -44,6 +44,27 @@
     "preview": "Exactly one of these five numbers is a square number. Which one? (a) $99{,}999{,}999$  (b) $123{,}333{,}333$  (c) $649{,}485{,}225$  (d)…"
   },
   {
+    "id": "ch01-003",
+    "chapter": 1,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1996,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "surds",
+      "equating coefficients",
+      "quadratics"
+    ],
+    "methods": [
+      "expanding a square",
+      "equating rational and irrational parts"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find all rational numbers $r$ and $s$ which satisfy $ (r+s\\sqrt3)^2=4-2\\sqrt3.$"
+  },
+  {
     "id": "ch02-002",
     "chapter": 2,
     "title": "",
@@ -84,6 +105,28 @@
     ],
     "solutionStatus": "full",
     "preview": "The real numbers $a$, $b$, and $c$ are non-zero. Each of the following quadratic equations has a repeated real root (not necessarily the…"
+  },
+  {
+    "id": "ch02-004",
+    "chapter": 2,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2010,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "quadratics",
+      "completing the square",
+      "simultaneous equations"
+    ],
+    "methods": [
+      "completing the square in two variables",
+      "equating coefficients",
+      "solving simultaneous quadratics"
+    ],
+    "solutionStatus": "full",
+    "preview": "Given that $ 5x^2+2y^2-6xy+4x-4y\\equiv a(x-y+2)^2+b(cx+y)^2+d,$  find the values of the constants $a$, $b$, $c$ and $d$. Solve the…"
   },
   {
     "id": "ch03-001",

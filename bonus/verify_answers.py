@@ -419,6 +419,28 @@ report("ch04-003 II是平移", 1 if (27 == 3*3**2) else 0, 1)
 s_log = sum(1-n for n in range(1,101))
 report("ch12-003 Σ(1-n)=-4950", s_log - (-4950), 0)
 
+# ---------- ch01-003 根式方程 ----------
+r_sym, s_sym = sp.symbols('r s')
+# (r+s√3)² = 4-2√3 => r²+3s²=4, 2rs=-2 => (1,-1),(-1,1)
+for (rr, ss) in [(1,-1),(-1,1)]:
+    report(f"ch01-003 (r,s)=({rr},{ss})", sp.simplify((rr+ss*sp.sqrt(3))**2 - (4-2*sp.sqrt(3))), 0)
+
+# ---------- ch02-004 配方+联立 ----------
+xx3, yy3 = sp.symbols('x y')
+# 验证配方恒等式
+check1 = sp.expand(5*xx3**2+2*yy3**2-6*xx3*yy3+4*xx3-4*yy3 - ((xx3-yy3+2)**2+(-2*xx3+yy3)**2-4))
+check2 = sp.expand(6*xx3**2+3*yy3**2-8*xx3*yy3+8*xx3-8*yy3 - (2*(xx3-yy3+2)**2+(-2*xx3+yy3)**2-8))
+report("ch02-004 配方恒等式", sp.simplify(check1+check2), 0)
+# 验证四个解
+for (xv, yv) in [(-3,-4),(1,0),(3,8),(7,12)]:
+    e1 = 5*xv**2+2*yv**2-6*xv*yv+4*xv-4*yv
+    e2 = 6*xv**2+3*yv**2-8*xv*yv+8*xv-8*yv
+    if e1 != 9 or e2 != 14:
+        report(f"ch02-004 解({xv},{yv})", 1, 0)
+        break
+else:
+    report("ch02-004 四个解验证", 0, 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

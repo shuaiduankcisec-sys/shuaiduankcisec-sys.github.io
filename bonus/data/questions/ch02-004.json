@@ -1,0 +1,22 @@
+{
+  "id": "ch02-004",
+  "chapter": 2,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2010,
+  "sourceUrl": "https://step.maths.org/questions/10-s1-q1",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": ["quadratics", "completing the square", "simultaneous equations"],
+  "methods": ["completing the square in two variables", "equating coefficients", "solving simultaneous quadratics"],
+  "statement": "Given that\n$$5x^2+2y^2-6xy+4x-4y\\equiv a(x-y+2)^2+b(cx+y)^2+d,$$\nfind the values of the constants $a$, $b$, $c$ and $d$.\n\nSolve the simultaneous equations\n$$5x^2+2y^2-6xy+4x-4y=9, \\qquad 6x^2+3y^2-8xy+8x-8y=14.$$",
+  "solution": "**Finding the constants.** Expand and equate coefficients. The coefficient of $x$ gives $4a=4$, so $a=1$. The coefficient of $y$ confirms $a=1$. The $y^2$ coefficient gives $a+b=2$, so $b=1$. The $x^2$ coefficient gives $a+bc^2=5$, so $1+c^2=5$, i.e. $c=\\pm2$. The $xy$ coefficient gives $-2a+2bc=-6$, so $-2+2c=-6$, i.e. $c=-2$. The constant gives $4a+d=0$, so $d=-4$.\n\nHence\n$$5x^2+2y^2-6xy+4x-4y=(x-y+2)^2+(-2x+y)^2-4.$$\n\n**Solving the equations.** The first equation becomes\n$$(x-y+2)^2+(-2x+y)^2=13. \\tag{1}$$\n\nCompleting the square for the second quadratic in the same two linear forms,\n$$6x^2+3y^2-8xy+8x-8y=2(x-y+2)^2+(-2x+y)^2-8,$$\nso the second equation becomes\n$$2(x-y+2)^2+(-2x+y)^2=22. \\tag{2}$$\n\nLet $u=x-y+2$ and $v=-2x+y$. Then (1) and (2) are\n$$u^2+v^2=13, \\qquad 2u^2+v^2=22.$$\nSubtracting gives $u^2=9$, so $u=\\pm3$, and then $v^2=13-9=4$, so $v=\\pm2$.\n\nNow $u+v=(x-y+2)+(-2x+y)=2-x$, so $x=2-u-v$, and $v=-2x+y$ gives $y=v+2x=4-2u-v$. Substituting the four sign combinations gives the four solutions:\n$$(x,y)=(-3,-4),\\ (1,0),\\ (3,8),\\ (7,12).$$",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand and equate coefficients to find a,b,c,d.",
+    "Complete the square for both quadratics using the same two linear forms.",
+    "Substitute u=x-y+2 and v=-2x+y to solve a simpler system."
+  ]
+}
