@@ -404,6 +404,21 @@ xx2 = sp.symbols('xx2')
 area_val = 2*sp.integrate(12+4*xx2-xx2**2, (xx2, 0, 6))
 report("ch07-007 面积=144", sp.simplify(area_val - 144), 0)
 
+# ---------- ch07-008 f''=a 求 a=6 ----------
+aa2, bb2, cc2 = sp.symbols('a b c')
+f_expr = sp.Rational(1,2)*aa2*sp.symbols('x')**2 + bb2*sp.symbols('x') + cc2
+# f(0)=1 => c=1; f(1)=2 => a/2+b+1=2; ∫=1 => a/6+b/2+1=1
+sol_ab = sp.solve([sp.Eq(sp.Rational(1,2)*aa2+bb2+1, 2), sp.Eq(sp.Rational(1,6)*aa2+sp.Rational(1,2)*bb2+1, 1)], (aa2,bb2))
+report("ch07-008 a=6", sp.simplify(sol_ab[aa2] - 6), 0)
+
+# ---------- ch04-003 平移判断 ----------
+# y=(x-a)³+b => x³-3ax²+3a²x-a³+b，II: a=3 一致
+report("ch04-003 II是平移", 1 if (27 == 3*3**2) else 0, 1)
+
+# ---------- ch12-003 对数级数 ----------
+s_log = sum(1-n for n in range(1,101))
+report("ch12-003 Σ(1-n)=-4950", s_log - (-4950), 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

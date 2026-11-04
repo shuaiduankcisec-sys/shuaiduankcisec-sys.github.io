@@ -1,0 +1,24 @@
+{
+  "id": "ch04-003",
+  "chapter": 4,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2022,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["functions", "graph transformations", "translations"],
+  "methods": ["translation of a cubic", "matching coefficients"],
+  "statement": "A sequence of translations is applied to the graph of $y=x^3$.\n\nWhich of the following graphs could be the result of this sequence of translations?\n\nI. $y=x^3-3x^2+9x-27$\n\nII. $y=x^3-9x^2+27x-3$\n\nIII. $y=27x^3-9x^2+x-3$",
+  "options": ["none of them", "I only", "II only", "III only", "I and II only", "I and III only", "II and III only", "I, II and III"],
+  "answer": "C",
+  "solution": "A translation of $y=x^3$ gives $y=(x-a)^3+b$ for some $a,b$, i.e.\n$$y=x^3-3ax^2+3a^2x-a^3+b.$$\nSo the coefficient of $x^3$ must be $1$, and the coefficients of $x^2$ and $x$ must satisfy: if the $x^2$ coefficient is $-3a$, then the $x$ coefficient is $3a^2$.\n\n- **I** ($-3x^2+9x$): from $-3a=-3$ we get $a=1$, but then the $x$ coefficient should be $3$, not $9$. Not a translation.\n- **II** ($-9x^2+27x$): from $-3a=-9$ we get $a=3$, and the $x$ coefficient $3a^2=27$ ✓. The constant $-a^3+b=-27+b=-3$ gives $b=24$. So II is $y=(x-3)^3+24$, a translation.\n- **III**: the coefficient of $x^3$ is $27\\ne1$, so not a translation.\n\nHence only II could result, which is **option C**.",
+  "solutionStatus": "full",
+  "hints": [
+    "A translation of y=x³ has the form y=(x-a)³+b.",
+    "Check that the x³ coefficient is 1.",
+    "Check the x² and x coefficients are consistent with a single value of a."
+  ]
+}

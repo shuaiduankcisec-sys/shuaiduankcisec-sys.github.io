@@ -171,6 +171,27 @@
     "preview": "How many distinct real solutions $x$ are there to the equation $ \\left(\\left((x^2-1)^2-2\\right)^2-3\\right)^2=4\\,?$"
   },
   {
+    "id": "ch04-003",
+    "chapter": 4,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2022,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "functions",
+      "graph transformations",
+      "translations"
+    ],
+    "methods": [
+      "translation of a cubic",
+      "matching coefficients"
+    ],
+    "solutionStatus": "full",
+    "preview": "A sequence of translations is applied to the graph of $y=x^3$. Which of the following graphs could be the result of this sequence of…"
+  },
+  {
     "id": "ch05-001",
     "chapter": 5,
     "title": "",
@@ -338,6 +359,26 @@
     ],
     "solutionStatus": "full",
     "preview": "Find the finite area enclosed between the line $y=0$ and the curve $y=x^2-4|x|-12$."
+  },
+  {
+    "id": "ch07-008",
+    "chapter": 7,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2022,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "integration",
+      "antiderivatives"
+    ],
+    "methods": [
+      "repeated integration",
+      "solving simultaneous equations"
+    ],
+    "solutionStatus": "full",
+    "preview": "Given the following statements about a function $f$: - $f''(x)=a$ for all $x$; - $f(0)=1$, $f(1)=2$; - $\\displaystyle\\int_0^1 f(x)\\,dx=1$,…"
   },
   {
     "id": "ch08-001",
@@ -671,6 +712,27 @@
     ],
     "solutionStatus": "full",
     "preview": "In this question we write $\\alpha=\\log_{10}2$, $\\beta=\\log_{10}3$, and $\\gamma=\\log_{10}7$. Each of the following numbers is close to an…"
+  },
+  {
+    "id": "ch12-003",
+    "chapter": 12,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2022,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "logarithms",
+      "series",
+      "summation"
+    ],
+    "methods": [
+      "power rule for logarithms",
+      "sum of an arithmetic series"
+    ],
+    "solutionStatus": "full",
+    "preview": "Evaluate $ \\sum_{n=1}^{100}\\log_{10}\\left(3^{1-n}\\right).$"
   },
   {
     "id": "A2-01-001",

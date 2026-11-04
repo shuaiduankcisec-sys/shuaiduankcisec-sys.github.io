@@ -1,0 +1,24 @@
+{
+  "id": "ch12-003",
+  "chapter": 12,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2022,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["logarithms", "series", "summation"],
+  "methods": ["power rule for logarithms", "sum of an arithmetic series"],
+  "statement": "Evaluate\n$$\\sum_{n=1}^{100}\\log_{10}\\left(3^{1-n}\\right).$$",
+  "options": ["$-4950\\log_{10}3$", "$4950\\log_{10}3$", "$-5050\\log_{10}3$", "$5050\\log_{10}3$", "$1-4950\\log_{10}3$", "$1+4950\\log_{10}3$", "$1-5050\\log_{10}3$"],
+  "answer": "A",
+  "solution": "Using the power rule, $\\log_{10}(3^{1-n})=(1-n)\\log_{10}3$. So\n$$\\sum_{n=1}^{100}\\log_{10}(3^{1-n})=\\log_{10}3\\sum_{n=1}^{100}(1-n).$$\n\nNow $\\sum_{n=1}^{100}(1-n)=100-(1+2+\\cdots+100)=100-5050=-4950$, using $1+2+\\cdots+100=\\tfrac{100\\cdot101}{2}=5050$.\n\nTherefore the sum is $-4950\\log_{10}3$.\n\nThe answer is **A**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use log(3^{1-n}) = (1-n) log 3.",
+    "Sum 1-n from n=1 to 100 using the triangular number formula.",
+    "Factor out log 3."
+  ]
+}
