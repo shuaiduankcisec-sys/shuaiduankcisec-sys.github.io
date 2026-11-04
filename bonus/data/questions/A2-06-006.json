@@ -1,0 +1,22 @@
+{
+  "id": "A2-06-006",
+  "chapter": "A2-06",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1987,
+  "sourceUrl": "https://step.maths.org/questions/87-s1-q8",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 3,
+  "topics": ["integration", "integration by substitution", "improper substitutions"],
+  "methods": ["trigonometric substitution", "recognising an invalid substitution"],
+  "statement": "Explain why the use of the substitution $x=\\dfrac1t$ does not demonstrate that the integrals\n$$\\int_{-1}^{1}\\frac{1}{(1+x^2)^2}\\,dx \\quad \\text{and} \\quad \\int_{-1}^{1}\\frac{-t^2}{(1+t^2)^2}\\,dt$$\nare equal.\n\nEvaluate both integrals correctly.",
+  "solution": "**Why the substitution fails.** The substitution $x=1/t$ is not defined at $x=0$, but $0$ lies in the interval $[-1,1]$. A change of variable requires the substitution to be one-to-one and differentiable on the whole interval of integration; here it is not, so the naive substitution is invalid. (One would need to split at $0$ and treat each half as an improper integral.)\n\n**First integral.** By symmetry,\n$$\\int_{-1}^1\\frac{1}{(1+x^2)^2}\\,dx=2\\int_0^1\\frac{1}{(1+x^2)^2}\\,dx.$$\nSubstituting $x=\\tan\\theta$ (so $dx=\\sec^2\\theta\\,d\\theta$ and $1+x^2=\\sec^2\\theta$):\n$$2\\int_0^{\\pi/4}\\frac{\\sec^2\\theta}{\\sec^4\\theta}\\,d\\theta=2\\int_0^{\\pi/4}\\cos^2\\theta\\,d\\theta=2\\int_0^{\\pi/4}\\frac{1+\\cos2\\theta}{2}\\,d\\theta=\\left[\\theta+\\frac{\\sin2\\theta}{2}\\right]_0^{\\pi/4}=\\frac\\pi4+\\frac12.$$\n\n**Second integral.**\n$$\\int_{-1}^1\\frac{-t^2}{(1+t^2)^2}\\,dt=-2\\int_0^1\\frac{t^2}{(1+t^2)^2}\\,dt.$$\nUsing $\\dfrac{t^2}{(1+t^2)^2}=\\dfrac{1}{1+t^2}-\\dfrac{1}{(1+t^2)^2}$, we have\n$$-2\\int_0^1\\left(\\frac{1}{1+t^2}-\\frac{1}{(1+t^2)^2}\\right)dt=-2\\left(\\left[\\tan^{-1}t\\right]_0^1-\\int_0^1\\frac{1}{(1+t^2)^2}dt\\right).$$\nUsing the first result $\\int_0^1\\frac{1}{(1+t^2)^2}dt=\\tfrac12(\\tfrac\\pi4+\\tfrac12)=\\tfrac\\pi8+\\tfrac14$,\n$$-2\\left(\\frac\\pi4-\\frac\\pi8-\\frac14\\right)=-2\\left(\\frac\\pi8-\\frac14\\right)=\\frac12-\\frac\\pi4.$$\n\nThe two integrals are $\\dfrac12+\\dfrac\\pi4$ and $\\dfrac12-\\dfrac\\pi4$, which are not equal.",
+  "solutionStatus": "full",
+  "hints": [
+    "The substitution x=1/t is undefined at x=0, which lies in the interval.",
+    "Use x=tan θ for the first integral (it is even).",
+    "For the second, write t²/(1+t²)² = 1/(1+t²) - 1/(1+t²)²."
+  ]
+}

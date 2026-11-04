@@ -441,6 +441,31 @@ for (xv, yv) in [(-3,-4),(1,0),(3,8),(7,12)]:
 else:
     report("ch02-004 四个解验证", 0, 0)
 
+# ---------- A2-06-005 Dirichlet 核积分 ----------
+xx4 = sp.symbols('xx4')
+n4 = 3
+integ_dir = sp.integrate(1 + 2*sum(sp.cos(k*xx4) for k in range(1,n4+1)), (xx4, 0, sp.pi))
+integ_dir2 = sp.integrate((1 + 2*sum(sp.cos(k*xx4) for k in range(1,n4+1)))*sp.cos(xx4), (xx4, 0, sp.pi))
+report("A2-06-005 ∫f=π", sp.simplify(integ_dir - sp.pi), 0)
+report("A2-06-005 ∫f cos x=π", sp.simplify(integ_dir2 - sp.pi), 0)
+
+# ---------- ch06-003 微分不等式 ----------
+# f'(x)=f(1)(x+1/2)+f(-1)(x-1/2)-2f(0)x，验证恒等式
+aa3,bb3,cc3 = sp.symbols('a3 b3 c3')
+xx5 = sp.symbols('xx5')
+lhs_id = 2*aa3*xx5+bb3
+rhs_id = (aa3+bb3+cc3)*(xx5+sp.Rational(1,2))+(aa3-bb3+cc3)*(xx5-sp.Rational(1,2))-2*cc3*xx5
+report("ch06-003 f'恒等式", sp.simplify(lhs_id - rhs_id), 0)
+# 尖例子 f=2x²-1, f'=4x, |f'(±1)|=4
+report("ch06-003 尖例子 |f'(±1)|=4", abs(4*1)-4, 0)
+
+# ---------- A2-06-006 换元积分 ----------
+xx6 = sp.symbols('xx6')
+I_a = sp.integrate(1/(1+xx6**2)**2, (xx6, -1, 1))
+I_b = sp.integrate(-xx6**2/(1+xx6**2)**2, (xx6, -1, 1))
+report("A2-06-006 ∫1/(1+x²)²=1/2+π/4", sp.simplify(I_a - (sp.Rational(1,2)+sp.pi/4)), 0)
+report("A2-06-006 ∫-x²/(1+x²)²=1/2-π/4", sp.simplify(I_b - (sp.Rational(1,2)-sp.pi/4)), 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

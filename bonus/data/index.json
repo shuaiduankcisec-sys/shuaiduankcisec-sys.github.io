@@ -320,6 +320,28 @@
     "preview": "A cylindrical biscuit tin has volume $V$ and surface area $S$ (including the ends). Show that the minimum possible surface area for a given…"
   },
   {
+    "id": "ch06-003",
+    "chapter": 6,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1988,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "differentiation",
+      "quadratics",
+      "inequalities"
+    ],
+    "methods": [
+      "differentiating a quadratic",
+      "bounding a derivative",
+      "triangle inequality"
+    ],
+    "solutionStatus": "full",
+    "preview": "The function $f$ is defined by $f(x)=ax^2+bx+c$. Show that $ f'(x)=f(1)\\left(x+\\tfrac12\\right)+f(-1)\\left(x-\\tfrac12\\right)-2f(0)x.$  If…"
+  },
+  {
     "id": "ch07-003",
     "chapter": 7,
     "title": "",
@@ -1123,6 +1145,48 @@
     ],
     "solutionStatus": "full",
     "preview": "Let $y=f(x)$, ($0\\le x\\le a$), be a continuous curve lying in the first quadrant and passing through the origin. Suppose that, for each…"
+  },
+  {
+    "id": "A2-06-005",
+    "chapter": "A2-06",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1996,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "integration",
+      "trigonometric series",
+      "Dirichlet kernel"
+    ],
+    "methods": [
+      "telescoping trigonometric sum",
+      "definite integration"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $ f(x)=\\frac{\\sin\\left((n+\\tfrac12)x\\right)}{\\sin\\tfrac12 x} \\quad \\text{for } 0<x\\le\\pi.$  (i) Using the formula …"
+  },
+  {
+    "id": "A2-06-006",
+    "chapter": "A2-06",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1987,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "integration",
+      "integration by substitution",
+      "improper substitutions"
+    ],
+    "methods": [
+      "trigonometric substitution",
+      "recognising an invalid substitution"
+    ],
+    "solutionStatus": "full",
+    "preview": "Explain why the use of the substitution $x=\\dfrac1t$ does not demonstrate that the integrals …"
   },
   {
     "id": "A2-07-001",
