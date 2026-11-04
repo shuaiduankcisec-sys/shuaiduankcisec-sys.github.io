@@ -203,7 +203,10 @@
     wrap.appendChild(allBtn);
 
     chs.forEach(function (c) {
-      var cnt = questionsForChapter().filter(function (q) { return q.chapter === c.id; }).length;
+      // count questions in this chapter by level + board only (NOT by the selected chapter)
+      var cnt = state.index.filter(function (q) {
+        return q.level === state.level && q.chapter === c.id && inBoard(q);
+      }).length;
       var btn = el('button', 'bq-chapter' + (state.chapter === c.id ? ' active' : ''));
       btn.type = 'button';
       // numeric AS chapters show their number; A2 chapters show the numeric part of "A2-0N"
