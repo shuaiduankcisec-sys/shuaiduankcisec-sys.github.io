@@ -333,7 +333,24 @@
     }
 
     qs.forEach(function (q) {
-      var item = el('div', 'bq-q-item' + (state.activeId === q.id ? ' active' : ''));
+      var inLib = window.bonusCollection.hasInLibrary(q.id);
+      var item = el('div', 'bq-q-item' + (state.activeId === q.id ? ' active' : '') + (inLib ? ' in-library' : ''));
+
+      // left check toggle (saves to library)
+      var check = el('button', 'bq-check' + (inLib ? ' on' : ''));
+      check.type = 'button';
+      check.title = t('saveToLibrary');
+      check.setAttribute('aria-label', t('saveToLibrary'));
+      check.setAttribute('aria-pressed', inLib ? 'true' : 'false');
+      check.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      check.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var on = window.bonusCollection.toggleLibrary(q.id);
+        check.classList.toggle('on', on);
+        check.setAttribute('aria-pressed', on ? 'true' : 'false');
+        item.classList.toggle('in-library', on);
+      });
+      item.appendChild(check);
 
       var body = el('div', 'bq-q-body');
       // show the question content directly (no descriptive title)
@@ -355,24 +372,13 @@
       body.appendChild(mWrap);
       item.appendChild(body);
 
-      // difficulty stars + bookmark button on the right
+      // difficulty stars on the right
       var right = el('div', 'bq-q-right');
       var diff = el('div', 'bq-q-stars');
       diff.title = 'Difficulty ' + q.difficulty + '/5';
       diff.setAttribute('aria-label', 'Difficulty ' + q.difficulty + ' out of 5');
       diff.innerHTML = starsHTML(q.difficulty);
       right.appendChild(diff);
-      var bm = el('button', 'bq-bookmark' + (window.bonusCollection.hasInLibrary(q.id) ? ' on' : ''));
-      bm.type = 'button';
-      bm.title = t('saveToLibrary');
-      bm.setAttribute('aria-label', t('saveToLibrary'));
-      bm.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>';
-      bm.addEventListener('click', function (e) {
-        e.stopPropagation();
-        var on = window.bonusCollection.toggleLibrary(q.id);
-        bm.classList.toggle('on', on);
-      });
-      right.appendChild(bm);
       item.appendChild(right);
 
       item.addEventListener('click', function () { openDetail(q); });
@@ -404,7 +410,7 @@
     back.type = 'button';
     back.setAttribute('aria-label', t('back'));
     back.title = t('back');
-    back.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    back.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>' + t('back') + '</span>';
     back.addEventListener('click', function () {
       state.activeId = null;
       renderList();
@@ -424,7 +430,7 @@
     var bmDetail = el('button', 'bq-bookmark bq-bookmark-detail' + (window.bonusCollection.hasInLibrary(q.id) ? ' on' : ''));
     bmDetail.type = 'button';
     bmDetail.title = t('saveToLibrary');
-    bmDetail.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>' + t('libraryTitle') + '</span>';
+    bmDetail.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>' + t('libraryTitle') + '</span>';
     bmDetail.addEventListener('click', function () {
       var on = window.bonusCollection.toggleLibrary(q.id);
       bmDetail.classList.toggle('on', on);
@@ -515,6 +521,7 @@
 
   function setView(v) {
     state.view = v;
+    renderTabs();
     if (v === 'questions') {
       // rebuild the shell because library/projects views destroy the main content
       buildShell();
@@ -557,25 +564,39 @@
     items.forEach(function (it) {
       var q = window.bonusApp.getQuestion(it.id);
       if (!q) return;
-      var item = el('div', 'bq-q-item');
+      var inLib = true;
+      var item = el('div', 'bq-q-item in-library');
+      // left check toggle (remove from library)
+      var check = el('button', 'bq-check on');
+      check.type = 'button';
+      check.title = t('remove');
+      check.setAttribute('aria-label', t('remove'));
+      check.setAttribute('aria-pressed', 'true');
+      check.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      check.addEventListener('click', function (e) {
+        e.stopPropagation();
+        window.bonusCollection.toggleLibrary(q.id);
+        renderLibrary();
+      });
+      item.appendChild(check);
+
       var body = el('div', 'bq-q-body');
-      body.appendChild(el('div', 'bq-q-preview', q.preview || ''));
+      if (q.preview) {
+        var prev = el('div', 'bq-q-preview');
+        prev.textContent = q.preview;
+        body.appendChild(prev);
+        renderMath(prev);
+      }
       var mWrap = el('div', 'bq-methods');
       mWrap.appendChild(el('span', 'bq-method src ' + sourceClass(q), sourceLabel(q) + (q.year ? ' ' + q.year : '')));
       if (q.methods) q.methods.forEach(function (m) { mWrap.appendChild(el('span', 'bq-method', m)); });
       body.appendChild(mWrap);
       item.appendChild(body);
       var right = el('div', 'bq-q-right');
-      var rm = el('button', 'bq-bookmark on');
-      rm.type = 'button';
-      rm.title = '移除收藏';
-      rm.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>';
-      rm.addEventListener('click', function (e) {
-        e.stopPropagation();
-        window.bonusCollection.toggleLibrary(q.id);
-        renderLibrary();
-      });
-      right.appendChild(rm);
+      var stars = el('div', 'bq-q-stars');
+      stars.title = 'Difficulty ' + q.difficulty + '/5';
+      stars.innerHTML = starsHTML(q.difficulty);
+      right.appendChild(stars);
       item.appendChild(right);
       item.addEventListener('click', function () { openDetail(q); });
       wrap.appendChild(item);
@@ -640,8 +661,9 @@
     main.innerHTML = '';
 
     var head = el('div', 'bq-main-head');
-    var back = el('button', 'bq-btn', t('backToProjects'));
+    var back = el('button', 'bq-back bq-back-inline', t('backToProjects'));
     back.type = 'button';
+    back.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>' + t('backToProjects') + '</span>';
     back.addEventListener('click', function () { renderProjects(); });
     head.appendChild(back);
     head.appendChild(el('span', 'bq-head-title', p.title || 'Untitled book'));
@@ -665,7 +687,12 @@
         if (!q) return;
         var item = el('div', 'bq-q-item');
         var body = el('div', 'bq-q-body');
-        body.appendChild(el('div', 'bq-q-preview', q.preview || ''));
+        if (q.preview) {
+          var prev = el('div', 'bq-q-preview');
+          prev.textContent = q.preview;
+          body.appendChild(prev);
+          renderMath(prev);
+        }
         var mWrap = el('div', 'bq-methods');
         mWrap.appendChild(el('span', 'bq-method src ' + sourceClass(q), sourceLabel(q) + (q.year ? ' ' + q.year : '')));
         body.appendChild(mWrap);

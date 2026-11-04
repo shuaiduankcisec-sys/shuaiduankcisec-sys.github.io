@@ -1,9 +1,11 @@
 /* Bonus Questions app — styles (matches site theme) */
 .bq-app {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 260px minmax(0, 1fr);
   gap: 0;
-  min-height: 520px;
+  height: calc(100vh - 120px);
+  min-height: 480px;
+  max-height: 900px;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -15,13 +17,14 @@
 .bq-sidebar {
   background: var(--bg-soft);
   border-right: 1px solid var(--line);
-  padding: 16px 12px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  overflow: hidden;
+  min-height: 0;
 }
 .bq-level-select {
-  margin-bottom: 10px;
+  padding: 12px 12px 4px;
 }
 .bq-level-select select {
   width: 100%;
@@ -46,7 +49,8 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  padding: 4px 8px 2px;
+  padding: 8px 20px 4px;
+  flex-shrink: 0;
 }
 .bq-chapters {
   display: flex;
@@ -54,6 +58,8 @@
   gap: 2px;
   overflow-y: auto;
   flex: 1;
+  min-height: 0;
+  padding: 0 12px 16px;
 }
 .bq-chapter {
   display: flex;
@@ -108,6 +114,8 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
+  min-height: 0;
+  overflow: hidden;
 }
 .bq-main-head {
   padding: 18px 24px;
@@ -165,6 +173,10 @@
   box-shadow: 0 6px 16px rgba(24, 95, 165, 0.10);
   transform: translateY(-1px);
 }
+.bq-q-item.in-library {
+  border-color: var(--accent-2);
+  box-shadow: 0 0 0 1px rgba(15, 110, 86, 0.35) inset;
+}
 .bq-q-item.active {
   border-color: var(--accent);
   background: var(--accent-soft);
@@ -179,7 +191,7 @@
   line-height: 1.7;
   margin-bottom: 6px;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -285,25 +297,27 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
-  font-size: 13px;
-  color: var(--ink-soft);
+  gap: 7px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
   cursor: pointer;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(24,95,165,0.35);
   background: #fff;
-  border-radius: 50%;
+  border-radius: 10px;
   margin-bottom: 16px;
   font-family: inherit;
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 .bq-back svg { width: 18px; height: 18px; display: block; }
 .bq-back:hover {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: var(--accent);
+  color: #fff;
   border-color: var(--accent);
   text-decoration: none;
 }
+.bq-back-inline { margin-bottom: 0; }
 .bq-detail-head {
   display: flex;
   align-items: center;
@@ -409,26 +423,27 @@
   padding: 4px 0;
 }
 
-@media (max-width: 700px) {
-  .bq-app { grid-template-columns: 1fr; }
+@media (max-width: 760px) {
+  .bq-app {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1fr);
+    height: auto;
+    max-height: none;
+    min-height: 0;
+  }
   .bq-sidebar {
     border-right: none;
     border-bottom: 1px solid var(--line);
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 4px;
-    padding: 10px;
+    flex-direction: column;
+    max-height: 40vh;
   }
-  .bq-level-select { margin: 0; min-width: 100px; }
-  .bq-sidebar-label { display: none; }
-  .bq-chapters {
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: none;
-  }
+  .bq-level-select { padding: 8px 12px 4px; }
+  .bq-sidebar-label { padding: 6px 20px 4px; }
+  .bq-chapters { flex-direction: row; flex-wrap: wrap; flex: none; max-height: 30vh; padding: 0 12px 10px; }
   .bq-chapter { padding: 7px 10px; font-size: 13px; }
   .bq-chapter .cnt { display: none; }
+  .bq-main { min-height: 60vh; }
+  .bq-tabs { padding: 8px 12px; }
 }
 
 /* ---------- view tabs ---------- */
@@ -456,6 +471,31 @@
 .bq-head-title { font-size: 17px; font-weight: 600; color: var(--ink); }
 .bq-head-actions { margin-left: auto; display: flex; gap: 8px; }
 
+/* ---------- check (library toggle) ---------- */
+.bq-check {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  border: 1.5px solid var(--line);
+  background: #fff;
+  color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: 1px;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.bq-check svg { width: 16px; height: 16px; display: block; }
+.bq-check:hover { border-color: var(--accent-2); }
+.bq-check.on {
+  background: var(--accent-2);
+  border-color: var(--accent-2);
+  color: #fff;
+}
+
 /* ---------- bookmark ---------- */
 .bq-q-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 .bq-bookmark {
@@ -471,8 +511,15 @@
   font-size: 12px;
 }
 .bq-bookmark:hover { background: var(--bg-soft); color: var(--ink); }
-.bq-bookmark.on { color: #185FA5; }
-.bq-bookmark.on svg path { fill: #185FA5; stroke: #185FA5; }
+.bq-bookmark.on { color: #0F6E56; }
+.bq-bookmark.on svg path { stroke: #0F6E56; }
+.bq-bookmark-detail {
+  border: 1px solid var(--line);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.bq-bookmark-detail.on { border-color: rgba(15,110,86,0.4); background: #ecfdf5; color: #0F6E56; }
 
 /* ---------- buttons ---------- */
 .bq-btn {
@@ -555,3 +602,41 @@
   color: var(--ink);
 }
 .bq-proj-pick:hover { background: var(--bg-soft); }
+
+/* ---------- export settings ---------- */
+.bq-export-sec {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 18px 0 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.bq-field-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--ink);
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.bq-field-check input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+.bq-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--ink);
+  background: #fff;
+}
