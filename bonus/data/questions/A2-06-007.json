@@ -1,0 +1,22 @@
+{
+  "id": "A2-06-007",
+  "chapter": "A2-06",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1987,
+  "sourceUrl": "https://step.maths.org/questions/87-s1-q5",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["integration", "trigonometric substitution"],
+  "methods": ["trigonometric substitution", "evaluating improper integrals"],
+  "statement": "Using the substitution $x=\\alpha\\cos^2\\theta+\\beta\\sin^2\\theta$, show that, if $\\alpha<\\beta$,\n$$\\int_{\\alpha}^{\\beta}\\frac{1}{\\sqrt{(x-\\alpha)(\\beta-x)}}\\,dx=\\pi.$$\nWhat is the value of the above integral if $\\alpha>\\beta$?\n\nShow also that, if $0<\\alpha<\\beta$,\n$$\\int_{\\alpha}^{\\beta}\\frac{1}{x\\sqrt{(x-\\alpha)(\\beta-x)}}\\,dx=\\frac{\\pi}{\\sqrt{\\alpha\\beta}}.$$",
+  "solution": "**First integral.** With $x=\\alpha\\cos^2\\theta+\\beta\\sin^2\\theta$,\n$$x-\\alpha=(\\beta-\\alpha)\\sin^2\\theta, \\qquad \\beta-x=(\\beta-\\alpha)\\cos^2\\theta,$$\nso $\\sqrt{(x-\\alpha)(\\beta-x)}=(\\beta-\\alpha)\\sin\\theta\\cos\\theta$ (all positive for $0<\\theta<\\pi/2$), and\n$$\\frac{dx}{d\\theta}=2(\\beta-\\alpha)\\sin\\theta\\cos\\theta.$$\nAs $x$ goes from $\\alpha$ to $\\beta$, $\\theta$ goes from $0$ to $\\pi/2$. Hence\n$$\\int_{\\alpha}^{\\beta}\\frac{dx}{\\sqrt{(x-\\alpha)(\\beta-x)}}=\\int_0^{\\pi/2}\\frac{2(\\beta-\\alpha)\\sin\\theta\\cos\\theta}{(\\beta-\\alpha)\\sin\\theta\\cos\\theta}\\,d\\theta=\\int_0^{\\pi/2}2\\,d\\theta=\\pi.$$\n\nIf $\\alpha>\\beta$, the interval is traversed in the opposite direction, so the integral is $-\\pi$.\n\n**Second integral.** Use the same substitution. Since $x=\\alpha\\cos^2\\theta+\\beta\\sin^2\\theta$,\n$$\\int_{\\alpha}^{\\beta}\\frac{dx}{x\\sqrt{(x-\\alpha)(\\beta-x)}}=\\int_0^{\\pi/2}\\frac{2\\,d\\theta}{\\alpha\\cos^2\\theta+\\beta\\sin^2\\theta}.$$\nDividing top and bottom by $\\cos^2\\theta$,\n$$=2\\int_0^{\\pi/2}\\frac{\\sec^2\\theta\\,d\\theta}{\\alpha+\\beta\\tan^2\\theta}.$$\nLet $u=\\tan\\theta$, so $du=\\sec^2\\theta\\,d\\theta$ and $u$ goes from $0$ to $\\infty$:\n$$=2\\int_0^{\\infty}\\frac{du}{\\alpha+\\beta u^2}=\\frac{2}{\\sqrt{\\alpha\\beta}}\\left[\\tan^{-1}\\left(u\\sqrt{\\frac\\beta\\alpha}\\right)\\right]_0^{\\infty}=\\frac{2}{\\sqrt{\\alpha\\beta}}\\cdot\\frac\\pi2=\\frac{\\pi}{\\sqrt{\\alpha\\beta}}.$$",
+  "solutionStatus": "full",
+  "hints": [
+    "Compute x-α and β-x under the substitution to simplify the square root.",
+    "The first integral reduces to ∫ 2 dθ over [0, π/2].",
+    "For the second, divide by cos²θ and substitute u = tan θ."
+  ]
+}

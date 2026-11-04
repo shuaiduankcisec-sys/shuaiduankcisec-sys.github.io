@@ -950,6 +950,27 @@
     "preview": "Show that $ \\cos\\left(\\frac{\\alpha}{2}\\right)\\cos\\left(\\frac{\\alpha}{4}\\right)=\\frac{\\sin\\alpha}{4\\sin\\left(\\dfrac{\\alpha}{4}\\right)},$ …"
   },
   {
+    "id": "A2-03-003",
+    "chapter": "A2-03",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2001,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "trigonometry",
+      "triple-angle formulae",
+      "inverse trigonometric functions"
+    ],
+    "methods": [
+      "triple-angle formula for tan",
+      "inverse trigonometric equations"
+    ],
+    "solutionStatus": "full",
+    "preview": "Show that $ \\tan3\\theta=\\frac{3\\tan\\theta-\\tan^3\\theta}{1-3\\tan^2\\theta}.$  Given that $\\theta=\\cos^{-1}(2/\\sqrt5)$ and $0<\\theta<\\pi/2$,…"
+  },
+  {
     "id": "A2-04-001",
     "chapter": "A2-04",
     "title": "",
@@ -1209,6 +1230,26 @@
     ],
     "solutionStatus": "full",
     "preview": "Explain why the use of the substitution $x=\\dfrac1t$ does not demonstrate that the integrals …"
+  },
+  {
+    "id": "A2-06-007",
+    "chapter": "A2-06",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1987,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "integration",
+      "trigonometric substitution"
+    ],
+    "methods": [
+      "trigonometric substitution",
+      "evaluating improper integrals"
+    ],
+    "solutionStatus": "full",
+    "preview": "Using the substitution $x=\\alpha\\cos^2\\theta+\\beta\\sin^2\\theta$, show that, if $\\alpha<\\beta$, …"
   },
   {
     "id": "A2-07-001",

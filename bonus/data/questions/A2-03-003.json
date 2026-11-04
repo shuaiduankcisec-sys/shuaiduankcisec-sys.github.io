@@ -1,0 +1,22 @@
+{
+  "id": "A2-03-003",
+  "chapter": "A2-03",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2001,
+  "sourceUrl": "https://step.maths.org/questions/01-s1-q4",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["trigonometry", "triple-angle formulae", "inverse trigonometric functions"],
+  "methods": ["triple-angle formula for tan", "inverse trigonometric equations"],
+  "statement": "Show that\n$$\\tan3\\theta=\\frac{3\\tan\\theta-\\tan^3\\theta}{1-3\\tan^2\\theta}.$$\n\nGiven that $\\theta=\\cos^{-1}(2/\\sqrt5)$ and $0<\\theta<\\pi/2$, show that $\\tan3\\theta=11/2$.\n\nHence, or otherwise, find all solutions of the equations\n\n(i) $\\tan(3\\cos^{-1}x)=11/2$;\n\n(ii) $\\cos\\left(\\tfrac13\\tan^{-1}y\\right)=2/\\sqrt5$.",
+  "solution": "Using the double-angle formula for $\\tan$,\n$$\\tan2\\theta=\\frac{2\\tan\\theta}{1-\\tan^2\\theta},$$\nand then\n$$\\tan3\\theta=\\tan(2\\theta+\\theta)=\\frac{\\tan2\\theta+\\tan\\theta}{1-\\tan2\\theta\\tan\\theta}=\\frac{3\\tan\\theta-\\tan^3\\theta}{1-3\\tan^2\\theta}.$$\n\nFor $\\theta=\\cos^{-1}(2/\\sqrt5)$, we have $\\cos\\theta=2/\\sqrt5$ and $\\sin\\theta=1/\\sqrt5$ (as $0<\\theta<\\pi/2$), so $\\tan\\theta=\\tfrac12$. Hence\n$$\\tan3\\theta=\\frac{3(\\tfrac12)-(\\tfrac12)^3}{1-3(\\tfrac12)^2}=\\frac{\\tfrac32-\\tfrac18}{1-\\tfrac34}=\\frac{\\tfrac{11}{8}}{\\tfrac14}=\\frac{11}{2}.$$\n\n(i) Let $\\phi=\\cos^{-1}x\\in[0,\\pi]$. We need $\\tan3\\phi=11/2$. Since $\\tan3\\phi=\\tan3\\theta$ where $\\theta=\\cos^{-1}(2/\\sqrt5)$, we have $3\\phi=3\\theta+k\\pi$, i.e. $\\phi=\\theta+\\tfrac{k\\pi}{3}$ for integers $k$ with $0\\le\\phi\\le\\pi$, giving $k=0,1,2$.\n\nThus the solutions are $x=\\cos\\theta$, $\\cos(\\theta+\\tfrac\\pi3)$, $\\cos(\\theta+\\tfrac{2\\pi}{3})$. Using $\\cos\\theta=\\tfrac2{\\sqrt5}$, $\\sin\\theta=\\tfrac1{\\sqrt5}$:\n$$x=\\frac{2}{\\sqrt5},\\qquad \\frac{2-\\sqrt3}{2\\sqrt5},\\qquad \\frac{-2-\\sqrt3}{2\\sqrt5}.$$\n\n(ii) Let $\\psi=\\tfrac13\\tan^{-1}y$, so $\\cos\\psi=2/\\sqrt5$. Since $\\tan^{-1}y\\in(-\\tfrac\\pi2,\\tfrac\\pi2)$, we have $\\psi\\in(-\\tfrac\\pi6,\\tfrac\\pi6)$, and $\\cos\\psi=2/\\sqrt5$ gives $\\psi=\\pm\\theta$ (as $\\cos$ is even). So $\\tan^{-1}y=\\pm3\\theta$, and since $\\tan3\\theta=11/2$,\n$$y=\\tan(\\pm3\\theta)=\\pm\\frac{11}{2}.$$",
+  "solutionStatus": "full",
+  "hints": [
+    "Derive tan 3θ from the double-angle formula.",
+    "For θ=cos⁻¹(2/√5), find tan θ = 1/2, then tan 3θ = 11/2.",
+    "Use the period of tan (period π) and the evenness of cos to find all solutions."
+  ]
+}

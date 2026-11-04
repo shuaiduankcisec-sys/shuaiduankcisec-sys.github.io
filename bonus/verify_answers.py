@@ -475,6 +475,29 @@ report("ch08-005 级数1=8", s1_gen - 8, 0)
 s2_gen = sp.summation(nn2**2/2**nn2, (nn2, 1, sp.oo))
 report("ch08-005 级数2=12", sp.simplify(2*s2_gen - 12), 0)
 
+# ---------- A2-03-003 三倍角 ----------
+# tan3θ = (3tanθ-tan³θ)/(1-3tan²θ)，数值验证
+import math as m7
+ok_tan3 = all(abs(m7.tan(3*th) - (3*m7.tan(th)-m7.tan(th)**3)/(1-3*m7.tan(th)**2)) < 1e-12 for th in [0.3,0.7,1.0,-0.4])
+report("A2-03-003 tan3θ公式", 1 if ok_tan3 else 0, 1)
+tan_val = (3*sp.Rational(1,2)-sp.Rational(1,2)**3)/(1-3*sp.Rational(1,2)**2)
+report("A2-03-003 tan3θ=11/2", tan_val - sp.Rational(11,2), 0)
+
+# ---------- A2-06-007 三角换元积分 ----------
+# 第一问 = π，第二问 = π/√(αβ)，用数值验证第二问
+import math as m6
+def simpson_fix(f, a, b, n=1000000):
+    h = (b-a)/n
+    s = f(a) + f(b)
+    for i in range(1, n):
+        s += f(a+i*h) * (4 if i%2 else 2)
+    return s*h/3
+# 第二问数值（避开奇点，用换元后验证）
+# ∫₀^{π/2} 2dθ/(αcos²θ+βsin²θ) = π/√(αβ)
+alpha_v, beta_v = 1.0, 4.0
+I2_num = simpson_fix(lambda th: 2/(alpha_v*m6.cos(th)**2 + beta_v*m6.sin(th)**2), 0, m6.pi/2, 20000)
+report("A2-06-007 第二问=π/√(αβ)", abs(I2_num - m6.pi/m6.sqrt(alpha_v*beta_v)) < 1e-3, True)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:
