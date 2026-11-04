@@ -44,7 +44,8 @@
       back: 'Back to questions', source: 'Source', difficulty: 'Difficulty', exportSettings: 'Export settings', bookNameToc: 'Book title (TOC)',
       preview: 'Preview', exportPdf: 'Export PDF (print)', noExport: 'Nothing to export. Add questions to your library or project first.',
       comingSoon: 'Coming soon', noQuestions: 'No questions yet', preparing: 'Questions for this chapter are being prepared.',
-      clearSelected: 'Clear selected', clearSelectedConfirm: 'Clear all selected questions from your library?'
+      clearSelected: 'Clear selected', clearSelectedConfirm: 'Clear all selected questions from your library?', noSelection: 'No questions selected yet.',
+      fullscreen: 'Toggle fullscreen'
     },
     zh: {
       tabQuestions: '题库', tabLibrary: '收藏', tabProjects: '项目',
@@ -64,7 +65,8 @@
       back: '返回题目列表', source: '来源', difficulty: '难度', exportSettings: '导出设置', bookNameToc: '书名（目录标题）',
       preview: '预览', exportPdf: '导出 PDF（打印）', noExport: '没有可导出的题目。请先在收藏或项目中添加题目。',
       comingSoon: '敬请期待', noQuestions: '暂无题目', preparing: '本章题目正在准备中。',
-      clearSelected: '清除已选', clearSelectedConfirm: '确定清除收藏夹里所有已选中的题目吗？'
+      clearSelected: '清除已选', clearSelectedConfirm: '确定清除收藏夹里所有已选中的题目吗？', noSelection: '还没有选中任何题目。',
+      fullscreen: '全屏显示'
     }
   };
   function bqLang() {
@@ -227,7 +229,10 @@
     clearBtn.setAttribute('aria-label', t('clearSelected'));
     clearBtn.innerHTML = '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>' + t('clearSelected') + '</span>';
     clearBtn.addEventListener('click', function () {
-      if (window.bonusCollection.libraryItems().length === 0) return;
+      if (window.bonusCollection.libraryItems().length === 0) {
+        alert(t('noSelection'));
+        return;
+      }
       if (confirm(t('clearSelectedConfirm'))) {
         window.bonusCollection.clearLibrary();
         renderList();
@@ -237,6 +242,7 @@
     function updateClearBtn() {
       var n = window.bonusCollection ? window.bonusCollection.libraryItems().length : 0;
       clearBtn.disabled = (n === 0);
+      clearBtn.classList.toggle('has-selection', n > 0);
     }
     boardWrap.appendChild(clearBtn);
     appEl._clearBtn = clearBtn;
@@ -245,7 +251,29 @@
     var count = el('span', 'bq-count', '');
     head.appendChild(count);
     appEl._count = count;
+
+    // fullscreen toggle button
+    var fsBtn = el('button', 'bq-fullscreen-btn');
+    fsBtn.type = 'button';
+    fsBtn.title = t('fullscreen');
+    fsBtn.setAttribute('aria-label', t('fullscreen'));
+    fsBtn.innerHTML = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    fsBtn.addEventListener('click', function () {
+      toggleFullscreen();
+    });
+    head.appendChild(fsBtn);
     return head;
+  }
+
+  function toggleFullscreen() {
+    var on = appEl.classList.toggle('bq-fullscreen');
+    // update button state (optional)
+    if (document.fullscreenElement) {
+      document.exitFullscreen && document.exitFullscreen();
+    } else if (appEl.requestFullscreen) {
+      appEl.requestFullscreen();
+    }
+    return on;
   }
 
   function chaptersForLevel() {
@@ -379,7 +407,9 @@
         check.setAttribute('aria-pressed', on ? 'true' : 'false');
         item.classList.toggle('in-library', on);
         if (appEl._clearBtn) {
-          appEl._clearBtn.disabled = window.bonusCollection.libraryItems().length === 0;
+          var has = window.bonusCollection.libraryItems().length > 0;
+          appEl._clearBtn.disabled = !has;
+          appEl._clearBtn.classList.toggle('has-selection', has);
         }
       });
       item.appendChild(check);
