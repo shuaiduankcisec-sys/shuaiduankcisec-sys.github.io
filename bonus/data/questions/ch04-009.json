@@ -1,0 +1,22 @@
+{
+  "id": "ch04-009",
+  "chapter": 4,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["curve sketching", "stationary points"],
+  "methods": ["testing symmetry", "differentiating to find turning points"],
+  "statement": "Sketch the graph of $y=\\dfrac{x}{x^{2}+1}$, stating any symmetries, intercepts and turning points.",
+  "solution": "Since $f(-x)=-f(x)$, the curve is odd (symmetric about the origin). It passes through the origin $(0,0)$.\nDifferentiating,\n$$y'=\\frac{(x^{2}+1)-x(2x)}{(x^{2}+1)^{2}}=\\frac{1-x^{2}}{(x^{2}+1)^{2}}.$$\nStationary points occur at $x=\\pm1$. At $x=1$, $y=\\tfrac12$; at $x=-1$, $y=-\\tfrac12$. Since $y'$ changes from positive to negative at $x=1$, $(1,\\tfrac12)$ is a maximum; $(-1,-\\tfrac12)$ is a minimum.\nAs $x\\to\\pm\\infty$, $y\\to0$, so the $x$-axis is an asymptote.",
+  "solutionStatus": "full",
+  "hints": [
+    "Check $f(-x)$ for symmetry.",
+    "Differentiate using the quotient rule.",
+    "Examine the sign of $y'$ near $x=\\pm1$ and as $x\\to\\infty$."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "A2-03-006",
+  "chapter": "A2-03",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 2,
+  "topics": ["sum-to-product", "trigonometric identities"],
+  "methods": ["using compound angle formulas", "changing variables"],
+  "statement": "Prove that $\\sin A+\\sin B=2\\sin\\tfrac{A+B}{2}\\cos\\tfrac{A-B}{2}$.",
+  "solution": "Set $P=\\tfrac{A+B}{2}$ and $Q=\\tfrac{A-B}{2}$, so that $A=P+Q$ and $B=P-Q$. Then\n\\begin{align*}\n\\sin A+\\sin B&=\\sin(P+Q)+\\sin(P-Q)\\\\\n&=(\\sin P\\cos Q+\\cos P\\sin Q)+(\\sin P\\cos Q-\\cos P\\sin Q)\\\\\n&=2\\sin P\\cos Q\\\\\n&=2\\sin\\tfrac{A+B}{2}\\cos\\tfrac{A-B}{2}.\n\\end{align*}",
+  "solutionStatus": "full",
+  "hints": [
+    "Let P = (A+B)/2 and Q = (A-B)/2.",
+    "Expand sin(P+Q) and sin(P-Q).",
+    "Add the two expansions."
+  ]
+}

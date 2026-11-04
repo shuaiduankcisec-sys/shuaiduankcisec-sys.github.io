@@ -1,0 +1,22 @@
+{
+  "id": "A2-06-009",
+  "chapter": "A2-06",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 2,
+  "topics": ["partial fractions", "integration"],
+  "methods": ["decomposing into partial fractions", "integrating to logarithms"],
+  "statement": "Use partial fractions to find $\\displaystyle\\int\\frac{2}{x^{2}-1}\\,dx$.",
+  "solution": "Write\n$$\\frac{2}{(x-1)(x+1)}=\\frac{A}{x-1}+\\frac{B}{x+1}.$$\nThen $2=A(x+1)+B(x-1)$. Setting $x=1$ gives $2=2A$ so $A=1$; setting $x=-1$ gives $2=-2B$ so $B=-1$. Hence\n$$\\int\\frac{2}{x^{2}-1}\\,dx=\\int\\left(\\frac{1}{x-1}-\\frac{1}{x+1}\\right)dx=\\ln|x-1|-\\ln|x+1|+C=\\ln\\left|\\frac{x-1}{x+1}\\right|+C.$$",
+  "solutionStatus": "full",
+  "hints": [
+    "Factor the denominator as (x-1)(x+1).",
+    "Find A and B by substituting convenient x-values.",
+    "Integrate each term to a logarithm."
+  ]
+}

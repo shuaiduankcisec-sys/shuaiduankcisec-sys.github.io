@@ -1,0 +1,22 @@
+{
+  "id": "ch07-013",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["integration by parts", "definite integrals"],
+  "methods": ["choosing u and dv", "evaluating boundary terms"],
+  "statement": "Evaluate $\\displaystyle\\int_{0}^{\\pi/2}x\\cos x\\,dx$.",
+  "solution": "Use integration by parts with $u=x$, $dv=\\cos x\\,dx$, so $du=dx$ and $v=\\sin x$:\n$$\\int_{0}^{\\pi/2}x\\cos x\\,dx=\\bigl[x\\sin x\\bigr]_{0}^{\\pi/2}-\\int_{0}^{\\pi/2}\\sin x\\,dx.$$\nNow $\\bigl[x\\sin x\\bigr]_{0}^{\\pi/2}=\\tfrac{\\pi}{2}\\cdot1-0=\\tfrac{\\pi}{2}$, and\n$$\\int_{0}^{\\pi/2}\\sin x\\,dx=\\bigl[-\\cos x\\bigr]_{0}^{\\pi/2}=-(0-1)=1.$$\nTherefore the integral equals $\\tfrac{\\pi}{2}-1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Let u = x so that du = dx.",
+    "Integrate cos x to get sin x.",
+    "Evaluate the boundary term and the remaining integral."
+  ]
+}

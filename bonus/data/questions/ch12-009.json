@@ -1,0 +1,22 @@
+{
+  "id": "ch12-009",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2006,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["exponential growth", "differential equation model"],
+  "methods": ["solving dP/dt = kP", "using two data points"],
+  "statement": "A population $P$ grows so that $\\dfrac{dP}{dt}=kP$. If $P=100$ when $t=0$ and $P=200$ when $t=5$, find $P$ when $t=10$.",
+  "solution": "The model gives $P=P_{0}e^{kt}$ with $P_{0}=100$.\nAt $t=5$: $200=100e^{5k}$, so $e^{5k}=2$ and therefore $e^{10k}=(e^{5k})^{2}=4$.\nAt $t=10$: $P=100e^{10k}=100\\times4=400$.",
+  "solutionStatus": "full",
+  "hints": [
+    "The solution of dP/dt = kP is P = P0 e^{kt}.",
+    "Use the t = 5 data to find e^{5k}.",
+    "Square it to get e^{10k}."
+  ]
+}

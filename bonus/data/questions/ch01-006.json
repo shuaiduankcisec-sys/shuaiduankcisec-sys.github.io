@@ -1,0 +1,22 @@
+{
+  "id": "ch01-006",
+  "chapter": 1,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2004,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["inequalities", "squares expansion"],
+  "methods": ["expanding squared sums", "sum of squares non-negativity"],
+  "statement": "Prove that if $x,y,z$ are real numbers with $x+y+z=1$, then\n$$x^{2}+y^{2}+z^{2}\\ge\\tfrac13.$$\nFor what values of $x,y,z$ does equality hold?",
+  "solution": "Consider\n$$3(x^{2}+y^{2}+z^{2})-(x+y+z)^{2}=2x^{2}+2y^{2}+2z^{2}-2xy-2yz-2zx=(x-y)^{2}+(y-z)^{2}+(z-x)^{2}\\ge0.$$\nHence $3(x^{2}+y^{2}+z^{2})\\ge(x+y+z)^{2}=1$, so $x^{2}+y^{2}+z^{2}\\ge\\tfrac13$.\nEquality holds exactly when $(x-y)^{2}=(y-z)^{2}=(z-x)^{2}=0$, i.e. $x=y=z$. Since $x+y+z=1$, equality occurs at $x=y=z=\\tfrac13$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand $3(x^{2}+y^{2}+z^{2})-(x+y+z)^{2}$.",
+    "Recognise the result as a sum of squares.",
+    "Equality needs every square to be zero."
+  ]
+}

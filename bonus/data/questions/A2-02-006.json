@@ -1,0 +1,22 @@
+{
+  "id": "A2-02-006",
+  "chapter": "A2-02",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2002,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 2,
+  "topics": ["binomial expansion", "fractional powers"],
+  "methods": ["(1+u)^n general term", "substituting u = 2x"],
+  "statement": "Find the first four terms in the expansion of $(1+2x)^{1/2}$ in ascending powers of $x$.",
+  "solution": "$$(1+u)^{1/2}=1+\\tfrac12u+\\frac{(\\tfrac12)(-\\tfrac12)}{2!}u^{2}+\\frac{(\\tfrac12)(-\\tfrac12)(-\\tfrac32)}{3!}u^{3}+\\cdots.$$\nWith $u=2x$:\n\\begin{align*}\n(1+2x)^{1/2}&=1+\\tfrac12(2x)+\\left(-\\tfrac18\\right)(2x)^{2}+\\left(\\tfrac18\\right)(2x)^{3}+\\cdots\\\\\n&=1+x-\\tfrac12x^{2}+\\tfrac12x^{3}+\\cdots.\n\\end{align*}",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the general binomial expansion with n = 1/2.",
+    "Substitute u = 2x term by term.",
+    "Simplify the numerical coefficients."
+  ]
+}

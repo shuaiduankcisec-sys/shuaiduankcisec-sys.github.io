@@ -1,0 +1,22 @@
+{
+  "id": "ch07-012",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["integration by substitution", "definite integrals"],
+  "methods": ["u-substitution", "changing limits"],
+  "statement": "Evaluate $\\displaystyle\\int_{0}^{1}\\frac{x}{\\sqrt{1+x^{2}}}\\,dx$ using the substitution $u=1+x^{2}$.",
+  "solution": "With $u=1+x^{2}$ we have $du=2x\\,dx$, so $x\\,dx=\\tfrac12du$.\nWhen $x=0$, $u=1$; when $x=1$, $u=2$. Hence\n$$\\int_{0}^{1}\\frac{x}{\\sqrt{1+x^{2}}}\\,dx=\\int_{1}^{2}\\frac{1}{\\sqrt{u}}\\cdot\\tfrac12\\,du=\\tfrac12\\bigl[2\\sqrt{u}\\bigr]_{1}^{2}=\\sqrt{2}-1.$$\n(Check: an antiderivative is $\\sqrt{1+x^{2}}$, giving $\\sqrt2-1$.)",
+  "solutionStatus": "full",
+  "hints": [
+    "Note that x dx is half of du.",
+    "Change the limits to u = 1 and u = 2.",
+    "Integrate u^{-1/2}."
+  ]
+}

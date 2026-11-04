@@ -1,0 +1,22 @@
+{
+  "id": "ch11-009",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["trigonometric equations", "secant"],
+  "methods": ["rewriting sec as 1/cos", "solving cos^2 θ = 1/2"],
+  "statement": "Solve $2\\cos\\theta=\\sec\\theta$ for $0^{\\circ}\\le\\theta\\le360^{\\circ}$.",
+  "solution": "Since $\\sec\\theta=\\tfrac1{\\cos\\theta}$,\n$$2\\cos\\theta=\\frac{1}{\\cos\\theta}\\quad\\Rightarrow\\quad 2\\cos^{2}\\theta=1\\quad\\Rightarrow\\quad \\cos^{2}\\theta=\\tfrac12.$$\nThus $\\cos\\theta=\\pm\\tfrac{1}{\\sqrt2}$. The solutions in the given range are\n$$\\theta=45^{\\circ},\\,135^{\\circ},\\,225^{\\circ},\\,315^{\\circ}.$$\n(We must have $\\cos\\theta\\ne0$, which is satisfied.)",
+  "solutionStatus": "full",
+  "hints": [
+    "Replace sec θ by 1/cos θ.",
+    "Multiply through by cos θ.",
+    "Solve cos^2 θ = 1/2 and list all four angles."
+  ]
+}

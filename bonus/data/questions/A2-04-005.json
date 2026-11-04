@@ -1,0 +1,22 @@
+{
+  "id": "A2-04-005",
+  "chapter": "A2-04",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2002,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 1,
+  "topics": ["laws of logarithms", "algebraic manipulation"],
+  "methods": ["log of product/quotient/power", "expressing in terms of separate logs"],
+  "statement": "Express $\\log_{a}\\!\\left(\\dfrac{x^{3}\\sqrt{y}}{z^{2}}\\right)$ in terms of $\\log_{a}x$, $\\log_{a}y$ and $\\log_{a}z$.",
+  "solution": "\\begin{align*}\n\\log_{a}\\!\\left(\\frac{x^{3}\\sqrt{y}}{z^{2}}\\right)&=\\log_{a}(x^{3})+\\log_{a}(y^{1/2})-\\log_{a}(z^{2})\\\\\n&=3\\log_{a}x+\\tfrac12\\log_{a}y-2\\log_{a}z.\n\\end{align*}",
+  "solutionStatus": "full",
+  "hints": [
+    "Split the fraction into log(numerator) - log(denominator).",
+    "Use log of a product for the numerator.",
+    "Bring powers (3, 1/2, 2) to the front."
+  ]
+}

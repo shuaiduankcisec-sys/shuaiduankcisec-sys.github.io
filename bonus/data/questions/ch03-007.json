@@ -1,0 +1,22 @@
+{
+  "id": "ch03-007",
+  "chapter": 3,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2007,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["algebraic factorisation", "sum of cubes"],
+  "methods": ["grouping terms", "factorising $x^{3}+1$"],
+  "statement": "Show that $(x^{2}+x+1)$ is a factor of $x^{5}+x^{4}+x^{3}+x^{2}+x+1$, and hence factorise the expression completely over the real numbers.",
+  "solution": "Group the terms:\n$$x^{5}+x^{4}+x^{3}+x^{2}+x+1=(x^{2}+x+1)(x^{3}+1).$$\n(Indeed, multiplying out the right-hand side gives $x^{5}+x^{4}+x^{3}+x^{2}+x+1$.)\nNow $x^{3}+1=(x+1)(x^{2}-x+1)$, so\n$$x^{5}+x^{4}+x^{3}+x^{2}+x+1=(x+1)(x^{2}+x+1)(x^{2}-x+1).$$\nThe quadratic factors $x^{2}+x+1$ and $x^{2}-x+1$ have negative discriminants, so they do not factor further over the reals.",
+  "solutionStatus": "full",
+  "hints": [
+    "Factor $x^{3}+1$ out of the first and last three terms.",
+    "Recall $x^{3}+1=(x+1)(x^{2}-x+1)$.",
+    "Check whether the quadratics factor over the reals."
+  ]
+}

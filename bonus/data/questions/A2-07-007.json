@@ -1,0 +1,22 @@
+{
+  "id": "A2-07-007",
+  "chapter": "A2-07",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2005,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 2,
+  "topics": ["differential equations", "exponential models"],
+  "methods": ["writing dV/dt = -kV", "solving and using data"],
+  "statement": "A tank leaks liquid at a rate proportional to the volume $V$ present. Write down and solve the resulting differential equation, given that $V=100$ at $t=0$ and $V=80$ at $t=1$.",
+  "solution": "The model is $\\dfrac{dV}{dt}=-kV$ for some constant $k>0$. Its solution is $V=V_{0}e^{-kt}$ with $V_{0}=100$, so $V=100e^{-kt}$.\nAt $t=1$, $V=80$: $80=100e^{-k}$, giving $e^{-k}=0.8$, i.e. $k=-\\ln0.8=\\ln(1.25)$.\nThus $V=100e^{-kt}=100(0.8)^{t}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Rate proportional to V means dV/dt = -kV.",
+    "Solve to get V = V0 e^{-kt}.",
+    "Use the t = 1 data to find k."
+  ]
+}

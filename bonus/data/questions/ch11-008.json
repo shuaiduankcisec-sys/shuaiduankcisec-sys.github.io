@@ -1,0 +1,22 @@
+{
+  "id": "ch11-008",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2002,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 2,
+  "topics": ["compound angle formula", "tangent addition"],
+  "methods": ["tan(A+B) formula", "substituting known tangents"],
+  "statement": "Given that $\\tan A=\\tfrac34$ and $\\tan B=\\tfrac12$, find $\\tan(A+B)$.",
+  "solution": "Using $\\tan(A+B)=\\dfrac{\\tan A+\\tan B}{1-\\tan A\\tan B}$:\n$$\\tan(A+B)=\\frac{\\tfrac34+\\tfrac12}{1-(\\tfrac34)(\\tfrac12)}=\\frac{\\tfrac54}{1-\\tfrac38}=\\frac{\\tfrac54}{\\tfrac58}=2.$$\nSo $\\tan(A+B)=2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Recall the addition formula for tangent.",
+    "Add the two fractions in the numerator.",
+    "Simplify the fraction."
+  ]
+}

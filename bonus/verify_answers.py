@@ -715,6 +715,15 @@ report("A2-08-005 x2≈0.721", 0.721, round(_x2b, 3))
 # A2-09-004: cosθ = (a·b)/(|a||b|) = 4/9
 report("A2-09-004 cosθ=4/9", sp.Rational(4,9), (1*2 + 2*(-1) + 2*2)/(3*3))
 
+# ---------- 本轮新增 STEP 数值题验证（ch 扩充 round 3） ----------
+report("A2-08-007 x1≈1.414", 1.414, round(float(sp.sqrt(2)), 3))
+_x2c = sp.sqrt(1 + sp.sqrt(2))
+report("A2-08-007 x2≈1.554", 1.554, round(float(_x2c), 3))
+_ang = sp.acos(16 / (3 * sp.sqrt(34)))
+report("A2-09-005 角度≈24°", 24, round(float(_ang * 180 / sp.pi), 0))
+_x1n = 1.3 - (1.3**3 - 1.3 - 1) / (3 * 1.3**2 - 1)
+report("A2-08-006 x1≈1.325", 1.325, round(_x1n, 3))
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

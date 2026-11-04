@@ -1,0 +1,22 @@
+{
+  "id": "A2-09-005",
+  "chapter": "A2-09",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 2,
+  "topics": ["vectors", "angle between vectors"],
+  "methods": ["forming vectors BA and BC", "using the dot product"],
+  "statement": "The points are $A(1,2,3)$, $B(4,0,1)$ and $C(0,1,2)$. Find the angle $ABC$ (to the nearest degree).",
+  "solution": "$$\\vec{BA}=(1-4,\\,2-0,\\,3-1)=(-3,2,2),\\qquad \\vec{BC}=(0-4,\\,1-0,\\,2-1)=(-4,1,1).$$\n$$\\vec{BA}\\cdot\\vec{BC}=(-3)(-4)+2(1)+2(1)=12+2+2=16.$$\n$$|\\vec{BA}|=\\sqrt{9+4+4}=\\sqrt{17},\\qquad |\\vec{BC}|=\\sqrt{16+1+1}=\\sqrt{18}=3\\sqrt2.$$\nSo\n$$\\cos\\angle ABC=\\frac{16}{\\sqrt{17}\\cdot3\\sqrt2}=\\frac{16}{3\\sqrt{34}}\\approx0.9147,$$\nand $\\angle ABC\\approx23.9^{\\circ}$, i.e. about $24^{\\circ}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Form the vectors BA and BC from B.",
+    "Use cos θ = (BA·BC)/(|BA||BC|).",
+    "Compute the dot product and the two magnitudes."
+  ]
+}
