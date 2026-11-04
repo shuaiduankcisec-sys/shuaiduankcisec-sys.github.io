@@ -1,0 +1,22 @@
+{
+  "id": "A2-04-001",
+  "chapter": "A2-04",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1988,
+  "sourceUrl": "https://step.maths.org/questions/88-s1-q1",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": ["exponentials", "logarithms", "curve sketching"],
+  "methods": ["logarithmic transformation", "analysing the function (ln x)/x"],
+  "statement": "Sketch the graph of the function $h$, where\n$$h(x)=\\frac{\\ln x}{x},\\qquad (x>0).$$\n\nHence, or otherwise, find all pairs of distinct positive integers $m$ and $n$ which satisfy the equation\n$$n^m=m^n.$$",
+  "solution": "**Sketch of $h(x)=\\dfrac{\\ln x}{x}$.** Differentiating,\n$$h'(x)=\\frac{1-\\ln x}{x^2},$$\nso $h'(x)=0$ at $x=e$, with $h'(x)>0$ for $x<e$ and $h'(x)<0$ for $x>e$. Hence $h$ increases on $(0,e)$ and decreases on $(e,\\infty)$, with a maximum $h(e)=\\frac1e$. As $x\\to0^+$, $h(x)\\to-\\infty$; as $x\\to\\infty$, $h(x)\\to0^+$.\n\n**Solving $n^m=m^n$.** Taking logarithms,\n$$m\\ln n=n\\ln m \\quad\\Longleftrightarrow\\quad \\frac{\\ln m}{m}=\\frac{\\ln n}{n},$$\ni.e. $h(m)=h(n)$.\n\nSince $h$ is strictly increasing on $(0,e)$ and strictly decreasing on $(e,\\infty)$, and $h$ has a unique maximum at $e$, two distinct values $m\\neq n$ satisfy $h(m)=h(n)$ only if one lies below $e$ and the other above $e$.\n\nFor positive integers, $m<e<n$ forces $m\\in\\{1,2\\}$. If $m=1$, then $1^n=n^1$ gives $n=1$, not distinct from $m$. If $m=2$, then $2^n=n^2$. Testing small integers, $n=4$ works ($2^4=4^2=16$), and $n=2$ gives $m=n$ (excluded). No larger $n$ works because $2^n$ grows faster than $n^2$ once $n>4$.\n\nHence the only distinct positive integer solutions are\n$$(m,n)=(2,4)\\quad\\text{and}\\quad(4,2).$$",
+  "solutionStatus": "full",
+  "hints": [
+    "Take logarithms to rewrite n^m = m^n as h(m) = h(n) with h(x)=ln x / x.",
+    "Analyse the monotonicity of h(x) to see where distinct inputs give equal values.",
+    "Check small integers m<e<n."
+  ]
+}

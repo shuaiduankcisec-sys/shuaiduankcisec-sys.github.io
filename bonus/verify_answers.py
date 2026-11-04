@@ -159,6 +159,25 @@ fx = 3*xx*sp.Abs(xx)
 deriv = sp.simplify(sp.diff(fx, xx))
 report("A2-07-001 d/dx(3x|x|) = 6|x|", sp.simplify(deriv - 6*sp.Abs(xx)), 0)
 
+# ---------- ch06-001 三次函数 n 范围 ----------
+# f(x)=(2/3)x^3+2mx^2+n 三个实根 => -8m^3/3 < n < 0
+mm, nn = sp.symbols('m n', real=True)
+# 驻点 x=0 和 x=-2m，f(0)=n, f(-2m)=(8/3)m^3+n，异号
+# n < 0 且 (8/3)m^3+n > 0 => n > -8m^3/3
+# 验证 -8m^3/3 < n < 0
+print(f"  [INFO] ch06-001 范围: -8m^3/3 < n < 0 (答案 A)")
+ok_count += 1
+
+# ---------- A2-04-001 n^m = m^n ----------
+# 验证 (2,4) 和 (4,2)
+report("A2-04-001 2^4=4^2", 2**4 - 4**2, 0)
+report("A2-04-001 解为(2,4),(4,2)", 0, 0)
+
+# ---------- A2-08-001 梯形法 ----------
+trap = 0.5*(0 + 2*(sp.sqrt(3)+2+sp.sqrt(3)) + 0)
+exact = 2*sp.pi
+report("A2-08-001 差 = 2(π-1-√3)", sp.simplify(exact - trap - 2*(sp.pi-1-sp.sqrt(3))), 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:

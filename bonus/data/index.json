@@ -87,6 +87,27 @@
     "preview": "A right-angled triangle has vertices at $(2,3)$, $(9,-1)$ and $(5,k)$. Find the sum of all the possible values of $k$."
   },
   {
+    "id": "ch06-001",
+    "chapter": 6,
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "differentiation",
+      "stationary points",
+      "roots of polynomials"
+    ],
+    "methods": [
+      "finding stationary points",
+      "intermediate value / sign analysis"
+    ],
+    "solutionStatus": "full",
+    "preview": "The function $ f(x)=\\frac23 x^3+2mx^2+n, \\qquad m>0$  has three distinct real roots. What is the complete range of possible values of $n$,…"
+  },
+  {
     "id": "ch07-003",
     "chapter": 7,
     "title": "",
@@ -273,6 +294,27 @@
     ],
     "solutionStatus": "full",
     "preview": "(i) Show that $\\cos 15^\\circ = \\dfrac{\\sqrt3+1}{2\\sqrt2}$ and find a similar expression for $\\sin 15^\\circ$. (ii) Show that $\\cos\\alpha$ is…"
+  },
+  {
+    "id": "A2-04-001",
+    "chapter": "A2-04",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1988,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "exponentials",
+      "logarithms",
+      "curve sketching"
+    ],
+    "methods": [
+      "logarithmic transformation",
+      "analysing the function (ln x)/x"
+    ],
+    "solutionStatus": "full",
+    "preview": "Sketch the graph of the function $h$, where $ h(x)=\\frac{\\ln x}{x},\\qquad (x>0).$  Hence, or otherwise, find all pairs of distinct positive…"
   },
   {
     "id": "A2-05-001",
@@ -470,5 +512,26 @@
     ],
     "solutionStatus": "full",
     "preview": "The solution to the differential equation $ \\frac{dy}{dx}=|-6x|\\quad\\text{for all }x$  is $y=f(x)+c$, where $c$ is a constant. Which one of…"
+  },
+  {
+    "id": "A2-08-001",
+    "chapter": "A2-08",
+    "title": "",
+    "source": "TMUA",
+    "paper": "Paper 1",
+    "year": 2023,
+    "level": "A2",
+    "difficulty": 3,
+    "topics": [
+      "numerical methods",
+      "trapezium rule",
+      "integration"
+    ],
+    "methods": [
+      "trapezium rule",
+      "area of a semicircle"
+    ],
+    "solutionStatus": "full",
+    "preview": "The trapezium rule with 4 strips is used to estimate the integral $ \\int_{-2}^{2}\\sqrt{4-x^2}\\,dx.$  What is the positive difference…"
   }
 ]

@@ -1,0 +1,33 @@
+{
+  "id": "ch06-001",
+  "chapter": 6,
+  "title": "",
+  "source": "TMUA",
+  "paper": "Paper 1",
+  "year": 2023,
+  "sourceUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144109/TMUA-2023-paper-1.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["differentiation", "stationary points", "roots of polynomials"],
+  "methods": ["finding stationary points", "intermediate value / sign analysis"],
+  "statement": "The function\n$$f(x)=\\frac23 x^3+2mx^2+n, \\qquad m>0$$\nhas three distinct real roots.\n\nWhat is the complete range of possible values of $n$, in terms of $m$?",
+  "options": [
+    "$-\\frac83 m^3<n<0$",
+    "$-\\frac43 m^3<n<0$",
+    "$0<n<\\frac32 m^2$",
+    "$0<n<\\frac{40}{3}m^3$",
+    "$n<-\\frac83 m^3$",
+    "$n<\\frac32 m^2$",
+    "$n>-\\frac43 m^3$",
+    "$n>\\frac{40}{3}m^3$"
+  ],
+  "answer": "A",
+  "solution": "A cubic has three distinct real roots exactly when it has two stationary points, one above and one below the $x$-axis.\n\nDifferentiate:\n$$f'(x)=2x^2+4mx=2x(x+2m),$$\nso the stationary points are at $x=0$ and $x=-2m$.\n\nEvaluate $f$ at these points:\n$$f(0)=n, \\qquad f(-2m)=\\frac23(-8m^3)+2m(4m^2)+n=-\\frac{16}{3}m^3+8m^3+n=\\frac83 m^3+n.$$\n\nFor three distinct real roots, the two values $n$ and $\\frac83m^3+n$ must have opposite signs. Since $m>0$, we have $\\frac83m^3+n>n$, so we need $n<0$ and $\\frac83m^3+n>0$. The second inequality gives $n>-\\frac83m^3$. Hence\n$$-\\frac83m^3<n<0,$$\nwhich is **option A**.",
+  "solutionStatus": "full",
+  "hints": [
+    "A cubic has three real roots iff its two stationary points straddle the x-axis.",
+    "Find f'(x)=0 to locate the stationary points.",
+    "Require f(0) and f(-2m) to have opposite signs."
+  ]
+}
