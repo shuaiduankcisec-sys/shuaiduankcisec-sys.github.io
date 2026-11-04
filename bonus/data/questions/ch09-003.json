@@ -1,0 +1,30 @@
+{
+  "id": "ch09-003",
+  "chapter": 9,
+  "title": "",
+  "source": "MAT",
+  "paper": "Q1",
+  "year": 2023,
+  "sourceUrl": "https://www.maths.ox.ac.uk/system/files/attachments/test23.pdf",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 3,
+  "topics": ["coordinate geometry", "circles", "tangency"],
+  "methods": ["geometry of tangent circles", "distance formula"],
+  "statement": "Two circles are inside a square $ABCD$ of side-length $1$. One of the circles is tangent to sides $AB$ and to $BC$. The other circle is tangent to sides $CD$ and $DA$. The circles are tangent to each other. The area of the larger circle is $10$ times the area of the smaller circle.\n\nThe sum of the radii of the circles is",
+  "options": [
+    "$\\dfrac{1+\\sqrt{10}}{8}$",
+    "$2-\\sqrt2$",
+    "$\\dfrac{\\sqrt2}{2}$",
+    "$\\sqrt{\\dfrac25}$",
+    "$\\sqrt{10}-1$"
+  ],
+  "answer": "B",
+  "solution": "Let the radii be $r_1$ and $r_2$ (with $r_1$ the larger). Placing the square with $A$ at $(0,1)$, $B$ at $(0,0)$, $C$ at $(1,0)$, $D$ at $(1,1)$: the circle tangent to $AB$ and $BC$ has centre $(r_1,r_1)$; the circle tangent to $CD$ and $DA$ has centre $(1-r_2,1-r_2)$.\n\nSince the circles are tangent to each other, the distance between their centres is $r_1+r_2$:\n$$r_1+r_2=\\sqrt{(1-r_2-r_1)^2+(1-r_2-r_1)^2}=\\sqrt2\\,(1-r_1-r_2).$$\n\nLet $S=r_1+r_2$. Then\n$$S=\\sqrt2(1-S) \\quad\\Rightarrow\\quad S(\\sqrt2+1)=\\sqrt2 \\quad\\Rightarrow\\quad S=\\frac{\\sqrt2}{\\sqrt2+1}.$$\n\nRationalising,\n$$S=\\frac{\\sqrt2(\\sqrt2-1)}{(\\sqrt2+1)(\\sqrt2-1)}=\\frac{2-\\sqrt2}{1}=2-\\sqrt2.$$\n\n(Note the area ratio $10:1$ is not actually needed to find the sum of the radii.)\n\nThe answer is **B**.",
+  "solutionStatus": "full",
+  "hints": [
+    "Place the square on coordinates and write the centres of the two circles.",
+    "Use the fact that tangent circles have centre distance equal to the sum of radii.",
+    "Solve for the sum of the radii (the area ratio is a red herring)."
+  ]
+}

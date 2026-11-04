@@ -107,6 +107,27 @@
     "preview": "Let $n$ be a positive integer. (i) Factorise $n^5-n^3$, and show that it is divisible by $24$. (ii) Prove that $2^{2n}-1$ is divisible by…"
   },
   {
+    "id": "ch03-002",
+    "chapter": 3,
+    "title": "",
+    "source": "MAT",
+    "paper": "Q1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "polynomials",
+      "repeated roots",
+      "factor theorem"
+    ],
+    "methods": [
+      "factor theorem",
+      "equating coefficients"
+    ],
+    "solutionStatus": "full",
+    "preview": "The polynomial $p(x)$ has degree $3$ and has $p(0)=0$, $p(1)=1$, $p(2)=2$. The polynomial has a repeated root at $x=M$ with $M>0$. The…"
+  },
+  {
     "id": "ch04-001",
     "chapter": 4,
     "title": "",
@@ -296,6 +317,28 @@
     "preview": "Evaluate $ \\sum_{n=0}^{\\infty}\\frac{\\sin\\left(n\\pi+\\dfrac{\\pi}{3}\\right)}{2^n}.$"
   },
   {
+    "id": "ch08-003",
+    "chapter": 8,
+    "title": "",
+    "source": "MAT",
+    "paper": "Q1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "series",
+      "powers",
+      "arithmetic series"
+    ],
+    "methods": [
+      "sum of an arithmetic series",
+      "sum of a geometric series",
+      "complementary counting"
+    ],
+    "solutionStatus": "full",
+    "preview": "The first few positive whole numbers that are not powers of $3$ are $2,4,5,6,7,8,10$. What is the sum of all the positive whole numbers…"
+  },
+  {
     "id": "ch09-001",
     "chapter": 9,
     "title": "",
@@ -338,6 +381,27 @@
     "preview": "A circle $C_n$ is defined by $ x^2+y^2=2n(x+y),$  where $n$ is a positive integer. $C_1$ and $C_2$ are drawn and the area between them is…"
   },
   {
+    "id": "ch09-003",
+    "chapter": 9,
+    "title": "",
+    "source": "MAT",
+    "paper": "Q1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "coordinate geometry",
+      "circles",
+      "tangency"
+    ],
+    "methods": [
+      "geometry of tangent circles",
+      "distance formula"
+    ],
+    "solutionStatus": "full",
+    "preview": "Two circles are inside a square $ABCD$ of side-length $1$. One of the circles is tangent to sides $AB$ and to $BC$. The other circle is…"
+  },
+  {
     "id": "ch10-001",
     "chapter": 10,
     "title": "",
@@ -378,6 +442,27 @@
     ],
     "solutionStatus": "full",
     "preview": "The difference between the maximum and minimum values of the function $ f(x)=a^{\\cos x},$  where $a>0$ and $x$ is real, is $3$. Find the…"
+  },
+  {
+    "id": "ch10-003",
+    "chapter": 10,
+    "title": "",
+    "source": "MAT",
+    "paper": "Q1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 2,
+    "topics": [
+      "trigonometry",
+      "area of a triangle",
+      "optimisation"
+    ],
+    "methods": [
+      "area of an isosceles triangle",
+      "finding a maximum"
+    ],
+    "solutionStatus": "full",
+    "preview": "Which of these triangles has the largest area? (a) an isosceles triangle with side lengths $10,10,1$; (b) an isosceles triangle with side…"
   },
   {
     "id": "ch11-001",
@@ -440,6 +525,27 @@
     ],
     "solutionStatus": "full",
     "preview": "$P(x)$ and $Q(x)$ are defined as follows: $ P(x)=2^x+4,\\qquad Q(x)=2^{2x-2}-2^{x+2}+16.$  Find the largest value of $x$ such that $P(x)$…"
+  },
+  {
+    "id": "ch12-002",
+    "chapter": 12,
+    "title": "",
+    "source": "MAT",
+    "paper": "Q1",
+    "year": 2023,
+    "level": "AS",
+    "difficulty": 3,
+    "topics": [
+      "logarithms",
+      "laws of logarithms",
+      "estimation"
+    ],
+    "methods": [
+      "laws of logarithms",
+      "numerical estimation"
+    ],
+    "solutionStatus": "full",
+    "preview": "In this question we write $\\alpha=\\log_{10}2$, $\\beta=\\log_{10}3$, and $\\gamma=\\log_{10}7$. Each of the following numbers is close to an…"
   },
   {
     "id": "A2-01-001",

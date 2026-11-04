@@ -272,6 +272,42 @@ aa = sp.symbols('aa', nonzero=True)
 delta = aa**2 - 4*16*aa**2
 report("ch02-003 判别式 = -63a²", sp.simplify(delta - (-63*aa**2)), 0)
 
+# ---------- ch03-002 多项式重根 M=3/2 ----------
+# p(x)=Ax(x-M)², p(1)=1,p(2)=2 => (2-M)²=(1-M)² => M=3/2
+MM = sp.symbols('MM')
+solM = sp.solve(sp.Eq((2-MM)**2, (1-MM)**2), MM)
+report("ch03-002 M=3/2", sp.simplify(solM[0] - sp.Rational(3,2)), 0)
+
+# ---------- ch08-003 非3的幂之和 ----------
+# (3^10-1)*3^10/2 - (3^10-1)/2 = (3^10-1)^2/2
+total_all = (3**10-1)*3**10//2
+powers_3 = sum(3**k for k in range(10))
+report("ch08-003 和=(3^10-1)²/2", total_all - powers_3 - (3**10-1)**2//2, 0)
+
+# ---------- ch10-003 等腰三角形最大面积 ----------
+import math as m2
+def isosc_area(b):
+    return (b/4)*m2.sqrt(400-b*b)
+areas = {1: isosc_area(1), 5: isosc_area(5), 10: isosc_area(10), 15: isosc_area(15), 19: isosc_area(19)}
+report("ch10-003 最大面积是 b=15", max(areas, key=areas.get) - 15, 0)
+
+# ---------- ch12-002 对数接近整数 ----------
+# 比较各表达式的 log10 值与整数的距离
+import math as m3
+cands = {
+    '2β': 2*m3.log10(3),
+    '5α+β': 5*m3.log10(2)+m3.log10(3),
+    'α+2γ': m3.log10(2)+2*m3.log10(7),
+    '2α+5β': 2*m3.log10(2)+5*m3.log10(3),
+    '2α+β+γ': 2*m3.log10(2)+m3.log10(3)+m3.log10(7),
+}
+closest = min(cands, key=lambda k: abs(cands[k]-round(cands[k])))
+report("ch12-002 最接近整数的是 α+2γ", 1 if closest == 'α+2γ' else 0, 1)
+
+# ---------- ch09-003 圆半径和 2-√2 ----------
+S_val = sp.sqrt(2)/(sp.sqrt(2)+1)
+report("ch09-003 半径和=2-√2", sp.simplify(S_val - (2-sp.sqrt(2))), 0)
+
 print("=" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 if fail_count == 0:
