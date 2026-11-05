@@ -1,0 +1,30 @@
+{
+  "id": "ch08-018",
+  "chapter": 8,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1991,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "recurrence",
+    "closed form",
+    "limit of a sequence"
+  ],
+  "methods": [
+    "reciprocal transformation",
+    "solving a linear recurrence",
+    "telescoping"
+  ],
+  "statement": "A sequence is defined by $u_{1}=1$ and $u_{n+1}=\\\\frac{u_{n}}{1+u_{n}}$ for $n\\\\ge 1$. (i) Show that $\\\\frac{1}{u_{n+1}}=\\\\frac{1}{u_{n}}+1$. (ii) Hence find a closed form for $u_{n}$. (iii) Show that $u_{n}\\\\to 0$ as $n\\\\to\\\\infty$.",
+  "solution": "(i) Taking reciprocals: $1/u_{n+1}=(1+u_{n})/u_{n}=1/u_{n}+1$. (ii) Thus $1/u_{n}=1/u_{1}+(n-1)=1+n-1=n$, so $u_{n}=1/n$. (iii) $u_{n}=1/n\\\\to 0$ as $n\\\\to\\\\infty$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Look at the reciprocal of the recurrence.",
+    "Recognise an arithmetic progression in $1/u_n$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ch12-019",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "improper integrals",
+    "integration by parts",
+    "exponential function"
+  ],
+  "methods": [
+    "limit of a definite integral",
+    "integration by parts",
+    "gamma-type integral"
+  ],
+  "statement": "(i) Show that $\\\\int_{0}^{\\\\infty}e^{-x}\\\\,dx=1$. (ii) By writing $\\\\int_{0}^{\\\\infty}x e^{-x}\\\\,dx$ as a limit and integrating by parts, show that it also equals $1$.",
+  "solution": "(i) $\\\\int_{0}^{R}e^{-x}dx=[-e^{-x}]_{0}^{R}=1-e^{-R}\\\\to 1$ as $R\\\\to\\\\infty$. (ii) $\\\\int_{0}^{R}x e^{-x}dx=[-xe^{-x}]_{0}^{R}+\\\\int_{0}^{R}e^{-x}dx=-Re^{-R}+1-e^{-R}\\\\to 1$ as $R\\\\to\\\\infty$. So both integrals equal $1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Introduce an upper limit $R$ and let $R\\\\to\\\\infty$.",
+    "Integrate $x e^{-x}$ by parts."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

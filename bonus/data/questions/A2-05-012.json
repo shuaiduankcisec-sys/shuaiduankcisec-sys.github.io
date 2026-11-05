@@ -1,0 +1,30 @@
+{
+  "id": "A2-05-012",
+  "chapter": "A2-05",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1993,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "implicit differentiation",
+    "folium",
+    "tangents"
+  ],
+  "methods": [
+    "implicit differentiation",
+    "solving for $dy/dx$",
+    "equation of a tangent"
+  ],
+  "statement": "The curve $x^{3}+y^{3}=3axy$ (folium of Descartes) has $a>0$. (i) Find $\\\\frac{dy}{dx}$ by implicit differentiation. (ii) Show that at the point where $x=y$ (with $x\\\\neq 0$) the tangent has gradient $-1$ and find its equation.",
+  "solution": "(i) Differentiating: $3x^{2}+3y^{2}y'=3a(y+xy')$, so $y'=\\\\frac{ay-x^{2}}{y^{2}-ax}$. (ii) At $x=y$: $x^{3}+x^{3}=3ax^{2}\\\\Rightarrow 2x^{3}=3ax^{2}\\\\Rightarrow x=3a/2$ (nonzero). Then $y'=\\\\frac{a x-x^{2}}{x^{2}-ax}=-1$. Point $(3a/2,3a/2)$; tangent: $y-3a/2=-(x-3a/2)$, i.e. $x+y=3a$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Differentiate both sides with respect to $x$.",
+    "Solve for $x$ from $x=y$ first."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

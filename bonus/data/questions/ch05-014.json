@@ -1,0 +1,30 @@
+{
+  "id": "ch05-014",
+  "chapter": 5,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1991,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "loci",
+    "circles",
+    "coordinate geometry"
+  ],
+  "methods": [
+    "distance formula",
+    "completing the square",
+    "locus equation"
+  ],
+  "statement": "A point $P(x,y)$ moves so that its distance from $(a,0)$ is twice its distance from the origin. (i) Show that $P$ lies on a circle and find its centre and radius. (ii) Sketch the locus.",
+  "solution": "(i) $(x-a)^{2}+y^{2}=4(x^{2}+y^{2})$ gives $3x^{2}+3y^{2}+2ax-a^{2}=0$, i.e. $(x+a/3)^{2}+y^{2}=(2a/3)^{2}$. So it is a circle with centre $(-a/3,0)$ and radius $2a/3$ (for $a>0$). (ii) It is the circle centred at $(-a/3,0)$ passing through the origin and $(-a,0)$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write the distance condition as an equation.",
+    "Complete the square in $x$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

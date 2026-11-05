@@ -1,0 +1,30 @@
+{
+  "id": "A2-09-013",
+  "chapter": "A2-09",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1997,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "vectors",
+    "planes",
+    "angle between planes"
+  ],
+  "methods": [
+    "normal vectors",
+    "dot product",
+    "angle formula"
+  ],
+  "statement": "Find the angle between the planes $\\\\Pi_{1}: x+y+z=1$ and $\\\\Pi_{2}: x-y+z=0$.",
+  "solution": "Normals are $\\\\mathbf{n}_{1}=(1,1,1)$ and $\\\\mathbf{n}_{2}=(1,-1,1)$. Then $\\\\cos\\\\theta=\\\\frac{\\\\mathbf{n}_{1}\\\\cdot\\\\mathbf{n}_{2}}{|\\\\mathbf{n}_{1}||\\\\mathbf{n}_{2}|}=\\\\frac{1-1+1}{\\\\sqrt{3}\\\\sqrt{3}}=\\\\frac{1}{3}$. So $\\\\theta=\\\\arccos(1/3)\\\\approx 70.53^{\\\\circ}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Read off the normal vectors from the plane equations.",
+    "Use $\\\\cos\\\\theta=\\\\frac{\\\\mathbf{n}_{1}\\\\cdot\\\\mathbf{n}_{2}}{|\\\\mathbf{n}_{1}||\\\\mathbf{n}_{2}|}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

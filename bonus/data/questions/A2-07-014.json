@@ -1,0 +1,30 @@
+{
+  "id": "A2-07-014",
+  "chapter": "A2-07",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "differential equations",
+    "integrating factor",
+    "first order linear"
+  ],
+  "methods": [
+    "integrating factor",
+    "solving a linear ODE",
+    "applying initial condition"
+  ],
+  "statement": "Solve $\\\\frac{dy}{dx}+2y=e^{-x}$ with $y(0)=1$, and verify your solution satisfies the equation and the initial condition.",
+  "solution": "Integrating factor $\\\\mu=e^{\\\\int 2dx}=e^{2x}$. Then $\\\\frac{d}{dx}(e^{2x}y)=e^{x}$, so $e^{2x}y=e^{x}+C$, giving $y=e^{-x}+Ce^{-2x}$. With $y(0)=1$: $1=1+C\\\\Rightarrow C=0$, so $y=e^{-x}$. Check: $y'=-e^{-x}$ and $-e^{-x}+2e^{-x}=e^{-x}$; also $y(0)=1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Find the integrating factor $e^{2x}$.",
+    "Apply $y(0)=1$ to fix $C$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

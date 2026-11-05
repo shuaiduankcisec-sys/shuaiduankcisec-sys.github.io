@@ -1,0 +1,30 @@
+{
+  "id": "A2-06-013",
+  "chapter": "A2-06",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1998,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "volume of revolution",
+    "improper integral",
+    "exponential"
+  ],
+  "methods": [
+    "disc method",
+    "setting up $\\pi\\int y^{2}dx$",
+    "evaluating an improper integral"
+  ],
+  "statement": "The curve $y=e^{-x}$ for $x\\\\ge 0$ is rotated about the $x$-axis. Show that the volume generated is $\\\\frac{\\\\pi}{2}$.",
+  "solution": "Volume $V=\\\\pi\\\\int_{0}^{\\\\infty}y^{2}dx=\\\\pi\\\\int_{0}^{\\\\infty}e^{-2x}dx=\\\\pi\\\\lim_{R\\\\to\\\\infty}[-\\\\frac{1}{2}e^{-2x}]_{0}^{R}=\\\\pi(0+\\\\frac{1}{2})=\\\\frac{\\\\pi}{2}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "The volume is $\\\\pi\\\\int y^{2}\\\\,dx$ (discs).",
+    "Evaluate the improper integral as a limit."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

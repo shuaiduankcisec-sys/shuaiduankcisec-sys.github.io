@@ -1,0 +1,30 @@
+{
+  "id": "ch10-017",
+  "chapter": 10,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1989,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "trigonometric identities",
+    "sum-to-product",
+    "exact values"
+  ],
+  "methods": [
+    "sum-to-product formula",
+    "deducing exact values",
+    "angle addition"
+  ],
+  "statement": "(i) Prove that $\\\\cos A+\\\\cos B=2\\\\cos\\\\frac{A+B}{2}\\\\cos\\\\frac{A-B}{2}$. (ii) Hence find the exact value of $\\\\cos 75^{\\\\circ}+\\\\cos 15^{\\\\circ}$.",
+  "solution": "(i) Using $\\\\cos u+\\\\cos v=2\\\\cos((u+v)/2)\\\\cos((u-v)/2)$ with $u=A,v=B$ gives the result. (ii) $\\\\cos75^{\\\\circ}+\\\\cos15^{\\\\circ}=2\\\\cos45^{\\\\circ}\\\\cos30^{\\\\circ}=2\\\\cdot\\\\frac{\\\\sqrt{2}}{2}\\\\cdot\\\\frac{\\\\sqrt{3}}{2}=\\\\frac{\\\\sqrt{6}}{2}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write the sum as $2\\\\cos(\\\\text{avg})\\\\cos(\\\\text{half-diff})$. ",
+    "Apply with $A=75^{\\\\circ},B=15^{\\\\circ}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

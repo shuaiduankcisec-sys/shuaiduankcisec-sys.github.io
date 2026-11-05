@@ -1,0 +1,30 @@
+{
+  "id": "A2-04-010",
+  "chapter": "A2-04",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "integration",
+    "logarithm",
+    "integration by parts"
+  ],
+  "methods": [
+    "differentiating to check",
+    "integration by parts",
+    "definite integral"
+  ],
+  "statement": "(i) Show that $\\\\frac{d}{dx}(x\\\\ln x-x)=\\\\ln x$. (ii) Using integration by parts, evaluate $\\\\int_{1}^{e}(\\\\ln x)^{2}\\\\,dx$ and show it equals $e-2$.",
+  "solution": "(i) $\\\\frac{d}{dx}(x\\\\ln x-x)=\\\\ln x+1-1=\\\\ln x$. (ii) Let $u=(\\\\ln x)^{2}, dv=dx$; then $\\\\int(\\\\ln x)^{2}dx=x(\\\\ln x)^{2}-2\\\\int\\\\ln x\\\\,dx=x(\\\\ln x)^{2}-2(x\\\\ln x-x)$. From $1$ to $e$: at $e$, $e-2e+2e=e$; minus at $1$: $0-0+2=2$. So value $=e-2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Differentiate the suggested antiderivative.",
+    "Integrate $(\\\\ln x)^{2}$ by parts, reusing part (i)."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

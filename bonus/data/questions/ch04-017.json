@@ -1,0 +1,30 @@
+{
+  "id": "ch04-017",
+  "chapter": 4,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1993,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "functions",
+    "range",
+    "discriminant"
+  ],
+  "methods": [
+    "turning the equation into a quadratic",
+    "discriminant non-negativity",
+    "completing the square"
+  ],
+  "statement": "Find the range of the function $f(x)=\\\\frac{x}{x^{2}+1}$ for real $x$.",
+  "solution": "Set $y=\\\\frac{x}{x^{2}+1}$; then $yx^{2}-x+y=0$. For real $x$ the discriminant must be non-negative: $1-4y^{2}\\\\ge 0$, so $|y|\\\\le 1/2$. Both endpoints are attained: $y=1/2$ at $x=1$, $y=-1/2$ at $x=-1$. Hence the range is $[-1/2,1/2]$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write $y=x/(x^{2}+1)$ and view it as a quadratic in $x$.",
+    "Use the discriminant condition for real $x$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5是 → 4星]"
+}

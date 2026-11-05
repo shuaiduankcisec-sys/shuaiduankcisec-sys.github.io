@@ -1,0 +1,30 @@
+{
+  "id": "ch03-015",
+  "chapter": 3,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1989,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "factorisation",
+    "difference of squares",
+    "solving equations"
+  ],
+  "methods": [
+    "Sophie Germain trick",
+    "deducing higher factorisations",
+    "roots of unity"
+  ],
+  "statement": "(i) Show that $x^{4}+x^{2}+1=(x^{2}+x+1)(x^{2}-x+1)$. (ii) Deduce that $x^{6}-1=(x-1)(x+1)(x^{2}+x+1)(x^{2}-x+1)$. (iii) Hence write down all six complex sixth roots of unity.",
+  "solution": "(i) $(x^{2}+1)^{2}-x^{2}=(x^{2}+1-x)(x^{2}+1+x)$. (ii) $x^{6}-1=(x^{3}-1)(x^{3}+1)=(x-1)(x^{2}+x+1)(x+1)(x^{2}-x+1)$, which by (i) equals $(x^{3}-1)(x^{3}+1)$; grouping gives the stated four factors. (iii) Roots: $1,-1,(-1\\\\pm i\\\\sqrt{3})/2,(1\\\\pm i\\\\sqrt{3})/2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Treat $x^{4}+x^{2}+1$ as $(x^{2}+1)^{2}-x^{2}$.",
+    "Factor $x^{6}-1$ as a difference of cubes first."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

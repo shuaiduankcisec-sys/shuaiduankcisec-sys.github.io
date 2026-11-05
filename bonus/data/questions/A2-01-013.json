@@ -1,0 +1,30 @@
+{
+  "id": "A2-01-013",
+  "chapter": "A2-01",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1993,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "inverse functions",
+    "hyperbolic functions",
+    "chain rule"
+  ],
+  "methods": [
+    "composing $f$ and $g$",
+    "simplifying with a conjugate",
+    "chain rule"
+  ],
+  "statement": "Let $g(x)=\\\\frac{e^{x}-e^{-x}}{2}$ (the hyperbolic sine) and $f(x)=\\\\ln(x+\\\\sqrt{x^{2}+1})$. (i) Show that $f(g(x))=x$ and $g(f(x))=x$. (ii) Deduce that $f$ and $g$ are inverses and find $f'(x)$.",
+  "solution": "(i) $g(x)=\\\\sinh x$, and $f(g(x))=\\\\ln(\\\\sinh x+\\\\sqrt{\\\\sinh^{2}x+1})=\\\\ln(\\\\sinh x+\\\\cosh x)=\\\\ln(e^{x})=x$. For the reverse, set $u=x+\\\\sqrt{x^{2}+1}$ so $e^{f(x)}=u$ and $e^{-f(x)}=1/u=\\\\sqrt{x^{2}+1}-x$. Then $g(f(x))=\\\\sinh(f(x))=\\\\frac{u-1/u}{2}=\\\\frac{2x}{2}=x$. (ii) Hence $f$ and $g$ are mutual inverses, and $f'(x)=\\\\frac{1+\\\\frac{x}{\\\\sqrt{x^{2}+1}}}{x+\\\\sqrt{x^{2}+1}}=\\\\frac{1}{\\\\sqrt{x^{2}+1}}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Note $\\\\sinh^{2}x+1=\\\\cosh^{2}x$.",
+    "Differentiate $f$ using the chain rule."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

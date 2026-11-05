@@ -1,0 +1,30 @@
+{
+  "id": "A2-07-013",
+  "chapter": "A2-07",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "differential equations",
+    "separation of variables",
+    "initial condition"
+  ],
+  "methods": [
+    "separating variables",
+    "integrating",
+    "applying $y(0)=0$"
+  ],
+  "statement": "Solve the differential equation $\\\\frac{dy}{dx}=\\\\frac{2x}{y+1}$ subject to $y(0)=0$. Give $y$ explicitly.",
+  "solution": "Separate: $(y+1)\\\\,dy=2x\\\\,dx$. Integrate: $\\\\frac{1}{2}y^{2}+y=x^{2}+C$. With $y(0)=0$: $C=0$. So $y^{2}+2y-2x^{2}=0$, giving $y=-1+\\\\sqrt{1+2x^{2}}$ (taking the root with $y(0)=0$).",
+  "solutionStatus": "full",
+  "hints": [
+    "Multiply both sides by $y+1$ and separate.",
+    "Use the initial condition to fix the sign."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

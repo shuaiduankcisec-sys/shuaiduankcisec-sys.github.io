@@ -1,0 +1,30 @@
+{
+  "id": "ch09-019",
+  "chapter": 9,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "circles",
+    "three-point circle",
+    "simultaneous equations"
+  ],
+  "methods": [
+    "general circle equation",
+    "solving linear systems",
+    "completing the square"
+  ],
+  "statement": "Find the equation of the circle passing through the points $(1,1)$, $(2,-1)$ and $(3,2)$. Hence give its centre and radius.",
+  "solution": "Let the circle be $x^{2}+y^{2}+ux+vy+w=0$. Substituting the three points gives $u+v+w=-2$, $2u-v+w=-5$, $3u+2v+w=-13$. Solving: subtracting the first two gives $u-2v=-3$; subtracting the second and third gives $u+3v=-8$; hence $v=-1$, $u=-5$, and $w=4$. So $x^{2}+y^{2}-5x-y+4=0$, i.e. $(x-\\\\tfrac{5}{2})^{2}+(y-\\\\tfrac{1}{2})^{2}=\\\\tfrac{5}{2}$. Centre $(\\\\tfrac{5}{2},\\\\tfrac{1}{2})$, radius $\\\\sqrt{5/2}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the general form $x^{2}+y^{2}+ux+vy+w=0$.",
+    "Solve the three linear equations for $u,v,w$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

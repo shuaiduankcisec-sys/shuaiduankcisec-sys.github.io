@@ -1,0 +1,30 @@
+{
+  "id": "ch07-022",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "integration",
+    "substitution",
+    "trigonometric substitution"
+  ],
+  "methods": [
+    "trigonometric substitution",
+    "changing limits",
+    "definite integration"
+  ],
+  "statement": "Use the substitution $x=\\\\sin^{2}\\\\theta$ to evaluate $\\\\int_{0}^{1}\\\\sqrt{\\\\frac{x}{1-x}}\\\\,dx$.",
+  "solution": "With $x=\\\\sin^{2}\\\\theta$, $dx=2\\\\sin\\\\theta\\\\cos\\\\theta\\\\,d\\\\theta$ and $\\\\sqrt{x/(1-x)}=\\\\tan\\\\theta$. Limits: $x=0\\\\to\\\\theta=0$, $x=1\\\\to\\\\theta=\\\\pi/2$. The integral becomes $\\\\int_{0}^{\\\\pi/2}\\\\tan\\\\theta\\\\cdot 2\\\\sin\\\\theta\\\\cos\\\\theta\\\\,d\\\\theta=\\\\int_{0}^{\\\\pi/2}2\\\\sin^{2}\\\\theta\\\\,d\\\\theta=\\\\int_{0}^{\\\\pi/2}(1-\\\\cos 2\\\\theta)\\\\,d\\\\theta=[\\\\theta-\\\\tfrac{1}{2}\\\\sin 2\\\\theta]_{0}^{\\\\pi/2}=\\\\pi/2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Notice $\\\\sqrt{x/(1-x)}$ simplifies under $x=\\\\sin^{2}\\\\theta$.",
+    "Don't forget to change the limits."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

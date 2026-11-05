@@ -188,6 +188,50 @@
     "preview": "By differentiating the identity $(1+x)^{n}=\\sum_{r=0}^{n}\\binom{n}{r}x^{r}$ with respect to $x$, obtain the value of…"
   },
   {
+    "id": "ch01-016",
+    "chapter": 1,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1995,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "symmetry",
+      "reciprocal powers",
+      "algebraic identity"
+    ],
+    "methods": [
+      "cubing a sum",
+      "using x+1/x=k",
+      "symmetric powers"
+    ],
+    "solutionStatus": "full",
+    "preview": "Suppose that $x+\\frac{1}{x}=k$, where $x\\neq 0$. (i) Show that $x^{3}+\\frac{1}{x^{3}}=k^{3}-3k$. (ii) Hence find the value of…"
+  },
+  {
+    "id": "ch01-017",
+    "chapter": 1,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1992,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "surds",
+      "cube roots",
+      "algebraic identity"
+    ],
+    "methods": [
+      "Cardano-style substitution",
+      "cubing a sum",
+      "solving a cubic"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $p=\\sqrt[3]{2+\\sqrt{5}}$ and $q=\\sqrt[3]{2-\\sqrt{5}}$. (i) Show that $p^{3}+q^{3}=4$ and that $pq=-1$. (ii) Hence show that $x=p+q$…"
+  },
+  {
     "id": "ch02-003",
     "chapter": 2,
     "title": "",
@@ -415,6 +459,50 @@
     "preview": "Let $f(x)=(x-a)(x-b)+(x-b)(x-c)+(x-c)(x-a)$, where $a,b,c$ are real. Show that the equation $f(x)=0$ has real roots, and that these two…"
   },
   {
+    "id": "ch02-016",
+    "chapter": 2,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1996,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "quadratics",
+      "symmetric functions",
+      "root transformation"
+    ],
+    "methods": [
+      "Vieta's formulas",
+      "expressing sums of powers",
+      "forming a new equation"
+    ],
+    "solutionStatus": "full",
+    "preview": "The roots of $x^{2}+px+q=0$ are $\\\\alpha$ and $\\\\beta$. (i) Find, in terms of $p$ and $q$, the quadratic equation whose roots are…"
+  },
+  {
+    "id": "ch02-017",
+    "chapter": 2,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1990,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "complex numbers",
+      "roots of unity",
+      "geometric series"
+    ],
+    "methods": [
+      "factor theorem",
+      "sum of a GP",
+      "modulus-argument form"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $\\\\omega=\\\\cos\\\\frac{2\\\\pi}{5}+i\\\\sin\\\\frac{2\\\\pi}{5}$, a primitive fifth root of unity. (i) Show that…"
+  },
+  {
     "id": "ch03-001",
     "chapter": 3,
     "title": "",
@@ -560,6 +648,50 @@
     ],
     "solutionStatus": "full",
     "preview": "The polynomial $p(x)=x^{3}-3x^{2}+ax+b$ has a factor $x-1$ and leaves remainder $5$ when divided by $x-2$. Find the values of $a$ and $b$,…"
+  },
+  {
+    "id": "ch03-014",
+    "chapter": 3,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1994,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "factorisation",
+      "Sophie Germain",
+      "completing a square"
+    ],
+    "methods": [
+      "difference of squares",
+      "adding and subtracting a term",
+      "factor theorem"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Show that $x^{4}+4y^{4}=(x^{2}+2y^{2})^{2}-(2xy)^{2}$, and hence factorise $x^{4}+4y^{4}$ completely. (ii) Use your factorisation with…"
+  },
+  {
+    "id": "ch03-015",
+    "chapter": 3,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1989,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "factorisation",
+      "difference of squares",
+      "solving equations"
+    ],
+    "methods": [
+      "Sophie Germain trick",
+      "deducing higher factorisations",
+      "roots of unity"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Show that $x^{4}+x^{2}+1=(x^{2}+x+1)(x^{2}-x+1)$. (ii) Deduce that $x^{6}-1=(x-1)(x+1)(x^{2}+x+1)(x^{2}-x+1)$. (iii) Hence write down…"
   },
   {
     "id": "ch04-001",
@@ -815,6 +947,50 @@
     "preview": "The function $f$ is defined by $f(x)=\\dfrac{x}{1+x}$ for $x>-1$. Find the inverse function $f^{-1}(x)$ and show that…"
   },
   {
+    "id": "ch04-016",
+    "chapter": 4,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1997,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "functions",
+      "self-inverse",
+      "composition"
+    ],
+    "methods": [
+      "composing a function",
+      "simplifying rational expressions",
+      "finding the range"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $f(x)=\\\\frac{1-x}{1+x}$ for $x\\\\neq -1$. (i) Show that $f(f(x))=x$. (ii) Deduce that $f$ is its own inverse. (iii) Find the range of…"
+  },
+  {
+    "id": "ch04-017",
+    "chapter": 4,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1993,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "functions",
+      "range",
+      "discriminant"
+    ],
+    "methods": [
+      "turning the equation into a quadratic",
+      "discriminant non-negativity",
+      "completing the square"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the range of the function $f(x)=\\\\frac{x}{x^{2}+1}$ for real $x$."
+  },
+  {
     "id": "ch05-001",
     "chapter": 5,
     "title": "",
@@ -1005,6 +1181,50 @@
     ],
     "solutionStatus": "full",
     "preview": "The points $A(at^{2},2at)$ and $B(as^{2},2as)$ lie on the parabola $y^{2}=4ax$. Find the equation of the chord $AB$, and show that if this…"
+  },
+  {
+    "id": "ch05-014",
+    "chapter": 5,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1991,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "loci",
+      "circles",
+      "coordinate geometry"
+    ],
+    "methods": [
+      "distance formula",
+      "completing the square",
+      "locus equation"
+    ],
+    "solutionStatus": "full",
+    "preview": "A point $P(x,y)$ moves so that its distance from $(a,0)$ is twice its distance from the origin. (i) Show that $P$ lies on a circle and find…"
+  },
+  {
+    "id": "ch05-015",
+    "chapter": 5,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1995,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "parabola",
+      "tangent",
+      "implicit differentiation"
+    ],
+    "methods": [
+      "implicit differentiation",
+      "point on a curve",
+      "equation of a tangent"
+    ],
+    "solutionStatus": "full",
+    "preview": "The parabola has equation $y^{2}=4ax$. (i) By implicit differentiation find $\\\\frac{dy}{dx}$ at the point $(at^{2},2at)$. (ii) Hence show…"
   },
   {
     "id": "ch06-001",
@@ -1215,6 +1435,50 @@
     ],
     "solutionStatus": "full",
     "preview": "Find the turning points of the curve $y=(x^{2}-1)^{3}$ and determine their nature. Sketch the curve."
+  },
+  {
+    "id": "ch06-014",
+    "chapter": 6,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1998,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "stationary points",
+      "quotient rule",
+      "curve sketching"
+    ],
+    "methods": [
+      "quotient rule",
+      "sign test",
+      "classifying extrema"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the stationary points of $y=\\\\frac{x}{1+x^{2}}$ and determine their nature. Hence sketch the curve."
+  },
+  {
+    "id": "ch06-015",
+    "chapter": 6,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1994,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "maxima and minima",
+      "related rates",
+      "geometry"
+    ],
+    "methods": [
+      "expressing volume in one variable",
+      "chain rule via geometry",
+      "optimisation"
+    ],
+    "solutionStatus": "full",
+    "preview": "A right circular cone is inscribed in a sphere of radius $R$ so that its base is parallel to a great circle. (i) If the cone has height…"
   },
   {
     "id": "ch07-003",
@@ -1441,6 +1705,50 @@
     ],
     "solutionStatus": "full",
     "preview": "Show that $\\int_{0}^{1}\\dfrac{\\ln(1+x)}{1+x^{2}}\\,dx=\\dfrac{\\pi}{8}\\ln2$."
+  },
+  {
+    "id": "ch07-021",
+    "chapter": 7,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1993,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "integration",
+      "trigonometric identities",
+      "power reduction"
+    ],
+    "methods": [
+      "double-angle formula",
+      "reducing the power",
+      "definite integration"
+    ],
+    "solutionStatus": "full",
+    "preview": "Using the identity $\\\\sin^{2}x=\\\\frac{1-\\\\cos 2x}{2}$, show that $\\\\sin^{4}x=\\\\frac{3}{8}-\\\\frac{1}{2}\\\\cos 2x+\\\\frac{1}{8}\\\\cos 4x$. Hence…"
+  },
+  {
+    "id": "ch07-022",
+    "chapter": 7,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1996,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "integration",
+      "substitution",
+      "trigonometric substitution"
+    ],
+    "methods": [
+      "trigonometric substitution",
+      "changing limits",
+      "definite integration"
+    ],
+    "solutionStatus": "full",
+    "preview": "Use the substitution $x=\\\\sin^{2}\\\\theta$ to evaluate $\\\\int_{0}^{1}\\\\sqrt{\\\\frac{x}{1-x}}\\\\,dx$."
   },
   {
     "id": "ch08-001",
@@ -1673,6 +1981,50 @@
     "preview": "Find a formula for the sum $1\\cdot2+2\\cdot3+3\\cdot4+\\cdots+n(n+1)$."
   },
   {
+    "id": "ch08-017",
+    "chapter": 8,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1990,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "summation",
+      "proof by induction",
+      "series"
+    ],
+    "methods": [
+      "mathematical induction",
+      "sum of squares formula",
+      "algebraic manipulation"
+    ],
+    "solutionStatus": "full",
+    "preview": "Prove by induction that $\\\\sum_{k=1}^{n}k^{2}=\\\\frac{n(n+1)(2n+1)}{6}$ for all positive integers $n$."
+  },
+  {
+    "id": "ch08-018",
+    "chapter": 8,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1991,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "recurrence",
+      "closed form",
+      "limit of a sequence"
+    ],
+    "methods": [
+      "reciprocal transformation",
+      "solving a linear recurrence",
+      "telescoping"
+    ],
+    "solutionStatus": "full",
+    "preview": "A sequence is defined by $u_{1}=1$ and $u_{n+1}=\\\\frac{u_{n}}{1+u_{n}}$ for $n\\\\ge 1$. (i) Show that…"
+  },
+  {
     "id": "ch09-002",
     "chapter": 9,
     "title": "",
@@ -1880,6 +2232,50 @@
     ],
     "solutionStatus": "full",
     "preview": "The points $A(-2,0)$, $B(2,0)$ and $C(0,3)$ lie on a circle. Find the equation of the circle and the equation of the tangent at $C$."
+  },
+  {
+    "id": "ch09-018",
+    "chapter": 9,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1992,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "circles",
+      "orthogonal circles",
+      "geometry"
+    ],
+    "methods": [
+      "completing the square",
+      "orthogonality condition",
+      "distance between centres"
+    ],
+    "solutionStatus": "full",
+    "preview": "Show that the circles $x^{2}+y^{2}-4x=0$ and $x^{2}+y^{2}-4y=0$ intersect orthogonally (i.e. their tangents at a point of intersection are…"
+  },
+  {
+    "id": "ch09-019",
+    "chapter": 9,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1994,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "circles",
+      "three-point circle",
+      "simultaneous equations"
+    ],
+    "methods": [
+      "general circle equation",
+      "solving linear systems",
+      "completing the square"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the equation of the circle passing through the points $(1,1)$, $(2,-1)$ and $(3,2)$. Hence give its centre and radius."
   },
   {
     "id": "ch10-001",
@@ -2129,6 +2525,50 @@
     "preview": "Find the exact value of $\\cos\\dfrac{\\pi}{7}+\\cos\\dfrac{3\\pi}{7}+\\cos\\dfrac{5\\pi}{7}$."
   },
   {
+    "id": "ch10-017",
+    "chapter": 10,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1989,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "trigonometric identities",
+      "sum-to-product",
+      "exact values"
+    ],
+    "methods": [
+      "sum-to-product formula",
+      "deducing exact values",
+      "angle addition"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Prove that $\\\\cos A+\\\\cos B=2\\\\cos\\\\frac{A+B}{2}\\\\cos\\\\frac{A-B}{2}$. (ii) Hence find the exact value of …"
+  },
+  {
+    "id": "ch10-018",
+    "chapter": 10,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1997,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "trigonometric identities",
+      "angle sum",
+      "proof"
+    ],
+    "methods": [
+      "using $C=\\pi-A-B$",
+      "double-angle formula",
+      "factorisation"
+    ],
+    "solutionStatus": "full",
+    "preview": "Suppose $A+B+C=\\\\pi$. Show that $\\\\sin^{2}A+\\\\sin^{2}B+\\\\sin^{2}C=2+2\\\\cos A\\\\cos B\\\\cos C$."
+  },
+  {
     "id": "ch11-001",
     "chapter": 11,
     "title": "",
@@ -2354,6 +2794,50 @@
     ],
     "solutionStatus": "full",
     "preview": "By writing $\\cos5\\theta+\\cos\\theta$ as a product, or otherwise, solve $\\cos5\\theta+\\cos\\theta=0$ for $0\\le\\theta<\\pi$."
+  },
+  {
+    "id": "ch11-019",
+    "chapter": 11,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1998,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "trigonometric equations",
+      "sum-to-product",
+      "solutions in an interval"
+    ],
+    "methods": [
+      "sum-to-product formula",
+      "solving $\\tan 2x=1$",
+      "listing all solutions"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $\\\\sin x+\\\\sin 3x=\\\\cos x+\\\\cos 3x$ for $0\\\\le x\\\\le 2\\\\pi$."
+  },
+  {
+    "id": "ch11-020",
+    "chapter": 11,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1992,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "trigonometric identities",
+      "tangent addition",
+      "proof"
+    ],
+    "methods": [
+      "tangent addition formula",
+      "sum of angles",
+      "collecting terms"
+    ],
+    "solutionStatus": "full",
+    "preview": "Show that $\\\\tan x+\\\\tan(x+60^{\\\\circ})+\\\\tan(x+120^{\\\\circ})=3\\\\tan 3x$."
   },
   {
     "id": "ch12-001",
@@ -2583,6 +3067,50 @@
     "preview": "Show that the equation $2^{x}=x^{2}$ has exactly three real roots, and find two of them exactly."
   },
   {
+    "id": "ch12-018",
+    "chapter": 12,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1996,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "exponential equations",
+      "logarithms",
+      "change of base"
+    ],
+    "methods": [
+      "taking logarithms",
+      "solving a linear equation in logs",
+      "exact form"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve the equation $3^{2x}=5^{x+1}$. Give your answer in exact form."
+  },
+  {
+    "id": "ch12-019",
+    "chapter": 12,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1995,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "improper integrals",
+      "integration by parts",
+      "exponential function"
+    ],
+    "methods": [
+      "limit of a definite integral",
+      "integration by parts",
+      "gamma-type integral"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Show that $\\\\int_{0}^{\\\\infty}e^{-x}\\\\,dx=1$. (ii) By writing $\\\\int_{0}^{\\\\infty}x e^{-x}\\\\,dx$ as a limit and integrating by parts,…"
+  },
+  {
     "id": "A2-01-001",
     "chapter": "A2-01",
     "title": "",
@@ -2771,6 +3299,50 @@
     "preview": "Let $f(x)=\\dfrac{2x}{x^{2}+1}$. Find the range of $f$ and the coordinates of its stationary points."
   },
   {
+    "id": "A2-01-013",
+    "chapter": "A2-01",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1993,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "inverse functions",
+      "hyperbolic functions",
+      "chain rule"
+    ],
+    "methods": [
+      "composing $f$ and $g$",
+      "simplifying with a conjugate",
+      "chain rule"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $g(x)=\\\\frac{e^{x}-e^{-x}}{2}$ (the hyperbolic sine) and $f(x)=\\\\ln(x+\\\\sqrt{x^{2}+1})$. (i) Show that $f(g(x))=x$ and $g(f(x))=x$.…"
+  },
+  {
+    "id": "A2-01-014",
+    "chapter": "A2-01",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1998,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "inverse functions",
+      "range",
+      "monotonicity"
+    ],
+    "methods": [
+      "turning equation into quadratic in $x$",
+      "discriminant",
+      "restricting domain"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $f(x)=\\\\frac{2x}{1+x^{2}}$ for $x\\\\ge 0$. (i) Show that the range of $f$ is $[0,1]$ and that $f$ is increasing on $[0,1]$ and…"
+  },
+  {
     "id": "A2-02-001",
     "chapter": "A2-02",
     "title": "",
@@ -2914,6 +3486,50 @@
     ],
     "solutionStatus": "full",
     "preview": "Find the coefficient of $x^{n}$ in the expansion of $(1+x)^{2n}$, and show that this coefficient is even for every integer $n\\ge1$."
+  },
+  {
+    "id": "A2-02-013",
+    "chapter": "A2-02",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1995,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "binomial expansion",
+      "fractional powers",
+      "approximation"
+    ],
+    "methods": [
+      "general binomial theorem",
+      "estimating a root",
+      "error awareness"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Write down the first three non-zero terms in the expansion of $(1+x)^{1/2}$ in ascending powers of $x$, stating the range of validity.…"
+  },
+  {
+    "id": "A2-02-014",
+    "chapter": "A2-02",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1991,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "binomial series",
+      "general term",
+      "negative exponent"
+    ],
+    "methods": [
+      "general binomial theorem",
+      "coefficient extraction",
+      "verification"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Write down the general term in the expansion of $(1-x)^{-3}$ (for $|x|<1$). (ii) Hence show that the coefficient of $x^{n}$ is…"
   },
   {
     "id": "A2-03-001",
@@ -3062,6 +3678,50 @@
     "preview": "Express $\\cos x-\\sqrt{3}\\sin x$ in the form $R\\cos(x+\\alpha)$ with $R>0$ and $0<\\alpha<\\tfrac{\\pi}{2}$, and hence solve …"
   },
   {
+    "id": "A2-03-011",
+    "chapter": "A2-03",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1994,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "multiple-angle formulae",
+      "tangent",
+      "solving equations"
+    ],
+    "methods": [
+      "tangent triple-angle",
+      "solving $\\tan 3x=\\tan x$",
+      "factorisation"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Show that $\\\\tan 3\\\\theta=\\\\frac{3\\\\tan\\\\theta-\\\\tan^{3}\\\\theta}{1-3\\\\tan^{2}\\\\theta}$. (ii) Hence solve $\\\\tan 3\\\\theta=\\\\tan\\\\theta$…"
+  },
+  {
+    "id": "A2-03-012",
+    "chapter": "A2-03",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1990,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "multiple-angle formulae",
+      "de Moivre",
+      "proof"
+    ],
+    "methods": [
+      "de Moivre's theorem",
+      "binomial expansion",
+      "equating real parts"
+    ],
+    "solutionStatus": "full",
+    "preview": "Prove that $\\\\cos 5\\\\theta=16\\\\cos^{5}\\\\theta-20\\\\cos^{3}\\\\theta+5\\\\cos\\\\theta$."
+  },
+  {
     "id": "A2-04-001",
     "chapter": "A2-04",
     "title": "",
@@ -3187,6 +3847,50 @@
     ],
     "solutionStatus": "full",
     "preview": "Show that $\\int_{0}^{1}\\dfrac{\\ln(1+x)}{x}\\,dx=\\dfrac{\\pi^{2}}{12}$."
+  },
+  {
+    "id": "A2-04-010",
+    "chapter": "A2-04",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1996,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "integration",
+      "logarithm",
+      "integration by parts"
+    ],
+    "methods": [
+      "differentiating to check",
+      "integration by parts",
+      "definite integral"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Show that $\\\\frac{d}{dx}(x\\\\ln x-x)=\\\\ln x$. (ii) Using integration by parts, evaluate $\\\\int_{1}^{e}(\\\\ln x)^{2}\\\\,dx$ and show it…"
+  },
+  {
+    "id": "A2-04-011",
+    "chapter": "A2-04",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1997,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "integration",
+      "exponential",
+      "integration by parts"
+    ],
+    "methods": [
+      "integration by parts twice",
+      "verifying by differentiation",
+      "definite integral"
+    ],
+    "solutionStatus": "full",
+    "preview": "(i) Find $\\\\int e^{-x}\\\\sin x\\\\,dx$. (ii) Verify your answer by differentiation."
   },
   {
     "id": "A2-05-001",
@@ -3379,6 +4083,50 @@
     "preview": "Find the point on the curve $y=x^{2}$ that is closest to the point $(3,0)$."
   },
   {
+    "id": "A2-05-011",
+    "chapter": "A2-05",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1992,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "parametric differentiation",
+      "normals",
+      "tangents"
+    ],
+    "methods": [
+      "parametric derivative",
+      "equation of a normal",
+      "equation of a tangent"
+    ],
+    "solutionStatus": "full",
+    "preview": "A curve is given parametrically by $x=t^{2}$, $y=t^{3}$. (i) Find $\\\\frac{dy}{dx}$ in terms of $t$. (ii) Find the equation of the normal at…"
+  },
+  {
+    "id": "A2-05-012",
+    "chapter": "A2-05",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1993,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "implicit differentiation",
+      "folium",
+      "tangents"
+    ],
+    "methods": [
+      "implicit differentiation",
+      "solving for $dy/dx$",
+      "equation of a tangent"
+    ],
+    "solutionStatus": "full",
+    "preview": "The curve $x^{3}+y^{3}=3axy$ (folium of Descartes) has $a>0$. (i) Find $\\\\frac{dy}{dx}$ by implicit differentiation. (ii) Show that at the…"
+  },
+  {
     "id": "A2-06-001",
     "chapter": "A2-06",
     "title": "",
@@ -3545,6 +4293,50 @@
     ],
     "solutionStatus": "full",
     "preview": "By using the substitution $x=\\\\pi/2-t$ and the identity $\\\\sin x\\\\cos x=\\\\tfrac12\\\\sin2x$, show that …"
+  },
+  {
+    "id": "A2-06-012",
+    "chapter": "A2-06",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1991,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "integration",
+      "trigonometric substitution",
+      "definite integral"
+    ],
+    "methods": [
+      "substitution $x=a\\sin\\theta$",
+      "changing limits",
+      "double-angle formula"
+    ],
+    "solutionStatus": "full",
+    "preview": "Use the substitution $x=a\\\\sin\\\\theta$ to evaluate $\\\\int_{0}^{a}\\\\sqrt{a^{2}-x^{2}}\\\\,dx$, and show the result is $\\\\frac{\\\\pi a^{2}}{4}$."
+  },
+  {
+    "id": "A2-06-013",
+    "chapter": "A2-06",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1998,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "volume of revolution",
+      "improper integral",
+      "exponential"
+    ],
+    "methods": [
+      "disc method",
+      "setting up $\\pi\\int y^{2}dx$",
+      "evaluating an improper integral"
+    ],
+    "solutionStatus": "full",
+    "preview": "The curve $y=e^{-x}$ for $x\\\\ge 0$ is rotated about the $x$-axis. Show that the volume generated is $\\\\frac{\\\\pi}{2}$."
   },
   {
     "id": "A2-07-001",
@@ -3734,6 +4526,50 @@
     "preview": "Solve the differential equation $\\dfrac{dy}{dx}+y\\cot x=\\cos x$, given that $y=0$ when $x=\\tfrac{\\pi}{2}$."
   },
   {
+    "id": "A2-07-013",
+    "chapter": "A2-07",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1995,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "differential equations",
+      "separation of variables",
+      "initial condition"
+    ],
+    "methods": [
+      "separating variables",
+      "integrating",
+      "applying $y(0)=0$"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve the differential equation $\\\\frac{dy}{dx}=\\\\frac{2x}{y+1}$ subject to $y(0)=0$. Give $y$ explicitly."
+  },
+  {
+    "id": "A2-07-014",
+    "chapter": "A2-07",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1994,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "differential equations",
+      "integrating factor",
+      "first order linear"
+    ],
+    "methods": [
+      "integrating factor",
+      "solving a linear ODE",
+      "applying initial condition"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $\\\\frac{dy}{dx}+2y=e^{-x}$ with $y(0)=1$, and verify your solution satisfies the equation and the initial condition."
+  },
+  {
     "id": "A2-08-001",
     "chapter": "A2-08",
     "title": "",
@@ -3921,6 +4757,50 @@
     "preview": "Show that the equation $x^{3}+3x-5=0$ has exactly one real root. Use the Newton–Raphson method with starting value $x_{0}=1$ to find this…"
   },
   {
+    "id": "A2-08-013",
+    "chapter": "A2-08",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1996,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "numerical methods",
+      "fixed point iteration",
+      "convergence"
+    ],
+    "methods": [
+      "fixed-point iteration",
+      "showing a root exists",
+      "iterating"
+    ],
+    "solutionStatus": "full",
+    "preview": "The equation $x=\\\\cos x$ has a root $\\\\alpha\\\\approx 0.74$. (i) Show there is a root in $[0,1]$. (ii) Starting from $x_{0}=1$, apply the…"
+  },
+  {
+    "id": "A2-08-014",
+    "chapter": "A2-08",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1993,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "numerical methods",
+      "trapezium rule",
+      "estimation"
+    ],
+    "methods": [
+      "trapezium rule",
+      "dividing into strips",
+      "comparing with true value"
+    ],
+    "solutionStatus": "full",
+    "preview": "Use the trapezium rule with $4$ strips to estimate $\\\\int_{0}^{1}e^{-x^{2}}\\\\,dx$. Give your estimate to $4$ decimal places and comment on…"
+  },
+  {
     "id": "A2-09-001",
     "chapter": "A2-09",
     "title": "",
@@ -4046,5 +4926,49 @@
     ],
     "solutionStatus": "full",
     "preview": "Let $A,B,C$ be points with position vectors $\\mathbf{a},\\mathbf{b},\\mathbf{c}$, and let $G$ be the centroid of triangle $ABC$ so that…"
+  },
+  {
+    "id": "A2-09-012",
+    "chapter": "A2-09",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1995,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "vectors",
+      "distance from a point to a line",
+      "cross product"
+    ],
+    "methods": [
+      "vector product",
+      "distance formula",
+      "magnitude"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the shortest distance from the point $P(1,1,1)$ to the line through the origin $O$ in the direction $\\\\mathbf{d}=(1,1,0)$."
+  },
+  {
+    "id": "A2-09-013",
+    "chapter": "A2-09",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1997,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "vectors",
+      "planes",
+      "angle between planes"
+    ],
+    "methods": [
+      "normal vectors",
+      "dot product",
+      "angle formula"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the angle between the planes $\\\\Pi_{1}: x+y+z=1$ and $\\\\Pi_{2}: x-y+z=0$."
   }
 ]

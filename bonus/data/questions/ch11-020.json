@@ -1,0 +1,30 @@
+{
+  "id": "ch11-020",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1992,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "trigonometric identities",
+    "tangent addition",
+    "proof"
+  ],
+  "methods": [
+    "tangent addition formula",
+    "sum of angles",
+    "collecting terms"
+  ],
+  "statement": "Show that $\\\\tan x+\\\\tan(x+60^{\\\\circ})+\\\\tan(x+120^{\\\\circ})=3\\\\tan 3x$.",
+  "solution": "Write each term with the tangent addition formula. Let $t=\\\\tan x$. Then $\\\\tan(x+60^{\\\\circ})=\\\\frac{t+\\\\sqrt{3}}{1-\\\\sqrt{3}t}$ and $\\\\tan(x+120^{\\\\circ})=\\\\frac{t-\\\\sqrt{3}}{1+\\\\sqrt{3}t}$. Their sum simplifies to $\\\\frac{9t-t^{3}}{1-3t^{2}}$, and together with $\\\\tan x=t$ the left side equals $\\\\frac{3(3t-t^{3})}{1-3t^{2}}=3\\\\cdot\\\\frac{3t-t^{3}}{1-3t^{2}}=3\\\\tan 3x$ using $\\\\tan 3x=\\\\frac{3t-t^{3}}{1-3t^{2}}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use $\\\\tan(A+60^{\\\\circ})$ and $\\\\tan(A+120^{\\\\circ})$ formulas.",
+    "Combine over a common denominator and compare with $\\\\tan 3x$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
+}

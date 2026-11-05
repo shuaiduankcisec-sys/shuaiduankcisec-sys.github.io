@@ -1,0 +1,30 @@
+{
+  "id": "ch12-018",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "exponential equations",
+    "logarithms",
+    "change of base"
+  ],
+  "methods": [
+    "taking logarithms",
+    "solving a linear equation in logs",
+    "exact form"
+  ],
+  "statement": "Solve the equation $3^{2x}=5^{x+1}$. Give your answer in exact form.",
+  "solution": "Take natural logs: $2x\\\\ln 3=(x+1)\\\\ln 5$, so $x(2\\\\ln 3-\\\\ln 5)=\\\\ln 5$, giving $x=\\\\frac{\\\\ln 5}{2\\\\ln 3-\\\\ln 5}=\\\\frac{\\\\ln 5}{\\\\ln(9/5)}$. Numerically $x\\\\approx 2.929$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Take logs of both sides.",
+    "Collect the $x$ terms."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5否 → 4星]"
+}

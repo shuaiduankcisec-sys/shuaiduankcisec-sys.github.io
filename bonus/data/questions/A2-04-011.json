@@ -1,0 +1,30 @@
+{
+  "id": "A2-04-011",
+  "chapter": "A2-04",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1997,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "integration",
+    "exponential",
+    "integration by parts"
+  ],
+  "methods": [
+    "integration by parts twice",
+    "verifying by differentiation",
+    "definite integral"
+  ],
+  "statement": "(i) Find $\\\\int e^{-x}\\\\sin x\\\\,dx$. (ii) Verify your answer by differentiation.",
+  "solution": "(i) Let $I=\\\\int e^{-x}\\\\sin x\\\\,dx$. By parts twice (or using the standard formula $\\\\int e^{ax}\\\\sin bx\\\\,dx=e^{ax}(a\\\\sin bx-b\\\\cos bx)/(a^{2}+b^{2})$): with $a=-1,b=1$, $I=-\\\\frac{e^{-x}}{2}(\\\\sin x+\\\\cos x)+C$. (ii) Differentiating $-\\\\frac{e^{-x}}{2}(\\\\sin x+\\\\cos x)$: $-\\\\frac{1}{2}[-e^{-x}(\\\\sin x+\\\\cos x)+e^{-x}(\\\\cos x-\\\\sin x)]=e^{-x}\\\\sin x$. Verified.",
+  "solutionStatus": "full",
+  "hints": [
+    "Integrate by parts twice and solve for $I$.",
+    "Differentiate the result to check."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

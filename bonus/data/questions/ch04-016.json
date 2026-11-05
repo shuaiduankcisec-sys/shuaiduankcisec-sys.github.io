@@ -1,0 +1,30 @@
+{
+  "id": "ch04-016",
+  "chapter": 4,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1997,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "functions",
+    "self-inverse",
+    "composition"
+  ],
+  "methods": [
+    "composing a function",
+    "simplifying rational expressions",
+    "finding the range"
+  ],
+  "statement": "Let $f(x)=\\\\frac{1-x}{1+x}$ for $x\\\\neq -1$. (i) Show that $f(f(x))=x$. (ii) Deduce that $f$ is its own inverse. (iii) Find the range of $f$ on its domain.",
+  "solution": "(i) $f(f(x))=\\\\frac{1-\\\\frac{1-x}{1+x}}{1+\\\\frac{1-x}{1+x}}=\\\\frac{\\\\frac{(1+x)-(1-x)}{1+x}}{\\\\frac{(1+x)+(1-x)}{1+x}}=\\\\frac{2x}{2}=x$. (ii) Since $f(f(x))=x$ for all $x\\\\neq -1$, we have $f^{-1}=f$; $f$ is self-inverse. (iii) From $y=\\\\frac{1-x}{1+x}$ we get $y(1+x)=1-x$, so $x(y+1)=1-y$ and $x=\\\\frac{1-y}{1+y}$, which requires $y\\\\neq -1$. Hence the range is $\\\\mathbb{R}\\\\setminus\\\\{-1\\\\}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Compose carefully and simplify.",
+    "Compare with the definition of an inverse."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

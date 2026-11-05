@@ -1,0 +1,30 @@
+{
+  "id": "A2-08-014",
+  "chapter": "A2-08",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1993,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "numerical methods",
+    "trapezium rule",
+    "estimation"
+  ],
+  "methods": [
+    "trapezium rule",
+    "dividing into strips",
+    "comparing with true value"
+  ],
+  "statement": "Use the trapezium rule with $4$ strips to estimate $\\\\int_{0}^{1}e^{-x^{2}}\\\\,dx$. Give your estimate to $4$ decimal places and comment on whether it is an over- or under-estimate.",
+  "solution": "Strips of width $h=1/4$. Points $x_{0}=0,x_{1}=0.25,x_{2}=0.5,x_{3}=0.75,x_{4}=1$ with $f(x)=e^{-x^{2}}$: $f_{0}=1$, $f_{1}=e^{-0.0625}\\\\approx0.9394$, $f_{2}=e^{-0.25}\\\\approx0.7788$, $f_{3}=e^{-0.5625}\\\\approx0.5698$, $f_{4}=e^{-1}\\\\approx0.3679$. Trapezium: $\\\\frac{h}{2}[f_{0}+2(f_{1}+f_{2}+f_{3})+f_{4}]\\\\approx0.125[1+2(2.2880)+0.3679]\\\\approx0.7430$. Since $f$ is convex on $[0,1]$ ($f''<0$? actually $f''=-2e^{-x^{2}}(1-2x^{2})$, mixed) the rule is a reasonable estimate; the true value $\\\\approx0.7468$, so this is a slight under-estimate.",
+  "solutionStatus": "full",
+  "hints": [
+    "Compute $f$ at the 5 equally spaced points.",
+    "Apply $\\\\frac{h}{2}[y_{0}+2(y_{1}+y_{2}+y_{3})+y_{4}]$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

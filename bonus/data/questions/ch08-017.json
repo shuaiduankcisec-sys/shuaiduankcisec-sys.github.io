@@ -1,0 +1,30 @@
+{
+  "id": "ch08-017",
+  "chapter": 8,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1990,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "summation",
+    "proof by induction",
+    "series"
+  ],
+  "methods": [
+    "mathematical induction",
+    "sum of squares formula",
+    "algebraic manipulation"
+  ],
+  "statement": "Prove by induction that $\\\\sum_{k=1}^{n}k^{2}=\\\\frac{n(n+1)(2n+1)}{6}$ for all positive integers $n$.",
+  "solution": "Base $n=1$: LHS $=1$, RHS $=1\\\\cdot2\\\\cdot3/6=1$. Assume true for $n$. Then $\\\\sum_{k=1}^{n+1}k^{2}=\\\\frac{n(n+1)(2n+1)}{6}+(n+1)^{2}=\\\\frac{(n+1)[n(2n+1)+6(n+1)]}{6}=\\\\frac{(n+1)(2n^{2}+7n+6)}{6}=\\\\frac{(n+1)(n+2)(2n+3)}{6}$, which is the formula with $n+1$. Hence proved.",
+  "solutionStatus": "full",
+  "hints": [
+    "Verify the base case $n=1$.",
+    "Add $(n+1)^{2}$ and factor carefully."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2否 Q3是 Q4是 Q5是 → 4星]"
+}

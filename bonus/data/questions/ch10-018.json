@@ -1,0 +1,30 @@
+{
+  "id": "ch10-018",
+  "chapter": 10,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1997,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "trigonometric identities",
+    "angle sum",
+    "proof"
+  ],
+  "methods": [
+    "using $C=\\pi-A-B$",
+    "double-angle formula",
+    "factorisation"
+  ],
+  "statement": "Suppose $A+B+C=\\\\pi$. Show that $\\\\sin^{2}A+\\\\sin^{2}B+\\\\sin^{2}C=2+2\\\\cos A\\\\cos B\\\\cos C$.",
+  "solution": "We use the companion identity valid for $A+B+C=\\\\pi$: $\\\\cos^{2}A+\\\\cos^{2}B+\\\\cos^{2}C+2\\\\cos A\\\\cos B\\\\cos C=1$ (which follows from writing $C=\\\\pi-A-B$ and simplifying). Then $\\\\sin^{2}A+\\\\sin^{2}B+\\\\sin^{2}C=3-(\\\\cos^{2}A+\\\\cos^{2}B+\\\\cos^{2}C)=3-(1-2\\\\cos A\\\\cos B\\\\cos C)=2+2\\\\cos A\\\\cos B\\\\cos C$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Replace $C$ by $\\\\pi-A-B$.",
+    "Use $\\\\sin^{2}\\\\theta=(1-\\\\cos 2\\\\theta)/2$ to reduce powers."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
+}

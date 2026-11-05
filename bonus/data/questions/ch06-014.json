@@ -1,0 +1,30 @@
+{
+  "id": "ch06-014",
+  "chapter": 6,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1998,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "stationary points",
+    "quotient rule",
+    "curve sketching"
+  ],
+  "methods": [
+    "quotient rule",
+    "sign test",
+    "classifying extrema"
+  ],
+  "statement": "Find the stationary points of $y=\\\\frac{x}{1+x^{2}}$ and determine their nature. Hence sketch the curve.",
+  "solution": "$y'=\\\\frac{(1+x^{2})-x(2x)}{(1+x^{2})^{2}}=\\\\frac{1-x^{2}}{(1+x^{2})^{2}}$, zero when $x=\\\\pm 1$. At $x=1$, $y=1/2$ (maximum, since $y'$ changes $+$ to $-$); at $x=-1$, $y=-1/2$ (minimum). The curve passes through the origin with $y\\\\sim x$ near $0$ and $y\\\\to 0$ as $x\\\\to\\\\pm\\\\infty$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Apply the quotient rule.",
+    "Check the sign of $y'$ on either side of $\\\\pm 1$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

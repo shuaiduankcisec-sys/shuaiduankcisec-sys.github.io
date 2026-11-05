@@ -1,0 +1,30 @@
+{
+  "id": "ch02-017",
+  "chapter": 2,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1990,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "complex numbers",
+    "roots of unity",
+    "geometric series"
+  ],
+  "methods": [
+    "factor theorem",
+    "sum of a GP",
+    "modulus-argument form"
+  ],
+  "statement": "Let $\\\\omega=\\\\cos\\\\frac{2\\\\pi}{5}+i\\\\sin\\\\frac{2\\\\pi}{5}$, a primitive fifth root of unity. (i) Show that $1+\\\\omega+\\\\omega^{2}+\\\\omega^{3}+\\\\omega^{4}=0$. (ii) Show that $\\\\omega\\\\omega^{2}\\\\omega^{3}\\\\omega^{4}=1$. (iii) Deduce that $\\\\cos\\\\frac{2\\\\pi}{5}+\\\\cos\\\\frac{4\\\\pi}{5}=-\\\\frac{1}{2}$.",
+  "solution": "(i) $\\\\omega$ satisfies $\\\\omega^{5}=1$ and $\\\\omega\\\\neq 1$, so $(\\\\omega^{5}-1)/(\\\\omega-1)=1+\\\\omega+\\\\dots+\\\\omega^{4}=0$. (ii) Product $=\\\\omega^{1+2+3+4}=\\\\omega^{10}=(\\\\omega^{5})^{2}=1$. (iii) Taking real parts of (i): $1+2\\\\cos(2\\\\pi/5)+2\\\\cos(4\\\\pi/5)=0$, so $\\\\cos(2\\\\pi/5)+\\\\cos(4\\\\pi/5)=-1/2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use $\\\\omega^{5}=1$ and the GP sum.",
+    "Add the conjugates to extract cosines."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

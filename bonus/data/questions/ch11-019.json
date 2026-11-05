@@ -1,0 +1,30 @@
+{
+  "id": "ch11-019",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1998,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "trigonometric equations",
+    "sum-to-product",
+    "solutions in an interval"
+  ],
+  "methods": [
+    "sum-to-product formula",
+    "solving $\\tan 2x=1$",
+    "listing all solutions"
+  ],
+  "statement": "Solve $\\\\sin x+\\\\sin 3x=\\\\cos x+\\\\cos 3x$ for $0\\\\le x\\\\le 2\\\\pi$.",
+  "solution": "$\\\\sin x+\\\\sin3x=2\\\\sin2x\\\\cos x$ and $\\\\cos x+\\\\cos3x=2\\\\cos2x\\\\cos x$. The equation becomes $2\\\\cos x(\\\\sin2x-\\\\cos2x)=0$. So either $\\\\cos x=0$ giving $x=\\\\pi/2,3\\\\pi/2$, or $\\\\sin2x=\\\\cos2x$ i.e. $\\\\tan2x=1$ giving $2x=\\\\pi/4,5\\\\pi/4,9\\\\pi/4,13\\\\pi/4$, so $x=\\\\pi/8,5\\\\pi/8,9\\\\pi/8,13\\\\pi/8$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Apply sum-to-product to both sides.",
+    "Factor out $2\\\\cos x$ and solve the two cases."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

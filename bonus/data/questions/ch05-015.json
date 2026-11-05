@@ -1,0 +1,30 @@
+{
+  "id": "ch05-015",
+  "chapter": 5,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "parabola",
+    "tangent",
+    "implicit differentiation"
+  ],
+  "methods": [
+    "implicit differentiation",
+    "point on a curve",
+    "equation of a tangent"
+  ],
+  "statement": "The parabola has equation $y^{2}=4ax$. (i) By implicit differentiation find $\\\\frac{dy}{dx}$ at the point $(at^{2},2at)$. (ii) Hence show that the tangent at this point is $ty=x+at^{2}$. (iii) Find where this tangent meets the $x$-axis.",
+  "solution": "(i) $2y\\\\,dy/dx=4a$ so $dy/dx=2a/y$; at $(at^{2},2at)$ this is $1/t$. (ii) Tangent: $y-2at=(1/t)(x-at^{2})$, i.e. $ty-2at^{2}=x-at^{2}$, so $ty=x+at^{2}$. (iii) Set $y=0$: $0=x+at^{2}$, so it meets the $x$-axis at $x=-at^{2}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Differentiate $y^{2}=4ax$ implicitly.",
+    "Substitute the point into the point-slope form."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

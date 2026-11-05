@@ -1,0 +1,30 @@
+{
+  "id": "ch02-016",
+  "chapter": 2,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "quadratics",
+    "symmetric functions",
+    "root transformation"
+  ],
+  "methods": [
+    "Vieta's formulas",
+    "expressing sums of powers",
+    "forming a new equation"
+  ],
+  "statement": "The roots of $x^{2}+px+q=0$ are $\\\\alpha$ and $\\\\beta$. (i) Find, in terms of $p$ and $q$, the quadratic equation whose roots are $\\\\alpha^{2}$ and $\\\\beta^{2}$. (ii) Hence, when $p=-3$ and $q=2$, write down the new equation explicitly and its roots.",
+  "solution": "By Vieta, $\\\\alpha+\\\\beta=-p$ and $\\\\alpha\\\\beta=q$. Then $\\\\alpha^{2}+\\\\beta^{2}=(\\\\alpha+\\\\beta)^{2}-2\\\\alpha\\\\beta=p^{2}-2q$ and $\\\\alpha^{2}\\\\beta^{2}=q^{2}$. So the required equation is $x^{2}-(p^{2}-2q)x+q^{2}=0$. With $p=-3,q=2$: $x^{2}-(9-4)x+4=x^{2}-5x+4=0=(x-1)(x-4)$, roots $1,4$ (which are indeed $(-1)^{2}$ and $(-2)^{2}$).",
+  "solutionStatus": "full",
+  "hints": [
+    "Use $\\\\alpha+\\\\beta$ and $\\\\alpha\\\\beta$ to build the new sum and product.",
+    "Substitute the given numbers at the end."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

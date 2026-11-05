@@ -1,0 +1,30 @@
+{
+  "id": "A2-03-012",
+  "chapter": "A2-03",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1990,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "multiple-angle formulae",
+    "de Moivre",
+    "proof"
+  ],
+  "methods": [
+    "de Moivre's theorem",
+    "binomial expansion",
+    "equating real parts"
+  ],
+  "statement": "Prove that $\\\\cos 5\\\\theta=16\\\\cos^{5}\\\\theta-20\\\\cos^{3}\\\\theta+5\\\\cos\\\\theta$.",
+  "solution": "By de Moivre, $(\\\\cos\\\\theta+i\\\\sin\\\\theta)^{5}=\\\\cos 5\\\\theta+i\\\\sin 5\\\\theta$. The real part is $\\\\cos^{5}\\\\theta-10\\\\cos^{3}\\\\theta\\\\sin^{2}\\\\theta+5\\\\cos\\\\theta\\\\sin^{4}\\\\theta$. Replacing $\\\\sin^{2}\\\\theta=1-\\\\cos^{2}\\\\theta$: $\\\\cos^{5}\\\\theta-10\\\\cos^{3}\\\\theta(1-\\\\cos^{2}\\\\theta)+5\\\\cos\\\\theta(1-\\\\cos^{2}\\\\theta)^{2}=\\\\cos^{5}\\\\theta-10\\\\cos^{3}\\\\theta+10\\\\cos^{5}\\\\theta+5\\\\cos\\\\theta(1-2\\\\cos^{2}\\\\theta+\\\\cos^{4}\\\\theta)=16\\\\cos^{5}\\\\theta-20\\\\cos^{3}\\\\theta+5\\\\cos\\\\theta$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand $(\\\\cos\\\\theta+i\\\\sin\\\\theta)^{5}$ by the binomial theorem.",
+    "Take the real part and replace $\\\\sin^{2}\\\\theta$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]"
+}

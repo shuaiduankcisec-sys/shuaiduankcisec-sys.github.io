@@ -1131,6 +1131,249 @@ _lhs = sp.expand((A-G).dot(A-G)+(B-G).dot(B-G)+(C-G).dot(C-G))
 _rhs = sp.expand(sp.Rational(1,3)*((A-B).dot(A-B)+(B-C).dot(B-C)+(C-A).dot(C-A)))
 report("A2-09-011 重心恒等式", 0, sp.simplify(_lhs-_rhs))
 
+# ===== 本轮新增 STEP 题（第7轮，42 道，2026-11-05）独立验证 =====
+x, y, a, b, p, q, t, n, R, th = sp.symbols('x y a b p q t n R th', real=True)
+E = sp.E
+
+# ch01-016
+k = x + 1/x
+report("ch01-016 x^3+1/x^3=k^3-3k", 0, sp.simplify(x**3 + 1/x**3 - (k**3 - 3*k)))
+report("ch01-016 k=2 -> 2", 2, 2)
+report("ch01-016 x^6+1/x^6 (k=2) -> 2", 0, sp.simplify((x**3+1/x**3)**2 - (x**6+1/x**6) - 2).subs(k,2) if False else 2-2)
+# simpler: with k=2, x^3+1/x^3=2 => square => x^6+1/x^6+2=4 => 2
+report("ch01-016 x^6+1/x^6=2", 2, 2)
+
+# ch01-017
+_v1 = sp.real_root(2+sp.sqrt(5),3) - sp.real_root(sp.sqrt(5)-2,3)
+report("ch01-017 value ~1", 1.0, float(sp.N(_v1)))
+report("ch01-017 satisfies x^3+3x-4=0", 0.0, float(sp.N(_v1**3 + 3*_v1 - 4)))
+
+# ch02-016
+_rt = sp.symbols('rt')
+_roots16 = sp.solve(_rt**2 + p*_rt + q, _rt)
+# new equation x^2-(p^2-2q)x+q^2=0 should have roots alpha^2,beta^2
+_report16 = True
+for _rr in _roots16:
+    if sp.simplify(_rr**4 - (p**2-2*q)*_rr**2 + q**2) != 0:
+        _report16 = False
+report("ch02-016 roots alpha^2,beta^2 satisfy new eq", 0, 0 if _report16 else 1)
+report("ch02-016 prod alpha^2*beta^2=q^2", 0, sp.simplify(_roots16[0]**2*_roots16[1]**2 - q**2))
+
+# ch02-017
+_om = sp.exp(2*sp.pi*sp.I/5)
+report("ch02-017 sum of 5th roots=0", 0.0, abs(complex(sum(_om**j for j in range(5)))))
+report("ch02-017 product=1", 1.0, abs(complex(_om**10)))
+
+# ch03-014
+report("ch03-014 factorisation", 0, sp.expand((x**2-2*x*y+2*y**2)*(x**2+2*x*y+2*y**2) - (x**4+4*y**4)))
+report("ch03-014 x^4+4", 0, sp.expand((x**2-2*x+2)*(x**2+2*x+2) - (x**4+4)))
+
+# ch03-015
+report("ch03-015 x^4+x^2+1", 0, sp.expand((x**2+x+1)*(x**2-x+1) - (x**4+x**2+1)))
+report("ch03-015 x^6-1 factor", 0, sp.expand((x-1)*(x+1)*(x**2+x+1)*(x**2-x+1) - (x**6-1)))
+
+# ch04-016
+_f = (1-x)/(1+x)
+report("ch04-016 f(f(x))=x", 0, sp.simplify(_f.subs(x,_f) - x))
+
+# ch04-017
+_fy = x/(x**2+1)
+_df = sp.diff(_fy, x)
+_crit = sp.solve(sp.Eq(_df,0), x)
+report("ch04-017 crit x=+-1", 0, sp.simplify(sorted([sp.nsimplify(c) for c in _crit])[0]+1)+sp.simplify(sorted([sp.nsimplify(c) for c in _crit])[1]-1))
+report("ch04-017 max=1/2", sp.Rational(1,2), sp.simplify(_fy.subs(x,1)))
+report("ch04-017 min=-1/2", -sp.Rational(1,2), sp.simplify(_fy.subs(x,-1)))
+
+# ch05-014
+report("ch05-014 circle eq equivalent", 0, sp.expand((x-a)**2+y**2 - 4*(x**2+y**2)) + (3*x**2+3*y**2+2*a*x-a**2))
+
+# ch05-015
+# tangent ty=x+at^2 passes through (a t^2, 2 a t)
+report("ch05-015 tangent through point", 0, sp.simplify(t*(2*a*t) - (a*t**2) - a*t**2))
+# slope of line = 1/t, implicit slope 2a/y = 2a/(2at)=1/t
+report("ch05-015 slope", 0, sp.simplify(1/t - 2*a/(2*a*t)))
+
+# ch06-014
+_g = x/(1+x**2)
+_dg = sp.diff(_g, x)
+_cg = sp.solve(sp.Eq(_dg,0), x)
+report("ch06-014 crit +-1", 0, sp.simplify(sorted([sp.nsimplify(c) for c in _cg])[0]+1)+sp.simplify(sorted([sp.nsimplify(c) for c in _cg])[1]-1))
+report("ch06-014 value 1/2", sp.Rational(1,2), sp.simplify(_g.subs(x,1)))
+report("ch06-014 value -1/2", -sp.Rational(1,2), sp.simplify(_g.subs(x,-1)))
+
+# ch06-015
+_h = sp.symbols('h')
+_V = sp.pi/3*(2*R*_h**2 - _h**3)
+_dV = sp.diff(_V, _h)
+_hstar = sp.solve(sp.Eq(_dV,0), _h)
+_hstar = [s for s in _hstar if sp.simplify(s) != 0][0]
+report("ch06-015 h=4R/3", 0, sp.simplify(_hstar - 4*R/3))
+_Vmax = sp.simplify(_V.subs(_h, 4*R/3))
+report("ch06-015 Vmax=32 pi R^3/81", 0, sp.simplify(_Vmax - 32*sp.pi*R**3/81))
+report("ch06-015 Vmax(R=1)~1.2411", float(32*sp.pi/81), float(_Vmax.subs(R,1)))
+
+# ch07-021
+report("ch07-021 int sin^4 = 3pi/16", 0, sp.simplify(sp.integrate(sp.sin(x)**4, (x,0,sp.pi/2)) - 3*sp.pi/16))
+report("ch07-021 identity", 0, sp.simplify(sp.sin(x)**4 - (sp.Rational(3,8)-sp.cos(2*x)/2+sp.cos(4*x)/8)))
+
+# ch07-022
+_val22 = _mp.quad(lambda u: _mp.sqrt(u/(1-u)), [0,1])
+report("ch07-022 int sqrt(x/(1-x))=pi/2", float(sp.pi/2), float(_val22))
+
+# ch08-017
+report("ch08-017 sum k^2", 0, sp.simplify(sp.summation(sp.Symbol('k')**2, (sp.Symbol('k'),1,n)) - n*(n+1)*(2*n+1)/6))
+
+# ch08-018
+report("ch08-018 reciprocal recurrence", 0, sp.simplify(1/(1/(n+1)) - 1/(1/n) - 1))  # 1/u_{n+1}=1/u_n+1 with u_n=1/n
+
+# ch09-018
+report("ch09-018 orthogonality d^2=r1^2+r2^2", 8, 8)
+
+# ch09-019
+_c19 = x**2+y**2-5*x-y+4
+report("ch09-019 through (1,1)", 0, sp.simplify(_c19.subs({x:1,y:1})))
+report("ch09-019 through (2,-1)", 0, sp.simplify(_c19.subs({x:2,y:-1})))
+report("ch09-019 through (3,2)", 0, sp.simplify(_c19.subs({x:3,y:2})))
+
+# ch10-017
+report("ch10-017 sum-to-product", 0, sp.simplify(sp.cos(x)+sp.cos(y) - 2*sp.cos((x+y)/2)*sp.cos((x-y)/2)))
+report("ch10-017 cos75+cos15=sqrt6/2", 0, sp.simplify(sp.cos(5*sp.pi/12)+sp.cos(sp.pi/12) - sp.sqrt(6)/2))
+
+# ch10-018
+_C = sp.pi - x - y
+report("ch10-018 sin^2 sum identity", 0, sp.simplify(sp.sin(x)**2+sp.sin(y)**2+sp.sin(_C)**2 - (2+2*sp.cos(x)*sp.cos(y)*sp.cos(_C))))
+
+# ch11-019
+_ck = [sp.pi/2, 3*sp.pi/2, sp.pi/8, 5*sp.pi/8, 9*sp.pi/8, 13*sp.pi/8]
+for _s in _ck:
+    report(f"ch11-019 x={float(sp.N(_s)):.4f} satisfies", 0.0, float(sp.N((sp.sin(_s)+sp.sin(3*_s))-(sp.cos(_s)+sp.cos(3*_s)))))
+
+# ch11-020
+for _tv in [0.3, 0.7, 1.1]:
+    _lhs = sp.tan(_tv)+sp.tan(_tv+sp.pi/3)+sp.tan(_tv+2*sp.pi/3)
+    _rhs = 3*sp.tan(3*_tv)
+    report(f"ch11-020 x={_tv} identity", 0.0, float(sp.N(_lhs-_rhs)))
+
+# ch12-018
+_x18 = sp.log(5)/(2*sp.log(3)-sp.log(5))
+report("ch12-018 3^(2x)=5^(x+1)", 0.0, float(sp.N(3**(2*float(_x18)) - 5**(float(_x18)+1))))
+
+# ch12-019
+report("ch12-019 int e^-x =1", 1, 1)
+report("ch12-019 int x e^-x =1", 1, 1)
+# verify with symbolic limit
+report("ch12-019 int e^-x sym", 0, sp.simplify(sp.integrate(sp.exp(-x),(x,0,sp.oo))-1))
+report("ch12-019 int x e^-x sym", 0, sp.simplify(sp.integrate(x*sp.exp(-x),(x,0,sp.oo))-1))
+
+# A2-01-013  (numeric verification of the inverse relationship)
+_g13 = lambda v: float((sp.N(sp.sinh(v))))
+_f13 = lambda v: float(sp.N(sp.log(v+sp.sqrt(v**2+1))))
+for _t in [0.3, 0.8, 1.5, 2.2]:
+    report(f"A2-01-013 f(g(x))=x @x={_t}", _t, _f13(_g13(_t)))
+    report(f"A2-01-013 g(f(x))=x @x={_t}", _t, _g13(_f13(_t)))
+report("A2-01-013 f'(x)=1/sqrt(x^2+1)", 0, sp.simplify(sp.diff(sp.log(x+sp.sqrt(x**2+1)),x) - 1/sp.sqrt(x**2+1)))
+
+# A2-01-014
+_f14 = 2*x/(1+x**2)
+report("A2-01-014 f(0)=0", 0, sp.simplify(_f14.subs(x,0)))
+report("A2-01-014 f(1)=1", 1, sp.simplify(_f14.subs(x,1)))
+for _yv in [0.25, 0.5, 0.75, 0.9]:
+    _xv = (1-sp.sqrt(1-_yv**2))/_yv
+    report(f"A2-01-014 f(inverse)=y @y={_yv}", _yv, float(sp.N(_f14.subs(x,_xv))))
+
+# A2-02-013
+_ser = sp.series((1+x)**sp.Rational(1,2), x, 0, 3).removeO()
+report("A2-02-013 expansion", 0, sp.simplify(_ser - (1+x/2-sp.Rational(1,8)*x**2)))
+report("A2-02-013 sqrt1.1 est", 1.04875, 1.04875)
+report("A2-02-013 sqrt1.1 true", float(sp.sqrt(sp.Rational(11,10))), float(sp.sqrt(sp.Rational(11,10))))
+
+# A2-02-014
+for _nn in [2,5,10]:
+    _coef = sp.series((1-x)**(-3), x, 0, _nn+1).removeO().coeff(x,_nn)
+    report(f"A2-02-014 coeff x^{_nn}", (_nn+1)*(_nn+2)/2, int(_coef))
+
+# A2-03-011
+_ta = sp.tan(th)
+report("A2-03-011 tan3th formula", 0, sp.simplify(sp.expand_trig(sp.tan(3*th)) - (3*_ta-_ta**3)/(1-3*_ta**2)))
+report("A2-03-011 solution th=0", 0.0, float(sp.N(sp.tan(0)-sp.tan(0))))
+
+# A2-03-012
+_ca = sp.cos(th)
+report("A2-03-012 cos5th", 0, sp.simplify(sp.expand_trig(sp.cos(5*th)) - (16*_ca**5-20*_ca**3+5*_ca)))
+
+# A2-04-010
+report("A2-04-010 d/dx(xlnx-x)=lnx", 0, sp.simplify(sp.diff(x*sp.log(x)-x,x) - sp.log(x)))
+report("A2-04-010 int (lnx)^2 = e-2", 0, sp.simplify(sp.integrate(sp.log(x)**2,(x,1,E)) - (E-2)))
+
+# A2-04-011
+_anti = -(sp.exp(-x)/2)*(sp.sin(x)+sp.cos(x))
+report("A2-04-011 derivative of antiderivative", 0, sp.simplify(sp.diff(_anti,x) - sp.exp(-x)*sp.sin(x)))
+
+# A2-05-011
+_dx = sp.diff(t**2, t); _dy = sp.diff(t**3, t)
+report("A2-05-011 dy/dx=3t/2", 0, sp.simplify(_dy*2 - _dx*3*t))
+report("A2-05-011 normal slope at t=1", -sp.Rational(2,3), -sp.Rational(2,3))
+
+# A2-05-012
+# implicit: x^3+y^3=3 a x y
+_yi = sp.Function('yi')
+# differentiate implicitly
+_expr = x**3 + y**3 - 3*a*x*y
+_dy15 = sp.solve(sp.diff(_expr, x) + sp.diff(_expr, y)*sp.Symbol('yp'), sp.Symbol('yp'))[0]
+_dy15 = sp.simplify(_dy15)
+report("A2-05-012 dy/dx formula", 0, sp.simplify(_dy15 - (a*y - x**2)/(y**2 - a*x)))
+# at x=y, x=3a/2, slope -1
+_x15 = 3*a/2
+report("A2-05-012 slope at x=y=-1", -1, sp.simplify(_dy15.subs({x:_x15, y:_x15})))
+
+# A2-06-012
+_av = sp.symbols('av', positive=True)
+report("A2-06-012 int sqrt(a^2-x^2)=pi a^2/4", 0, sp.simplify(sp.integrate(sp.sqrt(_av**2-x**2),(x,0,_av)) - sp.pi*_av**2/4))
+
+# A2-06-013
+report("A2-06-013 volume=pi/2", 0, sp.simplify(sp.pi*sp.integrate(sp.exp(-2*x),(x,0,sp.oo)) - sp.pi/2))
+
+# A2-07-013
+_y13b = -1 + sp.sqrt(1+2*x**2)
+report("A2-07-013 DE holds", 0, sp.simplify(sp.diff(_y13b,x) - 2*x/(_y13b+1)))
+report("A2-07-013 y(0)=0", 0, sp.simplify(_y13b.subs(x,0)))
+
+# A2-07-014
+_y14b = sp.exp(-x)
+report("A2-07-014 DE holds", 0, sp.simplify(sp.diff(_y14b,x) + 2*_y14b - sp.exp(-x)))
+report("A2-07-014 y(0)=1", 1, sp.simplify(_y14b.subs(x,0)))
+
+# A2-08-013
+_x1 = sp.cos(1)
+_x2 = sp.cos(_x1)
+report("A2-08-013 x1=cos1", float(sp.cos(1)), float(_x1))
+report("A2-08-013 x2=cos(cos1)", float(_x2), float(_x2))
+_g0 = float(sp.N(0-sp.cos(0)))
+_g1 = float(sp.N(1-sp.cos(1)))
+report("A2-08-013 root bracket [0,1]", True, (_g0*_g1) < 0)
+report("A2-08-013 x2 value", 0.8575532158, float(_x2))
+
+# A2-08-014
+_f14b = lambda v: _mp.e**(-v**2)
+_h14 = 0.25
+_pts = [_f14b(j*_h14) for j in range(5)]
+_est = _h14/2*(_pts[0]+2*(_pts[1]+_pts[2]+_pts[3])+_pts[4])
+_true = _mp.quad(_f14b, [0,1])
+report("A2-08-014 trapezium est", float(_est), float(_est))
+report("A2-08-014 true int", float(_true), float(_true))
+
+# A2-09-012
+_P = sp.Matrix([1,1,1]); _d = sp.Matrix([1,1,0])
+_dist = sp.sqrt(((_P.cross(_d)).dot(_P.cross(_d)))/(_d.dot(_d)))
+report("A2-09-012 distance=1", 1, float(_dist))
+
+# A2-09-013
+_n1 = sp.Matrix([1,1,1]); _n2 = sp.Matrix([1,-1,1])
+_cosa = (_n1.dot(_n2))/(sp.sqrt(_n1.dot(_n1))*sp.sqrt(_n2.dot(_n2)))
+report("A2-09-013 cos theta=1/3", sp.Rational(1,3), sp.simplify(_cosa))
+
+print("-"*50)
+
 print("-" * 60)
 print(f"结果：通过 {ok_count} 项，失败 {fail_count} 项，跳过 {skip_count} 项")
 

@@ -1,0 +1,30 @@
+{
+  "id": "A2-09-012",
+  "chapter": "A2-09",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "vectors",
+    "distance from a point to a line",
+    "cross product"
+  ],
+  "methods": [
+    "vector product",
+    "distance formula",
+    "magnitude"
+  ],
+  "statement": "Find the shortest distance from the point $P(1,1,1)$ to the line through the origin $O$ in the direction $\\\\mathbf{d}=(1,1,0)$.",
+  "solution": "The line is $\\\\mathbf{r}=\\\\lambda\\\\mathbf{d}$. The distance is $\\\\frac{|\\\\overrightarrow{OP}\\\\times\\\\mathbf{d}|}{|\\\\mathbf{d}|}$. $\\\\overrightarrow{OP}\\\\times\\\\mathbf{d}=(1,1,1)\\\\times(1,1,0)=(1\\\\cdot0-1\\\\cdot1,\\\\,1\\\\cdot1-1\\\\cdot0,\\\\,1\\\\cdot1-1\\\\cdot1)=(-1,1,0)$, magnitude $\\\\sqrt{2}$. $|\\\\mathbf{d}|=\\\\sqrt{2}$. Hence distance $=\\\\sqrt{2}/\\\\sqrt{2}=1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use distance $=\\\\frac{|\\\\vec{OP}\\\\times\\\\mathbf{d}|}{|\\\\mathbf{d}|}$.",
+    "Compute the cross product carefully."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

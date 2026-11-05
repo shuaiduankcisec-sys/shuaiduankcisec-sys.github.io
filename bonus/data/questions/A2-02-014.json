@@ -1,0 +1,30 @@
+{
+  "id": "A2-02-014",
+  "chapter": "A2-02",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1991,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "binomial series",
+    "general term",
+    "negative exponent"
+  ],
+  "methods": [
+    "general binomial theorem",
+    "coefficient extraction",
+    "verification"
+  ],
+  "statement": "(i) Write down the general term in the expansion of $(1-x)^{-3}$ (for $|x|<1$). (ii) Hence show that the coefficient of $x^{n}$ is $\\\\frac{(n+1)(n+2)}{2}$. (iii) Check your formula for $n=2$ and $n=5$.",
+  "solution": "(i) $(1-x)^{-3}=\\\\sum_{r=0}^{\\\\infty}\\\\binom{r+2}{2}x^{r}$ since $\\\\binom{-3}{r}(-1)^{r}=\\\\binom{r+2}{2}$. (ii) Thus the coefficient of $x^{n}$ is $\\\\binom{n+2}{2}=\\\\frac{(n+1)(n+2)}{2}$. (iii) For $n=2$: $3\\\\cdot4/2=6$ (matches $1+3x+6x^{2}+\\\\dots$); for $n=5$: $6\\\\cdot7/2=21$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Recall $\\\\binom{-m}{r}=(-1)^{r}\\\\binom{m+r-1}{r}$.",
+    "The coefficient is $\\\\binom{n+2}{2}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "A2-06-012",
+  "chapter": "A2-06",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1991,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "integration",
+    "trigonometric substitution",
+    "definite integral"
+  ],
+  "methods": [
+    "substitution $x=a\\sin\\theta$",
+    "changing limits",
+    "double-angle formula"
+  ],
+  "statement": "Use the substitution $x=a\\\\sin\\\\theta$ to evaluate $\\\\int_{0}^{a}\\\\sqrt{a^{2}-x^{2}}\\\\,dx$, and show the result is $\\\\frac{\\\\pi a^{2}}{4}$.",
+  "solution": "With $x=a\\\\sin\\\\theta$, $dx=a\\\\cos\\\\theta\\\\,d\\\\theta$ and $\\\\sqrt{a^{2}-x^{2}}=a\\\\cos\\\\theta$ (for $\\\\theta\\\\in[0,\\\\pi/2]$). Limits $0\\\\to 0$, $a\\\\to\\\\pi/2$. Integral $=\\\\int_{0}^{\\\\pi/2}a^{2}\\\\cos^{2}\\\\theta\\\\,d\\\\theta=a^{2}\\\\int_{0}^{\\\\pi/2}\\\\frac{1+\\\\cos 2\\\\theta}{2}d\\\\theta=a^{2}[\\\\theta/2+\\\\sin2\\\\theta/4]_{0}^{\\\\pi/2}=\\\\frac{\\\\pi a^{2}}{4}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Let $x=a\\\\sin\\\\theta$ so the square root becomes $a\\\\cos\\\\theta$.",
+    "Use $\\\\cos^{2}\\\\theta=(1+\\\\cos2\\\\theta)/2$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

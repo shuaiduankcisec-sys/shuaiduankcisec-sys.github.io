@@ -1,0 +1,30 @@
+{
+  "id": "A2-08-013",
+  "chapter": "A2-08",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "numerical methods",
+    "fixed point iteration",
+    "convergence"
+  ],
+  "methods": [
+    "fixed-point iteration",
+    "showing a root exists",
+    "iterating"
+  ],
+  "statement": "The equation $x=\\\\cos x$ has a root $\\\\alpha\\\\approx 0.74$. (i) Show there is a root in $[0,1]$. (ii) Starting from $x_{0}=1$, apply the iteration $x_{n+1}=\\\\cos x_{n}$ twice and state $x_{2}$. (iii) Explain why the iteration converges.",
+  "solution": "(i) Let $g(x)=x-\\\\cos x$; $g(0)=-1<0$, $g(1)=1-\\\\cos1>0$, so a root lies in $(0,1)$. (ii) $x_{1}=\\\\cos 1\\\\approx 0.5403$, $x_{2}=\\\\cos(0.5403)\\\\approx 0.8576$. (iii) Since $|g'(x)|=|\\\\sin x|<1$ near the root, the fixed-point iteration converges by the contraction condition.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use a sign change of $x-\\\\cos x$ on $[0,1]$.",
+    "Apply $x_{n+1}=\\\\cos x_{n}$ twice."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]"
+}

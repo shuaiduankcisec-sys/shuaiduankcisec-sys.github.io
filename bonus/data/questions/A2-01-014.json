@@ -1,0 +1,30 @@
+{
+  "id": "A2-01-014",
+  "chapter": "A2-01",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1998,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "inverse functions",
+    "range",
+    "monotonicity"
+  ],
+  "methods": [
+    "turning equation into quadratic in $x$",
+    "discriminant",
+    "restricting domain"
+  ],
+  "statement": "Let $f(x)=\\\\frac{2x}{1+x^{2}}$ for $x\\\\ge 0$. (i) Show that the range of $f$ is $[0,1]$ and that $f$ is increasing on $[0,1]$ and decreasing on $[1,\\\\infty)$. (ii) Find the inverse function of $f$ on $[0,1]$.",
+  "solution": "(i) $f'(x)=\\\\frac{2(1+x^{2})-2x(2x)}{(1+x^{2})^{2}}=\\\\frac{2(1-x^{2})}{(1+x^{2})^{2}}$, which is positive on $[0,1)$ and negative on $(1,\\\\infty)$; so $f$ increases on $[0,1]$ and decreases on $[1,\\\\infty)$. With $f(0)=0$ and $f(1)=1$ and $f(x)\\\\to 0$ as $x\\\\to\\\\infty$, the range is $[0,1]$. (ii) Set $y=2x/(1+x^{2})$: then $yx^{2}-2x+y=0$, so $x=\\\\frac{1\\\\pm\\\\sqrt{1-y^{2}}}{y}$; on the increasing branch $[0,1]$ we take the smaller root $x=\\\\frac{1-\\\\sqrt{1-y^{2}}}{y}$ (the larger root gives the decreasing branch).",
+  "solutionStatus": "full",
+  "hints": [
+    "Find where $f'(x)$ changes sign.",
+    "Solve $y=2x/(1+x^{2})$ as a quadratic in $x$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}
