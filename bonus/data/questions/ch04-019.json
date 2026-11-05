@@ -1,0 +1,30 @@
+{
+  "id": "ch04-019",
+  "chapter": 4,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2001,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "rational functions",
+    "even functions",
+    "inverse functions"
+  ],
+  "methods": [
+    "finding range",
+    "checking evenness",
+    "inverting a function"
+  ],
+  "statement": "Let $h(x)=\\frac{x^{2}-4}{x^{2}+4}$. (i) State the domain and range of $h$. (ii) Show that $h$ is an even function. (iii) Find $h^{-1}(y)$ for $y$ in the range, and state the domain of the inverse.",
+  "solution": "(i) Domain all real $x$. Writing $h=\\frac{t-4}{t+4}=1-\\frac{8}{t+4}$ with $t=x^{2}\\ge 0$: as $t$ goes $0\\to\\infty$, $h$ goes $-1\\to 1$ (not reaching 1). Range $[-1,1)$. (ii) $h(-x)=\\frac{(-x)^{2}-4}{(-x)^{2}+4}=h(x)$, so even. (iii) $y=\\frac{x^{2}-4}{x^{2}+4}\\Rightarrow x^{2}(y-1)=-4-4y\\Rightarrow x^{2}=\\frac{4+4y}{1-y}$, so $h^{-1}(y)=\\sqrt{\\frac{4+4y}{1-y}}$ (taking the non-negative branch), domain $y\\in[-1,1)$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Set t=x^2 and study the resulting rational function.",
+    "Solve for x^2 to invert."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

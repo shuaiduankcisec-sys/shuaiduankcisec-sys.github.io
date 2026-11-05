@@ -1,0 +1,30 @@
+{
+  "id": "ch12-020",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1993,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "exponential equations",
+    "logarithm laws",
+    "existence of root"
+  ],
+  "methods": [
+    "solving exponentials",
+    "logarithm properties",
+    "monotonicity argument"
+  ],
+  "statement": "(i) Solve $2^{x}=5$ exactly and give the approximate value. (ii) Solve $\\ln(x+1)+\\ln(x-1)=\\ln 3$. (iii) Show that $e^{x}=x^{2}$ has exactly one real root and that it is negative.",
+  "solution": "(i) $x=\\frac{\\ln 5}{\\ln 2}=\\log_{2}5\\approx 2.3219$. (ii) $\\ln((x+1)(x-1))=\\ln 3\\Rightarrow x^{2}-1=3\\Rightarrow x^{2}=4$, and $x>1$ is required, so $x=2$. (iii) Let $h(x)=e^{x}-x^{2}$. For $x>0$, $h'(x)=e^{x}-2x$ has minimum at $x=\\ln 2$ with value $2-2\\ln 2>0$, so $h$ is increasing on $[0,\\infty)$ with $h(0)=1>0$; thus no positive root. For $x<0$, $h'(x)=e^{x}-2x>0$ (both terms positive), so $h$ increases from $-\\infty$ (as $x\\to-\\infty$) to $h(0)=1$, crossing zero exactly once. Hence exactly one real root, and it is negative.",
+  "solutionStatus": "full",
+  "hints": [
+    "Take logs for the first equation.",
+    "Study h(x)=e^x - x^2 on each sign of x."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

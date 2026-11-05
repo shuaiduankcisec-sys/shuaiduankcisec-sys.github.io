@@ -1,0 +1,30 @@
+{
+  "id": "A2-02-016",
+  "chapter": "A2-02",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2002,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "negative binomial",
+    "series multiplication",
+    "coefficient extraction"
+  ],
+  "methods": [
+    "binomial expansion with negative index",
+    "multiplying series",
+    "coefficient"
+  ],
+  "statement": "(i) Find the first four terms in the expansion of $(1+2x)^{-1}$ in ascending powers of $x$. (ii) Hence find the coefficient of $x^{5}$ in $(1+2x)^{-1}(1-x)^{2}$.",
+  "solution": "(i) $(1+2x)^{-1}=1-2x+4x^{2}-8x^{3}+\\cdots$ (geometric series with ratio $-2x$). (ii) $(1-x)^{2}=1-2x+x^{2}$. The coefficient of $x^{5}$ in the product is $\\sum_{i=0}^{5}a_{i}b_{5-i}$ where $a_{i}=(-2)^{i}$ and $b_{0}=1,b_{1}=-2,b_{2}=1,b_{j}=0$ for $j>2$. Only $i=3,4,5$ contribute: $a_{3}b_{2}+a_{4}b_{1}+a_{5}b_{0}=(-8)(1)+(16)(-2)+(-32)(1)=-8-32-32=-72$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write (1+2x)^{-1} as a geometric series.",
+    "Convolve the two series up to x^5."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

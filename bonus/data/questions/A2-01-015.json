@@ -1,0 +1,30 @@
+{
+  "id": "A2-01-015",
+  "chapter": "A2-01",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "function composition",
+    "commuting functions",
+    "solving equations"
+  ],
+  "methods": [
+    "composing functions",
+    "expanding polynomials",
+    "substitution"
+  ],
+  "statement": "Let $f(x)=x^{3}-3x$ and $g(x)=x^{2}-2$. (i) Find $(f\\circ g)(x)$ and $(g\\circ f)(x)$. (ii) Show that $f(g(x))=g(f(x))$ for these functions. (iii) Find all real $x$ such that $f(g(x))=0$.",
+  "solution": "(i) $f(g(x))=(x^{2}-2)^{3}-3(x^{2}-2)=x^{6}-6x^{4}+12x^{2}-8-3x^{2}+6=x^{6}-6x^{4}+9x^{2}-2$. $g(f(x))=(x^{3}-3x)^{2}-2=x^{6}-6x^{4}+9x^{2}-2$. (ii) They are equal, as shown. (iii) $x^{6}-6x^{4}+9x^{2}-2=0$. Set $u=x^{2}$: $u^{3}-6u^{2}+9u-2=0$. $u=2$ is a root; factorising $(u-2)(u^{2}-4u+1)=0$ gives $u=2,\\ 2\\pm\\sqrt{3}$. Hence $x=\\pm\\sqrt{2},\\ \\pm\\sqrt{2+\\sqrt{3}},\\ \\pm\\sqrt{2-\\sqrt{3}}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand both compositions fully.",
+    "Substitute u=x^2 to solve the sextic."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

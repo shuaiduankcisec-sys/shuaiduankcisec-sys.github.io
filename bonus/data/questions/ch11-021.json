@@ -1,0 +1,31 @@
+{
+  "id": "ch11-021",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "graph of sine",
+    "trigonometric equations",
+    "compound angle",
+    "max value"
+  ],
+  "methods": [
+    "sketching transformed sine",
+    "solving sine equations",
+    "R-form for max"
+  ],
+  "statement": "(i) Write $f(x)=2\\sin(x+\\frac{\\pi}{6})+\\cos x$ as a single sine-plus-cosine combination and find its greatest value. (ii) Solve $2\\sin(x+\\frac{\\pi}{6})=1$ for $0\\le x\\le 2\\pi$. (iii) State the maximum of $f(x)$.",
+  "solution": "(i) $2\\sin(x+\\frac{\\pi}{6})=2(\\sin x\\cos\\frac{\\pi}{6}+\\cos x\\sin\\frac{\\pi}{6})=\\sqrt{3}\\sin x+\\cos x$, so $f(x)=\\sqrt{3}\\sin x+2\\cos x$. Its greatest value is $\\sqrt{(\\sqrt{3})^{2}+2^{2}}=\\sqrt{7}$. (ii) $\\sin(x+\\frac{\\pi}{6})=\\frac12\\Rightarrow x+\\frac{\\pi}{6}=\\frac{\\pi}{6},\\frac{5\\pi}{6},\\frac{13\\pi}{6}$ (within range), giving $x=0,\\frac{2\\pi}{3},2\\pi$. (iii) Maximum of $f$ is $\\sqrt{7}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand the shifted sine.",
+    "Use the R-method for the maximum."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

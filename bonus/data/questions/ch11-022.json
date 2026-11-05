@@ -1,0 +1,30 @@
+{
+  "id": "ch11-022",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1998,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "triple-angle identity",
+    "trigonometric equations",
+    "root counting"
+  ],
+  "methods": [
+    "proving sin3theta",
+    "reducing a cubic in sine",
+    "counting solutions"
+  ],
+  "statement": "(i) Prove that $\\sin 3\\theta = 3\\sin\\theta-4\\sin^{3}\\theta$. (ii) Hence solve $8\\sin^{3}\\theta-6\\sin\\theta+1=0$ for $0\\le\\theta\\le\\pi$. (iii) Show that among the solutions there is exactly one in $(0,\\frac{\\pi}{6})$.",
+  "solution": "(i) $\\sin 3\\theta=\\sin(2\\theta+\\theta)=\\sin2\\theta\\cos\\theta+\\cos2\\theta\\sin\\theta=2\\sin\\theta\\cos^{2}\\theta+(1-2\\sin^{2}\\theta)\\sin\\theta=2\\sin\\theta(1-\\sin^{2}\\theta)+\\sin\\theta-2\\sin^{3}\\theta=3\\sin\\theta-4\\sin^{3}\\theta$. (ii) Using the identity, $8\\sin^{3}\\theta-6\\sin\\theta=-2\\sin 3\\theta$, so the equation becomes $-2\\sin 3\\theta+1=0\\Rightarrow \\sin 3\\theta=\\frac12$. For $\\theta\\in[0,\\pi]$, $3\\theta\\in[0,3\\pi]$: $3\\theta=\\frac{\\pi}{6},\\frac{5\\pi}{6},\\frac{13\\pi}{6},\\frac{17\\pi}{6}$, giving $\\theta=\\frac{\\pi}{18},\\frac{5\\pi}{18},\\frac{13\\pi}{18},\\frac{17\\pi}{18}$. (iii) $\\frac{\\pi}{18}<\\frac{\\pi}{6}$ and each of the others exceeds $\\frac{\\pi}{6}$, so exactly one lies in $(0,\\frac{\\pi}{6})$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand sin(2theta+theta).",
+    "Rewrite the cubic using the triple-angle identity."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

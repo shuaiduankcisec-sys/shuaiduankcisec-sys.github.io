@@ -1,0 +1,30 @@
+{
+  "id": "ch09-020",
+  "chapter": 9,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "circle equation",
+    "tangent to a circle",
+    "line intersection"
+  ],
+  "methods": [
+    "distance formula",
+    "perpendicular gradient",
+    "intersection of lines"
+  ],
+  "statement": "A circle has centre $C(2,3)$ and passes through $P(5,7)$. (i) Find its radius and equation. (ii) Find the equation of the tangent at $P$. (iii) Find where this tangent meets the line $x=0$. (iv) Show that the tangent is perpendicular to the radius $CP$ by verifying that the product of their gradients is $-1$.",
+  "solution": "(i) $r^{2}=(5-2)^{2}+(7-3)^{2}=9+16=25$, so $r=5$ and $(x-2)^{2}+(y-3)^{2}=25$. (ii) Radius $CP$ has gradient $\\frac{7-3}{5-2}=\\frac43$, so tangent gradient is $-\\frac34$. Tangent: $y-7=-\\frac34(x-5)$. (iii) At $x=0$: $y=7+\\frac{15}{4}=\\frac{43}{4}$. Point $(0,\\frac{43}{4})$. (iv) Gradient of radius $CP$ is $\\frac43$ and gradient of tangent is $-\\frac34$; their product is $\\frac43\\cdot(-\\frac34)=-1$, confirming perpendicularity.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the distance formula for the radius.",
+    "The tangent is perpendicular to the radius."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

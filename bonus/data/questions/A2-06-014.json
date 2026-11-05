@@ -1,0 +1,30 @@
+{
+  "id": "A2-06-014",
+  "chapter": "A2-06",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "integration by parts",
+    "definite integral",
+    "power-reduction"
+  ],
+  "methods": [
+    "integration by parts",
+    "evaluating definite integrals",
+    "sin^2 identity"
+  ],
+  "statement": "(i) Evaluate $\\int x e^{x}\\,dx$ using integration by parts. (ii) Hence find $\\int_{0}^{1}x e^{x}\\,dx$. (iii) Evaluate $\\int_{0}^{\\pi/2}\\sin^{2}x\\,dx$.",
+  "solution": "(i) Let $u=x,dv=e^{x}dx$: $\\int x e^{x}dx=x e^{x}-e^{x}+C=e^{x}(x-1)+C$. (ii) $[e^{x}(x-1)]_{0}^{1}=(0)-(-1)=1$. (iii) $\\sin^{2}x=\\frac{1-\\cos 2x}{2}$; $\\int_{0}^{\\pi/2}=\\bigl[\\frac{x}{2}-\\frac{\\sin 2x}{4}\\bigr]_{0}^{\\pi/2}=\\frac{\\pi}{4}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Choose u=x for integration by parts.",
+    "Use the half-angle identity for sin^2."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

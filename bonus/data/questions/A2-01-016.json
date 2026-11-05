@@ -1,0 +1,30 @@
+{
+  "id": "A2-01-016",
+  "chapter": "A2-01",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1998,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "self-inverse Mobius maps",
+    "fixed points",
+    "matrix of a map"
+  ],
+  "methods": [
+    "composing rational functions",
+    "condition for self-inverse",
+    "solving fixed points"
+  ],
+  "statement": "A map $h(x)=\\frac{ax+b}{cx+d}$. (i) Show that $h$ is its own inverse (assuming it is not the identity) precisely when $a+d=0$. (ii) For $h(x)=\\frac{2x+1}{x-2}$, verify it is self-inverse. (iii) Find its fixed points.",
+  "solution": "(i) $h(h(x))=x$ means the matrix $\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}$ squares to a scalar multiple of the identity. Computing, $h(h(x))=\\frac{(a^{2}+bc)x+b(a+d)}{c(a+d)x+(bc+d^{2})}$. For this to equal $x$ identically we need $c(a+d)=0$ and $b(a+d)=0$ and $a^{2}+bc=bc+d^{2}$. If $a+d\\neq0$ then $b=c=0$ and $a^{2}=d^{2}$, giving $h(x)=a/d$; self-inverse forces $a/d=-1$, i.e. $a+d=0$ again. So the required condition is $a+d=0$. (ii) $h(h(x))=\\frac{2\\frac{2x+1}{x-2}+1}{\\frac{2x+1}{x-2}-2}=\\frac{4x+2+x-2}{2x+1-2x+4}=\\frac{5x}{5}=x$. (iii) $\\frac{2x+1}{x-2}=x\\Rightarrow x^{2}-4x-1=0$, so $x=2\\pm\\sqrt{5}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Compose h with itself and compare with x.",
+    "Equate coefficients after clearing denominators."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

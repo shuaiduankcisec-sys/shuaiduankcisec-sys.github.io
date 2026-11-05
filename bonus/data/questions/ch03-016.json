@@ -1,0 +1,30 @@
+{
+  "id": "ch03-016",
+  "chapter": 3,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1991,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "factor theorem",
+    "remainder theorem",
+    "cubic equations"
+  ],
+  "methods": [
+    "factor theorem",
+    "polynomial division",
+    "remainder theorem"
+  ],
+  "statement": "The polynomial $p(x)=x^{3}-3x^{2}-4x+12$. (i) Show that $x=2$ is a root and factorise $p(x)$ completely. (ii) Find the remainder when $p(x)$ is divided by $x^{2}-1$. (iii) Solve $p(x)=0$.",
+  "solution": "(i) $p(2)=8-12-8+12=0$. Dividing by $(x-2)$ gives $x^{2}-x-6=(x-3)(x+2)$, so $p(x)=(x-2)(x-3)(x+2)$. (ii) Write $p(x)=Q(x)(x^{2}-1)+ax+b$. Then $p(1)=a+b=6$ and $p(-1)=-a+b=12$, so $b=9,a=-3$; remainder $-3x+9$. (iii) Roots are $x=2,3,-2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the factor theorem at x=2.",
+    "Use the remainder theorem with x=1 and x=-1."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

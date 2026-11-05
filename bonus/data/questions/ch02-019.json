@@ -1,0 +1,30 @@
+{
+  "id": "ch02-019",
+  "chapter": 2,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1998,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "quadratics",
+    "completing the square",
+    "discriminant"
+  ],
+  "methods": [
+    "completing the square",
+    "symmetric root sums",
+    "discriminant bounds"
+  ],
+  "statement": "Consider $x^{2}-2kx+2k^{2}-3=0$. (i) By completing the square as $(x-k)^{2}+(k^{2}-3)=0$, find the range of real $k$ for which the equation has real roots. (ii) Let the roots be $\\alpha,\\beta$. Show that $\\alpha^{2}+\\beta^{2}$ is independent of $k$ and find its value. (iii) Show that whenever the roots are real, $|\\alpha-\\beta|\\le 2\\sqrt{3}$.",
+  "solution": "(i) $(x-k)^{2}=3-k^{2}$, so real roots require $3-k^{2}\\ge 0$, i.e. $|k|\\le \\sqrt{3}$. (ii) $\\alpha+\\beta=2k$, $\\alpha\\beta=2k^{2}-3$; thus $\\alpha^{2}+\\beta^{2}=(2k)^{2}-2(2k^{2}-3)=6$, independent of $k$. (iii) $(\\alpha-\\beta)^{2}=(\\alpha+\\beta)^{2}-4\\alpha\\beta=4k^{2}-4(2k^{2}-3)=12-4k^{2}\\le 12$, so $|\\alpha-\\beta|\\le \\sqrt{12}=2\\sqrt{3}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Complete the square to read off the condition.",
+    "Express alpha^2+beta^2 via the sum and product."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

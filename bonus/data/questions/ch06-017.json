@@ -1,0 +1,30 @@
+{
+  "id": "ch06-017",
+  "chapter": 6,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1997,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "optimisation",
+    "maximising area",
+    "differentiation"
+  ],
+  "methods": [
+    "forming an area function",
+    "differentiating to optimise",
+    "stationary point"
+  ],
+  "statement": "A rectangular field is bounded on one side by a wall. 100 m of fence is used for the other three sides. If the side parallel to the wall has length $x$ m, (i) show that the enclosed area is $A=\\frac{x(100-x)}{2}$; (ii) find the value of $x$ that maximises $A$; (iii) find the maximum area.",
+  "solution": "(i) If the side parallel to the wall is $x$, the two perpendicular sides are each $y=\\frac{100-x}{2}$. Area $A=xy=\\frac{x(100-x)}{2}$. (ii) $\\frac{dA}{dx}=\\frac{100-2x}{2}=50-x$, zero at $x=50$. Since $A$ is a downward parabola, this gives the maximum. (iii) Maximum area $=\\frac{50\\cdot 50}{2}=1250\\ \\text{m}^{2}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Express the two equal sides in terms of x.",
+    "Differentiate the quadratic area."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

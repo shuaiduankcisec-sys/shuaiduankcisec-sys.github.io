@@ -1,0 +1,30 @@
+{
+  "id": "ch12-021",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2001,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "logarithm laws",
+    "exponential equations",
+    "ratio of logs"
+  ],
+  "methods": [
+    "logarithm arithmetic",
+    "substitution u=a^x",
+    "log ratio"
+  ],
+  "statement": "(i) Given $\\ln a=2$ and $\\ln b=-1$, find $\\ln(a^{3}b^{2})$. (ii) Solve $3^{2x}-4\\cdot 3^{x}+3=0$. (iii) Show that if $2^{x}=3^{y}$ then $\\frac{x}{y}=\\frac{\\ln 3}{\\ln 2}$.",
+  "solution": "(i) $\\ln(a^{3}b^{2})=3\\ln a+2\\ln b=3\\cdot2+2(-1)=4$. (ii) Let $u=3^{x}$: $u^{2}-4u+3=0\\Rightarrow u=1$ or $3$, so $x=0$ or $1$. (iii) $2^{x}=3^{y}\\Rightarrow x\\ln 2=y\\ln 3\\Rightarrow \\frac{x}{y}=\\frac{\\ln 3}{\\ln 2}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use log of a product and power.",
+    "Substitute u=3^x."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

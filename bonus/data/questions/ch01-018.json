@@ -1,0 +1,29 @@
+{
+  "id": "ch01-018",
+  "chapter": 1,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "surds",
+    "nested radicals",
+    "denesting"
+  ],
+  "methods": [
+    "matching rational and irrational parts",
+    "conjugate surds"
+  ],
+  "statement": "By writing $7+4\\sqrt{3}$ in the form $(a+b\\sqrt{3})^{2}$ with positive integers $a,b$, show that $\\sqrt{7+4\\sqrt{3}}=2+\\sqrt{3}$. Hence express $\\sqrt{7-4\\sqrt{3}}$ as a simple surd.",
+  "solution": "Suppose $(a+b\\sqrt{3})^{2}=a^{2}+3b^{2}+2ab\\sqrt{3}=7+4\\sqrt{3}$. Matching parts gives $a^{2}+3b^{2}=7$ and $2ab=4$, so $ab=2$. With positive integers, $a=2,b=1$ works ($4+3=7$ and $ab=2$). Hence $\\sqrt{7+4\\sqrt{3}}=2+\\sqrt{3}$. For $7-4\\sqrt{3}$: $(2-\\sqrt{3})^{2}=4-4\\sqrt{3}+3=7-4\\sqrt{3}$. Since $2>\\sqrt{3}$, $\\sqrt{7-4\\sqrt{3}}=2-\\sqrt{3}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Match the rational and irrational parts.",
+    "Use the conjugate expression."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

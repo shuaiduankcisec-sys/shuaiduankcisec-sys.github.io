@@ -1,0 +1,30 @@
+{
+  "id": "ch05-017",
+  "chapter": 5,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2000,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "circle through three points",
+    "tangent to a circle",
+    "circle equation"
+  ],
+  "methods": [
+    "general circle equation",
+    "gradient of radius and tangent",
+    "line intersection"
+  ],
+  "statement": "A circle passes through $(0,0)$, $(6,0)$ and $(0,8)$. (i) Find its centre and radius. (ii) Find the equation of the tangent to the circle at $(0,8)$. (iii) Find where this tangent meets the x-axis. (iv) Show that the point $(6,8)$ also lies on the circle.",
+  "solution": "(i) Let the circle be $x^{2}+y^{2}+ux+vy=0$ (since it passes through the origin). From $(6,0)$: $36+6u=0\\Rightarrow u=-6$. From $(0,8)$: $64+8v=0\\Rightarrow v=-8$. So $(x-3)^{2}+(y-4)^{2}=25$; centre $(3,4)$, radius $5$. (ii) Radius to $(0,8)$ has gradient $\\frac{8-4}{0-3}=-\\frac43$, so tangent gradient is $\\frac34$. Tangent: $y-8=\\frac34 x$, i.e. $y=\\frac34 x+8$. (iii) Meets x-axis at $y=0$: $\\frac34 x+8=0\\Rightarrow x=-\\frac{32}{3}$. Point $(-\\frac{32}{3},0)$. (iv) $(6-3)^{2}+(8-4)^{2}=9+16=25$, so $(6,8)$ lies on the circle.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the general circle equation with zero constant term.",
+    "The tangent is perpendicular to the radius."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

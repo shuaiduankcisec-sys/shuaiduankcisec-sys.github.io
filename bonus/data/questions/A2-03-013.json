@@ -1,0 +1,30 @@
+{
+  "id": "A2-03-013",
+  "chapter": "A2-03",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "sum-to-product",
+    "trigonometric equations",
+    "solving"
+  ],
+  "methods": [
+    "proving sum-to-product",
+    "product form",
+    "solving trig equations"
+  ],
+  "statement": "(i) Prove that $\\sin A+\\sin B=2\\sin\\frac{A+B}{2}\\cos\\frac{A-B}{2}$. (ii) Hence express $\\sin 5\\theta+\\sin 3\\theta$ as a product. (iii) Solve $\\sin 5\\theta+\\sin 3\\theta=\\sin\\theta$ for $0\\le\\theta\\le\\pi$.",
+  "solution": "(i) Add $\\sin A=\\sin(\\frac{A+B}{2}+\\frac{A-B}{2})$ and $\\sin B=\\sin(\\frac{A+B}{2}-\\frac{A-B}{2})$; the cosine terms double and the sine terms cancel, giving $2\\sin\\frac{A+B}{2}\\cos\\frac{A-B}{2}$. (ii) With $A=5\\theta,B=3\\theta$: $2\\sin 4\\theta\\cos\\theta$. (iii) $2\\sin4\\theta\\cos\\theta=\\sin\\theta$. Write $\\sin4\\theta=2\\sin2\\theta\\cos2\\theta=4\\sin\\theta\\cos\\theta\\cos2\\theta$, so $8\\sin\\theta\\cos^{2}\\theta\\cos2\\theta=\\sin\\theta$. Thus $\\sin\\theta=0$ or $8\\cos^{2}\\theta\\cos2\\theta=1$. $\\sin\\theta=0\\Rightarrow\\theta=0,\\pi$. The second gives $8c^{2}(2c^{2}-1)=1$ with $c=\\cos\\theta\\Rightarrow 16c^{4}-8c^{2}-1=0\\Rightarrow c^{2}=\\frac{1+\\sqrt{2}}{4}$ (positive root). So $\\cos\\theta=\\pm\\sqrt{\\frac{1+\\sqrt{2}}{4}}$, giving two more solutions in $[0,\\pi]$. Total five solutions.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use angle addition on (A+B)/2 and (A-B)/2.",
+    "Factor out sin theta."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

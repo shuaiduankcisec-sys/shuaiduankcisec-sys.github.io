@@ -1,0 +1,30 @@
+{
+  "id": "A2-05-013",
+  "chapter": "A2-05",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1997,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "quotient rule",
+    "maxima",
+    "limits"
+  ],
+  "methods": [
+    "quotient rule",
+    "classifying stationary points",
+    "standard limit"
+  ],
+  "statement": "(i) Use the quotient rule to differentiate $y=\\frac{\\ln x}{x}$ for $x>0$. (ii) Find the x-coordinate of its stationary point and determine its nature. (iii) Show that $\\lim_{x\\to\\infty}\\frac{\\ln x}{x}=0$.",
+  "solution": "(i) $y'=\\frac{(1/x)\\cdot x-\\ln x\\cdot 1}{x^{2}}=\\frac{1-\\ln x}{x^{2}}$. (ii) Stationary where $1-\\ln x=0\\Rightarrow x=e$. For $x<e$, $y'>0$; for $x>e$, $y'<0$, so it is a maximum. (iii) As $x\\to\\infty$, $\\ln x$ grows slower than any positive power of $x$; by L'Hopital, $\\lim\\frac{\\ln x}{x}=\\lim\\frac{1/x}{1}=0$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Apply the quotient rule carefully.",
+    "Use L'Hopital or growth comparison for the limit."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

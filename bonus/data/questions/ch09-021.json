@@ -1,0 +1,30 @@
+{
+  "id": "ch09-021",
+  "chapter": 9,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1999,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "intersection of circles",
+    "common chord",
+    "lens area"
+  ],
+  "methods": [
+    "solving circle equations",
+    "common chord length",
+    "circular-segment area"
+  ],
+  "statement": "Two circles: $x^{2}+y^{2}=25$ and $(x-6)^{2}+y^{2}=25$. (i) Find their intersection points. (ii) Find the length of their common chord. (iii) Find the area common to both circles.",
+  "solution": "(i) Subtracting gives $x^{2}-(x-6)^{2}=0\\Rightarrow 12x-36=0\\Rightarrow x=3$. Then $y^{2}=25-9=16$, so $y=\\pm4$. Intersections $(3,4)$ and $(3,-4)$. (ii) Common chord is the vertical segment from $(3,-4)$ to $(3,4)$, length $8$. (iii) Each circle has radius $5$ and centres $6$ apart. Half-angle $\\alpha=\\arccos(3/5)$. Common area $=2\\bigl(25\\alpha-12\\bigr)=50\\arccos(3/5)-24$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Subtract the two equations to find x.",
+    "Use the circular-segment formula for the overlap."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

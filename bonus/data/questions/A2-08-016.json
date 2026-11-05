@@ -1,0 +1,30 @@
+{
+  "id": "A2-08-016",
+  "chapter": "A2-08",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2003,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "trapezium rule",
+    "error",
+    "over/under estimate"
+  ],
+  "methods": [
+    "trapezium rule",
+    "comparing with exact value",
+    "concavity"
+  ],
+  "statement": "Use the trapezium rule with 4 strips to estimate $I=\\int_{0}^{1}e^{-x^{2}}dx$. (ii) The true value is about $0.7468$; find the error of the estimate. (iii) Explain whether the estimate over- or under-estimates.",
+  "solution": "(i) $h=0.25$. Points $x=0,0.25,0.5,0.75,1$ with $f=e^{-x^{2}}$: $1,\\ e^{-0.0625}\\approx0.9394,\\ e^{-0.25}\\approx0.7788,\\ e^{-0.5625}\\approx0.5698,\\ e^{-1}\\approx0.3679$. $T=\\frac{0.25}{2}(1+2(0.9394+0.7788+0.5698)+0.3679)\\approx0.7430$. (ii) Error $\\approx0.7430-0.7468=-0.0038$. (iii) The estimate is an underestimate. (The function is concave near $0$ where the trapezium lies below the curve, and the overall effect is an underestimate.)",
+  "solutionStatus": "full",
+  "hints": [
+    "Compute the function at the 5 equally spaced points.",
+    "Compare with the known true value."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

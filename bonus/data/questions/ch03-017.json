@@ -1,0 +1,30 @@
+{
+  "id": "ch03-017",
+  "chapter": 3,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1999,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "factor theorem",
+    "algebraic division",
+    "cubic equations"
+  ],
+  "methods": [
+    "factor theorem",
+    "polynomial long division",
+    "solving cubics"
+  ],
+  "statement": "The polynomial $2x^{3}-3x^{2}-11x+6$ has a root at $x=3$. (i) Factorise it completely. (ii) Find the quotient and remainder when it is divided by $x^{2}+x-2$. (iii) Hence solve $2x^{3}-3x^{2}-11x+6=0$.",
+  "solution": "(i) Since $x=3$ is a root, $2x^{3}-3x^{2}-11x+6=(x-3)(2x^{2}+3x-2)=(x-3)(2x-1)(x+2)$. (ii) Dividing by $x^{2}+x-2$: $(x^{2}+x-2)(2x-5)=2x^{3}-3x^{2}-9x+10$; subtracting from the polynomial leaves $-2x-4$, so the quotient is $2x-5$ and the remainder is $-2x-4$. (iii) Roots are $x=3,\\ \\tfrac12,\\ -2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Factor out (x-3) by inspection.",
+    "Match coefficients in the division."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

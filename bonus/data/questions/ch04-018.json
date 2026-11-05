@@ -1,0 +1,30 @@
+{
+  "id": "ch04-018",
+  "chapter": 4,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "self-inverse functions",
+    "fixed points",
+    "graph sketching"
+  ],
+  "methods": [
+    "composing a function",
+    "solving fixed-point equations",
+    "asymptotes"
+  ],
+  "statement": "Let $f(x)=\\frac{3x+1}{x-3}$ for $x\\neq 3$. (i) Show that $f$ is its own inverse, i.e. $f(f(x))=x$. (ii) Find the fixed points of $f$ (solutions of $f(x)=x$). (iii) State the equations of the asymptotes of $y=f(x)$.",
+  "solution": "(i) $f(f(x))=\\frac{3\\frac{3x+1}{x-3}+1}{\\frac{3x+1}{x-3}-3}=\\frac{9x+3+x-3}{3x+1-3x+9}=\\frac{10x}{10}=x$. (ii) $f(x)=x\\Rightarrow \\frac{3x+1}{x-3}=x\\Rightarrow x^{2}-6x-1=0$, so $x=3\\pm\\sqrt{10}$. (iii) Vertical asymptote $x=3$; as $x\\to\\pm\\infty$, $f(x)\\to 3$, so horizontal asymptote $y=3$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Compose carefully and simplify the fraction.",
+    "Solve f(x)=x directly."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

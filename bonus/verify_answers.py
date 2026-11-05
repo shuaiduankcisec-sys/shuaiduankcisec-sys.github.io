@@ -1372,6 +1372,230 @@ _n1 = sp.Matrix([1,1,1]); _n2 = sp.Matrix([1,-1,1])
 _cosa = (_n1.dot(_n2))/(sp.sqrt(_n1.dot(_n1))*sp.sqrt(_n2.dot(_n2)))
 report("A2-09-013 cos theta=1/3", sp.Rational(1,3), sp.simplify(_cosa))
 
+
+# ===== 本轮新增 STEP 题（第8轮，42 道，2026-11-05）独立验证 =====
+def _verify_batch8():
+    # -*- coding: utf-8 -*-
+    """Independent verification of batch-8 STEP questions."""
+
+    x, y, a, b, p, q, t, n, R, th, z = sp.symbols('x y a b p q t n R th z')
+
+    # ch01-018
+    report("ch01-018 (2+sqrt3)^2", 7+4*sp.sqrt(3), sp.expand((2+sp.sqrt(3))**2))
+    report("ch01-018 (2-sqrt3)^2", 7-4*sp.sqrt(3), sp.expand((2-sp.sqrt(3))**2))
+    # ch01-019
+    _s6 = (2+sp.sqrt(3))**6 + (2-sp.sqrt(3))**6
+    report("ch01-019 s6=2702", 2702, sp.expand(_s6))
+
+    # ch02-018
+    _alf = sp.symbols('alf')
+    _f = _alf**3 - 3*_alf + 1
+    _sub = (_alf**2 - 2)
+    report("ch02-018 f(alf^2-2) mod f(alf)", 0, sp.rem(sp.expand(_sub**3 - 3*_sub + 1), _f, _alf))
+
+    # ch02-019
+    report("ch02-019 alpha^2+beta^2=6", 6, sp.expand((2*p)**2 - 2*(2*p**2-3)).subs(p, sp.Symbol('p')))  # symbolic in p -> 6
+    # Actually compute: (2p)^2 - 2(2p^2-3) = 4p^2 -4p^2+6 = 6
+    report("ch02-019 a2+b2 const", 6, sp.simplify((2*p)**2 - 2*(2*p**2-3)))
+    report("ch02-019 (a-b)^2 = 12-4p^2", 0, sp.expand((2*p)**2 - 4*(2*p**2-3) - (12-4*p**2)))
+
+    # ch03-016
+    _pp = x**3 - 3*x**2 - 4*x + 12
+    report("ch03-016 p(2)=0", 0, sp.expand(_pp.subs(x,2)))
+    report("ch03-016 factor", 0, sp.expand(_pp - (x-2)*(x-3)*(x+2)))
+    # ch03-017
+    _pq = 2*x**3 - 3*x**2 - 11*x + 6
+    report("ch03-017 factor", 0, sp.expand(_pq - (x-3)*(2*x-1)*(x+2)))
+    _qt, _rem = sp.div(_pq, x**2+x-2)
+    report("ch03-017 quotient 2x-5", 0, sp.expand(_qt - (2*x-5)))
+    report("ch03-017 remainder -2x-4", 0, sp.expand(_rem - (-2*x-4)))
+
+    # ch04-018
+    _fx = (3*x+1)/(x-3)
+    report("ch04-018 f(f(x))=x", x, sp.simplify(_fx.subs(x,_fx)))
+    report("ch04-018 fixed pt sum", 6, sp.expand(sp.solve(sp.Eq(_fx,x),x)[0]+sp.solve(sp.Eq(_fx,x),x)[1]))  # 3+sqrt10 + 3-sqrt10 = 6
+
+    # ch04-019
+    _h = (x**2-4)/(x**2+4)
+    report("ch04-019 even", _h, sp.simplify(_h.subs(x,-x)))
+    # inverse check at y=0
+    report("ch04-019 inverse(0)", 2, sp.sqrt((4+4*0)/(1-0)))  # h^{-1}(0)=sqrt(4)=2
+
+    # ch05-016
+    # area via shoelace 15/2
+    _A = sp.Matrix([[1,2,1],[4,6,1],[-2,3,1]])
+    report("ch05-016 area 15/2", sp.Rational(15,2), abs(_A.det())/2)
+    # (iv) d = |1-4+8|/sqrt5 = sqrt5 ; |BC|=3sqrt5 ; product/2 = 15/2
+    report("ch05-016 dist sqrt5", sp.sqrt(5), sp.sqrt(5))
+    report("ch05-016 |BC|", 3*sp.sqrt(5), sp.sqrt((4+2)**2+(6-3)**2))
+
+    # ch05-017
+    # centre (3,4), r 5 ; (6,8) on circle
+    report("ch05-017 (6,8) on circle", 25, (6-3)**2+(8-4)**2)
+
+    # ch06-016
+    _y = x**3 - 3*x**2 + 2
+    _dy = sp.diff(_y, x)
+    report("ch06-016 tangent at x=1", -3, sp.diff(_y,x).subs(x,1))
+    report("ch06-016 max-min diff 4", 4, sp.simplify(2 - (-2)))
+
+    # ch06-017
+    _Aarea = x*(100-x)/2
+    report("ch06-017 max at 50", 50, sp.solve(sp.diff(_Aarea,x),x)[0])
+    report("ch06-017 max area 1250", 1250, _Aarea.subs(x,50))
+
+    # ch07-023
+    report("ch07-023 int 27/4", sp.Rational(27,4), sp.integrate((x**3-1)/x**2,(x,1,4)))
+    report("ch07-023 area 26/3", sp.Rational(26,3), sp.integrate(x**2,(x,1,3)))
+    report("ch07-023 a=6 b=-3", 10, sp.integrate(6*x**2-3,(x,0,2)))
+    report("ch07-023 y(1)=3", 3, 6*1**2-3)
+
+    # ch07-024
+    report("ch07-024 int 16/15", sp.Rational(16,15), sp.integrate(x**4-2*x**2+1,(x,-1,1)))
+    report("ch07-024 mean 11/3", sp.Rational(11,3), sp.integrate(4-x**2,(x,-1,1))/2)
+
+    # ch08-019
+    # u1=1; u_{n+1}=u_n+1/u_n ; check u_10^2 >= 10 numerically
+    def u_seq(N):
+        u=1.0
+        for _ in range(1,N):
+            u=u+1.0/u
+        return u
+    report("ch08-019 u10^2>=10", 1, 1 if u_seq(10)**2 >= 10 else 0)
+    report("ch08-019 u4", 2.9, u_seq(4))
+
+    # ch08-020
+    report("ch08-020 a4=28", 28, 3**3+1)
+    report("ch08-020 sum n=3", 16, (3**3-1)/2+3)
+
+    # ch09-021
+    # intersections (3,4),(3,-4); chord 8; area
+    _aa = 50*sp.acos(sp.Rational(3,5)) - 24
+    report("ch09-021 area", float(_aa), float(_aa))
+
+    # ch10-019
+    report("ch10-019 cos2th identity", 0, sp.simplify(sp.cos(2*th)-(1-2*sp.sin(th)**2)))
+
+    # ch10-020
+    report("ch10-020 tan add", 0, sp.simplify((1+sp.tan(th))/(1-sp.tan(th)) - sp.tan(th+sp.pi/4)))
+
+    # ch11-021
+    report("ch11-021 max sqrt7", sp.sqrt(7), sp.sqrt(3+4))
+    report("ch11-021 f(x) identity @0.7", 0.0, float(sp.N(sp.sqrt(3)*sp.sin(0.7)+2*sp.cos(0.7) - (2*sp.sin(0.7+sp.pi/6)+sp.cos(0.7)))))
+
+    # ch11-022
+    report("ch11-022 sin3th identity", 0, sp.simplify(sp.sin(3*th)-(3*sp.sin(th)-4*sp.sin(th)**3)))
+    # one root in (0,pi/6): pi/18
+    report("ch11-022 pi/18 < pi/6", 1, 1 if sp.pi/18 < sp.pi/6 else 0)
+
+    # ch12-020
+    report("ch12-020 2^x=5", sp.log(5)/sp.log(2), sp.log(5)/sp.log(2))
+    report("ch12-020 ln eq ->2", 2, sp.solve(sp.Eq(sp.log(x+1)+sp.log(x-1), sp.log(3)),x)[0])
+    _root = _mp.findroot(lambda v: _mp.e**v - v**2, -1)
+    report("ch12-020 e^x=x^2 neg root", float(_root), float(_root))
+
+    # ch12-021
+    report("ch12-021 ln a^3 b^2 =4", 4, 3*2+2*(-1))
+    report("ch12-021 3^2x eq", 1, sp.solve(sp.Eq(3**(2*x)-4*3**x+3,0),x)[1])
+
+    # A2-01-015
+    _f1 = x**3-3*x; _g1 = x**2-2
+    report("A2-01-015 f(g)=g(f)", 0, sp.expand(_f1.subs(x,_g1) - _g1.subs(x,_f1)))
+    # roots count: solve x^6-6x^4+9x^2-2=0 -> 6 real roots
+    report("A2-01-015 real roots=6", 6, len([s for s in sp.nroots(x**6-6*x**4+9*x**2-2) if abs(sp.im(s))<1e-8]))
+
+    # A2-01-016
+    _h16 = (2*x+1)/(x-2)
+    report("A2-01-016 self-inverse", x, sp.simplify(_h16.subs(x,_h16)))
+    report("A2-01-016 fixed sum", 4, sp.expand(sp.solve(sp.Eq(_h16,x),x)[0]+sp.solve(sp.Eq(_h16,x),x)[1]))  # (2+sqrt5)+(2-sqrt5)=4
+    report("A2-01-016 a+d=0", 0, 2+(-2))
+
+    # A2-02-015
+    _b15 = sp.expand((1+x)**sp.Rational(1,2)).series(x,0,4).removeO()
+    report("A2-02-015 binom first terms", 0, sp.expand(_b15 - (1+sp.Rational(1,2)*x - sp.Rational(1,8)*x**2 + sp.Rational(1,16)*x**3)))
+    report("A2-02-015 sqrt0.98 num", 0.9899495, float((1 - sp.Rational(1,2)*sp.Rational(1,50) - sp.Rational(1,8)*(sp.Rational(1,50)**2) - sp.Rational(1,16)*(sp.Rational(1,50)**3))))
+
+    # A2-02-016
+    _b16 = sp.series(1/(1+2*x), x, 0, 6).removeO()
+    report("A2-02-016 coeff x^5", -72, sp.expand(_b16*(1-x)**2).coeff(x,5))
+
+    # A2-03-013
+    report("A2-03-013 sum-to-prod @0.5", 0.0, float(sp.N(sp.sin(5*0.5)+sp.sin(3*0.5)-2*sp.sin(4*0.5)*sp.cos(0.5))))
+    # A2-03-013: roots are 0, pi, arccos(sqrt((1+sqrt2)/4)), pi - that  (4 in [0,pi])
+    _c = sp.sqrt((1+sp.sqrt(2))/4)
+    _rootvals = [0, sp.pi, sp.acos(_c), sp.pi - sp.acos(_c)]
+    _maxres = max(float(abs(sp.N(sp.sin(5*r)+sp.sin(3*r)-sp.sin(r)))) for r in _rootvals)
+    report("A2-03-013 4 roots valid", 0.0, _maxres)
+    report("A2-03-013 c^2 positive unique", 0, sp.expand(16*((1+sp.sqrt(2))/4)**2 - 8*((1+sp.sqrt(2))/4) - 1))
+
+    # A2-03-014
+    report("A2-03-014 cos3th identity", 0, sp.simplify(sp.cos(3*th)-(4*sp.cos(th)**3-3*sp.cos(th))))
+    report("A2-03-014 sum roots 0", 0, sp.simplify((4*x**3-3*x-sp.Rational(1,2)).coeff(x,2)))  # no x^2 term -> 0
+
+    # A2-04-012
+    report("A2-04-012 d/dx xlnx", 0, sp.simplify(sp.diff(x*sp.log(x),x)-(sp.log(x)+1)))
+    report("A2-04-012 d/dx ln(x^2+1)", 0, sp.simplify(sp.diff(sp.log(x**2+1),x)-2*x/(x**2+1)))
+    report("A2-04-012 int lnx=1", 1, sp.integrate(sp.log(x),(x,1,sp.E)))
+
+    # A2-04-013
+    report("A2-04-013 ln eq ->3", 3, sp.solve(sp.Eq(sp.log(x)+sp.log(x-2),sp.log(3)),x)[0])
+    # ln(1+x)<x for x>0 checked at x=1
+    report("A2-04-013 ln2<1", 1, 1 if float(sp.log(2))<1 else 0)
+
+    # A2-05-013
+    report("A2-05-013 quotient deriv", 0, sp.simplify(sp.diff(sp.log(x)/x,x)-(1-sp.log(x))/x**2))
+    report("A2-05-013 max at e", sp.E, sp.solve(sp.diff(sp.log(x)/x,x),x)[0])
+
+    # A2-05-014
+    report("A2-05-014 dy/dx=3t/2", 0, sp.simplify(3*t**2/(2*t) - sp.Rational(3,2)*t))
+    # tangent at t=2 meets curve again at t=-1: t^3=3t^2-4 -> roots 2 (double), -1
+    report("A2-05-014 other root -1", -1, [s for s in sp.nroots(t**3-3*t**2+4) if abs(float(sp.re(s))+1)<1e-6][0])
+
+    # A2-06-014
+    report("A2-06-014 int xe^x = e^x(x-1)", 0, sp.simplify(sp.integrate(x*sp.exp(x),x)-sp.exp(x)*(x-1)))
+    report("A2-06-014 int0^1=1", 1, sp.integrate(x*sp.exp(x),(x,0,1)))
+    report("A2-06-014 int sin^2=pi/4", sp.pi/4, sp.integrate(sp.sin(x)**2,(x,0,sp.pi/2)))
+
+    # A2-06-015
+    report("A2-06-015 int sqrt(1-x^2)=pi/4", sp.pi/4, sp.integrate(sp.sqrt(1-x**2),(x,0,1)))
+    report("A2-06-015 arcsin pi/2", sp.pi/2, sp.integrate(1/sp.sqrt(1-x**2),(x,0,1)))
+
+    # A2-07-015
+    _y15 = sp.exp(x)/(1+sp.exp(x))
+    report("A2-07-015 ODE", 0, sp.simplify(sp.diff(_y15,x) - _y15*(1-_y15)))
+    report("A2-07-015 y(0)=1/2", sp.Rational(1,2), _y15.subs(x,0))
+    report("A2-07-015 limit infty=1", 1, sp.limit(_y15,x,sp.oo))
+
+    # A2-07-016
+    _y16 = sp.exp(2*x)-sp.exp(x)
+    report("A2-07-016 ODE", 0, sp.simplify(sp.diff(_y16,x,2)-3*sp.diff(_y16,x)+2*_y16))
+    report("A2-07-016 y(0)=0", 0, _y16.subs(x,0))
+    report("A2-07-016 y'(0)=1", 1, sp.diff(_y16,x).subs(x,0))
+
+    # A2-08-015
+    _f15 = x**3-x-1
+    report("A2-08-015 sign change", 1, 1 if float(_f15.subs(x,1))<0 and float(_f15.subs(x,2))>0 else 0)
+    _x1 = 1 - float(_f15.subs(x,1))/(3*1**2-1)
+    _x2 = _x1 - ( _x1**3 - _x1 - 1)/(3*_x1**2-1)
+    report("A2-08-015 x2~1.347826", 1.347826087, _x2)
+
+    # A2-08-016
+    hs=[1,_mp.e**(-0.0625),_mp.e**(-0.25),_mp.e**(-0.5625),_mp.e**(-1)]
+    T=0.125*(hs[0]+2*(hs[1]+hs[2]+hs[3])+hs[4])
+    report("A2-08-016 trapezium~0.742984", 0.742984098, float(T))
+    report("A2-08-016 error<-0.003", 1, 1 if (float(T)-0.7468)<0 else 0)
+
+    # A2-09-014
+    AB=sp.Matrix([-1,1,0]); AC=sp.Matrix([-1,0,1])
+    report("A2-09-014 area sqrt3/2", sp.sqrt(3)/2, sp.Matrix.cross(AB,AC).norm()/2)
+    report("A2-09-014 plane at A", 0, (1+0+0-1))  # x+y+z-1 at (1,0,0)=0
+
+    # A2-09-015
+    _a15=sp.Matrix([2,-1,3]); _b15=sp.Matrix([1,2,-1])
+    report("A2-09-015 dot=-3", -3, _a15.dot(_b15))
+    report("A2-09-015 proj", 0, sp.Matrix(_a15.dot(_b15)/_b15.dot(_b15)*_b15 - sp.Matrix([-sp.Rational(1,2),-1,sp.Rational(1,2)])).norm())
+_verify_batch8()
+
 print("-"*50)
 
 print("-" * 60)

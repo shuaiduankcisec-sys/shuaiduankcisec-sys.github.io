@@ -1,0 +1,30 @@
+{
+  "id": "A2-02-015",
+  "chapter": "A2-02",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "binomial expansion",
+    "fractional powers",
+    "approximation"
+  ],
+  "methods": [
+    "binomial theorem for fractional index",
+    "substitution",
+    "estimation"
+  ],
+  "statement": "(i) Write down the first four terms of the binomial expansion of $(1+x)^{1/2}$. (ii) Hence find the expansion of $\\sqrt{1-x}$ up to the term in $x^{3}$. (iii) Use it to estimate $\\sqrt{0.98}$.",
+  "solution": "(i) $(1+x)^{1/2}=1+\\tfrac12 x+\\tfrac12(\\tfrac12-1)\\frac{x^{2}}{2}+\\tfrac12(\\tfrac12-1)(\\tfrac12-2)\\frac{x^{3}}{6}=1+\\tfrac12 x-\\tfrac18 x^{2}+\\tfrac1{16}x^{3}$. (ii) Replace $x$ by $-x$: $\\sqrt{1-x}=1-\\tfrac12 x-\\tfrac18 x^{2}-\\tfrac1{16}x^{3}$. (iii) $\\sqrt{0.98}=\\sqrt{1-0.02}\\approx 1-0.01-0.00005-0.000000125=0.989949875$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Apply the generalized binomial theorem.",
+    "Substitute -x carefully."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ch10-020",
+  "chapter": 10,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2002,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "compound-angle formula",
+    "trigonometric equations",
+    "no-solution proof"
+  ],
+  "methods": [
+    "tangent addition formula",
+    "solving trigonometric equations",
+    "proof by contradiction"
+  ],
+  "statement": "(i) Prove that $\\frac{1+\\tan\\theta}{1-\\tan\\theta}=\\tan\\!\\left(\\theta+\\frac{\\pi}{4}\\right)$. (ii) Hence solve $\\frac{1+\\tan\\theta}{1-\\tan\\theta}=2$ for $0\\le\\theta<\\frac{\\pi}{2}$. (iii) Show that the equation in (ii) has no solution in $(\\frac{\\pi}{2},\\pi)$.",
+  "solution": "(i) $\\tan(\\theta+\\frac{\\pi}{4})=\\frac{\\tan\\theta+1}{1-\\tan\\theta}$. (ii) $\\tan(\\theta+\\frac{\\pi}{4})=2\\Rightarrow \\theta+\\frac{\\pi}{4}=\\arctan 2$, so $\\theta=\\arctan 2-\\frac{\\pi}{4}$ (which lies in $(0,\\frac{\\pi}{2})$). (iii) For $\\theta\\in(\\frac{\\pi}{2},\\pi)$, $\\tan\\theta<0$; write $\\tan\\theta=-t$ with $t>0$. Then $\\frac{1-t}{1+t}=2\\Rightarrow 1-t=2+2t\\Rightarrow -3t=1$, impossible for $t>0$. Hence no solution.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the tangent addition formula.",
+    "Set tan theta negative in the second interval."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

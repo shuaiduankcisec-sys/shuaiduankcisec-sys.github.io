@@ -1,0 +1,30 @@
+{
+  "id": "A2-06-015",
+  "chapter": "A2-06",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2000,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "trigonometric substitution",
+    "area",
+    "standard integral"
+  ],
+  "methods": [
+    "substitution x=sin theta",
+    "area of a quarter circle",
+    "arcsin integral"
+  ],
+  "statement": "(i) Use the substitution $x=\\sin\\theta$ to evaluate $\\int_{0}^{1}\\sqrt{1-x^{2}}\\,dx$. (ii) Hence state the area bounded by $y=\\sqrt{1-x^{2}}$ and the x-axis. (iii) Show that $\\int_{0}^{1}\\frac{1}{\\sqrt{1-x^{2}}}\\,dx=\\frac{\\pi}{2}$.",
+  "solution": "(i) $x=\\sin\\theta$, $dx=\\cos\\theta\\,d\\theta$, $\\sqrt{1-x^{2}}=\\cos\\theta$; limits $0\\to\\pi/2$. Integral $=\\int_{0}^{\\pi/2}\\cos^{2}\\theta\\,d\\theta=\\frac{\\pi}{4}$. (ii) This is exactly that area, a quarter of the unit circle: $\\frac{\\pi}{4}$. (iii) $\\int\\frac{dx}{\\sqrt{1-x^{2}}}=\\arcsin x$, so $[0,1]=\\arcsin 1-\\arcsin 0=\\frac{\\pi}{2}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Substitute x=sin theta and change limits.",
+    "Recognise the quarter-circle area."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

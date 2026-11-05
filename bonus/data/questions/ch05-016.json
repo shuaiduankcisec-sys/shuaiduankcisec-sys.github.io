@@ -1,0 +1,30 @@
+{
+  "id": "ch05-016",
+  "chapter": 5,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1993,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "perpendicular lines",
+    "triangle area",
+    "foot of perpendicular"
+  ],
+  "methods": [
+    "gradient of a line",
+    "shoelace area",
+    "projection onto a line"
+  ],
+  "statement": "The points $A(1,2)$, $B(4,6)$, $C(-2,3)$ form a triangle. (i) Find the equation of the line through $A$ perpendicular to $BC$. (ii) Find the area of triangle $ABC$. (iii) Find the coordinates of the foot of the perpendicular from $A$ to $BC$. (iv) Show that the same area is given by $\\tfrac12\\,|BC|\\,d$, where $d$ is the perpendicular distance from $A$ to $BC$, and verify it equals $\\tfrac{15}{2}$.",
+  "solution": "(i) Gradient of $BC$ is $\\frac{3-6}{-2-4}=\\frac12$, so the perpendicular gradient is $-2$. Through $A(1,2)$: $y-2=-2(x-1)$, i.e. $y=-2x+4$. (ii) Area $=\\frac12|1(6-3)+4(3-2)+(-2)(2-6)|=\\frac12|3+4+8|=\\frac{15}{2}$. (iii) Line $BC$: $y=\\frac12 x+4$. Intersect with $y=-2x+4$: $\\frac12 x+4=-2x+4\\Rightarrow x=0$, $y=4$. Foot is $(0,4)$. (iv) $|BC|=\\sqrt{(4+2)^{2}+(6-3)^{2}}=3\\sqrt{5}$. Line $BC$ is $x-2y+8=0$, so $d=\\frac{|1-4+8|}{\\sqrt{1+4}}=\\frac{5}{\\sqrt{5}}=\\sqrt{5}$. Then $\\frac12|BC|\\,d=\\frac12\\cdot 3\\sqrt{5}\\cdot\\sqrt{5}=\\frac{15}{2}$, agreeing with (ii).",
+  "solutionStatus": "full",
+  "hints": [
+    "Compute the gradient of BC first.",
+    "Use the shoelace formula for area."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

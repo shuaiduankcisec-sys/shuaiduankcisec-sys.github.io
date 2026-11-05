@@ -1,0 +1,30 @@
+{
+  "id": "A2-04-012",
+  "chapter": "A2-04",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "differentiation of logs",
+    "minimisation",
+    "integration by parts"
+  ],
+  "methods": [
+    "product rule",
+    "finding minimum",
+    "integrating ln x"
+  ],
+  "statement": "(i) Differentiate $y=x\\ln x$ and $y=\\ln(x^{2}+1)$. (ii) Find the minimum value of $x\\ln x$ for $x>0$. (iii) Evaluate $\\int_{1}^{e}\\ln x\\,dx$.",
+  "solution": "(i) $\\frac{d}{dx}(x\\ln x)=\\ln x+1$; $\\frac{d}{dx}\\ln(x^{2}+1)=\\frac{2x}{x^{2}+1}$. (ii) Minimum where $\\ln x+1=0\\Rightarrow x=e^{-1}$; value $(e^{-1})(-1)=-\\frac1e$. (iii) Integration by parts: $\\int\\ln x\\,dx=x\\ln x-x$. From $1$ to $e$: $(e-e)-(0-1)=1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the product rule for x ln x.",
+    "Integrate ln x by parts."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5否 → 4星]"
+}

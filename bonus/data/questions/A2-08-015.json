@@ -1,0 +1,30 @@
+{
+  "id": "A2-08-015",
+  "chapter": "A2-08",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "root location",
+    "Newton-Raphson",
+    "error estimate"
+  ],
+  "methods": [
+    "sign-change test",
+    "Newton iteration",
+    "error bound"
+  ],
+  "statement": "For $f(x)=x^{3}-x-1$: (i) show there is a root in $(1,2)$; (ii) using $x_{0}=1$, compute $x_{1}$ and $x_{2}$ by Newton-Raphson; (iii) the root is about $1.3247$; estimate the error in $x_{2}$.",
+  "solution": "(i) $f(1)=-1$, $f(2)=5$; sign change, so a root lies in $(1,2)$. (ii) $f'(x)=3x^{2}-1$. $x_{1}=1-\\frac{-1}{2}=1.5$. $x_{2}=1.5-\\frac{1.5^{3}-1.5-1}{3(1.5)^{2}-1}=1.5-\\frac{0.875}{5.75}\\approx1.347826$. (iii) Error $\\approx|x_{2}-1.3247|\\approx0.0231$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Check f(1) and f(2).",
+    "Apply the Newton formula twice."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

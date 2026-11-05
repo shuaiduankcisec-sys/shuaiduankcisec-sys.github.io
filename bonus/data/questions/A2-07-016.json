@@ -1,0 +1,30 @@
+{
+  "id": "A2-07-016",
+  "chapter": "A2-07",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1998,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "second-order linear ODE",
+    "characteristic equation",
+    "particular solution"
+  ],
+  "methods": [
+    "auxiliary equation",
+    "applying initial conditions",
+    "limiting behaviour"
+  ],
+  "statement": "(i) Find the general solution of $\\frac{d^{2}y}{dx^{2}}-3\\frac{dy}{dx}+2y=0$. (ii) Find the particular solution with $y(0)=0$, $y'(0)=1$. (iii) Describe its behaviour as $x\\to-\\infty$ and as $x\\to\\infty$.",
+  "solution": "(i) Characteristic equation $r^{2}-3r+2=0$ gives $r=1,2$; general solution $y=Ae^{x}+Be^{2x}$. (ii) $y(0)=A+B=0\\Rightarrow B=-A$. $y'=Ae^{x}+2Be^{2x}$; $y'(0)=A+2B=1\\Rightarrow A-2A=1\\Rightarrow A=-1,B=1$. So $y=e^{2x}-e^{x}$. (iii) As $x\\to-\\infty$, both terms $\\to0$, so $y\\to0$. As $x\\to\\infty$, $e^{2x}$ dominates, so $y\\to\\infty$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Solve the auxiliary quadratic.",
+    "Use the two initial conditions."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

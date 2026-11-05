@@ -1,0 +1,30 @@
+{
+  "id": "ch07-024",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1998,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "integration of polynomials",
+    "area",
+    "mean value"
+  ],
+  "methods": [
+    "expanding and integrating",
+    "area by integration",
+    "mean value of a function"
+  ],
+  "statement": "(i) Find $\\int (x^{2}+1)^{2}\\,dx$. (ii) Evaluate $\\int_{-1}^{1}(x^{4}-2x^{2}+1)\\,dx$ and note it equals the area between $y=(x^{2}-1)^{2}$ and the x-axis. (iii) For $y=4-x^{2}$ on $[-1,1]$, find the area and the mean value of the function. (iv) Show that this mean value lies strictly between the minimum and maximum of $4-x^{2}$ on $[-1,1]$.",
+  "solution": "(i) $(x^{2}+1)^{2}=x^{4}+2x^{2}+1$, so $\\int=\\tfrac{x^{5}}{5}+\\tfrac{2x^{3}}{3}+x+C$. (ii) $\\int_{-1}^{1}(x^{4}-2x^{2}+1)\\,dx=[\\tfrac{x^{5}}{5}-\\tfrac{2x^{3}}{3}+x]_{-1}^{1}=\\tfrac{8}{15}-(-\\tfrac{8}{15})=\\tfrac{16}{15}$. (iii) $\\int_{-1}^{1}(4-x^{2})\\,dx=[4x-\\tfrac{x^{3}}{3}]_{-1}^{1}=\\tfrac{22}{3}$; mean value $=\\frac{22/3}{2}=\\tfrac{11}{3}$. (iv) On $[-1,1]$, $4-x^{2}$ has minimum $3$ (at $x=\\pm1$) and maximum $4$ (at $x=0$). The mean value $\\tfrac{11}{3}\\approx3.667$ satisfies $3<\\tfrac{11}{3}<4$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand the squared terms.",
+    "Mean value is area divided by the interval length."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

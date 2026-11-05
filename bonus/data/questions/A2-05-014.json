@@ -1,0 +1,30 @@
+{
+  "id": "A2-05-014",
+  "chapter": "A2-05",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1999,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "parametric curves",
+    "tangent to parametric curve",
+    "intersection"
+  ],
+  "methods": [
+    "parametric differentiation",
+    "tangent equation",
+    "solving intersection"
+  ],
+  "statement": "A curve is given parametrically by $x=t^{2}$, $y=t^{3}$. (i) Find $\\frac{dy}{dx}$ in terms of $t$. (ii) Find the equation of the tangent at $t=2$. (iii) Show that this tangent meets the curve again at $t=-1$.",
+  "solution": "(i) $\\frac{dx}{dt}=2t$, $\\frac{dy}{dt}=3t^{2}$, so $\\frac{dy}{dx}=\\frac{3t^{2}}{2t}=\\frac{3t}{2}$ ($t\\neq0$). (ii) At $t=2$: point $(4,8)$, slope $3$. Tangent: $y-8=3(x-4)$, i.e. $y=3x-4$. (iii) On the curve $y=t^{3},x=t^{2}$; substitute: $t^{3}=3t^{2}-4\\Rightarrow t^{3}-3t^{2}+4=0$. $t=2$ is a root: factor $(t-2)^{2}(t+1)=0$. The other intersection is at $t=-1$, point $(1,-1)$, which lies on $y=3x-4$ since $3(1)-4=-1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Differentiate parametrically.",
+    "Substitute the parametric form into the tangent line."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

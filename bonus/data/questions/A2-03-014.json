@@ -1,0 +1,30 @@
+{
+  "id": "A2-03-014",
+  "chapter": "A2-03",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1999,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "triple-angle cosine",
+    "solving cubic via trig",
+    "Vieta"
+  ],
+  "methods": [
+    "proving cos3theta",
+    "cosine substitution",
+    "sum of roots"
+  ],
+  "statement": "(i) Prove $\\cos 3\\theta=4\\cos^{3}\\theta-3\\cos\\theta$. (ii) Hence find the three roots of $4x^{3}-3x=\\frac12$ in terms of cosine. (iii) Show that these three roots sum to $0$.",
+  "solution": "(i) $\\cos 3\\theta=\\cos(2\\theta+\\theta)=\\cos2\\theta\\cos\\theta-\\sin2\\theta\\sin\\theta=(2\\cos^{2}\\theta-1)\\cos\\theta-2\\sin^{2}\\theta\\cos\\theta=2\\cos^{3}\\theta-\\cos\\theta-2(1-\\cos^{2}\\theta)\\cos\\theta=4\\cos^{3}\\theta-3\\cos\\theta$. (ii) With $x=\\cos\\theta$: $4\\cos^{3}\\theta-3\\cos\\theta=\\cos3\\theta=\\frac12\\Rightarrow 3\\theta=\\frac{\\pi}{3},\\frac{5\\pi}{3},\\frac{7\\pi}{3}$, so $\\theta=\\frac{\\pi}{9},\\frac{5\\pi}{9},\\frac{7\\pi}{9}$ and roots $\\cos\\frac{\\pi}{9},\\cos\\frac{5\\pi}{9},\\cos\\frac{7\\pi}{9}$. (iii) The cubic is $4x^{3}-3x-\\frac12=0$, i.e. $x^{3}-\\frac34 x-\\frac18=0$; the $x^{2}$ coefficient is $0$, so by Vieta the sum of roots is $0$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand cos(2theta+theta).",
+    "Compare with the x^2 coefficient via Vieta."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]"
+}

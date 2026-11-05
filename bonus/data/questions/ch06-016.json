@@ -1,0 +1,30 @@
+{
+  "id": "ch06-016",
+  "chapter": 6,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1990,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "stationary points",
+    "second derivative test",
+    "tangents"
+  ],
+  "methods": [
+    "differentiating polynomials",
+    "nature of stationary points",
+    "tangent equation"
+  ],
+  "statement": "For the curve $y=x^{3}-3x^{2}+2$, (i) find $\\frac{dy}{dx}$ and the coordinates of the stationary points; (ii) determine their nature; (iii) find the equation of the tangent at $x=1$; (iv) deduce the interval on which the curve is decreasing and show that the value at the maximum exceeds that at the minimum by $4$.",
+  "solution": "(i) $\\frac{dy}{dx}=3x^{2}-6x=3x(x-2)$, zero at $x=0$ (where $y=2$) and $x=2$ (where $y=-2$). Stationary points $(0,2)$ and $(2,-2)$. (ii) $\\frac{d^{2}y}{dx^{2}}=6x-6$. At $x=0$: $-6<0$ so maximum; at $x=2$: $6>0$ so minimum. (iii) At $x=1$, $y=0$ and slope $3-6=-3$. Tangent: $y=-3(x-1)$, i.e. $y=-3x+3$. (iv) The curve is decreasing where $\\frac{dy}{dx}=3x(x-2)<0$, i.e. $0<x<2$. The maximum value is $2$ and the minimum is $-2$, and $2-(-2)=4$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Set the derivative to zero.",
+    "Use the second derivative to classify."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

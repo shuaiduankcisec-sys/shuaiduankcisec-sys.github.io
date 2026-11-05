@@ -1,0 +1,30 @@
+{
+  "id": "A2-09-014",
+  "chapter": "A2-09",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1997,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "vectors",
+    "cross product",
+    "plane equation"
+  ],
+  "methods": [
+    "vector subtraction",
+    "cross product for area",
+    "plane from normal"
+  ],
+  "statement": "Points $A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$. (i) Find $\\overrightarrow{AB}$ and $\\overrightarrow{AC}$. (ii) Find the area of triangle $ABC$. (iii) Find the equation of the plane through $A,B,C$.",
+  "solution": "(i) $\\overrightarrow{AB}=(-1,1,0)$, $\\overrightarrow{AC}=(-1,0,1)$. (ii) $\\overrightarrow{AB}\\times\\overrightarrow{AC}=(1,1,1)$; area $=\\frac12|\\overrightarrow{AB}\\times\\overrightarrow{AC}|=\\frac{\\sqrt{3}}{2}$. (iii) Normal $(1,1,1)$ through $A(1,0,0)$: $(x-1)+y+z=0$, i.e. $x+y+z=1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Subtract position vectors.",
+    "Use the cross product for the area."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5否 → 4星]"
+}
