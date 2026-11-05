@@ -1,0 +1,28 @@
+{
+  "id": "ch11-024",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1991,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "trigonometry",
+    "quadratic in sine"
+  ],
+  "methods": [
+    "factorising",
+    "standard solutions"
+  ],
+  "statement": "Solve $2\\\\sin^{2}x-3\\\\sin x+1=0$ for $x\\\\in[0,2\\\\pi]$.",
+  "solution": "$(2\\\\sin x-1)(\\\\sin x-1)=0$, so $\\\\sin x=\\\\tfrac12$ or $\\\\sin x=1$. For $\\\\sin x=\\\\tfrac12$: $x=\\\\tfrac{\\\\pi}{6},\\\\ \\\\tfrac{5\\\\pi}{6}$. For $\\\\sin x=1$: $x=\\\\tfrac{\\\\pi}{2}$. Solutions: $x=\\\\tfrac{\\\\pi}{6},\\\\ \\\\tfrac{\\\\pi}{2},\\\\ \\\\tfrac{5\\\\pi}{6}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Treat it as a quadratic in $\\\\sin x$.",
+    "List the standard angles in $[0,2\\\\pi]$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

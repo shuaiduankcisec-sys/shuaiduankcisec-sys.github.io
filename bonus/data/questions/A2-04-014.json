@@ -1,0 +1,29 @@
+{
+  "id": "A2-04-014",
+  "chapter": "A2-04",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "exponentials",
+    "tangent",
+    "gradient"
+  ],
+  "methods": [
+    "differentiating $a^{x}$",
+    "tangent and intercept"
+  ],
+  "statement": "For the curve $y=a^{x}$ with $a>1$, show that the tangent at $x=0$ has gradient $\\\\ln a$ and meets the $x$-axis at $x=-\\\\tfrac{1}{\\\\ln a}$.",
+  "solution": "$y'=a^{x}\\\\ln a$; at $x=0$, $y=1$ and slope $\\\\ln a$. The tangent is $y-1=(\\\\ln a)x$. Its $x$-intercept satisfies $0-1=(\\\\ln a)x$, so $x=-\\\\tfrac{1}{\\\\ln a}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Recall $\\\\tfrac{d}{dx}a^{x}=a^{x}\\\\ln a$.",
+    "Set $y=0$ in the tangent equation."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

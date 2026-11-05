@@ -1,0 +1,28 @@
+{
+  "id": "A2-08-017",
+  "chapter": "A2-08",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "numerical methods",
+    "Newton-Raphson"
+  ],
+  "methods": [
+    "Newton-Raphson iteration",
+    "root approximation"
+  ],
+  "statement": "Use the Newton-Raphson method with $x_{0}=1$ to find $x_{1}$ and $x_{2}$ for the equation $x^{3}-x-1=0$, and state the root correct to four decimal places.",
+  "solution": "$f(x)=x^{3}-x-1$, $f'(x)=3x^{2}-1$. $x_{0}=1$: $f(1)=-1$, $f'(1)=2$, so $x_{1}=1-\\\\tfrac{-1}{2}=1.5$. $x_{1}=1.5$: $f=3.375-1.5-1=0.875$, $f'=6.75-1=5.75$, so $x_{2}=1.5-\\\\tfrac{0.875}{5.75}\\\\approx1.34783$. The root is $x\\\\approx1.3247$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Apply $x_{n+1}=x_{n}-\\\\tfrac{f(x_{n})}{f'(x_{n})}$.",
+    "Compute two iterations and compare."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

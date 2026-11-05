@@ -1,0 +1,29 @@
+{
+  "id": "A2-03-016",
+  "chapter": "A2-03",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "trigonometry",
+    "sum-to-product",
+    "equations"
+  ],
+  "methods": [
+    "$\\sin A+\\sin B$ identity",
+    "factorising"
+  ],
+  "statement": "Express $\\\\sin\\\\theta+\\\\sin3\\\\theta$ as a product, and hence solve $\\\\sin\\\\theta+\\\\sin3\\\\theta=\\\\sin2\\\\theta$ for $\\\\theta\\\\in[0,\\\\pi]$.",
+  "solution": "$\\\\sin\\\\theta+\\\\sin3\\\\theta=2\\\\sin2\\\\theta\\\\cos\\\\theta$. The equation becomes $2\\\\sin2\\\\theta\\\\cos\\\\theta=\\\\sin2\\\\theta$, i.e. $\\\\sin2\\\\theta(2\\\\cos\\\\theta-1)=0$. So $\\\\sin2\\\\theta=0\\\\Rightarrow\\\\theta=0,\\\\tfrac{\\\\pi}{2},\\\\pi$, or $\\\\cos\\\\theta=\\\\tfrac12\\\\Rightarrow\\\\theta=\\\\tfrac{\\\\pi}{3}$. Solutions: $0,\\\\ \\\\tfrac{\\\\pi}{3},\\\\ \\\\tfrac{\\\\pi}{2},\\\\ \\\\pi$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use $\\\\sin A+\\\\sin B=2\\\\sin\\\\tfrac{A+B}{2}\\\\cos\\\\tfrac{A-B}{2}$.",
+    "Factor out $\\\\sin2\\\\theta$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "A2-01-017",
+  "chapter": "A2-01",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1993,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "functions",
+    "inverse functions",
+    "monotonicity"
+  ],
+  "methods": [
+    "differentiation for monotonicity",
+    "solving for the inverse"
+  ],
+  "statement": "Let $f(x)=\\\\tfrac{\\\\mathrm{e}^{x}}{\\\\mathrm{e}^{x}+1}$. Show that $f$ is increasing, state its range, and find $f^{-1}(x)$.",
+  "solution": "$f'(x)=\\\\tfrac{\\\\mathrm{e}^{x}(\\\\mathrm{e}^{x}+1)-\\\\mathrm{e}^{x}\\\\cdot\\\\mathrm{e}^{x}}{(\\\\mathrm{e}^{x}+1)^{2}}=\\\\tfrac{\\\\mathrm{e}^{x}}{(\\\\mathrm{e}^{x}+1)^{2}}>0$, so $f$ is increasing. As $x\\\\to-\\\\infty$, $f\\\\to0$; as $x\\\\to\\\\infty$, $f\\\\to1$; range $(0,1)$. For the inverse, set $y=\\\\tfrac{\\\\mathrm{e}^{x}}{\\\\mathrm{e}^{x}+1}\\\\Rightarrow y(\\\\mathrm{e}^{x}+1)=\\\\mathrm{e}^{x}\\\\Rightarrow \\\\mathrm{e}^{x}(1-y)=y\\\\Rightarrow x=\\\\ln\\\\tfrac{y}{1-y}$. So $f^{-1}(x)=\\\\ln\\\\tfrac{x}{1-x}$ (for $0<x<1$).",
+  "solutionStatus": "full",
+  "hints": [
+    "Differentiate using the quotient rule.",
+    "Solve $y=f(x)$ for $x$ to get the inverse."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

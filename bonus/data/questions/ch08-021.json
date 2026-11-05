@@ -1,0 +1,29 @@
+{
+  "id": "ch08-021",
+  "chapter": 8,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "sequences",
+    "recurrence",
+    "summation"
+  ],
+  "methods": [
+    "telescoping sum",
+    "closed form by induction"
+  ],
+  "statement": "A sequence satisfies $u_{1}=1$ and $u_{n+1}=u_{n}+n$ for $n\\\\ge 1$. Find a closed formula for $u_{n}$.",
+  "solution": "$u_{n}=u_{1}+\\\\sum_{k=1}^{n-1}k=1+\\\\tfrac{(n-1)n}{2}=\\\\tfrac{n^{2}-n+2}{2}$. Check: $u_{1}=1$, $u_{2}=2$, $u_{3}=4$, $u_{4}=7$, agreeing with the recurrence.",
+  "solutionStatus": "full",
+  "hints": [
+    "Write $u_n$ as $1$ plus a sum of the increments.",
+    "Use $\\\\sum_{k=1}^{n-1}k=\\\\tfrac{(n-1)n}{2}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

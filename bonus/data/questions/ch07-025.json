@@ -1,0 +1,28 @@
+{
+  "id": "ch07-025",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1990,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "integration",
+    "trigonometric identities"
+  ],
+  "methods": [
+    "double-angle identities",
+    "definite integral"
+  ],
+  "statement": "Evaluate $\\\\int_{0}^{\\\\pi/2}\\\\sin^{2}x\\\\cos^{2}x\\\\,dx$.",
+  "solution": "$\\\\sin^{2}x\\\\cos^{2}x=\\\\tfrac14\\\\sin^{2}2x=\\\\tfrac18(1-\\\\cos4x)$. Hence $\\\\int_{0}^{\\\\pi/2}\\\\tfrac18(1-\\\\cos4x)\\\\,dx=\\\\tfrac18\\\\bigl[x-\\\\tfrac14\\\\sin4x\\\\bigr]_{0}^{\\\\pi/2}=\\\\tfrac18\\\\cdot\\\\tfrac{\\\\pi}{2}=\\\\tfrac{\\\\pi}{16}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use $\\\\sin2x=2\\\\sin x\\\\cos x$.",
+    "Then $\\\\sin^{2}2x=\\\\tfrac12(1-\\\\cos4x)$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

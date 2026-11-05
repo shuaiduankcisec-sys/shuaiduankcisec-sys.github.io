@@ -1,0 +1,29 @@
+{
+  "id": "ch02-020",
+  "chapter": 2,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "polynomials",
+    "shared roots",
+    "factor theorem"
+  ],
+  "methods": [
+    "comparing coefficients",
+    "polynomial factorisation"
+  ],
+  "statement": "The quartic $x^{4}+px^{3}+qx^{2}+rx+s$ is divisible by the quadratic $x^{2}+ax+b$, whose roots are also roots of the quartic. Show that the remaining two roots satisfy $x^{2}+(p-a)x+(a^{2}-ap-b+q)=0$.",
+  "solution": "Write $x^{4}+px^{3}+qx^{2}+rx+s=(x^{2}+ax+b)(x^{2}+(p-a)x+c)$. Expanding: $x^{4}+px^{3}+(c+a(p-a)+b)x^{2}+(ac+b(p-a))x+bc$. Matching $x^{2}$: $q=c+a(p-a)+b$, so $c=a^{2}-ap-b+q$. Thus the other factor is $x^{2}+(p-a)x+(a^{2}-ap-b+q)$, giving the stated equation.",
+  "solutionStatus": "full",
+  "hints": [
+    "Let the other factor be $x^{2}+(p-a)x+c$.",
+    "Compare the $x^{2}$ coefficients."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

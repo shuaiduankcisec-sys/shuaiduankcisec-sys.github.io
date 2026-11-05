@@ -1,0 +1,29 @@
+{
+  "id": "ch12-023",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "logarithms",
+    "surds",
+    "simplification"
+  ],
+  "methods": [
+    "rationalising",
+    "log laws"
+  ],
+  "statement": "For $a>1$, simplify $\\\\ln\\\\bigl(a+\\\\sqrt{a^{2}-1}\\\\bigr)-\\\\ln\\\\bigl(a-\\\\sqrt{a^{2}-1}\\\\bigr)$.",
+  "solution": "Note $(a-\\\\sqrt{a^{2}-1})(a+\\\\sqrt{a^{2}-1})=a^{2}-(a^{2}-1)=1$, so $a-\\\\sqrt{a^{2}-1}=\\\\tfrac{1}{a+\\\\sqrt{a^{2}-1}}$. Hence the expression is $\\\\ln(a+\\\\sqrt{a^{2}-1})-\\\\ln\\\\bigl(\\\\tfrac{1}{a+\\\\sqrt{a^{2}-1}}\\\\bigr)=\\\\ln(a+\\\\sqrt{a^{2}-1})+\\\\ln(a+\\\\sqrt{a^{2}-1})=2\\\\ln(a+\\\\sqrt{a^{2}-1})$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Rationalise $a-\\\\sqrt{a^{2}-1}$.",
+    "Use $\\\\ln(1/u)=-\\\\ln u$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

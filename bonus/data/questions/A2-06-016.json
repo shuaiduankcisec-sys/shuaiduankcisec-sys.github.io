@@ -1,0 +1,28 @@
+{
+  "id": "A2-06-016",
+  "chapter": "A2-06",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1993,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "integration",
+    "integration by parts"
+  ],
+  "methods": [
+    "integration by parts",
+    "definite integral"
+  ],
+  "statement": "Evaluate $\\\\int_{0}^{\\\\pi/2} x\\\\sin x\\\\,dx$ using integration by parts.",
+  "solution": "Let $u=x$, $dv=\\\\sin x\\\\,dx$; then $du=dx$, $v=-\\\\cos x$. $\\\\int_{0}^{\\\\pi/2}x\\\\sin x\\\\,dx=[-x\\\\cos x]_{0}^{\\\\pi/2}+\\\\int_{0}^{\\\\pi/2}\\\\cos x\\\\,dx=0+[\\\\sin x]_{0}^{\\\\pi/2}=1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Choose $u=x$ for integration by parts.",
+    "Evaluate the boundary term and the remaining integral."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

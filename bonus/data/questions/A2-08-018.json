@@ -1,0 +1,28 @@
+{
+  "id": "A2-08-018",
+  "chapter": "A2-08",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1993,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "numerical methods",
+    "fixed-point iteration"
+  ],
+  "methods": [
+    "fixed-point iteration",
+    "convergence"
+  ],
+  "statement": "The equation $x=\\\\cos x$ has a root in $[0,1]$. Using the iteration $x_{n+1}=\\\\cos x_{n}$ with $x_{0}=0.7$, find $x_{1}$ and $x_{2}$ and state the root to four decimal places.",
+  "solution": "$x_{1}=\\\\cos0.7\\\\approx0.7648$. $x_{2}=\\\\cos0.7648\\\\approx0.7215$. Continuing, the iteration converges to the root $x\\\\approx0.7391$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Repeatedly apply $x\\\\mapsto\\\\cos x$.",
+    "The values settle to the fixed point."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

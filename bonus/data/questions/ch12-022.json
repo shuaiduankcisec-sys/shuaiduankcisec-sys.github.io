@@ -1,0 +1,29 @@
+{
+  "id": "ch12-022",
+  "chapter": 12,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "exponentials",
+    "equations",
+    "roots"
+  ],
+  "methods": [
+    "graphical reasoning",
+    "locating roots numerically"
+  ],
+  "statement": "Show that the equation $\\\\mathrm{e}^{x}=3x$ has exactly two positive real roots, and find them correct to three decimal places.",
+  "solution": "Let $f(x)=\\\\mathrm{e}^{x}-3x$. Then $f'(x)=\\\\mathrm{e}^{x}-3$, zero at $x=\\\\ln3\\\\approx1.099$, where $f(\\\\ln3)=3-3\\\\ln3\\\\approx-0.296<0$. Since $f(0)=1>0$ and $f(x)\\\\to\\\\infty$ as $x\\\\to\\\\infty$, $f$ has one root in $(0,\\\\ln3)$ and one in $(\\\\ln3,\\\\infty)$. Numerically: root$_1\\\\approx0.619$ (since $\\\\mathrm{e}^{0.619}\\\\approx1.857=3\\\\cdot0.619$), root$_2\\\\approx1.512$ (since $\\\\mathrm{e}^{1.512}\\\\approx4.536=3\\\\cdot1.512$).",
+  "solutionStatus": "full",
+  "hints": [
+    "Study $f(x)=\\\\mathrm{e}^{x}-3x$ and its minimum.",
+    "Use a numerical method near the two sign changes."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ch06-018",
+  "chapter": 6,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1993,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "differentiation",
+    "maxima",
+    "optimisation"
+  ],
+  "methods": [
+    "relating cylinder to sphere",
+    "differentiating to optimise"
+  ],
+  "statement": "A right circular cylinder is inscribed in a sphere of radius $R$. Show that its volume is $V=\\\\pi h(R^{2}-\\\\tfrac{h^{2}}{4})$ where $h$ is its height, and find the maximum volume.",
+  "solution": "With cylinder radius $r$ and height $h$, the sphere gives $r^{2}+(\\\\tfrac{h}{2})^{2}=R^{2}$, so $r^{2}=R^{2}-\\\\tfrac{h^{2}}{4}$ and $V=\\\\pi r^{2}h=\\\\pi h(R^{2}-\\\\tfrac{h^{2}}{4})$. Then $\\\\tfrac{dV}{dh}=\\\\pi(R^{2}-\\\\tfrac{3h^{2}}{4})=0\\\\Rightarrow h=\\\\tfrac{2R}{\\\\sqrt3}$ (the other critical point $h=0$ is a minimum). At this $h$, $r^{2}=\\\\tfrac{2R^{2}}{3}$, so $V_{\\\\max}=\\\\pi\\\\cdot\\\\tfrac{2R}{\\\\sqrt3}\\\\cdot\\\\tfrac{2R^{2}}{3}=\\\\tfrac{4\\\\pi R^{3}}{3\\\\sqrt3}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Express $r^{2}$ in terms of $h$ and $R$ via the sphere.",
+    "Differentiate $V(h)$ and set to zero."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

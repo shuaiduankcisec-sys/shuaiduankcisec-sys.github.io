@@ -1,0 +1,28 @@
+{
+  "id": "A2-06-017",
+  "chapter": "A2-06",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1992,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "integration",
+    "logarithmic integrals"
+  ],
+  "methods": [
+    "recognising $\\int\\tfrac{f'}{f}$",
+    "definite integral"
+  ],
+  "statement": "Find $\\\\int \\\\tfrac{x}{1+x^{2}}\\\\,dx$ and evaluate $\\\\int_{0}^{1}\\\\tfrac{x}{1+x^{2}}\\\\,dx$.",
+  "solution": "$\\\\int\\\\tfrac{x}{1+x^{2}}\\\\,dx=\\\\tfrac12\\\\ln(1+x^{2})+C$. Then $\\\\int_{0}^{1}\\\\tfrac{x}{1+x^{2}}\\\\,dx=\\\\tfrac12[\\\\ln(1+x^{2})]_{0}^{1}=\\\\tfrac12\\\\ln2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Note the numerator is half the derivative of the denominator.",
+    "Substitute $u=1+x^{2}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

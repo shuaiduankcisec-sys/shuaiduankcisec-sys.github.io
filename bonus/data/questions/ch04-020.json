@@ -1,0 +1,30 @@
+{
+  "id": "ch04-020",
+  "chapter": 4,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1993,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "functions",
+    "symmetry",
+    "inequalities",
+    "minima"
+  ],
+  "methods": [
+    "AM-GM inequality",
+    "functional symmetry"
+  ],
+  "statement": "For $x\\\\neq 0$ let $f(x)=\\\\tfrac{x^{2}+4}{2x}$. (i) Show that $f(x)=f(4/x)$ for $x>0$. (ii) Find the minimum value of $f(x)$ for $x>0$ and where it occurs. (iii) Hence solve $f(x)=\\\\tfrac52$.",
+  "solution": "(i) $f(4/x)=\\\\tfrac{(16/x^{2})+4}{8/x}=\\\\tfrac{16+4x^{2}}{8x}=\\\\tfrac{4+x^{2}}{2x}=f(x)$. (ii) $f(x)=\\\\tfrac{x}{2}+\\\\tfrac{2}{x}\\\\ge 2\\\\sqrt{\\\\tfrac{x}{2}\\\\cdot\\\\tfrac{2}{x}}=2$ by AM-GM, equality when $\\\\tfrac{x}{2}=\\\\tfrac{2}{x}$, i.e. $x^{2}=4$, so $x=2$ ($x>0$). Minimum $2$ at $x=2$. (iii) $\\\\tfrac{x}{2}+\\\\tfrac{2}{x}=\\\\tfrac52\\\\Rightarrow x^{2}-5x+4=0\\\\Rightarrow x=1$ or $4$. By (i) $f(1)=f(4)=\\\\tfrac52$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Rewrite $f(x)$ as $\\\\tfrac{x}{2}+\\\\tfrac{2}{x}$.",
+    "Apply AM-GM or calculus for the minimum."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

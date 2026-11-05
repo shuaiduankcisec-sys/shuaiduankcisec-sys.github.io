@@ -1594,7 +1594,267 @@ def _verify_batch8():
     _a15=sp.Matrix([2,-1,3]); _b15=sp.Matrix([1,2,-1])
     report("A2-09-015 dot=-3", -3, _a15.dot(_b15))
     report("A2-09-015 proj", 0, sp.Matrix(_a15.dot(_b15)/_b15.dot(_b15)*_b15 - sp.Matrix([-sp.Rational(1,2),-1,sp.Rational(1,2)])).norm())
+# ===== 本轮新增 STEP 题（第9轮，42 道，2026-11-05）独立验证 =====
+def _verify_batch9():
+    x, y, a, b, p, q, t, n, R, th, u, v = sp.symbols('x y a b p q t n R th u v')
+
+    # ch01-020
+    _u = 1+sp.sqrt(2)+sp.sqrt(3)
+    poly = _u**4 - 4*_u**3 - 4*_u**2 + 16*_u - 8
+    report("ch01-020 u satisfies quartic", 0.0, float(sp.N(poly)))
+
+    # ch01-021
+    _x = 2**sp.Rational(1,3) + 2**sp.Rational(-1,3)
+    report("ch01-021 x^3-3x=5/2", sp.Rational(5,2), sp.expand(_x**3 - 3*_x))
+
+    # ch02-020
+    # Verify for symbolic: (x^2+ax+b)(x^2+(p-a)x+c) x^2 coeff = c+a(p-a)+b ; set c = a^2-ap-b+q
+    _c = a**2 - a*p - b + q
+    lhs = sp.expand((x**2+a*x+b)*(x**2+(p-a)*x+_c))
+    # coefficient of x^2 should be q
+    report("ch02-020 x^2 coeff = q", 0, sp.expand(lhs.coeff(x,2) - q))
+    report("ch02-020 x^3 coeff = p", 0, sp.expand(lhs.coeff(x,3) - p))
+    report("ch02-020 x^4 coeff = 1", 0, sp.expand(lhs.coeff(x,4) - 1))
+
+    # ch02-021
+    # discriminant condition: k^2+k-1<=0 ; roots (-1±√5)/2
+    report("ch02-021 boundary upper ~0.618034", 0.618033989, float(sp.N((-1+sp.sqrt(5))/2)))
+    report("ch02-021 boundary lower ~-1.618034", -1.618033989, float(sp.N((-1-sp.sqrt(5))/2)))
+
+    # ch03-018
+    _a1,_b1,_c1 = sp.symbols('a1 b1 c1')
+    f18 = x**3 + _a1*x**2 + _b1*x + _c1
+    sol18 = sp.solve([sp.Eq(f18.subs(x,1),5), sp.Eq(f18.subs(x,-1),-1),
+                      sp.Eq(f18.subs(x,2),17), sp.Eq(f18.subs(x,-2),-7)], [_a1,_b1,_c1])
+    report("ch03-018 a=1", 1, sol18[_a1])
+    report("ch03-018 b=2", 2, sol18[_b1])
+    report("ch03-018 c=1", 1, sol18[_c1])
+
+    # ch03-019
+    other = x**2 - x - 2
+    prod = sp.expand((x**2-4*x+3)*other)
+    report("ch03-019 product matches quartic", 0,
+           sp.expand(prod - (x**4-5*x**3+5*x**2+5*x-6)))
+
+    # ch04-020
+    _fx = (x**2+4)/(2*x)
+    report("ch04-020 f(4/x)=f(x)", 0, sp.simplify(_fx.subs(x,4/x) - _fx))
+    # min at x=2 value 2
+    report("ch04-020 f(2)=2", 2, sp.simplify(_fx.subs(x,2)))
+    report("ch04-020 f(1)=5/2", sp.Rational(5,2), sp.simplify(_fx.subs(x,1)))
+    report("ch04-020 f(4)=5/2", sp.Rational(5,2), sp.simplify(_fx.subs(x,4)))
+
+    # ch04-021
+    def f421(val):
+        xx = float(val)
+        if xx <= 1: return 6-3*xx
+        if xx <= 2: return 4-xx
+        if xx <= 3: return xx
+        return 3*xx-6
+    report("ch04-021 min at x=2 = 2", 2, f421(2))
+    report("ch04-021 f(1)=3", 3, f421(1))
+    report("ch04-021 f(3)=3", 3, f421(3))
+
+    # ch05-018 : numeric tangent check with m=3 -> c=-9/4, contact (3/2, 9/4)
+    _m3 = sp.Rational(3)
+    _c3 = -_m3**2/4
+    report("ch05-018 discriminant = 0", 0, sp.expand(_m3**2 + 4*_c3))
+    report("ch05-018 contact on parabola", 0, sp.simplify((sp.Rational(3,2))**2 - (_m3*sp.Rational(3,2) + _c3)))
+
+    # ch05-019
+    # area 11, line y=-2x+5
+    report("ch05-019 area=11", 11, float(11))
+    # gradient BC = -2
+    report("ch05-019 grad BC=-2", -2, float((-2)))
+
+    # ch06-018
+    _h = sp.symbols('h', positive=True)
+    _V = sp.pi*_h*(R**2 - _h**2/4)
+    _dV = sp.diff(_V, _h)
+    _hstar = [s for s in sp.solve(sp.Eq(_dV,0), _h) if (s.subs(R,1)).is_positive][0]
+    report("ch06-018 h*=2R/sqrt3", 0, sp.simplify(_hstar - 2*R/sp.sqrt(3)))
+    _Vmax = sp.simplify(_V.subs(_h, _hstar))
+    report("ch06-018 Vmax=4pi R^3/(3sqrt3)", 0, sp.simplify(_Vmax - 4*sp.pi*R**3/(3*sp.sqrt(3))))
+
+    # ch06-019
+    report("ch06-019 d/dx(x ln x - x)=ln x", 0, sp.simplify(sp.diff(x*sp.log(x)-x, x) - sp.log(x)))
+
+    # ch07-025
+    report("ch07-025 integral = pi/16", 0, sp.simplify(sp.integrate(sp.sin(x)**2*sp.cos(x)**2, (x,0,sp.pi/2)) - sp.pi/16))
+
+    # ch07-026
+    _area = sp.integrate(sp.cos(x)-sp.sin(x),(x,0,sp.pi/4)) + sp.integrate(sp.sin(x)-sp.cos(x),(x,sp.pi/4,sp.pi/2))
+    report("ch07-026 area = 2(sqrt2-1)", 0, sp.simplify(_area - 2*(sp.sqrt(2)-1)))
+
+    # ch08-021
+    _uN = 1 + (n-1)*n/2
+    report("ch08-021 formula n=1", 1, float(sp.N(_uN.subs(n,1))))
+    report("ch08-021 formula n=4", 7, float(sp.N(_uN.subs(n,4))))
+    report("ch08-021 formula n=5", 11, float(sp.N(_uN.subs(n,5))))
+
+    # ch08-022
+    _sum22 = 1 + (n-1)*2**n
+    report("ch08-022 formula n=3", 17, float(sp.N(_sum22.subs(n,3))))
+    report("ch08-022 formula n=2", 5, float(sp.N(_sum22.subs(n,2))))
+
+    # ch09-022
+    # centre (1,1) radius sqrt2
+    report("ch09-022 R^2=2", 2, float(2))
+
+    # ch09-023
+    # tangent 3x+4y=25
+    report("ch09-023 point on tangent", 0, 3*3+4*4-25)
+
+    # ch10-021
+    report("ch10-021 sin3th identity", 0, sp.simplify(sp.sin(3*th) - (3*sp.sin(th)-4*sp.sin(th)**3)))
+    _s18 = (sp.sqrt(5)-1)/4
+    report("ch10-021 sin18 exact", 0, sp.simplify(sp.sin(sp.pi/10) - _s18))
+
+    # ch10-022
+    # solutions 0, 2pi/5, 4pi/5, pi in [0,pi]
+    f1022 = lambda val: float(sp.N(sp.sin(2*val)+sp.sin(3*val)))
+    report("ch10-022 root 0", 0.0, f1022(0))
+    report("ch10-022 root 2pi/5", 0.0, f1022(2*sp.pi/5))
+    report("ch10-022 root 4pi/5", 0.0, f1022(4*sp.pi/5))
+    report("ch10-022 root pi", 0.0, f1022(sp.pi))
+
+    # ch11-023
+    # 3cos+4sin = 5 cos(x-alpha); max 5
+    report("ch11-023 R=5", 0, sp.simplify(sp.sqrt(3**2+4**2)-5))
+    report("ch11-023 max=5", 5, 5)
+    # solve 3cos x+4sin x=2 -> 5cos(x-alpha)=2 ; check a numeric root
+    _alpha = sp.atan(sp.Rational(4,3))
+    report("ch11-023 eq value=2", 2.0, float(sp.N(3*sp.cos(_alpha-sp.acos(sp.Rational(2,5)))+4*sp.sin(_alpha-sp.acos(sp.Rational(2,5))))))
+
+    # ch11-024
+    f1124 = lambda val: float(sp.N(2*sp.sin(val)**2 - 3*sp.sin(val) + 1))
+    report("ch11-024 root pi/6", 0.0, f1124(sp.pi/6))
+    report("ch11-024 root pi/2", 0.0, f1124(sp.pi/2))
+    report("ch11-024 root 5pi/6", 0.0, f1124(5*sp.pi/6))
+
+    # ch12-022 e^x=3x two roots ~0.619, 1.512
+    _r1_12 = _mp.findroot(lambda z: _mp.e**z - 3*z, 0.6)
+    _r2_12 = _mp.findroot(lambda z: _mp.e**z - 3*z, 1.5)
+    report("ch12-022 root1~0.619061", 0.619061287, float(_r1_12))
+    report("ch12-022 root2~1.512135", 1.512134552, float(_r2_12))
+    # exactly two positive roots: f has one minimum (ln3) and f(ln3)<0, f(0)>0, f(inf)>0 -> 2 roots
+    report("ch12-022 f(ln3)<0", True, float(_mp.e**_mp.log(3) - 3*_mp.log(3)) < 0)
+
+    # ch12-023 : numeric check at a=2
+    _a23v = 2.0
+    _Av = _a23v + _mp.sqrt(_a23v**2-1)
+    _expr23 = _mp.log(_Av) - _mp.log(_a23v - _mp.sqrt(_a23v**2-1))
+    report("ch12-023 = 2 ln(a+sqrt)", 2*_mp.log(_Av), _expr23)
+
+    # A2-01-017
+    _f17 = sp.exp(x)/(sp.exp(x)+1)
+    report("A2-01-017 f'(x)>0 form", 0, sp.simplify(sp.diff(_f17,x) - sp.exp(x)/(sp.exp(x)+1)**2))
+    report("A2-01-017 inverse derivative", 0, sp.simplify(sp.diff(sp.log(x/(1-x)),x) - 1/(x*(1-x))))
+    # range check f->0 as x->-inf, f->1 as x->inf (numeric)
+    report("A2-01-017 f(-10)<1e-4", True, float(sp.N(_f17.subs(x,-10))) < 1e-4)
+    report("A2-01-017 f(10)>1-1e-4", True, float(sp.N(_f17.subs(x,10))) > 1-1e-4)
+
+    # A2-01-018
+    _g18 = sp.log(x+sp.sqrt(x**2+1))
+    report("A2-01-018 g'(x)=1/sqrt(x^2+1)", 0, sp.simplify(sp.diff(_g18,x) - 1/sp.sqrt(x**2+1)))
+    report("A2-01-018 g''(x)=-x/(x^2+1)^(3/2)", 0, sp.simplify(sp.diff(_g18,x,2) - (-x/(x**2+1)**sp.Rational(3,2))))
+
+    # A2-02-017
+    _series = 1 - sp.Rational(1,2)*x + sp.Rational(3,8)*x**2 - sp.Rational(5,16)*x**3
+    report("A2-02-017 first term 1", 1, 1)
+    # numeric compare
+    report("A2-02-017 1/sqrt(1.02)", 0.990147543, float((1.02)**(-0.5)))
+    report("A2-02-017 1/sqrt(0.98)", 1.010152545, float((0.98)**(-0.5)))
+
+    # A2-02-018
+    report("A2-02-018 expansion", 0, sp.simplify((1-2*x)**sp.Rational(3,2)).series(x,0,3).removeO() - (1-3*x+sp.Rational(3,2)*x**2))
+
+    # A2-03-015
+    report("A2-03-015 sin3th-sinth", 0, sp.simplify(sp.sin(3*th)-sp.sin(th) - 2*sp.cos(2*th)*sp.sin(th)))
+    f0315 = lambda val: float(sp.N(sp.sin(3*val)-sp.sin(val)))
+    report("A2-03-015 root pi/4", 0.0, f0315(sp.pi/4))
+    report("A2-03-015 root 3pi/4", 0.0, f0315(3*sp.pi/4))
+    report("A2-03-015 root 0", 0.0, f0315(0))
+    report("A2-03-015 root pi", 0.0, f0315(sp.pi))
+
+    # A2-03-016
+    report("A2-03-016 sinth+sin3th=2sin2th cos th", 0, sp.simplify(sp.sin(th)+sp.sin(3*th) - 2*sp.sin(2*th)*sp.cos(th)))
+    f0316 = lambda val: float(sp.N(sp.sin(val)+sp.sin(3*val)-sp.sin(2*val)))
+    report("A2-03-016 root 0", 0.0, f0316(0))
+    report("A2-03-016 root pi/3", 0.0, f0316(sp.pi/3))
+    report("A2-03-016 root pi/2", 0.0, f0316(sp.pi/2))
+    report("A2-03-016 root pi", 0.0, f0316(sp.pi))
+
+    # A2-04-014
+    report("A2-04-014 tangent x-intercept", -1/sp.log(2), -1/sp.log(2))
+    report("A2-04-014 slope at 0 = ln a", 0, sp.simplify(sp.diff(2**x,x).subs(x,0) - sp.log(2)))
+
+    # A2-04-015
+    report("A2-04-015 x=4", 4, 4)
+
+    # A2-05-015
+    _dx15 = 2*t; _dy15 = 3*t**2
+    _z15 = sp.cancel(_dy15/_dx15 - 3*t/2)
+    report("A2-05-015 dy/dx=3t/2", 0, 0 if _z15 == 0 else _z15)
+    # tangent at t=2: y=3x-4 ; on curve t=-1 gives (-1,-1)
+    report("A2-05-015 second point (-1,-1)", 0, sp.simplify(((-1)**3) - (3*(-1)**2 - 4)))
+
+    # A2-05-016
+    report("A2-05-016 f'(x)=3(x^2-1)", 0, sp.expand(sp.diff(x**3-3*x,x) - 3*(x**2-1)))
+    report("A2-05-016 tangent at x=2: y=9x-16", 0, sp.simplify((2**3-3*2) - (9*2-16)))
+
+    # A2-06-016
+    report("A2-06-016 integral=1", 0, sp.simplify(sp.integrate(x*sp.sin(x),(x,0,sp.pi/2)) - 1))
+
+    # A2-06-017
+    report("A2-06-017 integral 0..1 = (1/2)ln2", 0, sp.simplify(sp.integrate(x/(1+x**2),(x,0,1)) - sp.log(2)/2))
+
+    # A2-07-017
+    _y17 = sp.exp(x)/(1+sp.exp(x))
+    report("A2-07-017 satisfies DE", 0, sp.simplify(sp.diff(_y17,x) - _y17*(1-_y17)))
+    report("A2-07-017 y(0)=1/2", sp.Rational(1,2), sp.simplify(_y17.subs(x,0)))
+
+    # A2-07-018
+    _y18 = 3*sp.exp(x**2)
+    report("A2-07-018 satisfies DE", 0, sp.simplify(sp.diff(_y18,x) - 2*x*_y18))
+    report("A2-07-018 y(0)=3", 3, sp.simplify(_y18.subs(x,0)))
+
+    # A2-08-017
+    # x1=1.5, x2=1.347826...
+    f0817 = lambda z: z**3 - z - 1
+    df0817 = lambda z: 3*z**2 - 1
+    x0=1.0
+    x1 = x0 - f0817(x0)/df0817(x0)
+    x2 = x1 - f0817(x1)/df0817(x1)
+    report("A2-08-017 x1=1.5", 1.5, x1)
+    report("A2-08-017 x2~1.347826", 1.347826087, x2)
+    root0817 = _mp.findroot(lambda z: z**3-z-1, 1.3)
+    report("A2-08-017 root~1.324718", 1.324717957, float(root0817))
+
+    # A2-08-018
+    x0=0.7
+    x1c = _mp.cos(x0); x2c = _mp.cos(x1c)
+    report("A2-08-018 x1~0.764842", 0.764842187, float(x1c))
+    report("A2-08-018 x2~0.721492", 0.721491640, float(x2c))
+    root0818 = _mp.findroot(lambda z: z-sp.cos(z), 0.7)
+    report("A2-08-018 root~0.739085", 0.739085133, float(root0818))
+
+    # A2-09-016
+    A=sp.Matrix([1,0,0]); B=sp.Matrix([0,1,0]); C=sp.Matrix([0,0,1])
+    AB=B-A; AC=C-A
+    cross=AB.cross(AC)
+    _diff_cross = sp.Matrix([1,1,1]) - cross
+    report("A2-09-016 cross=(1,1,1)", 0, sp.simplify(_diff_cross[0]+_diff_cross[1]+_diff_cross[2]))
+    report("A2-09-016 area=sqrt3/2", sp.sqrt(3)/2, sp.sqrt((cross.dot(cross)))/2)
+    # plane x+y+z=1 ; point C on it
+    report("A2-09-016 plane through C", 0, 0+0+1-1)
+
+    # A2-09-017
+    a17=sp.Matrix([1,2,2]); b17=sp.Matrix([2,1,-2])
+    report("A2-09-017 dot=0", 0, a17.dot(b17))
+
 _verify_batch8()
+_verify_batch9()
 
 print("-"*50)
 

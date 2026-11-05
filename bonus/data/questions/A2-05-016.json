@@ -1,0 +1,29 @@
+{
+  "id": "A2-05-016",
+  "chapter": "A2-05",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1991,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "differentiation",
+    "stationary points",
+    "tangents"
+  ],
+  "methods": [
+    "finding stationary points",
+    "tangent equation"
+  ],
+  "statement": "For $f(x)=x^{3}-3x$, find its stationary points and state their nature, and find the equation of the tangent at $x=2$.",
+  "solution": "$f'(x)=3x^{2}-3=3(x-1)(x+1)$, zero at $x=\\\\pm1$. $f''(x)=6x$: at $x=1$, $f''>0$ so minimum $f(1)=-2$; at $x=-1$, $f''<0$ so maximum $f(-1)=2$. At $x=2$, $f=2$ and $f'=9$, so tangent $y-2=9(x-2)$, i.e. $y=9x-16$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Solve $f'(x)=0$ and use $f''$ for nature.",
+    "Point-slope form for the tangent at $x=2$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

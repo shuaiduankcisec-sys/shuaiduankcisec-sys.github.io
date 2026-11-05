@@ -1,0 +1,29 @@
+{
+  "id": "ch08-022",
+  "chapter": 8,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "series",
+    "geometric",
+    "summation formula"
+  ],
+  "methods": [
+    "differentiating a geometric series",
+    "closed-form formula"
+  ],
+  "statement": "Find a closed formula for $\\\\sum_{r=1}^{n} r\\\\,2^{r-1}$ and verify it for $n=3$.",
+  "solution": "For $|x|\\\\neq 1$, $\\\\sum_{r=1}^{n}rx^{r-1}=\\\\tfrac{1-(n+1)x^{n}+nx^{n+1}}{(1-x)^{2}}$. With $x=2$: denominator $1$, numerator $1-(n+1)2^{n}+n\\\\cdot2^{n+1}=1+2^{n}(-n-1+2n)=1+(n-1)2^{n}$. So the sum is $1+(n-1)2^{n}$. For $n=3$: $1+2\\\\cdot 8=17$, and $1\\\\cdot1+2\\\\cdot2+3\\\\cdot4=1+4+12=17$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Differentiate $\\\\sum x^{r}=\\\\tfrac{x(1-x^{n})}{1-x}$ with respect to $x$.",
+    "Set $x=2$ at the end."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

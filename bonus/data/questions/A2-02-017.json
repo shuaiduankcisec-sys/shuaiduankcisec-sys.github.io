@@ -1,0 +1,28 @@
+{
+  "id": "A2-02-017",
+  "chapter": "A2-02",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "binomial series",
+    "approximation"
+  ],
+  "methods": [
+    "general binomial expansion",
+    "substituting small $x$"
+  ],
+  "statement": "Write down the expansion of $(1+x)^{-1/2}$ up to the term in $x^{3}$, and use it to approximate $\\\\tfrac{1}{\\\\sqrt{1.02}}$ and $\\\\tfrac{1}{\\\\sqrt{0.98}}$.",
+  "solution": "$(1+x)^{-1/2}=1-\\\\tfrac12x+\\\\tfrac38x^{2}-\\\\tfrac{5}{16}x^{3}+\\\\cdots$. For $\\\\tfrac{1}{\\\\sqrt{1.02}}=(1+0.02)^{-1/2}\\\\approx 1-0.01+\\\\tfrac38(0.0004)-\\\\tfrac{5}{16}(0.000008)=0.99005-0.0000025\\\\approx0.99005$. For $\\\\tfrac{1}{\\\\sqrt{0.98}}=(1-0.02)^{-1/2}\\\\approx 1+0.01+\\\\tfrac38(0.0004)+\\\\tfrac{5}{16}(0.000008)=1.010025+0.0000025\\\\approx1.01003$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use $(1+x)^{n}$ with $n=-\\\\tfrac12$.",
+    "Substitute $x=\\\\pm0.02$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

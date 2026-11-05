@@ -1,0 +1,28 @@
+{
+  "id": "A2-07-018",
+  "chapter": "A2-07",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1991,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "differential equations",
+    "separation of variables"
+  ],
+  "methods": [
+    "separating variables",
+    "exponential solution"
+  ],
+  "statement": "Solve $\\\\tfrac{dy}{dx}=2xy$ given $y(0)=3$.",
+  "solution": "$\\\\tfrac{dy}{y}=2x\\\\,dx\\\\Rightarrow \\\\ln|y|=x^{2}+C\\\\Rightarrow y=A\\\\mathrm{e}^{x^{2}}$. With $y(0)=3$: $A=3$, so $y=3\\\\mathrm{e}^{x^{2}}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Separate $y$ and $x$.",
+    "Apply the initial condition."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

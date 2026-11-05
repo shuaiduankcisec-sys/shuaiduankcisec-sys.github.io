@@ -1,0 +1,29 @@
+{
+  "id": "ch10-021",
+  "chapter": 10,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "trigonometry",
+    "triple-angle",
+    "exact values"
+  ],
+  "methods": [
+    "triple-angle identity",
+    "solving a cubic in $\\sin18^{\\circ}$"
+  ],
+  "statement": "Prove $\\\\sin3\\\\theta=3\\\\sin\\\\theta-4\\\\sin^{3}\\\\theta$, and deduce that $\\\\sin18^{\\\\circ}=\\\\tfrac{\\\\sqrt5-1}{4}$.",
+  "solution": "$\\\\sin3\\\\theta=\\\\sin(2\\\\theta+\\\\theta)=\\\\sin2\\\\theta\\\\cos\\\\theta+\\\\cos2\\\\theta\\\\sin\\\\theta=2\\\\sin\\\\theta\\\\cos^{2}\\\\theta+(1-2\\\\sin^{2}\\\\theta)\\\\sin\\\\theta=2\\\\sin\\\\theta(1-\\\\sin^{2}\\\\theta)+\\\\sin\\\\theta-2\\\\sin^{3}\\\\theta=3\\\\sin\\\\theta-4\\\\sin^{3}\\\\theta$. With $\\\\theta=18^{\\\\circ}$: $\\\\sin54^{\\\\circ}=\\\\cos36^{\\\\circ}=1-2\\\\sin^{2}18^{\\\\circ}$. So $1-2s^{2}=3s-4s^{3}$, i.e. $4s^{3}-2s^{2}-3s+1=0$ where $s=\\\\sin18^{\\\\circ}$. Factoring $(s-1)(4s^{2}+2s-1)=0$; the positive root of the quadratic is $\\\\tfrac{-1+\\\\sqrt5}{4}$. Hence $\\\\sin18^{\\\\circ}=\\\\tfrac{\\\\sqrt5-1}{4}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Expand $\\\\sin(2\\\\theta+\\\\theta)$ and use $\\\\cos2\\\\theta$.",
+    "Set $\\\\theta=18^{\\\\circ}$ and use $\\\\sin54^{\\\\circ}=\\\\cos36^{\\\\circ}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

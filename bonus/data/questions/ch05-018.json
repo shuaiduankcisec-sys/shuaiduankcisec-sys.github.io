@@ -1,0 +1,29 @@
+{
+  "id": "ch05-018",
+  "chapter": 5,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "coordinate geometry",
+    "tangents",
+    "parabola"
+  ],
+  "methods": [
+    "discriminant for tangency",
+    "solving for contact point"
+  ],
+  "statement": "Find the condition on $m$ and $c$ for the line $y=mx+c$ to be tangent to the parabola $y=x^{2}$, and give the coordinates of the point of contact in terms of $m$.",
+  "solution": "At tangency, $x^{2}=mx+c$, i.e. $x^{2}-mx-c=0$, has a repeated root, so its discriminant is zero: $m^{2}+4c=0$, i.e. $c=-\\\\tfrac{m^{2}}{4}$. The repeated root is $x=\\\\tfrac{m}{2}$, giving $y=\\\\tfrac{m^{2}}{4}$. So the point of contact is $(\\\\tfrac{m}{2},\\\\tfrac{m^{2}}{4})$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Set $x^{2}=mx+c$ and require equal roots.",
+    "Use the discriminant and the root formula."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

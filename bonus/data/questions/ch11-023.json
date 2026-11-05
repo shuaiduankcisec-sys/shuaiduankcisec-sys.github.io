@@ -1,0 +1,29 @@
+{
+  "id": "ch11-023",
+  "chapter": 11,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "trigonometry",
+    "R-form",
+    "equations"
+  ],
+  "methods": [
+    "$R\\cos(x-\\alpha)$ form",
+    "solving $R\\cos(x-\\alpha)=k$"
+  ],
+  "statement": "Express $3\\\\cos x+4\\\\sin x$ in the form $R\\\\cos(x-\\\\alpha)$ with $R>0$ and $0<\\\\alpha<\\\\tfrac{\\\\pi}{2}$. Hence find its maximum value and solve $3\\\\cos x+4\\\\sin x=2$ for $x\\\\in[0,2\\\\pi)$.",
+  "solution": "$3\\\\cos x+4\\\\sin x=R\\\\cos(x-\\\\alpha)=R(\\\\cos x\\\\cos\\\\alpha+\\\\sin x\\\\sin\\\\alpha)$, so $R\\\\cos\\\\alpha=3$, $R\\\\sin\\\\alpha=4$, giving $R=5$ and $\\\\tan\\\\alpha=\\\\tfrac43$ ($\\\\alpha=\\\\arctan\\\\tfrac43$). Maximum value is $5$. For $=2$: $5\\\\cos(x-\\\\alpha)=2\\\\Rightarrow \\\\cos(x-\\\\alpha)=\\\\tfrac25$, so $x-\\\\alpha=\\\\pm\\\\arccos\\\\tfrac25$, giving two solutions in $[0,2\\\\pi)$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Match coefficients to find $R$ and $\\\\alpha$.",
+    "The maximum of $R\\\\cos(x-\\\\alpha)$ is $R$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

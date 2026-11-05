@@ -1,0 +1,29 @@
+{
+  "id": "A2-09-016",
+  "chapter": "A2-09",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "vectors",
+    "area of triangle",
+    "plane equation"
+  ],
+  "methods": [
+    "cross product",
+    "plane through three points"
+  ],
+  "statement": "The points $A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$ form a triangle. Find its area and the equation of the plane $ABC$.",
+  "solution": "$\\\\overrightarrow{AB}=(-1,1,0)$, $\\\\overrightarrow{AC}=(-1,0,1)$. Their cross product is $(1,1,1)$, so area $=\\\\tfrac12|\\\\overrightarrow{AB}\\\\times\\\\overrightarrow{AC}|=\\\\tfrac{\\\\sqrt3}{2}$. A normal to the plane is $(1,1,1)$; through $C(0,0,1)$: $x+y+(z-1)=0$, i.e. $x+y+z=1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the cross product for the area.",
+    "The normal is the cross product; plug in a point."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ch03-018",
+  "chapter": 3,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "algebraic division",
+    "remainder theorem",
+    "simultaneous equations"
+  ],
+  "methods": [
+    "remainder theorem",
+    "solving a linear system"
+  ],
+  "statement": "A cubic $f(x)=x^{3}+ax^{2}+bx+c$ satisfies $f(1)=5$, $f(-1)=-1$, $f(2)=17$ and $f(-2)=-7$. Find $a$, $b$ and $c$.",
+  "solution": "From the values: $1+a+b+c=5\\\\Rightarrow a+b+c=4$; $-1+a-b+c=-1\\\\Rightarrow a-b+c=0$; $8+4a+2b+c=17\\\\Rightarrow 4a+2b+c=9$; $-8+4a-2b+c=-7\\\\Rightarrow 4a-2b+c=1$. Subtracting the second from the first gives $2b=4$ so $b=2$; then $a+c=2$, and $4a+c=5$, whence $a=1$, $c=1$. Thus $a=1,b=2,c=1$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the remainder theorem to get four linear equations.",
+    "Subtract pairs to isolate $b$, then $a$ and $c$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

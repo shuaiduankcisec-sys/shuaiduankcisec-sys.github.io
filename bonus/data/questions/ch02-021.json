@@ -1,0 +1,29 @@
+{
+  "id": "ch02-021",
+  "chapter": 2,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1991,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "quadratic equations",
+    "discriminant",
+    "inequalities"
+  ],
+  "methods": [
+    "discriminant$\\ge 0$",
+    "solving a quadratic inequality"
+  ],
+  "statement": "Find the range of real values of $k$ for which the equation $(k+1)x^{2}-2x+k=0$ has real roots.",
+  "solution": "For real roots the discriminant must be non-negative: $(-2)^{2}-4(k+1)k\\ge 0$, i.e. $4-4k(k+1)\\ge 0$, so $k^{2}+k-1\\le 0$. The roots of $k^{2}+k-1=0$ are $\\tfrac{-1\\pm\\sqrt5}{2}$, hence $-\\tfrac{1+\\sqrt5}{2}\\le k\\le \\tfrac{-1+\\sqrt5}{2}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Require the discriminant $\\\\ge 0$.",
+    "Solve the resulting quadratic inequality in $k$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

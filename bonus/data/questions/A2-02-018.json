@@ -1,0 +1,27 @@
+{
+  "id": "A2-02-018",
+  "chapter": "A2-02",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1991,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 4,
+  "topics": [
+    "binomial series",
+    "expansion"
+  ],
+  "methods": [
+    "general binomial theorem"
+  ],
+  "statement": "Find the first three terms in the expansion of $(1-2x)^{3/2}$ in ascending powers of $x$.",
+  "solution": "$(1+u)^{3/2}=1+\\\\tfrac32u+\\\\tfrac{3/2\\\\cdot1/2}{2}u^{2}+\\\\cdots=1+\\\\tfrac32u+\\\\tfrac38u^{2}+\\\\cdots$. With $u=-2x$: $1+\\\\tfrac32(-2x)+\\\\tfrac38(4x^{2})=1-3x+\\\\tfrac32x^{2}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Apply $(1+u)^{3/2}$ with $u=-2x$.",
+    "Keep terms up to $x^{2}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

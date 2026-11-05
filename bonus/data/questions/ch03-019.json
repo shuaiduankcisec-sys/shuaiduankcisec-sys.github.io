@@ -1,0 +1,28 @@
+{
+  "id": "ch03-019",
+  "chapter": 3,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1990,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "algebraic division",
+    "factor theorem"
+  ],
+  "methods": [
+    "polynomial long division",
+    "factorising a quartic"
+  ],
+  "statement": "Show that $x^{4}-5x^{3}+5x^{2}+5x-6$ is divisible by $x^{2}-4x+3$, and find the other quadratic factor.",
+  "solution": "Since $x^{2}-4x+3=(x-1)(x-3)$ and the quartic vanishes at $x=1$ and $x=3$, it is divisible. Let the other factor be $x^{2}+mx+n$. Then $(x^{2}-4x+3)(x^{2}+mx+n)=x^{4}+(m-4)x^{3}+(n-4m+3)x^{2}+(3m-4n)x+3n$. Matching gives $m-4=-5\\\\Rightarrow m=-1$; $3n=-6\\\\Rightarrow n=-2$; and the $x^{2}$ coefficient $n-4m+3=-2+4+3=5$ checks. So the other factor is $x^{2}-x-2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Check that $x=1$ and $x=3$ are roots.",
+    "Set up $(x^{2}-4x+3)(x^{2}+mx+n)$ and compare coefficients."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "A2-05-015",
+  "chapter": "A2-05",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1995,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "differentiation",
+    "parametric curves",
+    "tangents"
+  ],
+  "methods": [
+    "parametric differentiation",
+    "intersection of tangent and curve"
+  ],
+  "statement": "A curve is given by $x=t^{2}$, $y=t^{3}$. Find $\\\\tfrac{dy}{dx}$, and show that the tangent at $t=2$ meets the curve again at the point $(-1,-1)$.",
+  "solution": "$\\\\tfrac{dx}{dt}=2t$, $\\\\tfrac{dy}{dt}=3t^{2}$, so $\\\\tfrac{dy}{dx}=\\\\tfrac{3t}{2}$. At $t=2$: $(x,y)=(4,8)$, gradient $3$; tangent $y-8=3(x-4)$, i.e. $y=3x-4$. On the curve $y=t^{3}$, $x=t^{2}$: $t^{3}=3t^{2}-4\\\\Rightarrow t^{3}-3t^{2}+4=0=(t-2)^{2}(t+1)$. The roots are $t=2$ (contact) and $t=-1$, giving the second point $(-1,-1)$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Differentiate parametrically.",
+    "Substitute the parametric form into the tangent line."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

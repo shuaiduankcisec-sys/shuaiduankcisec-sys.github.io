@@ -1,0 +1,28 @@
+{
+  "id": "ch09-022",
+  "chapter": 9,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1992,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 5,
+  "topics": [
+    "circles",
+    "coordinate geometry"
+  ],
+  "methods": [
+    "circle through points",
+    "centre on a line"
+  ],
+  "statement": "A circle has its centre on the line $y=x$ and passes through both $(0,0)$ and $(2,0)$. Find its equation and its radius.",
+  "solution": "Centre $(a,a)$, radius $R$. From $(0,0)$: $a^{2}+a^{2}=R^{2}\\\\Rightarrow R^{2}=2a^{2}$. From $(2,0)$: $(2-a)^{2}+a^{2}=R^{2}=2a^{2}$, so $4-4a+a^{2}+a^{2}=2a^{2}$, giving $4-4a=0$, hence $a=1$. Then $R^{2}=2$ and the circle is $(x-1)^{2}+(y-1)^{2}=2$, radius $\\\\sqrt2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Let the centre be $(a,a)$.",
+    "Equate the squared distances to the two given points."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

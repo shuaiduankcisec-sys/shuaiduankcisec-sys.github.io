@@ -1,0 +1,29 @@
+{
+  "id": "A2-03-015",
+  "chapter": "A2-03",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1993,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "trigonometry",
+    "sum-to-product",
+    "equations"
+  ],
+  "methods": [
+    "$\\sin A-\\sin B$ identity",
+    "solving trig equations"
+  ],
+  "statement": "Show that $\\\\sin3\\\\theta-\\\\sin\\\\theta=2\\\\cos2\\\\theta\\\\sin\\\\theta$, and hence solve $\\\\sin3\\\\theta=\\\\sin\\\\theta$ for $\\\\theta\\\\in[0,\\\\pi]$.",
+  "solution": "$\\\\sin3\\\\theta-\\\\sin\\\\theta=2\\\\cos(\\\\tfrac{3\\\\theta+\\\\theta}{2})\\\\sin(\\\\tfrac{3\\\\theta-\\\\theta}{2})=2\\\\cos2\\\\theta\\\\sin\\\\theta$. For $\\\\sin3\\\\theta=\\\\sin\\\\theta$: $2\\\\cos2\\\\theta\\\\sin\\\\theta=0$. So $\\\\sin\\\\theta=0\\\\Rightarrow\\\\theta=0,\\\\pi$, or $\\\\cos2\\\\theta=0\\\\Rightarrow2\\\\theta=\\\\tfrac{\\\\pi}{2},\\\\tfrac{3\\\\pi}{2}\\\\Rightarrow\\\\theta=\\\\tfrac{\\\\pi}{4},\\\\tfrac{3\\\\pi}{4}$. Solutions: $0,\\\\ \\\\tfrac{\\\\pi}{4},\\\\ \\\\tfrac{3\\\\pi}{4},\\\\ \\\\pi$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the sum-to-product identity.",
+    "Set the product equal to zero."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

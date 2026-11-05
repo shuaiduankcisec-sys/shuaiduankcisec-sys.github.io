@@ -1,0 +1,28 @@
+{
+  "id": "ch07-026",
+  "chapter": 7,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1991,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "integration",
+    "area between curves"
+  ],
+  "methods": [
+    "locating intersection",
+    "splitting the integral"
+  ],
+  "statement": "Find the total area enclosed between the curves $y=\\\\sin x$ and $y=\\\\cos x$ for $0\\\\le x\\\\le \\\\tfrac{\\\\pi}{2}$.",
+  "solution": "The curves cross at $x=\\\\tfrac{\\\\pi}{4}$. Area $=\\\\int_{0}^{\\\\pi/4}(\\\\cos x-\\\\sin x)\\\\,dx+\\\\int_{\\\\pi/4}^{\\\\pi/2}(\\\\sin x-\\\\cos x)\\\\,dx$. First part $= [\\\\sin x+\\\\cos x]_{0}^{\\\\pi/4}=(\\\\tfrac{\\\\sqrt2}{2}+\\\\tfrac{\\\\sqrt2}{2})-1=\\\\sqrt2-1$. Second part $= [-\\\\cos x-\\\\sin x]_{\\\\pi/4}^{\\\\pi/2}=(-1)-(-\\\\sqrt2)=\\\\sqrt2-1$. Total $=2(\\\\sqrt2-1)$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Find where $\\\\sin x=\\\\cos x$ in the interval.",
+    "Integrate the upper minus lower curve on each sub-interval."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ch04-021",
+  "chapter": 4,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "functions",
+    "modulus",
+    "piecewise functions"
+  ],
+  "methods": [
+    "analysing a piecewise function",
+    "finding a minimum"
+  ],
+  "statement": "Let $f(x)=|x-1|+|x-2|+|x-3|$. Find its minimum value and the value(s) of $x$ at which it occurs.",
+  "solution": "Break into intervals. For $x\\\\le 1$: $f=6-3x$, decreasing, value at $x=1$ is $3$. For $1\\\\le x\\\\le 2$: $f=4-x$, value at $x=2$ is $2$. For $2\\\\le x\\\\le 3$: $f=x$, value at $x=2$ is $2$ and at $x=3$ is $3$. For $x\\\\ge 3$: $f=3x-6$, increasing from $3$. Hence the minimum value is $2$, attained at $x=2$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Remove moduli by considering the critical points $x=1,2,3$.",
+    "Compare the values in each interval."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}

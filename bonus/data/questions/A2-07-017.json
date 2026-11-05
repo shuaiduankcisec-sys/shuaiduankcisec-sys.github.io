@@ -1,0 +1,28 @@
+{
+  "id": "A2-07-017",
+  "chapter": "A2-07",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "A2",
+  "difficulty": 5,
+  "topics": [
+    "differential equations",
+    "separation of variables"
+  ],
+  "methods": [
+    "separating variables",
+    "partial fractions"
+  ],
+  "statement": "Solve $\\\\tfrac{dy}{dx}=y(1-y)$ given $y(0)=\\\\tfrac12$.",
+  "solution": "Separate: $\\\\tfrac{dy}{y(1-y)}=dx$. Since $\\\\tfrac{1}{y(1-y)}=\\\\tfrac{1}{y}+\\\\tfrac{1}{1-y}$, integrating gives $\\\\ln|y|-\\\\ln|1-y|=x+C$, i.e. $\\\\ln\\\\tfrac{y}{1-y}=x+C$. With $y(0)=\\\\tfrac12$: $\\\\ln1=C\\\\Rightarrow C=0$, so $\\\\tfrac{y}{1-y}=\\\\mathrm{e}^{x}$, giving $y=\\\\tfrac{\\\\mathrm{e}^{x}}{1+\\\\mathrm{e}^{x}}$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Split $\\\\tfrac{1}{y(1-y)}$ into partial fractions.",
+    "Use the initial condition to fix the constant."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]"
+}

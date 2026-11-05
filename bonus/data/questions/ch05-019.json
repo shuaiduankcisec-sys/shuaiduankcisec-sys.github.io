@@ -1,0 +1,29 @@
+{
+  "id": "ch05-019",
+  "chapter": 5,
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1994,
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "level": "AS",
+  "difficulty": 4,
+  "topics": [
+    "coordinate geometry",
+    "area of triangle",
+    "parallel lines"
+  ],
+  "methods": [
+    "shoelace formula",
+    "gradient and parallel lines"
+  ],
+  "statement": "The points $A(2,1)$, $B(6,4)$ and $C(8,0)$ form a triangle. Find its area and the equation of the line through $A$ parallel to $BC$.",
+  "solution": "Area $=\\\\tfrac12|2(4-0)+6(0-1)+8(1-4)|=\\\\tfrac12|8-6-24|=\\\\tfrac{22}{2}=11$. Gradient of $BC=\\\\tfrac{0-4}{8-6}=-2$, so the line through $A$ has gradient $-2$: $y-1=-2(x-2)$, i.e. $y=-2x+5$.",
+  "solutionStatus": "full",
+  "hints": [
+    "Use the shoelace (determinant) formula for area.",
+    "Parallel lines share the same gradient."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3否 Q4是 Q5是 → 4星]"
+}
