@@ -1,0 +1,29 @@
+{
+  "id": "A2-06-019",
+  "chapter": "A2-06",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1995,
+  "difficulty": 5,
+  "topics": [
+    "definite integral",
+    "trigonometric substitution"
+  ],
+  "methods": [
+    "trigonometric substitution",
+    "area of quarter circle"
+  ],
+  "statement": "Show that $\\displaystyle\\int_{0}^{1}\\sqrt{1-x^{2}}\\,dx=\\frac{\\pi}{4}$, and interpret the result geometrically.",
+  "solution": "Substitute $x=\\sin\\theta$, $dx=\\cos\\theta\\,d\\theta$; when $x=0,\\theta=0$ and $x=1,\\theta=\\pi/2$. Then $\\int_{0}^{1}\\sqrt{1-x^{2}}dx=\\int_{0}^{\\pi/2}\\cos^{2}\\theta\\,d\\theta =\\int_{0}^{\\pi/2}\\tfrac{1+\\cos2\\theta}{2}d\\theta=\\left[\\tfrac{\\theta}{2}+\\tfrac{\\sin2\\theta}{4}\\right]_{0}^{\\pi/2}=\\tfrac{\\pi}{4}$. Geometrically this is the area of a quarter of the unit circle, $\\pi/4$.",
+  "hints": [
+    "Use $x=\\sin\\theta$ to remove the square root.",
+    "Integrate $\\cos^{2}\\theta$ via the double-angle formula.",
+    "Recognise the region as a quarter unit circle."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

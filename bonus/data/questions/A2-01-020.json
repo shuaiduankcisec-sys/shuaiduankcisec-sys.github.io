@@ -1,0 +1,28 @@
+{
+  "id": "A2-01-020",
+  "chapter": "A2-01",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1997,
+  "difficulty": 5,
+  "topics": [
+    "fixed points",
+    "iterative sequences"
+  ],
+  "methods": [
+    "fixed-point equation",
+    "iterative convergence"
+  ],
+  "statement": "For $f(x)=\\tfrac{x}{2}+\\tfrac{1}{x}$, find its positive fixed point $L$ (with $f(L)=L$), and show that the iteration $x_{n+1}=f(x_{n})$ started from $x_{0}=1$ converges to $L$. Compute $x_{1}$ and $x_{2}$.",
+  "solution": "Fixed point: $\\tfrac{L}{2}+\\tfrac{1}{L}=L\\Rightarrow \\tfrac{L}{2}=\\tfrac{1}{L}\\Rightarrow L^{2}=2$, so $L=\\sqrt{2}$ (positive). The iteration $x_{n+1}=\\tfrac{x_{n}}{2}+\\tfrac{1}{x_{n}}$ is the Newton method for $\\sqrt{2}$ and converges to $\\sqrt{2}$. $x_{1}=\\tfrac12+1=\\tfrac32=1.5$; $x_{2}=\\tfrac{1.5}{2}+\\tfrac{1}{1.5}=0.75+0.666\\ldots=1.416\\overline{6}$.",
+  "hints": [
+    "Solve $L=f(L)$ for the fixed point.",
+    "Run the iteration from $x_{0}=1$ for two steps."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

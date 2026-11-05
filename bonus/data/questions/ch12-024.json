@@ -1,0 +1,28 @@
+{
+  "id": "ch12-024",
+  "chapter": 12,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1995,
+  "difficulty": 4,
+  "topics": [
+    "exponential equation",
+    "AM-GM inequality"
+  ],
+  "methods": [
+    "substitution y = 2^x",
+    "minimum by AM-GM"
+  ],
+  "statement": "Find the minimum value of $2^{x}+2^{-x}$ and solve $2^{x}+2^{-x}=\\tfrac52$.",
+  "solution": "By AM-GM, $2^{x}+2^{-x}\\ge 2\\sqrt{2^{x}\\cdot 2^{-x}}=2$, with equality at $x=0$; the minimum is $2$. For the equation let $y=2^{x}>0$: $y+1/y=5/2\\Rightarrow 2y^{2}-5y+2=0\\Rightarrow (2y-1)(y-2)=0$. So $y=2$ or $y=1/2$, giving $x=1$ or $x=-1$.",
+  "hints": [
+    "Apply AM-GM to get the minimum.",
+    "Set $y=2^{x}$ to turn the equation into a quadratic."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

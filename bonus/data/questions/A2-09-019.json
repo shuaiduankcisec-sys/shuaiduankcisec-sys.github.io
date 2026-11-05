@@ -1,0 +1,28 @@
+{
+  "id": "A2-09-019",
+  "chapter": "A2-09",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2001,
+  "difficulty": 5,
+  "topics": [
+    "scalar triple product",
+    "volume of tetrahedron"
+  ],
+  "methods": [
+    "scalar triple product",
+    "volume from vectors"
+  ],
+  "statement": "With $O(0,0,0)$, $A(1,1,0)$, $B(1,0,1)$, $C(0,1,1)$, find the volume of the tetrahedron $OABC$.",
+  "solution": "Volume $=\\tfrac16|\\vec{OA}\\cdot(\\vec{OB}\\times\\vec{OC})|$. $\\vec{OA}=(1,1,0)$, $\\vec{OB}=(1,0,1)$, $\\vec{OC}=(0,1,1)$. $\\vec{OB}\\times\\vec{OC}=(-1,-1,1)$. Then $\\vec{OA}\\cdot(\\vec{OB}\\times\\vec{OC})=1(-1)+1(-1)+0=-2$. So volume $=\\tfrac16|{-2}|=\\tfrac13$.",
+  "hints": [
+    "Use the scalar triple product for the parallelepiped volume.",
+    "Divide by $6$ for the tetrahedron."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

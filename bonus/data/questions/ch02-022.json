@@ -1,0 +1,28 @@
+{
+  "id": "ch02-022",
+  "chapter": 2,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "difficulty": 4,
+  "topics": [
+    "Vieta",
+    "quadratic from roots"
+  ],
+  "methods": [
+    "Vieta formulae",
+    "forming polynomial from roots"
+  ],
+  "statement": "Let $\\alpha,\\beta$ be the roots of $x^{2}-5x+6=0$. Find the quadratic equation whose roots are $\\alpha^{2}$ and $\\beta^{2}$.",
+  "solution": "From $x^{2}-5x+6=0$ we have $\\alpha+\\beta=5$ and $\\alpha\\beta=6$. Then $\\alpha^{2}+\\beta^{2}=(\\alpha+\\beta)^{2}-2\\alpha\\beta=25-12=13$ and $\\alpha^{2}\\beta^{2}=(\\alpha\\beta)^{2}=36$. The required quadratic is $x^{2}-13x+36=0$.",
+  "hints": [
+    "Use Vieta to get $\\alpha+\\beta$ and $\\alpha\\beta$.",
+    "Express $\\alpha^{2}+\\beta^{2}$ and $\\alpha^{2}\\beta^{2}$ in terms of these."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5是 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

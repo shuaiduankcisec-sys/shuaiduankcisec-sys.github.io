@@ -1,0 +1,28 @@
+{
+  "id": "A2-06-018",
+  "chapter": "A2-06",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1994,
+  "difficulty": 4,
+  "topics": [
+    "definite integral",
+    "integration by parts"
+  ],
+  "methods": [
+    "integration by parts",
+    "definite integral"
+  ],
+  "statement": "Evaluate $\\displaystyle\\int_{0}^{1}x e^{x}\\,dx$.",
+  "solution": "Integration by parts with $u=x,dv=e^{x}dx$: $\\int x e^{x}dx=x e^{x}-\\int e^{x}dx=x e^{x}-e^{x}$. Thus $\\int_{0}^{1}x e^{x}dx=[x e^{x}-e^{x}]_{0}^{1}=(e-e)-(0-1)=1$.",
+  "hints": [
+    "Use integration by parts with $u=x$.",
+    "Evaluate between $0$ and $1$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

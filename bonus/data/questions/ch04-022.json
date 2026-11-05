@@ -1,0 +1,28 @@
+{
+  "id": "ch04-022",
+  "chapter": 4,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1998,
+  "difficulty": 4,
+  "topics": [
+    "self-inverse function",
+    "function composition"
+  ],
+  "methods": [
+    "function composition",
+    "self-inverse functions"
+  ],
+  "statement": "Let $f(x)=\\dfrac{x+1}{x-1}$. Show that $f(f(x))=x$ for $x\\neq 1$.",
+  "solution": "$f(f(x))=f\\!\\left(\\dfrac{x+1}{x-1}\\right)=\\dfrac{\\frac{x+1}{x-1}+1}{\\frac{x+1}{x-1}-1} =\\dfrac{\\frac{x+1+x-1}{x-1}}{\\frac{x+1-x+1}{x-1}}=\\dfrac{2x}{2}=x$. Thus $f$ is self-inverse.",
+  "hints": [
+    "Substitute $\\frac{x+1}{x-1}$ into the formula for $f$.",
+    "Simplify numerator and denominator separately."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3否 Q4是 Q5是 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

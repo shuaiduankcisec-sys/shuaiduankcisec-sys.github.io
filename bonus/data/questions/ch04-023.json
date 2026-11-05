@@ -1,0 +1,28 @@
+{
+  "id": "ch04-023",
+  "chapter": 4,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1996,
+  "difficulty": 5,
+  "topics": [
+    "function composition",
+    "fixed points"
+  ],
+  "methods": [
+    "function composition",
+    "solving fixed-point equations"
+  ],
+  "statement": "Let $f(x)=\\dfrac{x+2}{x}$. Find a simplified expression for $f(f(x))$ and determine the fixed points of $f$ (values of $x$ with $f(x)=x$).",
+  "solution": "$f(f(x))=f\\!\\left(\\dfrac{x+2}{x}\\right)=\\dfrac{\\frac{x+2}{x}+2}{\\frac{x+2}{x}} =1+\\dfrac{2x}{x+2}=\\dfrac{x+2+2x}{x+2}=\\dfrac{3x+2}{x+2}$. Fixed points satisfy $\\dfrac{x+2}{x}=x$, i.e. $x^{2}=x+2$, so $x^{2}-x-2=0$ and $(x-2)(x+1)=0$. The fixed points are $x=2$ and $x=-1$.",
+  "hints": [
+    "Compose $f$ with itself and simplify the complex fraction.",
+    "Set $f(x)=x$ and solve the resulting quadratic."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

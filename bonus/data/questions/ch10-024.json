@@ -1,0 +1,28 @@
+{
+  "id": "ch10-024",
+  "chapter": 10,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2001,
+  "difficulty": 5,
+  "topics": [
+    "triple-angle formula",
+    "trigonometric equation"
+  ],
+  "methods": [
+    "sin 3 theta identity",
+    "solving sin 3 theta = 1/2"
+  ],
+  "statement": "Solve $4\\sin^{3}\\theta-3\\sin\\theta=-\\tfrac12$ for $0\\le \\theta\\le \\pi$, and state how many solutions there are.",
+  "solution": "Since $\\sin 3\\theta=3\\sin\\theta-4\\sin^{3}\\theta$, the equation becomes $-\\sin 3\\theta=-\\tfrac12$, i.e. $\\sin 3\\theta=\\tfrac12$. For $3\\theta\\in[0,3\\pi]$ this gives $3\\theta=\\tfrac{\\pi}{6},\\tfrac{5\\pi}{6},\\tfrac{13\\pi}{6},\\tfrac{17\\pi}{6}$. Hence $\\theta=\\tfrac{\\pi}{18},\\tfrac{5\\pi}{18},\\tfrac{13\\pi}{18},\\tfrac{17\\pi}{18}$ — four solutions in $[0,\\pi]$.",
+  "hints": [
+    "Recognise $4\\sin^{3}\\theta-3\\sin\\theta=-\\sin 3\\theta$.",
+    "Solve $\\sin 3\\theta=\\tfrac12$ over the interval for $3\\theta$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

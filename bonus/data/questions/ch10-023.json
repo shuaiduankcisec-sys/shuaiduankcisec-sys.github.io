@@ -1,0 +1,28 @@
+{
+  "id": "ch10-023",
+  "chapter": 10,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2000,
+  "difficulty": 4,
+  "topics": [
+    "cosine of special angle",
+    "multiple-angle formula"
+  ],
+  "methods": [
+    "cos 5 theta identity",
+    "solving for cos 36"
+  ],
+  "statement": "Using the identity for $\\cos 5\\theta$, show that $\\cos 36^{\\circ}=\\dfrac{\\sqrt{5}+1}{4}$.",
+  "solution": "Let $c=\\cos 36^{\\circ}$; then $5\\cdot 36^{\\circ}=180^{\\circ}$ so $\\cos 180^{\\circ}=-1=\\cos 5\\theta$. Using $\\cos 5\\theta=16\\cos^{5}\\theta-20\\cos^{3}\\theta+4\\cos\\theta$, we get $16c^{5}-20c^{3}+4c+1=0$. Factoring $(c+1)(16c^{4}-16c^{3}-4c^{2}+4c+1)=0$; since $c\\neq -1$, the quartic gives $c=\\tfrac{\\sqrt{5}+1}{4}$ (taking the positive root).",
+  "hints": [
+    "Use $\\cos 5\\theta$ in terms of $\\cos\\theta$ with $\\theta=36^{\\circ}$.",
+    "Solve the resulting polynomial, keeping the positive root."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

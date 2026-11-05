@@ -1,0 +1,28 @@
+{
+  "id": "A2-08-020",
+  "chapter": "A2-08",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1999,
+  "difficulty": 5,
+  "topics": [
+    "Newton-Raphson",
+    "root approximation"
+  ],
+  "methods": [
+    "Newton-Raphson",
+    "error reduction"
+  ],
+  "statement": "Use the Newton-Raphson method on $f(x)=x^{3}-2x-5$ starting from $x_{0}=2$ to find the real root, giving $x_{1}$, $x_{2}$ and the limiting value to 6 d.p.",
+  "solution": "$f'(x)=3x^{2}-2$, so $x_{n+1}=x_{n}-\\dfrac{x_{n}^{3}-2x_{n}-5}{3x_{n}^{2}-2}$. $x_{1}=2-\\dfrac{8-4-5}{12-2}=2+\\tfrac{1}{10}=2.1$. $x_{2}=2.1-\\dfrac{9.261-4.2-5}{3(4.41)-2}=2.1-\\dfrac{0.061}{11.23}\\approx2.094568$. The root is approximately $2.094551$ (to 6 d.p.).",
+  "hints": [
+    "Compute $f'(x)=3x^{2}-2$ for the update formula.",
+    "Run two iterations from $x_{0}=2$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

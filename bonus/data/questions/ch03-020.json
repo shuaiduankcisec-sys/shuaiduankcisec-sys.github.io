@@ -1,0 +1,28 @@
+{
+  "id": "ch03-020",
+  "chapter": 3,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1997,
+  "difficulty": 5,
+  "topics": [
+    "Sophie Germain identity",
+    "factorisation"
+  ],
+  "methods": [
+    "Sophie Germain factorisation",
+    "completing a square"
+  ],
+  "statement": "Factorise $x^{4}+4$ as a product of two quadratics with integer coefficients, and verify your factorisation.",
+  "solution": "Using the Sophie Germain identity $a^{4}+4b^{4}=(a^{2}+2b^{2}+2ab)(a^{2}+2b^{2}-2ab)$ with $a=x,b=1$: $x^{4}+4=(x^{2}+2+2x)(x^{2}+2-2x)=(x^{2}+2x+2)(x^{2}-2x+2)$. Expanding: $(x^{2}+2x+2)(x^{2}-2x+2)=x^{4}-2x^{3}+2x^{2}+2x^{3}-4x^{2}+4x+2x^{2}-4x+4=x^{4}+4$.",
+  "hints": [
+    "Write $x^{4}+4$ as $x^{4}+4x^{2}+4-4x^{2}$.",
+    "Recognise a difference of two squares."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

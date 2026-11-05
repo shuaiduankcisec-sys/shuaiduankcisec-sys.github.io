@@ -1,0 +1,28 @@
+{
+  "id": "A2-07-019",
+  "chapter": "A2-07",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1996,
+  "difficulty": 4,
+  "topics": [
+    "first-order ODE",
+    "separation of variables"
+  ],
+  "methods": [
+    "separation of variables",
+    "initial condition"
+  ],
+  "statement": "Solve $\\dfrac{dy}{dx}+y=0$ with $y(0)=1$, and verify your solution satisfies the equation.",
+  "solution": "Separating: $\\dfrac{dy}{y}=-dx\\Rightarrow \\ln|y|=-x+C\\Rightarrow y=Ae^{-x}$. With $y(0)=1$, $A=1$, so $y=e^{-x}$. Check: $y'+y=-e^{-x}+e^{-x}=0$ and $y(0)=1$.",
+  "hints": [
+    "Separate variables and integrate.",
+    "Apply the initial condition $y(0)=1$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

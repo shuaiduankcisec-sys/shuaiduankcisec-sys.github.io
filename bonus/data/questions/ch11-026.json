@@ -1,0 +1,28 @@
+{
+  "id": "ch11-026",
+  "chapter": 11,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2002,
+  "difficulty": 5,
+  "topics": [
+    "R-form",
+    "trigonometric equation"
+  ],
+  "methods": [
+    "R-form combination",
+    "solving sin( theta + alpha ) = c"
+  ],
+  "statement": "Solve $3\\sin\\theta+4\\cos\\theta=2$ for $0\\le\\theta<2\\pi$, giving your answers exactly in terms of inverse trigonometric functions.",
+  "solution": "From the R-form, $3\\sin\\theta+4\\cos\\theta=5\\sin(\\theta+\\alpha)$ where $\\cos\\alpha=3/5,\\sin\\alpha=4/5$ and $\\alpha=\\arctan(4/3)$. So $5\\sin(\\theta+\\alpha)=2\\Rightarrow \\sin(\\theta+\\alpha)=\\tfrac25$. Let $\\beta=\\arcsin(2/5)$. Then $\\theta+\\alpha=\\beta$ or $\\pi-\\beta$ (mod $2\\pi$). Thus $\\theta=\\beta-\\alpha$ or $\\pi-\\beta-\\alpha$ within $[0,2\\pi)$, i.e. $\\theta=\\arcsin(2/5)-\\arctan(4/3)$ and $\\theta=\\pi-\\arcsin(2/5)-\\arctan(4/3)$ (adjusted into range).",
+  "hints": [
+    "Write the left side as $5\\sin(\\theta+\\alpha)$.",
+    "Solve $\\sin(\\theta+\\alpha)=2/5$ and shift back by $\\alpha$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

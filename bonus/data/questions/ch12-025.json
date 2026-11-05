@@ -1,0 +1,28 @@
+{
+  "id": "ch12-025",
+  "chapter": 12,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2003,
+  "difficulty": 5,
+  "topics": [
+    "change of base",
+    "logarithm identity"
+  ],
+  "methods": [
+    "change of base formula",
+    "logarithm chain rule"
+  ],
+  "statement": "Using the change-of-base formula, show that $\\log_{2}3\\cdot\\log_{3}4=\\log_{2}4$ and evaluate it.",
+  "solution": "By change of base, $\\log_{a}b=\\dfrac{\\ln b}{\\ln a}$. Hence $\\log_{2}3\\cdot\\log_{3}4=\\dfrac{\\ln 3}{\\ln 2}\\cdot\\dfrac{\\ln 4}{\\ln 3}=\\dfrac{\\ln 4}{\\ln 2}=\\log_{2}4=2$. More generally $\\log_{a}b\\cdot\\log_{b}c=\\log_{a}c$.",
+  "hints": [
+    "Write each logarithm as a ratio of natural logs.",
+    "Cancel $\\ln 3$ and recognise $\\ln 4/\\ln 2$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

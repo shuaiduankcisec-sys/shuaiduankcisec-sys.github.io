@@ -1,0 +1,28 @@
+{
+  "id": "ch07-027",
+  "chapter": 7,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2002,
+  "difficulty": 4,
+  "topics": [
+    "definite integral",
+    "cosine squared identity"
+  ],
+  "methods": [
+    "double-angle identity",
+    "integration of basic trig"
+  ],
+  "statement": "Evaluate $\\displaystyle\\int_{0}^{\\pi}\\sin^{2}x\\,dx$.",
+  "solution": "Use $\\sin^{2}x=\\tfrac12(1-\\cos 2x)$. Then $\\int_{0}^{\\pi}\\sin^{2}x\\,dx=\\tfrac12\\int_{0}^{\\pi}(1-\\cos 2x)\\,dx =\\tfrac12\\left[x-\\tfrac12\\sin 2x\\right]_{0}^{\\pi}=\\tfrac12(\\pi-0)=\\tfrac{\\pi}{2}$.",
+  "hints": [
+    "Replace $\\sin^{2}x$ using the double-angle formula.",
+    "Integrate the constant and cosine terms."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

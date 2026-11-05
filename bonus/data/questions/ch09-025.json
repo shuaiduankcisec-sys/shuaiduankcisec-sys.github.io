@@ -1,0 +1,29 @@
+{
+  "id": "ch09-025",
+  "chapter": 9,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1993,
+  "difficulty": 5,
+  "topics": [
+    "tangent to a circle",
+    "perpendicular radius"
+  ],
+  "methods": [
+    "equation of tangent",
+    "gradient product -1"
+  ],
+  "statement": "Show that the tangent to the circle $x^{2}+y^{2}=r^{2}$ at a point $(x_{0},y_{0})$ on it has equation $x_{0}x+y_{0}y=r^{2}$, and prove this tangent is perpendicular to the radius to $(x_{0},y_{0})$.",
+  "solution": "Implicitly, $2x+2yy'=0$ so $y'=-x/y$; at $(x_{0},y_{0})$ the tangent gradient is $-x_{0}/y_{0}$. The tangent through $(x_{0},y_{0})$ is $y-y_{0}=-\\tfrac{x_{0}}{y_{0}}(x-x_{0})$, i.e. $x_{0}x+y_{0}y=x_{0}^{2}+y_{0}^{2}=r^{2}$. The radius has gradient $y_{0}/x_{0}$; the product of gradients is $(-x_{0}/y_{0})(y_{0}/x_{0})=-1$, so they are perpendicular. (Check at $(3,4)$ on $x^{2}+y^{2}=25$: tangent $3x+4y=25$, radius gradient $4/3$, tangent gradient $-3/4$.)",
+  "hints": [
+    "Use implicit differentiation to get the tangent gradient.",
+    "Write the tangent line and rearrange to $x_{0}x+y_{0}y=r^{2}$.",
+    "Show the product of the two gradients is $-1$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5是 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

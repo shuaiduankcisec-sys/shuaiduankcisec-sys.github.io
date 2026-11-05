@@ -1,0 +1,28 @@
+{
+  "id": "A2-09-018",
+  "chapter": "A2-09",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2000,
+  "difficulty": 4,
+  "topics": [
+    "cross product",
+    "angle between vectors"
+  ],
+  "methods": [
+    "cross product for area",
+    "dot product for angle"
+  ],
+  "statement": "The points are $A(1,0,0)$, $B(0,1,0)$ and $C(0,0,1)$. Find the area of triangle $ABC$ and the angle $\\angle BAC$.",
+  "solution": "$\\vec{AB}=(-1,1,0)$, $\\vec{AC}=(-1,0,1)$. Cross product $\\vec{AB}\\times\\vec{AC}=(1,1,1)$, magnitude $\\sqrt{3}$. Area $=\\tfrac12|\\vec{AB}\\times\\vec{AC}|=\\tfrac{\\sqrt{3}}{2}$. $\\cos\\angle BAC=\\dfrac{\\vec{AB}\\cdot\\vec{AC}}{|\\vec{AB}||\\vec{AC}|}=\\dfrac{1}{\\sqrt{2}\\sqrt{2}}=\\tfrac12$, so $\\angle BAC=60^{\\circ}$.",
+  "hints": [
+    "Use the cross product to get the area.",
+    "Use the dot product to find the angle at $A$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

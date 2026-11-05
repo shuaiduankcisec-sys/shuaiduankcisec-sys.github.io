@@ -1,0 +1,29 @@
+{
+  "id": "A2-01-019",
+  "chapter": "A2-01",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1996,
+  "difficulty": 4,
+  "topics": [
+    "inverse function",
+    "logarithmic differentiation"
+  ],
+  "methods": [
+    "differentiation of ln",
+    "inverse functions"
+  ],
+  "statement": "For $f(x)=\\ln(x+1)$, find $f'(x)$ and the inverse function $f^{-1}(x)$, and verify that $f(f^{-1}(x))=x$.",
+  "solution": "$f'(x)=\\dfrac{1}{x+1}$. To invert: $y=\\ln(x+1)\\Rightarrow x+1=e^{y}\\Rightarrow x=e^{y}-1$, so $f^{-1}(x)=e^{x}-1$. Then $f(f^{-1}(x))=\\ln((e^{x}-1)+1)=\\ln(e^{x})=x$.",
+  "hints": [
+    "Differentiate $\\ln(x+1)$ directly.",
+    "Swap $x$ and $y$ and solve for $y$ to get the inverse.",
+    "Compose to check."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

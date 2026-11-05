@@ -1,0 +1,28 @@
+{
+  "id": "A2-02-019",
+  "chapter": "A2-02",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1998,
+  "difficulty": 4,
+  "topics": [
+    "binomial expansion",
+    "approximation"
+  ],
+  "methods": [
+    "binomial series",
+    "approximation"
+  ],
+  "statement": "Expand $(1+x)^{1/2}$ in ascending powers of $x$ up to the term in $x^{3}$, and use it to estimate $\\sqrt{1.1}$.",
+  "solution": "$(1+x)^{1/2}=1+\\tfrac12x+\\tfrac{(1/2)(-1/2)}{2!}x^{2}+\\tfrac{(1/2)(-1/2)(-3/2)}{3!}x^{3}+\\cdots =1+\\tfrac12x-\\tfrac18x^{2}+\\tfrac{1}{16}x^{3}+\\cdots$. For $\\sqrt{1.1}$ take $x=0.1$: $1+0.05-0.00125+0.0000625\\approx 1.0488125$.",
+  "hints": [
+    "Apply the generalised binomial theorem with exponent $1/2$.",
+    "Substitute $x=0.1$ to estimate $\\sqrt{1.1}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

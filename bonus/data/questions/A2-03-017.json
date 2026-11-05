@@ -1,0 +1,28 @@
+{
+  "id": "A2-03-017",
+  "chapter": "A2-03",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1999,
+  "difficulty": 4,
+  "topics": [
+    "de Moivre",
+    "multiple-angle formula"
+  ],
+  "methods": [
+    "de Moivre's theorem",
+    "expanding (cos+ i sin)^5"
+  ],
+  "statement": "Using de Moivre's theorem, express $\\sin 5\\theta$ as a polynomial in $\\sin\\theta$.",
+  "solution": "$(\\cos\\theta+i\\sin\\theta)^{5}=\\cos 5\\theta+i\\sin 5\\theta$. The imaginary part is $5\\cos^{4}\\theta\\sin\\theta-10\\cos^{2}\\theta\\sin^{3}\\theta+\\sin^{5}\\theta$. With $\\cos^{2}\\theta=1-\\sin^{2}\\theta$ this becomes $\\sin\\theta\\bigl(5(1-s^{2})^{2}-10(1-s^{2})s^{2}+s^{4}\\bigr)$ where $s=\\sin\\theta$, i.e. $\\sin 5\\theta=5\\sin\\theta-20\\sin^{3}\\theta+16\\sin^{5}\\theta$.",
+  "hints": [
+    "Expand $(\\cos\\theta+i\\sin\\theta)^{5}$ by the binomial theorem.",
+    "Take the imaginary part and rewrite cosines in terms of sine."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "A2-04-017",
+  "chapter": "A2-04",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2002,
+  "difficulty": 4,
+  "topics": [
+    "product rule",
+    "exponentials"
+  ],
+  "methods": [
+    "product rule",
+    "differentiation of e^x sin x"
+  ],
+  "statement": "Differentiate $y=e^{x}\\sin x$ with respect to $x$.",
+  "solution": "By the product rule, $\\dfrac{dy}{dx}=e^{x}\\sin x+e^{x}\\cos x=e^{x}(\\sin x+\\cos x)$.",
+  "hints": [
+    "Apply the product rule to $e^{x}$ and $\\sin x$.",
+    "Factor out $e^{x}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

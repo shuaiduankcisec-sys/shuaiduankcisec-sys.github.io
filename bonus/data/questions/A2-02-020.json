@@ -1,0 +1,29 @@
+{
+  "id": "A2-02-020",
+  "chapter": "A2-02",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1998,
+  "difficulty": 5,
+  "topics": [
+    "negative binomial",
+    "coefficient extraction"
+  ],
+  "methods": [
+    "binomial series with negative exponent",
+    "coefficient formula"
+  ],
+  "statement": "Expand $(1-2x)^{-2}$ in ascending powers of $x$ up to the term in $x^{3}$, and show that the coefficient of $x^{n}$ is $(n+1)2^{n}$.",
+  "solution": "$(1+u)^{-2}=1-2u+3u^{2}-4u^{3}+\\cdots$, so with $u=-2x$: $(1-2x)^{-2}=1+4x+12x^{2}+32x^{3}+\\cdots$. In general $(1+u)^{-2}=\\sum_{n\\ge0}(-1)^{n}(n+1)u^{n}$, hence the coefficient of $x^{n}$ is $(-1)^{n}(n+1)(-2)^{n}=(n+1)2^{n}$. Checks: $n=1\\to4,\\; n=2\\to12,\\; n=3\\to32$.",
+  "hints": [
+    "Write the binomial series for $(1+u)^{-2}$.",
+    "Substitute $u=-2x$ and read off the first coefficients.",
+    "Generalise the coefficient pattern."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5是 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

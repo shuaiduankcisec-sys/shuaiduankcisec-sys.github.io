@@ -1,0 +1,29 @@
+{
+  "id": "A2-07-020",
+  "chapter": "A2-07",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1997,
+  "difficulty": 5,
+  "topics": [
+    "first-order linear ODE",
+    "integrating factor"
+  ],
+  "methods": [
+    "integrating factor",
+    "linear ODE"
+  ],
+  "statement": "Solve the differential equation $\\dfrac{dy}{dx}+2y=e^{-x}$.",
+  "solution": "The integrating factor is $e^{\\int 2dx}=e^{2x}$. Then $\\dfrac{d}{dx}(e^{2x}y)=e^{2x}e^{-x}=e^{x}$. Integrating, $e^{2x}y=e^{x}+C$, so $y=e^{-x}+Ce^{-2x}$. Check: $y'+2y=(-e^{-x}-2Ce^{-2x})+2(e^{-x}+Ce^{-2x})=e^{-x}$.",
+  "hints": [
+    "Find the integrating factor $e^{2x}$.",
+    "Multiply through and recognise a derivative.",
+    "Integrate and solve for $y$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

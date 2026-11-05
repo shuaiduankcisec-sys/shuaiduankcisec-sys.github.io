@@ -1,0 +1,28 @@
+{
+  "id": "A2-03-018",
+  "chapter": "A2-03",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2000,
+  "difficulty": 5,
+  "topics": [
+    "de Moivre",
+    "tangent multiple-angle"
+  ],
+  "methods": [
+    "de Moivre's theorem",
+    "tangent 5 theta formula"
+  ],
+  "statement": "Derive a formula for $\\tan 5\\theta$ in terms of $t=\\tan\\theta$, and hence solve $\\tan 5\\theta=0$.",
+  "solution": "Dividing the sine and cosine expansions from de Moivre gives $\\tan 5\\theta=\\dfrac{5t-20t^{3}+16t^{5}}{1-10t^{2}+5t^{4}}$ with $t=\\tan\\theta$. $\\tan 5\\theta=0$ requires $5t-20t^{3}+16t^{5}=0=t(5-20t^{2}+16t^{4})$. Thus $t=0$ or $16t^{4}-20t^{2}+5=0$, giving $\\tan^{2}\\theta=\\tfrac{5\\pm\\sqrt{5}}{8}$. Equivalently $5\\theta=k\\pi$, so $\\theta=k\\pi/5$.",
+  "hints": [
+    "Use $\\tan 5\\theta=\\sin 5\\theta/\\cos 5\\theta$ from de Moivre.",
+    "Set the numerator to zero and solve for $t=\\tan\\theta$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

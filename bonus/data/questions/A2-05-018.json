@@ -1,0 +1,28 @@
+{
+  "id": "A2-05-018",
+  "chapter": "A2-05",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1999,
+  "difficulty": 5,
+  "topics": [
+    "minimisation",
+    "distance to a curve"
+  ],
+  "methods": [
+    "distance squared",
+    "stationary points"
+  ],
+  "statement": "Find the point(s) on the parabola $y=x^{2}$ that are closest to $(0,2)$, and state the minimum distance.",
+  "solution": "Distance squared to $(0,2)$ is $D=x^{2}+(x^{2}-2)^{2}=x^{4}-3x^{2}+4$. $D'=4x^{3}-6x=2x(2x^{2}-3)=0$ gives $x=0$ or $x^{2}=3/2$. At $x=0$, $D=4$ (distance $2$). At $x^{2}=3/2$, $D=(9/4)-3(3/2)+4=7/4$, distance $\\sqrt{7}/2\\approx1.323<2$. So the closest points are $\\left(\\pm\\sqrt{3/2},\\,3/2\\right)$ and the minimum distance is $\\sqrt{7}/2$.",
+  "hints": [
+    "Minimise the squared distance to avoid square roots.",
+    "Set the derivative of $x^{4}-3x^{2}+4$ to zero."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

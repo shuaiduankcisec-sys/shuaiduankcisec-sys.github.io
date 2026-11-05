@@ -1,0 +1,28 @@
+{
+  "id": "ch05-021",
+  "chapter": 5,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2000,
+  "difficulty": 4,
+  "topics": [
+    "reflection",
+    "point to line"
+  ],
+  "methods": [
+    "reflection in a line",
+    "midpoint check"
+  ],
+  "statement": "Find the reflection $Q$ of the point $P(2,3)$ in the line $3x+4y-5=0$, and verify that the midpoint of $PQ$ lies on the line.",
+  "solution": "For a line $ax+by+c=0$ the reflection of $(x_{0},y_{0})$ is $(x_{0},y_{0})-2\\dfrac{ax_{0}+by_{0}+c}{a^{2}+b^{2}}(a,b)$. Here $a=3,b=4,c=-5$ and $ax_{0}+by_{0}+c=6+12-5=13$, $a^{2}+b^{2}=25$. So $Q=(2,3)-\\dfrac{26}{25}(3,4)=\\left(2-\\dfrac{78}{25},\\,3-\\dfrac{104}{25}\\right)=\\left(-\\dfrac{28}{25},-\\dfrac{29}{25}\\right)$. Midpoint $M=\\left(\\dfrac{11}{25},\\dfrac{23}{25}\\right)$ and $3\\cdot\\tfrac{11}{25}+4\\cdot\\tfrac{23}{25}-5=\\tfrac{33+92-125}{25}=0$, so $M$ lies on the line.",
+  "hints": [
+    "Use the reflection formula involving the line's normal.",
+    "Check that the midpoint satisfies the line equation."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "A2-08-019",
+  "chapter": "A2-08",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1998,
+  "difficulty": 4,
+  "topics": [
+    "Newton-Raphson",
+    "square root iteration"
+  ],
+  "methods": [
+    "Newton-Raphson",
+    "iteration"
+  ],
+  "statement": "Apply the Newton-Raphson method to $f(x)=x^{2}-5$ starting from $x_{0}=2$ to find $\\sqrt{5}$, and give $x_{1}$ and $x_{2}$.",
+  "solution": "The iteration is $x_{n+1}=x_{n}-\\dfrac{x_{n}^{2}-5}{2x_{n}}=\\dfrac{x_{n}+5/x_{n}}{2}$. $x_{1}=\\tfrac{2+2.5}{2}=2.25$; $x_{2}=\\tfrac{2.25+5/2.25}{2}=\\tfrac{2.25+2.222\\ldots}{2}\\approx2.23611$. Already $x_{2}^{2}\\approx5.0000$.",
+  "hints": [
+    "Write the Newton-Raphson update for $x^{2}-5$.",
+    "Compute two iterations from $x_{0}=2$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

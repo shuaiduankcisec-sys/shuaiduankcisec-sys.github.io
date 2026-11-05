@@ -1,0 +1,28 @@
+{
+  "id": "A2-05-017",
+  "chapter": "A2-05",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2003,
+  "difficulty": 4,
+  "topics": [
+    "tangent to a curve",
+    "intersection"
+  ],
+  "methods": [
+    "differentiation",
+    "solving polynomial for intersection"
+  ],
+  "statement": "Find the tangent to $y=x^{3}-3x$ at $x=2$, and show it meets the curve again at $(-4,-52)$.",
+  "solution": "At $x=2$, $y=2$ and $y'=3x^{2}-3=9$. Tangent: $y-2=9(x-2)$, i.e. $y=9x-16$. Intersection: $x^{3}-3x=9x-16\\Rightarrow x^{3}-12x+16=0$. Since $x=2$ is a root, $(x-2)(x^{2}+2x-8)=(x-2)^{2}(x+4)=0$, so the other intersection is $x=-4$, $y=9(-4)-16=-52$.",
+  "hints": [
+    "Differentiate to get the gradient at $x=2$.",
+    "Solve $x^{3}-3x=9x-16$ and factor out the known root $x=2$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3否 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

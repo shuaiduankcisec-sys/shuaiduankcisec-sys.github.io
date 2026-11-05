@@ -1,0 +1,28 @@
+{
+  "id": "ch11-025",
+  "chapter": 11,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1994,
+  "difficulty": 4,
+  "topics": [
+    "R-form",
+    "amplitude"
+  ],
+  "methods": [
+    "R-form combination",
+    "compound angle"
+  ],
+  "statement": "Express $3\\sin\\theta+4\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$ with $R>0$, and state its maximum value.",
+  "solution": "$3\\sin\\theta+4\\cos\\theta=R\\sin(\\theta+\\alpha)=R\\sin\\theta\\cos\\alpha+R\\cos\\theta\\sin\\alpha$. Matching coefficients: $R\\cos\\alpha=3$, $R\\sin\\alpha=4$, so $R=\\sqrt{3^{2}+4^{2}}=5$ and $\\tan\\alpha=4/3$. The maximum value is $R=5$.",
+  "hints": [
+    "Expand $R\\sin(\\theta+\\alpha)$ and match coefficients of $\\sin\\theta$ and $\\cos\\theta$.",
+    "Use $R=\\sqrt{a^{2}+b^{2}}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ch06-020",
+  "chapter": 6,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2001,
+  "difficulty": 4,
+  "topics": [
+    "tangent to a curve",
+    "area between curve and line"
+  ],
+  "methods": [
+    "differentiation of polynomials",
+    "integration to find area"
+  ],
+  "statement": "For the curve $y=x^{3}-3x$, find the tangent at $x=1$, show it meets the curve again at $(-2,-2)$, and find the area enclosed between the tangent and the curve.",
+  "solution": "At $x=1$, $y=-2$ and $y'=3x^{2}-3=0$, so the tangent is $y=-2$. Meeting the curve: $x^{3}-3x=-2\\Rightarrow x^{3}-3x+2=0=(x-1)^{2}(x+2)$, so $x=-2$, $y=-2$. On $[-2,1]$, $x^{3}-3x+2\\ge 0$, so area $=\\int_{-2}^{1}(x^{3}-3x+2)\\,dx =\\left[\\tfrac14x^{4}-\\tfrac32x^{2}+2x\\right]_{-2}^{1}=\\tfrac34-(-6)=\\tfrac{27}{4}$.",
+  "hints": [
+    "Differentiate to get the gradient at $x=1$.",
+    "Solve $x^{3}-3x=-2$ for the second intersection.",
+    "Integrate the vertical gap between curve and tangent."
+  ],
+  "_difficultyNote": "[难度自评: Q1否 Q2是 Q3是 Q4是 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

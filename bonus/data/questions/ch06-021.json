@@ -1,0 +1,28 @@
+{
+  "id": "ch06-021",
+  "chapter": 6,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1997,
+  "difficulty": 5,
+  "topics": [
+    "stationary points",
+    "second derivative test"
+  ],
+  "methods": [
+    "differentiation of polynomials",
+    "classification of extrema"
+  ],
+  "statement": "Find and classify all stationary points of $f(x)=x^{4}-4x^{3}+4x^{2}$.",
+  "solution": "$f'(x)=4x^{3}-12x^{2}+8x=4x(x^{2}-3x+2)=4x(x-1)(x-2)$, so stationary points at $x=0,1,2$. $f''(x)=12x^{2}-24x+8$. At $x=0$: $f''(0)=8>0$ so a minimum, $f(0)=0$. At $x=1$: $f''(1)=-4<0$ so a maximum, $f(1)=1$. At $x=2$: $f''(2)=8>0$ so a minimum, $f(2)=0$.",
+  "hints": [
+    "Factorise $f'(x)$ completely.",
+    "Use the second derivative to classify each critical point."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

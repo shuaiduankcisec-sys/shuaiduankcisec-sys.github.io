@@ -1,0 +1,28 @@
+{
+  "id": "ch02-023",
+  "chapter": 2,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1994,
+  "difficulty": 5,
+  "topics": [
+    "Vieta",
+    "symmetric sums"
+  ],
+  "methods": [
+    "Vieta formulae",
+    "symmetric polynomial identities"
+  ],
+  "statement": "Let $\\alpha,\\beta,\\gamma$ be the roots of $x^{3}+px^{2}+qx+r=0$. Prove that $\\alpha^{2}+\\beta^{2}+\\gamma^{2}=p^{2}-2q$.",
+  "solution": "By Vieta, $\\alpha+\\beta+\\gamma=-p$ and $\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha=q$. Now $(\\alpha+\\beta+\\gamma)^{2}=\\alpha^{2}+\\beta^{2}+\\gamma^{2}+2(\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha)$. Substituting gives $p^{2}=\\alpha^{2}+\\beta^{2}+\\gamma^{2}+2q$, so $\\alpha^{2}+\\beta^{2}+\\gamma^{2}=p^{2}-2q$.",
+  "hints": [
+    "Write the square of the sum of the roots.",
+    "Relate the cross terms to the coefficient $q$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

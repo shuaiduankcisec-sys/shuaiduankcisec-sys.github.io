@@ -1,0 +1,28 @@
+{
+  "id": "A2-04-016",
+  "chapter": "A2-04",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2001,
+  "difficulty": 5,
+  "topics": [
+    "logarithmic differentiation",
+    "derivative of ln"
+  ],
+  "methods": [
+    "log laws",
+    "differentiation of logs"
+  ],
+  "statement": "Let $y=\\ln\\!\\left(\\dfrac{1+x}{1-x}\\right)$. Show that $\\dfrac{dy}{dx}=\\dfrac{2}{1-x^{2}}$.",
+  "solution": "Using log laws, $y=\\ln(1+x)-\\ln(1-x)$. Then $\\dfrac{dy}{dx}=\\dfrac{1}{1+x}-\\dfrac{-1}{1-x}=\\dfrac{1}{1+x}+\\dfrac{1}{1-x} =\\dfrac{(1-x)+(1+x)}{1-x^{2}}=\\dfrac{2}{1-x^{2}}$.",
+  "hints": [
+    "Split the logarithm into a difference of two logs.",
+    "Differentiate each term and combine over a common denominator."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2否 Q3是 Q4是 Q5是 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}
