@@ -1,0 +1,29 @@
+{
+  "id": "A2-03-020",
+  "chapter": "A2-03",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2000,
+  "difficulty": 4,
+  "topics": [
+    "trigonometric equations",
+    "tangent and sine",
+    "domain restrictions"
+  ],
+  "methods": [
+    "factoring",
+    "domain check"
+  ],
+  "statement": "Solve $\\tan\\theta=2\\sin\\theta$ for $0\\le\\theta<2\\pi$.",
+  "solution": "$\\dfrac{\\sin\\theta}{\\cos\\theta}=2\\sin\\theta$, so $\\sin\\theta(\\tfrac1{\\cos\\theta}-2)=0$. Thus $\\sin\\theta=0$ ($\\theta=0,\\pi$) or $\\cos\\theta=\\tfrac12$ ($\\theta=\\tfrac{\\pi}{3},\\tfrac{5\\pi}{3}$). Four solutions; note $\\cos\\theta=0$ is excluded.",
+  "hints": [
+    "Bring all terms to one side and factor.",
+    "Remember $\\cos\theta\neq0$ in the original equation."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ch10-026",
+  "chapter": 10,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2000,
+  "difficulty": 5,
+  "topics": [
+    "trigonometric equations",
+    "triple-angle formula",
+    "general solution"
+  ],
+  "methods": [
+    "triple-angle formula",
+    "factoring"
+  ],
+  "statement": "Solve $\\cos\\theta+\\cos3\\theta=0$ for $0\\le\\theta<2\\pi$.",
+  "solution": "$\\cos3\\theta=4\\cos^3\\theta-3\\cos\\theta$, so $\\cos\\theta+4\\cos^3\\theta-3\\cos\\theta=4\\cos^3\\theta-2\\cos\\theta=2\\cos\\theta(2\\cos^2\\theta-1)=0$. Hence $\\cos\\theta=0$ ($\\theta=\\tfrac{\\pi}{2},\\tfrac{3\\pi}{2}$) or $\\cos^2\\theta=\\tfrac12$ ($\\theta=\\tfrac{\\pi}{4},\\tfrac{3\\pi}{4},\\tfrac{5\\pi}{4},\\tfrac{7\\pi}{4}$). Six solutions in total.",
+  "hints": [
+    "Expand $\\cos3\theta$ using the triple-angle formula.",
+    "Factor the resulting cubic in $\\cos\theta$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

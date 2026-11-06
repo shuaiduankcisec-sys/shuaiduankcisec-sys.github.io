@@ -1,0 +1,28 @@
+{
+  "id": "ch05-022",
+  "chapter": 5,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "difficulty": 5,
+  "topics": [
+    "area of triangle",
+    "shoelace formula",
+    "coordinate geometry"
+  ],
+  "methods": [
+    "shoelace formula"
+  ],
+  "statement": "Find the area of the triangle with vertices $(1,2)$, $(4,6)$ and $(5,1)$.",
+  "solution": "Using the shoelace formula, area $=\\tfrac12|1(6-1)+4(1-2)+5(2-6)|=\\tfrac12|5-4-20|=\\tfrac{19}{2}$.",
+  "hints": [
+    "Use the determinant/shoelace formula for area.",
+    "Take the absolute value and halve."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

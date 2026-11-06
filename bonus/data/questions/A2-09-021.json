@@ -1,0 +1,29 @@
+{
+  "id": "A2-09-021",
+  "chapter": "A2-09",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2003,
+  "difficulty": 4,
+  "topics": [
+    "area of triangle",
+    "cross product",
+    "3D vectors"
+  ],
+  "methods": [
+    "cross product",
+    "magnitude"
+  ],
+  "statement": "Find the area of the triangle with vertices $(1,0,0)$, $(0,1,0)$ and $(0,0,1)$.",
+  "solution": "$\\overrightarrow{AB}=(-1,1,0)$, $\\overrightarrow{AC}=(-1,0,1)$; their cross product is $(1,1,1)$ with magnitude $\\sqrt3$. The area is $\\tfrac12\\sqrt3$.",
+  "hints": [
+    "Form two edge vectors from one vertex.",
+    "Take half the magnitude of their cross product."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

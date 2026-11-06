@@ -1,0 +1,29 @@
+{
+  "id": "ch10-025",
+  "chapter": 10,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1998,
+  "difficulty": 5,
+  "topics": [
+    "exact trigonometric values",
+    "sin 18 degrees",
+    "double-angle formula"
+  ],
+  "methods": [
+    "double-angle formula",
+    "cos 36 exact value"
+  ],
+  "statement": "Show that $\\sin 18^{\\circ}=\\dfrac{\\sqrt{5}-1}{4}$.",
+  "solution": "Using $\\cos36^{\\circ}=1-2\\sin^218^{\\circ}$ together with $\\cos36^{\\circ}=\\tfrac{\\sqrt{5}+1}{4}$ gives $2\\sin^218^{\\circ}=1-\\tfrac{\\sqrt{5}+1}{4}=\\tfrac{3-\\sqrt{5}}{4}$, so $\\sin^218^{\\circ}=\\tfrac{3-\\sqrt{5}}{8}=\\tfrac{(\\sqrt{5}-1)^2}{16}$ and $\\sin18^{\\circ}=\\tfrac{\\sqrt{5}-1}{4}$.",
+  "hints": [
+    "Use the double-angle formula for cosine.",
+    "Use the known exact value of $\\cos36^{\\circ}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

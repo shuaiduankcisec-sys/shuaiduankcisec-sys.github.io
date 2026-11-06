@@ -1,0 +1,28 @@
+{
+  "id": "A2-02-021",
+  "chapter": "A2-02",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1999,
+  "difficulty": 5,
+  "topics": [
+    "binomial series",
+    "generalised binomial theorem",
+    "negative fractional power"
+  ],
+  "methods": [
+    "generalised binomial theorem"
+  ],
+  "statement": "Find the first three terms in the binomial expansion of $(1+x)^{-1/2}$.",
+  "solution": "$(1+x)^{-1/2}=1+\\binom{-1/2}{1}x+\\binom{-1/2}{2}x^2+\\cdots=1-\\tfrac12 x+\\tfrac38 x^2+\\cdots$.",
+  "hints": [
+    "Use the generalised binomial theorem.",
+    "Compute $\binom{-1/2}{1}$ and $\binom{-1/2}{2}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

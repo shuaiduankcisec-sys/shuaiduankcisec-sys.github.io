@@ -1,0 +1,29 @@
+{
+  "id": "ch06-022",
+  "chapter": 6,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1998,
+  "difficulty": 5,
+  "topics": [
+    "area between curves",
+    "definite integration",
+    "polynomials"
+  ],
+  "methods": [
+    "finding intersections",
+    "integration"
+  ],
+  "statement": "Find the area enclosed between the line $y=x$ and the parabola $y=x^2$ for $0\\le x\\le 1$.",
+  "solution": "The curves meet at $x=0,1$. The area is $\\int_0^1(x-x^2)\\,dx=\\left[\\tfrac{x^2}{2}-\\tfrac{x^3}{3}\\right]_0^1=\\tfrac12-\\tfrac13=\\tfrac16$.",
+  "hints": [
+    "Find the points of intersection.",
+    "Integrate the upper curve minus the lower."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

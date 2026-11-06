@@ -1,0 +1,29 @@
+{
+  "id": "ch11-027",
+  "chapter": 11,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1999,
+  "difficulty": 5,
+  "topics": [
+    "harmonic form",
+    "R-form",
+    "compound angle"
+  ],
+  "methods": [
+    "R-form",
+    "matching coefficients"
+  ],
+  "statement": "Express $3\\cos\\theta+4\\sin\\theta$ in the form $R\\cos(\\theta-\\alpha)$ with $R>0$, and state its maximum value.",
+  "solution": "$R=\\sqrt{3^2+4^2}=5$ and $\\alpha=\\arctan(\\tfrac43)$. Hence $3\\cos\\theta+4\\sin\\theta=5\\cos(\\theta-\\alpha)$, whose maximum value is $5$.",
+  "hints": [
+    "Match coefficients with $R\\cos\theta\\cos\u0007lpha+R\\sin\theta\\sin\u0007lpha$.",
+    "Use $R=\\sqrt{a^2+b^2}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

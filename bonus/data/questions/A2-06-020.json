@@ -1,0 +1,28 @@
+{
+  "id": "A2-06-020",
+  "chapter": "A2-06",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1999,
+  "difficulty": 4,
+  "topics": [
+    "integration by parts",
+    "exponential integral",
+    "definite integral"
+  ],
+  "methods": [
+    "integration by parts"
+  ],
+  "statement": "Evaluate $\\displaystyle\\int_0^1 x e^x\\,dx$ using integration by parts.",
+  "solution": "Let $u=x$, $dv=e^x dx$. Then $\\int_0^1 x e^x dx=[xe^x-e^x]_0^1=(e-e)-(0-1)=1$.",
+  "hints": [
+    "Choose $u=x$ and $dv=e^x dx$.",
+    "Apply the integration-by-parts formula."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ch08-026",
+  "chapter": 8,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2001,
+  "difficulty": 5,
+  "topics": [
+    "arithmetic-geometric series",
+    "closed form",
+    "summation"
+  ],
+  "methods": [
+    "standard summation formula",
+    "substitution"
+  ],
+  "statement": "Find a closed form for $\\sum_{r=1}^{n} r\\,2^r$ and verify it for $n=3$.",
+  "solution": "Using $\\sum_{r=1}^n r x^r=\\dfrac{x\\bigl(1-(n+1)x^n+nx^{n+1}\\bigr)}{(1-x)^2}$ with $x=2$ gives $\\sum r2^r=2\\bigl(1-(n+1)2^n+n2^{n+1}\\bigr)$. For $n=3$: $1\\cdot2+2\\cdot4+3\\cdot8=34$, and the formula gives $2(1-4\\cdot8+3\\cdot16)=2(17)=34$.",
+  "hints": [
+    "Use the standard summation formula for $\\sum r x^r$.",
+    "Substitute $x=2$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

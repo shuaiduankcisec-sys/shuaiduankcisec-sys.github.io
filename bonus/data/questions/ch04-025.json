@@ -1,0 +1,29 @@
+{
+  "id": "ch04-025",
+  "chapter": 4,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2000,
+  "difficulty": 5,
+  "topics": [
+    "function composition",
+    "iteration",
+    "3-cycle"
+  ],
+  "methods": [
+    "repeated substitution",
+    "simplifying rational functions"
+  ],
+  "statement": "Let $f(x)=\\dfrac{1}{1-x}$. Show that $f(f(f(x)))=x$ for all $x$ in the domain.",
+  "solution": "Compute $f(f(x))=\\dfrac{1}{1-\\frac{1}{1-x}}=\\dfrac{1}{\\frac{-x}{1-x}}=\\dfrac{x-1}{x}$. Then $f(f(f(x)))=f\\!\\left(\\dfrac{x-1}{x}\\right)=\\dfrac{1}{1-\\frac{x-1}{x}}=\\dfrac{1}{\\frac{1}{x}}=x$.",
+  "hints": [
+    "Compute $f(f(x))$ first.",
+    "Then apply $f$ once more."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

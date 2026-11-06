@@ -1,0 +1,28 @@
+{
+  "id": "A2-09-020",
+  "chapter": "A2-09",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2000,
+  "difficulty": 4,
+  "topics": [
+    "angle between vectors",
+    "dot product",
+    "3D vectors"
+  ],
+  "methods": [
+    "dot product formula"
+  ],
+  "statement": "Find the angle between the vectors $\\mathbf{a}=(1,2,3)$ and $\\mathbf{b}=(4,5,6)$.",
+  "solution": "$\\mathbf{a}\\cdot\\mathbf{b}=4+10+18=32$, $|\\mathbf{a}|=\\sqrt{14}$, $|\\mathbf{b}|=\\sqrt{77}$, so $\\cos\\theta=\\dfrac{32}{\\sqrt{14\\cdot77}}=\\dfrac{32}{\\sqrt{1078}}\\approx0.9746$, giving $\\theta\\approx12.93^{\\circ}$.",
+  "hints": [
+    "Compute the dot product.",
+    "Use $\\cos\theta=\\mathbf{a}\\cdot\\mathbf{b}/(|\\mathbf{a}||\\mathbf{b}|)$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

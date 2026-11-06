@@ -1,0 +1,29 @@
+{
+  "id": "A2-03-019",
+  "chapter": "A2-03",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1998,
+  "difficulty": 5,
+  "topics": [
+    "de Moivre's theorem",
+    "multiple angles",
+    "compound angle"
+  ],
+  "methods": [
+    "de Moivre",
+    "binomial expansion"
+  ],
+  "statement": "Using de Moivre's theorem, express $\\cos5\\theta$ in terms of $\\cos\\theta$ and $\\sin\\theta$.",
+  "solution": "$\\cos5\\theta+\\mathrm{i}\\sin5\\theta=(\\cos\\theta+\\mathrm{i}\\sin\\theta)^5$. Taking the real part: $\\cos5\\theta=\\cos^5\\theta-10\\cos^3\\theta\\sin^2\\theta+5\\cos\\theta\\sin^4\\theta$.",
+  "hints": [
+    "Expand $(\\cos\theta+\\mathrm{i}\\sin\theta)^5$ by the binomial theorem.",
+    "Take the real part."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

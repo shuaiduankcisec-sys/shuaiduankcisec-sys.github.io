@@ -355,6 +355,48 @@
     "preview": "Evaluate $(1+\\sqrt{2}+\\sqrt{3})(1+\\sqrt{2}-\\sqrt{3})(1-\\sqrt{2}+\\sqrt{3})(1-\\sqrt{2}-\\sqrt{3})$."
   },
   {
+    "id": "ch01-024",
+    "chapter": 1,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1998,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "integer sequences",
+      "conjugate pairs",
+      "binomial theorem"
+    ],
+    "methods": [
+      "conjugate addition",
+      "binomial theorem"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $a_n=(2+\\sqrt{3})^n+(2-\\sqrt{3})^n$. Show that $a_n$ is an integer for every positive integer $n$ and evaluate $a_1,a_2,a_3$."
+  },
+  {
+    "id": "ch01-025",
+    "chapter": 1,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1996,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "surds",
+      "denesting",
+      "squaring"
+    ],
+    "methods": [
+      "squaring both sides",
+      "surd simplification"
+    ],
+    "solutionStatus": "full",
+    "preview": "Show that $\\sqrt{2+\\sqrt{3}}=\\dfrac{\\sqrt{6}+\\sqrt{2}}{2}$."
+  },
+  {
     "id": "ch02-003",
     "chapter": 2,
     "title": "",
@@ -751,6 +793,48 @@
     "preview": "Let $\\alpha,\\beta,\\gamma$ be the roots of $x^{3}+px^{2}+qx+r=0$. Prove that $\\alpha^{2}+\\beta^{2}+\\gamma^{2}=p^{2}-2q$."
   },
   {
+    "id": "ch02-024",
+    "chapter": 2,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1997,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "Vieta's formulae",
+      "symmetric sums",
+      "roots of quadratics"
+    ],
+    "methods": [
+      "Vieta",
+      "algebraic identity"
+    ],
+    "solutionStatus": "full",
+    "preview": "The roots of $x^2-4x+1=0$ are $\\alpha$ and $\\beta$. Find $\\alpha^3+\\beta^3$."
+  },
+  {
+    "id": "ch02-025",
+    "chapter": 2,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2001,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "polynomial remainder",
+      "remainder theorem",
+      "linear remainder"
+    ],
+    "methods": [
+      "remainder theorem",
+      "solving linear system"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the remainder when $p(x)=x^4-5x^3+6x^2-4x+3$ is divided by $x^2-1$."
+  },
+  {
     "id": "ch03-001",
     "chapter": 3,
     "title": "",
@@ -1065,6 +1149,48 @@
     ],
     "solutionStatus": "full",
     "preview": "Let $\\alpha$ be a root of $x^{3}-3x+1=0$. Show that $\\alpha^{2}-2$ is also a root of this equation."
+  },
+  {
+    "id": "ch03-022",
+    "chapter": 3,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1995,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "factor theorem",
+      "cubic factorisation",
+      "algebraic division"
+    ],
+    "methods": [
+      "factor theorem",
+      "algebraic division"
+    ],
+    "solutionStatus": "full",
+    "preview": "Show that $x=2$ is a root of $x^3-7x^2+14x-8=0$ and hence factorise the cubic completely."
+  },
+  {
+    "id": "ch03-023",
+    "chapter": 3,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1999,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "algebraic identity",
+      "three-variable identity",
+      "factorisation"
+    ],
+    "methods": [
+      "expansion",
+      "collecting like terms"
+    ],
+    "solutionStatus": "full",
+    "preview": "Prove the identity $x^3+y^3+z^3-3xyz=(x+y+z)(x^2+y^2+z^2-xy-yz-zx)$."
   },
   {
     "id": "ch04-001",
@@ -1491,6 +1617,48 @@
     "preview": "Let $f(x)=\\dfrac{x+2}{x}$. Find a simplified expression for $f(f(x))$ and determine the fixed points of $f$ (values of $x$ with $f(x)=x$)."
   },
   {
+    "id": "ch04-024",
+    "chapter": 4,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1997,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "inverse functions",
+      "function algebra",
+      "rational functions"
+    ],
+    "methods": [
+      "solving for x",
+      "swapping variables"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the inverse function of $f(x)=\\dfrac{2x+1}{x-3}$."
+  },
+  {
+    "id": "ch04-025",
+    "chapter": 4,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2000,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "function composition",
+      "iteration",
+      "3-cycle"
+    ],
+    "methods": [
+      "repeated substitution",
+      "simplifying rational functions"
+    ],
+    "solutionStatus": "full",
+    "preview": "Let $f(x)=\\dfrac{1}{1-x}$. Show that $f(f(f(x)))=x$ for all $x$ in the domain."
+  },
+  {
     "id": "ch05-001",
     "chapter": 5,
     "title": "",
@@ -1851,6 +2019,47 @@
     ],
     "solutionStatus": "full",
     "preview": "Find the reflection $Q$ of the point $P(2,3)$ in the line $3x+4y-5=0$, and verify that the midpoint of $PQ$ lies on the line."
+  },
+  {
+    "id": "ch05-022",
+    "chapter": 5,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1996,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "area of triangle",
+      "shoelace formula",
+      "coordinate geometry"
+    ],
+    "methods": [
+      "shoelace formula"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the area of the triangle with vertices $(1,2)$, $(4,6)$ and $(5,1)$."
+  },
+  {
+    "id": "ch05-023",
+    "chapter": 5,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1999,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "circle through three points",
+      "circle equation",
+      "completing the square"
+    ],
+    "methods": [
+      "general circle equation",
+      "completing the square"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the equation of the circle through $(1,0)$, $(0,1)$ and $(2,3)$, and state its centre and radius."
   },
   {
     "id": "ch06-001",
@@ -2230,6 +2439,48 @@
     ],
     "solutionStatus": "full",
     "preview": "Find and classify all stationary points of $f(x)=x^{4}-4x^{3}+4x^{2}$."
+  },
+  {
+    "id": "ch06-022",
+    "chapter": 6,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1998,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "area between curves",
+      "definite integration",
+      "polynomials"
+    ],
+    "methods": [
+      "finding intersections",
+      "integration"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the area enclosed between the line $y=x$ and the parabola $y=x^2$ for $0\\le x\\le 1$."
+  },
+  {
+    "id": "ch06-023",
+    "chapter": 6,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2002,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "stationary points",
+      "maxima and minima",
+      "second derivative test"
+    ],
+    "methods": [
+      "differentiation",
+      "second derivative test"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find and classify the stationary points of $y=x^3-3x$."
   },
   {
     "id": "ch07-003",
@@ -2624,6 +2875,48 @@
     ],
     "solutionStatus": "full",
     "preview": "Show that $\\displaystyle\\int_{0}^{\\pi/2}\\sin^{4}x\\,dx=\\frac{3\\pi}{16}$, and state the value of the corresponding integral of $\\cos^{4}x$."
+  },
+  {
+    "id": "ch07-029",
+    "chapter": 7,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1995,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "definite integral",
+      "cosine squared identity",
+      "trig integration"
+    ],
+    "methods": [
+      "double-angle identity",
+      "integration"
+    ],
+    "solutionStatus": "full",
+    "preview": "Evaluate $\\displaystyle\\int_0^{\\pi}\\sin^2 x\\,dx$."
+  },
+  {
+    "id": "ch07-030",
+    "chapter": 7,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1999,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "binomial theorem",
+      "coefficient extraction",
+      "positive integer powers"
+    ],
+    "methods": [
+      "binomial expansion",
+      "general term"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the coefficient of $x^4$ in the expansion of $(2-x)^6$."
   },
   {
     "id": "ch08-001",
@@ -3026,6 +3319,48 @@
     "preview": "Prove by induction that $\\sum_{k=1}^{n}k^{3}=\\left(\\dfrac{n(n+1)}{2}\\right)^{2}$ for all positive integers $n$."
   },
   {
+    "id": "ch08-025",
+    "chapter": 8,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1997,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "sum of cubes",
+      "series",
+      "proof"
+    ],
+    "methods": [
+      "sum-of-cubes formula",
+      "induction"
+    ],
+    "solutionStatus": "full",
+    "preview": "Prove that $1^3+2^3+\\cdots+n^3=\\left[\\tfrac{n(n+1)}{2}\\right]^2$."
+  },
+  {
+    "id": "ch08-026",
+    "chapter": 8,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2001,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "arithmetic-geometric series",
+      "closed form",
+      "summation"
+    ],
+    "methods": [
+      "standard summation formula",
+      "substitution"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find a closed form for $\\sum_{r=1}^{n} r\\,2^r$ and verify it for $n=3$."
+  },
+  {
     "id": "ch09-002",
     "chapter": 9,
     "title": "",
@@ -3401,6 +3736,47 @@
     ],
     "solutionStatus": "full",
     "preview": "Show that the tangent to the circle $x^{2}+y^{2}=r^{2}$ at a point $(x_{0},y_{0})$ on it has equation $x_{0}x+y_{0}y=r^{2}$, and prove this…"
+  },
+  {
+    "id": "ch09-026",
+    "chapter": 9,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1996,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "circle equation",
+      "completing the square",
+      "circle geometry"
+    ],
+    "methods": [
+      "completing the square"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the centre and radius of the circle $x^2+y^2-6x-8y=0$ and show it passes through the origin."
+  },
+  {
+    "id": "ch09-027",
+    "chapter": 9,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2003,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "line meets circle",
+      "simultaneous equations",
+      "circle geometry"
+    ],
+    "methods": [
+      "substitution",
+      "solving quadratic"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the points where the line $y=x$ meets the circle $x^2+y^2=18$."
   },
   {
     "id": "ch10-001",
@@ -3820,6 +4196,48 @@
     "preview": "Solve $4\\sin^{3}\\theta-3\\sin\\theta=-\\tfrac12$ for $0\\le \\theta\\le \\pi$, and state how many solutions there are."
   },
   {
+    "id": "ch10-025",
+    "chapter": 10,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1998,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "exact trigonometric values",
+      "sin 18 degrees",
+      "double-angle formula"
+    ],
+    "methods": [
+      "double-angle formula",
+      "cos 36 exact value"
+    ],
+    "solutionStatus": "full",
+    "preview": "Show that $\\sin 18^{\\circ}=\\dfrac{\\sqrt{5}-1}{4}$."
+  },
+  {
+    "id": "ch10-026",
+    "chapter": 10,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2000,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "trigonometric equations",
+      "triple-angle formula",
+      "general solution"
+    ],
+    "methods": [
+      "triple-angle formula",
+      "factoring"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $\\cos\\theta+\\cos3\\theta=0$ for $0\\le\\theta<2\\pi$."
+  },
+  {
     "id": "ch11-001",
     "chapter": 11,
     "title": "",
@@ -4215,6 +4633,48 @@
     ],
     "solutionStatus": "full",
     "preview": "Solve $3\\sin\\theta+4\\cos\\theta=2$ for $0\\le\\theta<2\\pi$, giving your answers exactly in terms of inverse trigonometric functions."
+  },
+  {
+    "id": "ch11-027",
+    "chapter": 11,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1999,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "harmonic form",
+      "R-form",
+      "compound angle"
+    ],
+    "methods": [
+      "R-form",
+      "matching coefficients"
+    ],
+    "solutionStatus": "full",
+    "preview": "Express $3\\cos\\theta+4\\sin\\theta$ in the form $R\\cos(\\theta-\\alpha)$ with $R>0$, and state its maximum value."
+  },
+  {
+    "id": "ch11-028",
+    "chapter": 11,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2002,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "trigonometric equations",
+      "double-angle formula",
+      "general solution"
+    ],
+    "methods": [
+      "double-angle formula",
+      "factoring"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $\\sin2\\theta=\\cos\\theta$ for $0\\le\\theta<2\\pi$."
   },
   {
     "id": "ch12-001",
@@ -4614,6 +5074,48 @@
     "preview": "Using the change-of-base formula, show that $\\log_{2}3\\cdot\\log_{3}4=\\log_{2}4$ and evaluate it."
   },
   {
+    "id": "ch12-026",
+    "chapter": 12,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1998,
+    "level": "AS",
+    "difficulty": 5,
+    "topics": [
+      "logarithmic equations",
+      "log laws",
+      "domain"
+    ],
+    "methods": [
+      "combining logs",
+      "solving quadratic"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $\\log_2 x+\\log_2(x-2)=3$."
+  },
+  {
+    "id": "ch12-027",
+    "chapter": 12,
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2001,
+    "level": "AS",
+    "difficulty": 4,
+    "topics": [
+      "exponential equations",
+      "substitution",
+      "change of variable"
+    ],
+    "methods": [
+      "substitution $u=2^x$",
+      "solving quadratic"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $4^x+2^x=12$."
+  },
+  {
     "id": "A2-01-001",
     "chapter": "A2-01",
     "title": "",
@@ -4972,6 +5474,47 @@
     "preview": "For $f(x)=\\tfrac{x}{2}+\\tfrac{1}{x}$, find its positive fixed point $L$ (with $f(L)=L$), and show that the iteration $x_{n+1}=f(x_{n})$…"
   },
   {
+    "id": "A2-01-021",
+    "chapter": "A2-01",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1999,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "differentiation",
+      "chain rule",
+      "logarithmic derivative"
+    ],
+    "methods": [
+      "chain rule",
+      "trigonometric simplification"
+    ],
+    "solutionStatus": "full",
+    "preview": "Differentiate $\\ln(\\sec x+\\tan x)$ with respect to $x$."
+  },
+  {
+    "id": "A2-01-022",
+    "chapter": "A2-01",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1997,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "exponential equations",
+      "substitution",
+      "quadratics in e^x"
+    ],
+    "methods": [
+      "substitution $u=e^x$"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $e^{2x}-4e^x+3=0$."
+  },
+  {
     "id": "A2-02-001",
     "chapter": "A2-02",
     "title": "",
@@ -5282,6 +5825,47 @@
     ],
     "solutionStatus": "full",
     "preview": "Expand $(1-2x)^{-2}$ in ascending powers of $x$ up to the term in $x^{3}$, and show that the coefficient of $x^{n}$ is $(n+1)2^{n}$."
+  },
+  {
+    "id": "A2-02-021",
+    "chapter": "A2-02",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1999,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "binomial series",
+      "generalised binomial theorem",
+      "negative fractional power"
+    ],
+    "methods": [
+      "generalised binomial theorem"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the first three terms in the binomial expansion of $(1+x)^{-1/2}$."
+  },
+  {
+    "id": "A2-02-022",
+    "chapter": "A2-02",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2003,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "binomial series",
+      "generalised binomial coefficient",
+      "negative power"
+    ],
+    "methods": [
+      "generalised binomial coefficient",
+      "substitution"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the coefficient of $x^3$ in the expansion of $(1-2x)^{-2}$."
   },
   {
     "id": "A2-03-001",
@@ -5600,6 +6184,48 @@
     "preview": "Derive a formula for $\\tan 5\\theta$ in terms of $t=\\tan\\theta$, and hence solve $\\tan 5\\theta=0$."
   },
   {
+    "id": "A2-03-019",
+    "chapter": "A2-03",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1998,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "de Moivre's theorem",
+      "multiple angles",
+      "compound angle"
+    ],
+    "methods": [
+      "de Moivre",
+      "binomial expansion"
+    ],
+    "solutionStatus": "full",
+    "preview": "Using de Moivre's theorem, express $\\cos5\\theta$ in terms of $\\cos\\theta$ and $\\sin\\theta$."
+  },
+  {
+    "id": "A2-03-020",
+    "chapter": "A2-03",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2000,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "trigonometric equations",
+      "tangent and sine",
+      "domain restrictions"
+    ],
+    "methods": [
+      "factoring",
+      "domain check"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $\\tan\\theta=2\\sin\\theta$ for $0\\le\\theta<2\\pi$."
+  },
+  {
     "id": "A2-04-001",
     "chapter": "A2-04",
     "title": "",
@@ -5894,6 +6520,48 @@
     ],
     "solutionStatus": "full",
     "preview": "Differentiate $y=e^{x}\\sin x$ with respect to $x$."
+  },
+  {
+    "id": "A2-04-018",
+    "chapter": "A2-04",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1999,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "differentiation",
+      "chain rule",
+      "inverse hyperbolic"
+    ],
+    "methods": [
+      "chain rule",
+      "simplification"
+    ],
+    "solutionStatus": "full",
+    "preview": "Differentiate $\\ln(x+\\sqrt{1+x^2})$ with respect to $x$."
+  },
+  {
+    "id": "A2-04-019",
+    "chapter": "A2-04",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2001,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "stationary points",
+      "product rule",
+      "logarithmic functions"
+    ],
+    "methods": [
+      "product rule",
+      "second derivative test"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the stationary point of $y=x\\ln x-x$ and determine its nature."
   },
   {
     "id": "A2-05-001",
@@ -6256,6 +6924,47 @@
     "preview": "Find the point(s) on the parabola $y=x^{2}$ that are closest to $(0,2)$, and state the minimum distance."
   },
   {
+    "id": "A2-05-019",
+    "chapter": "A2-05",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2000,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "implicit differentiation",
+      "circle geometry",
+      "gradient"
+    ],
+    "methods": [
+      "implicit differentiation"
+    ],
+    "solutionStatus": "full",
+    "preview": "For the circle $x^2+y^2=25$, use implicit differentiation to find $\\dfrac{dy}{dx}$ and evaluate it at $(3,4)$."
+  },
+  {
+    "id": "A2-05-020",
+    "chapter": "A2-05",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2002,
+    "level": "A2",
+    "difficulty": 5,
+    "topics": [
+      "optimisation",
+      "distance minimisation",
+      "AM-GM inequality"
+    ],
+    "methods": [
+      "minimising squared distance",
+      "AM-GM"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the minimum distance from the origin to the curve $xy=1$ in the first quadrant."
+  },
+  {
     "id": "A2-06-001",
     "chapter": "A2-06",
     "title": "",
@@ -6590,6 +7299,47 @@
     ],
     "solutionStatus": "full",
     "preview": "Show that $\\displaystyle\\int_{0}^{1}\\sqrt{1-x^{2}}\\,dx=\\frac{\\pi}{4}$, and interpret the result geometrically."
+  },
+  {
+    "id": "A2-06-020",
+    "chapter": "A2-06",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1999,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "integration by parts",
+      "exponential integral",
+      "definite integral"
+    ],
+    "methods": [
+      "integration by parts"
+    ],
+    "solutionStatus": "full",
+    "preview": "Evaluate $\\displaystyle\\int_0^1 x e^x\\,dx$ using integration by parts."
+  },
+  {
+    "id": "A2-06-021",
+    "chapter": "A2-06",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2001,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "trigonometric integration",
+      "definite integral",
+      "substitution"
+    ],
+    "methods": [
+      "identity $\\sin^3x=\\sin x(1-\\cos^2x)$",
+      "substitution"
+    ],
+    "solutionStatus": "full",
+    "preview": "Evaluate $\\displaystyle\\int_0^{\\pi/2}\\sin^3 x\\,dx$."
   },
   {
     "id": "A2-07-001",
@@ -6947,6 +7697,48 @@
     "preview": "Solve the differential equation $\\dfrac{dy}{dx}+2y=e^{-x}$."
   },
   {
+    "id": "A2-07-021",
+    "chapter": "A2-07",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 1998,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "differential equations",
+      "separable ODE",
+      "initial condition"
+    ],
+    "methods": [
+      "separation of variables",
+      "initial condition"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $\\dfrac{dy}{dx}=3y$ given $y(0)=1$."
+  },
+  {
+    "id": "A2-07-022",
+    "chapter": "A2-07",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2001,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "differential equations",
+      "separable ODE",
+      "initial condition"
+    ],
+    "methods": [
+      "separation of variables",
+      "initial condition"
+    ],
+    "solutionStatus": "full",
+    "preview": "Solve $\\dfrac{dy}{dx}=\\dfrac{x}{y}$ given $y(1)=2$."
+  },
+  {
     "id": "A2-08-001",
     "chapter": "A2-08",
     "title": "",
@@ -7302,6 +8094,46 @@
     "preview": "Use the Newton-Raphson method on $f(x)=x^{3}-2x-5$ starting from $x_{0}=2$ to find the real root, giving $x_{1}$, $x_{2}$ and the limiting…"
   },
   {
+    "id": "A2-08-021",
+    "chapter": "A2-08",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 1999,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "Newton-Raphson",
+      "root finding",
+      "iteration"
+    ],
+    "methods": [
+      "Newton-Raphson formula"
+    ],
+    "solutionStatus": "full",
+    "preview": "Apply one step of Newton-Raphson to $f(x)=x^3-x-1$ starting from $x_0=1$."
+  },
+  {
+    "id": "A2-08-022",
+    "chapter": "A2-08",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP I",
+    "year": 2002,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "fixed-point iteration",
+      "convergence",
+      "cosine iteration"
+    ],
+    "methods": [
+      "fixed-point iteration"
+    ],
+    "solutionStatus": "full",
+    "preview": "Starting from $x_0=1$, compute one iteration of the fixed-point iteration $x_{n+1}=\\cos x_n$."
+  },
+  {
     "id": "A2-09-001",
     "chapter": "A2-09",
     "title": "",
@@ -7596,5 +8428,46 @@
     ],
     "solutionStatus": "full",
     "preview": "With $O(0,0,0)$, $A(1,1,0)$, $B(1,0,1)$, $C(0,1,1)$, find the volume of the tetrahedron $OABC$."
+  },
+  {
+    "id": "A2-09-020",
+    "chapter": "A2-09",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2000,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "angle between vectors",
+      "dot product",
+      "3D vectors"
+    ],
+    "methods": [
+      "dot product formula"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the angle between the vectors $\\mathbf{a}=(1,2,3)$ and $\\mathbf{b}=(4,5,6)$."
+  },
+  {
+    "id": "A2-09-021",
+    "chapter": "A2-09",
+    "title": "",
+    "source": "STEP",
+    "paper": "STEP II",
+    "year": 2003,
+    "level": "A2",
+    "difficulty": 4,
+    "topics": [
+      "area of triangle",
+      "cross product",
+      "3D vectors"
+    ],
+    "methods": [
+      "cross product",
+      "magnitude"
+    ],
+    "solutionStatus": "full",
+    "preview": "Find the area of the triangle with vertices $(1,0,0)$, $(0,1,0)$ and $(0,0,1)$."
   }
 ]

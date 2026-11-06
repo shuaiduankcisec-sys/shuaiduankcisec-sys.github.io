@@ -1,0 +1,29 @@
+{
+  "id": "A2-04-018",
+  "chapter": "A2-04",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1999,
+  "difficulty": 4,
+  "topics": [
+    "differentiation",
+    "chain rule",
+    "inverse hyperbolic"
+  ],
+  "methods": [
+    "chain rule",
+    "simplification"
+  ],
+  "statement": "Differentiate $\\ln(x+\\sqrt{1+x^2})$ with respect to $x$.",
+  "solution": "$\\dfrac{d}{dx}\\ln(x+\\sqrt{1+x^2})=\\dfrac{1+\\tfrac{x}{\\sqrt{1+x^2}}}{x+\\sqrt{1+x^2}}=\\dfrac{1}{\\sqrt{1+x^2}}$.",
+  "hints": [
+    "Apply the chain rule.",
+    "Simplify by multiplying numerator and denominator by $\\sqrt{1+x^2}$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

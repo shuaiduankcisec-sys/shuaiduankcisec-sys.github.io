@@ -1,0 +1,29 @@
+{
+  "id": "A2-07-021",
+  "chapter": "A2-07",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1998,
+  "difficulty": 4,
+  "topics": [
+    "differential equations",
+    "separable ODE",
+    "initial condition"
+  ],
+  "methods": [
+    "separation of variables",
+    "initial condition"
+  ],
+  "statement": "Solve $\\dfrac{dy}{dx}=3y$ given $y(0)=1$.",
+  "solution": "Separating variables: $\\dfrac{dy}{y}=3dx$, so $\\ln|y|=3x+C$ and $y=Ae^{3x}$. With $y(0)=1$, $A=1$, hence $y=e^{3x}$.",
+  "hints": [
+    "Separate the variables.",
+    "Use the initial condition to find $A$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

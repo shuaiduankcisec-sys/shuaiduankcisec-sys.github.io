@@ -1,0 +1,29 @@
+{
+  "id": "A2-04-019",
+  "chapter": "A2-04",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2001,
+  "difficulty": 4,
+  "topics": [
+    "stationary points",
+    "product rule",
+    "logarithmic functions"
+  ],
+  "methods": [
+    "product rule",
+    "second derivative test"
+  ],
+  "statement": "Find the stationary point of $y=x\\ln x-x$ and determine its nature.",
+  "solution": "$\\dfrac{dy}{dx}=\\ln x+1-1=\\ln x$, so $\\ln x=0$ gives $x=1$ and $y=-1$. $\\dfrac{d^2y}{dx^2}=\\tfrac1x>0$, so it is a minimum.",
+  "hints": [
+    "Differentiate using the product rule.",
+    "Use the second derivative test."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

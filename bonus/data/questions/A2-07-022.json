@@ -1,0 +1,29 @@
+{
+  "id": "A2-07-022",
+  "chapter": "A2-07",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2001,
+  "difficulty": 4,
+  "topics": [
+    "differential equations",
+    "separable ODE",
+    "initial condition"
+  ],
+  "methods": [
+    "separation of variables",
+    "initial condition"
+  ],
+  "statement": "Solve $\\dfrac{dy}{dx}=\\dfrac{x}{y}$ given $y(1)=2$.",
+  "solution": "Separating: $y\\,dy=x\\,dx$, so $\\tfrac12y^2=\\tfrac12x^2+C$, i.e. $y^2=x^2+K$. At $(1,2)$: $4=1+K$, so $K=3$ and $y^2=x^2+3$ (taking the positive root near the initial point).",
+  "hints": [
+    "Separate and integrate both sides.",
+    "Use the initial condition to find the constant."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

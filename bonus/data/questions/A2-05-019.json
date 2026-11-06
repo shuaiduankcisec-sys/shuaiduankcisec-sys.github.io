@@ -1,0 +1,28 @@
+{
+  "id": "A2-05-019",
+  "chapter": "A2-05",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2000,
+  "difficulty": 4,
+  "topics": [
+    "implicit differentiation",
+    "circle geometry",
+    "gradient"
+  ],
+  "methods": [
+    "implicit differentiation"
+  ],
+  "statement": "For the circle $x^2+y^2=25$, use implicit differentiation to find $\\dfrac{dy}{dx}$ and evaluate it at $(3,4)$.",
+  "solution": "Differentiating implicitly: $2x+2y\\dfrac{dy}{dx}=0$, so $\\dfrac{dy}{dx}=-\\dfrac{x}{y}$. At $(3,4)$ the gradient is $-\\tfrac34$.",
+  "hints": [
+    "Differentiate both sides with respect to $x$.",
+    "Substitute the point."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ch09-027",
+  "chapter": 9,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2003,
+  "difficulty": 4,
+  "topics": [
+    "line meets circle",
+    "simultaneous equations",
+    "circle geometry"
+  ],
+  "methods": [
+    "substitution",
+    "solving quadratic"
+  ],
+  "statement": "Find the points where the line $y=x$ meets the circle $x^2+y^2=18$.",
+  "solution": "Substituting $y=x$ gives $2x^2=18$, so $x=\\pm3$. The points are $(3,3)$ and $(-3,-3)$.",
+  "hints": [
+    "Substitute $y=x$ into the circle equation.",
+    "Solve for $x$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

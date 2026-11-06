@@ -1,0 +1,29 @@
+{
+  "id": "A2-02-022",
+  "chapter": "A2-02",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2003,
+  "difficulty": 4,
+  "topics": [
+    "binomial series",
+    "generalised binomial coefficient",
+    "negative power"
+  ],
+  "methods": [
+    "generalised binomial coefficient",
+    "substitution"
+  ],
+  "statement": "Find the coefficient of $x^3$ in the expansion of $(1-2x)^{-2}$.",
+  "solution": "$(1+u)^{-2}=\\sum\\binom{-2}{k}u^k$ with $u=-2x$. $\\binom{-2}{3}=\\dfrac{(-2)(-3)(-4)}{6}=-4$, and the $x^3$ term is $(-4)(-2x)^3=(-4)(-8)x^3=32x^3$. The coefficient is $32$.",
+  "hints": [
+    "Use the generalised binomial coefficient $\binom{-2}{3}$.",
+    "Substitute $u=-2x$ and keep the $x^3$ term."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ch12-027",
+  "chapter": 12,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2001,
+  "difficulty": 4,
+  "topics": [
+    "exponential equations",
+    "substitution",
+    "change of variable"
+  ],
+  "methods": [
+    "substitution $u=2^x$",
+    "solving quadratic"
+  ],
+  "statement": "Solve $4^x+2^x=12$.",
+  "solution": "Let $u=2^x$, so $u^2+u-12=0$, giving $u=3$ or $u=-4$. Since $u=2^x>0$, $u=3$ and $x=\\log_2 3$.",
+  "hints": [
+    "Write $4^x=(2^x)^2$ and substitute $u=2^x$.",
+    "Reject the negative root."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "A2-01-021",
+  "chapter": "A2-01",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1999,
+  "difficulty": 4,
+  "topics": [
+    "differentiation",
+    "chain rule",
+    "logarithmic derivative"
+  ],
+  "methods": [
+    "chain rule",
+    "trigonometric simplification"
+  ],
+  "statement": "Differentiate $\\ln(\\sec x+\\tan x)$ with respect to $x$.",
+  "solution": "$\\dfrac{d}{dx}\\ln(\\sec x+\\tan x)=\\dfrac{\\sec x\\tan x+\\sec^2 x}{\\sec x+\\tan x}=\\dfrac{\\sec x(\\tan x+\\sec x)}{\\sec x+\\tan x}=\\sec x$.",
+  "hints": [
+    "Use the chain rule.",
+    "Factor $\\sec x$ from the numerator."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

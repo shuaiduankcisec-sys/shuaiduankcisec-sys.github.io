@@ -1,0 +1,29 @@
+{
+  "id": "ch11-028",
+  "chapter": 11,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 2002,
+  "difficulty": 4,
+  "topics": [
+    "trigonometric equations",
+    "double-angle formula",
+    "general solution"
+  ],
+  "methods": [
+    "double-angle formula",
+    "factoring"
+  ],
+  "statement": "Solve $\\sin2\\theta=\\cos\\theta$ for $0\\le\\theta<2\\pi$.",
+  "solution": "$2\\sin\\theta\\cos\\theta=\\cos\\theta$ so $\\cos\\theta(2\\sin\\theta-1)=0$. Thus $\\cos\\theta=0$ ($\\theta=\\tfrac{\\pi}{2},\\tfrac{3\\pi}{2}$) or $\\sin\\theta=\\tfrac12$ ($\\theta=\\tfrac{\\pi}{6},\\tfrac{5\\pi}{6}$). Four solutions.",
+  "hints": [
+    "Use the double-angle formula for sine.",
+    "Factor out $\\cos\theta$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

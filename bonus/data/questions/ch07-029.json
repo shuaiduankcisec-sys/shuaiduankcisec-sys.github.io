@@ -1,0 +1,29 @@
+{
+  "id": "ch07-029",
+  "chapter": 7,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1995,
+  "difficulty": 5,
+  "topics": [
+    "definite integral",
+    "cosine squared identity",
+    "trig integration"
+  ],
+  "methods": [
+    "double-angle identity",
+    "integration"
+  ],
+  "statement": "Evaluate $\\displaystyle\\int_0^{\\pi}\\sin^2 x\\,dx$.",
+  "solution": "Using $\\sin^2x=\\tfrac12(1-\\cos2x)$, $\\int_0^{\\pi}\\sin^2x\\,dx=\\tfrac12\\left[x-\\tfrac12\\sin2x\\right]_0^{\\pi}=\\tfrac{\\pi}{2}$.",
+  "hints": [
+    "Use the identity $\\sin^2x=\tfrac12(1-\\cos2x)$.",
+    "Integrate term by term."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

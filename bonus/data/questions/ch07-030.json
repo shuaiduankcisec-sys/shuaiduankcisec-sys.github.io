@@ -1,0 +1,29 @@
+{
+  "id": "ch07-030",
+  "chapter": 7,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1999,
+  "difficulty": 4,
+  "topics": [
+    "binomial theorem",
+    "coefficient extraction",
+    "positive integer powers"
+  ],
+  "methods": [
+    "binomial expansion",
+    "general term"
+  ],
+  "statement": "Find the coefficient of $x^4$ in the expansion of $(2-x)^6$.",
+  "solution": "The general term is $\\binom{6}{k}2^{6-k}(-x)^k$. For $x^4$, $k=4$: $\\binom{6}{4}\\cdot2^2\\cdot(-1)^4=15\\cdot4=60$.",
+  "hints": [
+    "Write the binomial general term.",
+    "Set the power of $x$ equal to 4."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

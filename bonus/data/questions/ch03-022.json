@@ -1,0 +1,29 @@
+{
+  "id": "ch03-022",
+  "chapter": 3,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1995,
+  "difficulty": 5,
+  "topics": [
+    "factor theorem",
+    "cubic factorisation",
+    "algebraic division"
+  ],
+  "methods": [
+    "factor theorem",
+    "algebraic division"
+  ],
+  "statement": "Show that $x=2$ is a root of $x^3-7x^2+14x-8=0$ and hence factorise the cubic completely.",
+  "solution": "Substituting $x=2$ gives $8-28+28-8=0$, so $x=2$ is a root. Dividing by $(x-2)$ gives $x^2-5x+4=(x-1)(x-4)$. Thus the cubic is $(x-1)(x-2)(x-4)$.",
+  "hints": [
+    "Check $x=2$ by direct substitution.",
+    "Use algebraic division to factor out $(x-2)$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

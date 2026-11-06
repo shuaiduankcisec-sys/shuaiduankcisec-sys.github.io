@@ -1,0 +1,28 @@
+{
+  "id": "ch09-026",
+  "chapter": 9,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP I",
+  "year": 1996,
+  "difficulty": 5,
+  "topics": [
+    "circle equation",
+    "completing the square",
+    "circle geometry"
+  ],
+  "methods": [
+    "completing the square"
+  ],
+  "statement": "Find the centre and radius of the circle $x^2+y^2-6x-8y=0$ and show it passes through the origin.",
+  "solution": "Completing squares: $(x-3)^2+(y-4)^2=25$. Centre $(3,4)$, radius $5$. Substituting $(0,0)$: $0+0-0-0=0$, so it passes through the origin.",
+  "hints": [
+    "Complete the square in $x$ and $y$.",
+    "Check the origin satisfies the equation."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

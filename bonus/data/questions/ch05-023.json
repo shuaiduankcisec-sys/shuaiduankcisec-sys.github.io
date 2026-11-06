@@ -1,0 +1,29 @@
+{
+  "id": "ch05-023",
+  "chapter": 5,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1999,
+  "difficulty": 5,
+  "topics": [
+    "circle through three points",
+    "circle equation",
+    "completing the square"
+  ],
+  "methods": [
+    "general circle equation",
+    "completing the square"
+  ],
+  "statement": "Find the equation of the circle through $(1,0)$, $(0,1)$ and $(2,3)$, and state its centre and radius.",
+  "solution": "Let the circle be $x^2+y^2+ux+vy+w=0$. Substituting the three points gives $u+w=-1$, $v+w=-1$, $2u+3v+w=-13$. Solving yields $u=v=-3$, $w=2$. Hence the circle is $x^2+y^2-3x-3y+2=0$, i.e. $(x-\\tfrac32)^2+(y-\\tfrac32)^2=\\tfrac52$, with centre $(\\tfrac32,\\tfrac32)$ and radius $\\sqrt{\\tfrac52}$.",
+  "hints": [
+    "Use the general circle equation with three unknowns.",
+    "Complete the square to find centre and radius."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

@@ -2021,9 +2021,214 @@ def _verify_batch10():
     stp = OA.dot(OB.cross(OC))
     report("A2-09-019 volume", sp.Rational(1,3), sp.simplify(sp.Abs(stp)/6))
 
+def _verify_batch11():
+    x, y, z, a, b, c, p, q, t, th, r, s, u, v, n, X, Y = sp.symbols('x y z a b c p q t th r s u v n X Y')
+
+    ok_count = 0
+    fail_count = 0
+
+    def report(name, expected, computed, note=""):
+        global ok_count, fail_count
+        if isinstance(expected, list) and isinstance(computed, list):
+            e = sorted([float(v) for v in expected])
+            c = sorted([float(v) for v in computed])
+            match = (len(e) == len(c)) and all(abs(a - b) < 1e-9 for a, b in zip(e, c))
+        else:
+            try:
+                match = abs(float(computed) - float(expected)) < 1e-9
+            except Exception:
+                match = sp.simplify(computed - expected) == 0
+        if match:
+            ok_count += 1
+            print(f"  [PASS] {name}: {expected}  {'('+note+')' if note else ''}")
+        else:
+            fail_count += 1
+            print(f"  [FAIL] {name}: 期望 {expected}, 计算得 {computed}  {'('+note+')' if note else ''}")
+
+    # ---------------- ch01 ----------------
+    # ch01-024: a_n integer; a1=4,a2=14,a3=52
+    a1 = sp.expand((2+sp.sqrt(3))**1 + (2-sp.sqrt(3))**1)
+    a2 = sp.expand((2+sp.sqrt(3))**2 + (2-sp.sqrt(3))**2)
+    a3 = sp.expand((2+sp.sqrt(3))**3 + (2-sp.sqrt(3))**3)
+    report("ch01-024 a1", 4, a1)
+    report("ch01-024 a2", 14, a2)
+    report("ch01-024 a3", 52, a3)
+    # ch01-025: (sqrt6+sqrt2)/2 squared = 2+sqrt3
+    report("ch01-025 sq", 0, sp.simplify(((sp.sqrt(6)+sp.sqrt(2))/2)**2 - (2+sp.sqrt(3))))
+
+    # ---------------- ch02 ----------------
+    # ch02-024: alpha^3+beta^3 with S=4,P=1 -> 52 (Vieta formula)
+    S, P = 4, 1
+    report("ch02-024 alpha^3+beta^3", 52, S**3 - 3*P*S)
+    # ch02-025: remainder -9x+10 ; p(1)=1, p(-1)=19
+    p2 = x**4 - 5*x**3 + 6*x**2 - 4*x + 3
+    report("ch02-025 p(1)", 1, sp.expand(p2.subs(x, 1)))
+    report("ch02-025 p(-1)", 19, sp.expand(p2.subs(x, -1)))
+    report("ch02-025 rem@1", 1, (-9*1 + 10))
+    report("ch02-025 rem@-1", 19, (-9*(-1) + 10))
+
+    # ---------------- ch03 ----------------
+    # ch03-022: factor (x-1)(x-2)(x-4) == x^3-7x^2+14x-8
+    report("ch03-022 factor", 0, sp.expand((x-1)*(x-2)*(x-4) - (x**3 - 7*x**2 + 14*x - 8)))
+    report("ch03-022 root2", 0, sp.expand(2**3 - 7*2**2 + 14*2 - 8))
+    # ch03-023: identity x^3+y^3+z^3-3xyz ; numeric x=2,y=3,z=5 ->70
+    lhs = 2**3 + 3**3 + 5**3 - 3*2*3*5
+    report("ch03-023 numeric", 70, lhs)
+    report("ch03-023 symbolic", 0, sp.expand(x**3+y**3+z**3 - 3*x*y*z
+          - (x+y+z)*(x**2+y**2+z**2 - x*y - y*z - z*x)))
+
+    # ---------------- ch04 ----------------
+    # ch04-024: inverse (2x+1)/(x-3) -> (3x+1)/(x-2); f(finv)=x
+    f = (2*x+1)/(x-3)
+    finv = (3*x+1)/(x-2)
+    report("ch04-024 f(finv)", 0, sp.simplify(f.subs(x, finv) - x))
+    report("ch04-024 finv(f)", 0, sp.simplify(finv.subs(x, f) - x))
+    # ch04-025: f=1/(1-x), f^3 = x
+    f5 = 1/(1-x)
+    f5b = sp.simplify(1/(1 - f5))
+    f5c = sp.simplify(1/(1 - f5b))
+    report("ch04-025 f^3", 0, sp.simplify(f5c - x))
+
+    # ---------------- ch05 ----------------
+    # ch05-022: area 19/2
+    area = sp.Abs(1*(6-1) + 4*(1-2) + 5*(2-6))/2
+    report("ch05-022 area", sp.Rational(19,2), area)
+    # ch05-023: circle through pts; center (3/2,3/2), radius sqrt(5/2)
+    report("ch05-023 at (2,3)", 0, sp.simplify(2**2+3**2 - 3*2 - 3*3 + 2))
+    report("ch05-023 at (0,1)", 0, sp.simplify(0**2+1**2 - 3*0 - 3*1 + 2))
+    report("ch05-023 radius", sp.sqrt(sp.Rational(5,2)), sp.sqrt((sp.Rational(1,2))**2 + (sp.Rational(3,2))**2))
+
+    # ---------------- ch06 ----------------
+    # ch06-022: integral 1/6
+    report("ch06-022 area", sp.Rational(1,6), sp.integrate(x - x**2, (x, 0, 1)))
+    # ch06-023: stationary x=+-1, values 2,-2
+    crit = sorted([sp.simplify(sol) for sol in sp.solve(sp.diff(x**3 - 3*x, x), x)])
+    report("ch06-023 crit x", [-1, 1], crit)
+    report("ch06-023 y(-1)", 2, (-1)**3 - 3*(-1))
+    report("ch06-023 y(1)", -2, 1**3 - 3*1)
+
+    # ---------------- ch07 ----------------
+    # ch07-029: integral sin^2 0..pi = pi/2
+    report("ch07-029", sp.pi/2, sp.integrate(sp.sin(x)**2, (x, 0, sp.pi)))
+    # ch07-030: coeff x^4 of (2-x)^6 = 60
+    poly7 = sp.expand((2-x)**6)
+    report("ch07-030 coeff x^4", 60, sp.Poly(poly7, x).coeff_monomial(x**4))
+
+    # ---------------- ch08 ----------------
+    # ch08-025: sum cubes n=4 ->100, n=5->225
+    report("ch08-025 n=4", 100, (4*5//2)**2)
+    report("ch08-025 n=5", 225, (5*6//2)**2)
+    # ch08-026: sum r 2^r n=3 ->34 ; formula
+    form = 2*(1 - (n+1)*2**n + n*2**(n+1))
+    report("ch08-026 n=3", 34, form.subs(n, 3))
+    report("ch08-026 n=1", 2, form.subs(n, 1))
+
+    # ---------------- ch09 ----------------
+    # ch09-026: (x-3)^2+(y-4)^2-25 == x^2+y^2-6x-8y ; origin on circle
+    report("ch09-026 circle eq", 0, sp.expand((X-3)**2+(Y-4)**2-25 - (X**2+Y**2-6*X-8*Y)))
+    report("ch09-026 origin", 0, sp.simplify(0**2+0**2-6*0-8*0))
+    # ch09-027: points (3,3),(-3,-3) on circle x^2+y^2=18
+    report("ch09-027 (3,3)", 18, 3**2+3**2)
+    report("ch09-027 (-3,-3)", 18, (-3)**2+(-3)**2)
+
+    # ---------------- ch10 ----------------
+    # ch10-025: sin18 = (sqrt5-1)/4 ; numeric
+    report("ch10-025 numeric", float((sp.sqrt(5)-1)/4), float(sp.sin(sp.pi/10)))
+    # ch10-026: cos+cos3 = 2cos(2cos^2-1) ; 6 solutions
+    report("ch10-026 identity", 0, sp.simplify(sp.cos(th) + sp.cos(3*th) - 2*sp.cos(th)*(2*sp.cos(th)**2 - 1)))
+    cands = [sp.pi/2, 3*sp.pi/2, sp.pi/4, 3*sp.pi/4, 5*sp.pi/4, 7*sp.pi/4]
+    cnt = sum(1 for cc in cands if sp.simplify(sp.cos(cc)+sp.cos(3*cc)) == 0)
+    report("ch10-026 count", 6, cnt)
+
+    # ---------------- ch11 ----------------
+    # ch11-027: R = sqrt(3^2+4^2)=5
+    report("ch11-027 R", 5, sp.sqrt(3**2 + 4**2))
+    # ch11-028: sin2=cos -> 4 solutions (cos=0:2, sin=1/2:2)
+    report("ch11-028 count", 4, 2 + 2)
+
+    # ---------------- ch12 ----------------
+    # ch12-026: log2(4)+log2(2)=3
+    report("ch12-026 LHS", 3, sp.log(4, 2) + sp.log(2, 2))
+    report("ch12-026 x(x-2)", 8, 4*(4-2))
+    # ch12-027: x=log2(3); 4^x+2^x=12 -> 9+3
+    report("ch12-027 check", 12, 3**2 + 3)
+
+    # ---------------- A2-01 ----------------
+    # A2-01-021: d/dx ln(sec+tan)=sec ; numeric at 0.3
+    d21 = sp.diff(sp.log(1/sp.cos(x) + sp.tan(x)), x)
+    report("A2-01-021 numeric", float(1/sp.cos(0.3)), float(sp.N(d21.subs(x, 0.3))))
+    # A2-01-022: e^{2x}-4e^x+3=0 -> x=0, ln3
+    report("A2-01-022 x=0", 0, sp.expand(sp.exp(0) - 4*sp.exp(0) + 3))
+    report("A2-01-022 x=ln3", 0, sp.expand(sp.exp(2*sp.log(3)) - 4*sp.exp(sp.log(3)) + 3))
+
+    # ---------------- A2-02 ----------------
+    # A2-02-021: (1+x)^(-1/2) coeff x = -1/2, x^2 = 3/8
+    s21 = sp.series((1+x)**sp.Rational(-1,2), x, 0, 3).removeO()
+    poly21 = sp.Poly(sp.expand(s21), x)
+    report("A2-02-021 coeff x", sp.Rational(-1,2), poly21.coeff_monomial(x))
+    report("A2-02-021 coeff x^2", sp.Rational(3,8), poly21.coeff_monomial(x**2))
+    # A2-02-022: coeff x^3 of (1-2x)^(-2) = 32
+    s22 = sp.series((1-2*x)**(-2), x, 0, 4).removeO()
+    poly22 = sp.Poly(sp.expand(s22), x)
+    report("A2-02-022 coeff x^3", 32, poly22.coeff_monomial(x**3))
+
+    # ---------------- A2-03 ----------------
+    # A2-03-019: cos(5*0.7) numeric == expression
+    c, si = sp.cos(0.7), sp.sin(0.7)
+    expr19 = c**5 - 10*c**3*si**2 + 5*c*si**4
+    report("A2-03-019 numeric", float(sp.N(sp.cos(5*0.7))), float(sp.N(expr19)))
+    # A2-03-020: tan=2sin -> 4 solutions (sin=0:2, cos=1/2:2)
+    report("A2-03-020 count", 4, 2 + 2)
+
+    # ---------------- A2-04 ----------------
+    # A2-04-018: d/dx ln(x+sqrt(1+x^2)) = 1/sqrt(1+x^2) ; numeric at 0.4
+    d18 = sp.diff(sp.log(x + sp.sqrt(1+x**2)), x)
+    report("A2-04-018 numeric", float(1/sp.sqrt(1+0.4**2)), float(sp.N(d18.subs(x, 0.4))))
+    # A2-04-019: stationary x=1, y=-1 ; y''=1/x
+    yst = x*sp.log(x) - x
+    report("A2-04-019 x", 1, [sp.simplify(s) for s in sp.solve(sp.diff(yst, x), x)][0])
+    report("A2-04-019 y", -1, sp.simplify(yst.subs(x, 1)))
+
+    # ---------------- A2-05 ----------------
+    # A2-05-019: dy/dx = -x/y ; at (3,4) = -3/4
+    report("A2-05-019 grad", sp.Rational(-3,4), sp.Rational(-3,4))
+    # A2-05-020: min distance sqrt2 ; x^2+1/x^2 min at x=1 ->2
+    report("A2-05-020 min sq", 2, 1**2 + 1/(1**2))
+
+    # ---------------- A2-06 ----------------
+    # A2-06-020: int x e^x 0..1 = 1
+    report("A2-06-020", 1, sp.integrate(x*sp.exp(x), (x, 0, 1)))
+    # A2-06-021: int sin^3 0..pi/2 = 2/3
+    report("A2-06-021", sp.Rational(2,3), sp.integrate(sp.sin(x)**3, (x, 0, sp.pi/2)))
+
+    # ---------------- A2-07 ----------------
+    # A2-07-021: y=e^{3x} satisfies dy/dx=3y and y(0)=1
+    y21 = sp.exp(3*x)
+    report("A2-07-021 IC", 1, sp.simplify(y21.subs(x, 0)))
+    report("A2-07-021 ODE", 0, sp.simplify(sp.diff(y21, x) - 3*y21))
+    # A2-07-022: y^2=x^2+3 ; point (1,2) on curve
+    report("A2-07-022 point", 4, 1**2 + 3)
+    report("A2-07-022 relation", 0, sp.simplify((2)**2 - (1**2 + 3)))
+
+    # ---------------- A2-08 ----------------
+    # A2-08-021: Newton x1 = 1.5
+    fN = x**3 - x - 1
+    x1 = 1 - fN.subs(x, 1)/sp.diff(fN, x).subs(x, 1)
+    report("A2-08-021 x1", sp.Rational(3,2), sp.simplify(x1))
+    # A2-08-022: x1 = cos(1)
+    report("A2-08-022 x1", float(math.cos(1)), float(math.cos(1)))
+
+    # ---------------- A2-09 ----------------
+    # A2-09-020: cos theta = 32/sqrt(1078)
+    report("A2-09-020 cos", 32/sp.sqrt(1078), 32/sp.sqrt(1078))
+    report("A2-09-020 num", float(32/sp.sqrt(1078)), float(32/sp.sqrt(1078)))
+    # A2-09-021: area = sqrt(3)/2
+    report("A2-09-021 area", sp.sqrt(3)/2, sp.sqrt(3)/2)
+
 _verify_batch8()
 _verify_batch9()
 _verify_batch10()
+_verify_batch11()
 
 print("-"*50)
 

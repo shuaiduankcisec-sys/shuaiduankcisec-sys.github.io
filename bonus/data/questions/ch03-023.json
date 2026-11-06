@@ -1,0 +1,29 @@
+{
+  "id": "ch03-023",
+  "chapter": 3,
+  "level": "AS",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1999,
+  "difficulty": 5,
+  "topics": [
+    "algebraic identity",
+    "three-variable identity",
+    "factorisation"
+  ],
+  "methods": [
+    "expansion",
+    "collecting like terms"
+  ],
+  "statement": "Prove the identity $x^3+y^3+z^3-3xyz=(x+y+z)(x^2+y^2+z^2-xy-yz-zx)$.",
+  "solution": "Expanding the right-hand side gives $x^3+y^3+z^3-3xyz$: the pure cubes appear once each, while every mixed term such as $x(-yz)=-xyz$ occurs exactly three times, so the $xyz$ total is $-3xyz$ and all other cross terms cancel. Verify with $x=2,y=3,z=5$: both sides equal $70$.",
+  "hints": [
+    "Expand the right-hand side term by term.",
+    "Collect the $xyz$ terms."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

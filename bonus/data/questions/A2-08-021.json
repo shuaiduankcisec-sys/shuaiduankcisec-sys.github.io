@@ -1,0 +1,28 @@
+{
+  "id": "A2-08-021",
+  "chapter": "A2-08",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 1999,
+  "difficulty": 4,
+  "topics": [
+    "Newton-Raphson",
+    "root finding",
+    "iteration"
+  ],
+  "methods": [
+    "Newton-Raphson formula"
+  ],
+  "statement": "Apply one step of Newton-Raphson to $f(x)=x^3-x-1$ starting from $x_0=1$.",
+  "solution": "$f'(x)=3x^2-1$. $x_1=x_0-\\dfrac{f(x_0)}{f'(x_0)}=1-\\dfrac{1-1-1}{3-1}=1-\\dfrac{-1}{2}=1.5$.",
+  "hints": [
+    "Write the Newton-Raphson formula $x_{n+1}=x_n-f(x_n)/f'(x_n)$.",
+    "Compute $f(1)$ and $f'(1)$."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4否 Q5否 → 4星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}

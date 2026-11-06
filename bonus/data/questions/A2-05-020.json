@@ -1,0 +1,29 @@
+{
+  "id": "A2-05-020",
+  "chapter": "A2-05",
+  "level": "A2",
+  "title": "",
+  "source": "STEP",
+  "paper": "STEP II",
+  "year": 2002,
+  "difficulty": 5,
+  "topics": [
+    "optimisation",
+    "distance minimisation",
+    "AM-GM inequality"
+  ],
+  "methods": [
+    "minimising squared distance",
+    "AM-GM"
+  ],
+  "statement": "Find the minimum distance from the origin to the curve $xy=1$ in the first quadrant.",
+  "solution": "Distance squared is $x^2+y^2=x^2+\\tfrac1{x^2}\\ge2$ by AM-GM, with equality at $x=1$ ($y=1$). The minimum distance is $\\sqrt2$.",
+  "hints": [
+    "Write the squared distance in terms of $x$ using $y=1/x$.",
+    "Apply AM-GM or differentiate."
+  ],
+  "_difficultyNote": "[难度自评: Q1是 Q2是 Q3是 Q4是 Q5否 → 5星]",
+  "sourceUrl": "https://step.maths.org/questions",
+  "solutionUrl": "",
+  "solutionStatus": "full"
+}
